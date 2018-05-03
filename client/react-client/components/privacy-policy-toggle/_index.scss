@@ -1,0 +1,13 @@
+.privacy-policy-toggle {
+  text-transform: uppercase;
+  color: $gray-light;
+}
+
+@include when-ipad() {
+  .privacy-policy-toggle {
+    left: 50%;
+    @include transform(translateX(-50%));
+    position: fixed;
+    bottom: 15px;
+  }
+}

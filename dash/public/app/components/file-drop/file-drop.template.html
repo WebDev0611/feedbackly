@@ -1,0 +1,12 @@
+<div ng-if="fileDrop.uploader" nv-file-drop uploader="fileDrop.uploader" class="file-drop" ng-class="{ 'file-drop-has-files': fileDrop.uploader.queue.length > 0 }">
+  <a class="remove-file btn-floating waves-effect waves-light red cursor-pointer" ng-click="fileDrop.uploader.clearQueue()">
+    <i class="material-icons">delete</i>
+  </a>
+
+  <span ng-if="fileDrop.uploader.queue.length === 0" translate>Drag your file here</span>
+  <span ng-if="fileDrop.uploader.queue.length > 0">{{fileDrop.filesInQueue}}</span>
+</div>
+
+<div class="section" ng-if="fileDrop.uploader.queue.length === 0">
+  <input type="file" nv-file-select uploader="fileDrop.uploader"/>
+</div>

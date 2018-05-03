@@ -1,0 +1,50 @@
+.tutorial-bubble {
+  position: fixed;
+  right: 25px;
+  z-index: 99;
+  max-width: 400px;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.3) 0 2px 10px;
+
+}
+.arrow_box {
+	position: relative;
+	background: #ffffff;
+	border: 2px solid #ffffff;
+  border-radius: 3px;
+  min-height: 60px;
+  max-width: 300px;
+  filter: drop-shadow(rgba(0, 0, 0, 0.3) 0 2px 3px);
+  font-size: 0.9em;
+  display:flex;
+  align-items:center;
+
+}
+.arrow_box:after, .arrow_box:before {
+	top: 100%;
+	left: 85%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+.arrow_box:after {
+	border-color: rgba(226, 227, 225, 0);
+	border-top-color: #ffffff;
+	border-width: 12px;
+	margin-left: -12px;
+}
+.arrow_box:before {
+	border-color: rgba(152, 245, 211, 0);
+
+	border-width: 15px;
+	margin-left: -15px ;
+}
+.bubble-contents {
+  color: black;
+  padding: 10px;
+  display: inline-block;
+}

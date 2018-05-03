@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <body><script
+        src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+            <link rel="stylesheet" href="//cdn.datatables.net/1.10.15/css/jquery.dataTables.min.css" />
+            <script src="//cdn.datatables.net/1.10.15/js/jquery.dataTables.min.js"></script>
+            <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/bootstrap/3/css/bootstrap.css" />
+            <script type="text/javascript" src="//cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+            
+           <!-- Include Date Range Picker -->
+           <script type="text/javascript" src="//cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.js"></script>
+           <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.css" />
+
+           <input name="daterange" style="width:200px" /> <a id="go-btn" href="/api/v2/stats">Go</a>
+
+
+           <script>
+               var start = moment.utc(<%= params.start %>).format("YYYY-MM-DD");
+               var end = moment.utc(<%= params.end %>).format("YYYY-MM-DD");
+
+           $('input[name="daterange"]').daterangepicker({
+               maxDate: moment.utc().format("YYYY-MM-DD"),
+               startDate: start,
+               endDate: end,
+               locale:{
+                format: 'YYYY-MM-DD'
+               }
+           }, function(start, end){
+               $("#go-btn").attr("href", "/api/v2/stats?render=true&start=" + start + "&end=" + end)
+           });
+           </script>
+           
+        <table id="table">
+            <thead>
+            <% columns
+            .filter(col => col.id != '_id')
+            .forEach(col => { %>
+                <th>
+                    
+                        <%= col.label %>
+                    
+                </th>
+            <% }) %>
+            </thead>
+            <tbody>
+                <% rows.forEach(row => { %>
+                    <tr>
+                        <% columns
+                        .filter(col => col.id != '_id')
+                        .forEach(col => { %>
+                            <td <% if(col.id == 'organizationCreatedAt') { %>
+                                    data-order="<%= row.index %>"
+                                <% } %>
+                                >
+                                <% if(col.id == 'name'){ %>
+                                    <a href="/app/#/admin/organizations/<%= row._id %>/settings" target="_blank">
+                                        <%= row[col.id] %>
+                                    </a>
+                                <% } else { %>
+                                    <%= row[col.id] %>                                    
+                                <% } %> 
+                            </td>
+                        <% }) %>
+                   </tr>
+                <% }) %>
+            </tbody>
+        </table>
+
+        <script>
+            $('#table').DataTable();
+        </script>
+    </body>
+</html>

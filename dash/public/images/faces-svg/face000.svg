@@ -1,0 +1,26 @@
+<svg class="b000" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+   viewBox="0 0 386.2 357.5" style="enable-background:new 0 0 386.2 357.5;" xml:space="preserve">
+<style type="text/css">
+  .b000 .st0{fill:none;stroke:#FFFFFF;stroke-width:7.501;stroke-miterlimit:10;}
+  .b000 .st1{opacity:0.1;fill:#F3757C;} /* original opacity: 0.4 */
+  .b000 .st2{fill:#F3757C;}
+  .b000 .st3{fill:#EE5E6F;}
+  .b000 .st4{fill:#FFFFFF;}
+</style>
+<line id="XMLID_184_" class="st0" x1="215.1" y1="178" x2="240.3" y2="178"/>
+<g id="XMLID_185_">
+  <circle id="big" class="st1 animation-base" cx="184.9" cy="150.2" r="139.2"/>
+  <circle id="small1" class="st1 animation-base" cx="190.9" cy="239.1" r="92.2"/>
+  <circle id="small2" class="st1 animation-base" cx="253.5" cy="198.3" r="92.2"/>
+  <circle id="XMLID_192_" class="st2" cx="194.8" cy="188" r="113.7"/>
+  <path id="XMLID_191_" class="st3" d="M193.8,301.9C131,301.9,80.1,251,80.1,188.2S131,74.5,193.8,74.5"/>
+  <g id="XMLID_188_">
+    <circle id="XMLID_190_" class="st4" cx="159.6" cy="179.8" r="8.2"/>
+    <circle id="XMLID_189_" class="st4" cx="230" cy="179.8" r="8.2"/>
+  </g>
+  <path id="XMLID_187_" class="st4" d="M131.2,271.9c-27.3-19.6,29-50.2,64.8-50.2s89,28.7,64.8,50.2
+    C240.4,290,154.1,288.4,131.2,271.9z"/>
+  <path id="XMLID_186_" class="st4" d="M153.4,213c0,5.5-4.5,9.9-9.9,9.9s-9.9-4.5-9.9-9.9c0-5.5,9.9-17.8,9.9-17.8
+    S153.4,207.5,153.4,213z"/>
+</g>
+</svg>

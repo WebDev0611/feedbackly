@@ -1,0 +1,24 @@
+.contact-question-wrapper {
+  max-width: 400px;
+
+  @include when-medium-or-small-view() {
+    max-width: 300px;
+
+    .form-group{
+      margin-bottom: 10px;
+    }
+  };
+
+  input[type="text"], input[type="email"], input[type="tel"] {
+  width: 100%;
+}
+
+  margin: 0px auto;
+}
+
+@include when-ipad() {
+  .contact-question-wrapper {
+    max-width: none;
+    margin: 0px;
+  }
+}

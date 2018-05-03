@@ -1,0 +1,42 @@
+upsell:
+  heading:
+    en: Enter your e-mail address for a chance to win the newest iPhone!
+    fi: Anna sähköpostiosoitteesi ja osallistu kilpailuun, jossa on mahdollisuus voittaa viimeisin iPhone!
+  email:
+    en: e-mail
+    fi: sähköposti
+  terms:
+    en: I agree to terms and conditions
+    fi: Hyväksyn säännöt ja ehdot
+nps:
+  title:
+    fi: Kuinka todennäköisesti suosittelisit meitä ystävällesi tai työtoverillesi?
+    en: How likely are you to recommend us to your friends and colleagues?
+    sv: Hur troligt är det att du skulle rekommendera oss till dina vänner och kollegor?
+  subtitle:
+    en: 0 = Not likely at all 10 = Extremely likely
+    fi: 0 = Erittäin epätodennäköisesti 10 = Erittäin todennäköisesti
+    sv: 0 = Väldigt osannolikt 10 = Väldigt sannolikt
+
+end_screen_text:
+  en: Thank you!
+  fi: Kiitos!
+  sv: Tack!
+
+
+buttons:
+  amazing:
+    fi: Mahtava.
+    en: Amazing.
+  good:
+    fi: Hyvä.
+    en: Good.
+  ok:
+    fi: Ok.
+    en: Ok.
+  bad:
+    fi: Huono.
+    en: Bad.
+  terrible:
+    fi: Kauhea.
+    en: Terrible.

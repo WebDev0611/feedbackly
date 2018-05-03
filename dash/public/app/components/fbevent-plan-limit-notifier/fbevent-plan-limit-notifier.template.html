@@ -1,0 +1,4 @@
+<div ng-if="fbeventLimit.show" class="card-panel teal white-text" style="font-size: 13px;margin-top: 40px;">
+  {{ "Your selection contains" | translate }} {{fbeventLimit.count}} {{ "feedbacks that exceed your current subscription's limit of" | translate }} {{fbeventLimit.planLimit}} {{ "feedbacks across all surveys" | translate }}. {{"Feedbacks over the limit are omitted from the results." | translate }} <br>
+  <a class="underline white-text" ui-sref="organization.billing" ng-if="fbeventLimit.showUpgradeLink" translate>Upgrade your plan to see all your feedbacks</a>
+</div>

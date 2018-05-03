@@ -1,0 +1,65 @@
+<div class="row">
+  <h6>{{ contactControl.question.heading[contactControl.displayLanguage] }}</h6>
+
+  <div ng-repeat="field in contactControl.choices">
+    <div class="text-bold">
+      {{field.text[contactControl.displayLanguage]}}
+      {{contactControl.question.placeholder[contactControl.displayLanguage]}}
+    </div>
+
+    <div class="">
+
+      <div ng-if="field.type === 'string'" style="padding: 10px 0;">
+        <div ng-repeat="dummy in contactControl.dummyFields[field.id]" class="" style="margin-bottom: 15px;">
+
+        <div class="">
+         <select class="browser-default" ng-model="dummy.fn">
+                  <option value="" disabled selected translate>Select function</option>
+                  <option ng-if="contactControl.fnAvailable(field.id, dummy.fn, 'length')" value="length" translate>Length</option>
+                  <option ng-if="contactControl.fnAvailable(field.id, dummy.fn, 'containsOne')" value="containsOne" translate>Contains 1 or more words</option>
+                  <option ng-if="contactControl.fnAvailable(field.id, dummy.fn, 'contains')" value="contains" translate>Contains all words</option>
+                </select>
+        </div>
+        <div class="" style="position: relative;  padding: 25px;">
+          <div ng-if="dummy.fn === 'length'">
+              <span translate>The length of the text in the field must be: </span>
+
+              <select class="browser-default" ng-model="dummy.operator" style="margin: 0 10px; width: 50px;display:inline-block;">
+                <option value=">" selected>></<option>
+                <option value="<"><</<option>
+                <option value="=">=</<option>
+              </select>
+              <div input-field style="margin-top: -25px; display:inline-block;">
+                <input type="text" ng-model="dummy.value" ng-change="contactControl.updateConditionSet()" style="width: 250px; display:inline-block;">
+                <label translate>Specify length in characters</label>
+              </div>
+          </div>
+
+          <tags-input ng-if="dummy.fn === 'contains' || dummy.fn === 'containsOne'" placeholder="{{'Add a word' | translate }}" ng-model="dummy.value" min-length="1" on-tag-added="contactControl.updateConditionSet()" on-tag-removed="contactControl.updateConditionSet()"></tags-input>
+
+          <a href ng-click="contactControl.removeCondition(field.id, dummy.fn)" style="position:absolute;top:35px;right:0;color: gray" >
+             <i class="material-icons">delete</i>
+           </a>
+        </div>
+      </div>
+
+        <a href style="margin-left: 25px;" ng-if="contactControl.dummyFields[field.id].length < 3" ng-click="contactControl.addCondition(contactControl.dummyFields[field.id])" >
+           <i class="material-icons">add_circle</i>
+           <div class="inline" style="position: relative; top:-6px" translate>Add a condition</div>
+         </a>
+      </div>
+
+
+      <div class="" ng-if="field.type === 'boolean'" >
+        <select class="browser-default" ng-model="contactControl.checkboxes[field.id]" ng-change="contactControl.updateConditionSet()">
+          <option></option>
+          <option ng-value="true" ng-selected="contactControl.checkboxes[field.id] === true" translate>Checked</option>
+          <option ng-value="false" ng-selected="contactControl.checkboxes[field.id] === false" translate>Unchecked</option>
+        </select>
+      </div>
+
+    </div>
+
+  </div>
+
+</div>

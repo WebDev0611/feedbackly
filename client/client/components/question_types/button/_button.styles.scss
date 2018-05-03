@@ -1,0 +1,115 @@
+$speed: 12s;
+
+.mobile.landscape .question-type-button .faces .cont{
+    max-width: 18vw !important;
+}
+
+.mobile .question-type-button{
+
+  .flexbox-container-column{
+    @include justify-content(center);
+  }
+  h1, hr{
+    margin-bottom: 30px;
+  }
+  .faces{
+    display: block;
+    svg{
+      width: 100%;
+      }
+    .cont{
+      max-width: 100px;
+      display: inline-block;
+    }
+    }
+  }
+
+.question-type-button{
+
+  .cont{
+    cursor: pointer;
+  }
+
+  .faces {
+    @include display(flex);
+    @include justify-content(center);
+    svg{
+      width: 100%;
+      display: block;
+    }
+    .text{
+      text-transform: uppercase;
+    }
+  }
+
+  .b000 .circle circle{
+    opacity:0.1;
+    fill:#F3757C;
+  }
+
+  .b025 .circle circle{
+    opacity:0.15;
+    fill:#F8A276
+  }
+
+  .b050 .circle circle{
+    opacity:0.24;fill:#FED96D
+  }
+
+  .b075 .circle circle{
+    opacity:0.1;fill:#84C44E;
+  }
+
+  .b100 .circle circle{
+    opacity:0.1;fill:#35BBA4;
+  }
+
+
+
+  .face-container{
+    position: relative;
+    .circle{
+      position: absolute;
+    }
+
+    .b000 {
+      .st4{fill:#FFFFFF;}
+    }
+
+    .face-image {
+      width: 100%;
+      height: auto;
+    }
+
+    .face-vector{
+      position: relative;
+    }
+
+
+  }
+
+  .cont{
+
+  }
+
+
+
+  .animation-base {
+    @include animation(rotation linear $speed);
+    @include animation-iteration-count(infinite);
+  }
+
+  @include keyframes(rotation) {
+    0% {
+      @include transform(rotate(0deg));
+    }
+
+    100%{
+      @include transform(rotate(360deg));
+    }
+  };
+
+
+
+
+}

@@ -1,0 +1,12 @@
+<table>
+  <tr>
+    <td ng-repeat="image in ::surveyEmailSettings.buttonImages" width="20%" class="text-center">
+      <img style="width:50px" ng-src="{{::image}}">
+    </td>
+  </tr>
+  <tr>
+    <td ng-repeat="image in ::surveyEmailSettings.buttonImages" class="text-center" style="text-transform: uppercase; color: gray">
+        {{surveyEmailSettings.getButtonLabel($index)[0]}}
+    </td>
+  </tr>
+</table>

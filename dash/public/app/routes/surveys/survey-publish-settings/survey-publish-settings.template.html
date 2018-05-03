@@ -1,0 +1,100 @@
+<div class="card">
+  <div class="card-content">
+     <div class="card-title"> <span  translate>Publish settings</span>
+       <div class="pull-right title-side">
+         <i class="material-icons text-turquoise-dark" style="margin-right: 5px;position: relative;top: 6px;">alarm</i>
+         <div input-field style="display:inline-block">
+            <select ng-change="surveyPublishSettings.onActivationPlanChange()" ng-model="surveyPublishSettings.surveySettings.schedule.plan" material-select watch>
+                <option value="now">{{"Activate now" | translate}}</option>
+                <option value="schedule">{{"Schedule publishing" | translate}}</option>
+            </select>
+        </div>
+       </div>
+     </div>
+
+     <div class="row section no-bottom-margin hide" ng-class="{'show': surveyPublishSettings.surveySettings.schedule.plan === 'schedule'}" ng-if="surveyPublishSettings.surveySettings.schedule.plan">
+
+      <div class="col m9">
+       <div class="col m3">
+         <label for="inputCreated" translate>Schedule date</label>
+         <input input-date style="padding-top: 16px" ng-model="surveyPublishSettings.surveySettings.schedule.time.date"
+             type="text"
+             name="created"
+             id="inputCreated"
+             container=""
+             format="{{surveyPublishSettings.format}}"
+             today="today"
+             first-day="1"
+             clear="clear"
+             close="close"
+             select-years="15"
+             on-start="onStart()"
+             on-render="onRender()"
+             on-open="onOpen()"
+             on-close="onClose()"
+             on-set="surveyPublishSettings.onTimeDateChange()"
+             on-stop="onStop()"
+             value="{{surveyPublishSettings.surveySettings.schedule.time.date}}"
+              />
+       </div>
+       <div class="col m2">
+         <label for="hour" translate>Hour</label>
+         <div input-field id="hour">
+           <select class="" ng-model="surveyPublishSettings.surveySettings.schedule.time.hour" material-select ng-change="surveyPublishSettings.onTimeDateChange()">
+               <option ng-repeat="value in surveyPublishSettings.range(0,24)">{{::value}}</option>
+           </select>
+         </div>
+
+       </div>
+       <div class="col m2">
+         <label for="minutes" translate>Minute</label>
+         <div input-field id="minutes">
+           <select class="" ng-model="surveyPublishSettings.surveySettings.schedule.time.minute"  material-select ng-change="surveyPublishSettings.onTimeDateChange()">
+               <option ng-repeat="value in ['00', '15', '30', '45']">{{::value}}</option>
+           </select>
+         </div>
+
+       </div>
+
+       <div class="col m4">
+         <label for="timezone" translate>Timezone</label>
+         <div input-field id="timezone">
+           <select class="" ng-model="surveyPublishSettings.surveySettings.schedule.time.tz"  ng-change="surveyPublishSettings.onTimeDateChange()" material-select>
+               <option value="{{tz.name}}" ng-repeat="tz in surveyPublishSettings.timezoneNames">{{::tz.name.split("_").join(" ")}} ({{::tz.offset > 0 ? '+' : ''}}{{:: (tz.offset/60) }}:00 UTC)</option>
+           </select>
+         </div>
+
+       </div>
+       </div>
+
+     </div>
+     <div class="section">
+
+    <p> <span translate>The following</span> {{ ::surveyPublishSettings.activeChannels.length }} <span translate>channels were selected. If you haven't configured your channels previously, you can
+      get their setup instructions by clicking on them.</span></p>
+
+    <ul class="collapsible popout" data-collapsible="accordion" watch>
+        <li ng-repeat="channel in surveyPublishSettings.activeChannels">
+            <div class="collapsible-header">
+              <i class="material-icons channel-accordion-right">keyboard_arrow_right</i>
+              <i class="material-icons channel-accordion-down">keyboard_arrow_down</i>
+
+              <i class="material-icons pull-right text-red-dark hide"
+              ng-class="{'show': (channel.type==='EMAIL' || channel.type === 'SMS') && channel.contactCount === 0}">error_outline</i>
+
+              <span ng-bind-html="surveyPublishSettings.getIcon(channel.type)"></span>
+                {{::channel.name }}
+            </div>
+            <div class="collapsible-body">
+              <p>
+                <channel-setup-info channel="channel"></channel-setup-info>
+              </p>
+            </div>
+        </li>
+    </ul>
+
+     </div>
+  </div>
+</div>
+
+<survey-progress-bar go-to-state="surveyPublishSettings.goToState(state)" active-channels="surveyPublishSettings.activeChannels"></survey-progress-bar>

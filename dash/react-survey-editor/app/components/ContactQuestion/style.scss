@@ -1,0 +1,92 @@
+@import "../styles/colors.scss";
+
+.textfieldrow :global(.text-input) {
+    background: white;
+    border: 1px solid black;
+}
+
+.box {
+    width: 30px;
+    height: 30px;
+    background: white;
+    border: 1px solid $gray-dark;
+}
+
+.parent{
+  width: 38px;
+}
+
+.width{
+  max-width: 320px;
+
+}
+
+.contactRow {
+    composes: width;
+    position: relative;
+    margin: 1rem auto;
+
+}
+
+.table td{
+  padding: 0;
+}
+
+.delete {
+  position: absolute;
+  top: -15px;
+  right: -15px;
+}
+
+.input{
+  composes: width;
+  background-color: white;
+  border: 1px solid $gray-dark;
+  padding: 0.8rem;
+  margin: 1rem auto;
+  color: $gray-dark;
+}
+
+
+.inputEdit{
+  composes: montserrat from '../styles/fonts/fonts.scss';
+  text-transform: uppercase;
+  color: $gray-dark;
+}
+
+.inputEditCheckbox{
+  composes: inputEdit;
+  text-align: left;
+}
+
+.inputView{
+  composes: montserrat from '../styles/fonts/fonts.scss';
+  text-transform: uppercase;
+  text-align: center;
+  color: $gray-dark;
+}
+
+.inputViewCheckbox{
+  composes: montserrat from '../styles/fonts/fonts.scss';
+  text-transform: uppercase;
+  text-align: left;
+  color: $gray-dark;
+}
+
+.center{
+  text-align: center;
+  padding: 10px;
+}
+
+.logic {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+.submit {
+  display: inline-block;
+  position: relative;
+  top: -10px;
+  left: -10px;
+}

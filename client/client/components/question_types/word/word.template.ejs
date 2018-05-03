@@ -1,0 +1,46 @@
+<div class="question-type question-type-word" question-id="<%= question._id %>">
+  <% include ./../../language_menu/language_menu.template.ejs %>
+
+  <div class="question-inner flexbox-container-column">
+    <% _.forEach(question.translations, function(translation){ %>
+      <h1 class="title hide lang lang-<%= translation.language %>">
+          <span>
+             <%= translation.heading %>
+          </span>
+      </h1>
+    <% }) %>
+
+      <hr>
+
+      <% _.forEach(question.translations, function(translation){
+          if(translation.subtitle) { %>
+        <div class="subtitle hide lang lang-<%= translation.language %>">
+           <%= translation.subtitle %>
+        </div>
+      <% } }) %>
+
+
+      <%
+      var amountOfWords = _.reject(question.translations[0].data, 'hidden').length;
+      var columns = "column1";
+      if(amountOfWords > 6 && amountOfWords <= 14) columns = "column2"
+      if(amountOfWords > 14 && amountOfWords < 22) columns = "column3"
+      if(amountOfWords >= 22) columns = "column4"; %>
+
+      <div class="input column <%= columns %>">
+          <% _.forEach(question.translations, function(translation){ %>
+            <% var data = _.reject(translation.data, 'hidden'); %>
+              <% _.forEach(data, function(word){ %>
+                <div class="word hide lang lang-<%= translation.language %>" field-id="<%= word.id %>"
+                      logic="<%= _.get(survey, 'properties.logic.' + question._id + '.' + word.id) %>"
+                  >
+                  <span><%= word.data %></span>
+                </div>
+              <% }) %>
+          <% }) %>
+      </div>
+      <% include ./../../privacy-policy/open %>
+
+    </div>
+
+</div>

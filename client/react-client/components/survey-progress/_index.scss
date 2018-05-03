@@ -1,0 +1,20 @@
+.progress-bar {
+    position: relative;
+    top: 0px;
+    height: 0.35em;
+    max-height: $progress-bar-height;
+    background: $gray-light;
+    width: 100%;
+
+    .progress{
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      width: 0%;
+      height: 0.35em;
+      max-height: $progress-bar-height;
+      @include transition(all 450ms ease-out);
+      box-shadow: 0px 0px 10px $turquoise-light;
+      background-color: $turquoise-light;
+    }
+}

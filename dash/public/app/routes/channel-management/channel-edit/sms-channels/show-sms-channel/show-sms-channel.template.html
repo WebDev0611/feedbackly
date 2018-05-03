@@ -1,0 +1,85 @@
+<loader loading="showSms.contacts === undefined"></loader>
+
+<div class="section" ng-if="showSms.contacts !== undefined">
+ <table class="striped">
+   <thead>
+     <tr>
+       <th translate>First name</th>
+       <th translate>Last name</th>
+       <th translate>Phone number</th>
+       <th ng-repeat="metaKey in showSms.usedMetaKeys">
+           {{::metaKey}}
+       </th>
+       <th></th>
+     </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="contact in showSms.contacts">
+        <td>
+          {{::contact.fname}}
+        </td>
+        <td>
+          {{::contact.lname}}
+        </td>
+        <td>
+          {{::contact.phone_number}}
+        </td>
+
+        <td ng-repeat="metaKey in showSms.usedMetaKeys">
+          {{::contact.meta[metaKey]}}
+        </td>
+
+        <td>
+          <button class="waves-effect waves-light btn-floating" modal data-target='edit-contact-modal' ng-click="showSms.editContact(contact)">
+            <i class="material-icons">edit</i>
+          </button>
+          <button class="waves-effect waves-light red btn-floating" ng-click="showSms.removeContact(contact)">
+            <i class="material-icons">delete</i>
+          </button>
+        </td>
+      </tr>
+    </tbody>
+ </table>
+
+ <pagination
+  page="showSms.page"
+  page-size="showSms.pageSize"
+  total="showSms.contactsCount"
+  show-prev-next="true"
+  dots="...."
+  hide-if-empty="false"
+  adjacent="2"
+  scroll-top="true"
+  pagination-action="showSms.onPageChange(page)"/>
+
+  <button class="btn waves-effect waves-light btn-s" ng-click="showSms.addContacts()">
+    <i class="material-icons left">add</i>
+   {{ 'Add phone numbers' | translate }}
+  </button>
+</div>
+
+<div id="edit-contact-modal" class="modal modal-fixed-footer">
+  <div class="modal-content">
+    <h4>Edit phone number</h4>
+    <form class="section">
+      <div input-field>
+
+        <input type="text" ng-model="showSms.editingContact.fname">
+        <label translate>First Name</label>
+      </div>
+      <div input-field>
+        <input type="text" ng-model="showSms.editingContact.lname">
+        <label translate>Last Name</label>
+      </div>
+      <div input-field>
+        <input type="text" ng-model="showSms.editingContact.phone_number">
+        <label translate>Phone Number</label>
+      </div>
+
+    </form>
+  </div>
+  <div class="modal-footer">
+    <button class="modal-action modal-close waves-effect btn-flat" ng-click="showSms.saveEditContact()" translate>Save</button>
+    <button class="modal-action modal-close waves-effect btn-flat" translate>Cancel</button>
+  </div>
+</div>

@@ -1,0 +1,187 @@
+@import '../styles/Mixins.scss';
+
+.main {
+  overflow: auto;
+}
+
+.faceContainer{
+  text-align: center;
+}
+
+.button {
+  display: inline-block;
+  position: relative;
+  max-width: 120px;
+  margin: 10px;
+  min-width: 1px;
+  vertical-align: top;
+  @include mobile {
+      max-width: 80px;
+  }
+}
+
+.buttonImage{
+  width:100%;
+  min-height: 128px;
+  min-width: 120px;
+  @include mobile {
+    min-height: 88px;
+    min-width: 80px;
+  }
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.placeholder{
+  width: 100%;
+}
+
+.i0five, .i0four{
+  composes: buttonImage;
+  background-image:url('./faces/0.png');
+}
+
+.iplain0five, .iplain0four{
+  composes: buttonImage;
+  background-image:url('./faces/0p.png');
+}
+
+.ianimated0five, .ianimated0four{
+  composes: buttonImage;
+  background-image:url('./faces/0.gif');
+}
+.ianimatedPlain0five, .ianimatedPlain0four{
+  composes: buttonImage;
+  background-image:url('./faces/0p.gif');
+}
+
+.i1five, .i1four{
+  composes: buttonImage;
+  background-image:url('./faces/1.png');
+}
+
+.iplain1five, .iplain1four{
+  composes: buttonImage;
+  background-image:url('./faces/1p.png');
+}
+
+.ianimated1five, .ianimated1four{
+  composes: buttonImage;
+  background-image:url('./faces/1.gif');
+}
+.ianimatedPlain1five, .ianimatedPlain1four{
+  composes: buttonImage;
+  background-image:url('./faces/1p.gif');
+}
+
+.i2five{
+  composes: buttonImage;
+  background-image:url('./faces/2.png');
+}
+
+.iplain2five{
+  composes: buttonImage;
+  background-image:url('./faces/2p.png');
+}
+
+.ianimated2five{
+  composes: buttonImage;
+  background-image:url('./faces/2.gif');
+}
+.ianimatedPlain2five{
+  composes: buttonImage;
+  background-image:url('./faces/2p.gif');
+}
+.i3five, .i2four{
+  composes: buttonImage;
+  background-image:url('./faces/3.png');
+}
+
+.iplain3five, .iplain2four{
+  composes: buttonImage;
+  background-image:url('./faces/3p.png');
+}
+
+.ianimated3five, .ianimated2four{
+  composes: buttonImage;
+  background-image:url('./faces/3.gif');
+}
+.ianimatedPlain3five, .ianimatedPlain2four{
+  composes: buttonImage;
+  background-image:url('./faces/3p.gif');
+}
+
+.i4five, .i3four{
+  composes: buttonImage;
+  background-image:url('./faces/4.png');
+}
+
+.iplain4five, .iplain3four{
+  composes: buttonImage;
+  background-image:url('./faces/4p.png');
+}
+
+.ianimated4five, .ianimated3four{
+  composes: buttonImage;
+  background-image:url('./faces/4.gif');
+}
+.ianimatedPlain4five, .ianimatedPlain3four{
+  composes: buttonImage;
+  background-image:url('./faces/4p.gif');
+}
+
+.labelEdit{
+  composes: montserrat from '../styles/fonts/fonts.scss';
+  text-transform: uppercase;
+  @include mobile{
+    font-size: 11px !important;
+  };
+}
+
+.label{
+  composes: labelEdit;
+
+  overflow: hidden;
+  margin-top: 10px;
+  margin-bottom: 20px;
+
+  @include mobile{
+  };
+}
+
+.label4five, .label3four{
+  composes: label;
+  composes: textCyan from '../styles/colors.scss';
+}
+.label3five, .label2four{
+  composes: label;
+  composes: textGreen from '../styles/colors.scss';
+}
+.label2five{
+  composes: label;
+  composes: textYellow from '../styles/colors.scss';
+}
+.label1five, .label1four{
+  composes: label;
+  composes: textOrange from '../styles/colors.scss';
+}
+.label0five, .label0four{
+  composes: label;
+  composes: textRed from '../styles/colors.scss';
+}
+
+
+.main:last-child {
+  clear: both;
+  display: block;
+}
+
+.logic {
+
+    position: absolute;
+    top: -15px;
+    left: -15px;
+}
+
+.toggles {
+}

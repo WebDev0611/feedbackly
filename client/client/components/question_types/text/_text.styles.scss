@@ -1,0 +1,46 @@
+.question-type-text{
+  text-align: center;
+
+  .input{
+
+  }
+
+}
+
+.web textarea, .mobile textarea{
+  width: 75%;
+  min-height: 130px;
+}
+
+.mobile.landscape textarea{
+  min-height: 60px;
+}
+
+.mobile .question-type-text .flexbox-container-column{
+  justify-content: center;
+  hr, .subtitle{
+    margin: $minimum-margins;
+  }
+
+  h1{
+    margin: $title-minimum-margins;
+  }
+}
+
+.mobile.landscape .question-type-text{
+  h1{
+    margin: $title-minimum-margins-landscape;
+  }
+   hr, .subtitle{
+    margin: $minimum-margins-landscape;
+  }
+}
+
+
+.ipad .textarea{
+    width: 50vw;
+    margin: 0 auto;
+    height: 43px;
+    overflow-y: scroll;
+    overflow-x: inherit;
+}

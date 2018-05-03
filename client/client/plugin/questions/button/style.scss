@@ -1,0 +1,23 @@
+.#{$class-prefix}-4-buttons {
+  width: 25%;
+  float: left;
+}
+
+.#{$class-prefix}-5-buttons {
+  width: 20%;
+  float: left;
+}
+
+.#{$class-prefix}-button-label {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 8px;
+  text-transform: uppercase;
+}
+
+.#{$class-prefix}-button-image {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+}

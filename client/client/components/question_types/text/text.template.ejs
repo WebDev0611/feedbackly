@@ -1,0 +1,44 @@
+<div class="question-type question-type-text" question-id="<%= question._id %>">
+  <% include ./../../language_menu/language_menu.template.ejs %>
+
+  <div class="question-inner flexbox-container-column">
+    <% _.forEach(question.translations, function(translation){ %>
+      <h1 class="title hide lang lang-<%= translation.language %>">
+          <span>
+             <%= translation.heading %>
+          </span>
+      </h1>
+    <% }) %>
+
+      <hr>
+
+      <div class="subtitle">
+        <% _.forEach(question.translations, function(translation){ %>
+          <span class="hide lang lang-<%= translation.language %>">
+             <%= translation.subtitle %>
+          </span>
+        <% }) %>
+      </div>
+
+      <div class="input">
+        <textarea></textarea>
+        <div class="input-box textarea" data="">
+          <div class="placeholder">
+            <% _.forEach(question.translations, function(tr){ %>
+                <span class="hide lang lang-<%= tr.language %>"><%= _.get(tr, 'data[0]') %></span>
+            <%  }) %>
+          </div>
+          <div class="text"></div>
+        </div>
+        <br>
+        <button class="submit" logic="<%= _.get(survey, 'properties.logic.' + question._id + '.submit') %>">
+          <% _.forEach(UITranslations.next, (tr, lang) => { %>
+            <span class="lang lang-<%= lang %> hide"> <%= tr %> </span>
+          <% }) %>
+        </button>
+      </div>
+      <% include ./../../privacy-policy/open %>
+
+    </div>
+
+</div>

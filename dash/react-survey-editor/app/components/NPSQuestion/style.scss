@@ -1,0 +1,45 @@
+@import '../styles/Mixins.scss';
+
+.main {
+  text-align: center;
+  padding: 1em;
+}
+
+.button {
+  position: relative;
+  display: inline-block;
+  margin: 10px;
+}
+
+.circle {
+  background: #83859b;
+  color: white;
+  border-radius: 100%;
+  text-align: center;
+
+  $width: 50px;
+
+  width: $width;
+  height: $width;
+  line-height: $width;
+
+  @include mobile{
+    $width: 40px;
+    width: $width;
+    height: $width;
+    line-height: $width;
+  }
+
+}
+
+.main:last-child {
+  clear: both;
+  display: block;
+}
+
+.logicPosition {
+
+    position: absolute;
+    top: -15px;
+    left: -15px;
+}

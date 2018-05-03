@@ -1,0 +1,12 @@
+.chart-tooltip {
+  color: white;
+  background-color: fade-out(darken($dark-grey, 20%), 0.2);
+  border-radius: 3px;
+  padding: 8px;
+  display: inline-block;
+
+  .face-thumb, .image-thumb {
+    width: 35px;
+    height: 35px;
+  }
+}

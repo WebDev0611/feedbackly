@@ -1,0 +1,52 @@
+
+.list {
+    list-style-type: none;
+    margin: 0 0 1.5rem 0;
+    line-height: 1.5;
+    font-size: 0.875rem;
+    font-size: 11px;
+    padding: 0;
+
+}
+
+  .price-plan{
+    width: 23%;
+    border: 1px solid #d8dde6;
+    border-radius: 4px;
+    display: inline-block;
+    background-color: #ffffff;
+    margin: 5px;
+
+    &__name{
+      padding: 0.75rem;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      background-color: #f7f8fa;
+      color: #83859b !important;
+      font-family: 'Roboto';
+      font-style: normal;
+      letter-spacing: 1px;
+      border-bottom: 1px solid #d8dde6;
+    }
+    &__info{
+      padding: 1em;
+      font-size: 11px;
+    }
+
+    .list__title {
+        border-bottom: 1px solid #2fbca4;
+        padding-bottom: 0.75rem;
+        margin-bottom: 1.125rem;
+        font-size: 0.875rem;
+    }
+  }
+
+  @media screen and (max-width: 880px){
+    .price-plan{
+      width: 100%;
+      max-width: 320px;
+    }
+    .content{
+      padding: 0px !important;
+    }
+  }

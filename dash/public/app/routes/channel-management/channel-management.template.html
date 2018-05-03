@@ -1,0 +1,70 @@
+<div class="card">
+  <div class="card-content">
+    <div>
+      <a ng-if="channelManagement.canCreateChannels" class="waves-effect waves-light btn btn-s pull-right" modal href="#add-channel"><i class="material-icons left">add_circle</i>{{ 'New Feedback Channel' | translate }}</a>
+      <div class="card-title" translate>Channel management</div>
+    </div>
+
+    <br>
+
+    <div class="row">
+      <div class="col m4 l3">
+        <channel-group-list all-channels-group="channelManagement.allChannelsGroup" channel-groups="channelManagement.channelGroups" can-create-channels="channelManagement.canCreateChannels"></channel-group-list>
+      </div>
+      <div class="col m8 l9">
+        <b ng-if="!channelManagement.isAllChannelsGroup">{{ 'Channel group' | translate}} - {{channelManagement.channelGroup.name}}</b>
+        <a ng-if="!channelManagement.isAllChannelsGroup && channelManagement.canCreateChannels" class="btn-floating btn-s"
+        style="left: 5px;" modal data-target="edit-channel-group" ng-click="channelManagement.editGroup(channelManagement.channelGroup)">
+          <i class="material-icons">edit</i>
+        </a>
+
+
+        <h6 ng-if="channelManagement.isAllChannelsGroup">{{ 'All feedback channels' | translate}}</h6>
+
+        <table class="striped">
+              <thead>
+                <th translate>Type</th>
+                <th translate>Name</th>
+                <th translate>Feedback count</th>
+                <th translate>Active survey</th>
+                <!-- <th translate>Scheduled surveys</th> -->
+                <th></th>
+              </thead>
+              <tbody>
+                <tr ng-repeat="d in channelManagement.groupDevices">
+                  <td>{{channelManagement.channelName(d.type)}}</td>
+                  <td><a ui-sref="channelEdit({id: d._id})">{{d.name}}</a></td>
+                  <td>{{d.feedback_count}}</td>
+                  <td>{{d.activeSurveyName}}</td>
+                <!--  <td>? get schedulations</td> -->
+                  <td><a ng-if="!channelManagement.isAllChannelsGroup" href class="text-gray-dark hover-red" ng-click="channelManagement.deleteChannelFromChannelGroup(d._id)"><i class="material-icons">delete</i></a></td>
+                </tr>
+
+              </tbody>
+            </table>
+            <br>
+            <a ng-if="!channelManagement.isAllChannelsGroup" class="waves-effect waves-light btn btn-s" modal href="#add-channel-to-group"><i class="material-icons left">list</i>
+              {{ 'Add channels to group' | translate }}
+            </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<add-channel channel-groups="channelManagement.channelGroups"></add-channel>
+<add-channel-to-group channel-group="channelManagement.channelGroup" channels="channelManagement.channelsNotInGroup"></add-channel-to-group>
+
+<div id="edit-channel-group" class="modal">
+    <div class="modal-content">
+      <div input-field>
+        <input type="text" ng-model="channelManagement.editingGroup.name">
+        <label translate>Channel group name</label>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <button class="modal-action modal-close waves-effect btn-flat" ng-click="channelManagement.saveEditingGroup()" translate>Save</button>
+      <button class="modal-action modal-close waves-effect btn-flat" translate>Cancel</button>
+      <button class="modal-action modal-close waves-effect btn-flat" ng-click="channelManagement.deleteEditingGroup()" style="background: #e53935; color: white;" translate>Delete Group</button>
+
+    </div>
+  </div>

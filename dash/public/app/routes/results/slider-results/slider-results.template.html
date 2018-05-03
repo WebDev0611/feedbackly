@@ -1,0 +1,10 @@
+<loader loading="sliderResults.question.charts === undefined"></loader>
+
+<div ng-if="sliderResults.question.charts !== undefined">
+  <result-stats organization="sliderResults.question.totals.organization" channels="sliderResults.question.totals.channels">
+  </result-stats>
+
+  <result-legend unit="sliderResults.unit" color-mapper="sliderResults.colorMap" question="sliderResults.question" totals="sliderResults.totals"></result-legend>
+
+  <highcharts-chart highlighted-days="['Sunday']" data="sliderResults.activeChart"></highcharts-chart>
+</div>

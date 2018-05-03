@@ -1,0 +1,1 @@
+This folder contains the SSL certs in production. In dev it should be empty except for this file.

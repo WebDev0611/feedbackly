@@ -1,0 +1,10 @@
+.image-uploader {
+  &__current-image {
+    position: relative;
+
+    .btn-floating {
+      position: absolute;
+      top: 0px;
+    }
+  }
+}

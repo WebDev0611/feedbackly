@@ -1,0 +1,161 @@
+version: '3'
+networks:
+  shared:
+    driver: bridge
+services:
+  redis:
+    image: redis:4
+    networks:
+      - shared
+    ports:
+      - "6379:6379"
+  mongo:
+    image: mongo:latest
+    volumes:
+      - ~/data/db:/data/db
+    ports:
+      - "27017:27017"
+    networks:
+      - shared
+  api:
+    build: ./api
+    command: node_modules/.bin/nodemon server.js
+    volumes:
+      - ./api/app:/src/app
+      - ./api/lib:/src/lib
+      - ./api/views:/src/views
+      - ./api/server.js:/src/server.js
+    depends_on:
+      - redis
+    networks:
+      - shared
+    environment:
+      - DOCKER_ENV=local
+    env_file:
+      - ./.env/shared.${TEST:-dev}
+    ports:
+      - "5005:80"
+  dash:
+    build: ./dash
+    command: node_modules/.bin/nodemon server.js
+    volumes:
+      - ./dash/app:/src/app
+      - ./dash/app-modules:/scr/app-modules
+      - ./dash/public:/src/public
+      - ./dash/views:/src/views
+      - ./dash/config:/src/config
+      - ./dash/v-app:/src/v-app
+      - ./dash/server.js:/src/server.js
+    depends_on:
+      - mongo
+      - redis
+    networks:
+      - shared
+    environment:
+      - DOCKER_ENV=local
+    env_file:
+      - ./.env/shared.${TEST:-dev}
+    ports:
+      - "5000:80"
+  client:
+    build: ./client
+    command: node_modules/.bin/nodemon server.js
+    volumes:
+      - ./client/api:/src/api
+      - ./client/app-modules:/src/app-modules
+      - ./client/assets:/src/assets
+      - ./client/dist:/src/dist
+      - ./client/public:/src/public
+      - ./client/react-client:/src/react-client
+      - ./client/views:/src/views
+      - ./client/plugin-v2:/src/plugin-v2
+      - ./client/config:/src/config
+      - ./client/lib:/src/lib
+      - ./client/client:/src/client
+    depends_on:
+      - mongo
+    networks:
+      - shared
+    env_file:
+      - ./.env/shared.${TEST:-dev}
+    ports:
+      - "4000:80"
+  barcode:
+    build: ./services/barcode
+    networks:
+      - shared
+    env_file:
+      - ./.env/shared.${TEST:-dev}
+    ports:
+      - "4001:80"
+  notification-handler:
+    build: ./services/notification-handler
+    command: node_modules/.bin/nodemon server.js
+    depends_on:
+      - mongo
+      - redis
+    networks:
+      - shared
+    environment:
+      - DOCKER_ENV=local
+    volumes:
+      - ./services/notification-handler/app:/src/app
+    env_file:
+      - ./.env/shared.${TEST:-dev}
+  upsell-handler:
+    build: ./services/upsell-handler
+    command: node server.js
+    depends_on:
+      - mongo
+      - redis
+    networks:
+      - shared
+    environment:
+      - DOCKER_ENV=local
+    volumes:
+      - ./services/upsell-handler/app:/src/app
+    env_file:
+      - ./.env/shared.${TEST:-dev}
+  pdfservice:
+    build: ./services/pdfservice
+    networks:
+      - shared
+    environment:
+      - DOCKER_ENV=local
+    env_file:
+      - ./.env/shared.${TEST:-dev}
+  nginx:
+    build:
+      context: ./nginx
+      args:
+        configfile: development
+    networks:
+      - shared
+    depends_on:
+      - dash
+      - client
+      - api
+      - barcode
+    ports:
+      - "3000:80"
+    environment:
+      - DOCKER_ENV=local
+  tinylinkproxy:
+    build: ./services/tinylinkproxy
+    command: node_modules/.bin/nodemon server.js
+    volumes:
+      - ./services/tinylinkproxy/app:/src/app
+    depends_on:
+      - mongo
+    networks:
+      - shared
+    environment:
+      - DOCKER_ENV=local
+    env_file:
+      - ./.env/shared.${TEST:-dev}
+  healthchecks:
+    build: ./healthchecks
+    volumes:
+      - ./healthchecks:/src
+    networks:
+      - shared

@@ -1,0 +1,11 @@
+<div class="image-content">
+  <div class="image-container cursor-pointer" ng-repeat="image in imagePreview.getNotHidden()" ng-style="::imagePreview.imageStyle" ng-class="::{ 'single-row': imagePreview.notHiddenCount() + 1 < 4 }">
+    <div class="image-display" ng-style="{ 'background-image': 'url({{::image.data.url}})' }" size-equalizer>
+      <img ng-src="{{::image.data.url}}">
+
+      <div class="image-display-label">
+        {{::image.data.label}}
+      </div>
+    </div>
+  </div>
+</div>

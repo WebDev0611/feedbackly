@@ -1,0 +1,76 @@
+
+.scale-in-start{
+  @include transform(scale(0) translateZ(0));
+}
+.scale-in{
+  @include transition-timing-function($ease-out-cubic);
+  @include transition-property(transform);
+  @include transition-duration(250ms);
+  @include transform(scale(1) translateZ(0));
+}
+
+.press{
+  @include transition-property(transform);
+  @include transition-duration(50ms);
+  @include transform(scale(1.2) translateZ(0));
+  z-index: 100;
+}
+
+$ipad-radius: 1500px;
+$mobile-radius: 1000px;
+
+body{
+  @include transition(background-color 400ms ease-in);
+  &.mobile{
+    @include transition-duration(200ms)
+  }
+}
+
+body.no-bg-image{
+  background-image: none;
+}
+
+.fly-in{
+  @include transition-property(transform)
+  @include transition-duration(350ms)
+  @include transform( translateX(0%) translateZ(0) !important)
+  opacity: 1;
+}
+
+.fly-out{
+  @include transition-property(transform, opacity)
+  @include transition-duration(350ms)
+  @include transform( translateX(-100%) translateZ(0) !important)
+  opacity: 0;
+}
+
+.circle-animation-container-new{
+  position: fixed;
+  border-radius: 100%;
+  @include transform(scale(0.2));
+  opacity: 1;
+  @include transition-property(transform, opacity)
+  @include transition-duration(350ms)
+  &.transparent{
+    opacity: 0;
+  }
+}
+
+.ipad .circle-animation-container-new, .web .circle-animation-container-new{
+  width: $ipad-radius;
+  height: $ipad-radius;
+  width: 150vw;
+  height: 150vw;
+}
+
+.mobile .circle-animation-container-new{
+  width: $mobile-radius;
+  height: $mobile-radius;
+  width: 200vw;
+  height: 200vw;
+  @include transition-duration(200ms)
+}
+
+.scale{
+  @include transform(scale(1));
+}

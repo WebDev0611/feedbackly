@@ -1,0 +1,19 @@
+<div ng-repeat="plan in planSelector.plans">
+  <div class="section clearfix">
+    <h5>{{::plan.title}}</h5>
+
+    <ul>
+      <li ng-repeat="prop in ::plan.props">{{::prop}}</li>
+    </ul>
+
+    <div class="teal-text" ng-if="plan.price">
+      <strong class="teal-text">{{::plan.price}}€</strong><small class="grey-text">/month</small>
+    </div>
+
+    <div class="teal-text" ng-if="!plan.price">Free</div>
+
+    <button class="btn waves-effect waves-light right" ng-disabled="plan.disabled" ng-click="planSelector.choosePlan(plan)">{{plan.disabled ? 'Chosen' : 'Choose'}}</button>
+  </div>
+
+  <div class="divider" ng-if="$index !== planSelector.plans.length - 1"></div>
+</div>

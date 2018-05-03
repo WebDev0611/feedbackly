@@ -1,0 +1,51 @@
+.image-question-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  @for $i from 1 through 6 {
+    &.#{images}-#{$i} {
+      .image-wrapper{
+        width: 30em/$i;
+        max-width: 320px;
+
+        @include breakpointmin($tablet-l){
+          width: 50em/$i;
+        }
+
+      }
+    }
+  }
+  
+  .image-wrapper {
+    display: inline-block;
+    margin: 0 auto;
+
+      
+    
+      @include breakpointmin($tablet-l){
+        min-width: 135px;
+        min-height: 135px;
+      }
+    
+
+   
+    width: 5em;
+
+
+
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 3px;
+      opacity: 0;
+    }
+
+    .image-label {
+      height: 40px;
+      text-transform: uppercase;
+
+      &:empty {
+        display: none;
+      }
+    }
+  }
+}

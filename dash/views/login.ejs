@@ -1,0 +1,53 @@
+<!doctype html>
+<html class="">
+	<head>
+		<title>Feedbackly | Login</title>
+
+		<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+
+		<link rel="stylesheet" type="text/css" href="/materialize/css/materialize.css"/>
+    <link rel="stylesheet" type="text/css" href="/flag-icon-css/css/flag-icon.min.css"/>
+		<link rel="stylesheet" type="text/css" href="/logo-icons/style.css"/>
+		<link rel="stylesheet" href="/dist/sign-up.min.css">
+
+		<script type="text/javascript" src="https://js.stripe.com/v2/"></script>
+	</head>
+	<body>
+
+		<div id="browser-support-warning" class="card-panel yellow center-align">
+			<span class="white-text">
+				<img src="/images/warning_icon_white.png" style="vertical-align: middle; margin-right: 5px;"> Please use <a href="https://www.mozilla.org/fi/firefox/new/" target="_blank" class="white-text underline bold">Mozilla Firefox</a> or <a href="https://www.google.com/chrome/browser/desktop/index.html" target="_blank" class="white-text underline bold">Google Chrome</a> internet browser. We may not support your current browser.
+			</span>
+		</div>
+
+		<div id="main-wrapper">
+			<div ui-view></div>
+		</div>
+
+		<script>
+			window.envConfig = {
+				ENV: '<%= env %>',
+				STRIPE_PUBLIC_KEY: '<%= stripePublicKey %>'
+			};
+
+			window.EU_COUNTRY_CODES = <%- JSON.stringify(euCountyCodes) %>;
+		</script>
+
+		<script src="/dist/sign-up.min.js"></script>
+
+		<script>
+			$(function() {
+				var noBrowserSupport = bowser.msie || bowser.msedge;
+
+				if(noBrowserSupport) {
+					$('#browser-support-warning').show();
+				}
+			});
+		</script>
+
+		<script type="text/javascript">
+			window.heap=window.heap||[],heap.load=function(e,t){window.heap.appid=e,window.heap.config=t=t||{};var r=t.forceSSL||"https:"===document.location.protocol,a=document.createElement("script");a.type="text/javascript",a.async=!0,a.src=(r?"https:":"http:")+"//cdn.heapanalytics.com/js/heap-"+e+".js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(a,n);for(var o=function(e){return function(){heap.push([e].concat(Array.prototype.slice.call(arguments,0)))}},p=["addEventProperties","addUserProperties","clearEventProperties","identify","removeEventProperty","setEventProperties","track","unsetEventProperty"],c=0;c<p.length;c++)heap[p[c]]=o(p[c])};
+				heap.load("3112469389");
+		</script>
+	</body>
+</html>

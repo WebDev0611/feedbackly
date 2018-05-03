@@ -1,0 +1,35 @@
+<p class="grey-text">
+  (<%= questionData.question.dateFrom %> - <%= questionData.question.dateTo %>)
+</p>
+
+<% include stats %>
+
+<% questionType = questionData.question.question_type; %>
+
+<% if(questionType === 'Button') { %>
+  <% include question-types/button %>
+<% } %>
+
+<% if(questionType === 'Contact') { %>
+  <% include question-types/contact %>
+<% } %>
+
+<% if(questionType === 'Image') { %>
+  <% include question-types/image %>
+<% } %>
+
+<% if(questionType === 'NPS') { %>
+  <% include question-types/nps %>
+<% } %>
+
+<% if(questionType === 'Slider') { %>
+  <% include question-types/slider %>
+<% } %>
+
+<% if(questionType === 'Text') { %>
+  <% include question-types/text %>
+<% } %>
+
+<% if(questionType === 'Word') { %>
+  <% include question-types/word %>
+<% } %>

@@ -1,0 +1,338 @@
+@import "variables";
+
+@import "bourbon/bourbon";
+
+@import "../questions/button/style.scss";
+@import "../questions/contact/style.scss";
+@import "../questions/image/style.scss";
+@import "../questions/slider/style.scss";
+@import "../questions/nps/style.scss";
+@import "../questions/text/style.scss";
+@import "../questions/word/style.scss";
+
+@import url(https://fonts.googleapis.com/css?family=Merriweather:700italic);
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+##{$class-prefix}-css-check {
+  z-index: 99;
+  position: absolute;
+  left: 0px;
+  top: -1px;
+  width: 0px;
+  height: 0px;
+  overflow: none;
+}
+
+.#{$class-prefix} {
+  &-green-text {
+    color: $green;
+  }
+
+  &-turquoise-text {
+    color: $turquoise;
+  }
+
+  &-yellow-text {
+    color: $yellow;
+  }
+
+  &-orange-text {
+    color: $orange;
+  }
+
+  &-red-text {
+    color: $red;
+  }
+}
+
+.#{$class-prefix}-header {
+  padding: 10px;
+  border-radius: 3px 3px 0px 0px;
+  cursor: pointer;
+
+  img {
+    height: 20px;
+    width: auto;
+  }
+}
+
+.#{$class-prefix}-header-inverse {
+  background-color: $dark-grey;
+  display: none;
+
+  &:hover {
+    background-color: darken($dark-grey, 5%);
+  }
+
+  &:focus, &:active {
+    background-color: darken($dark-grey, 10%);
+  }
+
+  .#{$class-prefix}-remove {
+    background-color: darken($dark-grey, 10%);
+    border: 0px none;
+    color: white;
+    font-size: 12px;
+    padding: 0px;
+    border-radius: 50%;
+    vertical-align: middle;
+    cursor: pointer;
+    float: right;
+    width: 20px;
+    line-height: 20px;
+
+    &:hover {
+      background-color: darken($dark-grey, 15%);
+    }
+  }
+}
+
+.#{$class-prefix}-header-light {
+  display: block;
+}
+
+.#{$class-prefix}-question-title, .#{$class-prefix}-end-title {
+  color: $turquoise;
+  font-size: 20px;
+  font-family: 'Merriweather', serif;
+  margin-bottom: 15px;
+  margin-top: 0px;
+}
+
+.#{$class-prefix}-fixed-container {
+  position: fixed;
+  width: $fixed-container-width;
+  border-radius: 3px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,.3);
+
+
+  .#{$class-prefix}-question-container {
+    height: $question-height;
+    overflow-y: auto;
+  }
+
+  .#{$class-prefix}-survey-end-container {
+    vertical-align: middle;
+
+    h1 {
+      margin: 0px;
+    }
+  }
+
+  &.#{$class-prefix}-hidden {
+    .#{$class-prefix}-header-light {
+      display: none;
+    }
+
+    .#{$class-prefix}-header-inverse {
+      display: block;
+    }
+
+    .#{$class-prefix}-content {
+      display: none;
+    }
+  }
+
+  @media(max-width: $fixed-container-width + 20px) {
+    width: 100%;
+    border-radius: 0px !important;
+
+    .#{$class-prefix}-header {
+      border-radius: 0px !important;
+    }
+
+    &.#{$class-prefix}-fixed-container-bottom-right, &.#{$class-prefix}-fixed-container-bottom-left {
+      bottom: 0px;
+      left: 0px;
+    }
+
+    &.#{$class-prefix}-fixed-container-top-right, &.#{$class-prefix}-fixed-container-top-left {
+      top: 0px;
+      left: 0px;
+    }
+  }
+}
+
+.#{$class-prefix}-fixed-container-bottom-right {
+  bottom: 5px;
+  right: 5px;
+}
+
+.#{$class-prefix}-fixed-container-bottom-left {
+  bottom: 5px;
+  left: 5px;
+}
+
+.#{$class-prefix}-fixed-container-top-right {
+  top: 5px;
+  right: 5px;
+}
+
+.#{$class-prefix}-fixed-container-top-left {
+  top: 5px;
+  left: 5px;
+}
+
+.#{$class-prefix}-question-subtitle-divider {
+  &:after {
+    content: "";
+    display: inline-block;
+    width: 90px;
+    height: 2px;
+    background-color: $grey;
+  }
+}
+
+.#{$class-prefix}-question-subtitle {
+  font-size: $font-size;
+  margin-top: 15px;
+  margin-bottom: 0px;
+  text-transform: uppercase;
+}
+
+.#{$class-prefix}-question-content {
+  @include clearfix;
+  margin-top: 15px;
+
+  form {
+    margin-bottom: 0px;
+  }
+}
+
+.#{$class-prefix}-checkbox {
+  margin: 0px auto 10px auto;
+  position: relative;
+  text-align: left;
+  padding-left: 25px;
+  max-width: $survey-item-max-width - 25px;
+
+  label {
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+
+  input[type="checkbox"] {
+    position: absolute;
+    left: 0px;
+    visibility: visible !important;
+  }
+
+  &:last-child {
+    margin-bottom: 0px;
+  }
+}
+
+.#{$class-prefix}-form-group {
+  margin: 0px auto 10px auto;
+  max-width: $survey-item-max-width;
+
+  label {
+    display: block;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+  }
+
+  &:last-child {
+    margin-bottom: 0px;
+  }
+
+  input {
+    width: 100%;
+  }
+}
+
+.#{$class-prefix}-submit-button {
+  background-color: $turquoise;
+  border: 0px none;
+  padding: 10px;
+  color: white;
+  text-transform: uppercase;
+  font-size: $font-size;
+  font-family: $font-family;
+  min-width: 180px;
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.#{$class-prefix}-container {
+  border: 1px solid $dark-grey;
+  z-index: 99;
+
+  .#{$class-prefix}-question-container {
+    @include radial-gradient(circle at 50% 50%, rgba(255,255,255,1), #edecf1);
+  }
+
+  &.#{$class-prefix}-freely-placed-container {
+    border: 0px none;
+    max-width: 500px;
+    margin: 0px auto;
+    padding: 20px;
+
+    .#{$class-prefix}-question-container {
+      padding: 25px;
+    }
+
+    .#{$class-prefix}-question-container {
+      max-height: 500px;
+      height: 100%;
+      overflow-y: auto;
+    }
+  }
+
+  .#{$class-prefix}-content {
+    display: block;
+    position: relative;
+
+    .#{$class-prefix}-survey-progress {
+      position: absolute;
+      bottom: 0px;
+      left: 0px;
+      height: 5px;
+      background-color: #C1C2CD;
+      width: 100%;
+
+      .#{$class-prefix}-survey-progress-indicator {
+        position: absolute;
+        left: 0px;
+        bottom: 0px;
+        height: 5px;
+        background-color: $turquoise;
+        transition: 0.5s;
+      }
+    }
+  }
+
+}
+
+.#{$class-prefix}-question-container {
+  text-align: center;
+  font-family: $font-family;
+  letter-spacing: 0.2em;
+  font-size: $font-size;
+  color: $font-color;
+  max-width: 600px;
+  margin: 0px auto;
+  padding: 10px 10px 15px 10px;
+  position: relative;
+
+  input[type="text"].#{$class-prefix}-text-field, textarea.#{$class-prefix}-text-field {
+    border: 1px solid $dark-grey !important;
+    padding: 10px !important;
+    height: auto !important;
+    margin: 0px !important;
+    font-size: $font-size !important;
+    font-family: $font-family !important;
+    text-transform: uppercase !important;
+    color: $font-color !important;
+    text-align: center !important;
+    background-color: white !important;
+
+    &:focus {
+      box-shadow: 0px 0px 5px $dark-grey !important;
+      outline: $dark-grey !important;
+    }
+  }
+}

@@ -1,0 +1,89 @@
+@mixin when-ipad-native {
+  body.ipad-native{
+    @content;
+  }
+}
+
+@mixin when-ipad() {
+  #root > div.ipad-decorator {
+    @content;
+  }
+}
+
+@mixin when-plugin() {
+  #root > div.plugin-decorator {
+    @content;
+  }
+}
+
+@mixin when-portrait() {
+  #root > div.portrait {
+    @content;
+  }
+}
+
+@mixin when-landscape() {
+  #root > div.landscape {
+    @content;
+  }
+}
+
+@mixin when-colored-view() {
+  #root > div.colored-view {
+    @content;
+  }
+}
+
+@mixin view-background($color) {
+  @include radial-gradient(circle at 50% 50%, lighten($color, 20%), $color);
+  background-color: $color;
+}
+
+@mixin breakpointmin($width) {
+  @media(min-width: $width) {
+    @content;
+  }
+}
+
+
+@mixin breakpoint($width) {
+  @media(max-width: $width) {
+    @content;
+  }
+}
+
+@mixin breakpoint-range($from, $to) {
+  @media(max-width: $from) and (min-width: $to) {
+    @content;
+  }
+}
+
+@mixin when-small-view(){
+  @media(max-width: $mobile-breakpoint) and (min-width: 0) {
+    @content;
+  }
+};
+
+@mixin when-medium-view(){
+  @media(max-width: $medium-breakpoint) and (min-width: $mobile-breakpoint) {
+    @content;
+  }
+};
+
+@mixin when-medium-or-small-view(){
+  @media(max-width: $medium-breakpoint) and (min-width: 0) {
+    @content;
+  }
+};
+
+
+@mixin linear-gradient($top, $bottom){
+    background: $top; /* Old browsers */
+    background: -moz-linear-gradient(left,  $top 0%, $bottom 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,$top), color-stop(100%,$bottom)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(left,  $top 0%,$bottom 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(left,  $top 0%,$bottom 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(left,  $top 0%,$bottom 100%); /* IE10+ */
+    background: linear-gradient(to right,  $top 0%,$bottom 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+}

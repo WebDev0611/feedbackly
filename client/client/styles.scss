@@ -1,0 +1,22 @@
+@import "theme/bourbon/bourbon";
+@import "theme/colors";
+@import "theme/variables";
+@import "theme/theme";
+@import "theme/animations";
+@import "theme/tutorial";
+@import "theme/flags/flag-icon";
+
+
+@import "components/keyboard/keyboard.styles";
+@import "components/language_menu/language_menu.styles";
+@import "components/privacy-policy/privacy-policy.styles";
+
+@import "components/question_types/button/button.styles";
+@import "components/question_types/contact/contact.styles";
+@import "components/question_types/image/image.styles";
+@import "components/question_types/nps/nps.styles";
+@import "components/question_types/slider/slider.styles";
+@import "components/question_types/text/text.styles";
+@import "components/question_types/word/word.styles";
+@import "components/question_types/end/end.styles";
+@import "components/timer-screen/timer-screen.styles";

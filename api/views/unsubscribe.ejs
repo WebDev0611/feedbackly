@@ -1,0 +1,70 @@
+<html>
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<style>
+.name {
+  min-width: 250px;
+}
+.val{
+  text-align: center;
+
+}
+body{
+  background-color: #f7f7f7;
+}
+table {
+   margin: auto;
+   border-spacing:5em;
+}
+.row {
+  text-align: center;
+}
+
+td, th {
+    padding-top: .3em;
+    padding-bottom: .3em;
+    padding-left: .5em;
+    padding-right: .5em;
+}
+svg {
+  height: 25px;
+  width: 35px;
+}
+
+</style>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <h1> Unsubscribe from
+<svg>
+<g xmlns="http://www.w3.org/2000/svg" fill="none" fill-rule="evenodd"><path d="M28.377 4H5.627c-.893 0-1.625-.72-1.625-1.6v-.8c0-.88.732-1.6 1.625-1.6h22.75c.894 0 1.625.72 1.625 1.6v.8c0 .88-.73 1.6-1.625 1.6z" fill="#2FBCA4"/><path d="M32.38 11H9.63c-.894 0-1.626-.72-1.626-1.6v-.8c0-.88.732-1.6 1.625-1.6h22.75c.894 0 1.625.72 1.625 1.6v.8c0 .88-.73 1.6-1.624 1.6" fill="#97D149"/><path d="M24.375 18H1.625C.731 18 0 17.28 0 16.4v-.8c0-.88.731-1.6 1.625-1.6h22.75c.894 0 1.625.72 1.625 1.6v.8c0 .88-.731 1.6-1.625 1.6" fill="#FFDA6C"/><path d="M28.377 25H5.627c-.893 0-1.625-.72-1.625-1.6v-.8c0-.88.732-1.6 1.625-1.6h22.75c.894 0 1.625.72 1.625 1.6v.8c0 .88-.73 1.6-1.625 1.6" fill="#FE767C"/></g>
+</svg>
+         Feedbackly customer mailing lists</h1>
+  <form  method="POST">
+    <table>
+      <tr>
+        <td class='name'><b>Allow messages from Feedbackly</b></td>
+        <td class='val'><input type='checkbox' name='all' <%= globalUnsubscribe ? '' : 'checked' %> /></td>
+    </tr>
+  </table>
+  <hr/>
+
+  <table>
+    <tr><th>Organization</th><th>Allow messaging</th></tr>
+    <% for(var o of orgData) { %>
+      <tr>
+        <td class='name'>  <%= o.name %> </td>
+        <td class='val'>  <input type='checkbox' id='<%= o.id %>' name='<%= o.id %>' <%= o.unsubscribed ? '' : 'checked' %> </td>
+      </tr>
+    <% } %>
+    </table>
+    <button type="submit" class="btn btn-default">Update subscribtions</button>
+  </form>
+</div>
+</div>
+</div>
+</body>
+</html>

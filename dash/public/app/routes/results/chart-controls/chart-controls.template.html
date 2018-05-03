@@ -1,0 +1,27 @@
+<div class="clearfix result-chart-control section print-view-hidden">
+
+  <div class="right" ng-if="!chartControls.chartType || chartControls.chartType === 'bar'">
+    <div class="chart-control-label" translate>Unit</div>
+    <select material-select ng-model="chartControls.unit">
+        <option value="regular">{{ 'Absolute (units)' | translate }}</option>
+        <option value="normalized">{{ 'Relative (%)' | translate }}</option>
+    </select>
+  </div>
+
+  <div class="right">
+    <div class="chart-control-label" translate>Grouping</div>
+    <select class="right" material-select ng-model="chartControls.accuracy">
+        <option value="daily">{{ 'Date' | translate }}</option>
+        <option value="weekly">{{ 'Day of the week' | translate }}</option>
+        <option value="hourly">{{ 'Hour' | translate }}</option>
+        <option value="channelGroup">{{ 'Channel' | translate }}</option>
+    </select>
+  </div>
+  <div class="right" ng-if="chartControls.chartType">
+    <div class="chart-control-label" translate>Chart type</div>
+    <select class="right" material-select ng-model="chartControls.chartType">
+      <option value="nps">NPS</option>
+      <option value="bar">{{ 'Bar' | translate }}</option>
+    </select>
+  </div>
+</div>

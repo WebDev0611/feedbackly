@@ -1,0 +1,5 @@
+<div class="card-panel red" ng-if="noPaymentSourceError.show === true">
+    <span class="white-text">
+      {{ 'Billing information is required before proceeding' | translate }}. <a ui-sref="organization.billing" class="white-text underline" ng-if="noPaymentSourceError.showBillingLink" translate>Fill in your billing information</a>
+    </span>
+</div>

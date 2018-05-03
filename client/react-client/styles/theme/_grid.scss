@@ -1,0 +1,14 @@
+.row {
+  @include clearfix;
+}
+
+.col {
+  float: left;
+  box-sizing: border-box;
+
+  @for $i from 1 through 12 {
+    &.#{col}-#{$i} {
+      width: $i/12 * 100%
+    }
+  }
+}

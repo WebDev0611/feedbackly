@@ -1,0 +1,13 @@
+<% include header %>
+
+<% if(question_type == 'Image' || question_type == 'Slider'){ %>
+    <% include 2_columns %>
+<% } %>
+
+
+
+<% if(question_type == 'Word'){ %>
+  <% include word/word %>
+<% } %>
+
+<% include footer %>

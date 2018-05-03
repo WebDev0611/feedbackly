@@ -1,0 +1,329 @@
+<div class="row no-margin" id="summary-header">
+  <div class="col s12 m6 l2">
+    <div class="card summary-card" ng-class="!summary.loading && summary.satisfactionColor(summary.dailyAverage.average.now)">
+      <div class="card-content">
+        <hint hint-id="summary-top-row" align-horizontal="right">
+          {{ 'This top row displays the key figures of the feedback channels you have rights to. ' | translate }}
+        </hint>
+
+        <div class="card-title" ng-if="!summary.loading && summary.dailyAverage !== undefined">
+          <span counter value="summary.dailyAverage.average.now" humanize="true"></span>%
+
+          <small tooltipped data-tooltip="{{'Change from previous corresponding timespan' | translate}}">
+            <i class="material-icons vertical-align-middle"
+            >{{summary.arrow(summary.dailyAverage.average.now, summary.dailyAverage.average.before)}}</i>
+            {{summary.dailyAverage.average.now - summary.dailyAverage.average.before}}%
+          </small>
+        </div>
+
+        <loader loading="summary.loading"></loader>
+
+        <span>
+          {{ "Average of your responses" | translate }}
+          <i class="material-icons help-icon" tooltipped data-tooltip="{{ 'The calculated average of quantitative feedback that has been collected in the chosen timespan in the feedback channels you have rights to.' | translate }}">help_outline</i>
+        </span>
+      </div>
+
+      <i class="background-icon material-icons">{{summary.satisfactionIcon(summary.dailyAverage.average.now)}}</i>
+    </div>
+  </div>
+
+  <div class="col s12 m6 l2">
+    <div class="card summary-card" ng-class="!summary.loading && summary.satisfactionColor(summary.organizationAverage.now)">
+      <div class="card-content">
+        <div class="card-title" ng-if="!summary.loading && summary.organizationAverage !== undefined">
+          <span counter value="summary.organizationAverage.now" humanize="true"></span>%
+
+          <small tooltipped data-tooltip="{{'Change from previous corresponding timespan' | translate}}">
+            <i class="material-icons vertical-align-middle">{{summary.arrow(summary.organizationAverage.now, summary.organizationAverage.before)}}</i>
+            {{summary.organizationAverage.now - summary.organizationAverage.before}}%
+          </small>
+        </div>
+
+        <loader loading="summary.loading"></loader>
+
+        <span>
+          {{ 'Average of responses in the whole organization' | translate }}
+          <i class="material-icons help-icon" tooltipped data-tooltip="{{ 'The average of all responses in the organization in the chosen timespan' | translate }}">help_outline</i>
+        </span>
+
+        <i class="background-icon material-icons">{{summary.satisfactionIcon(summary.organizationAverage.now)}}</i>
+      </div>
+    </div>
+  </div>
+
+  <div class="col s12 m6 l2">
+    <div class="card summary-card">
+      <div class="card-content">
+        <div class="card-title" ng-if="!summary.loading && summary.feedbackAmount !== undefined">
+          <span counter value="summary.feedbackAmount.totalFeedbacks.now" humanize="true"></span>
+
+          <small tooltipped data-tooltip="{{'Change from previous corresponding timespan' | translate}}" ng-class="summary.color(summary.feedbackAmount.totalFeedbacks.now, summary.feedbackAmount.totalFeedbacks.before)">
+            <i class="material-icons vertical-align-middle">{{summary.arrow(summary.feedbackAmount.totalFeedbacks.now, summary.feedbackAmount.totalFeedbacks.before)}}</i>
+            {{summary.feedbackAmount.totalFeedbacks.now - summary.feedbackAmount.totalFeedbacks.before | humanize}}
+          </small>
+        </div>
+
+        <loader loading="summary.loading"></loader>
+
+        <span>
+          {{ 'Number of respondents in the selected timespan' | translate }}
+          <i class="material-icons help-icon" tooltipped
+          data-tooltip="{{ 'The number of respondents in the selected timespan in the feedback channels you have rights to.' | translate }}">help_outline</i>
+        </span>
+
+        <i class="background-icon material-icons">record_voice_over</i>
+      </div>
+    </div>
+  </div>
+
+  <div class="col s12 m6 l2">
+    <div class="card summary-card">
+      <div class="card-content">
+        <div class="card-title" ng-if="!summary.loading && summary.fbeventAmount !== undefined">
+          <span counter value="summary.fbeventAmount.now" humanize="true"></span>
+
+          <small tooltipped data-tooltip="{{'Change from previous corresponding timespan' | translate}}" ng-class="summary.color(summary.fbeventAmount.now, summary.fbeventAmount.before)">
+            <i class="material-icons vertical-align-middle">{{summary.arrow(summary.fbeventAmount.now, summary.fbeventAmount.before)}}</i>
+            {{summary.fbeventAmount.now - summary.fbeventAmount.before | humanize}}
+          </small>
+        </div>
+
+        <loader loading="summary.loading"></loader>
+
+        <span>
+          {{'Responses to individual questions' | translate }}
+          <i class="material-icons help-icon" tooltipped
+          data-tooltip="{{ 'Responses to individual questions in the selected timespan in the feedback channels you have rights to.' | translate }}">help_outline</i>
+        </span>
+
+        <i class="background-icon material-icons">feedback</i>
+      </div>
+    </div>
+  </div>
+
+  <div class="col s12 m6 l2">
+    <div class="card summary-card">
+      <div class="card-content">
+        <div class="card-title" ng-if="!summary.loading && summary.nps !== undefined">
+          <span counter value="summary.nps.now" humanize="true"></span>
+
+          <small tooltipped data-tooltip="{{'Change from previous corresponding timespan' | translate}}" ng-class="summary.color(summary.nps.now, summary.nps.before)">
+            <i class="material-icons vertical-align-middle">{{summary.arrow(summary.nps.now, summary.nps.before)}}</i>
+            {{summary.nps.now - summary.nps.before}}
+          </small>
+        </div>
+
+        <loader loading="summary.loading"></loader>
+
+        <span>
+          {{'NPS® in the selected timespan' | translate }}
+          <i class="material-icons help-icon" tooltipped
+          data-tooltip="{{ 'Net Promoter Score (NPS®) in the selected timespan in the feedback channels you have rights to.' | translate }}">help_outline</i>
+        </span>
+
+        <i class="background-icon material-icons">new_releases</i>
+      </div>
+    </div>
+  </div>
+
+  <div class="col s12 m6 l2">
+    <div class="card summary-card">
+      <div class="card-content">
+        <div class="card-title" ng-if="!summary.loading && summary.allFeedbackAmount !== undefined">
+          <span counter value="summary.allFeedbackAmount" humanize="true"></span>
+
+        </div>
+
+        <loader loading="summary.loading"></loader>
+
+        <span>
+          {{'All respondents in the organization to date' | translate }}
+          <i class="material-icons help-icon" tooltipped
+          data-tooltip="{{ 'The number of respondents in all feedback channels of the organization since the beginning of use' | translate }}">help_outline</i>
+        </span>
+
+        <i class="background-icon material-icons">inbox</i>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="row no-margin">
+  <div class="col s12 m12 l6">
+    <div class="card">
+      <div class="card-content">
+
+        <div class="card-title" tooltipped data-tooltip="{{ 'The number of respondents in feedback channels you have rights to' | translate }}">{{'Feedback amount' | translate}} {{'(qty)' | translate}}</div>
+
+        <loader loading="summary.loading"></loader>
+
+        <highcharts-chart highlighted-days="['Sunday']" data="summary.feedbackAmountChart" ng-if="!summary.loading && summary.feedbackAmountChart !== undefined"></highcharts-chart>
+      </div>
+    </div>
+  </div>
+
+  <div class="col s12 m12 l6">
+    <div class="card">
+      <div class="card-content">
+        <div class="card-title" tooltipped data-tooltip="{{'The average of quantitative responses in the selected timespan in feedback channels you have rights to' | translate}}"
+          translate>Performance meter</div>
+
+        <loader loading="summary.loading"></loader>
+
+        <highcharts-chart highlighted-days="['Sunday']" data="summary.feedbackAverageChart" ng-if="!summary.loading && summary.feedbackAverageChart !== undefined"></highcharts-chart>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col s12 m12 l6">
+    <div class="card" id="summary-spotlights">
+      <div class="card-content">
+        <hint hint-id="summary-highs-and-lows" align-horizontal="right">
+          {{ 'Here you can find your best performances as well as the worst ones.' | translate }}
+        </hint>
+        <div class="card-title" translate>Highs and lows</div>
+
+        <div class="row section">
+          <div class="col s12 m4 l4 summary-highlight">
+            <h5 class="center-align grey-text" translate>Best day</h5>
+            <p class="center-align green-text">{{summary.bestDay.date}}</p>
+            <p class="center-align summary-highlight-value green-text">{{summary.bestDay.value}}%</p>
+          </div>
+
+          <div class="col s12 m4 l4 summary-highlight">
+            <h5 class="center-align grey-text" translate>Busiest day</h5>
+            <p class="center-align green-text">{{summary.busiestDay.date}}</p>
+            <p class="center-align summary-highlight-value green-text">{{summary.busiestDay.value | humanize}}</p>
+          </div>
+
+          <div class="col s12 m4 l4 summary-highlight">
+            <h5 class="center-align grey-text" translate>Best hour</h5>
+            <p class="center-align green-text">{{summary.bestHour.hour}}</p>
+            <p class="center-align summary-highlight-value green-text">{{summary.bestHour.value}}%</p>
+          </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="row section">
+          <div class="col s12 m4 l4 summary-highlight">
+            <h5 class="center-align grey-text" translate>Worst day</h5>
+            <p class="center-align red-text">{{summary.worstDay.date}}</p>
+            <p class="center-align summary-highlight-value red-text">{{summary.worstDay.value}}%</p>
+          </div>
+
+          <div class="col s12 m4 l4 summary-highlight">
+            <h5 class="center-align grey-text" translate>Quietest day</h5>
+            <p class="center-align red-text">{{summary.quietestDay.date}}</p>
+            <p class="center-align summary-highlight-value red-text">{{summary.quietestDay.value | humanize}}</p>
+          </div>
+
+          <div class="col s12 m4 l4 summary-highlight">
+            <h5 class="center-align grey-text" translate>Worst hour</h5>
+            <p class="center-align red-text">{{summary.worstHour.hour}}</p>
+            <p class="center-align summary-highlight-value red-text">{{summary.worstHour.value}}%</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col s12 m12 l6">
+    <div class="card" id="summary-top-channels" ng-class="{ 'height-auto': !summary.loading && summary.bestChannelsDisplayLimit > 5 }">
+      <div class="card-content">
+        <hint hint-id="summary-ranking" align-horizontal="right">
+          {{ 'With this ranking table you can compare the performance of different feedback sources on an organizational level. This
+          is where store managers are competing for glory!' | translate }}
+        </hint>
+
+        <div class="card-title" translate>Ranking</div>
+
+        <loader loading="summary.loading"></loader>
+
+        <div ng-if="summary.bestChannels !== undefined">
+          <table class="striped">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th translate>Channel's name</th>
+                <th translate>Channel's average</th>
+                <th translate>Respondents</th>
+                <th translate>Answers to individual questions</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr ng-repeat="channel in summary.bestChannels.top | limitTo: summary.bestChannelsDisplayLimit">
+                <td>{{::($index + 1)}}</td>
+                <td>{{::channel.name}}</td>
+                <td>{{::channel.average}}%</td>
+                <td>{{::channel.count}}</td>
+                <td>{{::channel.fbevent_count}}</td>
+              </tr>
+            </tbody>
+          </table>
+
+
+          <div class="center-align section" ng-if="::(summary.bestChannels.top.length > 5)">
+            <button class="btn waves-effect waves-light" ng-click="summary.toggleBestChannelsDisplay()">
+              {{ summary.bestChannelsDisplayLimit === summary.bestChannels.top.length ? 'Show top 5' : 'Show all' | translate }}
+            </button>
+          </div>
+
+          <div ng-if="::(summary.bestChannels.top.length >= 4)">
+            <div class="divider"></div>
+
+            <div class="section row">
+              <div class="col s6 m6 l6 green-text center-align">
+                {{ 'Top quartile limit' | translate }}: {{summary.bestChannels.highQuartile.average}}%
+              </div>
+
+              <div class="col s6 m6 l6 red-text center-align">
+                {{ 'Bottom quartile limit' | translate }}: {{summary.bestChannels.lowQuartile.average}}%
+              </div>
+            </div>
+          </div>
+
+          <div class="center-align section">
+            {{ 'Channels with no feedback are omitted from the ranking.' | translate }}
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="btn-fixed-bottom-right">
+  <button class="btn-floating btn-large waves-effect waves-light btn-drp" dropdown data-activates="summary-date-range-dropdown"
+    data-constrainwidth="false">
+    <i class="material-icons">date_range</i>
+  </button>
+
+  <ul id="summary-date-range-dropdown" class="dropdown-content">
+    <li><a ng-click="summary.setDateInterval(7)">7 {{ 'days' | translate }}</a></li>
+    <li><a ng-click="summary.setDateInterval(14)">14 {{ 'days' | translate }}</a></li>
+    <li><a ng-click="summary.setDateInterval(30)">30 {{ 'days' | translate }}</a></li>
+    <li><a ng-click="summary.setDateIntervalToLastMonth()">{{ 'Last month' | translate }}</a></li>
+     <li id="reportrange"> <!-- CUSTOM RANGE -->
+      <a class="date-range">
+        <div class="pull-right" style="cursor: pointer; width: 100%">
+            <span></span> <b class="caret"></b>
+        </div>
+      </a>
+    </li> 
+  </ul>
+</div>
+
+<div id="no-feedback" ng-if="!summary.userHasFeedback && summary.tutorialFinished">
+  <h2 translate>No feedback to analyze at the moment.</h2>
+
+  <div>
+    <a ng-href="#/survey-list" class="btn btn-default" translate>Create a survey</a>
+  </div>
+</div>

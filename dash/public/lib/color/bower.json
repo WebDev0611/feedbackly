@@ -1,0 +1,15 @@
+{
+  "name": "color",
+  "main": "one-color-all.js",
+  "licence": "2-clause BSD",
+  "ignore": [
+    "demo",
+    "lib",
+    "slides",
+    "test",
+    ".gitignore",
+    ".gitmodules",
+    "LICENSE",
+    "package.json"
+  ]
+}

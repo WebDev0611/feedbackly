@@ -1,0 +1,1 @@
+{"options":{},"indexes":[{"v":2,"key":{"_id":1},"name":"_id_","ns":"feedbackly-cypress.smscontacts"},{"v":2,"unique":true,"key":{"device_id":1,"phone_number":1},"name":"device_id_1_phone_number_1","ns":"feedbackly-cypress.smscontacts","background":true}]}

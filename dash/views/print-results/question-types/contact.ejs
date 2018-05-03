@@ -1,0 +1,34 @@
+<table class="striped responsive-table">
+  <thead>
+    <tr>
+      <th><%= gt.gettext('Date') %></th>
+      <th><%= gt.gettext('Feedback channel') %></th>
+      <% questionData.chart.tableHeadings.forEach(function(heading) { %>
+        <th>
+          <%= heading %>
+        </th>
+      <% }) %>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% questionData.chart.table.forEach(function(feedback) { %>
+      <tr>
+        <td><%= feedback.createdAt %></td>
+        <td><%= feedback.channel %></td>
+        <% feedback.values.forEach(function(value) { %>
+          <td>
+            <% if(!value) { return } %>
+            <% if(value.toString() === 'true') { %>
+              <span class="green-text">&#10003;</span>
+            <% } else if(value.toString() !== 'false') { %>
+              <%= value %>
+            <% } %>
+
+
+          </td>
+        <% }) %>
+      </tr>
+    <% }) %>
+  </tbody>
+</table>

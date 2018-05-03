@@ -1,0 +1,297 @@
+<%
+var countries = [{"name": "Afghanistan", "code": "AF"},{"name": "Aland Islands", "code": "AX"},{"name": "Albania", "code": "AL"},{"name": "Algeria", "code": "DZ"},{"name": "American Samoa", "code": "AS"},{"name": "AndorrA", "code": "AD"},{"name": "Angola", "code": "AO"},{"name": "Anguilla", "code": "AI"},{"name": "Antarctica", "code": "AQ"},{"name": "Antigua and Barbuda", "code": "AG"},{"name": "Argentina", "code": "AR"},{"name": "Armenia", "code": "AM"},{"name": "Aruba", "code": "AW"},{"name": "Australia", "code": "AU"},{"name": "Austria", "code": "AT"},{"name": "Azerbaijan", "code": "AZ"},{"name": "Bahamas", "code": "BS"},{"name": "Bahrain", "code": "BH"},{"name": "Bangladesh", "code": "BD"},{"name": "Barbados", "code": "BB"},{"name": "Belarus", "code": "BY"},{"name": "Belgium", "code": "BE"},{"name": "Belize", "code": "BZ"},{"name": "Benin", "code": "BJ"},{"name": "Bermuda", "code": "BM"},{"name": "Bhutan", "code": "BT"},{"name": "Bolivia", "code": "BO"},{"name": "Bosnia and Herzegovina", "code": "BA"},{"name": "Botswana", "code": "BW"},{"name": "Bouvet Island", "code": "BV"},{"name": "Brazil", "code": "BR"},{"name": "British Indian Ocean Territory", "code": "IO"},{"name": "Brunei Darussalam", "code": "BN"},{"name": "Bulgaria", "code": "BG"},{"name": "Burkina Faso", "code": "BF"},{"name": "Burundi", "code": "BI"},{"name": "Cambodia", "code": "KH"},{"name": "Cameroon", "code": "CM"},{"name": "Canada", "code": "CA"},{"name": "Cape Verde", "code": "CV"},{"name": "Cayman Islands", "code": "KY"},{"name": "Central African Republic", "code": "CF"},{"name": "Chad", "code": "TD"},{"name": "Chile", "code": "CL"},{"name": "China", "code": "CN"},{"name": "Christmas Island", "code": "CX"},{"name": "Cocos (Keeling) Islands", "code": "CC"},{"name": "Colombia", "code": "CO"},{"name": "Comoros", "code": "KM"},{"name": "Congo", "code": "CG"},{"name": "Congo, The Democratic Republic of the", "code": "CD"},{"name": "Cook Islands", "code": "CK"},{"name": "Costa Rica", "code": "CR"},{"name": "Cote DIvoire", "code": "CI"},{"name": "Croatia", "code": "HR"},{"name": "Cuba", "code": "CU"},{"name": "Cyprus", "code": "CY"},{"name": "Czech Republic", "code": "CZ"},{"name": "Denmark", "code": "DK"},{"name": "Djibouti", "code": "DJ"},{"name": "Dominica", "code": "DM"},{"name": "Dominican Republic", "code": "DO"},{"name": "Ecuador", "code": "EC"},{"name": "Egypt", "code": "EG"},{"name": "El Salvador", "code": "SV"},{"name": "Equatorial Guinea", "code": "GQ"},{"name": "Eritrea", "code": "ER"},{"name": "Estonia", "code": "EE"},{"name": "Ethiopia", "code": "ET"},{"name": "Falkland Islands (Malvinas)", "code": "FK"},{"name": "Faroe Islands", "code": "FO"},{"name": "Fiji", "code": "FJ"},{"name": "Finland", "code": "FI"},{"name": "France", "code": "FR"},{"name": "French Guiana", "code": "GF"},{"name": "French Polynesia", "code": "PF"},{"name": "French Southern Territories", "code": "TF"},{"name": "Gabon", "code": "GA"},{"name": "Gambia", "code": "GM"},{"name": "Georgia", "code": "GE"},{"name": "Germany", "code": "DE"},{"name": "Ghana", "code": "GH"},{"name": "Gibraltar", "code": "GI"},{"name": "Greece", "code": "GR"},{"name": "Greenland", "code": "GL"},{"name": "Grenada", "code": "GD"},{"name": "Guadeloupe", "code": "GP"},{"name": "Guam", "code": "GU"},{"name": "Guatemala", "code": "GT"},{"name": "Guernsey", "code": "GG"},{"name": "Guinea", "code": "GN"},{"name": "Guinea-Bissau", "code": "GW"},{"name": "Guyana", "code": "GY"},{"name": "Haiti", "code": "HT"},{"name": "Heard Island and Mcdonald Islands", "code": "HM"},{"name": "Holy See (Vatican City State)", "code": "VA"},{"name": "Honduras", "code": "HN"},{"name": "Hong Kong", "code": "HK"},{"name": "Hungary", "code": "HU"},{"name": "Iceland", "code": "IS"},{"name": "India", "code": "IN"},{"name": "Indonesia", "code": "ID"},{"name": "Iran, Islamic Republic Of", "code": "IR"},{"name": "Iraq", "code": "IQ"},{"name": "Ireland", "code": "IE"},{"name": "Isle of Man", "code": "IM"},{"name": "Israel", "code": "IL"},{"name": "Italy", "code": "IT"},{"name": "Jamaica", "code": "JM"},{"name": "Japan", "code": "JP"},{"name": "Jersey", "code": "JE"},{"name": "Jordan", "code": "JO"},{"name": "Kazakhstan", "code": "KZ"},{"name": "Kenya", "code": "KE"},{"name": "Kiribati", "code": "KI"},{"name": "Korea, Democratic People's Republic of", "code": "KP"},{"name": "Korea, Republic of", "code": "KR"},{"name": "Kuwait", "code": "KW"},{"name": "Kyrgyzstan", "code": "KG"},{"name": "Lao People's Democratic Republic", "code": "LA"},{"name": "Latvia", "code": "LV"},{"name": "Lebanon", "code": "LB"},{"name": "Lesotho", "code": "LS"},{"name": "Liberia", "code": "LR"},{"name": "Libyan Arab Jamahiriya", "code": "LY"},{"name": "Liechtenstein", "code": "LI"},{"name": "Lithuania", "code": "LT"},{"name": "Luxembourg", "code": "LU"},{"name": "Macao", "code": "MO"},{"name": "Macedonia, The Former Yugoslav Republic of", "code": "MK"},{"name": "Madagascar", "code": "MG"},{"name": "Malawi", "code": "MW"},{"name": "Malaysia", "code": "MY"},{"name": "Maldives", "code": "MV"},{"name": "Mali", "code": "ML"},{"name": "Malta", "code": "MT"},{"name": "Marshall Islands", "code": "MH"},{"name": "Martinique", "code": "MQ"},{"name": "Mauritania", "code": "MR"},{"name": "Mauritius", "code": "MU"},{"name": "Mayotte", "code": "YT"},{"name": "Mexico", "code": "MX"},{"name": "Micronesia, Federated States of", "code": "FM"},{"name": "Moldova, Republic of", "code": "MD"},{"name": "Monaco", "code": "MC"},{"name": "Mongolia", "code": "MN"},{"name": "Montenegro", "code": "ME"},{"name": "Montserrat", "code": "MS"},{"name": "Morocco", "code": "MA"},{"name": "Mozambique", "code": "MZ"},{"name": "Myanmar", "code": "MM"},{"name": "Namibia", "code": "NA"},{"name": "Nauru", "code": "NR"},{"name": "Nepal", "code": "NP"},{"name": "Netherlands", "code": "NL"},{"name": "Netherlands Antilles", "code": "AN"},{"name": "New Caledonia", "code": "NC"},{"name": "New Zealand", "code": "NZ"},{"name": "Nicaragua", "code": "NI"},{"name": "Niger", "code": "NE"},{"name": "Nigeria", "code": "NG"},{"name": "Niue", "code": "NU"},{"name": "Norfolk Island", "code": "NF"},{"name": "Northern Mariana Islands", "code": "MP"},{"name": "Norway", "code": "NO"},{"name": "Oman", "code": "OM"},{"name": "Pakistan", "code": "PK"},{"name": "Palau", "code": "PW"},{"name": "Palestinian Territory, Occupied", "code": "PS"},{"name": "Panama", "code": "PA"},{"name": "Papua New Guinea", "code": "PG"},{"name": "Paraguay", "code": "PY"},{"name": "Peru", "code": "PE"},{"name": "Philippines", "code": "PH"},{"name": "Pitcairn", "code": "PN"},{"name": "Poland", "code": "PL"},{"name": "Portugal", "code": "PT"},{"name": "Puerto Rico", "code": "PR"},{"name": "Qatar", "code": "QA"},{"name": "Reunion", "code": "RE"},{"name": "Romania", "code": "RO"},{"name": "Russian Federation", "code": "RU"},{"name": "RWANDA", "code": "RW"},{"name": "Saint Helena", "code": "SH"},{"name": "Saint Kitts and Nevis", "code": "KN"},{"name": "Saint Lucia", "code": "LC"},{"name": "Saint Pierre and Miquelon", "code": "PM"},{"name": "Saint Vincent and the Grenadines", "code": "VC"},{"name": "Samoa", "code": "WS"},{"name": "San Marino", "code": "SM"},{"name": "Sao Tome and Principe", "code": "ST"},{"name": "Saudi Arabia", "code": "SA"},{"name": "Senegal", "code": "SN"},{"name": "Serbia", "code": "RS"},{"name": "Seychelles", "code": "SC"},{"name": "Sierra Leone", "code": "SL"},{"name": "Singapore", "code": "SG"},{"name": "Slovakia", "code": "SK"},{"name": "Slovenia", "code": "SI"},{"name": "Solomon Islands", "code": "SB"},{"name": "Somalia", "code": "SO"},{"name": "South Africa", "code": "ZA"},{"name": "South Georgia and the South Sandwich Islands", "code": "GS"},{"name": "Spain", "code": "ES"},{"name": "Sri Lanka", "code": "LK"},{"name": "Sudan", "code": "SD"},{"name": "Suriname", "code": "SR"},{"name": "Svalbard and Jan Mayen", "code": "SJ"},{"name": "Swaziland", "code": "SZ"},{"name": "Sweden", "code": "SE"},{"name": "Switzerland", "code": "CH"},{"name": "Syrian Arab Republic", "code": "SY"},{"name": "Taiwan, Province of China", "code": "TW"},{"name": "Tajikistan", "code": "TJ"},{"name": "Tanzania, United Republic of", "code": "TZ"},{"name": "Thailand", "code": "TH"},{"name": "Timor-Leste", "code": "TL"},{"name": "Togo", "code": "TG"},{"name": "Tokelau", "code": "TK"},{"name": "Tonga", "code": "TO"},{"name": "Trinidad and Tobago", "code": "TT"},{"name": "Tunisia", "code": "TN"},{"name": "Turkey", "code": "TR"},{"name": "Turkmenistan", "code": "TM"},{"name": "Turks and Caicos Islands", "code": "TC"},{"name": "Tuvalu", "code": "TV"},{"name": "Uganda", "code": "UG"},{"name": "Ukraine", "code": "UA"},{"name": "United Arab Emirates", "code": "AE"},{"name": "United Kingdom", "code": "GB"},{"name": "United States", "code": "US"},{"name": "United States Minor Outlying Islands", "code": "UM"},{"name": "Uruguay", "code": "UY"},{"name": "Uzbekistan", "code": "UZ"},{"name": "Vanuatu", "code": "VU"},{"name": "Venezuela", "code": "VE"},{"name": "Viet Nam", "code": "VN"},{"name": "Virgin Islands, British", "code": "VG"},{"name": "Virgin Islands, U.S.", "code": "VI"},{"name": "Wallis and Futuna", "code": "WF"},{"name": "Western Sahara", "code": "EH"},{"name": "Yemen", "code": "YE"},{"name": "Zambia", "code": "ZM"},{"name": "Zimbabwe", "code": "ZW"}];
+%>
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="/dist/sign-up-new.min.css" rel="stylesheet" />
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+  <script type="text/javascript" src="https://js.stripe.com/v2/"></script>
+  <script>
+    Stripe.setPublishableKey('<%= stripePublicKey %>');
+  </script>
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-33842611-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<meta id="viewport" name="viewport" content="initial-scale=1.0,user-scalable=0,minimum-scale=1.0,maximum-scale=1.0,width=device-width, user-scalable=no" />
+
+</head>
+<body>
+
+  <div class="row">
+
+  <div class="content">
+    <% if(email.length > 0){ %>
+      <h1>E-mail confirmed!</h1>
+    <% } else { %>
+      <h1>Sign up</h1>
+      <%  }%>
+  <p>Fill in the details to continue signing up.</p>
+  <p class="main-error"></p>
+
+  <% include pages/page1 %>
+  <% include pages/page2 %>
+  <% include pages/page3 %>
+  <% include pages/page4 %>
+
+</div>
+</div>
+
+<div id="spinner-loader">
+    <div class="spinner">
+      <div class="bounce1"></div>
+      <div class="bounce2"></div>
+      <div class="bounce3"></div>
+    </div>
+  </div>
+<div class="sign-up-success" style="display:none">
+  <div>
+    <h1>Sign up successful...</h1>
+    <a href="/">Sign in</a>
+  </div>
+</div>
+
+<script>
+  var token = '<%= token %>';
+  var chosenPlan = null, StripeToken = null;
+  var $form = $('#payment-form');
+  var ipad = window.location.href.indexOf("ipad") > -1 ? "?ipad=true" : ""
+
+  $form.submit(function(e){
+    e.preventDefault();
+    $("#spinner-loader").show();
+    $("button").attr("disabled", "disabled");
+
+    Stripe.card.createToken($form, function(status, response){
+      // Grab the form:
+        var $form = $('#payment-form');
+
+        if (response.error) { // Problem!
+
+         // Show the errors on the form:
+         $form.find('.payment-errors').text(response.error.message);
+         $form.find('.submit').prop('disabled', false); // Re-enable submission
+         $("button").attr("disabled", null);
+         ga("send", "event", "sign-up", "error", response.error.message)
+         $("#spinner-loader").hide();
+
+        } else { // Token was created!
+
+         // Get the token ID:
+        StripeToken = response.id;
+        post('finished')
+
+        }
+
+    });
+  })
+
+
+  function goToPage(index){
+    var newIndex = index;
+    if(ipad.length > 0 && newIndex === 2){
+      chosenPlan = "FREE_PLAN"
+      $("#spinner-loader").show();
+      return post('finished')
+    }
+
+    for(var i =0; i < newIndex; i++){
+      $(".page").eq(i).addClass("gone")
+    }
+    $(".page").eq(newIndex).addClass("display");
+
+    post()
+  }
+
+  $(document).on("click", ".choose-plan", function(e){
+    e.preventDefault();
+    var plan = $(this).attr("data-plan");
+    chosenPlan = plan;
+    if(plan === 'FREE_PLAN') $("#continue-without-billing").show();
+    var name = $("#displayname").val();
+    $("[data-stripe=name]").val(name);
+    goToPage(3)
+  })
+
+  $(document).on("click", "#continue-without-billing", function(e){
+    e.preventDefault();
+    $("#spinner-loader").show();
+    $(this).attr("disabled", "disabled");
+    post('finished')
+  })
+
+  function validateForm1(){
+    var email = $("#email").val();
+    var continueSU = 0;
+
+    if(!validateEmail(email)){
+      $("#not-valid-email").addClass("show");
+    } else {
+      continueSU++;
+      $("#not-valid-email").removeClass("show");
+    }
+
+    if(validatepwd()){
+      continueSU++;
+    }
+
+    if (continueSU == 2) goToPage(1)
+  }
+
+  function validatepwd(){
+    var pwd = $("#pwd").val();
+    var pwdconf = $("#pwdconf").val();
+    $("#password-weak, #passwords-must-match").removeClass("show");
+
+    if(pwd.length > 6 && pwd.match(/[A-Z]/) && pwd.match(/\d/)){
+      if(pwd === pwdconf){
+          return true;
+      } else {
+        $("#passwords-must-match").addClass("show");
+      }
+    } else {
+      $("#password-weak").addClass("show");
+    }
+
+  }
+
+  function validateEmail(email) {
+      var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+      return re.test(email);
+  }
+
+  function post(stage){
+    var payload = {
+      token: token,
+      email: $("#email").val(),
+      password: $("#pwd").val(),
+      details: {
+        displayname:  $("#displayname").val().length > 0 ? $("#displayname").val() : null,
+        organization_name: $("#organization-name").val().length > 0 ? $("#organization-name").val() : null,
+        phone: $("#phone").val().length > 0 ? $("#phone").val() : null,
+        use_case: $("#use_case").val() !== "Other" ? $("#use_case").val() : $("#use_case_specify").val(),
+        country: $("#country").val(),
+        vat_id: $("#vat_id").val(),
+        plan: chosenPlan,
+        stripeToken: StripeToken
+      },
+      stage: stage
+    }
+
+    $.post('/api/sign-up-form' + ipad, payload)
+    .done(function(a){
+      if(a.loginToken){
+        var token = a.loginToken;
+        $("#spinner-loader, .content").hide();
+        $(".sign-up-success").show();
+        ga("send", "event", "sign-up", "sign-up-success", "got-token")
+
+        if(a.ipadSettings){
+          var msg = { action: 'REGISTRATION_DONE', udid: a.ipadSettings.udid, passcode: a.ipadSettings.passcode }
+          IOSApi.sendMessage(msg);
+          console.log(msg)
+        } else {
+
+          $.post('/api/users/login', {token: token})
+          .done(function(res){
+            delete res.password;
+            ga("send", "event", "sign-up", "sign-up-success", "sign-in")
+
+            window.localStorage.setItem('ngStorage-user', JSON.stringify(res))
+            window.location.replace('/app')
+          })
+          .fail(function(){
+            ga("send", "event", "sign-up", "error", "failed login after token")
+            $(".main-error").html("Something went wrong. Try <a href='/'>logging in</a>.")
+            $("#spinner-loader").hide();
+            $("button").attr("disabled", null)
+          })
+        }
+      }
+    })
+    .fail(function(err){
+      console.log(err)
+      ga("send", "event", "sign-up", "error", "failed sign up post")
+      if(err.responseJSON.err === 'email exists') {
+        ga("send", "event", "sign-up", "error", "email exists")
+        $(".main-error").html("E-mail already exists. Try <a href='/'>logging in</a> or <a href='/#/reset-password'>password reset</a>.")
+      }
+      $("#spinner-loader").hide();
+      $("button").attr("disabled", null)
+    })
+  }
+
+
+  $("#use_case").on("change", function(){
+    if($("#use_case").val() === 'Other') $("#use_case_specify_container").show();
+    else $("#use_case_specify_container").hide();
+  })
+
+  $(document).ready(function(){
+    $("#spinner-loader").hide();
+    ga("send", "event", "sign-up", "Sign up started")
+  })
+
+  $("input, select").focus(function(){
+    var id = $(this).attr("id");
+    if(!id) id=$(this).attr("data-stripe")
+    ga("send", "event", "sign-up", "input", id)
+  })
+
+  $("button").on("click", function(){
+    var id = $(this).attr("ga");
+    ga("send", "event", "sign-up", "button", id)
+  })
+
+  $("#submit-page-2").on("click", function(e){
+    e.preventDefault();
+    var errors = false;
+    $(".error").text("")
+
+    $("#page-2-form input, #page-2-form select").each(function(){
+      var input = $(this);
+      var minLen = input.attr("min-length") || 0;
+      var length = input.val().length;
+      var val = input.val();
+      var not = input.attr("not");
+      var formfield = input.closest(".form-field");
+      if(input.attr("required") && length < 1) { formfield.find(".error").text("Field required"); errors = true }
+      if(length < minLen) { formfield.find(".error").text("Must be at least " + minLen + " characters") ; errors=true;}
+      if(not && not === val) {formfield.find(".error").text("Select a value"); errors=true; }
+    })
+
+    if(!errors){goToPage(2)}
+  })
+
+  var IOSApi = {
+    sendMessage: function(message) {
+      console.log(message);
+      try{
+        webkit.messageHandlers.callbackHandler.postMessage(JSON.stringify(message))
+      } catch(e){
+          try {
+            androidAppProxy.showMessage(JSON.stringify(message))
+          } catch(ee){
+            console.log(message)
+          }
+        }
+    }
+  }
+
+
+</script>
+
+<script type="text/javascript">
+  window.heap=window.heap||[],heap.load=function(e,t){window.heap.appid=e,window.heap.config=t=t||{};var r=t.forceSSL||"https:"===document.location.protocol,a=document.createElement("script");a.type="text/javascript",a.async=!0,a.src=(r?"https:":"http:")+"//cdn.heapanalytics.com/js/heap-"+e+".js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(a,n);for(var o=function(e){return function(){heap.push([e].concat(Array.prototype.slice.call(arguments,0)))}},p=["addEventProperties","addUserProperties","clearEventProperties","identify","removeEventProperty","setEventProperties","track","unsetEventProperty"],c=0;c<p.length;c++)heap[p[c]]=o(p[c])};
+    heap.load("3112469389");
+</script>
+</body>
+</html>

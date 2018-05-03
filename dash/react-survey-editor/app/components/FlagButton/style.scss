@@ -1,0 +1,73 @@
+.container{
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+
+}
+
+.spacer{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.container.round {
+    border-radius: 100%;
+}
+
+.container.small {
+    width: 26px;
+    height: 26px;
+}
+
+.container.extraSmall {
+  width: 12px;
+  height: 12px;
+  margin: -3px 6px 0px 0px !important;
+  cursor: auto !important;
+  opacity: 0.35;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+}
+
+.flag{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: none;
+    height: 100%;
+
+
+}
+$list: al am arabic bg by cn cz de dk ee es fi fo fr gb gr hr hu id il in ir is it jp ke kr kz lt lv mk mn my nl no pk pl pt ro ru se si sk th tr ua vn za;
+
+@for $i from 1 through length($list) {
+    $c: nth($list, $i);
+    .flag#{$c}{
+      left: (-$i)*100%+100%;
+    }
+}
+.badge {
+    position: absolute;
+    top: -4px;
+    right: -4px;
+    background: orangered;
+    border: 1px solid gray;
+    box-shadow: 2px;
+    width: 1.3em;
+    height: 1.3em;
+    text-align: center;
+    z-index: 999;
+    border-radius: 100%;
+    color: white;
+    font-weight: bold;
+    line-height: 1.3em;
+    font-size: 1em;
+    vertical-align: center;
+}
+.badgewrapper {
+    display: inline-block;
+    position: relative;
+    user-select: none;
+}

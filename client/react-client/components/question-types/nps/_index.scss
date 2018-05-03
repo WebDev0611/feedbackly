@@ -1,0 +1,30 @@
+.nps-question-wrapper {
+  margin: 0px auto;
+
+  .nps-button{
+    background-color: $gray-dark;
+    color: white;
+    border-radius: 100%;
+    display: inline-block;
+    cursor: pointer;
+    margin: 3px;
+    visibility: hidden;
+    opacity: 0;
+
+    width: 14%;
+    font-size: 1.5em;
+
+    @include breakpointmin($tablet-p){
+      font-size: 2.5em;
+    }
+    
+    @include breakpointmin($desktop){
+      font-size: 1.5em;
+      width: 7.5%;
+    }
+
+    &.fade-in {
+      visibility: visible;
+    }
+  }
+}

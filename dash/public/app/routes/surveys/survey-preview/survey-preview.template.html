@@ -1,0 +1,16 @@
+<div class="card">
+  <ul class="tabs">
+    <li class="tab col" ng-class="::(surveyPreview.tabClass)" ng-repeat="tab in ::surveyPreview.tabs">
+      <a tab-link data-target="{{tab.state}}" active-state="{{tab.state}}">{{tab.name | translate}}</a>
+    </li>
+  </ul>
+
+  <div class="card-content">
+    <div class="faded-ui-view">
+      <div ui-view></div>
+    </div>
+  </div>
+</div>
+
+<survey-progress-bar go-to-state="surveyPreview.goToState(state, activeChannels)" active-channels="surveyPreview.activeChannels"></survey-progress-bar>
+<tutorial-bubble ipad="true" offset="75" item="'ipad-signup-preview'" text="'Here\'s what your survey will look depending on which channels you want to publish to.' | translate"/>

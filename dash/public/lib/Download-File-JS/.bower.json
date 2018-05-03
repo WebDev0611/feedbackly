@@ -1,0 +1,14 @@
+{
+  "name": "Download-File-JS",
+  "homepage": "https://github.com/PixelsCommander/Download-File-JS",
+  "_release": "569efe8902",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "569efe8902f97363058b2173435ed2f22e30f038"
+  },
+  "_source": "https://github.com/PixelsCommander/Download-File-JS.git",
+  "_target": "*",
+  "_originalSource": "https://github.com/PixelsCommander/Download-File-JS.git",
+  "_direct": true
+}

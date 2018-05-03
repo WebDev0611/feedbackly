@@ -1,0 +1,73 @@
+#privacy-policy-modal {
+  display: none;
+  position: absolute;
+  top: 50%;
+  box-shadow: 0px 0px 25px rgba(0,0,0,.1);
+  left: 50%;
+  box-sizing: border-box;
+  background-color: white;
+  z-index: 99999999;
+  @include transform(translate(-50%, -50%));
+  min-width: 300px;
+
+  .divider {
+    border-bottom: 1px solid $gray-light;
+    margin: 15px 0px;
+    height: 1px;
+  }
+
+  .privacy-policy-content {
+    height: 380px;
+    overflow-y: auto;
+    padding: 25px;
+
+    h1 {
+      font-size: 26px;
+    }
+
+    h2 {
+      font-size: 16px;
+    }
+
+    h2, h1 {
+      margin: 0px;
+    }
+  }
+
+  .privacy-policy-footer {
+    padding: 5px 25px;
+    text-align: center;
+  }
+}
+
+#privacy-policy-open {
+  text-align: center;
+  margin-top: 20px;
+  width: 100%;
+  text-transform: uppercase;
+
+  a {
+    color: $gray-light;
+    cursor: pointer;
+    font-size: 0.5em;
+  }
+}
+
+.ipad{
+  #privacy-policy-open{
+    position: absolute;
+    bottom: 0;
+  }
+}
+
+#privacy-policy-layer {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  background-color: black;
+  opacity: 0.8;
+  z-index: 9999999;
+  display: none;
+}

@@ -1,0 +1,19 @@
+<svg class="b100" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+     viewBox="0 0 386.2 357.5" style="enable-background:new 0 0 386.2 357.5;" xml:space="preserve">
+<style type="text/css">
+    .b100 .st0{opacity:0.1;fill:#35BBA4;} /* original opacity: 0.2 */
+    .b100 .st1{fill:#35BBA4;}
+    .b100 .st2{fill:#30A6A5;}
+    .b100 .st3{fill:#FFFFFF;}
+    .b100 .st4{fill:none;stroke:#FFFFFF;stroke-width:7.501;stroke-miterlimit:10;}
+</style>
+<g id="XMLID_185_">
+    <circle id="XMLID_190_" class="st1" cx="192.2" cy="185.9" r="109.1"/>
+    <path id="XMLID_189_" class="st2" d="M192.2,295C132,295,83.1,246.1,83.1,185.9S132,76.8,192.2,76.8"/>
+    <g id="XMLID_187_">
+        <circle id="XMLID_188_" class="st3" cx="158.5" cy="178" r="7.9"/>
+    </g>
+    <path id="XMLID_186_" class="st3" d="M280.9,213.8c0,37-39.7,67.1-88.7,67.1s-88.7-30-88.7-67.1H280.9z"/>
+</g>
+<line id="XMLID_184_" class="st4" x1="216.1" y1="178" x2="241.3" y2="178"/>
+</svg>

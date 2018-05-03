@@ -1,0 +1,84 @@
+<div>
+  <h5>{{"Setup instructions for" | translate}} {{channelSetupInfo.channel.name}}</h5>
+
+<div ng-switch="channelSetupInfo.channel.type">
+  <div ng-switch-when="DEVICE">
+    <div ng-if="!channelSetupInfo.channel.ipad_setup_device"
+      <p>
+        <span translate>1. Get the Feedbackly App for your tablet from the</span> <a href="https://itunes.apple.com/us/app/customer-feedback-analytics/id1027819393" target="_blank" translate>App Store</a> <br>
+        <span translate>2. Open the app and click on the "I already have an authorization code" link in the bottom of the screen.</span><br>
+        <span translate>3. Enter this authorization code:</span> <span style="font-weight:700">{{channelSetupInfo.channel.udid}}</span> <span translate>in the text field. Don't worry if the upcoming survey is an old one - you will activate the new survey next.</span><br>
+        <span translate>4. Continue publishing your survey in this screen. </span><br>
+        <span translate>5. If you haven't already, open up the Feedbackly app. The kiosk will automatically switch to this survey after 1-5 minutes from publishing or scheduling it.</span><br>
+      </p>
+      <a href translate ng-hide="true">Click here for more tips and guides on using a feedback kiosk to collect feedback!</a>
+    </div>
+    <div ng-if="channelSetupInfo.channel.ipad_setup_device">
+      <p>
+        <span translate>Your iPad will show this survey automatically once you publish it.</span><br>
+
+      </p>
+    </div>
+  </div>
+  <div ng-switch-when="QR">
+    <p>
+      <span translate>1. Download the QR-code below and add it to your materials.</span><br>
+      <span translate>2. Guide your customers to answer the survey by informative text. (See example)</span><br>
+      <span translate>3. The QR code can be read by using a QR code reader app (keyword: 'qr code reader' in app stores)</span><br>
+      <span translate>4. Continue publishing your survey in this screen.</span>
+    </p>
+    <p>
+    <qr-code text="channelSetupInfo.channel.link" download-link="true" width="100" height="100" download-file-name="{{channelSetupInfo.channel.name}}-qr-code"></qr-code>
+    <br>
+    <a href class="btn" ng-click="channelSetupInfo.downloadQr(channelSetupInfo.channel.link)" translate>Download QR</a>
+  </p>
+  <p>
+    <a href translate ng-hide="true">Click here for more tips and guides on using a QR-code to collect feedback!</a>
+  </p>
+  </div>
+
+  <div ng-switch-when="PLUGIN">
+    <p translate>1. Add the following code to the end of the &lt;body&gt; tag of your website / eCommerce-platform.</p>
+     &lt;script&gt;{{channelSetupInfo.pluginScript}}&lt;/script&gt;
+    <p>
+      2.
+      <span ng-if="channelSetupInfo.pluginSettings.display === 'embedded'">
+         <span translate>The plugin has configured to be embedded in an element on your site. Add this element on your page where you want to survey to appear</span>:
+         <br><br>
+         {{::channelSetupInfo.getPluginEmbeddingElement(channelSetupInfo.channel.udid)}}<br><br>
+         3.
+      </span>
+      <span translate>Continue publishing the survey in this screen.</span>
+    </p>
+  </div>
+
+  <div ng-switch-when="LINK">
+    <p translate>
+      1. Copy the following link and distribute it freely
+    </p>
+      <a ng-href="{{channelSetupInfo.channel.link}}" target="_blank">{{channelSetupInfo.channel.link}}</a>
+    <p translate>
+      2. Continue publishing the survey in this screen.
+    </p>
+  </div>
+
+  <div ng-switch-when="EMAIL">
+    <span translate>1. Add contacts to this e-mail channel </span> <a href="/app/#/channel-management/channel-edit/{{channelSetupInfo.channel._id}}" target="_blank" translate>from the channel management</a>. <br>
+    <span translate>2. Continue publishing the survey in this screen.</span>
+
+    <p ng-if="channelSetupInfo.channel.contactCount === 0" class="text-red-dark" translate>There are currently no contacts in this channel. Follow step 1 and add some.</p>
+  </div>
+  <div ng-switch-when="SMS">
+
+    <span translate>1. Add contacts to this SMS channel </span> <a href="/app/#/channel-management/channel-edit/{{channelSetupInfo.channel._id}}" target="_blank" translate>from the channel management</a>. <br>
+    <span translate>2. Continue publishing the survey in this screen.</span>
+
+    <p ng-if="channelSetupInfo.channel.contactCount === 0" style="color: #EE5D6E;" translate>There are currently no contacts in this channel. Follow step 1 and add some.</p>
+
+  </div>
+
+
+
+
+</div>
+</div>

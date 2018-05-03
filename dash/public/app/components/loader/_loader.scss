@@ -1,0 +1,87 @@
+@include keyframes(loaderVerticalRight) {
+  0% {
+    transform: translateX(0px);
+  }
+  20% {
+    transform: translateX(5px);
+  }
+  40% {
+    transform: translateX(0px)
+  }
+  75% {
+    transform: translateX(-5px)
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+@include keyframes(loaderVerticalLeft) {
+  0% {
+    transform: translateX(0px);
+  }
+  20% {
+    transform: translateX(-5px);
+  }
+  40% {
+    transform: translateX(0px)
+  }
+  75% {
+    transform: translateX(5px)
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+.feedbackly-loader-wrapper {
+  $offset: 5px;
+  $width: 45px;
+
+  width: $width + $offset + $offset * 2;
+  display: inline-block;
+
+  &.animating {
+    .loader-bar-1 {
+      @include animation(loaderVerticalRight 0.8s ease-in infinite);
+    }
+
+    .loader-bar-2 {
+      @include animation(loaderVerticalLeft 0.8s ease-in infinite);
+    }
+
+    .loader-bar-3 {
+      @include animation(loaderVerticalRight 0.8s ease-in infinite);
+    }
+
+    .loader-bar-4 {
+      @include animation(loaderVerticalLeft 0.8s ease-in infinite);
+    }
+  }
+
+  .loader-bar {
+    border-radius: 8px;
+    height: 8px;
+    width: $width;
+    position: relative;
+    margin-bottom: 3px;
+
+    &.loader-bar-1 {
+      background-color: $turquoise;
+    }
+
+    &.loader-bar-2 {
+      background-color: $green;
+      left: $offset;
+    }
+
+    &.loader-bar-3 {
+      background-color: $yellow;
+      right: $offset
+    }
+
+    &.loader-bar-4 {
+      background-color: $red;
+    }
+  }
+}

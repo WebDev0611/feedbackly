@@ -1,0 +1,8 @@
+export const SURVEY_CLOSED_KEY_NAME = '_fbly_closed_'
+export const SURVEY_COMPLETED_KEY_NAME = '_fbly_completed_'
+export const VISITED_ADDRESSES_KEY = '_fbly_visited_'
+export const PLUGIN_FIRST_INITIALIZED_KEY = '_fbly_init_'
+export const CURRENT_PAGE_LOADED_KEY = '_fbly_curpgld_'
+export const CLOSE_BUTTON_ID = '_fbly_cl_'
+export const MAIN_CONTAINER_PREFIX='_fbly_main_'
+export const EMBEDDED_CONTAINER_PREFIX = 'feedback-plugin-container-'

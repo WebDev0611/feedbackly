@@ -1,0 +1,14 @@
+[ignore]
+.*/build/.*
+.*/dist/.*
+
+[include]
+src
+
+[libs]
+
+[lints]
+
+[options]
+module.file_ext=.vue
+module.file_ext=.js

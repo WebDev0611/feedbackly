@@ -1,0 +1,73 @@
+<div class="keyboard regular" class="hide">
+
+  <% var firstRow = ["q","w","e", "r", "t", "y" ,"u","i","o","p","å"] %>
+  <% var secondRow = ["a","s","d", "f", "g", "h", "j", "k", "l", "ö", "ä"] %>
+  <% var thirdRow = ["z", "x", "c", "v", "b", "n", "m", ".", "?"] %>
+
+  <% var firstRowSpecial = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0", "+"] %>
+  <% var secondRowSpecial = ["-", "/", ":", ";", "(", ")", "€", "&", "@", "£", "\\"] %>
+  <% var thirdRowSpecial = ["*", "_", "?", "!", "'", '"', "$", ".", ","] %>
+
+  <div class="keyboard-row row1">
+    <% _.forEach(firstRow, function(k,i){ %>
+      <div class="key regular key-<%= i %>" data="<%= k %>" >
+          <%= k %>
+      </div>
+    <% }) %>
+
+    <% _.forEach(firstRowSpecial, function(k,i){ %>
+      <div class="key special key-<%= i %>" data="<%= k %>" >
+          <%= k %>
+      </div>
+    <% }) %>
+
+    <div class="key regular special backspace" special="backspace">⬅︎</div>
+
+  </div>
+  <div class="keyboard-row row2">
+    <% _.forEach(secondRow, function(k,i){ %>
+      <div class="key regular key-<%= i %>" data="<%= k %>" >
+          <%= k %>
+      </div>
+    <% }) %>
+
+    <% _.forEach(secondRowSpecial, function(k,i){ %>
+      <div class="key special key-<%= i %>" data="<%= k %>" >
+          <%= k %>
+      </div>
+    <% }) %>
+
+    <div class="key regular special" special="return" style="width: 9vw">↩︎</div>
+
+  </div>
+  <div class="keyboard-row row3">
+
+    <div class="key regular special shift" special="shift">⇧</div>
+
+    <% _.forEach(thirdRow, function(k,i){ %>
+      <div class="key regular key-<%= i %>" data="<%= k %>" >
+          <%= k %>
+      </div>
+    <% }) %>
+
+    <% _.forEach(thirdRowSpecial, function(k,i){ %>
+      <div class="key special key-<%= i %>" data="<%= k %>" >
+          <%= k %>
+      </div>
+    <% }) %>
+
+      <div class="key regular special shift" style="width: 11vw;" special="shift">⇧</div>
+  </div>
+
+  <div class="keyboard-row row4">
+    <div class="key regular" special="chars">.?123</div>
+    <div class="key special" special="chars">ABC</div>
+    <div class="key regular special" special="left"><</div>
+    <div class="key regular special" special="right">></div>
+    <div class="key regular special spacebar" data=" ">&nbsp;</div>
+    <div class="key regular" style="width: 11vw;" special="chars">.?123</div>
+    <div class="key special" style="width: 11vw;" special="chars">ABC</div>
+    <div class="key regular special" special="hideKeyboard"><div style="width: 36px; margin: 15px auto 0; fill: #484848;"><% include away_icon %></div></div>
+  </div>
+
+</div>

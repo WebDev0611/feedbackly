@@ -1,0 +1,69 @@
+<div class="modal-content add-image-modal">
+  <h4 translate>Add email addresses</h4>
+
+  <div class="section">
+    <h6 translate>Add email address manually</h6>
+
+    <form ng-submit="addAddresses.addAddress(form.$valid)" name="form" novalidate>
+      <div class="row">
+        <div class="col s12 m3">
+          <div input-field>
+            <input type="text" ng-model="addAddresses.newAddress.fname">
+            <label translate>First name</label>
+          </div>
+        </div>
+
+        <div class="col s12 m3">
+          <div input-field>
+            <input type="text" ng-model="addAddresses.newAddress.lname">
+            <label translate>Last name</label>
+          </div>
+        </div>
+
+        <div class="col s12 m3">
+          <div input-field ng-class="{ 'input-field-error': form.email.$invalid && form.email.$dirty }">
+            <input type="email" ng-model="addAddresses.newAddress.email" name="email" required ng-minlength="1">
+            <label translate>Email</label>
+          </div>
+        </div>
+
+        <div class="col s12 m3" style="padding-top: 25px">
+          <button type="submit" class="waves-effect waves-light btn" ng-disabled="form.$invalid" translate>Add</button>
+        </div>
+
+    </form>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="section">
+    <h6 translate>Upload a CSV file</h6>
+
+    <ul class="add-addresses-errors" ng-if="addAddresses.errors && addAddresses.errors.length > 0">
+        <li translate>Encountered some errors:</li>
+        <li ng-repeat="error in addAddresses.errors">
+          {{ 'Check input on row' | translate }} {{error.row}}: {{ error.obj.fname }},{{error.obj.lname}},{{error.obj.email}}
+        </li>
+    </ul>
+
+    <file-drop uploader="addAddresses.uploader"></file-drop>
+
+    <div class="section grey-text" style="font-size: 10.5px">
+      {{ 'Each line in the CSV file should be of format' | translate }}
+      fname,lname,email .
+      {{'Include this as a first line in your csv.' | translate}}
+      <p translate>
+        You can also add metadata to include in feedback by adding "meta_FIELDNAMEHERE" into your csv-file. ie. meta_customer-id.
+      </p>
+    </div>
+
+    <button class="waves-effect waves-light btn" ng-disabled="addAddresses.uploader.queue.length === 0" ng-click="addAddresses.upload()">
+      <i class="material-icons left">file_upload</i>
+      {{ 'Upload' | translate }}
+    </button>
+  </div>
+</div>
+
+<div class="modal-footer">
+  <button class="waves-effect btn-flat" ng-click="addAddresses.close()" translate>Close</button>
+</div>

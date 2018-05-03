@@ -1,0 +1,330 @@
+next:
+    zu: OKULANDELAYO
+    yo: 'Èyí tó kàn'
+    xh: '*Okufunwayo'
+    vi: 'TIẾP TỤC'
+    uz: KEYINGI
+    ur: آگے
+    uk: НАСТУПНИЙ
+    tr: İLERİ
+    ti: ዝስዕብ
+    th: ถัดไป
+    te: తరువాత
+    ta: அடுத்து
+    tl: SUNOD
+    sw: IFUATAYO
+    so: 'KU XIGA'
+    sl: NAPREJ
+    sk: ĎALEJ
+    si: ඊළගට
+    sr: DALJE
+    sr_unknown: ДАЉЕ
+    sv: NÄSTA
+    ru: ДАЛЕЕ
+    ro: 'MAI DEPARTE'
+    punjabi_unknown: ਅਗਲਾ
+    pt: CONTINUAR
+    pl: DALEJ
+    fa: بعدی
+    pashto_unknown: بل
+    nn: NESTE
+    ne: अर्को
+    mn: ДАРААХ
+    mr: पुढे
+    mt: SUĊĊESSIVAMENT
+    ml: SETERUSNYA
+    mk: СЛЕДНО
+    lt: PIRMYN
+    lv: NĀKAMAIS
+    lo: ຖັດໄປ
+    ku: دوواتر
+    ko: 다음
+    km: ប៊ូតុងបន្ត
+    kk: КЕЛЕСІ
+    kn: ಮು0ದಿನ/ನ0ತರದ
+    ja: 次
+    it: SUCCESSIVO
+    ga: 'AR AGHAIDH'
+    id: BERIKUTNYA
+    is: ÁFRAM
+    hu: KÖVETKEZŐ
+    hi: आगामी
+    he: הבא
+    ht: SWIVAN
+    gu: નેક્સ્ટ
+    el: ΕΠΟΜΕΝΟ
+    ka: შემდეგი
+    fr: SUIVANT
+    flemish_unknown: VOLGENDE
+    fi: Seuraava
+    et: JÄRGMINE
+    en: Next
+    nl: VOLGENDE
+    dari_unknown: بعدی
+    da: NÆSTE
+    cs: DALŠÍ
+    hr: SLJEDEĆE
+    taiwan_unknown: 下一步
+    ca: SEGÜENT
+    my: နောက်တစ်ခုသို့
+    bg: НАПРЕД
+    bs: SLJEDEĆE
+    bn: পরবর্তী
+    be: ДАЛЕЙ
+    eu: HURRENGOA
+    az: Növbəti
+    hy: ՀԱՋՈՐԴԸ
+    ar: التالي
+    am: ወደሚቀጥለው
+    sq: TJETËR
+    af: VOLGENDE
+    de: Weiter
+    es: Siguiente
+required:
+    zu: '*Kuyadingeka'
+    yo: '*Dandan'
+    xh: '*Okufunwayo'
+    vi: '*Bắt buộc'
+    uz: '*Majburiy'
+    ur: '* ضروری ہے'
+    uk: '*Обов''язкове'
+    tr: '*Gerekli'
+    ti: 'ክምላእ ዘለዎ'
+    th: '*จำเป็น'
+    te: 'అవసరం అవుతుంది'
+    ta: '*அவசியமானது'
+    tl: '*Kinakailangan'
+    sw: '*Inatakiwa'
+    so: '* Loo baahan yahay'
+    sl: '*Obvezno'
+    sk: Vyžadované
+    si: '*අතයාවශ්‍ය'
+    sr: '*Zahtevano'
+    sr_unknown: '*Oбавезно поље'
+    sv: Nödvändig
+    ru: '* Обязательно для заполнения'
+    ro: '*Obligatoriu'
+    punjabi_unknown: ਲੋੜੀਂਦਾ
+    pt: '*Requerido'
+    pl: '*Wymagane'
+    fa: '*الزامی'
+    pashto_unknown: 'غښتل شوي'
+    nn: '*Påkrevd'
+    ne: '*आवश्यक छ'
+    mn: '*Заавал бөглөх'
+    mr: '*आवश्यक'
+    mt: '* Hemm bżonn'
+    ml: '*Diperlukan'
+    mk: '*Неопходно'
+    lt: '*Privalomas'
+    lv: '* Obligāts'
+    lo: '*ຈຳເປັນ'
+    ku: '* پێویستە'
+    ko: '*필수'
+    km: '*តម្រូវឲ្យបំពេញ'
+    kk: '*Міндетті өріс'
+    kn: ಅಗತ್ಯವಿರುವ
+    ja: '*必須欄'
+    it: '*Richiesto'
+    ga: Riachtanach
+    id: '*Wajib diisi'
+    is: '*Skilyrt'
+    hu: '*Kötelező'
+    hi: '* आवश्यक'
+    he: '*חובה'
+    ht: '*Sa yo mande'
+    gu: '* આવશ્યક'
+    el: '*Απαιτείται'
+    ka: '*საჭირო'
+    fr: '*Champ obligatoire'
+    flemish_unknown: '*Vereist'
+    fi: '*Pakollinen'
+    et: '*Kohustuslik'
+    en: '*Required'
+    nl: '*Vereist'
+    dari_unknown: 'ضروری*'
+    da: '*Påkrævet'
+    cs: '*Povinné'
+    hr: '*Obvezno'
+    taiwan_unknown: '*必要的內容'
+    ca: '*Obligatori'
+    my: '* မဖြစ်မနေ ဖြည့်ဖို့လိုအပ်သည်'
+    bg: '* Задължително'
+    bs: '*Obavezno popuniti'
+    bn: '*আবশ্যক'
+    be: '* Абавязкова для запаўнення'
+    eu: '*Derrigorrezkoa'
+    az: '*Tələb olunan'
+    hy: '*Պարտադիր դաշտ'
+    ar: 'مطلوب *'
+    am: '*ያስፈልጋል'
+    sq: '*Detyrimisht'
+    af: Vereis
+    es: '*Obligatorio'
+returnText:
+    zu: 'Izobuyela ekuqaleni emizuzwaneni engu _'
+    yo: 'A máa padà sí ìbẹ̀rẹ̀ ní ìṣẹ́jú ____'
+    xh: 'Okubuyela ekuqaleni nge_mizuzwana'
+    vi: 'Trở về lúc bắt đầu trong _ giây'
+    uz: 'Boshiga _ soniyada qaytadi'
+    ur: '_ سیکنڈ میں آغاز پر آرہا ہے'
+    uk: 'Повернення на початок за _ секунд'
+    tr: '_ saniye içinde başa dönülüyor'
+    ti: 'ኣብ ውሽጢ _ ካልኢታት ናብ መጀመርያ ምምላስ'
+    th: 'จะกลับไปยังจุดเริ่มต้นในอีก _ วินาที'
+    te: '_ సెకండ్లలో తిరిగి ప్రారంభానికి వస్తుంది'
+    ta: '_ நொடிகளில் தொடக்கத்திற்கு திரும்புகிறது'
+    tl: 'Bumabalik sa simula sa _ segundo'
+    sw: 'Kurudi mwanzoni katika_sekunde'
+    so: 'Ku soo noqoshada bilowgii in _ ilbiriqsi'
+    sl: 'Vrnitev na začetek v _sekundah'
+    sk: 'Návrat na začiatok o _ sek.'
+    si: 'තත්පර _ කින් නැවතත් ආරම්භයට'
+    sr: 'Povratak na početak za _ sekundi'
+    sr_unknown: 'Повратак на почетак за _ секунди'
+    sv: 'Tillbaka till början om _ sekunder'
+    ru: 'Возврат к началу через _ секунд(ы)'
+    ro: 'Se revine la început în _ secunde'
+    punjabi_unknown: '_ਸਕਿੰਟਾਂ ਵਿਚ ਵਾਪਸ ਆ ਰਿਹਾ ਹੈ'
+    pt: 'Retorno ao início em _ segundos'
+    pl: 'Powrót do początku w ciągu _ sekund'
+    fa: 'ظرف _ ثانیه به ابتدای برنامه بازخواهید گشت'
+    pashto_unknown: 'رګرځیدل شروع ته_ثانيې'
+    nn: 'Vender tilbake til begynnelsen om _ sekunder'
+    ne: '_ सेकण्डमा आरम्भमै फर्कँदै'
+    mn: 'Эхлэл рүү _ секундийн дараа буцлаа'
+    mr: '_सेकंदांमध्ये सुरूवातीला परतत आहोत'
+    mt: 'Tirritorna għall-bidu f''_sekondi'
+    ml: 'Kembali ke asal dalam _ saat'
+    mk: 'Враќање на почеток за _ секунди'
+    lt: 'Grįžta į pradžią po _ sekundžių'
+    lv: 'Atgriežas uz sākumu _ sekundēs'
+    lo: 'ກັບຄືນຫາເລີ່ມຕົ້ນໃນ_ ວິນາທີ'
+    ku: 'گەرانەوە بۆ سەرەتا لە ١٠ چرکەدا'
+    ko: '_초 이내에 시작으로 되돌아 갑니다'
+    km: 'ត្រឡប់ទៅរកការចាប់ផ្តើមវិញក្នុងរយៈពេល _ វិនាទីទៀត'
+    kk: 'Бас жағына _ секундтан кейін оралады'
+    kn: 'ಸೆಕೆ0ಡುಗಳಲ್ಲಿ ಹಿ0ದಿರುಗಿ'
+    ja: _秒で始めに戻ります
+    it: 'Torna all''inizio in _ secondi'
+    ga: 'Ag filleadh ar an tús i _ soicind'
+    id: 'Mengembalikan ke awal dalam _ detik'
+    is: 'Fer aftur á byrjunarreit eftir _ sekúndur'
+    hu: '_ másodperc múlva visszatér az elejére'
+    hi: 'शुरुआत करने के लिए _ सेकंड में लौट रहे हैं'
+    he: 'חוזר להתחלה בתוך _ שניות'
+    ht: 'Retounen nan kòmansman an nan _ segonn'
+    gu: '“__સેકન્ડમાં પ્રારંભબિંદુ પર પરત આવી રહ્યા છીએ'
+    el: 'Επιστροφή στην αρχή σε _ δευτερόλεπτα'
+    ka: 'დაბრუნება დასაწყისში_ წამებში'
+    fr: 'Initialisation dans _ secondes'
+    flemish_unknown: 'Terugkeren naar het begin in _ seconden'
+    fi: 'Palataan alkuun _ sekunnin päästä'
+    et: 'Algusesse tagasiminek _ sekundi pärast'
+    en: 'Returning to beginning in _ seconds'
+    nl: 'Over _ seconden wordt teruggekeerd naar het begin'
+    dari_unknown: 'در ظرف ــ ثانیه به آغاز برمیگردد'
+    da: 'Tilbage til start om _ sekunder'
+    cs: 'Vrácení zpět na začátek za _ sekund'
+    hr: 'Povratak na početak za _ sekundi'
+    taiwan_unknown: 10秒後回到起點
+    ca: '_ segons per tornar a l’inici'
+    my: '-စက္ကန့် အတွင်းမှာ အစသို့ပြန်ရောက်ပါမည်'
+    bg: 'Връщане към началото след _ секунди'
+    bs: 'Povratak na početak za _ sekundi'
+    bn: '_সেকেন্ডের মধ্যে প্রথম থেকে চালু হচ্ছে'
+    be: 'Зварот да пачатку праз _ секунд (ы)'
+    eu: 'Hasierara itzultzen _segundutan'
+    az: 'Bir neçə saniyə ərzində əvvələ qayıtmaq'
+    hy: 'Վերադարձ սկզբին _վայրկյանից'
+    ar: 'جاري العودة للبداية خلال _ ثواني'
+    am: 'ወደመጀመሪያው መመለስ - በ10 ሴኮንዶች ውስጥ'
+    sq: 'Duke u kthyer në fillim brenda _ sekondave'
+    af: 'Keer in _ sekondes na begin terug'
+    de: 'Neustart in _ Sekunden'
+    es: 'Se reiniciará en _ segundos'
+sliderHelper:
+    zu: 'Donsela la'
+    yo: 'Wọ́ níbí'
+    xh: 'Tsala apha'
+    vi: 'Kéo vào đây'
+    uz: 'Bu yerdan suring'
+    ur: 'یہاں ڈریگ کریں'
+    uk: 'Потягніть тут'
+    tr: 'Buraya sürükle'
+    ti: 'ኣብዚ እእቱ'
+    th: ลากที่นี่
+    te: 'ఇక్కడకు డ్రాగ్ చేయండి'
+    ta: 'இங்கே இழுக்கவும்'
+    tl: 'Hilahin dito'
+    sw: 'Buruta hapa'
+    so: 'halkan u jiid'
+    sl: 'Povleci sem'
+    sk: 'Potiahnite sem'
+    si: 'මෙතැනින් අදින්න'
+    sr: 'Prevuci ovde'
+    sr_unknown: 'Превуците овде'
+    sv: 'Drag hit'
+    ru: 'Перетащите сюда'
+    ro: 'Trageți aici'
+    punjabi_unknown: 'ਇੱਥੇ ਡ੍ਰੈਗ ਕਰੋ'
+    pt: 'Solte aqui'
+    pl: 'Przeciągnij tu'
+    fa: 'به اینجا بکشید'
+    pashto_unknown: 'دلته یی انتقال کړۍ'
+    nn: 'Skyv her'
+    ne: 'यहाँ तान्नुहोस्'
+    mn: 'Энд зөөж тавих.'
+    mr: 'येथे ड्रॅग करा'
+    mt: 'Iddraggja hawn'
+    ml: 'Tarik ke sini'
+    mk: 'Влечете тука'
+    lt: 'Vilkti čia'
+    lv: 'Vilkt šeit'
+    lo: ລາກມາທີ່ນີ້
+    ku: 'ڕاکێشە بۆ ئێرە'
+    ko: '여기로 끌어 오세요'
+    km: សូមទាញដាក់នៅទីនេះ
+    kk: 'Осы жерге сүйреп әкеліңіз'
+    kn: 'ಇಲ್ಲಿ ಎಳೆಯಿರಿ'
+    ja: ここにドラッグ
+    it: 'Trascina qui'
+    ga: 'Tarraing anseo'
+    id: 'Tarik ke sini'
+    is: 'Dragðu hingað'
+    hu: 'Húzd ide'
+    hi: 'यहां ड्रेग करें'
+    he: 'גררו לכאן'
+    ht: 'Lage l la'
+    gu: 'અહી ખેંચો.'
+    el: 'Σύρετε εδώ'
+    ka: 'გადაიტანეთ აქ'
+    fr: 'Faites glisser ici'
+    flemish_unknown: 'Sleep hier'
+    fi: 'Raahaa tästä'
+    et: 'Liiguta siin'
+    en: 'Drag here'
+    nl: 'Sleep hier'
+    dari_unknown: 'اینجا بکشید'
+    da: 'Træk her'
+    cs: 'Přetáhněte zde'
+    hr: 'Povucite ovdje'
+    taiwan_unknown: 拖曳到這裡
+    ca: 'Arrossegar aquí'
+    my: ဤနေရာတွင်လွှတ်ချပါ
+    bg: 'Провлачете тук'
+    bs: 'Prevucite ovdje'
+    bn: 'এখানে টেনে আনুন'
+    be: 'Перацягнуць сюды'
+    eu: 'Hona ekarri'
+    az: 'Buraya sürüşdür'
+    hy: 'Տեղափոխել այստեղ'
+    ar: 'اسحب هنا'
+    am: 'እዚህ ጎትት'
+    sq: 'Tërhiq këtu'
+    af: 'Sleep hier'
+    de: 'Hier scrollen'
+    es: 'Desliza aquí'
+privacyPolicy:
+    fi: 'Rekisteriseloste & Käyttöehdot'
+    en: 'Privacy Policy & Terms'

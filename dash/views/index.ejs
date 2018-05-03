@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Feedbackly | Dashboard</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <link rel="shortcut icon" href="/favico/favicon.png" type="image/x-icon">
+  <!--    <link rel="icon" href="/favico/favicon.ico" type="image/x-icon"> -->
+
+  <link href='https://fonts.googleapis.com/css?family=Merriweather:700italic' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+
+
+  <link rel="stylesheet" type="text/css" href="/materialize/css/materialize.css" />
+  <link rel="stylesheet" type="text/css" href="/lib/ng-cropper/dist/ngCropper.all.min.css" />
+
+  <link rel="stylesheet" type="text/css" href="/logo-icons/style.css" />
+
+  <!-- build:css -->
+  <link rel="stylesheet" type="text/css" href="/dist/dash.min.css?v=1517496793621"/>
+  <!-- endbuild -->
+
+
+
+  <style type="text/css">
+    #loading-screen {
+      background-color: #2fbca4;
+      position: fixed;
+      top: 0px;
+      left: 0px;
+      width: 100%;
+      height: 100%;
+      z-index: 999;
+      color: white;
+      text-align: center;
+    }
+
+    #loading-screen .loader {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%) !important;
+    }
+
+    #loading-screen .loader:before,
+    #loading-screen .loader:after,
+    #loading-screen .loader {
+      border-radius: 50%;
+      width: 2.5em;
+      height: 2.5em;
+      -webkit-animation-fill-mode: both;
+      animation-fill-mode: both;
+      -webkit-animation: load7 1.8s infinite ease-in-out;
+      animation: load7 1.8s infinite ease-in-out;
+    }
+
+    #loading-screen .loader {
+      color: #ffffff;
+      font-size: 10px;
+      margin: 0px auto;
+      position: relative;
+      text-indent: -9999em;
+      -webkit-transform: translateZ(0);
+      -ms-transform: translateZ(0);
+      transform: translateZ(0);
+      -webkit-animation-delay: -0.16s;
+      animation-delay: -0.16s;
+    }
+
+    #loading-screen .loader:before {
+      left: -3.5em;
+      -webkit-animation-delay: -0.32s;
+      animation-delay: -0.32s;
+    }
+
+    #loading-screen .loader:after {
+      left: 3.5em;
+    }
+
+    #loading-screen .loader:before,
+    #loading-screen .loader:after {
+      content: '';
+      position: absolute;
+      top: 0;
+    }
+
+    @-webkit-keyframes load7 {
+      0%,
+      80%,
+      100% {
+        box-shadow: 0 2.5em 0 -1.3em;
+      }
+      40% {
+        box-shadow: 0 2.5em 0 0;
+      }
+    }
+
+    @keyframes load7 {
+      0%,
+      80%,
+      100% {
+        box-shadow: 0 2.5em 0 -1.3em;
+      }
+      40% {
+        box-shadow: 0 2.5em 0 0;
+      }
+    }
+  </style>
+
+  <script type="text/javascript" src="https://js.stripe.com/v2/"></script>
+  <script src="/lib/jscolor/jscolor.js"></script>
+</head>
+
+<body>
+  <div id="loading-screen">
+    <div class="loader">Loading...</div>
+  </div>
+
+  <navbar></navbar>
+
+  <div id="main-container" ng-animate-children="true">
+    <div class="faded-ui-view">
+      <div ui-view></div>
+    </div>
+  </div>
+
+    <script>
+      (function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',intercomSettings);}else{var d=document;var i=function(){i.c(arguments)};i.q=[];i.c=function(args){i.q.push(args)};w.Intercom=i;function l(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/<%= intercomAppId %>';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);}if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})()
+    </script>
+
+    <script>
+      window.envConfig = {
+        ENV: '<%= env %>',
+        DASH_URL: '<%= dashUrl %>',
+        CLIENT_URL: '<%= clientUrl %>',
+        PREVIEW_URL: '<%= previewUrl %>',
+        STRIPE_PUBLIC_KEY: '<%= stripePublicKey %>',
+        PLUGIN_JS_URL: '<%= pluginJsUrl %>',
+        PLUGIN_CSS_URL: '<%= pluginCssUrl %>',
+        SMS_TINY_LINK_HOST: '<%= smsTinyLinkHost %>'
+      };
+
+      window.constants = <%- JSON.stringify(constants) %>
+
+      window.USER_HAS_FEEDBACK = <%- hasFeedback %>;
+      window.TUTORIALS_FINISHED = <%- JSON.stringify(userTutorialsFinished) %>;
+      window.COMPLETED_HINTS = <%- JSON.stringify(completedHints) %>;
+      window.CLIENT_TRANSLATIONS = <%- JSON.stringify(clientTranslations) %>;
+      window.EU_COUNTRY_CODES = <%- JSON.stringify(euCountyCodes) %>;
+      window.FEATURECONSTANTS = <%- JSON.stringify(FEATURECONSTANTS) %>;
+
+      <% if(process.env.DOCKER_ENV && process.env.DOCKER_ENV != 'local' && !hideIntercom){ %>
+        Intercom('boot', <%- JSON.stringify(intercomData) %>);
+
+        window.heap=window.heap||[],heap.load=function(e,t){window.heap.appid=e,window.heap.config=t=t||{};var r=t.forceSSL||"https:"===document.location.protocol,a=document.createElement("script");a.type="text/javascript",a.async=!0,a.src=(r?"https:":"http:")+"//cdn.heapanalytics.com/js/heap-"+e+".js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(a,n);for(var o=function(e){return function(){heap.push([e].concat(Array.prototype.slice.call(arguments,0)))}},p=["addEventProperties","addUserProperties","clearEventProperties","identify","removeEventProperty","setEventProperties","track","unsetEventProperty"],c=0;c<p.length;c++)heap[p[c]]=o(p[c])};
+        heap.load("3112469389");
+      <% } %>
+      </script>
+
+      
+      <!-- build:js -->
+      <script src="/dist/dash.min.js?v=1517496793621"></script>
+      <!-- endbuild -->
+      <script src="<%= clientUrl %>/dist/plugin-v2.min.js"></script>
+      
+      <script type="text/javascript" src="//cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.js"></script>
+      <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.css" />
+      </script>
+
+      <script>
+        $(document).on("click", ".input-field label", function (e) {
+          e.preventDefault();
+          $(this).parent().find("input").focus();
+        })
+      </script>
+
+</body>
+
+</html>

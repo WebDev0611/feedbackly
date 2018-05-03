@@ -1,0 +1,51 @@
+.feedbacks-header {
+  &.feedbacks-header-is-stuck {
+    .card-title {
+      display: none;
+    }
+  }
+
+  dl {
+    margin-bottom: 0px;
+  }
+}
+
+#feedback-list-table {
+  overflow-x: scroll;
+
+  .face-thumb {
+    width: 40px;
+    height: 40px;
+  }
+
+  .image-thumb, .nps-thumb {
+    width: 35px;
+    height: 35px;
+  }
+
+  .nps-thumb {
+    line-height: 35px;
+    font-size: 0.9em;
+  }
+
+  td {
+    padding: 5px;
+  }
+
+  th.wide-column {
+    min-width: 250px;
+    max-width: 320px;
+  }
+
+  th {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+  th.normal-column {
+    min-width: 100px;
+    max-width: 130px;
+  }
+}

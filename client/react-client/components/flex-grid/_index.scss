@@ -1,0 +1,21 @@
+.flex-grid {
+  @include clearfix;
+  width: 100%;
+
+  &__item {
+    box-sizing: border-box;
+    display: inline-block;
+
+    &--floating {
+      display: initial;
+      float: left;
+
+      @include breakpoint($mobile-breakpoint) {
+        display: block;
+        float: none;
+        margin: 0 auto;
+        padding-right: 0px !important;
+      }
+    }
+  }
+}

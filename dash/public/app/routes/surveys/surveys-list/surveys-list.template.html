@@ -1,0 +1,121 @@
+<div class="row">
+  <div class="col s12">
+    <div class="card">
+      <div class="card-content">
+         <span class="card-title" translate>Survey</span>
+
+         <ul class="collapsible" id="create-survey-collapsible"  data-collapsible="accordion" ng-if="surveysList.signedInUser.canCreateSurveys">
+             <li>
+                 <div class="collapsible-header"><i class="material-icons">add</i> {{ 'New survey' | translate }}</div>
+                 <div class="collapsible-body">
+                   <form name="form" ng-submit="surveysList.addSurvey(form.$valid)" novalidate>
+                     <div input-field ng-class="{ 'input-field-error': form.name.$invalid && form.name.$dirty }" class="no-top-margin">
+                       <input type="text" name="name" ng-model="surveysList.newSurvey.name" required ng-minlength="1">
+                       <label translate>Name</label>
+                     </div>
+
+                     <button class="waves-effect waves-light btn" type="submit" ng-class="{ 'disabled': form.$invalid }" translate>Add</button>
+                   </form>
+                 </div>
+             </li>
+         </ul>
+
+         <div class="section">
+           <h6 translate>Edit existing surveys</h6>
+
+           <p class="no-bottom-margin">
+             <input type="checkbox" ng-model="surveysList.showArchived" id="show-archived" ng-change="surveysList.onToggleShowArchived()"/>
+             <label for="show-archived" translate>Show archived</label>
+           </p>
+
+           <p class="grey-text" ng-if="surveysList.surveys.length === 0" translate>
+             Nothing here yet
+           </p>
+
+           <table class="bordered striped">
+             <thead>
+               <tr>
+                 <th translate>Name</th>
+                 <th translate>Number of questions</th>
+                 <th translate>Feedback amount</translate>
+                 <th translate>Active channels</th>
+                 <th translate>Edit</th>
+               </tr>
+             </thead>
+
+             <tbody>
+               <tr ng-repeat="survey in surveysList.surveys">
+                 <td>
+                    <a ui-sref="surveys.editor({ surveyId: survey._id })">
+                      {{::survey.name}}
+                    </a>
+                    <span ng-if="::(survey.archived)" class="grey-text">({{ 'archived' | translate }})</span>
+                 </td>
+
+                 <td>{{survey.question_ids.length}}</td>
+
+                 <td>
+                   {{::survey.feedback_count}}
+                 </td>
+
+                 <td>
+                   {{::survey.active_devices}}
+                 </td>
+
+                 <td class="center-align">
+                   <button class="btn-floating waves-effect waves-light" ng-click="surveysList.setEditingSurvey(survey)" modal data-target="edit-survey-modal">
+                     <i class="material-icons">create</i>
+                   </button>
+                 </td>
+               </tr>
+             </tbody>
+           </table>
+
+           <div ng-if="surveysList.surveys.length !== 0 && surveysList.surveyCount > surveysList.pageSize">
+             <pagination
+               page="surveysList.page"
+               page-size="surveysList.pageSize"
+               total="surveysList.surveyCount"
+               show-prev-next="true"
+               dots="...."
+               hide-if-empty="false"
+               adjacent="2"
+               scroll-top="true"
+               pagination-action="surveysList.onPageChange(page)" />
+           </div>
+         </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="edit-survey-modal" class="modal">
+  <div class="modal-content">
+    <h4>{{surveysList.editingSurvey.name}}</h4>
+    <form class="section">
+      <div input-field>
+        <input type="text" ng-model="surveysList.editingSurvey.name">
+        <label translate>Name</label>
+      </div>
+
+      <p>
+        <input type="checkbox" id="archive-survey" ng-model="surveysList.editingSurvey.archived" ng-disabled="surveysList.editingSurveyNotArchiveable"/>
+        <label for="archive-survey" translate>Archived</label>
+      </p>
+
+      <p ng-if="surveysList.editingSurveyNotArchiveable" class="grey-text" translate>
+        Survey can't be archived while it's active
+      </p>
+
+      <div class="section">
+        <button class="btn waves-effect waves-light" ng-click="surveysList.createCopy()" translate>Create a copy</button>
+      </div>
+    </form>
+  </div>
+  <div class="modal-footer">
+    <button class="modal-action modal-close waves-effect btn-flat" ng-click="surveysList.saveSurvey()" translate>Save</button>
+    <button class="modal-action modal-close waves-effect btn-flat" translate>Close</button>
+  </div>
+</div>
+
+<tutorial-bubble ipad="true" item="'ipad-signup-create-survey'" text="'Click New Survey to create a survey.' | translate" offset="15"/>

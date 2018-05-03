@@ -1,0 +1,31 @@
+<div>
+
+  <div id="modalVideo" class="modal" ng-if="surveyEditor.showNewEditorVideo">
+    <div class="modal-content text-center">
+        <h4 translate>A new survey editor!</h4>
+        <div ng-if="surveyEditor.language==='en' || surveyEditor.language==='sv'">
+          <iframe id="modalVideoIframe" style="max-width:100%" width="560" height="315" src="https://www.youtube-nocookie.com/embed/B0LKdKrtbEo?rel=0&amp;&amp;showinfo=0&autoplay=1&enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div ng-if="surveyEditor.language==='fi'">
+          <iframe id="modalVideoIframe" style="max-width:100%" width="560" height="315" src="https://www.youtube-nocookie.com/embed/5pIJ0k3yZ4A?rel=0&amp;&amp;showinfo=0&autoplay=1&enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+    </div>
+    <div class="modal-footer">
+        <button ng-click="surveyEditor.closeVideoModal()" class=" modal-action modal-close waves-effect waves-green btn-flat" translate>Close</button>
+    </div>
+</div>
+
+<div class="row">
+  <react-component name="ReactSurveyEditor" props="surveyEditor.props" watch-depth="reference"/>
+</div>
+</div>
+<survey-progress-bar go-to-state="surveyEditor.goToState(state)" active-channels="surveyEditor.activeChannels"></survey-progress-bar>
+<tutorial-bubble ipad="true" item="'ipad-signup-survey-editor'"
+  text="'Your first step to better understand your customers is to create a survey.
+  Follow the steps above to create a custom survey in a matter of seconds.
+  You can create a survey in any language by clicking the (+) at the top.
+  There are also 9 question types available for you to choose from.
+  When you are happy with your survey, continue with the setup process.' | translate"
+  offset="75"
+  />

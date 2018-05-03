@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta id="viewport" name="viewport" content="initial-scale=1.0,user-scalable=0,minimum-scale=1.0,maximum-scale=1.0,width=device-width, user-scalable=no" />
+  	<meta name="apple-mobile-web-app-capable" content="yes">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+  </head>
+
+  <style>
+    html, body {
+      padding: 0px;
+      margin: 0px;
+      width: 100%;
+      height: 100%;
+    }
+
+    body {
+      background-color: #edecf1;
+    }
+
+    #error-wrapper {
+      text-shadow: 0px -1px white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      padding: 25px;
+      box-sizing: border-box;
+      height: 100%;
+      text-align: center;
+      color: #83859B;
+      font-family: Montserrat;
+    }
+
+    #error-wrapper i {
+      font-size: 4.5rem;
+    }
+  </style>
+
+  <body>
+    <div id="error-wrapper">
+      <div>
+        <i class="material-icons">&#xE814;</i>
+        <h1>Oops...</h1>
+        <h3><%= message %></h3>
+      </div>
+    </div>
+  </body>
+</html>

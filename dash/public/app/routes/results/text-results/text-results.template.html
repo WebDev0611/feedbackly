@@ -1,0 +1,38 @@
+<loader loading="textResults.question.charts === undefined"></loader>
+
+<div ng-if="textResults.question.charts !== undefined" class="text-results">
+  <result-stats organization="textResults.question.totals.organization" channels="textResults.question.totals.channels">
+  </result-stats>
+
+  <div>
+    <input type="checkbox" ng-model="textResults.showHidden" id="{{::textResults.question._id}}-show-hidden-feedbacks" />
+    <label for="{{::textResults.question._id}}-show-hidden-feedbacks" translate>Show hidden feedbacks</label>
+  </div>
+
+  <table class="striped responsive-table results-table" ng-class="{ 'show-hidden': textResults.showHidden }">
+    <thead>
+      <tr>
+        <th translate>Date</th>
+        <th translate>Feedback channel</th>
+        <th class="feedback-content" translate>Feedback</th>
+        <th></th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr ng-repeat="feedback in textResults.activeChart | limitTo: textResults.textsLimit track by $index" class="feedback-content" ng-class="{ 'faded-feedback': feedback.hidden }">
+        <td>{{::feedback.createdAt}}</td>
+        <td>{{::feedback.channel}}</td>
+        <td>{{::feedback.text}}</td>
+        <td>
+          <i class="material-icons cursor-pointer grey-text" ng-if="!feedback.hidden" ng-click="textResults.toggleHidden(feedback)">visibility</i>
+          <i class="material-icons cursor-pointer grey-text" ng-if="feedback.hidden" ng-click="textResults.toggleHidden(feedback)">visibility_off</i>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p>
+    <button class="waves-effect btn-flat btn-full" ng-click="textResults.showMore()" ng-if="textResults.question.charts.length > textResults.textsLimit">{{ 'Show more' | translate }}</button>
+  </p>
+</div>

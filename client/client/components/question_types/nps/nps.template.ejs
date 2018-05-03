@@ -1,0 +1,33 @@
+<div class="question-type question-type-nps" question-id="<%= question._id %>">
+  <% include ./../../language_menu/language_menu.template.ejs %>
+
+  <div class="question-inner flexbox-container-column">
+    <% _.forEach(question.translations, function(translation){ %>
+      <h1 class="title hide lang lang-<%= translation.language %>">
+          <span>
+             <%= translation.heading %>
+          </span>
+      </h1>
+    <% }) %>
+
+      <hr>
+
+      <div class="subtitle">
+        <% _.forEach(question.translations, function(translation){ %>
+          <span class="hide lang lang-<%= translation.language %>">
+             <%= translation.subtitle %>
+          </span>
+        <% }) %>
+      </div>
+
+      <div class="input">
+        <% _.forEach([0,1,2,3,4,5,6,7,8,9,10], function(val){ %>
+          <div class="nps-button scale-in-start" value="<%= val/10 %>"
+               logic="<%= _.get(survey, 'properties.logic.' + question._id + '.' + val) %>"><%= val %></div>
+        <% }) %>
+      </div>
+      <% include ./../../privacy-policy/open %>
+
+    </div>
+
+</div>

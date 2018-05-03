@@ -1,0 +1,19 @@
+{
+  "0": "Delivered.",
+  "1": "Unknown",
+  "2": "Absent Subscriber Temporary",
+  "3": "Absent Subscriber Permanent",
+  "4": "Call barred by user",
+  "5": "Portability Error",
+  "6": "Anti-Spam Rejection",
+  "7": "Handset Busy",
+  "8": "Network Error",
+  "9": "Illegal Number",
+  "10": "Invalid Message",
+  "11": "Unroutable",
+  "12": "Destination unreachable",
+  "13": "Subscriber Age Restriction",
+  "14": "Number Blocked by Carrier",
+  "15": "Pre-Paid - Insufficent funds",
+  "99": "General Error"
+}

@@ -1,0 +1,92 @@
+.question-type-word{
+  text-align: center;
+
+  .input .word{
+    text-transform: uppercase;
+    background-color: $turquoise-light;
+    color: #fff;
+    display: inline-block;
+    margin: 7px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    cursor: pointer;
+  }
+
+  .column4 .word{
+    width: 23%;
+  }
+
+  .column3 .word{
+    width: 30%;
+  }
+
+  .column2 .word{
+    width: 40%;
+  }
+
+  .column1 .word{
+    width: 100%;
+  }
+
+  .column{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+  .column.column1{
+    width: 50%;
+  }
+
+  .word span{
+    width: 100%;
+  }
+
+}
+
+.ipad .input .word{
+  height: 55px;
+}
+
+.mobile .question-type-word .flexbox-container-column{
+  justify-content: center;
+  hr, .subtitle{
+    margin: $minimum-margins;
+  }
+
+  h1{
+    margin: $title-minimum-margins;
+  }
+}
+
+.mobile.landscape .question-type-word .flexbox-container-column{
+  justify-content: flex-start;
+  h1{
+    margin: $title-minimum-margins-landscape;
+  }
+  hr, .subtitle{
+    margin: $minimum-margins-landscape;
+  }
+}
+
+.mobile {
+  .column.column1, .column.column2, .column.column3, .column.column4{
+    width: 80%;
+    .word{
+      width: 100%;
+    }
+  }
+}
+.mobile.landscape{
+  .column{
+    width: 60% !important;
+  }
+  .word{
+    height: 40px;
+  }
+}

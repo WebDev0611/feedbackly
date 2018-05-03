@@ -1,0 +1,33 @@
+<loader loading="npsResults.question.charts === undefined"></loader>
+
+<div ng-if="npsResults.question.charts !== undefined">
+  <result-stats organization="npsResults.question.totals.organization" channels="npsResults.question.totals.channels">
+  </result-stats>
+
+  <div class="flex flex-center">
+    <div class="result-chart-totals clearfix flex-1">
+      <result-legend unit="npsResults.unit" color-mapper="npsResults.colorMap" question="npsResults.question" totals="npsResults.totals"></result-legend>
+    </div>
+
+    <div>
+      <chart-controls unit="npsResults.unit" accuracy="npsResults.accuracy" chart-type="npsResults.chartType" on-unit-change="npsResults.onUnitChange(unit)" on-accuracy-change="npsResults.onAccuracyChange(accuracy)" on-chart-type-change="npsResults.onChartTypeChange(chartType)">
+      </chart-controls>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col s12 m12 l9">
+      <highcharts-chart highlighted-days="['Sunday']" data="npsResults.activeChart"></highcharts-chart>
+    </div>
+    <div class="col s12 m12 l3">
+      <ul>
+        <li ng-repeat="total in ::npsResults.question.totals.grouped" class="{{::npsResults.npsValueToClass(total.id)}}">
+          <i class="material-icons vertical-align-middle">person</i> {{total.name | translate}}: {{::total.value}}
+        </li>
+        <li>
+          <i class="material-icons vertical-align-middle">people</i> {{ 'Total' | translate }}: {{::npsResults.question.totals.total}}
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

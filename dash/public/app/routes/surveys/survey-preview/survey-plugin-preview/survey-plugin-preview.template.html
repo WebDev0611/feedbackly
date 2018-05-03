@@ -1,0 +1,20 @@
+<p class="grey-text center-align">
+
+  <a class="btn" href ng-click="pluginPreview.openPlugin('popup')">Corner window</a>
+  <a class="btn" href ng-click="pluginPreview.openPlugin('modal')">Modal window</a>
+  <a class="btn" href ng-click="pluginPreview.openPlugin('embedded')">Embedded window</a>
+
+  <style>
+  .feedback-plugin-container-preview{
+    text-align: center;
+  }
+  .feedback-plugin-container-preview iframe{
+    min-height: 500px !important;
+    z-index: 0;
+  }
+  </style>
+
+  <div class="feedback-plugin-container-preview" style="max-width: 700px; height: 600px;">
+  </div>
+
+</p>

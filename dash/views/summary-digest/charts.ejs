@@ -1,0 +1,142 @@
+<html>
+  <head>
+    <title></title>
+  </head>
+
+  <body style="padding: 0px; margin: 0px">
+    <div id="amount-graph" style="width: 700px; height: 300px;"></div>
+    <div id="average-graph" style="width: 700px; height: 300px;"></div>
+  </body>
+
+  <script src="/lib/jquery/dist/jquery.min.js"></script>
+  <script src="/lib/highcharts/highcharts.js"></script>
+
+  <script>
+    $(function() {
+
+      var minMax = function(data){
+          var min = 1;
+          var max = 0;
+
+          data.forEach(function(el){
+            min = el[1] < min ? el[1] : min;
+            max = el[1] > max ? el[1] : max;
+          })
+
+          max = min >= max ? min : max;
+          max = max + 0.07
+          max = max > 1 ? 1 : max;
+          min = min - 0.07
+          min = min < 0 ? 0 : min;
+
+          return {min: min, max: max}
+      }
+
+
+      var FROM = <%= from %>;
+      var TO = <%= to %>;
+      var AMOUNT_GRAPH_DATA = <%= amount %>;
+      var AVERAGE_GRAPH_DATA = <%= average %>;
+
+      var averageMinMax = minMax(AVERAGE_GRAPH_DATA);
+
+      var $amountGraph = $('#amount-graph');
+
+      $amountGraph.highcharts({
+        chart: {
+            type: 'areaspline'
+        },
+        title: {
+            text: ''
+        },
+        xAxis: {
+            title: '',
+            tickInterval: 24 * 3600 * 1000,
+            type: 'datetime',
+            dateTimeLabelFormats: {
+              day: '%d.%m.'
+            }
+        },
+        yAxis: {
+            min: 0,
+            allowDecimals: false,
+            title: {
+                text: ''
+            }
+        },
+        tooltip: {
+            enabled: false
+        },
+        legend: {
+          enabled: false
+        },
+        credits: {
+          enabled: false
+        },
+        plotOptions: {
+            series: {
+              shadow: false,
+              animation: false
+            }
+        },
+        series: [{
+          name: 'Amount',
+          data: AMOUNT_GRAPH_DATA,
+          color: '#4aa3df'
+        }]
+      });
+
+      var $averageGraph = $('#average-graph');
+
+      $averageGraph.highcharts({
+        chart: {
+            type: 'areaspline'
+        },
+        title: {
+            text: ''
+        },
+        xAxis: {
+            title: '',
+            type: 'datetime',
+            tickInterval: 24 * 3600 * 1000,
+            dateTimeLabelFormats: {
+              day: '%d.%m.'
+            }
+        },
+        yAxis: {
+          title: {
+            text: ''
+          },
+          min: 0,
+          max: 100,
+          labels: {
+            formatter: function() {
+              return this.value + '%';
+            }
+          }
+        },
+        tooltip: {
+            enabled: false
+        },
+        legend: {
+          enabled: false
+        },
+        credits: {
+          enabled: false
+        },
+        plotOptions: {
+            areaspline: {
+                animation: false
+            }
+        },
+        series: [{
+          name: 'Average',
+          data: AVERAGE_GRAPH_DATA,
+          connectNulls: true,
+          color: '#2fbca4'
+        }]
+      });
+
+    });
+  </script>
+</html>

@@ -1,0 +1,37 @@
+<div class="page display">
+<div class="wrapper">
+  <div class="form-field">
+    <label for="email">E-mail</label>
+    <% if(email.length > 0){ %>
+      <input type="text" disabled id="email" name="email" value="<%= email %>" />
+    <% } else { %>
+      <input type="text" id="email" name="email" placeholder="E-MAIL ADDRESS" />
+    <% } %>
+  </div>
+  <div class="form-field">
+    <label for="pwd">Password</label>
+    <input id="pwd" type="password" name="pwd" placeholder="PASSWORD" />
+  </div>
+
+  <div class="form-field">
+    <label for="pwdconf">Retype password</label>
+    <input id="pwdconf" type="password" name="pwdconf" placeholder="RETYPE PASSWORD" />
+  </div>
+
+  <div id="not-valid-email" class="validatemsg">
+    Email address is not valid. Please check it.
+  </div>
+
+  <div id="password-weak" class="validatemsg">
+    Password must contain 7 or more characters, <br>a capital letter and a number.
+  </div>
+
+  <div id="passwords-must-match" class="validatemsg">
+    Password and confirmation must match.
+  </div>
+
+  <div class="form-field" style="text-align: center">
+  <button id="submit" ga="page-1-submit" onclick="validateForm1()">Next</button>
+  </div>
+</div>
+</div>

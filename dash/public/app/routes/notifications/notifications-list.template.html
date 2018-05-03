@@ -1,0 +1,70 @@
+<div class="card">
+<div class="card-content" ng-if="notificationsList.notificationsEnabled">
+  <span class="card-title" translate>Feedback notifications</span>
+  <div class="pull-right" style="margin-bottom: 10px" >
+    <a class="waves-effect btn" ui-sref="notifications">
+      <i class="material-icons left">add</i>
+      <span translate>New notification rule</span>
+    </a>
+  </div>
+
+<table ng-if="notificationsList.notificationsEnabled">
+  <thead>
+    <th translate>Survey</th>
+    <th translate>Notification recipients</th>
+    <th translate>Channels</th>
+    <th></th>
+  </thead>
+
+  <tbody>
+    <tr ng-repeat="notification in notificationsList.notifications">
+      <td><a ui-sref="notifications({id: notification._id})">{{notificationsList.getSurveyName(notification.survey_id)}}</a></td>
+      <td>{{notificationsList.getReceivers(notification.receivers)}}</td>
+      <td>{{notificationsList.getChannelNames(notification.device_id)}}</td>
+      <td><i class="material-icons text-gray-dark" ng-click="notificationsList.delete(notification._id)">delete</i></td>
+    </tr>
+</tbody>
+</table>
+
+<div ng-if="!notificationsList.notificationsEnabled">
+  Notifications teasers here
+</div>
+</div>
+
+<div class="card-content text-center" ng-if="notificationsList.notificationsEnabled == false">
+
+  <style>
+    .merriweather{
+      font-family: "Merriweather";
+      color: #2f444e;
+    }
+
+    .margin > a{
+      margin: 1em;
+    }
+
+    .width-100{
+      width: 100%;
+    }
+
+  </style>
+  
+  <h4 class="merriweather">Real-time notifications</h4>
+  <p>Create automatic email notifications in response to pretermined AND / OR parameters</p>
+
+  <div class="margin">
+    <a href="https://www.feedbackly.com/pricing" target="_blank" class="btn btn-hollow">
+      See pricing
+    </a>
+
+    <a href="/v-app/#/organization/settings" class="btn">
+        Upgrade plan
+      </a>
+  </div>
+  
+  <img class="width-100" src="/images/notifications-teaser.png" style="max-width: 700px;"/>
+  
+  
+  </div>
+</div>
+</div>

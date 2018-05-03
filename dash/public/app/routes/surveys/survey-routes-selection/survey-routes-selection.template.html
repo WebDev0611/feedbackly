@@ -1,0 +1,68 @@
+<div class="card">
+  <div class="card-content">
+     <div class="card-title" translate>Feedback Channel Selection</div>
+
+     <div class="section">
+       <span translate>
+         Select the channels to distribute your survey in. If you have sufficient rights, you can also create new channels here.
+       </span>
+    </div>
+
+     <div class="divider"></div>
+
+     <div class="section">
+
+       <div class="section">
+
+       <div class="row">
+         <div class="col m6">
+           <h5 translate>Choose from existing Feedback Channels</h5>
+
+           <channel-tree
+           channels="surveyRoutesSelection.channels"
+           active-channels="surveyRoutesSelection.activeChannels"
+           on-change="surveyRoutesSelection.onChannelsChange(channels)"></channel-tree>
+
+         </div>
+         <div class="col m6">
+
+           <div ng-if="surveyRoutesSelection.isOrganizationAdmin && surveyRoutesSelection.canCreateChannels">
+             <h5 translate>...or Create new Channels</h5>
+             <div class="row">
+               <form name="form" ng-submit="surveyRoutesSelection.saveDevice(form)" ng-submit="surveyRoutesSelection.saveDevice(form.$valid)" novalidate>
+                   <div input-field ng-class="{ 'input-field-error': form.name.$invalid && form.name.$dirty }">
+                       <input id="channel_name" name="name" type="text" ng-model="surveyRoutesSelection.newDevice.name" required ng-minlength="1" placeholder="{{'Ex. Kiosk 4 - Helsinki Central' | translate}}">
+                       <label for="channel_name" class="">{{"Channel name" | translate}}</label>
+                   </div>
+                   <div input-field>
+                     <select name="deviceType" ng-model="surveyRoutesSelection.newDevice.type" material-select>
+                         <option value="" disabled selected>{{"Choose channel type" | translate}}</option>
+                         <option ng-repeat="type in surveyRoutesSelection.deviceTypes" value="{{::type}}">{{ surveyRoutesSelection.channelName(type)}}</option>
+                     </select>
+                   </div>
+
+                   <div ng-if="surveyRoutesSelection.newDevice.type == 'PLUGIN'">
+                     <plugin-setup hide-save="true" channel="surveyRoutesSelection.newDevice" plugin-settings="surveyRoutesSelection.pluginSettings"></plugin-setup>
+                   </div>
+               <button type="submit" ng-disabled="!form.$valid || surveyRoutesSelection.newDevice.type.length < 1" class="btn" translate>Create</button>
+              </form>
+             </div>
+           </div>
+         </div>
+
+       </div>
+
+       </div>
+
+     </div>
+  </div>
+</div>
+
+<survey-progress-bar go-to-state="surveyRoutesSelection.goToState(state)" active-channels="surveyRoutesSelection.activatedChannels"></survey-progress-bar>
+<tutorial-bubble ipad="true"  item="'ipad-signup-channel-selection'"
+  text="'Now you must select the channel in which you would like to publish your survey.
+  A channel essentially means where and how your survey is distributed to your customers.
+  You can choose from existing channels or create a new one.
+  We have already set up and selected your new iPad channel for you.' | translate"
+  offset="75"
+  />

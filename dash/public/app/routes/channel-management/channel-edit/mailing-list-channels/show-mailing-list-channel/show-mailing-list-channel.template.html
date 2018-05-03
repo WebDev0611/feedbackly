@@ -1,0 +1,87 @@
+<loader loading="showMailingList.addresses === undefined"></loader>
+
+<div class="section" ng-if="showMailingList.addresses !== undefined">
+ <table class="striped">
+   <thead>
+     <tr>
+       <th translate>First name</th>
+       <th translate>Last name</th>
+       <th translate>Email</th>
+       <th ng-repeat="metaKey in showMailingList.usedMetaKeys">
+           {{::metaKey}}
+       </th>
+       <th translate>Subscribed</th>
+       <th></th>
+     </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="address in showMailingList.addresses">
+        <td>
+          {{::address.fname}}
+        </td>
+        <td>
+          {{::address.lname}}
+        </td>
+        <td>
+          {{::address.email}}
+        </td>
+        <td ng-repeat="metaKey in showMailingList.usedMetaKeys">
+            {{::address.meta[metaKey]}}
+        </td>
+        <td>
+          {{ ::(address.unsubscribed ? 'No': 'Yes' ) | translate }}
+        </td>
+
+        <td>
+          <button class="waves-effect waves-light btn-floating" modal data-target='edit-address-modal' ng-click="showMailingList.editAddress(address)">
+            <i class="material-icons">edit</i>
+          </button>
+          <button class="waves-effect waves-light red btn-floating" ng-click="showMailingList.removeAddress(address)">
+            <i class="material-icons">delete</i>
+          </button>
+        </td>
+      </tr>
+    </tbody>
+ </table>
+
+ <pagination
+  page="showMailingList.page"
+  page-size="showMailingList.pageSize"
+  total="showMailingList.addressCount"
+  show-prev-next="true"
+  dots="...."
+  hide-if-empty="false"
+  adjacent="2"
+  scroll-top="true"
+  pagination-action="showMailingList.onPageChange(page)"/>
+
+  <button class="btn waves-effect waves-light btn-s" ng-click="showMailingList.addAddresses()">
+    <i class="material-icons left">add</i>
+    {{ 'Add email addresses' | translate }}
+  </button>
+</div>
+<div id="edit-address-modal" class="modal modal-fixed-footer">
+  <div class="modal-content">
+    <h4>Edit email</h4>
+    <form class="section">
+      <div input-field>
+
+        <input type="text" ng-model="showMailingList.editingAddress.fname">
+        <label translate>First Name</label>
+      </div>
+      <div input-field>
+        <input type="text" ng-model="showMailingList.editingAddress.lname">
+        <label translate>Last Name</label>
+      </div>
+      <div input-field>
+        <input type="text" ng-model="showMailingList.editingAddress.email">
+        <label translate>Email</label>
+      </div>
+
+    </form>
+  </div>
+  <div class="modal-footer">
+    <button class="modal-action modal-close waves-effect btn-flat" ng-click="showMailingList.saveEditAddress()" translate>Save</button>
+    <button class="modal-action modal-close waves-effect btn-flat" translate>Cancel</button>
+  </div>
+</div>

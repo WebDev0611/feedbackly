@@ -1,0 +1,23 @@
+<%
+  var buttonValueToClass = function(value) {
+    var toString = (parseFloat(value) * 100).toString().substring(0, 3);
+
+    return 'face-thumb face' + toString;
+  }
+%>
+
+<div class="results-legend">
+  <% questionData.totals.forEach(function(total) { %>
+    <div class="chip result-total" style="border-right: 3px solid <%= (questionData.colorMap || {})[total.name.toString()] %>">
+      <div class="<%= buttonValueToClass(total.id) %>"></div><%= total.value %><%= questionData.totalUnitSuffix %>
+    </div>
+  <% }); %>
+</div>
+
+<div class="row">
+  <div id="question-<%= questionData.question._id %>-primary-chart-<%= isCompare ? 'compare' : 'default' %>" class="col l9">
+  </div>
+
+  <div id="question-<%= questionData.question._id %>-secondary-chart-<%= isCompare ? 'compare' : 'default' %>" class="col l3">
+  </div>
+</div>

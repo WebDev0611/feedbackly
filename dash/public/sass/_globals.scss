@@ -1,0 +1,33 @@
+$font-color: #292a33;
+$grey: darken(#c1c2cd, 10%);
+$red: #fe767c;
+$green: #97d149;
+$orange: #FFA363;
+$blue: #4aa3df;
+$yellow: #ffda6c;
+$turquoise: #2fbca4;
+$dark-grey: #83859B;
+
+$primary-color: $turquoise;
+$nps-button-color: $dark-grey;
+$word-button-color: $turquoise;
+
+.face0 {
+  background-image: url('/images/faces-svg/face000.svg');
+}
+
+.face25, .face33 {
+  background-image: url('/images/faces-svg/face025.svg');
+}
+
+.face50 {
+  background-image: url('/images/faces-svg/face050.svg');
+}
+
+.face66, .face75 {
+  background-image: url('/images/faces-svg/face075.svg');
+}
+
+.face100 {
+  background-image: url('/images/faces-svg/face100.svg');
+}

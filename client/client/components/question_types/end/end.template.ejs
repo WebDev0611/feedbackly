@@ -1,0 +1,24 @@
+<div class="survey-end">
+  <div class="question-inner flexbox-container-column">
+          <% if(isKiasmaSurvey) { %>
+            <i class="material-icons" id="kiasma-thumb">thumb_up</i>
+          <% } else { %>
+            <% _.forEach(endTranslations, function(tr, lang){ %>
+              <h1 class="title hide lang lang-<%= lang %>">
+                  <%= tr %>
+              </h1>
+            <% }) %>
+          <% } %>
+
+          <div class="powered-by-feedbackly">
+
+            Powered by
+            <img src="/dist/images/feedbackly-logo-rgb.png" />
+          </div>
+
+
+          <% include ./../../privacy-policy/open %>
+
+  </div>
+
+</div>

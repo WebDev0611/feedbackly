@@ -1,0 +1,18 @@
+.#{$class-prefix}-word-button {
+  padding: 5px;
+  display: block;
+  width: 60%;
+  box-sizing: border-box;
+  background-color: $word-button-color;
+  color: #fff;
+  text-transform: uppercase;
+  margin: 0 auto 6px;
+  cursor: pointer;
+  max-width: $survey-item-max-width;
+  font-size: 9px;
+  line-height: 15px;
+
+  &:last-child {
+    margin-bottom: 0px;
+  }
+}

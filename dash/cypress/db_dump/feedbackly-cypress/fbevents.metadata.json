@@ -1,0 +1,1 @@
+{"options":{},"indexes":[{"v":2,"key":{"_id":1},"name":"_id_","ns":"feedbackly-cypress.fbevents"},{"v":2,"key":{"question_type":1},"name":"question_type_1","ns":"feedbackly-cypress.fbevents","background":true}]}

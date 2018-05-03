@@ -1,0 +1,20 @@
+v-app/.DS_Store
+v-app/node_modules/
+v-app/dist/
+v-app/npm-debug.log*
+v-app/yarn-debug.log*
+v-app/yarn-error.log*
+v-app/test/unit/coverage
+v-app/test/e2e/reports
+v-app/selenium-debug.log
+
+# Editor directories and files
+v-app/.idea
+v-app/*.suo
+v-app/*.ntvs*
+v-app/*.njsproj
+v-app/*.sln
+v-app/*.swp
+
+
+*flow-typed/npm

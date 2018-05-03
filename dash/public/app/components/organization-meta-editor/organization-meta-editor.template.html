@@ -1,0 +1,23 @@
+<div class="flex" ng-repeat="meta in organizationMetaEditor.metaArray">
+  <div class="flex-1">
+    <div class="row">
+      <div class="col s6 m6">
+        <div input-field>
+          <input type="text" ng-model="meta.key" ng-change="organizationMetaEditor.onMetaChange()">
+          <label>Meta data key</label>
+        </div>
+      </div>
+      <div class="col s6 m6">
+        <div input-field>
+          <input type="text" ng-model="meta.value" ng-change="organizationMetaEditor.onMetaChange()">
+          <label>Meta data value</label>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="flex-0">
+    <a class="btn waves-effect waves-light red" ng-click="organizationMetaEditor.removeRow($index)">Remove</a>
+  </div>
+</div>
+
+<a class="btn waves-effect waves-light" ng-click="organizationMetaEditor.addRow()">Add a row</a>

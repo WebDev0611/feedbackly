@@ -1,0 +1,75 @@
+$sway-right1: 0px; // -20px
+$sway-right2: 0px; // 10px
+$sway-left: 0px; // -5px
+
+@include keyframes(cardBounceInRight) {
+  from, 60%, 75%, 90%, to {
+    @include animation-timing-function(cubic-bezier(0.215, 0.610, 0.355, 1.000));
+  }
+
+  from {
+    opacity: 0;
+    @include transform(translate3d(3000px, 0, 0));
+  }
+
+  60% {
+    opacity: 1;
+    @include transform(translate3d($sway-right1, 0, 0));
+  }
+
+  75% {
+    @include transform(translate3d($sway-right2, 0, 0));
+  }
+
+  90% {
+    @include transform( translate3d($sway-left, 0, 0));
+  }
+
+  to {
+    @include transform(none);
+  }
+}
+
+@include keyframes(cardBounceOutLeft) {
+  20% {
+    opacity: 1;
+    @include transform( translate3d(20px, 0, 0));
+  }
+
+  to {
+    opacity: 0;
+    @include transform( translate3d(-2000px, 0, 0));
+  }
+}
+
+.card {
+  @include transform(translateX(0));
+  @include animation-duration(0.5s);
+  @include animation-fill-mode(forwards);
+  min-height: 100%;
+  position: absolute;
+  width: 100%;
+  padding: 1em 0px;
+  box-sizing: border-box;
+  @include display(flex);
+  @include align-items(center);
+  @include justify-content(center);
+
+  .container-centered-content {
+    @include display(flex);
+    @include align-items(center);
+    @include justify-content(center);
+
+    .question-wrapper {
+      @include flex(1);
+    }
+  }
+
+  &.flying-card-enter {
+    @include animation-name(cardBounceInRight);
+  }
+
+  &.flying-card-leave {
+    @include animation-name(cardBounceOutLeft);
+  }
+}

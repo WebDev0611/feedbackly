@@ -1,0 +1,143 @@
+<div class="row body-wrapper">
+  <div class="row">
+    <div class="col s12">
+      <h5>
+          <span ng-if="upsellEditor.update" translate>Update Upsell</span>
+          <span ng-if="!upsellEditor.update" translate>New Upsell</span>
+      </h5>
+    </div>
+  </div>
+  <div class="row">
+    <form name="createUpsellForm" ng-submit="upsellEditor.save(createUpsellForm.$valid)" novalidate>
+      <div class="col m6 s12">
+        <div class="row">
+          <div class="input-field">
+            <input id="upsell_name" name="name" type="text" ng-model="upsellEditor.upsell.name" required />
+            <label for="upsell_name" translate>Upsell Name</label>
+            <div ng-messages="createUpsellForm.name.$error" ng-if="upsellEditor.formSubmitted && createUpsellForm.name.$invalid">
+              <div ng-message="required" class="form-error text-red-dark" translate>This field is required</div>
+            </div>
+          </div>
+
+          <div class="input-field">
+            <input id="upsell_title" name="title" type="text"  ng-model="upsellEditor.upsell.heading" required />
+            <label for="upsell_title" translate>Upsell Title</label>
+            <div ng-messages="createUpsellForm.title.$error" ng-if="upsellEditor.formSubmitted && createUpsellForm.title.$invalid">
+              <div ng-message="required" class="form-error text-red-dark" translate>This field is required</div>
+            </div>
+          </div>
+          <div class="input-field">
+            <input id="subtitle" name="subtitle" type="text" ng-model="upsellEditor.upsell.subtitle" required />
+            <label for="subtitle" translate>Subtitle</label>
+            <div ng-messages="createUpsellForm.subtitle.$error" ng-if="upsellEditor.formSubmitted && createUpsellForm.subtitle.$invalid">
+              <div ng-message="required" class="form-error text-red-dark" translate>This field is required</div>
+            </div>
+          </div>
+          <div class="input-field">
+            <textarea name="text" class="materialize-textarea" id="text" ng-model="upsellEditor.upsell.text" required />
+            <label for="text" translate>Text Body</label>
+            <div ng-messages="createUpsellForm.text.$error" ng-if="upsellEditor.formSubmitted && createUpsellForm.text.$invalid">
+              <div ng-message="required" class="form-error text-red-dark" translate>This field is required</div>
+            </div>
+          </div>
+
+          <p translate>Offer image</p>
+          <image-uploader image="upsellEditor.upsell.image_url" on-image="upsellEditor.onImage(uploader)" on-remove-image="upsellEditor.onRemoveImage()"></image-uploader>
+
+        </div>
+      </div>
+      <div class="col m6 s12">
+        <div class="row">
+          <div class="col m6 s12">
+            <div>
+              <input type="checkbox" id="use-barcode" ng-model="upsellEditor.upsell.useCode" ng-change="upsellEditor.useCodeToggle()"/>
+              <label for="use-barcode" translate>Use Barcode / QR code</label>
+            </div>
+
+            <div class="input-field" ng-if="upsellEditor.upsell.useCode">
+              <input id="upsell_code" name="code" type="text" ng-model="upsellEditor.upsell.code" ng-change="upsellEditor.barcodeIsValid = false" />
+              <label for="upsell_code" translate>Upsell Code</label>
+            </div>
+
+            <div class="input-field select-input-field" ng-if="upsellEditor.upsell.useCode" input-field>
+
+              <select ng-model="upsellEditor.upsell.barcode.type" material-select watch required ng-change="upsellEditor.barcodeIsValid = false">
+                <option value="" disabled selected>-------------------</option>
+                <option ng-repeat="type in upsellEditor.barcodeTypes" value="{{type.data}}">{{type.label}}</option>
+              </select>
+
+              <div ng-messages="createUpsellForm.barcodeType.$error" ng-if="upsellEditor.formSubmitted && createUpsellForm.barcodeType.$invalid">
+                <div ng-message="required" class="form-error text-red-dark" translate>This field is required</div>
+              </div>
+              <div class="form-error text-red-dark" style="margin-bottom: 10px;" ng-if="upsellEditor.barcodeError.length > 0">
+                {{upsellEditor.barcodeError}}
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col m6 s12 text-center">
+            <div ng-if="upsellEditor.upsell.useCode" class="barcode-preview text-center">
+              <div ng-if="upsellEditor.barcodeIsValid" style="height:100px">
+                <img style="max-height: 100px" ng-src="https://barcode.feedbackly.com/?bcid={{upsellEditor.upsell.barcode.type}}&text={{upsellEditor.upsell.code}}{{upsellEditor.upsell.barcode.showText ? '&includetext':''}}" />
+              </div>
+              <div ng-show="upsellEditor.barcodeIsValid == false" style="height: 100px; background-color: #ddd">
+
+              </div>
+            </div>
+
+            <a href class="btn-flat text-turquoise-dark" ng-if="upsellEditor.upsell.useCode" ng-click="upsellEditor.generateBarcode()" translate>Generate barcode</a>
+
+          </div>
+        </div>
+
+        <div class="row">
+
+        <div class="upsell-preview-template email-preview">
+          <div class="e-mail-preview__controls"><ul><li></li><li></li><li></li></ul></div>
+
+          <div class="border">
+            <div class="header">
+              <h1 translate>Thank you for your feedback and taking part in our prize draw!</h1>
+            </div>
+
+            <div class="row">
+
+            <div class="col m6 s12" style="padding-left:0" ng-if="upsellEditor.upsell.image_url.length > 0">
+              <img style="max-width: 100%" ng-src="{{upsellEditor.upsell.image_url}}" />
+            </div>
+
+            <div class="col s12" ng-class="{'m6': upsellEditor.upsell.image_url}">
+              <div class="heading">{{upsellEditor.upsell.heading}}</div>
+              <div class="subtitle">{{upsellEditor.upsell.subtitle}}</div>
+              <div class="body">{{upsellEditor.upsell.text}}</div>
+            </div>
+          </div>
+
+            <div class="barcode text-center" ng-if="upsellEditor.upsell.useCode">
+              <div ng-if="upsellEditor.barcodeIsValid" style="height:80px">
+                <img style="max-height: 80px" ng-src="https://barcode.feedbackly.com/?bcid={{upsellEditor.upsell.barcode.type}}&text={{upsellEditor.upsell.code}}{{upsellEditor.upsell.barcode.showText ? '&includetext':''}}" />
+              </div>
+            </div>
+
+            <div class="footer text-center">
+              <p class="text-center">powered by:</p>
+              <img src="/images/logos/feedbackly-logo-rgb.png" class="logo"/>
+
+            </div>
+
+
+          </div>
+        </div>
+
+        </div>
+      </div>
+
+      <div class="col s12">
+        <div class="input-field">
+          <button type="submit" ng-disabled="upsellEditor.upsell.image_url === 'uploading'" class="btn" translate>Save Upsell</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

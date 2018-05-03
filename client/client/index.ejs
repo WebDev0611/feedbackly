@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta id="viewport" name="viewport" content="initial-scale=1.0,user-scalable=0,minimum-scale=1.0,maximum-scale=1.0,width=device-width, user-scalable=no" />
+	<meta name="apple-mobile-web-app-capable" content="yes">
+
+  <!-- build:css -->
+  <link rel="stylesheet" type="text/css" href="/dist/client.min.css?v=1469432438598"/>
+  <!-- endbuild -->
+
+  <link href='https://fonts.googleapis.com/css?family=Merriweather:700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body class="<%= view %> <%= isPreview ? 'preview' : '' %>">
+<script src="/dist/pubsub-1.5.3.js"></script>
+
+<script>
+  window.prefillData = function(questionId, value){
+    window.PREFILLED = {
+      question: questionId,
+      value: value
+    }
+
+      if(window.initReady) PubSub.publish("SAVE_FROM_JS");
+      else {
+        PubSub.subscribe('INIT_READY', function(){
+          PubSub.publish("SAVE_FROM_JS");
+        })
+      }
+    return "Will save data";
+  }
+
+  </script>
+
+
+  <div class="header">
+    <div class="header__feedbackly-logo">
+      <img src="/dist/images/feedbackly.png"/>
+    </div>
+
+    <div class="header__organization-logo">
+      <% if(logo !== undefined) { %>
+        <img src="<%= logo %>">
+      <% } else { %>
+        &nbsp;
+      <% } %>
+    </div>
+
+    <div class="header__languages">
+      <div class="language gray-light text">LANGUAGE</div>
+    </div>
+  </div>
+  <div class="question-container">
+    <% _.forEach(survey.question_ids, function(question){ %>
+        <% if(question.question_type == "Button"){ %> <% include components/question_types/button/button.template.ejs %> <% } %>
+        <% if(question.question_type == "Contact"){ %> <% include components/question_types/contact/contact.template.ejs %> <% } %>
+        <% if(question.question_type == "Image"){ %> <% include components/question_types/image/image.template.ejs %> <% } %>
+        <% if(question.question_type == "NPS"){ %> <% include components/question_types/nps/nps.template.ejs %> <% } %>
+        <% if(question.question_type == "Slider"){ %> <% include components/question_types/slider/slider.template.ejs %> <% } %>
+        <% if(question.question_type == "Text"){ %> <% include components/question_types/text/text.template.ejs %> <% } %>
+        <% if(question.question_type == "Word"){ %> <% include components/question_types/word/word.template.ejs %> <% } %>
+    <% }) %>
+
+    <% include components/question_types/end/end.template.ejs %>
+  </div>
+
+  <% include components/keyboard/keyboard.template.ejs %>
+
+  <% include components/timer-screen/timer-screen.template.ejs %>
+
+  <div class="dummy-parent">
+    <div id="dummy-field"></div>
+  </div>
+
+  <div id="privacy-policy-layer"></div>
+
+  <div id="privacy-policy-modal">
+    <div id="privacy-policy-container-fi" class="privacy-policy-container">
+      <div class="privacy-policy-content">
+        <% if(survey.customPrivacyPolicy) { %>
+          <%= survey.customPrivacyPolicy %>
+        <% } %>
+
+        <div class="divider"></div>
+
+        <% include components/privacy-policy/fi.ejs %>
+      </div>
+
+      <div class="privacy-policy-footer">
+        <button class="privacy-policy-close">Sulje</button>
+      </div>
+    </div>
+
+    <div id="privacy-policy-container-en" class="privacy-policy-container">
+      <div class="privacy-policy-content">
+        <% if(survey.customPrivacyPolicy) { %>
+          <%= survey.customPrivacyPolicy %>
+        <% } %>
+
+        <div class="divider"></div>
+
+        <% include components/privacy-policy/en.ejs %>
+      </div>
+
+      <div class="privacy-policy-footer">
+        <button class="privacy-policy-close">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="spinner">
+    <img src="/dist/images/spin.svg" />
+  </div>
+
+  <script src="/dist/vendor.min.js"></script>
+  <% var hasSlider = false;
+   _.forEach(survey.question_ids, function(question){
+      if(question.question_type == 'Slider') hasSlider = true;
+  })
+  %>
+
+  <% if(hasSlider){ %>
+    <script src="/dist/pixi.min.js"></script>
+  <% } %>
+
+	<!-- build:js -->
+	<script src="/dist/client.min.js?v=1469432438598"></script>
+	<!-- endbuild -->
+
+  <script>
+    window.device_id = '<%= _.get(device, "_id") %>';
+    window.survey_id = '<%= survey._id %>';
+    window.organization_id = '<%= organization._id %>';
+    window.default_language = '<%= default_language %>';
+    window.SURVEY_LOGIC = <%- JSON.stringify(_.get(survey, 'properties.logic') || {})  %>;
+    window.LATEST_REFRESH = moment.utc().unix();
+    window.SURVEY_RETURN_TIME = <%= surveyReturnTime %>;
+    window.SURVEY_END_RETURN_TIME = <%= surveyEndReturnTime %>;
+    window.IS_PREVIEW = <%= isPreview %>;
+    window.NO_PING = <%= noPing %>;
+    window.PREFILLED= <%- JSON.stringify(prefilled) %>;
+    <% if(redirectAddress) { %>
+      window.REDIRECT = '<%= redirectAddress %>';
+    <% } %>
+    window.IS_KIASMA_SURVEY = <%= isKiasmaSurvey %>;
+  </script>
+
+  <div class="progress-bar">
+      <div class="progress">&nbsp;</div>
+  </div>
+
+  <div class="circle-animation-container">&nbsp;</div>
+  <div class="circle-animation-container-new">&nbsp;</div>
+
+</body>
+
+</html>

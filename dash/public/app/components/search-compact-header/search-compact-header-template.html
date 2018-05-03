@@ -1,0 +1,96 @@
+<div class="search-compact">
+  <ul>
+    <!-- DatePicker -->
+    <li class="sc-list-item" ng-click="surveysDropDownIsActive= false">
+      <i class="material-icons">date_range</i>
+      <div class="compact-header-text" ng-if="searchCompact.compareDates">1:</div>
+      <div style="display: inline-block">
+        <date-component filters="searchCompact.filters" on-change='searchCompact._onChange()' change-button="searchCompact.changeButton"
+          button-changed="searchCompact.buttonChanged" search-criteria="searchCompact.searchCriteriaFulfilled">
+        </date-component>
+      </div>
+    </li>
+
+    <li class="sc-list-item search-dropdown" ng-if="searchCompact.compareDates" data-position="bottom">
+      <!-- DatePicker 2 -->
+      <i class="material-icons">date_range</i>
+      <div class="compact-header-text">2:</div>
+      <div style="display: inline-block">
+        <date-component filters="searchCompact.filters.compare" on-change='searchCompact._onChange()' change-button="searchCompact.changeButton"
+          button-changed="searchCompact.buttonChanged" search-criteria="searchCompact.searchCriteriaFulfilled">
+        </date-component>
+      </div>
+    </li>
+
+    <li class="sc-list-item" ng-if="searchCompact.allowDateCompare">
+      <i class="material-icons search-dropdown-button" ng-click="searchCompact.toggleCompare()" tooltipped data-tooltip="{{ 'Toggle comparison of two date ranges' | translate }}">
+        {{ searchCompact.compareDates ? 'remove_circle' : 'add_circle_outline' }}
+      </i>
+    </li>
+
+    <!-- Devices/Channels -->
+    <li class="sc-list-item search-dropdown">
+      <i class="material-icons" style="cursor: pointer">record_voice_over</i>
+      <div class='search-dropdown-button compact-header-text tooltippedDevices' data-position="bottom" ng-click="searchCompact.toggleChannelDropdown()">
+        {{ searchCompact.activeDevices.length === 1 ? searchCompact.activeDevices[0].name : searchCompact.activeDevices.length +
+        ' Channels' }}
+      </div>
+      <div class="search-dropdown-menu" ng-class="{'search-dropdown-menu-active': searchCompact.channelsDropdownIsActive}">
+        <channel-tree on-change="searchCompact._onActiveDevicesChange(channels)" channels="searchCompact.devices" active-channels="searchCompact.filters.devices"
+          change-button="searchCompact.changeButton" button-changed="searchCompact.buttonChanged" search-criteria="searchCompact.searchCriteriaFulfilled">
+        </channel-tree>
+      </div>
+    </li>
+
+    <!-- Survey.lists -->
+    <li class="sc-list-item search-dropdown tooltippedSurveys" data-position="bottom">
+      <i class="material-icons" style="cursor: pointer">content_paste</i>
+      <div class='search-dropdown-button compact-header-text' ng-click="searchCompact.toggleSurveyDropdown()">
+        {{searchCompact.activeSurveys.length == 1 ? searchCompact.activeSurveys[0].name : searchCompact.activeSurveys.length + '
+        surveys'}}
+      </div>
+      <div class="search-dropdown-menu" ng-class="{'search-dropdown-menu-active': searchCompact.surveysDropDownIsActive}">
+        <p ng-repeat="survey in searchCompact.surveys">
+          <input type="checkbox" ng-click="searchCompact._onSurveysChange()" ng-model="survey.chosen" id="survey-id-{{survey._id}}"
+          />
+          <label for="survey-id-{{survey._id}}">{{survey.name}}</label>
+        </p>
+      </div>
+    </li>
+    <!-- Limit Feedback -->
+    <li class="sc-list-item search-dropdown" ng-if="searchCompact.showLimitFeedback">
+      <i class="material-icons" style="cursor: pointer">add_circle</i>
+      <div class='search-dropdown-button compact-header-text' ng-click="searchCompact.toggleLimitsDropdown()">
+        {{ 'Limit' | translate }}
+      </div>
+      <div class="search-dropdown-menu" ng-class="{'search-dropdown-menu-active': searchCompact.limitsDropdownIsActive}">
+        <p>
+          <label for="limitFeedbacks" translate>Limit feedback to</label>
+          <input id="limitFeedbacks" type="number" class="validate" ng-model="searchCompact.limitCount" ng-change="searchCompact._onLimitFeedbacksChange()"/>
+        </p>
+        <p class="switch">
+          <label>
+            {{'Newest' | translate}}
+            <input type="checkbox" ng-model="searchCompact.limitPosition" ng-change="searchCompact._onLimitFeedbacksChange()">
+            <span class="lever"></span>
+            {{'Oldest' | translate}}
+          </label>
+        </p>
+      </div>
+    </li>
+
+    <li>
+      <p ng-click="searchCompact.onSubmit(); searchCompact.resetButton()" class="search btn" ng-class="{
+          disabledBtn: !searchCompact.searchCriteriaFulfilled,
+          borderedButton: searchCompact.searchCriteriaFulfilled && searchCompact.buttonChanged
+        }">
+        <i class="material-icons vertical-align-middle">
+          {{searchCompact.searchCriteriaFulfilled && searchCompact.buttonChanged ? 'autorenew':'filter_list'}}
+        </i>
+        <span translate>
+          Filter
+        </span>
+      </p>
+    </li>
+  </ul>
+</div>

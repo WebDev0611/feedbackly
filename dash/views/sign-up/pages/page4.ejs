@@ -1,0 +1,52 @@
+<div class="page">
+  <div class="wrapper">
+    <button id="continue-without-billing" ga="continue-without-billing" style="display:none" class="hollow">Continue without billing info</button>
+<br>
+    <p>Fill in your billing details.</p>
+<form id="payment-form">
+<span class="payment-errors"></span>
+<div class="form-field">
+  <label>Name on card
+  <input type="text" maxlength="40" placeholder="NAME ON CARD" data-stripe="name" />
+  </label>
+</div>
+<div class="form-field">
+  <label>Credit card number
+  <input type="text" maxlength="20" placeholder="CREDIT CARD NUMBER" data-stripe="number" />
+  </label>
+</div>
+<div class="form-field expdate">
+  <label>Expiration
+    <input type="text" placeholder="YY" maxlength="2" data-stripe="exp_year"/>
+  <input type="text" placeholder="MM" maxlength="2" data-stripe="exp_month"/>
+  </label>
+</div>
+<div class="form-field">
+  <label>CVC
+  <input type="text" placeholder="CVC" maxlength="4" data-stripe="cvc" />
+  </label>
+</div>
+<div class="form-field">
+  <label>Billing address
+  <input id="address" type="text" placeholder="ADDRESS" data-stripe="address_line1"/>
+  </label>
+</div>
+<div class="form-field">
+  <label>Billing ZIP
+  <input id="zip" type="text" placeholder="ZIP" data-stripe="address_zip"/>
+  </label>
+</div>
+<div class="form-field">
+  <label>VAT ID
+  <input id="vat_id" type="text" placeholder="VAT ID" data-stripe="vat_id"/>
+  </label>
+</div>
+<div class="form-field" style="text-align: center">
+<button class="submit" id="submit">Submit</button>
+</div>
+</form>
+
+
+
+</div>
+</div>

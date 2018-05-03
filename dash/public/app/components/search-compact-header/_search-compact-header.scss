@@ -1,0 +1,139 @@
+.daterangepicker{
+  display: none;
+  border: 1px solid #ccc;
+
+  .range_inputs{
+    text-align: center
+  }
+  .btn{
+    background-color: inherit;
+    color: #26a69a;
+    border: none;
+    box-shadow: none;
+    padding: 0 18px;
+    &:hover{
+      background-color: #eee;
+      font-weight: bold;
+    }
+    &.cancelBtn{
+      color: gray;
+    }
+  }
+  .input-mini{
+    border: none !important;
+    border-radius: 0 !important;
+    padding: 0px !important;
+    border-bottom: 1px solid #ccc !important;
+
+    &.active{
+      border: none !important;
+      border-bottom: 1px solid #08c !important;
+      border-radius: 0px !important;
+      box-shadow: none !important;
+    }
+  }
+
+  .fa-chevron-left::before{
+    content: "◀︎";
+    font-style: normal;
+  }
+
+  .fa-chevron-right::before{
+    content: "▶︎";
+    font-style: normal;
+  }
+}
+
+.search-compact{
+  background: #335a6f;
+  color: #fff;
+  z-index: 2;
+  position: fixed;  
+  top: 0;
+  width: calc(100vw - 95px);
+  left: 80px;
+  box-shadow: 0px 5px 5px rgba(0,0,0,.15);
+  ul{
+    margin: 0;
+  }
+
+  #reportrange {
+    margin-top: 0.5rem;
+  }
+
+  .sc-list-item {
+    float: left;
+    margin-left: 0.8rem;
+    padding: 14px 10px 10px 10px;
+  }
+
+  @media (max-width: 800px) {
+    .sc-list-item{
+      display: block;
+      float: none;
+    }
+
+  }
+
+  .compact-header-text{
+    display: inline-block;
+    position: relative;
+    bottom: 5px;
+  }
+
+  .search.btn{
+    margin: 10px;
+    margin-right: 28px;
+    float: right;
+    width: 154px;
+    &.disabledBtn{
+      background-color: #B1B1B1;
+      color:white;
+      cursor: not-allowed;
+      pointer-events: none;
+    }
+    &.borderedButton {
+      background-color: #DF5A32;
+      color: #fff
+    }
+  }
+
+
+  .search-dropdown {
+    &-button{
+      cursor: pointer;
+    }
+    .material-icons{
+      margin-top: 0.1rem
+    }
+    > .search-dropdown-menu {
+    display: none; 
+    p {
+      padding: 0.3rem 1rem;
+    }
+    &.search-dropdown-menu-active {
+      z-index: 100;
+      overflow-y: scroll;
+      max-height: 90vh;
+      display: block;
+      position: absolute;
+      top: 3.0rem;
+      color: initial;
+      background: #fff;
+      box-shadow: 1px 1px 5px 1px grey;
+      padding: 0.3rem 1rem 0 0;
+      } 
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .search-compact{
+    position: initial !important;
+    width: 100%;
+
+    .search.btn{
+      float: none;
+    }
+  }
+}

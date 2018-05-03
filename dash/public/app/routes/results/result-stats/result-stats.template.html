@@ -1,0 +1,104 @@
+<div class="row result-totals">
+  <div class="col s12 m12 l6">
+    <div class="row">
+      <div class="col s12 m12" ng-class="::{ 'l6': resultStats.isTwoColumn() }" ng-if="::resultStats.isTwoColumn()">
+        <div ng-if="::(resultStats.channels.now.average !== undefined)">
+          <h5>
+            {{::resultStats.channels.now.average}}%
+            <small ng-class="::{ 'green-text': resultStats.channelsDifference('average') >= 0, 'red-text': resultStats.channelsDifference('average') < 0 }">
+              <i class="material-icons vertical-align-middle">{{::resultStats.getArrow('channels', 'average')}}</i>
+              {{::resultStats.channelsDifference('average')}}%
+            </small>
+          </h5>
+          <h6 class="grey-text stats">
+            {{ 'Average of responses in the selected feedback channels' | translate }}
+
+            <i class="material-icons help-icon small-icon" tooltipped data-tooltip="{{ 'Average of responses to this question with the selected filters' | translate }}">help_outline</i>
+          </h6>
+        </div>
+
+        <div ng-if="::(resultStats.channels.now.nps !== undefined)">
+          <h5>
+            {{::resultStats.channels.now.nps}}
+            <small ng-class="::{ 'green-text': resultStats.channelsDifference('nps') >= 0, 'red-text': resultStats.channelsDifference('nps') < 0 }">
+              <i class="material-icons vertical-align-middle">{{::resultStats.getArrow('channels', 'nps')}}</i>
+              {{::resultStats.channelsDifference('nps')}}
+            </small>
+          </h5>
+          <h6 class="grey-text stats">
+            {{ 'NPS in the selected feedback channels' | translate }}
+
+            <i class="material-icons help-icon small-icon" tooltipped data-tooltip="{{ 'NPS of this question with the selected filters' | translate }}">help_outline</i>
+          </h6>
+        </div>
+      </div>
+
+      <div class="col s12 m12" ng-class="::{ 'l6': resultStats.isTwoColumn() }">
+        <h5>
+          {{::resultStats.channels.now.count}}
+          <small ng-class="::{ 'green-text': resultStats.channelsDifference('count') >= 0, 'red-text': resultStats.channelsDifference('count') < 0 }">
+            <i class="material-icons vertical-align-middle">{{::resultStats.getArrow('channels', 'count')}}</i>
+            {{::resultStats.channelsDifference('count')}}
+          </small>
+        </h5>
+        <h6 class="grey-text stats">
+          {{ 'Amount of responses in the selected feedback channels' | translate }}
+
+          <i class="material-icons help-icon small-icon" tooltipped data-tooltip="{{ 'Amount of responses to this question with the selected filters' | translate }}">help_outline</i>
+        </h6>
+      </div>
+    </div>
+  </div>
+
+  <div class="col s12 m12 l6">
+    <div class="row">
+      <div class="col s12 m12" ng-class="::{ 'l6': resultStats.isTwoColumn() }" ng-if="::resultStats.isTwoColumn()">
+        <div ng-if="::(resultStats.organization.now.average !== undefined)">
+          <h5>
+            {{::resultStats.organization.now.average}}%
+            <small ng-class="::{ 'green-text': resultStats.organizationDifference('average') >= 0, 'red-text': resultStats.organizationDifference('average') < 0 }">
+              <i class="material-icons vertical-align-middle">{{::resultStats.getArrow('organization', 'average')}}</i>
+              {{::resultStats.organizationDifference('average')}}%
+            </small>
+          </h5>
+          <h6 class="grey-text stats">
+            {{ 'Average of responses in the whole organization' | translate }}
+
+            <i class="material-icons help-icon small-icon" tooltipped data-tooltip="{{ 'Average of responses to this question in all the feedback channels in the organization in the selected timespan' | translate }}">help_outline</i>
+          </h6>
+        </div>
+
+        <div ng-if="::(resultStats.organization.now.nps !== undefined)">
+          <h5>
+            {{::resultStats.organization.now.nps}}
+            <small ng-class="::{ 'green-text': resultStats.organizationDifference('nps') >= 0, 'red-text': resultStats.organizationDifference('nps') < 0 }">
+              <i class="material-icons vertical-align-middle">{{::resultStats.getArrow('organization', 'nps')}}</i>
+              {{::resultStats.organizationDifference('nps')}}
+            </small>
+          </h5>
+          <h6 class="grey-text stats">
+            {{ 'NPS in the whole organization' | translate }}
+
+            <i class="material-icons help-icon small-icon" tooltipped data-tooltip="{{ 'NPS of this question in all the feedback channels in the organization in the selected timespan' | translate }}">help_outline</i>
+          </h6>
+        </div>
+      </div>
+
+      <div class="col s12 m12" ng-class="::{ 'l6': resultStats.isTwoColumn() }">
+        <h5>
+          {{::resultStats.organization.now.count}}
+          <small ng-class="::{ 'green-text': resultStats.organizationDifference('count') >= 0, 'red-text': resultStats.organizationDifference('count') < 0 }">
+            <i class="material-icons vertical-align-middle">{{::resultStats.getArrow('organization', 'count')}}</i>
+            {{::resultStats.organizationDifference('count')}}
+          </small>
+        </h5>
+        <h6 class="grey-text stats">
+          {{ 'Amount of responses in the whole organization' | translate }}
+
+          <i class="material-icons help-icon small-icon" tooltipped data-tooltip="{{ 'Amount of responses to this question in the whole organization in the selected timespan' | translate }}">help_outline</i>
+        </h6>
+      </div>
+    </div>
+  </div>
+
+</div>

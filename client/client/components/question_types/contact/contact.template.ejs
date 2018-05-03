@@ -1,0 +1,85 @@
+<div class="question-type question-type-contact flexbox-container-column" question-id="<%= question._id %>">
+  <% include ./../../language_menu/language_menu.template.ejs %>
+
+    <div class="question-inner flexbox-container-column">
+      <% _.forEach(question.translations, function(translation){ %>
+        <h1 class="title hide lang lang-<%= translation.language %>">
+            <span>
+               <%= translation.heading %>
+            </span>
+        </h1>
+      <% }) %>
+
+      <hr>
+
+      <div class="subtitle">
+        <% _.forEach(question.translations, function(translation){ %>
+          <span class="hide lang lang-<%= translation.language %>">
+             <%= translation.subtitle %>
+          </span>
+        <% }) %>
+      </div>
+
+      <div class="input">
+        <% var data = _.reject(question.translations[0].data, 'hidden');
+         _.forEach(data, function(field){
+           _.forEach(question.translations, function(translation){
+              var text = _.find(translation.data, {id: field.id});
+              if(text && (!field.type || field.type != "CHECKBOX")){ %>
+                  <input type="text" class="hide lang lang-<%= translation.language %>" field-id="<%= field.id %>" placeholder="<%= text.data.toUpperCase() %>" />
+              <% }
+            })}) %>
+
+          <div class="pad">
+
+            <% _.forEach(data, function(field){ %>
+              <% if(field.type && field.type == "CHECKBOX"){ %>
+                <div class="check-group" data="false" field-id="<%= field.id %>">
+
+                  <% include svg/checkbox %>
+
+                  <div class="label">
+                    <% _.forEach(question.translations, function(translation){
+                      var text = _.find(translation.data, {id: field.id})
+                      if(text){ %>
+                        <span class="hide lang lang-<%= translation.language %>">
+                          <%= text.data.toUpperCase() %>
+                        </span>
+                        <% } %>
+                    <% }) %>
+                  </div>
+                </div>
+              <% } else { %>
+            <div class="input-text">
+              <div class="input-box" data="" field-id="<%= field.id %>">
+                <div class="placeholder">
+                  <% _.forEach(question.translations, function(translation){
+                      var text = _.find(translation.data, {id: field.id})
+                        if(text){ %>
+                      <span class="hide lang lang-<%= translation.language %>">
+                        <%= text.data.toUpperCase() %>
+                      </span>
+                  <%  }}) %>
+                </div>
+                <div class="text"></div>
+              </div> <% include svg/arrow %>
+           </div>
+           <% } %>
+       <% }) %>
+
+
+
+            <button class="submit scale-in-start" logic="<%= _.get(survey, 'properties.logic.' + question._id + '.submit') %>">
+                <% _.forEach(UITranslations.next, (tr, lang) => { %>
+                  <span class="lang lang-<%= lang %> hide"> <%= tr %> </span>
+                <% }) %>
+            </button>
+        </div>
+      <!--  <button class="transparent skip">SKIP</button> -->
+      </div>
+
+      <% include ./../../privacy-policy/open %>
+
+</div>
+
+</div>

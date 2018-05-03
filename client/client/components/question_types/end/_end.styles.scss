@@ -1,0 +1,23 @@
+.survey-end{
+  #kiasma-thumb {
+    font-size: 12em;
+    color: $turquoise-light;
+  }
+
+  .flexbox-container-column{
+    @include justify-content(center);
+
+    .powered-by-feedbackly{
+      margin: 20px;
+
+      img{
+        width: 45%;
+        max-width: 300px;
+        display: block;
+        margin: 20px auto;
+
+      }
+    }
+
+  }
+}

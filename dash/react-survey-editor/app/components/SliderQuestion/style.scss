@@ -1,0 +1,50 @@
+.preview {
+  content: '&nbsp';
+  background-image:url('./slider.png');
+  background-size: contain;
+  background-repeat: no-repeat;;
+  position: relative;
+  width: 130px;
+  height: 130px;
+  display: inline-block;
+}
+.logicPosition {
+
+    position: absolute;
+    left: 0px
+}
+.main {
+
+}
+.slider > div {
+  display: inline-block;
+  position: relative;
+}
+
+.delete {
+  position: absolute;
+  top: 0px;
+  right: -15px;
+}
+
+.add > div {
+  height: 150px;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.submit {
+  display: inline-block;
+  position: relative;
+  top: -15px;
+  left: -10px;
+}
+.submitlogic {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.edit {
+  width: 130px !important;
+}

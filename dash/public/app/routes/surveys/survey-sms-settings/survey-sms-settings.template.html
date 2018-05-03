@@ -1,0 +1,94 @@
+<div class="card">
+  <div class="card-content">
+     <div class="card-title" translate>SMS Settings</div>
+
+     <div class="section">
+    </div>
+
+     <div class="divider"></div>
+
+     <div class="section">
+       <div class="row">
+
+        <div class="col m7 s12">
+          <div input-field class="col m8">
+            <i class="material-icons prefix">account_circle</i>
+            <input id="email-sender-name" type="text" ng-model="surveySmsSettings.smsSettings.fromName" ng-change="surveySmsSettings.formatSender()" length="11">
+            <label for="email-sender-name" translate>Sender name (if supported))</label>
+          </div>
+
+          <div input-field class="col m8">
+            <textarea id="text-body" class="materialize-textarea" ng-model="surveySmsSettings.smsSettings.textBody"></textarea>
+            <label for="text-body" translate>Text body</label>
+          </div>
+          <div class="col m12">
+            <p>
+              {{ "Add" | translate }} {{:: surveySmsSettings.SMS_LINK_TOKEN }} {{"to your message body to set the place for the link." | translate}}
+              {{'The link takes up max 21 characters.' | translate }}
+            </p>
+
+            <p ng-if="!surveySmsSettings.canSendSms" class="text-red-dark" translate>
+              You have no rights to send SMS messages. Enter your credit card information in your organization details or request access from support@feedbackly.com
+            </p>
+          </div>
+
+          <div class="row">
+
+            <div class="input-field col m7">
+              <input id="test-email" type="text" ng-model="surveySmsSettings.smsSettings.testSmsNumber">
+              <label for="test-email" translate>Test number</label>
+            </div>
+            <div class="col m5" style="height:61px; position: relative;">
+              <button class="btn waves-effect waves-light" type="submit" name="action"
+              ng-disabled="!surveySmsSettings.canSendSms || surveySmsSettings.balance <= 0 || (surveySmsSettings.smsSettings.testSmsNumber || '').length < 8"
+              ng-click="surveySmsSettings.sendTestSms()" style="position: absolute; bottom: 0" translate>Send test SMS</button>
+            </div>
+            <div class="col s12">
+                <span>{{"The message takes up" | translate}} {{ surveySmsSettings.messageAmount()}} {{"messages in total" | translate}}.</span>
+                <p>{{surveySmsSettings.smsSettings.unicode ? 'UNICODE': ''}}&nbsp;</p>
+                <p>SMS Balance: 
+                  <strong>
+                    <span ng-if="!surveySmsSettings.loadingBalance">{{ surveySmsSettings.balance || 0 }}€</span>
+                    <span ng-if="surveySmsSettings.loadingBalance" translate>Refreshing...</span>
+                  </strong>
+                  <a href ng-click="surveySmsSettings.getBalance()" style="position: relative">
+                      <i class="material-icons" style="position: absolute; top: -5px;">refresh</i>
+                    </a>
+                  
+                    <a ng-if="surveySmsSettings.isOrganizationAdmin" style="margin-left: 3em;" href="/v-app/#/sms-top-up" target="_blank" class="btn btn-hollow">Top up</a>
+                    <a ng-if="!surveySmsSettings.isOrganizationAdmin" tooltipped data-tooltip="{{'Please ask your organization admin to top up the SMS Balance' | translate}}" data-position="top" style="margin-left: 3em;" class="btn-disabled">Top up</a>
+                </p>
+                <br> <span class="sms-small"><a href="https://docs.google.com/spreadsheets/d/1lDUfS-wksQMhtaqwt7B30iH3xx2HDKWYg2jTZ4UO-Fg/edit#gid=1353238937" target="_blank" translate>See pricing</a> and <a href="https://feedbacklyhelp.zendesk.com/hc/en-us/articles/211906829-SMS-limitations" target="_blank" translate>SMS limitations</a></span>
+            </div>
+          </div>
+        </div>
+
+       <div class="col m4 s12">
+
+         <div class="mobile-preview" ng-style="{'height': surveySmsSettings.previewHeight()}">
+             <div class="device-mockup" data-device="iphone6" data-orientation="portrait" data-color="black">
+                <div class="device">
+                    <div class="screen">
+                      <div class="from">
+                        <div>{{surveySmsSettings.smsSettings.fromName.split(" ").join("")}}&nbsp;</div>
+                      </div>
+
+                      <blockquote class="chat">
+                          <p class="them" ng-bind-html="surveySmsSettings.formatTextWithLink(surveySmsSettings.smsSettings.textBody)">&nbsp;</p>
+                      </blockquote>
+
+                    </div>
+                    <div class="button">
+                        <!-- You can hook the "home button" to some JavaScript events or just remove it -->
+                    </div>
+                </div>
+            </div>
+      </div>
+      </div>
+    </div>
+     </div>
+  </div>
+</div>
+
+
+<survey-progress-bar go-to-state="surveySmsSettings.goToState(state)" active-channels="surveySmsSettings.activeChannels"></survey-progress-bar>

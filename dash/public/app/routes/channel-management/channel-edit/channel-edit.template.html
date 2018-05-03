@@ -1,0 +1,30 @@
+<div class="card">
+  <div class="card-content">
+    <div>
+      <a ng-if="channelEdit.canCreateChannels" class="waves-effect waves-light btn btn-s pull-right" modal href="#add-channel"><i class="material-icons left">add_circle</i>{{ 'New Feedback Channel' | translate }}</a>
+      <div class="card-title" translate>Channel management</div>
+    </div>
+
+    <br>
+
+    <div class="row">
+      <div class="col m4 l3">
+        <channel-group-list all-channels-group="channelEdit.allChannelsGroup" channel-groups="channelEdit.channelGroups"></channel-group-list>
+      </div>
+      <div class="col m8 l9">
+        <span class="card-title">{{ 'Edit channel' | translate}} - {{channelEdit.channel.name}}</span>
+        <device-info device="channelEdit.channel" number-of-members="channelEdit.channel.contactsCount" is-schedulateable="true"></device-info>
+
+        <plugin-setup ng-if="channelEdit.channel.type=='PLUGIN'" channel="channelEdit.channel"></plugin-setup>
+        <edit-device-form type="channelEdit.channel.type" device="channelEdit.channel" on-remove="channelEdit.onRemove(channel)" on-save="channelEdit.onSave(channel)" upsells="channelEdit.upsells" organization-profanity-filter="channelEdit.organizationProfanityFilter"></edit-device-form>
+        <show-sms-channel ng-if="channelEdit.channel.type=='SMS'" channel="channelEdit.channel"></show-sms-channel>
+        <show-mailing-list-channel ng-if="channelEdit.channel.type=='EMAIL'" channel="channelEdit.channel"></show-mailing-list-channel>
+
+
+
+
+      </div>
+    </div>
+  </div>
+</div>
+<add-channel channel-groups="channelEdit.channelGroups"></add-channel>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="<%= dashUrl %>/dist/print-feedback-list.min.css"/>
+    </head>
+
+    <body>
+      <div class="content-wrapper">
+        <% data.table.rows.forEach(function(row, i) { %>
+          <% if(i % 2 === 0) { %>
+            <div class="clearfix">
+          <% } %>
+
+            <div class="result-item">
+              <h4>
+                <%= row[0] %>, <%= row[1] %>, <%= row[2] %>
+              </h4>
+
+              <table>
+                <% for(var n = 3; n < row.length; n++) { %>
+                  <% var column = row[n] %>
+                  <%
+                    var columnContent;
+
+                    var buttonValueToImage = {
+                      '0': 'images/faces-svg/face000.svg',
+                      '25': 'images/faces-svg/face025.svg',
+                      '33': 'images/faces-svg/face025.svg',
+                      '50': 'images/faces-svg/face050.svg',
+                      '66': 'images/faces-svg/face075.svg',
+                      '75': 'images/faces-svg/face075.svg',
+                      '100': 'images/faces-svg/face100.svg'
+                    };
+
+                    if(column.data === undefined) {
+                      continue;
+                      columnContent = '';
+                    } else if(column.question_type === 'Button') {
+                      var dataToStr = (column.data[0] * 100).toString();
+
+                      columnContent = `<img src="${dashUrl}/${buttonValueToImage[dataToStr]}" width="30" height="30" valign="middle">`;
+                    } else if(column.question_type === 'NPS') {
+                      columnContent = column.toStr + '%';
+                    } else if(column.question_type === 'Slider') {
+                      columnContent = column.toStr;
+                    } else if(column.question_type === 'Image') {
+                      columnContent = `
+                        <img src="${column.data[0].url}" class="image" width="30" height="30" valign="middle">
+                        <span class="image-label">${column.data[0].label || ''}</span>
+                      `;
+
+                    } else if(column.question_type === 'Contact') {
+                      columnContent = column.toStr === 'true' ? '&#x2713;' : column.toStr;
+                    } else if(column.question_type === 'Word') {
+                      columnContent = column.toStr;
+                    } else if(column.question_type === 'Text') {
+                      columnContent = column.toStr;
+                    } else {
+                      columnnContent = column;
+                    }
+                   %>
+
+                  <tr>
+                    <td class="question-column">
+                      <strong><%= data.table.headings[n - 3].title %>:</strong>
+                    </td>
+                    <td>
+                      <%- columnContent %>
+                    </td>
+                  </tr>
+                <% } %>
+              </table>
+            </div>
+          <% if(i % 2 === 1) { %>
+            </div>
+          <% } %>
+        <% }) %>
+      </div>
+
+      <p class="center-align grey-text">
+        (c) Feedbackly 2012-<%= new Date().getFullYear() %>
+      </p>
+    </body>
+</html>

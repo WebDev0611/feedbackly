@@ -1,0 +1,66 @@
+
+<div class="page">
+  <div class="wrapper" id="page-2-form">
+
+
+<div class="form-field" style="display:none;">
+  <label for="displayname">Full name</label>
+  <span class="error"></span>
+
+  <input id="displayname" name="displayname" type="text" placeholder="FULL NAME" required min-length="5" value="<%= name %>"/>
+</div>
+<div class="form-field" style="display:none;">
+  <label for="organization-name">Organization name</label>
+  <span class="error"></span>
+
+  <input id="organization-name" name="organization-name" type="text" placeholder="ORGANIZATION" required min-length="3" value="<%= organization %>"/>
+</div>
+<div class="form-field">
+  <label for="phone">Phone number</label>
+  <span class="error"></span>
+
+  <input id="phone" name="phone" type="text" placeholder="PHONE NUMBER" required min-length="10" />
+</div>
+
+<div class="form-field">
+  <label for="country">Country</label>
+  <span class="error"></span>
+
+  <div class="select-style">
+
+<select id="country" name="country" not="Select a country">
+  <option>Select a country</option>
+  <% countries.forEach(country => { %>
+    <option value="<%= country.code %>"><%= country.name %> </option>
+  <% }) %>
+</select>
+</div>
+</div>
+
+<div class="form-field">
+  <label for="use_case">Use case</label>
+  <span class="error"></span>
+<div class="select-style">
+<select id="use_case" name="use_case" not="Select use case">
+  <option>Select use case</option>
+  <option>Retail</option>
+  <option>eCommerce</option>
+  <option>HR</option>
+  <option>Services</option>
+  <option>B2B</option>
+  <option>Other</option>
+</select>
+</div>
+
+</div>
+
+<div class="form-field" id="use_case_specify_container" style="display:none">
+  <label for="use_case_specify">Specify use case:</label>
+  <input id="use_case_specify" name="use_case_specify" type="text" placeholder="PLEASE SPECIFY" />
+</div>
+
+<div class="form-field" style="text-align: center">
+<button id="submit-page-2" ga="page-2-submit">Submit</button>
+</div>
+</div>
+</div>

@@ -1,0 +1,272 @@
+<div>
+  <ul class="collapsible" data-collapsible="accordion" style="margin-bottom:20px">
+    <li>
+      <div class="collapsible-header"><i class="material-icons">laptop_windows</i> {{ 'Display settings' | translate }}</div>
+
+      <div class="collapsible-body">
+        <div class="section">
+          <h6 translate>Choose plugin display</h6>
+
+          <p>
+            <input type="radio" ng-change="pluginSetup.onSettingsChange()" class="with-gap" id="plugin-display-popup" ng-model="pluginSetup.pluginSettings.display" value="popup"/>
+            <label for="plugin-display-popup" translate>
+              Corner window
+            </label>
+          </p>
+
+          <p>
+            <input type="radio" ng-change="pluginSetup.onSettingsChange()" class="with-gap" id="plugin-display-modal" ng-model="pluginSetup.pluginSettings.display" value="modal"/>
+            <label for="plugin-display-modal" translate>
+              Popup window
+            </label>
+          </p>
+
+          <p>
+            <input type="radio" ng-change="pluginSetup.onSettingsChange()" class="with-gap" id="plugin-display-embedded" ng-model="pluginSetup.pluginSettings.display" value="embedded"/>
+
+            <label for="plugin-display-embedded" translate>
+              Freely placed
+            </label>
+          </p>
+        </div>
+
+        <div class="section" ng-if="pluginSetup.pluginSettings.display === 'popup'">
+          <h6 translate>Choose corner window placement</h6>
+
+          <p>
+            <input type="radio" ng-change="pluginSetup.onSettingsChange()" class="with-gap" id="plugin-placement-bottom-right" ng-model="pluginSetup.pluginSettings.placement" value="bottom-right"/>
+            <label for="plugin-placement-bottom-right" translate>
+              Bottom right corner
+            </label>
+          </p>
+
+          <p>
+            <input type="radio" ng-change="pluginSetup.onSettingsChange()" class="with-gap" id="plugin-placement-bottom-left" ng-model="pluginSetup.pluginSettings.placement" value="bottom-left"/>
+            <label for="plugin-placement-bottom-left" translate>
+              Bottom left corner
+            </label>
+          </p>
+
+          <p>
+            <input type="radio" ng-change="pluginSetup.onSettingsChange()" class="with-gap" id="plugin-placement-top-right" ng-model="pluginSetup.pluginSettings.placement" value="top-right"/>
+            <label for="plugin-placement-top-right" translate>
+              Top right corner
+            </label>
+          </p>
+
+          <p>
+            <input type="radio" ng-change="pluginSetup.onSettingsChange()" class="with-gap" id="plugin-placement-top-left" ng-model="pluginSetup.pluginSettings.placement" value="top-left"/>
+            <label for="plugin-placement-top-left" translate>
+              Top left corner
+            </label>
+          </p>
+        </div>
+
+        <div class="section" ng-if="pluginSetup.pluginSettings.display === 'embedded'">
+          <h6 translate>Place freely by adding this line of code anywhere on the site (in addition to the setup code below)</h6>
+
+          <input-field>
+            <input type="text" ng-model="pluginSetup.placementSource">
+          </input-field>
+        </div>
+
+
+      </div>
+    </li>
+
+    <li>
+      <div class="collapsible-header"><i class="material-icons">notifications_active</i> {{ 'Triggering conditions' | translate }}</div>
+
+      <div class="collapsible-body">
+          <p translate>Set the conditions to display the plugin. Once all conditions are fulfilled, the survey will be displayed.</p>
+
+          <div class="section">
+          <h6 translate>Display only on certain pages</h6>
+
+          <p class="grey-text">
+              {{'An URL or a partial URL. If it matches, the survey will trigger once all other conditions are fulfilled.' | translate }} <br>
+              eg. "/products", "/products/shoes"
+          </p>
+
+          <form ng-submit="pluginSetup.addUrlPattern()">
+            <span ng-repeat="pattern in pluginSetup.pluginSettings.urlPatterns.rules track by $index">
+              {{pattern}}
+              <i class="material-icons cursor-pointer grey-text vertical-align-middle" ng-click="pluginSetup.removeUrlPattern($index)">delete</i>
+            </span>
+
+            <input-field>
+              <label translate>New URL or partial URL</label>
+              <input type="text" ng-model="pluginSetup.newUrlPattern">
+            </input-field>
+
+            <p>
+                <input id="type-single" type="radio" class="with-gap" ng-model="pluginSetup.pluginSettings.urlPatterns.mode" value="single" ng-change="pluginSetup.onSettingsChange()" />
+                <label for="type-single" translate>One URL needs to be visited before triggering</label>
+
+                <input id="type-all" type="radio" class="with-gap" ng-model="pluginSetup.pluginSettings.urlPatterns.mode" value="all" ng-change="pluginSetup.onSettingsChange()" ng-disabled="pluginSetup.pluginSettings.urlPatterns.rules.length < 2"/>
+                <label for="type-all" translate>All URLs need to be visited before triggering</label>
+
+                <input id="type-all-in-order" type="radio" class="with-gap" ng-model="pluginSetup.pluginSettings.urlPatterns.mode" value="allInOrder" ng-change="pluginSetup.onSettingsChange()" ng-disabled="pluginSetup.pluginSettings.urlPatterns.rules.length < 2" />
+                <label for="type-all-in-order" translate>All URLs need to be visited in order before triggering</label>
+
+            </p>
+
+            <button type="submit" ng-disabled="!pluginSetup.newUrlPattern" class="waves-effect waves-light btn" translate>
+              Add
+            </button>
+          </form>
+        </div>
+
+        <!-- EXCLUDE URLS -->
+        <div class="section">
+            <h6 translate>Hide on certain pages</h6>
+  
+            <p class="grey-text">
+                {{'An URL or a partial URL. If any of these match, the survey will not trigger on the page.' | translate }} <br>
+                eg. "/products", "/products/shoes"
+            </p>
+  
+            <form ng-submit="pluginSetup.hideOnlyPattern()">
+              <span ng-repeat="pattern in pluginSetup.pluginSettings.excludeUrls track by $index">
+                {{pattern}}
+                <i class="material-icons cursor-pointer grey-text vertical-align-middle" ng-click="pluginSetup.removeExcludedUrlPattern($index)">delete</i>
+              </span>
+  
+              <input-field>
+                <label translate>New URL or partial URL</label>
+                <input type="text" ng-model="pluginSetup.hiddenURL">
+              </input-field>
+  
+              <button type="submit" ng-disabled="!pluginSetup.hiddenURL" class="waves-effect waves-light btn" translate>
+                Add
+              </button>
+            </form>
+          </div>
+        <!-- EOS HIDE ONLY -->
+
+        <div class="section">
+          <h6 translate>Number of pages visited</h6>
+
+          <p class="range-field">
+            <label> {{ 'Display after visiting' | translate }} {{pluginSetup.pluginSettings.showAfterVisitedPages}} {{ 'pages' | translate }}</label>
+            <input type="range" ng-change="pluginSetup.onSettingsChange()" ng-model="pluginSetup.pluginSettings.showAfterVisitedPages" min="0" max="50" />
+          </p>
+
+        </div>
+
+        <div class="section">
+          <h6 translate>Visiting time</h6>
+
+          <p class="range-field">
+            <label>{{ 'Display after visiting the site for' | translate }} {{pluginSetup.pluginSettings.showAfterSecondsOnSite}} {{ 'seconds' | translate }}</label>
+            <input type="range" ng-change="pluginSetup.onSettingsChange()" ng-model="pluginSetup.pluginSettings.showAfterSecondsOnSite" min="0" max="1000" />
+          </p>
+
+          <p class="range-field">
+            <label>{{ 'Display after visiting the page for' | translate }} {{pluginSetup.pluginSettings.showAfterSecondsOnPage}} {{ 'seconds' | translate }}</label>
+            <input type="range" ng-change="pluginSetup.onSettingsChange()" ng-model="pluginSetup.pluginSettings.showAfterSecondsOnPage" min="0" max="1000" />
+          </p>
+        </div>
+
+        <div class="section">
+          <h6 translate>Scrolling</h6>
+
+          <p class="range-field">
+            <label> {{ 'When user has scrolled down' | translate }} {{pluginSetup.pluginSettings.afterPercentage}} {{ '% of the page' | translate }}</label>
+            <input type="range" ng-change="pluginSetup.onSettingsChange()" ng-model="pluginSetup.pluginSettings.afterPercentage" min="0" max="100" />
+          </p>
+
+        </div>
+
+        <div class="section">
+          <h6 translate>Exiting the page</h6>
+
+          <input type="checkbox" ng-model="pluginSetup.pluginSettings.exitTrigger" id="exit-trigger" />
+          <label for="exit-trigger" translate> When user is exiting page </label>
+
+        </div>
+
+        <div class="section redisplay-condition">
+          <h6 translate>Redisplay conditions</h6>
+
+          <div>
+            <label ng-if="pluginSetup.pluginSettings.hiddenAfterClosedForHours !== 99999999">
+                {{ 'Redisplay after being closed after' | translate }} {{pluginSetup.pluginSettings.hiddenAfterClosedForHours}} {{ 'hours' | translate }}
+            </label>
+            <label ng-if="pluginSetup.pluginSettings.hiddenAfterClosedForHours == 99999999" translate>
+                The widget is not shown again once it's closed.
+            </label>
+            <div class="input-range">
+              <p>
+                <input type="checkbox" id="range1" ng-click="pluginSetup.toggleSlider('range1')"
+                ng-checked="pluginSetup.feedbackClosedHoursSlider"/>
+                <label for="range1"></label>
+              </p>
+              <p class="range-field" ng-if="pluginSetup.feedbackClosedHoursSlider">
+                <input type="range" ng-change="pluginSetup.onSettingsChange()" ng-model="pluginSetup.pluginSettings.hiddenAfterClosedForHours" min="0" max="1000" />
+              </p>
+              <p ng-if="!pluginSetup.feedbackClosedHoursSlider" translate>
+                Toggle redisplaying time after closing.
+              </p>
+            </div>
+          </div>
+
+          <div>
+            <label ng-if="pluginSetup.pluginSettings.hiddenAfterFeedbackForHours !== 99999999">{{ 'Redisplay after survey has been finished after' | translate }} {{pluginSetup.pluginSettings.hiddenAfterFeedbackForHours}} {{ 'hours' | translate }}</label>
+            <label ng-if="pluginSetup.pluginSettings.hiddenAfterFeedbackForHours == 99999999" translate>
+              The widget is not shown again once the survey is completed.
+            </label>
+            <div class="input-range">
+              <p>
+                <input type="checkbox" id="range2" ng-click="pluginSetup.toggleSlider('range2')" 
+                ng-checked="pluginSetup.feedbackCompletedHoursSlider"/>
+                <label for="range2"></label>
+                </p>
+              <p class="range-field" ng-if="pluginSetup.feedbackCompletedHoursSlider">
+                <input type="range" ng-change="pluginSetup.onSettingsChange()" ng-model="pluginSetup.pluginSettings.hiddenAfterFeedbackForHours" min="0" max="1000" />
+              </p>
+              <p ng-if="!pluginSetup.feedbackCompletedHoursSlider" translate>
+                Toggle redisplaying time after completing survey.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="section">
+          <h6 translate>Sampling</h6>
+
+          <p class="range-field hidethumb">
+            <label>{{ 'Show the survey to only x% of the visitors' | translate }}</label> <br>
+            <b>{{pluginSetup.pluginSettings.sampleRatio | formatPercentage }}</b>
+            <input type="range" ng-change="pluginSetup.onRatioChange()" ng-model="pluginSetup.sampleRatioNonlinear" min="0" max="1" step="0.0001"/>
+          </p>
+          </p>
+        </div>
+      </div>
+    </li>
+  </ul>
+
+  <div>
+    <h5 translate>Installation</h5>
+    <h6 translate>Step 1 - Shared general source</h6>
+    {{ 'Add the following script to the scripts-section of your site (typically at the end of the body tag or in the footer). This code is shared across all your website plugin channels, so you only need to require it once per page / page reload.' | translate }}
+    <div class="row" style="position:relative">
+      <div class="textarea-source" style="width: 100%; overflow-x:scroll; border: 1px solid #ddd; border-radius: 2px;">
+        <textarea style="width: 3900px; height: 80px; border: 0;" class="code-source" ng-model="pluginSetup.mainSource"></textarea>
+      </div>
+      <i class="material-icons text-turquoise-dark" style="position: absolute;top: 0.1em;right: 0;cursor:pointer" ng-click="pluginSetup.copyToClipboard(pluginSetup.mainSource)">content_copy</i>
+    </div>
+
+    <h6 translate>Step 2: Unique plugin code</h6>
+    {{'Add this line of code to enable this plugin channel on a page. Repeat this for all unique plugin channels you have.' | translate }}
+    <div class="row" style="position:relative">
+      <div class="textarea-source" style="width: 100%; border: 1px solid #ddd; border-radius: 2px;">
+        <textarea style="border: 0; height: 80px;" class="code-source" ng-model="pluginSetup.channelSource"></textarea>
+      </div>
+      <i class="material-icons text-turquoise-dark" style="position: absolute;top: 0.1em;right: 0;cursor:pointer" ng-click="pluginSetup.copyToClipboard(pluginSetup.channelSource)">content_copy</i>
+    </div>
+
+    <p style="display:none;">LOST ? <a href="#" target="_blank">See documentation for a full set of instructions </a> and javascript API usage.</p>
+
+  </div>
+</div>

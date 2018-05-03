@@ -1,0 +1,43 @@
+@import "../styles/colors.scss";
+
+.main {
+    width: 100%;
+    padding-bottom: 1em;
+    text-align: center;
+}
+
+.textarea{
+  width: 320px;
+  height: 100px;
+  text-align: center;
+  margin: 1em auto;
+  background: #fff;
+  border: 1px solid #c1c2cd;
+  padding-top: 2.5em;
+}
+
+.input {
+    composes: montserrat from '../styles/fonts/fonts.scss';
+    font-size: 0.8em;
+    text-transform: uppercase;
+    color: $gray-dark;
+    margin: 0 auto;
+}
+
+.inputEdit{
+  composes: input;
+  font-size: 0.8em !important;
+}
+
+.logic {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.submit {
+  display: inline-block;
+  position: relative;
+  top: -10px;
+  left: -10px;
+}

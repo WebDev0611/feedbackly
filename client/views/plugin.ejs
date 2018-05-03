@@ -1,0 +1,54 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+
+    <script>
+        function getBodyHtml(){
+          var bodyHtml = $("body").html();
+          return bodyHtml;
+        }
+        
+        $(document).ready(function(){
+          $("textarea").val(getBodyHtml())
+        })
+
+        $(document).on("change", "textarea", function(){
+          var html = $("textarea").val();
+          $("body").html(html)
+          $("textarea").val(html)
+        })
+  
+      </script>
+
+      <style>
+        textarea{
+          width: 100%;
+          min-height: 400px;
+        }
+      </style>
+  </head>
+  <body>
+    <h3>Plugin test page</h3>
+
+    <a href="#movies">Movies link</a>
+    <a href="#series">Series link</a>
+    <a href="#someotherplace">Some other place link</a>
+    <a href="#faq">FAQ</a>
+    
+    <p>
+        Insert any code to the text box and it will be added to the end of this page's body tag. If you mess it up, reload the page.
+        For the plugin to work using this particular approach, add the universal script below the unique script.
+    </p>
+    <p>
+      Use the above links to navigate to new URLS inside the page. Handy for URL testing.
+    </p>
+
+    <textarea>
+
+    </textarea>
+    </body>
+
+
+
+</html>

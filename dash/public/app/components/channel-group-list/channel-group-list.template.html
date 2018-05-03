@@ -1,0 +1,14 @@
+<div style="position: relative">
+  <h6 translate>Channel groups</h6>
+  <a ng-if="channelGroupList.canCreateChannels" class="btn-floating btn-s" ui-sref="newChannelGroup" style="position: absolute;top: -3px;right: 0px;"><i class="material-icons">add</i></a>
+  <div class="collection small">
+      <a ng-repeat="group in channelGroupList.channelGroups track by $index" ui-sref="group({id: group._id})" class="collection-item">
+        <span ng-if="group.is_all_channels_group" translate>
+          All channels
+        </span>
+        <span ng-if="!group.is_all_channels_group">
+          {{group.name}}
+        </span>
+      </a>
+  </div>
+</div>

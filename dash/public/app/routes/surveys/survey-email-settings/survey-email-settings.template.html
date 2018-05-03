@@ -1,0 +1,117 @@
+<div class="card">
+  <div class="card-content" style="padding-bottom: 5px;">
+    <div class="row" style="margin-bottom: 5px;">
+    <div class="col m5 s12">
+     <div class="card-title" translate>Email Settings</div>
+
+     <div class="divider"></div>
+
+     <div class="section">
+
+
+              <div class="input-field">
+                <i class="material-icons prefix">account_circle</i>
+                <input id="email-sender-name" type="text" ng-model="surveyEmailSettings.emailSettings.fromName">
+                <label for="email-sender-name" translate>Sender name</label>
+              </div>
+              <div class="input-field">
+                <i class="material-icons prefix">email</i>
+                <input id="last_name" type="text" ng-model="surveyEmailSettings.emailSettings.fromEmail">
+                <label for="last_name" translate>Sender e-mail*</label>
+              </div>
+              <div class="input-field">
+                <i class="material-icons prefix">subject</i>
+                <input id="last_name" type="text" ng-model="surveyEmailSettings.emailSettings.subject">
+                <label for="last_name"  translate>E-mail subject</label>
+              </div>
+
+              <div class="input-field">
+                <textarea id="text-body" class="materialize-textarea" ng-model="surveyEmailSettings.emailSettings.textBody"></textarea>
+                <label for="text-body" translate>Text body</label>
+              </div>
+
+              <div class="row" ng-if="surveyEmailSettings.survey.languages.length > 1">
+                <span translate>Select translation</span>
+                <div input-field>
+                    <select id="lang" 
+                    ng-model="surveyEmailSettings.emailSettings.language" 
+                    ng-change="surveyEmailSettings.changeTranslation()"
+                    material-select watch>
+                        <option ng-selected="surveyEmailSettings.emailSettings.language" ng-repeat="language in surveyEmailSettings.survey.languages" ng-value="language">{{ surveyEmailSettings.getLanguageName(language) }}</option>
+                    </select>
+                </div>
+              </div>
+
+              <div class="row">
+
+              <div class="input-field col m7">
+                <input id="test-email" type="text" ng-model="surveyEmailSettings.emailSettings.testEmail">
+                <label for="test-email" translate>Test address</label>
+              </div>
+
+              <div class="col m5" style="height:61px; position: relative;">
+                <button class="btn waves-effect waves-light" type="submit" name="action" ng-click="surveyEmailSettings.sendTest()" style="position: absolute; bottom: 0" translate>Send test</button>
+              </div>
+            </div>
+
+            <div class="row">
+              <span class="small"><a href="https://feedbacklyhelp.zendesk.com/hc/en-us/articles/212999045-Sending-e-mails-from-SPF-protected-addresses" target="_blank" translate>* Mails that use domains protected by SPF (Sender Policy Framework) may not be delivered.</a></span>
+            </div>
+
+            </div>
+
+      </div>
+
+          <div class="col m7 s12">
+            <div class="e-mail-preview">
+              <div class="e-mail-preview__controls"><ul><li></li><li></li><li></li></ul></div>
+
+              <div class="e-mail-preview__subject">
+                <strong translate>From:</strong> {{surveyEmailSettings.emailSettings.fromName}} <{{surveyEmailSettings.emailSettings.fromEmail}}>
+                <strong translate>To:</strong> <span ng-repeat="list in surveyEmailSettings.emailLists track by $index">{{$index !== 0 ? ',': ''}} {{list.name}}</span> <br>
+                <strong translate>Subject:</strong> {{surveyEmailSettings.emailSettings.subject}}</div>
+              <div class="e-mail-preview__body">
+
+                <img class="e-mail-preview__body__logo" ng-src="{{surveyEmailSettings.logo}}" />
+
+                <div class="e-mail-preview__body__text-body"><pre style="font-family:Roboto,sans-serif;">{{surveyEmailSettings.emailSettings.textBody || "Start typing..." | translate }} &nbsp;</pre></div>
+
+                <hr>
+
+                <div class="e-mail-preview__body__question-heading">{{surveyEmailSettings.emailSettings.question.heading[surveyEmailSettings.emailSettings.language]}}</div>
+                <div class="e-mail-preview__body__subtitle">{{surveyEmailSettings.emailSettings.translation.subtitle}}</div>
+
+                <div class="e-mail-preview__body__question" ng-if="surveyEmailSettings.emailSettings.question" ng-switch="surveyEmailSettings.emailSettings.question.question_type">
+                    <span ng-switch-when="Button"><ng-include src="'/app/routes/surveys/survey-email-settings/question_previews/button.html'" /></span>
+                    <span ng-switch-when="Contact"><ng-include src="'/app/routes/surveys/survey-email-settings/question_previews/contact_and_text.html'" /></span>
+                    <span ng-switch-when="Text"><ng-include src="'/app/routes/surveys/survey-email-settings/question_previews/contact_and_text.html'" /></span>
+                    <span ng-switch-when="Image"><ng-include src="'/app/routes/surveys/survey-email-settings/question_previews/image.html'" /></span>
+                    <span ng-switch-when="NPS"><ng-include src="'/app/routes/surveys/survey-email-settings/question_previews/nps.html'" /></span>
+                    <span ng-switch-when="Slider"><ng-include src="'/app/routes/surveys/survey-email-settings/question_previews/slider.html'" /></span>
+                    <span ng-switch-when="Word"><ng-include src="'/app/routes/surveys/survey-email-settings/question_previews/word.html'" /></span>
+                </div>
+
+                <div class="e-mail-preview__body__footer">
+                  Powered by <strong>Feedbackly</strong><br>
+                  <span class="unsubscribe hide">Click here to unsubscribe</span>
+                </div>
+
+            </div>
+
+
+
+            </div>
+          </div>
+
+
+       </div>
+
+
+
+     </div>
+  </div>
+</div>
+
+
+
+<survey-progress-bar go-to-state="surveyEmailSettings.goToState(state)" active-channels="surveyEmailSettings.activeChannels"></survey-progress-bar>

@@ -1,0 +1,127 @@
+<button id="navbar-burger" class="btn-floating waves-effect waves-light">
+  <i class="material-icons">menu</i>
+</button>
+
+<div id="navbar">
+  <div id="navbar-header">
+    <div class="feedbackly-loader-wrapper" ng-class="{ 'animating': navbar.loadingContent }">
+      <div class="loader-bar loader-bar-1"></div>
+      <div class="loader-bar loader-bar-2"></div>
+      <div class="loader-bar loader-bar-3"></div>
+      <div class="loader-bar loader-bar-4"></div>
+    </div>
+  </div>
+
+  <ul id="navbar-links">
+    <li ng-if="navbar.user.system_admin === true">
+        <a href="/v-app/#/admin" class="waves-effect" ng-class="{ 'active': navbar.state.includes('admin') }">
+          <span class="label-text">Admin</span>
+        </a>
+    </li>
+    
+    <li>
+      <a ui-sref="summary" class="waves-effect" ng-class="{ 'active': navbar.state.includes('summary') }">
+        <i class="material-icons link-icon">timeline</i>
+        <span class="label-text">{{ 'Summary' | translate }}</span>
+      </a>
+    </li>
+    <li>
+      <a ui-sref="results" class="waves-effect" ng-class="{ 'active': navbar.state.includes('results') }">
+        <i class="material-icons link-icon">pie_chart</i>
+        <span class="label-text">{{ 'Results' | translate }}</span>
+      </a>
+    </li>
+    <li>
+      <a ui-sref="feedbacks" class="waves-effect" ng-class="{ 'active': navbar.state.includes('feedbacks') }">
+        <i class="material-icons link-icon">format_list_bulleted</i>
+        <span class="label-text">{{ 'Feedback list' | translate }}</span>
+      </a>
+    </li>
+    <li>
+        <a href="/v-app/#/inbox" class="waves-effect">
+          <i class="material-icons link-icon">inbox</i>
+          <span class="label-text">{{ 'Feedback inbox' | translate }}</span>
+        </a>
+    </li>
+    <li ng-if="navbar.organizationRights.survey_create">
+      <a ui-sref="surveysList" class="waves-effect" ng-class="{ 'active': navbar.state.includes('surveys') || navbar.state.includes('surveysList')}">
+        <i class="material-icons link-icon">content_paste</i>
+        <span class="label-text">{{ 'Surveys' | translate }}</span>
+      </a>
+    </li>
+    <li ng-if="navbar.user.isOrganizationAdmin === true">
+      <a ui-sref="channel-management" class="waves-effect" ng-class="{ 'active': navbar.state.current.url.includes('/channel-management') }" >
+        <i class="material-icons link-icon">record_voice_over</i>
+        <span class="label-text">{{ 'Channel management' | translate }}</span>
+      </a>
+    </li>
+    <li>
+      <a ui-sref="notifications-list" class="waves-effect" ng-class="{ 'active': navbar.state.current.url.includes('/notifications') }" >
+        <i class="material-icons link-icon">notifications</i>
+        <span class="label-text">{{ 'Notifications' | translate }}</span>
+      </a>
+    </li>
+
+    <li ng-if="navbar.organizationRights.upsell">
+      <a ui-sref="upsells" class="waves-effect" ng-class="{ 'active': navbar.state.includes('upsells') }" >
+        <i class="material-icons link-icon">monetization_on</i>
+        <span class="label-text">{{ 'Upselling' | translate }}</span>
+      </a>
+    </li>
+
+    <li ng-if="navbar.user.isOrganizationAdmin === true">
+      <a href="/v-app/#/organization/settings" class="waves-effect">
+        <i class="material-icons link-icon">domain</i>
+        <span class="label-text">{{ 'Organization' | translate }}</span>
+      </a>
+    </li>
+    <li ng-if="navbar.organizations.length > 0">
+      <a ui-sref="surveys.list" class="waves-effect" data-constrainwidth="false" data-activates="switch-organization-dropdown" dropdown>
+        <i class="material-icons link-icon">swap_vert</i>
+        <span class="label-text">{{ 'Switch organization' | translate }}</span>
+      </a>
+
+      <ul id="switch-organization-dropdown" class="dropdown-content">
+        <li ng-repeat="organization in navbar.organizations">
+          <a ng-click="navbar.switchToOrganization(organization._id)" class="cursor-pointer">{{organization.name}}</a>
+        </li>
+      </ul>
+    </li>
+
+    <li ng-if="navbar.organizationRights.segment === 'SELF_SIGNUP'">
+      <a href="/v-app/#/referral" class="waves-effect" ng-class="{ 'active': navbar.state.includes('referral') }">
+        <i class="material-icons link-icon">favorite</i>
+        <span class="label-text">{{ 'Referral' | translate }}</span>
+      </a>
+    </li>
+
+    <li>
+      <a href="https://feedbacklyhelp.zendesk.com" target="_blank" class="waves-effect">
+        <i class="material-icons link-icon">help_outline</i>
+        <span class="label-text">{{ 'Help center' | translate }}</span>
+      </a>
+    </li>
+
+    <li>
+
+      <a class="waves-effect user-gravatar" data-constrainwidth="false" data-activates="signed-in-user-dropdown" dropdown ng-class="{ 'active': navbar.state.includes('user') }">
+        <i class="material-icons link-icon">settings</i>
+        <span class="label-text" translate>Settings</span>
+      </a>
+
+      <ul id="signed-in-user-dropdown" class="dropdown-content">
+        <li>
+          <a ui-sref="user.settings">
+            <span translate>Settings</span>
+          </a>
+        </li>
+        <li class="divider"></li>
+        <li>
+          <a href="/logout">
+            <span translate>Sign out</span>
+          </a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>

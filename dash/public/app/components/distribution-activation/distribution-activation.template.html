@@ -1,0 +1,15 @@
+<form>
+  <p>
+    <input class="with-gap" ng-model="distributionActivation.activationPlan" type="radio" id="activate-device-now" value="now" ng-change="distributionActivation.chooseActivationPlan()"/>
+    <label for="activate-device-now">{{::distributionActivation.nowTitle}}</label>
+  </p>
+  <p>
+    <input class="with-gap" ng-model="distributionActivation.activationPlan" type="radio" id="activate-device-at"  value="date" ng-change="distributionActivation.chooseActivationPlan()"/>
+
+    <label for="activate-device-at">{{::distributionActivation.dateTitle}}</label>
+
+    <div ng-if="distributionActivation.activationPlan === 'date'" style="margin-top: 35px;">
+      <channel-date-activation on-date-change="distributionActivation.onDateChange({ date: date })" on-time-zone-change="distributionActivation.onTimeZoneChange({ zone: zone })" time-zone="distributionActivation.timeZone" date="distributionActivation.date"></channel-date-activation>
+    </div>
+  </p>
+</form>

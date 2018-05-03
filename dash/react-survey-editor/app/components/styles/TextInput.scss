@@ -1,0 +1,36 @@
+.edit {
+    margin: 0px !important;
+    border: 0px !important;
+    //height: 100% !important;
+    outline: none;
+    padding: 0px !important;
+    box-shadow: none !important;
+    text-align: center;
+    resize: none;
+    display: block;
+    min-height: 1.5em;
+    border-bottom: 1px dashed lightgrey !important;
+    overflow: hidden;
+}
+
+.view {
+  min-width: 40px;
+  display: inline-block;
+  min-height: 1.5em;
+  border-bottom: 1px dashed lightgrey;
+  word-wrap: break-word;
+}
+
+.center {
+    text-align: center;
+}
+
+.left{
+  text-align: left;
+}
+
+.placeholder {
+  padding: 0px 15px;
+  color: lightgray !important;
+  background: rgba(0,0,0,0.05) !important;
+}

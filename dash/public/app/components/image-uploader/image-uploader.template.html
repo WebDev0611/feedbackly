@@ -1,0 +1,19 @@
+<div class="section image-uploader">
+  <div class="section" ng-if="!imageUploader.image">
+    <file-drop uploader="imageUploader.uploader" on-adding-file="imageUploader.onAfterAddingFile(item)"></file-drop>
+  </div>
+
+  <div class="section image-uploader__current-image" ng-if="!imageUploader.preview && imageUploader.image && imageUploader.image !== 'uploading'">
+    <img ng-src="{{imageUploader.image}}" style="width: 100%; max-width: 150px; height: auto"/>
+    <a class="btn-floating waves-effect waves-light red cursor-pointer" ng-click="imageUploader.removeImage()">
+      <i class="material-icons">delete</i>
+    </a>
+  </div>
+
+  <div class="section" ng-if="imageUploader.preview">
+    <img ng-src="{{imageUploader.preview.dataUrl}}" style="width: 100%; max-width: 150px; height: auto"/>
+    <a class="btn-floating waves-effect waves-light red cursor-pointer" ng-click="imageUploader.removeImage(); imageUploader.cancel()">
+      <i class="material-icons">delete</i>
+    </a>
+  </div>
+</div>

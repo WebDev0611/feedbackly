@@ -1,0 +1,18 @@
+.text-question-wrapper {
+  max-width: 500px;
+  margin: 0px auto;
+
+  textarea{
+    min-height: 9em;
+    &::placeholder{
+      color: $gray-light;
+      text-transform: uppercase;
+    }
+  }
+}
+
+@include when-ipad(){
+  .question-type-text .question-header {
+    margin-top: 70px;
+  }
+}

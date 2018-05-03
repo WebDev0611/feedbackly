@@ -1,0 +1,33 @@
+<div class="card">
+  <div class="card-content">
+    <div>
+      <div class="card-title" translate>Channel management</div>
+    </div>
+
+    <br>
+
+    <div class="row">
+      <div class="col m4 l3">
+        <channel-group-list all-channels-group="newChannelGroup.allChannelsGroup" channel-groups="newChannelGroup.channelGroups"></channel-group-list>
+      </div>
+      <div class="col m8 l9">
+        <h6>{{ 'New channel group' | translate}}</h6>
+
+        <p translate>
+          Channel groups are exactly what they sound like -- a group containing different channels. Feedbackly's user and rights management builds around channel groups. After adding channels to a group, you can assign users with rights to different groups depending on what they need to see.
+          Users who have rights to a channel group can publish surveys and see the results of those channels that are included in the group.
+        </p>
+
+        <div class="row">
+          <div class="col m6 input-field">
+            <input type="text" id="cg" ng-model="newChannelGroup.channelGroup.name" />
+            <label for="cg" translate>Enter a name for the new channel group</label>
+          </div>
+          <div class="col s12">
+            <button class="btn btn-s" ng-click="newChannelGroup.save()" translate>Create channel group</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,23 @@
+<div id="timer-screen" class="timer-screen">
+  <div class="timer-screen-title">
+    <div class="hand-icon">
+        <% include hand %>
+    </div>
+    <p>
+      <% _.forEach(UITranslations.timerScreen.returning_to_beginning, function(tr, lang){ %>
+            <span class="lang lang-<%= lang %> hide">
+              <%= tr %>
+            </span>
+      <% }) %>
+
+
+      <span class="timer-screen-counter-value">7</span>
+
+      <% _.forEach(UITranslations.timerScreen.seconds, function(tr, lang){ %>
+           <span class="lang lang-<%= lang %> hide">
+             <%= tr %>
+           </span>
+       <% }) %>
+    </p>
+  </div>
+</div>

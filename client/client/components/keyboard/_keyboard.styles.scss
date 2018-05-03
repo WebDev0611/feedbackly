@@ -1,0 +1,142 @@
+.keyboard.regular .regular{
+  display: inline-block !important;
+}
+
+.keyboard.special .special{
+  display: inline-block !important;
+}
+
+.keyboard.special br.special{
+  display: block;
+}
+.keyboard.regular br.regular{
+  display: block;
+}
+
+.keyboard.shift{
+  text-transform: uppercase;
+  .shift{
+    background-color: white;
+  }
+}
+
+.dummy-parent{
+  display: none
+}
+
+.ipad .dummy-parent{
+  position: absolute;
+  z-index: -90000;
+  opacity: 0;
+  width: 99999999%;
+  display: block;
+}
+#dummy-field{
+  display: inline-block;
+}
+
+
+.keyboard{
+  position: fixed;
+  width: 99%;
+  bottom: 0;
+  height: 37vh;
+  text-align: center;
+  margin-left: 5px;
+  font-size: 19px;
+
+  .keyboard-row{
+    @include display(flex);
+    @include justify-content(space-between);
+  }
+
+  .key{
+    display: inline-block;
+    width: 7vw;
+    height: 5.8vw;
+    line-height: 5.8vw;
+    text-align: center;
+    background-color: $gray-light;
+    color: #484848;
+    margin: 5px 0;
+    border-radius: 3px;
+    display: none;
+  }
+
+  .down{
+    background-color: white;
+  }
+
+  .key.visible{
+    display: inline-block;
+  }
+
+  .row2 {
+    .key-0{
+      margin-left: 25px;
+    }
+  }
+
+  .row3{
+    .key-0{
+      margin-left: 51px;
+    }
+
+    .key-8{
+      margin-right: 35px;
+    }
+  }
+
+ .backspace{
+    width: 12vw;
+  }
+
+  .caps{
+    width: 8vw;
+  }
+
+  .key.spacebar{
+    width: 55vw;
+  }
+  .return{
+    font-size: 12px;
+  }
+
+}
+
+
+.caret{
+  margin-right: -1px;
+  border-right-style: solid;
+  border-right-width: 1px;
+  animation: caretBlink linear 1s;
+  animation-iteration-count: infinite;
+}
+
+.char{
+  display: inline-block;
+}
+
+@keyframes caretBlink{
+  0% {
+    border-right-color: rgba(0,0,0,0)
+  }
+  50% {
+    border-right-color: rgba(0,0,0,1)
+  }
+  100% {
+    border-right-color: rgba(0,0,0,0)
+  }
+}
+
+.keyboard{
+  @include transform(translateY(100%))
+  transition: all 250ms ease-in;
+  opacity: 0;
+}
+
+
+.keyboard.show{
+  @include transform(translateY(0%))
+  opacity: 1;
+}

@@ -1,0 +1,66 @@
+@include keyframes(scaleIn) {
+  0% {
+    @include transform(scale(0));
+  }
+
+  100% {
+    @include transform(scale(1));
+  }
+}
+
+@include keyframes(scaleUp) {
+  0% {
+    @include transform(scale(1));
+  }
+
+  100% {
+    @include transform(scale(1.1));
+  }
+}
+
+@include keyframes(fadeIn) {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.scale-in,
+.scale-on-active.tap-active,
+.fade-in {
+  @include animation-delay(0.3s);
+  @include animation-fill-mode(forwards);
+  @include animation-timing-function($ease-out-cubic);
+  @include animation-duration(0.4s);
+}
+
+.scale-on-active {
+  &.tap-active {
+    @include transform(scale(1));
+    @include animation-name(scaleUp);
+    @include animation-delay(0s !important);
+    z-index: 11;
+    opacity: 1 !important;
+    position: relative;
+  }
+}
+
+.scale-in {
+  @include transform(scale(0));
+  @include animation-name(scaleIn);
+}
+
+.fade-in {
+  @include animation-name(fadeIn);
+}
+
+.stagger {
+  @for $i from 0 through 24 {
+    &.#{stagger}-#{$i} {
+      @include animation-delay(($i * 0.05s) + 0.3s);
+    }
+  }
+}

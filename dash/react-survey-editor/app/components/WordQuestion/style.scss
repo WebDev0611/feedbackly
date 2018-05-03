@@ -1,0 +1,64 @@
+@import '../styles/Mixins.scss';
+
+
+.center{
+  text-align: center;
+}
+
+.inner {
+  composes: montserrat from '../styles/fonts/fonts.scss';
+  padding: 0.5rem 1.5rem;
+  margin: 0.5rem;
+
+  text-transform: uppercase;
+  background-color: #2fbca4;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  width: 100%;
+  //max-width: 450px;
+}
+
+.column{
+  @include mobile{
+    max-width: 310px;
+  };
+}
+
+
+.input {
+  composes: montserrat from '../styles/fonts/fonts.scss';
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  line-height: 0.8rem;
+  //padding-top: 1px !important;
+  //padding-bottom: 1px !important;
+}
+
+.editInput{
+  composes: input;
+  margin: 0.20rem auto !important;
+}
+
+.viewInput{
+  composes: input;
+  cursor:text;
+}
+
+.delete {
+  position: absolute;
+  top: -15px;
+  right: -15px;
+}
+
+.add {
+  composes: montserrat from '../styles/fonts/fonts.scss';
+  color: white;
+}
+
+.logic {
+
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}

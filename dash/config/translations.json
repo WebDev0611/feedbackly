@@ -1,0 +1,108 @@
+{
+   "next":{
+      "fi":"Seuraava",
+      "en":"Next",
+      "sv":"Nästa",
+      "ru":"Next",
+      "de":"Next",
+      "et":"Next",
+      "fr":"Next"
+   },
+   "upsell": {
+     "heading": {
+       "en": "Enter your e-mail address for a chance to win the newest iPhone!",
+       "fi": "Anna sähköpostiosoitteesi ja osallistu kilpailuun, jossa on mahdollisuus voittaa viimeisin iPhone!"
+     },
+     "email": {
+       "en": "e-mail",
+       "fi": "sähköposti"
+     },
+     "terms": {
+       "en": "I agree to terms and conditions",
+       "fi": "Hyväksyn säännöt ja ehdot"
+     }
+   },
+   "nps": {
+     "subtitle": {
+       "en": "0=Not likely at all 10=Extremely likely",
+       "fi": "0 = Erittäin epätodennäköisesti 10= Erittäin todennäköisesti",
+       "sv": "0=Väldigt osannolikt 10=Väldigt sannolikt"
+     }
+   },
+   "buttons":{
+      "amazing":{
+         "fi":"Mahtava.",
+         "en":"Amazing.",
+         "sv":"Amazing.",
+         "ru":"Amazing.",
+         "de":"Amazing.",
+         "et":"Amazing.",
+         "fr":"Amazing."
+      },
+      "good":{
+         "fi":"Hyvä.",
+         "en":"Good.",
+         "sv":"Good.",
+         "ru":"Good.",
+         "de":"Good.",
+         "et":"Good.",
+         "fr":"Good."
+      },
+      "ok":{
+         "fi":"Ok.",
+         "en":"Ok.",
+         "sv":"Ok.",
+         "ru":"Ok.",
+         "de":"Ok.",
+         "et":"Ok.",
+         "fr":"Ok."
+      },
+      "bad":{
+         "fi":"Huono.",
+         "en":"Bad.",
+         "sv":"Bad.",
+         "ru":"Bad.",
+         "de":"Bad.",
+         "et":"Bad.",
+         "fr":"Bad."
+      },
+      "terrible":{
+         "fi":"Kauhea.",
+         "en":"Terrible.",
+         "sv":"Terrible.",
+         "ru":"Terrible.",
+         "de":"Terrible.",
+         "et":"Terrible.",
+         "fr":"Terrible."
+      }
+   },
+   "end":{
+      "fi":"Kiitos vastauksesta.",
+      "en":"Thank you for your response",
+      "sv":"Tack för ditt respons",
+      "ru":"Thank you",
+      "de":"Vielen Dank für Ihre Antwort",
+      "et":null,
+      "fr":null
+   },
+   "timerScreen":{
+      "returning_to_beginning":{
+         "fi":"Palataan alkuun",
+         "en":"Returning to beginning in",
+         "sv":null,
+         "ru":null,
+         "de":null,
+         "et":null,
+         "fr":null
+      },
+      "seconds":{
+         "fi":"sekunnin kuluttua.",
+         "en":"seconds.",
+         "sv":null,
+         "ru":null,
+         "de":null,
+         "et":null,
+         "fr":null
+      }
+   }
+}

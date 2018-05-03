@@ -1,0 +1,516 @@
+@import "bourbon/bourbon";
+@import "../../sass/globals";
+
+
+@import "variables";
+@import "animations";
+@import "mixins";
+@import "colors";
+@import "components/containers";
+@import "components/collection";
+@import "../components/navbar/navbar";
+@import "../components/file-drop/file-drop";
+@import "../components/flag/flag";
+@import "../components/plan-selector/plan-selector";
+@import "../components/image-uploader/image-uploader";
+@import "components/grid";
+@import "components/tabs";
+@import "components/buttons";
+@import "components/step";
+@import "components/channel-tree";
+@import "components/icon_label";
+@import "components/survey";
+@import "components/question-preview";
+@import "components/highcharts";
+@import "../components/loader/loader";
+@import "../components/hint/hint";
+@import "../components/email-previews/email-previews";
+@import "../components/tutorial-cards/tutorial-cards.styles";
+@import "../routes/tutorial/tutorial.styles";
+@import "components/select_selectize";
+@import "../components/search-compact-header/search-compact-header";
+
+
+
+@import "components/question-editors/editor";
+@import "components/question-editors/translations-list";
+@import "components/question-editors/image";
+@import "components/question-editors/button";
+@import "components/question-editors/word";
+@import "components/question-editors/slider";
+@import "components/question-editors/text";
+@import "components/question-editors/nps";
+@import "components/question-editors/contact";
+@import "components/question-editors/add-question";
+@import "components/progress-bar-new";
+@import "../components/tutorial-bubble/tutorial-bubble";
+@import "components/email-preview";
+@import "components/sms";
+@import "components/device-mockups2.min";
+@import "components/tags-input.min";
+@import "../components/plugin-setup/plugin-setup";
+@import "components/custom-theme";
+@import "components/results/contact";
+@import "../routes/summary/summary";
+//@import "../routes/channels/channels";
+@import "../routes/results/results";
+@import "../routes/surveys/surveys";
+@import "../routes/feedbacks/feedbacks";
+@import "../routes/notifications/notifications";
+@import "../routes/upsells/upsells";
+
+@import "../services/toaster/toaster";
+@import "../../lib/angularjs-color-picker/dist/angularjs-color-picker.min";
+
+@import "./rc-tooltip";
+
+
+html{
+  color: #3f3f42;
+}
+
+body {
+  background-color: lighten($grey, 30%);
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+ul.dotted {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+
+  li {
+    display: inline-block;
+    margin-right: 0.5em;
+
+    &:after {
+      content: ','
+    }
+
+    &:last-child {
+      &:after {
+        content: ''
+      }
+    }
+  }
+}
+
+.clearfix {
+  @include clearfix;
+}
+
+.input-field {
+  min-height: 30px;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.cursor-text {
+  cursor: text;
+}
+
+.no-top-margin {
+  margin-top: 0px !important;
+}
+
+.no-bottom-margin {
+  margin-bottom: 0px !important;
+}
+
+.no-left-padding {
+  padding-left: 0px !important;
+}
+
+.no-right-padding {
+  padding-right: 0px !important;
+}
+
+.position-absolute {
+  position: absolute !important;
+}
+
+.top-right {
+  top: -10px;
+  right: -10px;
+}
+
+.icon-faded-inverse {
+  opacity: 0.8;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.collapsible-body {
+  > p:first-child {
+    margin-top: 0px !important;
+  }
+
+  > p:last-child {
+    margin-bottom: 0px !important;
+  }
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.position-relative {
+  position: relative;
+}
+
+.vertical-align-middle {
+  vertical-align: middle;
+}
+
+.icon-faded {
+  opacity: 0.25;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.pagination li {
+  transition: 0s;
+
+  &.ng-leave {
+    transition: 0s;
+    display: none;
+  }
+
+  &.ng-enter {
+    transition: 0s;
+    display: initial;
+  }
+}
+
+.flex {
+  @include display(flex);
+
+  &.flex-center {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .flex-1 {
+    @include flex(1);
+  }
+
+  > div {
+    margin-right: 6px;
+  }
+
+  > div:last-child {
+    margin-right: 0px;
+  }
+}
+
+.icon-faded, .icon-faded-inverse {
+  transition: 0.5s;
+
+  &:hover {
+    transition: 0.5s;
+  }
+}
+
+dl {
+  margin-top: 0;
+}
+
+dt, dd {
+  line-height: inherit;
+}
+
+dt {
+  font-weight: bold;
+}
+
+dd {
+  margin-left: 0;
+}
+
+.truncate > span {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.dl-horizontal {
+  dd {
+    @include clearfix();
+  }
+
+  @media (min-width: 768px) {
+    dt {
+      float: left;
+      width: 160px;
+      clear: left;
+      text-align: right;
+    }
+    dd {
+      margin-left: 180px;
+    }
+  }
+}
+
+.no-select {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.card .card-content .card-title {
+    line-height: 25px;
+}
+
+.help-icon {
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+#intercom-launcher{
+  left: 20px !important;
+  bottom: 5px !important;
+}
+#intercom-container .intercom-sheet {
+  left: 0 !important;
+}
+
+#intercom-container .intercom-launcher-discovery-frame {
+  left: 9px !important;
+  bottom: 5px !important;
+}
+#intercom-container .intercom-gradient {
+  display: none;
+}
+
+#browser-support-warning {
+  margin: 0px;
+  border-radius: 0px;
+  display: none;
+  position: fixed;
+  top: 0px;
+  z-index: 99;
+  left: 0px;
+  width: 100%;
+}
+
+.merriweather{
+  font-family: 'Merriweather', serif !important;
+  text-transform: none !important;
+}
+
+.text{
+  &-right{
+    text-align: right;
+  }
+  &-center{
+    text-align: center;
+  }
+}
+
+.pull{
+  &-right{
+    float: right !important;
+  }
+  &-left{
+    float: left !important;
+  }
+}
+
+.hide.show{
+  display: block !important;
+}
+
+.inline{
+  display: inline-block;
+}
+
+.small-padding{
+  padding: 1px !important;
+}
+
+.italic{
+  font-style: italic;
+}
+
+td{
+  padding: 5px;
+}
+
+h2,h3,h4,h5,h6{
+  font-family: 'Montserrat'
+}
+
+
+
+.col{
+  &.s-hidden{
+    @media only screen and (max-width: 600px){
+      display: none;
+    }
+  }
+
+  &.m-hidden{
+    @media only screen and (min-width: 601px){
+      display: none;
+    }
+  }
+
+  &.l-hidden{
+    @media only screen and (min-width: 993px){
+      display: none;
+    }
+  }
+
+}
+
+.select2-container .select2-choice .select2-arrow {
+
+    border-left: none;
+    background: none;
+    background-image: none;
+
+    &:before{
+      content: "▼"
+    }
+  }
+  .intercom-launcher-badge-frame {
+    left: 10px !important;
+    bottom: 19px !important;
+  }
+
+  .intercom-notifications-frame {
+    left: 16px !important;
+    bottom: 78px !important;
+  }
+
+  #intercom-container .intercom-launcher-frame, #intercom-container .intercom-launcher-frame:active   {
+    left: 10px !important;
+    bottom: 6px !important;
+  }
+  #intercom-container .intercom-app-launcher-enabled .intercom-messenger-frame {
+    left: 20px !important;
+}
+
+.btn.btn-s{
+  font-size: 12px;
+  padding: 0px 10px;
+}
+
+.btn-floating.btn-s{
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+  i{
+    font-size: 17px;
+    line-height: 25px;
+  }
+}
+
+
+.collection.small .collection-item{
+    line-height: 1.5rem;
+    padding: 5px 10px;
+    border-bottom: 1px solid #e0e0e0;
+    font-size: 13px;
+}
+
+.checkboxes-scroll{
+  overflow-y: auto;
+  max-height: 260px;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+
+  .list{
+    background-color: rgba(0, 0, 0, 0.015);
+    padding: 2px;
+    p{
+      margin: 2px;
+    }
+  }
+}
+
+.modal{
+      ::-webkit-scrollbar {
+        width:9px;
+    }
+
+    ::-webkit-scrollbar-track {
+        -webkit-border-radius:5px;
+        border-radius:5px;
+        background:rgba(0,0,0,0.1);
+    }
+
+    ::-webkit-scrollbar-thumb {
+        -webkit-border-radius:5px;
+        border-radius:5px;
+        background:rgba(0,0,0,0.2);
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        background:rgba(0,0,0,0.4);
+    }
+
+    ::-webkit-scrollbar-thumb:window-inactive {
+        background:rgba(0,0,0,0.05);
+    }
+}
+
+a.hover-red:hover{
+  color: $red-dark !important;
+}
+
+i.xs{
+  font-size: 1.3rem;
+}
+.align-survey {
+  font-size: 14px;
+  margin-left:40px
+}
+#color-show {
+  width: 60px;
+}
+.label-width {
+  width: 150px;
+  font-size: 14px;
+  display: inline-block;
+}
+
+h6.stats{
+  font-size: 0.8em;
+}
+
+.material-icons.small-icon{
+   font-size: 1.5em;
+}
+
+
+.add-addresses-errors{
+  color: #EE5D6E;
+  font-size: 10px;  
+}
+
+.line-through{
+  text-decoration: line-through;
+}
+
+.btn-disabled{
+  margin-left: 3em;
+  color: #9E9E9E;
+  border: 1px solid #9E9E9E;
+  box-shadow: none;
+  padding: 0.5rem 2rem;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  cursor: default;
+}

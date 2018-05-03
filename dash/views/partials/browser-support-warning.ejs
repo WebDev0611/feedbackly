@@ -1,0 +1,17 @@
+<div id="browser-support-warning" class="card-panel red center-align">
+  <span class="white-text">
+    <img src="/images/warning_icon_white.png" style="vertical-align: middle; margin-right: 5px;"> Please use <a href="https://www.mozilla.org/fi/firefox/new/" target="_blank" class="white-text underline bold">Mozilla Firefox</a> or <a href="https://www.google.com/chrome/browser/desktop/index.html" target="_blank" class="white-text underline bold">Google Chrome</a> internet browser. We may not support your current browser.
+    <a href='javascript:void' id='closeWarning' style="color: white; text-decoration: underline;">Close</a>
+  </span>
+</div>
+
+<script>
+  $(function() {
+    var noBrowserSupport = bowser.msie || bowser.msedge;
+
+    if(noBrowserSupport) {
+      $('#browser-support-warning').show();
+    }
+    $('#closeWarning').on('click', function() {  $('#browser-support-warning').hide()});
+  });
+</script>

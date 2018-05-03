@@ -1,0 +1,44 @@
+.rowIcon {
+      width: 2rem;
+    font-size: 1.6rem;
+    line-height: 3rem;
+    display: block;
+    text-align: center;
+    margin-right: 1rem;
+    vertical-align: middle;
+}
+
+.endContainer {
+  background: radial-gradient(circle at 50% 50%,#fff,#edecf1);
+  padding-top: 5em;
+  padding-bottom: 5em;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+
+.badge {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    width: 1.2em;
+    height: 1.2em;
+    line-height: 1.22em;
+    background: orangered;
+    border: 1px solid gray;
+    box-shadow: 2px;
+    text-align: center;
+    z-index: 1;
+    border-radius: 100%;
+    color: white;
+    font-weight: bold;
+    font-size: 1em;
+    vertical-align: center;
+}
+
+.badgewrapper {
+    display: inline-block;
+    position: relative;
+    user-select: none;
+    height: 42px;
+}

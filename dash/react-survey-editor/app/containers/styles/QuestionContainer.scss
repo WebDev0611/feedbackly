@@ -1,0 +1,24 @@
+.main {
+    background: radial-gradient(circle at 50% 50%,#fff,#edecf1);
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.advancedbutton{
+    float: right;
+    cursor: pointer;
+    font-size: 10px;
+    color: gray;
+    position: relative;
+    top: -10px;
+}
+
+.activeicon{
+    color: teal !important;
+    top: 8px;
+}
+
+.inactiveicon{
+    color: gray !important;
+    top: 8px;
+}

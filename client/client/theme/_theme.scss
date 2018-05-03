@@ -1,0 +1,438 @@
+html{
+  overflow: hidden;
+  position: relative;
+}
+
+a{
+  text-decoration: none;
+  letter-spacing: 0.2em;
+}
+
+body{
+  position: relative;
+  font-family: Montserrat;
+  letter-spacing: 0.2em;
+  color: $gray-dark;
+  background-color: #edecf1;
+  @include radial-gradient(circle at 50% 50%, rgba(255,255,255,1), #edecf1);
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none;   /* Chrome/Safari/Opera */
+  -khtml-user-select: none;    /* Konqueror */
+  -moz-user-select: none;      /* Firefox */
+  -ms-user-select: none;       /* IE/Edge */
+  user-select: none;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  width: 100%;
+  overflow-x: hidden;
+  margin: 0;
+}
+
+body.ipad{
+  overflow: hidden;
+
+  .question-container{
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+  }
+
+  .question-type{
+    overflow: hidden;
+  }
+}
+
+body.web, body.mobile{
+  font-size: 12px;
+}
+
+.question-container{
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.question-type, .survey-end{
+  position: absolute;
+  opacity: 0;
+  @include transform(translateX(100%));
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.question-inner{
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.ipad .question-inner{
+  max-width: none;
+  overflow: hidden;
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family: 'Merriweather', serif;
+  font-style: italic;
+  font-weight: 700;
+  color: $turquoise-light;
+  max-width: 98%;
+  margin: 0 auto;
+}
+
+h1{
+  font-size:36px;
+  margin-bottom: 3vh;
+  max-height: 400px;
+  max-height: 50vh;
+}
+
+.ipad h1{
+  font-size: 3.6em;
+}
+
+.mobile h1{
+  font-size: 25px;
+  margin-top: 30px;
+}
+
+.web h1, .web hr, .web .subtitle{
+  margin-bottom: 40px;
+}
+
+.circle-animation{
+  h1, .subtitle{
+    color: white;
+  }
+  hr{
+    border-color: white;
+  }
+}
+
+.circle-animation-fade{
+  overflow: hidden;
+}
+
+hr{
+  border-color: $gray-light;
+  width: 7%;
+  border-style: solid;
+  max-width: 100%;
+}
+
+.ipad hr{
+  margin-bottom: 50px;
+}
+
+.mobile hr{
+  margin-bottom: 10px;
+}
+
+.input-box, textarea, input[type=text] {
+  padding: 1.5em;
+  border: 1px solid $gray-dark;
+  text-align: center;
+  box-shadow: none;
+  -webkit-appearance: none;
+  border-radius: 0px;
+  color: $gray-dark;
+  margin-bottom: 7px;
+  resize: none;
+  background-color: white;
+}
+
+textarea:focus, input[type=text]:focus{
+    outline: none;
+}
+
+.input-box, textarea, input[type=text], #dummy-field{
+  font-family: 'Montserrat';
+  letter-spacing: 0.2em;
+  font-size: 15px;
+}
+
+.ipad .input-box{
+  display: inline-block;
+}
+
+.mobile, .web {
+  textarea, input[type=text] {
+    padding: 13px;
+    font-size: 12px;
+    width: 80%;
+    max-width: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.ipad input[type=text], .ipad textarea{
+  display: none;
+}
+
+.input-box{
+  display: none;
+  height: 19px;
+  overflow-x: scroll;
+  position: relative;
+  .placeholder, .text{
+    display: inline-block;
+  }
+
+  .placeholder{
+    opacity: 0.7
+  }
+}
+
+.input-box.has-text .placeholder, .input-box.active .placeholder{
+  position: absolute;
+    top: 8px;
+    left: 13px;
+    display: block;
+    font-size: 13px;
+    opacity: 1;
+}
+
+button{
+  font-family: 'Montserrat';
+  letter-spacing: 0.2em;
+  font-size: 15px;
+  text-transform: uppercase;
+  text-align: center;
+  -webkit-appearance: none;
+  border: none;
+  background-color: $turquoise-light;
+  color: white;
+  margin: 15px;
+  cursor: pointer;
+}
+
+.reverse-colors{
+  h1, .subtitle, .language{
+    color: white !important;
+  }
+  hr{
+    border-color: white;
+  }
+  button, .word{
+    background-color: white !important;
+    color: $turquoise-light !important;
+  }
+}
+
+button.transparent{
+  background-color: inherit;
+  color: $turquoise-light;
+  border: 1px solid $turquoise-light;
+}
+
+.web button, .mobile button{
+  padding: 13px;
+  width: 50%;
+  max-width: 300px;
+}
+
+.ipad button{
+    padding: 1.5em 4em;
+}
+
+.subtitle{
+  text-transform: uppercase;
+  max-width: 100vw
+}
+
+.ipad .subtitle{
+  margin-bottom: 30px;
+}
+
+.mobile .subtitle{
+  margin-bottom: 10px;
+}
+
+.subtitle{
+  font-size: 11px;
+}
+
+.ipad .subtitle{
+  font-size: 17px;
+}
+
+.header{
+  @include clearfix;
+  padding-top: 10px;
+  position: absolute;
+  width: 100%;
+  min-height: 35px;
+  z-index: 99;
+  margin-bottom: 10px;
+
+  @media(max-width: 500px) {
+    &__feedbackly-logo, &__organization-logo {
+      img {
+        height: 25px !important;
+        width: auto;
+      }
+    }
+  }
+
+  &__feedbackly-logo, &__organization-logo, &__languages {
+    width: 33.33%;
+    box-sizing: border-box;
+    float: left;
+  }
+
+  &__feedbackly-logo, &__organization-logo {
+    img {
+      height: 35px;
+      width: auto;
+    }
+  }
+
+  &__organization-logo {
+    text-align: center;
+  }
+}
+
+.question-container{
+  text-align: center;
+}
+
+.ipad .question-container {
+  overflow: hidden;
+}
+
+.flexbox-container-column{
+  @include display(flex);
+  @include flex-direction(column);
+  @include justify-content(center);
+}
+
+.mobile .flexbox-container-column{
+  @include justify-content(space-around);
+}
+
+.spinner{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  background-color: rgba(0,0,0,0.1);
+}
+
+.spinner img{
+
+    position: relative;
+    top: 40%;
+
+}
+
+.progress-bar {
+    position: absolute;
+    bottom: 0;
+    height: 7px;
+    background: $gray-light;
+    width: 100%;
+    left: 0;
+    z-index: 999999;
+    overflow: hidden;
+
+    .progress{
+      width: 100%;
+      @include transition(all 450ms ease-out);
+      @include transform(translateX(-100%) translateZ(0));
+      background-color: $turquoise-light;
+
+    }
+}
+
+
+.web .progress-bar, .mobile .progress-bar{
+  top:0;
+  bottom: inherit;
+}
+
+
+.hide {
+  display: none !important;
+}
+
+.keyboard-open{
+  .current-question{
+    .question-inner{
+    min-height: 480px;
+    height: 480px;
+  }
+}
+}
+
+.language{
+    float: right;
+}
+
+.ipad .language{
+  padding-right: 60px;
+}
+
+/* COLORS */
+
+.turquoise-light{
+  .text, &.text{
+    color: $turquoise-light;
+  }
+
+  .bg, &.bg{
+    background-color: $turquoise-light;
+  }
+}
+
+
+.green-light{
+  .text, &.text{
+    color: $green-light;
+  }
+
+  .bg, &.bg{
+    background-color: $green-light;
+  }
+}
+
+.yellow-light{
+  .text, &.text{
+    color: $yellow-light;
+  }
+
+  .bg, &.bg{
+    background-color: $yellow-light;
+  }
+}
+
+.orange-light{
+  .text, &.text{
+    color: $orange-light;
+  }
+
+  .bg, &.bg{
+    background-color: $orange-light;
+  }
+}
+
+.red-light{
+  .text, &.text{
+    color: $red-light;
+  }
+
+  .bg, &.bg{
+    background-color: $red-light;
+  }
+}
+
+.gray-light{
+  .text, &.text{
+    color: $gray-light;
+  }
+  .bg, &.bg{
+    background-color: $gray-light;
+  }
+
+}

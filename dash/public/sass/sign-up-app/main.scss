@@ -1,0 +1,116 @@
+@import "bourbon/bourbon";
+
+html {
+  min-height: 100%;
+}
+
+body {
+  background-image: url(/images/scale-bg.png);
+  min-height: 100%;
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+#main-wrapper {
+  position: relative;
+  margin: 20px 20px 20px 20px;
+}
+
+#browser-support-warning {
+  margin: 0px;
+  border-radius: 0px;
+  display: none;
+}
+
+@media(max-width: 800px) {
+  #main-wrapper {
+    padding-top: 15px;
+  }
+}
+
+input{
+  z-index: 1;
+  position: relative;
+}
+
+.input-field label {
+    font-size: 14px;
+    top: 9px;
+    left: 8px;
+}
+
+.input-field label.active {
+  font-size: 10px;
+  -webkit-transform:translateY(-140%);
+
+}
+
+.small-wrapper {
+  position: relative;
+  margin: 0px auto;
+  max-width: 600px;
+}
+
+#header-logo {
+  text-align: center;
+  margin-bottom: 15px;
+
+  img {
+    max-width: 220px;
+  }
+}
+
+.underline {
+  text-decoration: underline !important;
+}
+
+.bold {
+  font-weight: bold !important;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.section.smallpad {
+    padding-top: 0.5rem;
+    padding-bottom: 0.2rem;
+}
+
+.dark-text {
+  color: #292a33 !important;
+}
+
+.clearfix {
+  @include clearfix;
+}
+
+[ui-view] {
+  position: absolute;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+
+  transition: 0.8s;
+
+  &.ng-leave {
+    transition: 0.5s;
+    opacity: 1;
+  }
+
+  &.ng-leave-active {
+    transition: 0.5s;
+    opacity: 0;
+  }
+
+  &.ng-enter {
+    transition: 0.5s;
+    opacity: 0;
+  }
+
+  &.ng-enter-active {
+    transition: 0.5s;
+    opacity: 1;
+  }
+}

@@ -1,0 +1,21 @@
+@include keyframes(circleAnimation) {
+  from {
+    @include transform(scale(0));
+    opacity: 1;
+  }
+
+  to {
+    @include transform(scale(1));
+    opacity: 0;
+  }
+}
+
+.circle-animation {
+  transition: 0.8s;
+  position: fixed;
+  z-index: 99999;
+  border-radius: 100%;
+  @include animation-name(circleAnimation);
+  @include animation-duration(0.8s);
+  @include animation-fill-mode(forwards);
+}

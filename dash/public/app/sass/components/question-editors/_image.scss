@@ -1,0 +1,30 @@
+.add-image-modal {
+  .file-drop {
+    width: 100%;
+    max-width: none;
+  }
+
+  .image-editor-cropper {
+    margin-bottom: 15px;
+  }
+}
+
+.question-editor-wrapper {
+  .image-content {
+    &.multi-row .image-container{
+      width: 12.5%;
+      float: left;
+    }
+
+    .image-container {
+      max-width: 200px;
+      display: inline-block;
+      vertical-align: top;
+      box-sizing: border-box;
+
+      .editable {
+        max-height: 50px;
+      }
+    }
+  }
+}

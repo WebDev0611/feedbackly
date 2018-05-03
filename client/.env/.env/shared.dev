@@ -1,0 +1,53 @@
+JWT_SECRET=unfewERENIwqdun32uhf
+SENDGRID_API_KEY=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
+STRIPE_SECRET_KEY=sk_test_ASB0eIkTFcgKRly1MWjtLJrU
+STRIPE_PUBLIC_KEY=pk_test_QGo3WdQg6y7JL09lUaf247WO
+INTERCOM_APP_ID=sji2rvhv
+INTERCOM_API_KEY=5d23827593c48a268676c2c0903af9283198f8b3
+CRYPTO_SECRET=njfe3fdn
+S3_ACCESS_KEY=AKIAIR7YNXG4ISNSFT5Q
+S3_SECRET=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
+S3_REGION=eu-west-1
+S3_BUCKET=fbly
+NEXMO_KEY=this_will_provide_an_error
+NEXMO_SECRET=this_will_provide_an_error
+QUIUBAS_API_KEY=this_will_provide_an_error
+QUIUBAS_API_PRIVATE=this_will_provide_an_error
+PLIVO_AUTH_ID=this_will_provide_an_error
+PLIVO_AUTH_TOKEN=this_will_provide_an_error
+
+API_KEY=fsdvfdsgvbf4g4
+
+
+# PUBLIC_URLS
+API_URL=http://api.localhost:3000
+DASH_URL=http://dash.localhost:3000
+CLIENT_URL=http://client.localhost:3000
+TINY_CLIENT_URL=http://client.localhost:3000
+PREVIEW_URL=http://client.localhost:3000
+PLUGIN_CSS_URL=http://client.localhost:3000/dist/plugin-v2.min.css
+PLUGIN_JS_URL=http://client.localhost:3000/dist/plugin-v2.min.js
+BARCODE_GENERATOR_URL=http://barcode.localhost:3000
+SMS_TINY_LINK_HOST=http://fbyio.localhost:3000
+
+# SWARM_URLS
+API_SERVICE_URL=http://api
+PDF_SERVICE_URL=http://pdfservice
+DASH_SERVICE_URL=http://dash
+UPSELL_HANDLER_URL=http://upsell-handler/handle
+NOTIFICATION_HANDLER_URL=http://notification-handler/handle
+CLIENT_SERVICE_URL=http://client
+REDIS_HOST=redis
+REDIS_PORT=6379
+
+# SERVICE DNS (for proxy)
+DNS_API=http://api
+DNS_CLIENT=http://client
+DNS_DASH=http://dash
+DNS_BARCODE=http://barcode
+DNS_HEALTHCHECKS=http://healthchecks
+
+# DATABASE_CONFIG
+DB_SSL=false
+MONGODB_URL=mongodb://mongo/feedbackly-test
+OLD_MONGO_URL=mongodb://mongo/tapin-prod

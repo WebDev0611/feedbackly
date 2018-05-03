@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="/dist/sign-up-new.min.css" rel="stylesheet"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  <style>
+    .pin-input, .engage-point-setup{
+      display: none
+    }
+
+    #not-found{
+      display: none;
+    }
+
+    #code, #pin{
+      text-transform: uppercase;
+    }
+
+    .input-field{
+      text-align: left;
+      display: inline-block;
+      margin: 10px auto 5px;
+      max-width: 250px;
+    }
+
+    .input-field label{
+      display: block;
+      font-size: 13px;
+    }
+
+    input{
+      width: 229px;
+      margin-bottom: 5px;
+      border: 1px solid rgb(224, 224, 224);
+      border-radius: 0px;
+    }
+
+    button{
+      margin: 0 auto;
+      max-width: 250px;
+    }
+
+    .container{
+      width: 85%;
+      max-width: 400px;
+      margin: 0 auto;
+      padding-top: 1.5em;
+    }
+
+    .select-style {
+      border: 1px solid #ccc;
+      width: 238px !important;
+      border-radius: 3px;
+      overflow: hidden;
+      background: #fafafa url("data:image/png;base64,R0lGODlhDwAUAIABAAAAAP///yH5BAEAAAEALAAAAAAPABQAAAIXjI+py+0Po5wH2HsXzmw//lHiSJZmUAAAOw==") no-repeat 95% 50%;
+
+      border: 1px solid rgb(224, 224, 224);
+      border-radius: 0px;
+      background-color: white;
+      padding: 6px;
+
+    }
+
+    .select-style select {
+        padding: 5px 8px;
+        width: 130%;
+        letter-spacing: 0;
+        font-size: 11px;
+        border: none;
+        box-shadow: none;
+        background: transparent;
+        background-image: none;
+        -webkit-appearance: none;
+    }
+
+    .select-style select:focus {
+        outline: none;
+    }
+
+    h1{
+      font-size: 25px;
+    }
+
+
+  </style>
+
+</head>
+
+<body>
+
+<!-- code input -->
+<div class="container">
+
+<div class="code-input">
+  <h1>Enter code</h1>
+  <div class="input-field">
+    <label for="code">Input code</label>
+    <input type="text" id="code" />
+    <button type="submit" id="submit-code">Submit</button>
+</div>
+</div>
+
+<!--- engage point setup PIN -->
+
+<div class="pin-input">
+  <h1>Setup engage point</h1>
+  <div class="input-field">
+  <label for="code" >Enter PIN code</label>
+  <input type="text" id="pin" />
+  <button type="submit" id="submit-pin">Submit</button>
+</div>
+</div>
+
+  <!--- engage point setup SETUP -->
+
+<div class="engage-point-setup">
+  <h1>Setup engage point</h1>
+  <div class="input-field">
+    <label for="engage-point">Engage point name</label>
+    <input type="text" id="engage-point" />
+  </div>
+  <div class="input-field">
+    <label for="alert-emails">Email alerts to: (comma separated)</label>
+    <input type="text" id="alert-emails" />
+  </div>
+  <div class="input-field">
+    <label for="survey">Survey</label>
+    <div class="select-style">
+      <select id="survey">
+      </select>
+    </div>
+  </div>
+  <div class="input-field">
+    <label for="neutral-upsell">Neutral upsell (default)</label>
+    <div class="select-style">
+      <select id="neutral-upsell" class="upsell-select">
+      </select>
+    </div>
+  </div>
+  <div class="input-field">
+    <label for="positive-upsell">Positive upsell</label>
+    <div class="select-style">
+      <select id="positive-upsell" class="upsell-select">
+      </select>
+    </div>
+  </div>
+  <div class="input-field">
+    <label for="negative-upsell">Negative upsell</label>
+    <div class="select-style">
+      <select id="negative-upsell" class="upsell-select">
+      </select>
+    </div>
+  </div>
+
+
+    <button type="submit" id="submit-setup">Submit</button>
+</div>
+
+<div class="errors">
+  <span id="not-found">Code not found. Please check your input and try again.</span>
+</div>
+
+</div>
+
+<script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+
+  <% include js %>
+
+</body>
+</html>

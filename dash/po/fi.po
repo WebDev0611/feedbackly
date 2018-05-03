@@ -1,0 +1,4635 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: fi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.3\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: public/app/components/plugin-setup/plugin-setup.template.html:175
+msgid "% of the page"
+msgstr "% sivusta"
+
+#: public/app/routes/summary/summary.template.html:158
+msgid "(qty)"
+msgstr "(kpl)"
+
+#: public/app/routes/surveys/survey-email-settings/survey-email-settings.template.html:58
+msgid ""
+"* Mails that use domains protected by SPF (Sender Policy Framework) may not "
+"be delivered."
+msgstr ""
+"* Sähköpostit, jotka käyttävät SPF-suojattua verkko-osoitetta eivät "
+"välttämättä tule perille."
+
+#: public/app/routes/surveys/survey-routes-selection/survey-routes-selection.template.html:30
+msgid "...or Create new Channels"
+msgstr "... tai luo uusia kanavia"
+
+#: public/app/components/plan-selector/plan-selector.template.html:40
+#: public/app/components/plan-selector/plan-selector.template.html:65
+#: public/app/components/plan-selector/plan-selector.template.html:90
+msgid "/month"
+msgstr "/kuukausi"
+
+#: public/app/translations/translations.template.html:167
+msgid "0=Not likely at all 10=Extremely likely"
+msgstr "0 = Erittäin epätodennäköisesti 10= Erittäin todennäköisesti"
+
+#: public/app/components/channel-setup-info/channel-setup-info.template.html:73
+msgid "1. Add contacts to this SMS channel"
+msgstr "1. Lisää kontakteja tähän SMS-kanavaan"
+
+#: public/app/components/channel-setup-info/channel-setup-info.template.html:66
+msgid "1. Add contacts to this e-mail channel"
+msgstr "1. Lisää kontakteja tähän sähköpostikanavaan"
+
+#: public/app/components/channel-setup-info/channel-setup-info.template.html:41
+msgid ""
+"1. Add the following code to the end of the &lt;body&gt; tag of your "
+"website / eCommerce-platform."
+msgstr ""
+"1. Lisää seuraava koodi sivustosi / verkkokauppasi &lt;body&gt; -tagin "
+"loppuun."
+
+#: public/app/components/channel-setup-info/channel-setup-info.template.html:56
+msgid "1. Copy the following link and distribute it freely"
+msgstr "1. Kopio seuraava linkki ja jakele sitä vapaasti"
+
+#: public/app/routes/tutorial/tutorial.template.html:5
+msgid "1. Create a survey"
+msgstr "1. Luo kysely"
+
+#: public/app/components/channel-setup-info/channel-setup-info.template.html:25
+msgid "1. Download the QR-code below and add it to your materials."
+msgstr "1. Lataa allaoleva QR-koodi ja lisää se materiaaleihisi."
+
+#: public/app/components/channel-setup-info/channel-setup-info.template.html:8
+msgid "1. Get the Feedbackly App for your tablet from the"
+msgstr "1. Lataa Feedbackly-sovellus"
+
+#: public/app/routes/tutorial/tutorial.template.html:6
+msgid "2. Choose how to collect data"
+msgstr "2. Valitse keräystavat"
+
+#: public/app/components/channel-setup-info/channel-setup-info.template.html:60
+#: public/app/components/channel-setup-info/channel-setup-info.template.html:67
+#: public/app/components/channel-setup-info/channel-setup-info.template.html:74
+msgid "2. Continue publishing the survey in this screen."
+msgstr "2. Jatka kyselyn julkaisemista tässä ruudussa."
+
+#: public/app/components/channel-setup-info/channel-setup-info.template.html:26
+msgid ""
+"2. Guide your customers to answer the survey by informative text. (See "
+"example)"
+msgstr ""
+"2. Ohjaa asiakkaasi vastaamaan kyselyyn informatiivisella tekstillä (ks. "
+"esimerkki)"
+
+#: public/app/components/channel-setup-info/channel-setup-info.template.html:9
+msgid ""
+"2. Open the app and click on the \"I already have an authorization code\" "
+"link in the bottom of the screen."
+msgstr ""
+"2. Avaa sovellus ja klikkaa \"I already have an authorization code\"-linkkiä "
+"ruudun alalaidassa."
+
+#: public/app/components/channel-setup-info/channel-setup-info.template.html:10
+msgid "3. Enter this authorization code:"
+msgstr "3. Näppäile tekstikenttään tämä valtuutuskoodi:"
+
+#: public/app/routes/tutorial/tutorial.template.html:7
+#: public/app/routes/tutorial/tutorial.template.html:8
+msgid "3. Set up your channels"
+msgstr "3. Konfiguroi kanavat"
+
+#: public/app/components/channel-setup-info/channel-setup-info.template.html:27
+msgid ""
+"3. The QR code can be read by using a QR code reader app (keyword: 'qr code "
+"reader' in app stores)"
+msgstr ""
+"3. QR-koodin voi lukea käyttämällä QR-koodin lukijasovellusta (avainsana: "
+"\"qr code reader\" sovelluskaupoissa)"
+
+#: public/app/components/channel-setup-info/channel-setup-info.template.html:11
+#: public/app/components/channel-setup-info/channel-setup-info.template.html:28
+msgid "4. Continue publishing your survey in this screen."
+msgstr "4. Jatka kyselyn julkaisemista tässä ruudussa."
+
+#: public/app/routes/tutorial/tutorial.template.html:9
+msgid "4. Time to publish!"
+msgstr "4. Aika julkaista!"
+
+#: public/app/routes/tutorial/tutorial.template.html:10
+msgid "5. Analyzing results"
+msgstr "5. Tulosten analysointi"
+
+#: public/app/components/channel-setup-info/channel-setup-info.template.html:12
+msgid ""
+"5. If you haven't already, open up the Feedbackly app. The kiosk will "
+"automatically switch to this survey after 1-5 minutes from publishing or "
+"scheduling it."
+msgstr ""
+"5. Jos et ole vielä tehnyt niin, käynnistä Feedbackly-sovellus. Palautelaite "
+"päivittyy automaattisesti tähän kyselyyn 1-5 minuutin sisällä "
+"julkaisemisesta tai ajastamisesta."
+
+#: public/app/routes/surveys/survey-editor/react-survey-editor.template.html:5
+msgid "A new survey editor!"
+msgstr "Uusittu kyselyeditori!"
+
+#: public/app/routes/notifications/notifications.template.html:90
+msgid "AND"
+msgstr "JA"
+
+#: public/app/routes/results/chart-controls/chart-controls.template.html:6
+msgid "Absolute (units)"
+msgstr "Absoluuttinen (kpl)"
+
+#: public/app/routes/upsells/upsell-list/upsell-list.template.html:57
+msgid "Activate"
+msgstr "Aktivoi"
+
+#: public/app/routes/surveys/survey-publish-settings/survey-publish-settings.template.html:8
+msgid "Activate now"
+msgstr "Aktivoi nyt"
+
+#: public/app/routes/surveys/surveys-list/surveys-list.template.html:41
+msgid "Active channels"
+msgstr "Aktiiviset palautekanavat"
+
+#: public/app/components/device-info/device-info.template.html:32
+#: public/app/routes/channel-management/channel-management.template.html:29
+msgid "Active survey"
+msgstr "Aktiivinen kysely"
+
+#: public/app/components/add-device-form/add-device-form.template.html:9
+#: public/app/components/plugin-setup/plugin-setup.template.html:114
+#: public/app/components/plugin-setup/plugin-setup.template.html:140
+#: public/app/routes/channel-management/channel-edit/mailing-list-channels/show-mailing-list-channel/add-mailing-list-addresses/add-mailing-list-addresses.template.html:31
+#: public/app/routes/channel-management/channel-edit/sms-channels/show-sms-channel/add-sms-contacts/add-sms-contacts.template.html:28
+#: public/app/routes/surveys/survey-sms-settings/survey-sms-settings.template.html:26
+#: public/app/routes/surveys/surveys-list/surveys-list.template.html:17
+msgid "Add"
+msgstr "Lisää"
+
+#: public/app/routes/notifications/controls/contact/contact-control.template.html:48
+#: public/app/routes/notifications/notifications.template.html:138
+msgid "Add a condition"
+msgstr "Lisää ehto"
+
+#: public/app/components/edit-device-form/edit-device-form.template.html:101
+msgid "Add a custom logo"
+msgstr "Lisää kanavakohtainen logo"
+
+#: public/app/translations/translations.template.html:155
+msgid "Add a feedback filter"
+msgstr "Lisää palautesuodatin"
+
+#: public/app/translations/translations.template.html:60
+msgid "Add a language"
+msgstr "Lisää kieli"
+
+#: public/app/translations/translations.template.html:247
+msgid "Add a link"
+msgstr "Lisää linkki"
+
+#: public/app/translations/translations.template.html:61
+msgid "Add a question"
+msgstr "Lisää kysymys"
+
+#: public/app/routes/notifications/controls/contact/contact-control.template.html:38
+msgid "Add a word"
+msgstr "Lisää sana"
+
+#: public/app/routes/notifications/notifications.template.html:117
+msgid "Add an \"OR\" condition inside this block"
+msgstr "Lisää “TAI”-ehto tämän ryhmän sisään"
+
+#: public/app/translations/translations.template.html:204
+msgid "Add an image"
+msgstr "Lisää kuva"
+
+#: public/app/components/add-channel/add-channel.template.html:3
+msgid "Add channel"
+msgstr "Lisää palautekanava"
+
+#: public/app/components/add-channel-to-group/add-channel-to-group.template.html:3
+msgid "Add channels to channel group"
+msgstr "Lisää kanavia kanavaryhmään"
+
+#: public/app/routes/channel-management/channel-management.template.html:47
+msgid "Add channels to group"
+msgstr "Lisää kanava ryhmään"
+
+#: public/app/translations/translations.template.html:37
+msgid "Add choice"
+msgstr "Lisää vaihtoehto"
+
+#: public/app/routes/channel-management/channel-edit/mailing-list-channels/show-mailing-list-channel/add-mailing-list-addresses/add-mailing-list-addresses.template.html:5
+msgid "Add email address manually"
+msgstr "Lisää sähköpostiosoite käsin"
+
+#: public/app/routes/channel-management/channel-edit/mailing-list-channels/show-mailing-list-channel/add-mailing-list-addresses/add-mailing-list-addresses.template.html:2
+#: public/app/routes/channel-management/channel-edit/mailing-list-channels/show-mailing-list-channel/show-mailing-list-channel.template.html:60
+msgid "Add email addresses"
+msgstr "Lisää sähköpostiosotteita"
+
+#: public/app/routes/notifications/notifications.template.html:26
+msgid "Add email-addresses"
+msgstr "Lisää sähköpostiosoitteita"
+
+#: public/app/translations/translations.template.html:48
+msgid "Add image"
+msgstr "Lisää kuva"
+
+#: public/app/routes/channel-management/channel-edit/sms-channels/show-sms-channel/add-sms-contacts/add-sms-contacts.template.html:2
+#: public/app/routes/channel-management/channel-edit/sms-channels/show-sms-channel/show-sms-channel.template.html:57
+msgid "Add phone numbers"
+msgstr "Lisää puhelinnumeroita"
+
+#: public/app/routes/channel-management/channel-edit/sms-channels/show-sms-channel/add-sms-contacts/add-sms-contacts.template.html:5
+msgid "Add phone numbers manually"
+msgstr "Lisää puhelinnumeroita käsin"
+
+#: public/app/translations/translations.template.html:49
+msgid "Add slider"
+msgstr "Lisää liukusäädin"
+
+#: public/app/components/plugin-setup/plugin-setup.template.html:252
+msgid ""
+"Add the following script to the scripts-section of your site (typically at "
+"the end of the body tag or in the footer). This code is shared across all "
+"your website plugin channels, so you only need to require it once per page / "
+"page reload."
+msgstr ""
+"Lisää seuraava koodi sivustosi lähdekoodiin (yleensä esim. body tagiin tai "
+"footeriin). Tämä koodi tulee löytyä kaikkien niiden sivujen lähdekoodista "
+"joilta haluat pystyä keräämään palautetta. "
+
+#: public/app/components/plugin-setup/plugin-setup.template.html:261
+msgid ""
+"Add this line of code to enable this plugin channel on a page. Repeat this "
+"for all unique plugin channels you have."
+msgstr ""
+"Lisää tämä skripti käyttääksesi verkkoliitännäistä  sivulla. Toista tämä "
+"kaikille eri verkkoliitännäiskanaville. "
+
+#: public/app/translations/translations.template.html:57
+msgid "Additional text to provide with the standard privacy policy."
+msgstr "Normaalin rekisteriselosteen oheen tuleva lisäteksti."
+
+#: public/app/components/billing-form/billing-form.template.html:13
+msgid "Address"
+msgstr "Osoite"
+
+#: public/app/translations/translations.template.html:248
+msgid "Advanced settings"
+msgstr "Lisäasetukset"
+
+#: public/app/translations/translations.template.html:242
+msgid ""
+"After all the channels you want to use are set up, navigate to Surveys to "
+"create your first survey."
+msgstr ""
+"Kun olet valmis tarvitsemiesi kyselykanavien kanssa, siirry Kyselyt "
+"välilehteen ja tee ensimmäinen kyselysi!"
+
+#: public/app/translations/translations.template.html:105
+msgid ""
+"After collecting your first feedbacks, an overview will be visible on the "
+"landing page.\n"
+"For a detailed report head to the Results-section.\n"
+"Feedbacks can filtered based on channel, survey and even based on the "
+"individual answers given!"
+msgstr ""
+"Kerättyäsi ensimmäiset palautteesi, etusivulla on nähtävissä yhteenveto. \n"
+"Nähdäksesi tarkemman raportin, mene Tulokset-välilehdelle.\n"
+"Palautteita voidaan suodattaa kanavan, kyselyn tai yksittäisten annettujen "
+"vastausten mukaan."
+
+#: public/app/translations/translations.template.html:241
+msgid "After setup, create a survey"
+msgstr "Kun olet valmis, luo kysely"
+
+#: public/app/translations/translations.template.html:100
+msgid ""
+"After the setup it is time to publish your surveys in the channels you "
+"like!\n"
+"The last page tells you what you have planned to do so you can make your "
+"last review.\n"
+"If everything is set, just hit “Publish” and wait for the data to come in.\n"
+"If there is something you would like to change, just click on that part of "
+"the process bar and edit.\n"
+"At this point you should already have completed setting up your channels."
+msgstr ""
+"Asetusten jälkeen on aika julkaista kysely haluamissasi kanavissa.\n"
+"Viimeinen välilehti kertoo sinulle yhteenvedon tekemistäsi muutoksista.\n"
+"Kun kaikki on valmista, paina Julkaise-nappia ja ala odottamaan ensimmäisiä "
+"tuloksia.\n"
+"Jos haluat muuttaa jotakin, siirry vain alapalkin prosessissa haluamaasi "
+"kohtaan ja muokkaa.\n"
+"Tässä vaiheessa sinun oletetaan tehneen palautekanavien asetukset."
+
+#: public/app/components/plugin-setup/plugin-setup.template.html:107
+msgid "All URLs need to be visited before triggering"
+msgstr "Triggeröinti tapahtuu vasta kun kaikilla sivuilla on vierailtu"
+
+#: public/app/components/plugin-setup/plugin-setup.template.html:110
+msgid "All URLs need to be visited in order before triggering"
+msgstr ""
+"Triggeröinti tapahtuu kun kaikilla sivuilla on vierailtu järjestyksessä"
+
+#: public/app/components/add-channel/add-channel.template.html:29
+#: public/app/components/channel-group-list/channel-group-list.template.html:6
+msgid "All channels"
+msgstr "Kaikki kanavat"
+
+#: public/app/translations/translations.template.html:249
+msgid "All feedback"
+msgstr "Kaikki palautteet"
+
+#: public/app/routes/channel-management/channel-management.template.html:22
+msgid "All feedback channels"
+msgstr "Kaikki palautekanavat"
+
+#: public/app/routes/summary/summary.template.html:141
+msgid "All respondents in the organization to date"
+msgstr "Vastaajien lukumäärä organisaatiossa käytön ajalta"
+
+#: public/app/translations/translations.template.html:245
+msgid "Allow multiple choices"
+msgstr "Salli monivalinta"
+
+#: public/app/routes/surveys/survey-confirmation/survey-confirmation.template.html:86
+msgid ""
+"Almost done! Verify that these settings are correct and the survey will "
+"automatically appear on your iPad when you click &quot;Publish Now&quot;"
+msgstr ""
+"Melkein valmis! Tarkista, että nämä asetukset ovat kunnossa. Kysely "
+"päivittyy automaattisesti iPadillesi kun klikkaat &quot;Julkaise nyt&quot;"
+
+#: public/app/translations/translations.template.html:173
+msgid "Amazing."
+msgstr "Mahtava."
+
+#: public/app/routes/results/result-stats/result-stats.template.html:45
+msgid "Amount of responses in the selected feedback channels"
+msgstr "Vastausten lukumäärä valituissa palautekanavissa"
+
+#: public/app/routes/results/result-stats/result-stats.template.html:96
+msgid "Amount of responses in the whole organization"
+msgstr "Vastausten lukumäärä koko organisaatiossa valitulla aikavälillä"
+
+#: public/app/routes/results/result-stats/result-stats.template.html:98
+msgid ""
+"Amount of responses to this question in the whole organization in the "
+"selected timespan"
+msgstr ""
+"Vastausten lukumäärä tähän kysymykseen koko organisaatiossa valitulla "
+"ajanjaksolla"
+
+#: public/app/routes/results/result-stats/result-stats.template.html:47
+msgid "Amount of responses to this question with the selected filters"
+msgstr "Vastausten lukumäärä tähän kysymykseen valituilla hakuehdoilla"
+
+#: public/app/components/plugin-setup/plugin-setup.template.html:125
+msgid ""
+"An URL or a partial URL. If any of these match, the survey will not trigger "
+"on the page."
+msgstr ""
+"URL tai osittainen URL. Jos jokin näistä säännöistä täsmää sivun osoitteen "
+"kanssa, kyselyä ei näytetä ko. sivulla."
+
+#: public/app/components/plugin-setup/plugin-setup.template.html:87
+msgid ""
+"An URL or a partial URL. If it matches, the survey will trigger once all "
+"other conditions are fulfilled."
+msgstr ""
+"URL tai osittainen URL. Triggeröinti tapahtuu kun kaikki ehdot ovat "
+"täyttyneet ja URL täsmää. "
+
+#: public/app/translations/translations.template.html:151
+msgid "An error occured"
+msgstr "Tapahtui virhe"
+
+#: public/app/translations/translations.template.html:40
+msgid "Animated emoticons"
+msgstr "Animoidut hymiöt"
+
+#: public/app/routes/summary/summary.template.html:255
+msgid "Answers to individual questions"
+msgstr "Yksittäistä vastausta eri kysymyksiin"
+
+#: public/app/components/channel-setup-info/channel-setup-info.template.html:8
+msgid "App Store"
+msgstr "App Storesta"
+
+#: public/app/components/device-info/device-info.template.html:51
+msgid "App passcode"
+msgstr "iPad-ohjelman salasana"
+
+#: public/app/translations/translations.template.html:9
+msgid "Apply"
+msgstr "Käytä"
+
+#: public/app/routes/surveys/surveys-list/surveys-list.template.html:103
+msgid "Archived"
+msgstr "Arkistoitu"
+
+#: public/app/translations/translations.template.html:128
+msgid "Are you sure you want to delete the translation?"
+msgstr "Oletko varma, että haluat poistaa käännöksen?"
+
+#: public/app/routes/upsells/upsell-list/upsell-list.template.html:65
+msgid "Are you sure you want to delete the upsell offer?"
+msgstr "Oletko varma, että haluat poistaa lisämyyntitarjouksen?"
+
+#: public/app/translations/translations.template.html:45
+msgid ""
+"Are you sure you want to delete this question? The question has received "
+"responses that you won't be able to see anymore if you delete it."
+msgstr ""
+"Oletko varma, että haluat poistaa tämän kysymyksen? Kysymykseen on "
+"vastauksia, joita et voi enää nähdä kun olet poistanut kysymyksen."
+
+#: public/app/translations/translations.template.html:126
+msgid ""
+"Are you sure you want to remove channel from the channel group? All users "
+"who have rights to this group will no longer see the channel and its results."
+msgstr ""
+"Oletko varma, että haluat poistaa kanavan kanavaryhmästä? Kaikki käyttäjät, "
+"joilla on oikeus ryhmään ei enää näe kanavaa tai siihen liittyviä tuloksia."
+
+#: public/app/translations/translations.template.html:124
+msgid "Are you sure you want to remove this channel group?"
+msgstr "Oletko varma että haluat poistaa tämän palautekanavaryhmän?"
+
+#: public/app/translations/translations.template.html:246
+msgid "Are you sure you want to restore the default settings?"
+msgstr "Oletko varma, että haluat palauttaa oletusasetukset?"
+
+#: public/app/components/plan-selector/plan-selection-confirm/plan-selection-confirm.template.html:3
+msgid ""
+"Are you sure you want to switch your current plan? You can't downgrade your "
+"plan for a month after upgrading"
+msgstr ""
+"Oletko varma, että haluat vaihtaa nykyistä maksusuunnitelmaasi? Et voi "
+"alentaa maksusuunnitelmaasi kuukauteen päivittämisen jälkeen"
+
+#: public/app/translations/translations.template.html:183
+msgid "Are you sure?"
+msgstr "Oletko varma?"
+
+#: public/app/translations/translations.template.html:111
+msgid ""
+"Are you sure? NOTE: Deleting the feedback currently does not affect the "
+"feedback amount and averages shown in the summary section."
+msgstr ""
+"Oletko varma? HUOM: Palautteen poistaminen ei tällä hetkellä vaikuta "
+"palautteen määrään ja keskiarvoon yhteenvetonäkymässä."
+
+#: public/app/routes/upsells/upsell-list/upsell-list.template.html:31
+msgid "Assign as"
+msgstr "Aktivoi"
+
+#: public/app/routes/notifications/notifications.template.html:41
+msgid "Assign feedback to a user group in Feedback Inbox"
+msgstr "Osoita palaute tietyn käyttäjäryhmän palautelaatikkoon"
+
+#: public/app/routes/upsells/upsell-list/upsell-list.template.html:16
+msgid "Assign to engage points"
+msgstr "Aktivoi palautekanaviin"
+
+#: public/app/routes/upsells/upsell-list/upsell-list.template.html:84
+msgid "Automate Based on Feedback"
+msgstr "Automatisoi palautteen perusteella"
+
+#: public/app/routes/upsells/upsell-list/upsell-list.template.html:89
+msgid ""
+"Automate instant upsell offers based on the feedback your customer gives. "
+"With Feedbackly-sponsored iPhone competition you can collect emails and use "
+"feeling-based instant upsell to grow your sales through feedback.\n"
+"\t\t\tPricing based on %-commission on additional sales created."
+msgstr ""
+"Automatisoi välitön lisämyyntitarjous asiakkaan antaman palautteen "
+"perusteella. Feedbacklyn sponsoroiman iPhone-kilpailun avulla keräät "
+"sähköpostin ja tarjoat tunteisiin perustuvan lisämyyntitarjouksen jonka "
+"avulla kasvatat myyntiä välittömästi palautteen avulla.\n"
+"Hinnoittelu perustuu %-komissioon yhdessä luomastamme lisämyynnistä."
+
+#: public/app/routes/results/result-stats/result-stats.template.html:14
+msgid "Average of responses in the selected feedback channels"
+msgstr "Vastausten keskiarvo valituissa palautekanavissa"
+
+#: public/app/routes/results/result-stats/result-stats.template.html:65
+#: public/app/routes/summary/summary.template.html:46
+msgid "Average of responses in the whole organization"
+msgstr "Vastausten keskiarvo koko organisaatiossa"
+
+#: public/app/routes/results/result-stats/result-stats.template.html:67
+msgid ""
+"Average of responses to this question in all the feedback channels in the "
+"organization in the selected timespan"
+msgstr ""
+"Tämän kysymyksen vastausten keskiarvo kaikissa palautekanavissa koko "
+"organisaatiossa valitulla ajanjaksolla"
+
+#: public/app/routes/results/result-stats/result-stats.template.html:16
+msgid "Average of responses to this question with the selected filters"
+msgstr ""
+"Tämän kysymyksen vastausten lukumäärä koko organisaatiossa valitulla "
+"ajanjaksolla"
+
+#: public/app/routes/summary/summary.template.html:22
+msgid "Average of your responses"
+msgstr "Palautteidesi keskiarvo"
+
+#: public/app/routes/tutorial/tutorial.template.html:11
+msgid "Awesome!"
+msgstr "Huippua!"
+
+#: public/app/routes/upsells/upsell-list/upsell-list.template.html:79
+msgid "BOOST SALES INSTANTLY WITH FEEDBACK-BASED UPSELL"
+msgstr "KÄÄNNÄ JOKAINEN ASIAKASPALAUTE MYYNNIKSI"
+
+#: public/app/translations/translations.template.html:174
+msgid "Bad."
+msgstr "Huono."
+
+#: public/app/routes/results/chart-controls/chart-controls.template.html:24
+msgid "Bar"
+msgstr "Pylväs"
+
+#: public/app/routes/summary/summary.template.html:192
+msgid "Best day"
+msgstr "Paras päivä"
+
+#: public/app/routes/summary/summary.template.html:204
+msgid "Best hour"
+msgstr "Paras tunti"
+
+#: public/app/components/no-payment-source-error/no-payment-source-error.template.html:3
+msgid "Billing information is required before proceeding"
+msgstr "Maksutiedot on täytettävä ennen etenemistä"
+
+#: public/app/routes/upsells/upsell-list/upsell-list.template.html:99
+msgid "Book time with our expert"
+msgstr "Varaa aika asiantuntijaltamme"
+
+#: public/app/components/plugin-setup/plugin-setup.template.html:45
+msgid "Bottom left corner"
+msgstr "Vasen alakulma"
+
+#: public/app/routes/summary/summary.template.html:286
+msgid "Bottom quartile limit"
+msgstr "Heikoimman neljänneksen raja"
+
+#: public/app/components/plugin-setup/plugin-setup.template.html:38
+msgid "Bottom right corner"
+msgstr "Oikea alakulma"
+
+#: public/app/translations/translations.template.html:19
+#: public/app/translations/translations.template.html:27
+msgid "Browser"
+msgstr "Selain"
+
+#: public/app/routes/summary/summary.template.html:198
+msgid "Busiest day"
+msgstr "Vilkkain päivä"
+
+#: public/app/translations/translations.template.html:220
+msgid ""
+"By clicking \"confirm\", your trial will end and your subscription will be "
+"upgraded to"
+msgstr ""
+"Klikkaamalla ”varmista” päätät kokeilujaksosi ja tilauksesi uudeksi "
+"palautekanavamääräksi tulee"
+
+#: public/app/routes/upsells/upsell-list/upsell-list.template.html:113
+msgid "Call or e-mail"
+msgstr "Soita tai lähetä sähköpostia"
+
+#: public/app/components/plan-selector/plan-selection-confirm/plan-selection-confirm.template.html:8
+#: public/app/routes/channel-management/channel-edit/mailing-list-channels/show-mailing-list-channel/show-mailing-list-channel.template.html:85
+#: public/app/routes/channel-management/channel-edit/sms-channels/show-sms-channel/show-sms-channel.template.html:83
+#: public/app/routes/channel-management/channel-management.template.html:66
+#: public/app/routes/upsells/upsell-list/upsell-list.template.html:58
+msgid "Cancel"
+msgstr "Peruuta"
+
+#: public/app/components/billing-form/billing-form.template.html:37
+msgid "Card number"
+msgstr "Luottokortin numero"
+
+#: public/app/routes/summary/summary.template.html:111
+#: public/app/routes/summary/summary.template.html:12
+#: public/app/routes/summary/summary.template.html:37
+#: public/app/routes/summary/summary.template.html:61
+#: public/app/routes/summary/summary.template.html:86
+msgid "Change from previous corresponding timespan"
+msgstr "Muutos edelliseen vastaavaan ajanjaksoon verrattuna"
+
+#: public/app/routes/feedbacks/feedbacks.template.html:58
+msgid "Change search terms"
+msgstr "Vaihda hakuehtoja"
+
+#: public/app/routes/results/chart-controls/chart-controls.template.html:17
+#: public/app/translations/translations.template.html:188
+msgid "Channel"
+msgstr "Kanava"
+
+#: public/app/translations/translations.template.html:133
+msgid "Channel Selection"
+msgstr "Kanavien valinta"
+
+#: public/app/translations/translations.template.html:140
+msgid "Channel created successfully."
+msgstr "Kanava luotiin onnistuneesti."
+
+#: public/app/routes/channel-management/channel-management.template.html:15
+msgid "Channel group"
+msgstr "Palautekanavaryhmä"
+
+#: public/app/routes/channel-management/channel-management.template.html:61
+msgid "Channel group name"
+msgstr "Kanavaryhmän nimi"
+
+#: public/app/components/channel-group-list/channel-group-list.template.html:2
+msgid "Channel groups"
+msgstr "Palautekanavaryhmät"
+
+#: public/app/routes/channel-management/new-channel-group/new-channel-group.template.html:16
+msgid ""
+"Channel groups are exactly what they sound like -- a group containing "
+"different channels. Feedbackly's user and rights management builds around "
+"channel groups. After adding channels to a group, you can assign users with "
+"rights to different groups depending on what they need to see.\n"
+"          Users who have rights to a channel group can publish surveys and "
+"see the results of those channels that are included in the group."
+msgstr ""
+"Palautekanavaryhmät ovat juuri miltä ne kuulostaa -- ryhmä, jonka sisällä on "
+"eri palautekanavia. Feedbacklyn käyttäjä- ja oikeuksien hallinta rakentuu "
+"kanavaryhmien ympärille. Kun ryhmään on lisätty kanavia, voit antaa eri "
+"käyttäjille oikeuksia eri ryhmiin riippuen mitä käyttäjien tarvitsee nähdä. "
+"Käyttäjät, joilla on oikeudet kanavaryhmään voi julkaista kyselyjä "
+"kanavissa, jotka kuuluvat siihen ryhmään."
+
+#: public/app/components/navbar/navbar.template.html:55
+#: public/app/routes/channel-management/channel-edit/channel-edit.template.html:5
+#: public/app/routes/channel-management/channel-management.template.html:5
+#: public/app/routes/channel-management/new-channel-group/new-channel-group.template.html:4
+msgid "Channel management"
+msgstr "Kanavahallinta"
+
+#: public/app/components/add-channel/add-channel.template.html:7
+#: public/app/routes/surveys/survey-routes-selection/survey-routes-selection.template.html:35
+msgid "Channel name"
+msgstr "Kanavan nimi"
+
+#: public/app/translations/translations.template.html:122
+msgid "Channel removed from group."
+msgstr "Kanava poistettu ryhmästä."
+
+#: public/app/components/add-channel/add-channel.template.html:10
+msgid "Channel type"
+msgstr "Kanavatyyppi"
+
+#: public/app/routes/summary/summary.template.html:253
+msgid "Channel's average"
+msgstr "Kanavan keskiarvo\t"
+
+#: public/app/routes/summary/summary.template.html:252
+msgid "Channel's name"
+msgstr "Kanavan nimi"
+
+#: public/app/routes/notifications/notifications-list.template.html:15
+#: public/app/translations/translations.template.html:186
+msgid "Channels"
+msgstr "Kanavat"
+
+#: public/app/translations/translations.template.html:127
+msgid "Channels added to group successfully."
+msgstr "Kanava lisätty ryhmään onnistuneesti."
+
+#: public/app/components/add-channel-to-group/add-channel-to-group.template.html:4
+msgid "Channels selected"
+msgstr "Kanavat valittu."
+
+#: public/app/routes/summary/summary.template.html:292
+msgid "Channels with no feedback are omitted from the ranking."
+msgstr "Kanavia ilman palautteita ei näytetä."
+
+#: public/app/routes/results/chart-controls/chart-controls.template.html:21
+msgid "Chart type"
+msgstr "Kaavion tyyppi"
+
+#: public/app/translations/translations.template.html:66
+msgid "Check box"
+msgstr "Valintaruutu"
+
+#: public/app/routes/channel-management/channel-edit/mailing-list-channels/show-mailing-list-channel/add-mailing-list-addresses/add-mailing-list-addresses.template.html:45
+msgid "Check input on row"
+msgstr "Tarkasta tiedot rivillä"
+
+#: public/app/routes/notifications/controls/contact/contact-control.template.html:56
+msgid "Checked"
+msgstr "Valittu"
+
+#: public/app/routes/notifications/notifications.template.html:18
+msgid "Choose a survey"
+msgstr "Valitse kysely"
+
+#: public/app/translations/translations.template.html:179
+msgid "Choose at least one feedback channel"
+msgstr "Valitse vähintään yksi palautekanava"
+
+#: public/app/translations/translations.template.html:180
+msgid "Choose at least one survey"
+msgstr "Valitse vähintään yksi kysely"
+
+#: public/app/routes/surveys/survey-routes-selection/survey-routes-selection.template.html:39
+msgid "Choose channel type"
+msgstr "Valitse kanavan tyyppi"
+
+#: public/app/components/plugin-setup/plugin-setup.template.html:34
+msgid "Choose corner window placement"
+msgstr "Valitse nurkkaikkunan sijainti"
+
+#: public/app/translations/translations.template.html:67
+msgid "Choose file"
+msgstr "Valitse tiedosto"
+
+#: public/app/routes/surveys/survey-routes-selection/survey-routes-selection.template.html:19
+msgid "Choose from existing Feedback Channels"
+msgstr "Valitse olemassaolevista palautekanavista"
+
+#: public/app/translations/translations.template.html:187
+msgid "Choose links"
+msgstr "Valitse linkit"
+
+#: public/app/translations/translations.template.html:68
+msgid "Choose new file"
+msgstr "Valitse uusi tiedosto"
+
+#: public/app/components/plugin-setup/plugin-setup.template.html:8
+msgid "Choose plugin display"
+msgstr "Valitse nettisivukyselyn esitystapa"
+
+#: public/app/components/billing-form/billing-form.template.html:18
+msgid "City"
+msgstr "Kaupunki"
+
+#: public/app/routes/surveys/surveys-list/surveys-list.template.html:121
+msgid "Click New Survey to create a survey."
+msgstr "Klikkaa &quot;Uusi kysely&quot; tehdäksesi uuden kyselyn."
+
+#: public/app/components/channel-setup-info/channel-setup-info.template.html:36
+msgid ""
+"Click here for more tips and guides on using a QR-code to collect feedback!"
+msgstr ""
+"Klikkaa tästä saadaksesi lisää vinkkejä ja ohjeita QR-koodin käyttämiseen "
+"palautteen keräämisessä!"
+
+#: public/app/components/channel-setup-info/channel-setup-info.template.html:14
+msgid ""
+"Click here for more tips and guides on using a feedback kiosk to collect "
+"feedback!"
+msgstr ""
+"Klikkaa tästä saadaksesi lisää vinkkejä ja ohjeita palautelaitteen "
+"käyttämiseen palautteen keräämisessä!"
+
+#: public/app/routes/channel-management/channel-edit/mailing-list-channels/show-mailing-list-channel/add-mailing-list-addresses/add-mailing-list-addresses.template.html:68
+#: public/app/routes/channel-management/channel-edit/sms-channels/show-sms-channel/add-sms-contacts/add-sms-contacts.template.html:56
+#: public/app/routes/surveys/survey-editor/react-survey-editor.template.html:15
+#: public/app/routes/surveys/surveys-list/surveys-list.template.html:117
+msgid "Close"
+msgstr "Sulje"
+
+#: public/app/components/device-info/device-info.template.html:94
+msgid "Code"
+msgstr "Koodi"
+
+#: public/app/routes/notifications/controls/slider/slider-control.template.html:9
+msgid "Condition"
+msgstr "Ehto"
+
+#: public/app/components/plan-selector/plan-selection-confirm/plan-selection-confirm.template.html:7
+msgid "Confirm"
+msgstr "Varmista"
+
+#: public/app/components/plan-selector/plan-selection-confirm/plan-selection-confirm.template.html:2
+msgid "Confirm plan switch"
+msgstr "Varmista maksusuunnitelman vaihto"
+
+#: public/app/translations/translations.template.html:223
+msgid "Confirm your purchase"
+msgstr "Varmista ostotapahtuma"
+
+#: public/app/routes/notifications/controls/contact/contact-control.template.html:19
+msgid "Contains 1 or more words"
+msgstr "Sisältää yhden tai useamman näistä sanoista"
+
+#: public/app/routes/notifications/controls/contact/contact-control.template.html:20
+msgid "Contains all words"
+msgstr "Sisältää kaikki nämä sanat"
+
+#: public/app/components/channel-setup-info/channel-setup-info.template.html:51
+msgid "Continue publishing the survey in this screen."
+msgstr "Jatka kyselyn julkaisemista tässä ruudussa."
+
+#: public/app/components/plugin-setup/plugin-setup.template.html:12
+msgid "Corner window"
+msgstr "Nurkkaikkuna"
+
+#: public/app/translations/translations.template.html:232
+msgid "Couldn't send SMS message to"
+msgstr "SMS:ää ei voitu lähettää numeroon"
+
+#: public/app/translations/translations.template.html:144
+msgid "Couldn't upload your image"
+msgstr "Kuvaasi ei pystytty lisäämään"
+
+#: public/app/translations/translations.template.html:230
+msgid "Country"
+msgstr "Valtio"
+
+#: public/app/routes/surveys/survey-routes-selection/survey-routes-selection.template.html:47
+msgid "Create"
+msgstr "Luo"
+
+#: public/app/routes/upsells/upsell-list/upsell-list.template.html:83
+msgid "Create Upsell Offers"
+msgstr "Luo lisämyyntitarjouksia"
+
+#: public/app/routes/surveys/surveys-list/surveys-list.template.html:111
+msgid "Create a copy"
+msgstr "Luo kopio"
+
+#: public/app/routes/upsells/upsell-list/upsell-list.template.html:8
+msgid "Create a new upsell offer"
+msgstr "Luo uusi lisämyyntitarjous"
+
+#: public/app/routes/summary/summary.template.html:327
+msgid "Create a survey"
+msgstr "Luo kysely"
+
+#: public/app/routes/channel-management/new-channel-group/new-channel-group.template.html:27
+msgid "Create channel group"
+msgstr "Luo kanavaryhmä."
+
+#: public/app/translations/translations.template.html:92
+msgid ""
+"Create new feedback channels and choose the methods to collect your feedback "
+"data with the survey you just created.\n"
+"There is a variety of options from tablet kiosk to email and websites."
+msgstr ""
+"Valitse tapa, jolla keräät palautetta juuri tekemästäsi kyselystä. Luo "
+"erityyppisiä palautekanavia tablettipohjaisesta palautelaitteesta "
+"sähköpostiin ja verkkosivuihin. "
+
+#: public/app/translations/translations.template.html:156
+msgid "Creating a file..."
+msgstr "Tiedostoa luodaan…"
+
+#: public/app/translations/translations.template.html:22
+msgid "Custom range"
+msgstr "Vapaavalintainen ajanjakso"
+
+#: public/app/routes/user/user-settings/user-settings.template.html:11
+msgid "Dashboard language"
+msgstr "Sovelluksen kieli"
+
+#: public/app/routes/results/chart-controls/chart-controls.template.html:14
+#: public/app/routes/results/contact-results/contact-results.template.html:10
+#: public/app/routes/results/text-results/text-results.template.html:15
+msgid "Date"
+msgstr "Päivämäärä"
+
+#: public/app/routes/results/chart-controls/chart-controls.template.html:15
+msgid "Day of the week"
+msgstr "Viikonpäivä"
+
+#: public/app/translations/translations.template.html:224
+msgid "Decline"
+msgstr "Peru"
+
+#: public/app/translations/translations.template.html:43
+msgid "Default"
+msgstr "Oletus"
+
+#: public/app/routes/channel-management/channel-management.template.html:67
+msgid "Delete Group"
+msgstr "Poista ryhmä"
+
+#: public/app/routes/notifications/notifications.template.html:25
+msgid "Deliver notifications to"
+msgstr "Toimita ilmoitukset seuraaville vastaanottajille"
+
+#: public/app/components/device-info/device-info.template.html:8
+#: public/app/components/edit-device-form/edit-device-form.template.html:33
+msgid "Description"
+msgstr "Kuvaus"
+
+#: public/app/translations/translations.template.html:178
+msgid "Detractors"
+msgstr "Arvostelijat"
+
+#: public/app/translations/translations.template.html:244
+msgid "Display Probability"
+msgstr "Näyttämisen todennäköisyys"
+
+#: public/app/components/plugin-setup/plugin-setup.template.html:151
+msgid "Display after visiting"
+msgstr "Näytä vierailtua"
+
+#: public/app/components/plugin-setup/plugin-setup.template.html:166
+msgid "Display after visiting the page for"
+msgstr "Näytä kun sivulla on vierailtu"
+
+#: public/app/components/plugin-setup/plugin-setup.template.html:161
+msgid "Display after visiting the site for"
+msgstr "Näytä kun koko sivustolla on vierailtu"
+
+#: public/app/components/plugin-setup/plugin-setup.template.html:84
+msgid "Display only on certain pages"
+msgstr "Näytä vain tietyillä sivuilla"
+
+#: public/app/components/plugin-setup/plugin-setup.template.html:4
+msgid "Display settings"
+msgstr "Esitysasetukset"
+
+#: public/app/routes/user/user-settings/user-settings.template.html:8
+msgid "Displayname"
+msgstr "Nimi"
+
+#: public/app/routes/surveys/survey-confirmation/survey-confirmation.template.html:25
+msgid "Distribution"
+msgstr "Jakelu"
+
+#: public/app/routes/notifications/notifications.template.html:45
+msgid "Do not assign to a group"
+msgstr "Älä osoita käyttäjäryhmälle"
+
+#: public/app/translations/translations.template.html:10
+msgid "Do you want to remove this rule set?"
+msgstr "Oletko varma että haluat poistaa tämän ryhmän?"
+
+#: public/app/translations/translations.template.html:159
+msgid "Download"
+msgstr "Lataa"
+
+#: public/app/components/channel-setup-info/channel-setup-info.template.html:33
+msgid "Download QR"
+msgstr "Lataa QR-koodi"
+
+#: public/app/components/file-drop/file-drop.template.html:6
+msgid "Drag your file here"
+msgstr "Raahaa tiedostosi tähän"
+
+#: public/app/translations/translations.template.html:205
+msgid "Drag your image here"
+msgstr "Raahaa kuvasi tähän"
+
+#: public/app/translations/translations.template.html:129
+#: public/app/translations/translations.template.html:135
+msgid "E-mail Settings"
+msgstr "Sähköpostiasetukset"
+
+#: public/app/translations/translations.template.html:76
+msgid "E-mail address"
+msgstr "Sähköpostiosoite"
+
+#: public/app/translations/translations.template.html:114
+msgid "E-mail list"
+msgstr "Sähköpostilista"
+
+#: public/app/translations/translations.template.html:210
+msgid "E-mail lists"
+msgstr "Sähköpostilistat"
+
+#: public/app/routes/surveys/survey-email-settings/survey-email-settings.template.html:25
+msgid "E-mail subject"
+msgstr "Otsikko"
+
+#: public/app/routes/channel-management/channel-edit/mailing-list-channels/show-mailing-list-channel/add-mailing-list-addresses/add-mailing-list-addresses.template.html:52
+#: public/app/routes/channel-management/channel-edit/sms-channels/show-sms-channel/add-sms-contacts/add-sms-contacts.template.html:40
+msgid "Each line in the CSV file should be of format"
+msgstr "CSV-tiedoston jokaisen rivin tulee olla muotoa"
+
+#: public/app/components/edit-channel-group-form/edit-channel-group-form.template.html:4
+#: public/app/routes/surveys/surveys-list/surveys-list.template.html:42
+#: public/app/routes/upsells/upsell-list/upsell-list.template.html:17
+msgid "Edit"
+msgstr "Muokkaa"
+
+#: public/app/routes/channel-management/channel-edit/channel-edit.template.html:15
+msgid "Edit channel"
+msgstr "Muokkaa kanavaa"
+
+#: public/app/routes/surveys/surveys-list/surveys-list.template.html:24
+msgid "Edit existing surveys"
+msgstr "Muokkaa olemassaolevia kyselyitä"
+
+#: public/app/routes/channel-management/channel-edit/mailing-list-channels/show-mailing-list-channel/add-mailing-list-addresses/add-mailing-list-addresses.template.html:26
+#: public/app/routes/channel-management/channel-edit/mailing-list-channels/show-mailing-list-channel/show-mailing-list-channel.template.html:78
+#: public/app/routes/channel-management/channel-edit/mailing-list-channels/show-mailing-list-channel/show-mailing-list-channel.template.html:9
+msgid "Email"
+msgstr "Sähköposti"
+
+#: public/app/routes/surveys/survey-email-settings/survey-email-settings.template.html:5
+msgid "Email Settings"
+msgstr "Sähköpostiasetukset"
+
+#: public/app/translations/translations.template.html:29
+msgid "Emoticon style"
+msgstr "Hymiön tyyli"
+
+#: public/app/routes/channel-management/channel-edit/mailing-list-channels/show-mailing-list-channel/add-mailing-list-addresses/add-mailing-list-addresses.template.html:43
+msgid "Encountered some errors:"
+msgstr "Joitakin virheitä ilmeni:"
+
+#: public/app/translations/translations.template.html:50
+msgid "End of survey"
+msgstr "Kyselyn loppu"
+
+#: public/app/routes/channel-management/new-channel-group/new-channel-group.template.html:24
+msgid "Enter a name for the new channel group"
+msgstr "Anna nimi uudelle kanavaryhmälle."
+
+#: public/app/translations/translations.template.html:75
+msgid "Enter your e-mail address for a chance to win the newest iPhone!"
+msgstr ""
+"Anna sähköpostiosoitteesi ja osallistu kilpailuun, jossa on mahdollisuus "
+"voittaa viimeisin iPhone!"
+
+#: public/app/components/add-channel/add-channel.template.html:6
+#: public/app/routes/surveys/survey-routes-selection/survey-routes-selection.template.html:34
+msgid "Ex. Kiosk 4 - Helsinki Central"
+msgstr "Esim. Laite 4 - Helsingin keskusta"
+
+#: public/app/components/plugin-setup/plugin-setup.template.html:182
+msgid "Exiting the page"
+msgstr "Poistuessa sivulta"
+
+#: public/app/components/billing-form/billing-form.template.html:47
+msgid "Expiration (MM/YYYY)"
+msgstr "Erääntyminen (KK/VVVV)"
+
+#: public/app/routes/results/text-results/text-results.template.html:17
+msgid "Feedback"
+msgstr "Palaute"
+
+#: public/app/routes/surveys/survey-routes-selection/survey-routes-selection.template.html:3
+msgid "Feedback Channel Selection"
+msgstr "Palautekanavien valinta"
+
+#: public/app/routes/summary/summary.template.html:158
+#: public/app/routes/surveys/surveys-list/surveys-list.template.html:40
+#: public/app/translations/translations.template.html:168
+msgid "Feedback amount"
+msgstr "Palautemäärä"
+
+#: public/app/routes/results/contact-results/contact-results.template.html:11
+#: public/app/routes/results/text-results/text-results.template.html:16
+msgid "Feedback channel"
+msgstr "Palautekanava"
+
+#: public/app/components/edit-channel-group-form/edit-channel-group-form.template.html:30
+msgid "Feedback channels"
+msgstr "Palautekanavat"
+
+#: public/app/routes/notifications/notifications.template.html:31
+msgid "Feedback channels to deliver notifications from"
+msgstr "Palautekanavat, joista ilmoitukset lähtee"
+
+#: public/app/translations/translations.template.html:153
+msgid "Feedback channels' average"
+msgstr "Palautekanavien keskiarvo"
+
+#: public/app/translations/translations.template.html:152
+msgid "Feedback channels' feedback amount"
+msgstr "Palautekanavien palautemäärä"
+
+#: public/app/components/device-info/device-info.template.html:18
+#: public/app/routes/channel-management/channel-management.template.html:28
+msgid "Feedback count"
+msgstr "Palautteiden määrä"
+
+#: public/app/translations/translations.template.html:112
+msgid "Feedback deleted."
+msgstr "Palaute poistettu."
+
+#: public/app/components/navbar/navbar.template.html:43
+msgid "Feedback inbox"
+msgstr "Palautelaatikko"
+
+#: public/app/translations/translations.template.html:116
+#: public/app/translations/translations.template.html:216
+msgid "Feedback kiosk"
+msgstr "Palautelaite"
+
+#: public/app/components/navbar/navbar.template.html:37
+msgid "Feedback list"
+msgstr "Palautelistaus"
+
+#: public/app/routes/notifications/notifications-list.template.html:3
+msgid "Feedback notifications"
+msgstr "PalauteIlmoitukset"
+
+#: public/app/translations/translations.template.html:239
+msgid "Feedback source details"
+msgstr "Palautelähde tarkemmin"
+
+#: public/app/translations/translations.template.html:39
+msgid "Feedbackly style emoticons"
+msgstr "Feedbackly-tyyliset hymiöt"
+
+#: public/app/components/fbevent-plan-limit-notifier/fbevent-plan-limit-notifier.template.html:2
+msgid "Feedbacks over the limit are omitted from the results."
+msgstr "Rajan yli meneviä palautteita ei näytetä tuloksissa."
+
+#: public/app/components/no-payment-source-error/no-payment-source-error.template.html:3
+msgid "Fill in your billing information"
+msgstr "Täytä maksutietosi"
+
+#: public/app/translations/translations.template.html:195
+msgid "Fill in your billing information first"
+msgstr "Täytä ensin maksutietosi"
+
+#: public/app/translations/translations.template.html:20
+msgid "Filter"
+msgstr "Suodata"
+
+#: public/app/translations/translations.template.html:54
+msgid "Final screen timeout"
+msgstr "Lopputekstin uudelleenlatausaika"
+
+#: public/app/routes/channel-management/channel-edit/mailing-list-channels/show-mailing-list-channel/show-mailing-list-channel.template.html:70
+#: public/app/routes/channel-management/channel-edit/sms-channels/show-sms-channel/show-sms-channel.template.html:68
+msgid "First Name"
+msgstr "Etunimi"
+
+#: public/app/routes/channel-management/channel-edit/mailing-list-channels/show-mailing-list-channel/add-mailing-list-addresses/add-mailing-list-addresses.template.html:12
+#: public/app/routes/channel-management/channel-edit/mailing-list-channels/show-mailing-list-channel/show-mailing-list-channel.template.html:7
+#: public/app/routes/channel-management/channel-edit/sms-channels/show-sms-channel/add-sms-contacts/add-sms-contacts.template.html:12
+#: public/app/routes/channel-management/channel-edit/sms-channels/show-sms-channel/show-sms-channel.template.html:7
+msgid "First name"
+msgstr "Etunimi"
+
+#: public/app/translations/translations.template.html:237
+msgid ""
+"First we need to get your feedback channels up and running. Choose "
+"individual channel from the top menu and go with the flow."
+msgstr ""
+"Ensin palautekanavasi täytyy laittaa käyttövalmiiksi. Valitse yksittäinen "
+"kanava ylävalikosta ja anna palaa."
+
+#: public/app/translations/translations.template.html:238
+msgid ""
+"For example if you want to use your tablet to collect feedback, go to "
+"“feedback kiosks” and download the app to your tablet."
+msgstr ""
+"Jos esimerkiksi haluat käyttää tablet-tietokonetta palautteenkeräämiseen, "
+"valitse Palautelaite ja lataa palaute-ohjelma tabletillesi."
+
+#: public/app/components/edit-device-form/edit-device-form.template.html:47
+msgid "Force default language (if available in survey)"
+msgstr "Aseta oletuskieli kanavaan (jos kieli on saatavilla kyselyssä)"
+
+#: public/app/translations/translations.template.html:165
+msgid "Form"
+msgstr "Lomake"
+
+#: public/app/components/plan-selector/plan-selector.template.html:15
+msgid "Free"
+msgstr "Ilmainen"
+
+#: public/app/components/plugin-setup/plugin-setup.template.html:27
+msgid "Freely placed"
+msgstr "Vapaasti sijoitettu"
+
+#: public/app/translations/translations.template.html:15
+msgid "Friday"
+msgstr "perjantai"
+
+#: public/app/routes/surveys/survey-email-settings/survey-email-settings.template.html:70
+msgid "From:"
+msgstr "Lähettäjä:"
+
+#: public/app/components/billing-form/billing-form.template.html:8
+msgid "Full name"
+msgstr "Kokonimi"
+
+#: public/app/routes/upsells/upsell-list/upsell-list.template.html:94
+msgid "GET STARTED"
+msgstr "NÄIN PÄÄSET ALKUUN"
+
+#: public/app/routes/upsells/upsell-editor/upsell-editor.template.html:89
+msgid "Generate barcode"
+msgstr "Luo viivakoodi"
+
+#: public/app/routes/tutorial/tutorial.template.html:15
+msgid "Get started in just a few easy steps!"
+msgstr "Pääse vauhtiin vain muutamalla helpolla vaiheella!"
+
+#: public/app/translations/translations.template.html:182
+msgid "Getting the results..."
+msgstr "Haetaan tuloksia…"
+
+#: public/app/translations/translations.template.html:171
+msgid "Good."
+msgstr "Hyvä."
+
+#: public/app/translations/translations.template.html:196
+msgid "Got it!"
+msgstr "Selvä!"
+
+#: public/app/routes/results/chart-controls/chart-controls.template.html:12
+msgid "Grouping"
+msgstr "Ryhmittely"
+
+#: public/app/translations/translations.template.html:150
+msgid "Heading"
+msgstr "Otsikko"
+
+#: public/app/translations/translations.template.html:209
+msgid "Heading is missing from question number"
+msgstr "Otsikko puuttuu kysymyksestä numero"
+
+#: public/app/components/navbar/navbar.template.html:94
+msgid "Help center"
+msgstr "Apukeskus"
+
+#: public/app/routes/summary/summary.template.html:186
+msgid "Here you can find your best performances as well as the worst ones."
+msgstr "Tästä näet parhaat sekä heikoimmat ajankohdat."
+
+#: public/app/routes/surveys/survey-preview/survey-preview.template.html:16
+msgid ""
+"Here's what your survey will look depending on which channels you want to "
+"publish to."
+msgstr "Tältä kyselysi näyttää riippuen missä kanavassa julkaiset sen."
+
+#: public/app/translations/translations.template.html:149
+msgid "Hide archived"
+msgstr "Piilota arkistoidut"
+
+#: public/app/translations/translations.template.html:64
+msgid "Hide image labels"
+msgstr "Piilota kuvien otsikot"
+
+#: public/app/components/plugin-setup/plugin-setup.template.html:122
+msgid "Hide on certain pages"
+msgstr "Piilota tietyillä sivuilla"
+
+#: public/app/routes/summary/summary.template.html:188
+msgid "Highs and lows"
+msgstr "Huiput ja heikot"
+
+#: public/app/routes/results/chart-controls/chart-controls.template.html:16
+#: public/app/routes/surveys/survey-publish-settings/survey-publish-settings.template.html:41
+msgid "Hour"
+msgstr "Tunti"
+
+#: public/app/translations/translations.template.html:201
+msgid "Hours"
+msgstr "Tunnit"
+
+#: public/app/translations/translations.template.html:77
+msgid "I agree to terms and conditions"
+msgstr "Hyväksyn säännöt ja ehdot"
+
+#: public/app/translations/translations.template.html:164
+msgid "Image"
+msgstr "Kuva"
+
+#: public/app/translations/translations.template.html:96
+msgid ""
+"In the publishing settings go through the parts to get detailed instruction "
+"on the setup.\n"
+"For example, you may download the app to your tablet from here.\n"
+"Here you can also choose whether to publish the survey now or\n"
+"schedule it to be automatically published later."
+msgstr ""
+"Julkaisuasetuksissa käy läpi eri osiot saadaksesi yksityiskohtaista tietoa "
+"asetuksista. \n"
+"Voit esimerkiksi ladata tabletillesi palaute-appin täätlä. \n"
+"Täältä vois myöt valita julkaisetko kyselyn nyt vai ajastatko sen myöhempään "
+"julkaisuajankohtaan."
+
+#: public/app/translations/translations.template.html:240
+msgid ""
+"In this section you will also find everything you need to set up your "
+"feedback channels e.g. find your printable QR ­codes and the embed codes for "
+"your website survey."
+msgstr ""
+"Tästä osiosta löydät kaiken tarvitsemasi asentaaksesi palautekanavat "
+"käyttövalmiiksi. Löydät täältä esimerkiksi printattavat QR-koodisi sekä "
+"verkkosivukyselyysi tarvittavan koodinpätkän."
+
+#: public/app/routes/notifications/notifications.template.html:54
+msgid "Include all available questions in notification message"
+msgstr "Sisällytä kaikki saatavilla olevat vastaukset ilmoitusviestiin"
+
+#: public/app/routes/notifications/notifications.template.html:58
+msgid "Include email content only from questions (if available)"
+msgstr ""
+"Sisällytä sähköpostiin vain vastaukset seuraavista kysymyksistä (mikäli "
+"saatavilla)"
+
+#: public/app/routes/channel-management/channel-edit/mailing-list-channels/show-mailing-list-channel/add-mailing-list-addresses/add-mailing-list-addresses.template.html:54
+#: public/app/routes/channel-management/channel-edit/sms-channels/show-sms-channel/add-sms-contacts/add-sms-contacts.template.html:42
+msgid "Include this as a first line in your csv."
+msgstr "Käytä tätä csv-tiedostosi ensimmäisenä rivinä."
+
+#: public/app/components/plugin-setup/plugin-setup.template.html:250
+msgid "Installation"
+msgstr "Asennus"
+
+#: public/app/routes/upsells/upsell-list/upsell-list.template.html:85
+msgid "Instant offers and emails"
+msgstr "Välittömiä tarjoukset ja sähköpostit"
+
+#: public/app/translations/translations.template.html:6
+msgid "Last 30 Days"
+msgstr "Viimeiset 30 pv"
+
+#: public/app/translations/translations.template.html:5
+msgid "Last 7 Days"
+msgstr "Viimeiset 7 pv"
+
+#: public/app/translations/translations.template.html:8
+msgid "Last Month"
+msgstr "Viime kuukausi"
+
+#: public/app/routes/channel-management/channel-edit/mailing-list-channels/show-mailing-list-channel/show-mailing-list-channel.template.html:74
+#: public/app/routes/channel-management/channel-edit/sms-channels/show-sms-channel/show-sms-channel.template.html:72
+msgid "Last Name"
+msgstr "Sukunimi"
+
+#: public/app/routes/summary/summary.template.html:312
+msgid "Last month"
+msgstr "Viime kuukausi"
+
+#: public/app/routes/channel-management/channel-edit/mailing-list-channels/show-mailing-list-channel/add-mailing-list-addresses/add-mailing-list-addresses.template.html:19
+#: public/app/routes/channel-management/channel-edit/mailing-list-channels/show-mailing-list-channel/show-mailing-list-channel.template.html:8
+#: public/app/routes/channel-management/channel-edit/sms-channels/show-sms-channel/add-sms-contacts/add-sms-contacts.template.html:18
+#: public/app/routes/channel-management/channel-edit/sms-channels/show-sms-channel/show-sms-channel.template.html:8
+msgid "Last name"
+msgstr "Sukunimi"
+
+#: public/app/translations/translations.template.html:4
+msgid "Last week"
+msgstr "Viime viikko"
+
+#: public/app/routes/upsells/upsell-list/upsell-list.template.html:105
+msgid "Learn more at our Knowledge Base"
+msgstr "Lue lisää täältä (engl.)"
+
+#: public/app/components/device-info/device-info.template.html:60
+#: public/app/components/device-info/device-info.template.html:74
+msgid "Learn more at our Knowledge base"
+msgstr "Lue lisää Osaamiskeskuksestamme"
+
+#: public/app/routes/notifications/controls/contact/contact-control.template.html:18
+msgid "Length"
+msgstr "Pituus"
+
+#: public/app/components/device-info/device-info.template.html:83
+#: public/app/components/device-info/device-info.template.html:99
+msgid "Link"
+msgstr "Linkki"
+
+#: public/app/translations/translations.template.html:147
+msgid ""
+"Logic related to the moved question will change. Do you want to proceed?"
+msgstr ""
+"Siirrettyyn kyselyyn liittyvä logiikkaa tulee muuttumaan. Haluatko jatkaa?"
+
+#: public/app/components/edit-device-form/edit-device-form.template.html:37
+msgid "Logo"
+msgstr "Logo"
+
+#: public/app/translations/translations.template.html:157
+msgid "Message has been sent"
+msgstr "Viesti on lähetetty"
+
+#: public/app/routes/surveys/survey-publish-settings/survey-publish-settings.template.html:50
+msgid "Minute"
+msgstr "Minuutti"
+
+#: public/app/translations/translations.template.html:202
+msgid "Minutes"
+msgstr "Minuutit"
+
+#: public/app/translations/translations.template.html:217
+msgid "Mobile"
+msgstr "Matkapuhelin"
+
+#: public/app/translations/translations.template.html:11
+msgid "Monday"
+msgstr "maanantai"
+
+#: public/app/translations/translations.template.html:30
+msgid "Multiple Choice"
+msgstr "Monivalinta"
+
+#: public/app/routes/results/result-stats/result-stats.template.html:29
+msgid "NPS in the selected feedback channels"
+msgstr "NPS valituissa palautekanavissa"
+
+#: public/app/routes/results/result-stats/result-stats.template.html:80
+msgid "NPS in the whole organization"
+msgstr "NPS koko organisaatiossa"
+
+#: public/app/routes/results/result-stats/result-stats.template.html:82
+msgid ""
+"NPS of this question in all the feedback channels in the organization in the "
+"selected timespan"
+msgstr ""
+"NPS tähän kysymykseen organisaation kaikissa palautekanavissa valitulla "
+"ajanjaksolla"
+
+#: public/app/routes/results/result-stats/result-stats.template.html:31
+msgid "NPS of this question with the selected filters"
+msgstr "Tämän kysymyksen NPS valituilla hakuehdoilla"
+
+#: public/app/routes/summary/summary.template.html:120
+msgid "NPS® in the selected timespan"
+msgstr "NPS® valitulla ajanjaksolla"
+
+#: public/app/components/add-device-form/add-device-form.template.html:6
+#: public/app/components/device-info/device-info.template.html:3
+#: public/app/components/edit-channel-group-form/edit-channel-group-form.template.html:11
+#: public/app/components/edit-device-form/edit-device-form.template.html:14
+#: public/app/routes/channel-management/channel-management.template.html:27
+#: public/app/routes/surveys/surveys-list/surveys-list.template.html:14
+#: public/app/routes/surveys/surveys-list/surveys-list.template.html:38
+#: public/app/routes/surveys/surveys-list/surveys-list.template.html:98
+msgid "Name"
+msgstr "Nimi"
+
+#: public/app/routes/upsells/upsell-list/upsell-list.template.html:34
+msgid "Negative"
+msgstr "Negatiivinen"
+
+#: public/app/components/edit-device-form/edit-device-form.template.html:81
+msgid "Negative upsell"
+msgstr "Negatiivinen lisämyyntitarjous"
+
+#: public/app/routes/summary/summary.template.html:122
+msgid ""
+"Net Promoter Score (NPS®) in the selected timespan in the feedback channels "
+"you have rights to."
+msgstr ""
+"NPS-luku palautekanavissa, joihin sinulla on oikeudet, valitulla aikavälillä."
+
+#: public/app/routes/upsells/upsell-list/upsell-list.template.html:37
+msgid "Neutral"
+msgstr "Neutraali"
+
+#: public/app/components/edit-device-form/edit-device-form.template.html:52
+msgid "Neutral upsell"
+msgstr "Neutraali lisämyyntitarjous"
+
+#: public/app/routes/channel-management/channel-edit/channel-edit.template.html:4
+#: public/app/routes/channel-management/channel-management.template.html:4
+msgid "New Feedback Channel"
+msgstr "Uusi palautekanava"
+
+#: public/app/components/plugin-setup/plugin-setup.template.html:136
+#: public/app/components/plugin-setup/plugin-setup.template.html:98
+msgid "New URL or partial URL"
+msgstr "Uusi URL tai osittainen URL"
+
+#: public/app/routes/upsells/upsell-editor/upsell-editor.template.html:6
+msgid "New Upsell"
+msgstr "Uusi lisämyyntitarjous"
+
+#: public/app/routes/channel-management/new-channel-group/new-channel-group.template.html:14
+msgid "New channel group"
+msgstr "Uusi kanavaryhmä"
+
+#: public/app/routes/notifications/notifications-list.template.html:7
+msgid "New notification rule"
+msgstr "Uusi ilmoitussääntö"
+
+#: public/app/routes/surveys/surveys-list/surveys-list.template.html:9
+msgid "New survey"
+msgstr "Uusi kysely"
+
+#: public/app/translations/translations.template.html:44
+msgid "Next"
+msgstr "Seuraava"
+
+#: public/app/translations/translations.template.html:59
+msgid "Next (button text)"
+msgstr "Seuraava (napin teksti)"
+
+#: public/app/translations/translations.template.html:94
+msgid ""
+"Next you need to setup your channels to collect the data.\n"
+"Depending on what type of channels you chose to use, the software will ask "
+"you to do the setup."
+msgstr ""
+"Seuraavaksi sinun pitää asettaa kanavat, joilla kerätä dataa.\n"
+"Palautekanavan tyypistä riippuen ohjelmisto kysyy sinulta tarvittavat tiedot "
+"asetusten tekemiseen. "
+
+#: public/app/routes/upsells/upsell-list/upsell-list.template.html:69
+#: public/app/translations/translations.template.html:200
+msgid "No"
+msgstr "Ei"
+
+#: public/app/translations/translations.template.html:190
+msgid "No SMS channel was chosen"
+msgstr "Tekstivistikanavaa ei ole valittu"
+
+#: public/app/components/device-info/device-info.template.html:41
+msgid "No active schedulations for this channel."
+msgstr "Ei aktiivisia ajastuksia tälle kanavalle."
+
+#: public/app/routes/summary/summary.template.html:324
+msgid "No feedback to analyze at the moment."
+msgstr "Ei palautetta analysoitavana tällä hetkellä."
+
+#: public/app/translations/translations.template.html:192
+msgid "No mailing list was chosen"
+msgstr "Postituslistaa ei ole valittu"
+
+#: public/app/translations/translations.template.html:191
+msgid "No message provided"
+msgstr "Viesti puuttuu"
+
+#: public/app/routes/feedbacks/feedbacks.template.html:58
+#: public/app/routes/results/results.template.html:12
+msgid "No results found"
+msgstr "Tuloksia ei löytynyt"
+
+#: public/app/translations/translations.template.html:194
+msgid "No sender provided"
+msgstr "Lähettäjä puuttuu"
+
+#: public/app/translations/translations.template.html:193
+msgid "No subject provided"
+msgstr "Aihe puuttuu"
+
+#: public/app/routes/upsells/upsell-list/upsell-list.template.html:23
+msgid "No upsell templates added"
+msgstr "Ei lisämyyntitarjouksia"
+
+#: public/app/components/device-info/device-info.template.html:28
+msgid "No user has right to the channel"
+msgstr "Yhdelläkään käyttäjälle ei ole oikeutta kanavaan"
+
+#: public/app/translations/translations.template.html:131
+#: public/app/translations/translations.template.html:137
+msgid "Not ready to publish just yet. Check the settings."
+msgstr "Kysely ei ole vielä valmiina julkaistavaksi. Tarkista asetukset."
+
+#: public/app/routes/upsells/upsell-list/upsell-list.template.html:56
+msgid ""
+"Note: De-selecting engage points will remove the upsell offers from them."
+msgstr ""
+"Huom: Valinnan poistaminen palautekanavista poistaa myös "
+"lisämyyntitarjoukset niistä."
+
+#: public/app/components/edit-channel-group-form/edit-channel-group-form.template.html:34
+#: public/app/components/edit-channel-group-form/edit-channel-group-form.template.html:55
+#: public/app/routes/results/feedback-filters-list/feedback-filters-list.template.html:2
+#: public/app/routes/surveys/surveys-list/surveys-list.template.html:31
+msgid "Nothing here yet"
+msgstr "Täällä ei ole vielä mitään"
+
+#: public/app/routes/notifications/notifications-list.template.html:14
+msgid "Notification recipients"
+msgstr "Ilmoituksen vastaanottajat"
+
+#: public/app/translations/translations.template.html:80
+msgid "Notification rule saved successfully."
+msgstr "Ilmoitussäännöt tallennettu onnistuneesti."
+
+#: public/app/components/navbar/navbar.template.html:61
+#: public/app/routes/notifications/notifications.template.html:5
+msgid "Notifications"
+msgstr "Ilmoitukset"
+
+#: public/app/translations/translations.template.html:109
+msgid ""
+"Now you have the basic knowledge to start learning about your customers. "
+"Just click below to start turning your happy customers into more business "
+"and better sales."
+msgstr ""
+"Nyt sinulla on perustiedot, jotta voit alkaa kerätä tietoa asiakkaistasi. "
+"Klikkaa alta ja käännä tyytyväiset asiakkaat paremmaksi bisnekseksi ja "
+"suuremmaksi myynniksi."
+
+#: public/app/components/device-info/device-info.template.html:46
+msgid "Number of members"
+msgstr "Jäsenten määrä"
+
+#: public/app/components/plugin-setup/plugin-setup.template.html:148
+msgid "Number of pages visited"
+msgstr "Vierailtujen sivujen lukumäärä"
+
+#: public/app/routes/surveys/surveys-list/surveys-list.template.html:39
+msgid "Number of questions"
+msgstr "Kysymysten määrä"
+
+#: public/app/routes/summary/summary.template.html:70
+msgid "Number of respondents in the selected timespan"
+msgstr "Vastaajien lukumäärä valitulla ajanjaksolla"
+
+#: public/app/translations/translations.template.html:47
+msgid "OK"
+msgstr "OK"
+
+#: public/app/routes/notifications/notifications.template.html:103
+msgid "OR"
+msgstr "TAI"
+
+#: public/app/routes/upsells/upsell-editor/upsell-editor.template.html:44
+msgid "Offer image"
+msgstr "Tarjouksen kuva"
+
+#: public/app/translations/translations.template.html:172
+msgid "Ok."
+msgstr "Ok."
+
+#: public/app/components/plugin-setup/plugin-setup.template.html:104
+msgid "One URL needs to be visited before triggering"
+msgstr "Yhdessä osoitteessa tulee vierailla ennen triggeröintiä"
+
+#: public/app/translations/translations.template.html:250
+msgid "Only feedback assigned to group"
+msgstr "Vain palaute, joka on osoitettu käyttäjäryhmälle"
+
+#: public/app/translations/translations.template.html:162
+msgid "Open question"
+msgstr "Avoin kysymys"
+
+#: public/app/components/navbar/navbar.template.html:75
+msgid "Organization"
+msgstr "Organisaatio"
+
+#: public/app/translations/translations.template.html:154
+msgid "Organization's feedback amount"
+msgstr "Organisaation palautemäärä"
+
+#: public/app/translations/translations.template.html:177
+msgid "Passives"
+msgstr "Passiivit"
+
+#: public/app/routes/user/user-settings/user-settings.template.html:35
+msgid "Password"
+msgstr "Salasana"
+
+#: public/app/routes/user/user-settings/user-settings.template.html:40
+msgid "Password confirmation"
+msgstr "Salasanan vahvistus"
+
+#: public/app/routes/summary/summary.template.html:170
+msgid "Performance meter"
+msgstr "Suorituskykymittari"
+
+#: public/app/routes/channel-management/channel-edit/sms-channels/show-sms-channel/show-sms-channel.template.html:76
+msgid "Phone Number"
+msgstr "Puhelinnumero"
+
+#: public/app/routes/channel-management/channel-edit/sms-channels/show-sms-channel/add-sms-contacts/add-sms-contacts.template.html:24
+#: public/app/routes/channel-management/channel-edit/sms-channels/show-sms-channel/show-sms-channel.template.html:9
+msgid "Phone number"
+msgstr "Puhelinnumero"
+
+#: public/app/translations/translations.template.html:18
+msgid "Pick a date range"
+msgstr "Valitse ajanjakso"
+
+#: public/app/components/plugin-setup/plugin-setup.template.html:66
+msgid ""
+"Place freely by adding this line of code anywhere on the site (in addition "
+"to the setup code below)"
+msgstr ""
+"Asenna vapaasti lisäämällä scripti mihin tahansa sivulle (alla olevan "
+"asennuskoodin lisäksi)"
+
+#: public/app/routes/surveys/survey-confirmation/survey-confirmation.template.html:52
+#: public/app/routes/surveys/survey-sms-settings/survey-sms-settings.template.html:59
+msgid "Please ask your organization admin to top up the SMS Balance"
+msgstr "Pyydä organisaatiosi ylläpitäjää lisäämään SMS-tilille rahaa"
+
+#: public/app/translations/translations.template.html:84
+msgid "Please make at least 1 notification rule."
+msgstr "Tee ainakin yksi ilmoitussääntö."
+
+#: public/app/translations/translations.template.html:83
+msgid "Please select at least 1 channel."
+msgstr "Valitse ainakin yksi palautekanava."
+
+#: public/app/translations/translations.template.html:85
+msgid "Please type at least 1 e-mail recipient."
+msgstr "Anna vähintään 1 sähköpostiosoite."
+
+#: public/app/translations/translations.template.html:226
+msgid "Plugin code has been copied to clipboard"
+msgstr "Nettisivukyselyn koodi on kopioitu leikepöydälle"
+
+#: public/app/translations/translations.template.html:141
+msgid "Plugin settings have been saved."
+msgstr "Liitännäisen asetukset on tallennettu."
+
+#: public/app/components/plugin-setup/plugin-setup.template.html:19
+msgid "Popup window"
+msgstr "Ponnahdusikkuna"
+
+#: public/app/routes/upsells/upsell-list/upsell-list.template.html:40
+msgid "Positive"
+msgstr "Positiivinen"
+
+#: public/app/components/edit-device-form/edit-device-form.template.html:66
+msgid "Positive upsell"
+msgstr "Positiivinen lisämyyntitarjous"
+
+#: public/app/components/billing-form/billing-form.template.html:23
+msgid "Postal code"
+msgstr "Postinumero"
+
+#: public/app/translations/translations.template.html:132
+msgid "Preview"
+msgstr "Esikatselu"
+
+#: public/app/translations/translations.template.html:166
+msgid "Previously created question"
+msgstr "Aiemmin luotu kysymys"
+
+#: public/app/translations/translations.template.html:56
+msgid "Privacy policy"
+msgstr "Rekisteriseloste"
+
+#: public/app/translations/translations.template.html:176
+msgid "Promoters"
+msgstr "Suosittelijat"
+
+#: public/app/translations/translations.template.html:42
+msgid "Provide general translations for the survey."
+msgstr "Anna yleiset käännökset kyselylle."
+
+#: public/app/translations/translations.template.html:134
+msgid "Publish Settings"
+msgstr "Julkaisuasetukset"
+
+#: public/app/routes/surveys/survey-confirmation/survey-confirmation.template.html:72
+msgid "Publish now"
+msgstr "Julkaise nyt"
+
+#: public/app/routes/surveys/survey-publish-settings/survey-publish-settings.template.html:3
+msgid "Publish settings"
+msgstr "Julkaisuasetukset"
+
+#: public/app/routes/surveys/survey-confirmation/survey-confirmation.template.html:57
+msgid "Publish time"
+msgstr "Julkaisuaika"
+
+#: public/app/components/add-channel/add-channel.template.html:22
+msgid "Put in channel group(s)"
+msgstr "Laita kanavaryhmään"
+
+#: public/app/components/device-info/device-info.template.html:88
+#: public/app/translations/translations.template.html:119
+msgid "QR code"
+msgstr "QR-koodi"
+
+#: public/app/translations/translations.template.html:53
+msgid "Question timeout"
+msgstr "Kysymyksen uudelleenlatausaika"
+
+#: public/app/translations/translations.template.html:52
+msgid "Question title is blank"
+msgstr "Kyselyn otsikko on tyhjä"
+
+#: public/app/routes/summary/summary.template.html:220
+msgid "Quietest day"
+msgstr "Hiljaisin päivä"
+
+#: public/app/routes/summary/summary.template.html:243
+msgid "Ranking"
+msgstr "Sijoitus"
+
+#: public/app/translations/translations.template.html:222
+msgid "Read more about pricing in our help center"
+msgstr "Lue lisää hinnoista apukeskuksestamme"
+
+#: public/app/translations/translations.template.html:228
+msgid "Receipt has been sent to your email address"
+msgstr "Kuitti on lähetetty sähköpostiosoitteeseesi"
+
+#: public/app/translations/translations.template.html:55
+msgid "Redirect"
+msgstr "Uudelleenohjaus"
+
+#: public/app/translations/translations.template.html:62
+msgid "Redirect address"
+msgstr "Uudelleenohjausosoite"
+
+#: public/app/components/plugin-setup/plugin-setup.template.html:194
+msgid "Redisplay after being closed after"
+msgstr "Näytä uudelleen sulkemisen jälkeen kun on kulunut"
+
+#: public/app/components/plugin-setup/plugin-setup.template.html:215
+msgid "Redisplay after survey has been finished after"
+msgstr "Näytä uudelleen kyselyyn vastaamisen jälkeen kun on kulunut"
+
+#: public/app/components/plugin-setup/plugin-setup.template.html:190
+msgid "Redisplay conditions"
+msgstr "Ehdot uudelleen näyttämiselle"
+
+#: public/app/routes/surveys/survey-sms-settings/survey-sms-settings.template.html:52
+msgid "Refreshing..."
+msgstr "Päivitetään…"
+
+#: public/app/routes/results/chart-controls/chart-controls.template.html:7
+msgid "Relative (%)"
+msgstr "Suhteellinen (%)"
+
+#: public/app/translations/translations.template.html:184
+msgid "Remove feedback filter"
+msgstr "Poista palautesuodatin"
+
+#: public/app/routes/summary/summary.template.html:254
+msgid "Respondents"
+msgstr "Vastaajia"
+
+#: public/app/routes/summary/summary.template.html:95
+msgid "Responses to individual questions"
+msgstr "Yksittäistä vastausta eri kysymyksiin"
+
+#: public/app/routes/summary/summary.template.html:97
+msgid ""
+"Responses to individual questions in the selected timespan in the feedback "
+"channels you have rights to."
+msgstr ""
+"Eri kysymyksiin tulleiden vastausten yhteenlaskettu lukumäärä "
+"palautekanavissa, joihin sinulla on oikeudet, valitulla aikavälillä."
+
+#: public/app/components/navbar/navbar.template.html:31
+msgid "Results"
+msgstr "Tulokset"
+
+#: public/app/translations/translations.template.html:58
+msgid "Returning to beginning in 10 seconds."
+msgstr "Palataan alkuun 10 sekunnissa."
+
+#: public/app/translations/translations.template.html:110
+msgid "Review & Confirmation"
+msgstr "Tarkastus & Vahvistus "
+
+#: public/app/routes/surveys/survey-confirmation/survey-confirmation.template.html:3
+msgid "Review and Confirmation"
+msgstr "Vahvistus"
+
+#: public/app/routes/surveys/survey-sms-settings/survey-sms-settings.template.html:3
+msgid "SMS Settings"
+msgstr "SMS asetukset"
+
+#: public/app/routes/surveys/survey-sms-settings/survey-sms-settings.template.html:61
+msgid "SMS limitations"
+msgstr "SMS-rajoitukset"
+
+#: public/app/translations/translations.template.html:115
+#: public/app/translations/translations.template.html:214
+msgid "SMS list"
+msgstr "Tekstiviestilista"
+
+#: public/app/components/plugin-setup/plugin-setup.template.html:236
+msgid "Sampling"
+msgstr "Otanta"
+
+#: public/app/translations/translations.template.html:16
+msgid "Saturday"
+msgstr "lauantai"
+
+#: public/app/components/add-channel-to-group/add-channel-to-group.template.html:18
+#: public/app/components/add-channel/add-channel.template.html:41
+#: public/app/components/billing-form/billing-form.template.html:50
+#: public/app/components/edit-channel-group-form/edit-channel-group-form.template.html:23
+#: public/app/components/edit-channel-group-form/edit-channel-group-form.template.html:44
+#: public/app/components/edit-channel-group-form/edit-channel-group-form.template.html:65
+#: public/app/components/edit-device-form/edit-device-form.template.html:100
+#: public/app/routes/channel-management/channel-edit/mailing-list-channels/show-mailing-list-channel/show-mailing-list-channel.template.html:84
+#: public/app/routes/channel-management/channel-edit/sms-channels/show-sms-channel/show-sms-channel.template.html:82
+#: public/app/routes/channel-management/channel-management.template.html:65
+#: public/app/routes/notifications/notifications.template.html:156
+#: public/app/routes/surveys/surveys-list/surveys-list.template.html:116
+#: public/app/routes/user/user-settings/user-settings.template.html:27
+#: public/app/routes/user/user-settings/user-settings.template.html:43
+msgid "Save"
+msgstr "Tallenna"
+
+#: public/app/routes/upsells/upsell-editor/upsell-editor.template.html:138
+msgid "Save Upsell"
+msgstr "Tallenna lisämyyntitarjous"
+
+#: public/app/translations/translations.template.html:235
+msgid "Save settings"
+msgstr "Tallenna asetukset"
+
+#: public/app/translations/translations.template.html:158
+msgid "Saving succeeded"
+msgstr "Tallentaminen onnistui"
+
+#: public/app/translations/translations.template.html:146
+#: public/app/translations/translations.template.html:71
+msgid "Saving the survey..."
+msgstr "Tallennetaan kyselyä…"
+
+#: public/app/translations/translations.template.html:189
+msgid "Schedulation date is invalid"
+msgstr "Ajastuksen päiväämärä on virheellinen"
+
+#: public/app/routes/surveys/survey-publish-settings/survey-publish-settings.template.html:19
+msgid "Schedule date"
+msgstr "Ajastuksen päivämäärä"
+
+#: public/app/routes/surveys/survey-confirmation/survey-confirmation.template.html:73
+msgid "Schedule now"
+msgstr "Ajasta nyt"
+
+#: public/app/routes/surveys/survey-publish-settings/survey-publish-settings.template.html:9
+msgid "Schedule publishing"
+msgstr "Ajasta julkaisu"
+
+#: public/app/components/device-info/device-info.template.html:35
+msgid "Scheduled surveys"
+msgstr "Ajastetut kyselyt"
+
+#: public/app/components/plugin-setup/plugin-setup.template.html:172
+msgid "Scrolling"
+msgstr "Alaspäin skrollauksen määrä"
+
+#: public/app/routes/surveys/survey-sms-settings/survey-sms-settings.template.html:61
+msgid "See pricing"
+msgstr "Katso hinnoittelu"
+
+#: public/app/routes/notifications/notifications.template.html:85
+msgid ""
+"Select conditions that need to apply for the notification to be sent. NOTE: "
+"All conditions must apply before any notifications are sent."
+msgstr ""
+"Valitse ehdot, joiden pitää täyttyä, jotta ilmoitus lähetetään. HUOM: "
+"Kaikkien annettujen ehtojen pitää täyttyä ennen kuin ilmoitus lähetetään."
+
+#: public/app/routes/notifications/controls/contact/contact-control.template.html:17
+msgid "Select function"
+msgstr "Valitse funktio"
+
+#: public/app/routes/surveys/survey-routes-selection/survey-routes-selection.template.html:6
+msgid ""
+"Select the channels to distribute your survey in. If you have sufficient "
+"rights, you can also create new channels here."
+msgstr ""
+"Valitse ne kanavat, joissa haluat julkaista kyselyn. Jos sinulla on "
+"riittävät oikeudet, voit myös luoda uusia kanavia täällä."
+
+#: public/app/routes/surveys/survey-email-settings/survey-email-settings.template.html:34
+msgid "Select translation"
+msgstr "Valitse käännös"
+
+#: public/app/routes/notifications/notifications.template.html:72
+msgid "Send immediately"
+msgstr "Lähetä heti"
+
+#: public/app/routes/user/user-settings/user-settings.template.html:19
+msgid "Send me notifications about the state of my devices"
+msgstr "Lähetä minulle ilmoituksia laitteiteni tilasta"
+
+#: public/app/routes/user/user-settings/user-settings.template.html:24
+msgid "Send me weekly report"
+msgstr "Lähetä minulle viikottainen raportti"
+
+#: public/app/routes/surveys/survey-email-settings/survey-email-settings.template.html:53
+msgid "Send test"
+msgstr "Lähetä testi"
+
+#: public/app/routes/surveys/survey-sms-settings/survey-sms-settings.template.html:42
+msgid "Send test SMS"
+msgstr "Lähetä testi-SMS"
+
+#: public/app/routes/surveys/survey-email-settings/survey-email-settings.template.html:20
+msgid "Sender e-mail*"
+msgstr "Lähettäjän sähköposti*"
+
+#: public/app/routes/surveys/survey-email-settings/survey-email-settings.template.html:15
+msgid "Sender name"
+msgstr "Lähettäjän nimi"
+
+#: public/app/routes/surveys/survey-sms-settings/survey-sms-settings.template.html:17
+msgid "Sender name (if supported))"
+msgstr "Lähettäjän nimi"
+
+#: public/app/components/plugin-setup/plugin-setup.template.html:81
+msgid ""
+"Set the conditions to display the plugin. Once all conditions are fulfilled, "
+"the survey will be displayed."
+msgstr ""
+"Aseta ehdot pluginin näytölle. Kysely näkyy kun kaikki ehdot ovat "
+"täyttyneet. "
+
+#: public/app/translations/translations.template.html:243
+msgid "Set up my channels now"
+msgstr "Laita kanavasi käyttövalmiiksi nyt"
+
+#: public/app/components/navbar/navbar.template.html:102
+#: public/app/components/navbar/navbar.template.html:108
+#: public/app/routes/user/user-settings/user-settings.template.html:1
+msgid "Settings"
+msgstr "Asetukset"
+
+#: public/app/translations/translations.template.html:236
+msgid "Settings have been saved"
+msgstr "Asetukset on tallennettu"
+
+#: public/app/components/channel-setup-info/channel-setup-info.template.html:2
+msgid "Setup instructions for"
+msgstr "Asennusohjeet kanavalle"
+
+#: public/app/translations/translations.template.html:169
+msgid "Show all"
+msgstr "Näytä kaikki"
+
+#: public/app/routes/surveys/surveys-list/surveys-list.template.html:28
+#: public/app/translations/translations.template.html:148
+msgid "Show archived"
+msgstr "Näytä arkistoidut"
+
+#: public/app/routes/results/text-results/text-results.template.html:9
+msgid "Show hidden feedbacks"
+msgstr "Näytä piilotetut palautteet"
+
+#: public/app/translations/translations.template.html:63
+msgid "Show image labels"
+msgstr "Näytä kuvien otsikot"
+
+#: public/app/routes/results/contact-results/contact-results.template.html:36
+#: public/app/routes/results/text-results/text-results.template.html:36
+msgid "Show more"
+msgstr "Näytä lisää"
+
+#: public/app/components/plugin-setup/plugin-setup.template.html:239
+msgid "Show the survey to only x% of the visitors"
+msgstr "Näytä kysely vain tietylle prosentille kävijöistä"
+
+#: public/app/translations/translations.template.html:170
+msgid "Show top 5"
+msgstr "Näytä 5 parasta"
+
+#: public/app/components/navbar/navbar.template.html:114
+msgid "Sign out"
+msgstr "Kirjaudu ulos"
+
+#: public/app/translations/translations.template.html:31
+msgid "Single Choice"
+msgstr "Yksittäisvalinta"
+
+#: public/app/translations/translations.template.html:36
+msgid "Skip to question:"
+msgstr "Siirry kysymykseen:"
+
+#: public/app/translations/translations.template.html:163
+msgid "Slider"
+msgstr "Liukusäädin"
+
+#: public/app/translations/translations.template.html:160
+msgid "Smileys"
+msgstr "Hymiöt"
+
+#: public/app/translations/translations.template.html:32
+msgid "Some texts are missing"
+msgstr "Joitakin tekstejä puuttuu"
+
+#: public/app/translations/translations.template.html:33
+msgid "Some translations are missing"
+msgstr "Käännöksiä puuttuu"
+
+#: public/app/translations/translations.template.html:251
+msgid "Specify at least one user group for inbox settings."
+msgstr "Määritä vähintään yksi käyttäjäryhmä palautelaatikon asetuksiin."
+
+#: public/app/routes/notifications/controls/contact/contact-control.template.html:34
+msgid "Specify length in characters"
+msgstr "Anna merkkijonon pituus"
+
+#: public/app/components/plugin-setup/plugin-setup.template.html:251
+msgid "Step 1 - Shared general source"
+msgstr "Askel 1 - Jaettu yleinen lähde"
+
+#: public/app/components/plugin-setup/plugin-setup.template.html:260
+msgid "Step 2: Unique plugin code"
+msgstr "Askel 2- Uniikki plugin scripti"
+
+#: public/app/components/edit-channel-group-form/edit-channel-group-form.template.html:51
+msgid "Sub channel groups"
+msgstr "Alaryhmät"
+
+#: public/app/routes/surveys/survey-email-settings/survey-email-settings.template.html:72
+msgid "Subject:"
+msgstr "Otsikko:"
+
+#: public/app/components/previews/contact-preview/contact-preview.template.html:9
+#: public/app/components/previews/slider-preview/slider-preview.template.html:14
+#: public/app/components/previews/text-preview/text-preview.template.html:7
+msgid "Submit"
+msgstr "Lähetä"
+
+#: public/app/translations/translations.template.html:227
+msgid "Subscribe"
+msgstr "Tilaa"
+
+#: public/app/routes/channel-management/channel-edit/mailing-list-channels/show-mailing-list-channel/show-mailing-list-channel.template.html:13
+msgid "Subscribed"
+msgstr "Tilattu"
+
+#: public/app/routes/upsells/upsell-editor/upsell-editor.template.html:31
+msgid "Subtitle"
+msgstr "Alaotsikko"
+
+#: public/app/translations/translations.template.html:121
+msgid "Successfully created a channel."
+msgstr "Palautekanava luotiin onnistuneesti."
+
+#: public/app/translations/translations.template.html:120
+msgid "Successfully created the channel group."
+msgstr "Kanavaryhmä luotiin onnistuneesti."
+
+#: public/app/components/navbar/navbar.template.html:25
+msgid "Summary"
+msgstr "Yhteenveto"
+
+#: public/app/translations/translations.template.html:17
+msgid "Sunday"
+msgstr "sunnuntai"
+
+#: public/app/routes/notifications/notifications-list.template.html:13
+#: public/app/routes/surveys/survey-confirmation/survey-confirmation.template.html:14
+#: public/app/routes/surveys/surveys-list/surveys-list.template.html:5
+msgid "Survey"
+msgstr "Kysely"
+
+#: public/app/components/device-schedulation-list/device-schedulation-list.template.html:2
+msgid "Survey already has the following schedulations"
+msgstr "Kyselyllä on jo seuraavat ajastukset"
+
+#: public/app/routes/surveys/surveys-list/surveys-list.template.html:106
+msgid "Survey can't be archived while it's active"
+msgstr "Kyselyä ei voida arkistoida, kun se on aktiivinen"
+
+#: public/app/translations/translations.template.html:225
+msgid "Survey has been copied"
+msgstr "Kysely on kopioitu"
+
+#: public/app/translations/translations.template.html:118
+msgid "Survey link"
+msgstr "Kyselylinkki"
+
+#: public/app/translations/translations.template.html:130
+#: public/app/translations/translations.template.html:136
+msgid "Survey published successfully!"
+msgstr "Kysely julkaistiin onnistuneesti!"
+
+#: public/app/translations/translations.template.html:72
+msgid "Survey saved"
+msgstr "Kysely tallennettu"
+
+#: public/app/translations/translations.template.html:70
+msgid "Survey saving failed"
+msgstr "Kyselyn tallentaminen epäonnistui"
+
+#: public/app/routes/notifications/notifications.template.html:16
+msgid "Survey to watch feedback from"
+msgstr "Kysely, jonka palautteita tarkastellaan"
+
+#: public/app/routes/surveys/survey-confirmation/survey-confirmation.template.html:47
+msgid "Survey will be sent to"
+msgstr "Kysely lähetetään "
+
+#: public/app/components/navbar/navbar.template.html:49
+msgid "Surveys"
+msgstr "Kyselyt"
+
+#: public/app/components/navbar/navbar.template.html:81
+msgid "Switch organization"
+msgstr "Vaihda organisaatiota"
+
+#: public/app/translations/translations.template.html:79
+msgid "Switching organization..."
+msgstr "Vaihdetaan organisaatiota..."
+
+#: public/app/translations/translations.template.html:175
+msgid "Terrible."
+msgstr "Surkea."
+
+#: public/app/translations/translations.template.html:142
+msgid "Test SMS sent to"
+msgstr "Testi-SMS lähetettiin numeroon"
+
+#: public/app/routes/surveys/survey-email-settings/survey-email-settings.template.html:49
+msgid "Test address"
+msgstr "Testiosoite"
+
+#: public/app/translations/translations.template.html:138
+msgid "Test mail sent."
+msgstr "Testisähköposti lähetetty."
+
+#: public/app/routes/surveys/survey-sms-settings/survey-sms-settings.template.html:39
+msgid "Test number"
+msgstr "Testinumero"
+
+#: public/app/routes/upsells/upsell-editor/upsell-editor.template.html:38
+msgid "Text Body"
+msgstr "Leipäteksti"
+
+#: public/app/routes/surveys/survey-email-settings/survey-email-settings.template.html:30
+#: public/app/routes/surveys/survey-sms-settings/survey-sms-settings.template.html:22
+msgid "Text body"
+msgstr "Viestin teksti"
+
+#: public/app/translations/translations.template.html:65
+msgid "Text field"
+msgstr "Tekstikenttä"
+
+#: public/app/routes/upsells/upsell-editor/upsell-editor.template.html:101
+msgid "Thank you for your feedback and taking part in our prize draw!"
+msgstr "Kiitos palautteestasi ja osallistumisesta kilpailuumme!"
+
+#: public/app/components/device-info/device-info.template.html:58
+msgid ""
+"The app passcode is the code that is used to access the iPad settings after "
+"it is first configured. The feedback device can then be reconfigured with a "
+"different passcode."
+msgstr ""
+"Tablet-ohjelman pääsykoodi on koodi, joka tarvitaan tabletin asetuksiin "
+"pääsemiseksi sen jälkeen kun palauteohjelma on asennettu ja otettu käyttöön "
+"tabletille."
+
+#: public/app/routes/summary/summary.template.html:47
+msgid "The average of all responses in the organization in the chosen timespan"
+msgstr "Kaikkien vastausten keskiarvo organisaatiossa valitulla aikavälillä"
+
+#: public/app/routes/summary/summary.template.html:170
+msgid ""
+"The average of quantitative responses in the selected timespan in feedback "
+"channels you have rights to"
+msgstr ""
+"Numeerisen palautteen keskiarvo valitulla ajanjaksolla palautekanavissa, "
+"joihin sinulla on oikeudet"
+
+#: public/app/routes/summary/summary.template.html:23
+msgid ""
+"The calculated average of quantitative feedback that has been collected in "
+"the chosen timespan in the feedback channels you have rights to."
+msgstr ""
+"Keskiarvo kerätystä numeerisesta palautteesta palautekanavissa, joihin "
+"sinulla on oikeudet, valitulla aikavälillä."
+
+#: public/app/translations/translations.template.html:181
+msgid "The date range is invalid"
+msgstr "Aikaväli on virheellinen"
+
+#: public/app/routes/surveys/survey-publish-settings/survey-publish-settings.template.html:73
+msgid "The following"
+msgstr "Seuraavat"
+
+#: public/app/routes/notifications/controls/contact/contact-control.template.html:25
+msgid "The length of the text in the field must be:"
+msgstr "Kenttään kirjoitetun tekstin pituus pitää olla:"
+
+#: public/app/routes/surveys/survey-sms-settings/survey-sms-settings.template.html:27
+msgid "The link takes up max 21 characters."
+msgstr "Linkki vie maksimissaan 21 merkkiä."
+
+#: public/app/routes/surveys/survey-sms-settings/survey-sms-settings.template.html:47
+msgid "The message takes up"
+msgstr "Tämä viesti kuluttaa "
+
+#: public/app/routes/summary/summary.template.html:143
+msgid ""
+"The number of respondents in all feedback channels of the organization since "
+"the beginning of use"
+msgstr ""
+"Kaikkien vastaajien yhteenlaskettu lukumäärä kaikissa organisaation "
+"palautekanavissa koko organisaation asiakkuuden ajalta."
+
+#: public/app/routes/summary/summary.template.html:158
+msgid "The number of respondents in feedback channels you have rights to"
+msgstr ""
+"Vastanneiden henkilöiden lukumäärä palautekanavissa, joihin sinulla on "
+"oikeudet"
+
+#: public/app/routes/summary/summary.template.html:72
+msgid ""
+"The number of respondents in the selected timespan in the feedback channels "
+"you have rights to."
+msgstr ""
+"Vastanneiden henkilöiden lukumäärä palautekanavissa, joihin sinulla on "
+"oikeudet, valitulla aikavälillä."
+
+#: public/app/components/channel-setup-info/channel-setup-info.template.html:46
+msgid ""
+"The plugin has configured to be embedded in an element on your site. Add "
+"this element on your page where you want to survey to appear"
+msgstr ""
+"Liitännäinen upotetaan sivustollesi lisättävään div-elementtiin. Lisää tämä "
+"elementti sivullesi paikkaan, jossa haluat että kysely näkyy"
+
+#: public/app/routes/surveys/survey-confirmation/survey-confirmation.template.html:66
+msgid "The schedule can be viewed and edited"
+msgstr "Ajastuksen voi nähdä ja sitä voi muokata "
+
+#: public/app/translations/translations.template.html:208
+msgid "The survey has been published"
+msgstr "Kysely on julkaistu"
+
+#: public/app/routes/surveys/survey-confirmation/survey-confirmation.template.html:65
+msgid "The survey is scheduled to be published on"
+msgstr "Kysely on ajastettu julkaistavaksi "
+
+#: public/app/routes/surveys/survey-confirmation/survey-confirmation.template.html:30
+msgid "The survey will be distributed in"
+msgstr "Kysely julkaistaan"
+
+#: public/app/routes/surveys/survey-confirmation/survey-confirmation.template.html:63
+msgid "The survey will be published immediately."
+msgstr "Kysely julkaistaan välittömästi."
+
+#: public/app/components/plugin-setup/plugin-setup.template.html:196
+msgid "The widget is not shown again once it's closed."
+msgstr "Liitännäistä ei näytetä enää kun se on suljettu ruksista."
+
+#: public/app/components/plugin-setup/plugin-setup.template.html:216
+msgid "The widget is not shown again once the survey is completed."
+msgstr "Liitännäistä ei näytetä enää kun siihen on vastattu."
+
+#: public/app/components/channel-setup-info/channel-setup-info.template.html:69
+#: public/app/components/channel-setup-info/channel-setup-info.template.html:76
+msgid ""
+"There are currently no contacts in this channel. Follow step 1 and add some."
+msgstr ""
+"Tässä kanavassa ei ole tällä hetkellä kontakteja. Seuraa vaihetta 1 "
+"lisätäksesi kontakteja."
+
+#: public/app/translations/translations.template.html:46
+msgid ""
+"There are feedbacks for this choice. Deleting this choice will also delete "
+"the associated feedbacks."
+msgstr ""
+"Tälle vaihtoehdolle on palautteita. Vaihtoehdon poistaminen poistaa myös "
+"siihen liitetyt palautteet."
+
+#: public/app/routes/surveys/survey-confirmation/survey-confirmation.template.html:31
+msgid "There are no channels selected for distribution."
+msgstr "Julkaisuun ei ole valittu yhtäkään kanavaa."
+
+#: public/app/translations/translations.template.html:7
+msgid "This Month"
+msgstr "Tämä kuukausi"
+
+#: public/app/components/device-info/device-info.template.html:72
+msgid ""
+"This authorization code is used for setting up an iPad as a feedback channel."
+msgstr ""
+"Tätä valtuutuskoodia tarvitaan tablet-tietokoneen asentamisessa "
+"palautteenkeräämistä varten."
+
+#: public/app/routes/upsells/upsell-editor/upsell-editor.template.html:18
+#: public/app/routes/upsells/upsell-editor/upsell-editor.template.html:26
+#: public/app/routes/upsells/upsell-editor/upsell-editor.template.html:33
+#: public/app/routes/upsells/upsell-editor/upsell-editor.template.html:40
+#: public/app/routes/upsells/upsell-editor/upsell-editor.template.html:70
+msgid "This field is required"
+msgstr "Tämä kenttä on pakollinen"
+
+#: public/app/routes/notifications/notifications.template.html:9
+msgid ""
+"This tab lets you specify notifications based on the feedback you're given.\n"
+"          Each condition added will increase the specificity of the "
+"notification.\n"
+"          There can be more than one notification per survey."
+msgstr ""
+"Tässä välilehdessä asetat hälytyksiä palautteille, joita sinulle annetaan.\n"
+"Jokainen ehto tiukentaa ilmotuksen tarkkuutta.\n"
+"Kyselyllä voi olla useita ilmoituksia. "
+
+#: public/app/routes/summary/summary.template.html:6
+msgid ""
+"This top row displays the key figures of the feedback channels you have "
+"rights to."
+msgstr ""
+"Tästä ylärivistä näet avainluvut kaikista palautekanavista, joihin sinulla "
+"on käyttöoikeudet."
+
+#: public/app/translations/translations.template.html:3
+msgid "This week"
+msgstr "Tämä viikko"
+
+#: public/app/translations/translations.template.html:14
+msgid "Thursday"
+msgstr "torstai"
+
+#: public/app/translations/translations.template.html:185
+msgid "Time"
+msgstr "Aika"
+
+#: public/app/routes/surveys/survey-publish-settings/survey-publish-settings.template.html:60
+#: public/app/translations/translations.template.html:203
+msgid "Timezone"
+msgstr "Aikavyöhyke"
+
+#: public/app/routes/surveys/survey-email-settings/survey-email-settings.template.html:71
+msgid "To:"
+msgstr "Vastaanottaja:"
+
+#: public/app/translations/translations.template.html:2
+msgid "Today"
+msgstr "Tänään"
+
+#: public/app/translations/translations.template.html:21
+msgid "Toggle comparison of two date ranges"
+msgstr "Vertaile kahta ajanjaksoa"
+
+#: public/app/components/plugin-setup/plugin-setup.template.html:208
+msgid "Toggle redisplaying time after closing."
+msgstr "Näytä liitännäinen uudestaan tietyn ajan jälkeen sulkemisesta."
+
+#: public/app/components/plugin-setup/plugin-setup.template.html:228
+msgid "Toggle redisplaying time after completing survey."
+msgstr ""
+"Näytä liitännäinen uudestaan tietyn ajan jälkeen kyselyyn vastaamisesta."
+
+#: public/app/components/plugin-setup/plugin-setup.template.html:59
+msgid "Top left corner"
+msgstr "Vasen yläkulma"
+
+#: public/app/routes/summary/summary.template.html:282
+msgid "Top quartile limit"
+msgstr "Parhaan neljänneksen raja"
+
+#: public/app/components/plugin-setup/plugin-setup.template.html:52
+msgid "Top right corner"
+msgstr "Oikea yläkulma"
+
+#: public/app/routes/results/nps-results/nps-results.template.html:28
+msgid "Total"
+msgstr "Yhteensä"
+
+#: public/app/translations/translations.template.html:41
+msgid "Translations"
+msgstr "Käännökset"
+
+#: public/app/translations/translations.template.html:198
+msgid "Translations are missing from question number"
+msgstr "Käännöksiä puuttuu kysymyksestä numero"
+
+#: public/app/components/plugin-setup/plugin-setup.template.html:78
+msgid "Triggering conditions"
+msgstr "Ehdot triggeröinnille"
+
+#: public/app/translations/translations.template.html:12
+msgid "Tuesday"
+msgstr "tiistai"
+
+#: public/app/routes/channel-management/channel-management.template.html:26
+msgid "Type"
+msgstr "Tyyppi"
+
+#: public/app/routes/notifications/controls/contact/contact-control.template.html:57
+msgid "Unchecked"
+msgstr "Ei valittu"
+
+#: public/app/routes/results/chart-controls/chart-controls.template.html:4
+msgid "Unit"
+msgstr "Yksikkö"
+
+#: public/app/translations/translations.template.html:34
+msgid "Unknown error"
+msgstr "Tuntematon virhe"
+
+#: public/app/routes/upsells/upsell-editor/upsell-editor.template.html:5
+msgid "Update Upsell"
+msgstr "Päivitä lisämyyntitarjous"
+
+#: public/app/components/fbevent-plan-limit-notifier/fbevent-plan-limit-notifier.template.html:3
+msgid "Upgrade your plan to see all your feedbacks"
+msgstr "Tilaa suurempi paketti nähdäksesi kaikki annetut palautteet"
+
+#: public/app/routes/channel-management/channel-edit/mailing-list-channels/show-mailing-list-channel/add-mailing-list-addresses/add-mailing-list-addresses.template.html:62
+#: public/app/routes/channel-management/channel-edit/sms-channels/show-sms-channel/add-sms-contacts/add-sms-contacts.template.html:50
+msgid "Upload"
+msgstr "Lataa"
+
+#: public/app/routes/channel-management/channel-edit/mailing-list-channels/show-mailing-list-channel/add-mailing-list-addresses/add-mailing-list-addresses.template.html:40
+#: public/app/routes/channel-management/channel-edit/sms-channels/show-sms-channel/add-sms-contacts/add-sms-contacts.template.html:35
+msgid "Upload a CSV file"
+msgstr "Lataa CSV-tiedosto"
+
+#: public/app/translations/translations.template.html:143
+msgid "Uploading your image..."
+msgstr "Lisätään kuvaasi…"
+
+#: public/app/translations/translations.template.html:78
+msgid "Upsell"
+msgstr "Lisämyynti"
+
+#: public/app/routes/upsells/upsell-editor/upsell-editor.template.html:59
+msgid "Upsell Code"
+msgstr "Lisämyynnin koodi"
+
+#: public/app/routes/upsells/upsell-editor/upsell-editor.template.html:16
+msgid "Upsell Name"
+msgstr "Lisämyynnin nimi"
+
+#: public/app/routes/upsells/upsell-editor/upsell-editor.template.html:24
+msgid "Upsell Title"
+msgstr "Lisämyynnin otsikko"
+
+#: public/app/routes/upsells/upsell-list/upsell-list.template.html:4
+msgid "Upsell offers"
+msgstr "Lisämyynnin tarjoukset"
+
+#: public/app/components/navbar/navbar.template.html:68
+msgid "Upselling"
+msgstr "Lisämyynti"
+
+#: public/app/routes/upsells/upsell-editor/upsell-editor.template.html:54
+msgid "Use Barcode / QR code"
+msgstr "Käytä viivakoodia / QR-koodia"
+
+#: public/app/components/device-info/device-info.template.html:23
+msgid "Users with right to the channel"
+msgstr "Käyttäjät joilla on oikeus kanavaan"
+
+#: public/app/components/billing-form/billing-form.template.html:31
+msgid "VAT identification number"
+msgstr "Verotunnus"
+
+#: public/app/components/plugin-setup/plugin-setup.template.html:158
+msgid "Visiting time"
+msgstr "Vierailuaika sivustolla"
+
+#: public/app/routes/notifications/notifications.template.html:68
+msgid "Wait for responses to remaining questions once conditions are fulfilled"
+msgstr "Odota vastauksia jäljelläoleviin kysymyksiin kun ehdot on täytetty"
+
+#: public/app/translations/translations.template.html:218
+msgid "Web form"
+msgstr "Web-lomake"
+
+#: public/app/translations/translations.template.html:117
+msgid "Website plugin"
+msgstr "Verkkosivuliitännäinen"
+
+#: public/app/translations/translations.template.html:219
+msgid "Website survey"
+msgstr "Nettisivukysely"
+
+#: public/app/translations/translations.template.html:13
+msgid "Wednesday"
+msgstr "keskiviikko"
+
+#: public/app/routes/tutorial/tutorial.template.html:4
+msgid "Welcome to Feedbackly!"
+msgstr "Tervetuloa Feedbacklyyn!"
+
+#: public/app/components/plugin-setup/plugin-setup.template.html:175
+msgid "When user has scrolled down"
+msgstr "Kun vierailija on "
+
+#: public/app/components/plugin-setup/plugin-setup.template.html:185
+msgid "When user is exiting page"
+msgstr "Kun vierailija on poistumassa sivulta"
+
+#: public/app/translations/translations.template.html:161
+msgid "Word choices"
+msgstr "Sanavalinnat"
+
+#: public/app/routes/summary/summary.template.html:214
+msgid "Worst day"
+msgstr "Huonoin päivä"
+
+#: public/app/routes/summary/summary.template.html:226
+msgid "Worst hour"
+msgstr "Huonoin tunti"
+
+#: public/app/routes/upsells/upsell-list/upsell-list.template.html:68
+#: public/app/translations/translations.template.html:199
+msgid "Yes"
+msgstr "Kyllä"
+
+#: public/app/routes/channel-management/channel-edit/mailing-list-channels/show-mailing-list-channel/add-mailing-list-addresses/add-mailing-list-addresses.template.html:55
+#: public/app/routes/channel-management/channel-edit/sms-channels/show-sms-channel/add-sms-contacts/add-sms-contacts.template.html:43
+msgid ""
+"You can also add metadata to include in feedback by adding "
+"\"meta_FIELDNAMEHERE\" into your csv-file. ie. meta_customer-id."
+msgstr ""
+"Voit myös lisätä metadataa palautteisiin lisäämällä “meta_KENTÄNNIMI” csv-"
+"tiedostoosi. Esim. meta_asiakas-id."
+
+#: public/app/routes/surveys/survey-confirmation/survey-confirmation.template.html:50
+msgid "You don't have sufficient SMS balance."
+msgstr "Sinulla ei ole riittävästi rahaa SMS-tilillä."
+
+#: public/app/translations/translations.template.html:139
+msgid ""
+"You have no rights to create SMS channels. Enter your credit card "
+"information in your organization details or request access from "
+"support@feedbackly.com"
+msgstr ""
+"Sinullea ei ole oikeuksia luoda SMS-kanavia. Lisää luottokorttitietosi "
+"organisaatiosi tietoihin tai pyydä oikeudet osoitteesta support@feedbackly."
+"com."
+
+#: public/app/routes/surveys/survey-sms-settings/survey-sms-settings.template.html:30
+msgid ""
+"You have no rights to send SMS messages. Enter your credit card information "
+"in your organization details or request access from support@feedbackly.com"
+msgstr ""
+"Sinulla ei ole oikeuksia lähettää SMS-viestejä. Lisää luottokorttitietosi "
+"organisaatiosi tietoihin tai pyydä oikeudet osoitteesta support@feedbackly."
+"com."
+
+#: public/app/translations/translations.template.html:113
+msgid "You have to be an organization admin to create channel groups."
+msgstr ""
+"Sinun täytyy olla organisaation admin-käyttäjä luodaksesi kanavaryhmiä."
+
+#: public/app/translations/translations.template.html:197
+msgid "You haven't added any questions"
+msgstr "Et ole lisännyt yhteen kysymystä"
+
+#: public/app/translations/translations.template.html:207
+msgid "You haven't chosen a language"
+msgstr "Et ole valinnut kieltä"
+
+#: public/app/translations/translations.template.html:206
+msgid "You haven't chosen any feedback channel types"
+msgstr "Et ole valinnut palautekanavatyyppiä"
+
+#: public/app/routes/surveys/survey-confirmation/survey-confirmation.template.html:43
+msgid "You haven't configured any e-mail settings."
+msgstr "Et ole tehnyt tarvittavia sähköpostiasetuksia."
+
+#: public/app/routes/surveys/survey-confirmation/survey-confirmation.template.html:48
+msgid "You haven't configured any sms settings."
+msgstr "Et ole tehnyt tarvittavia SMS-asetuksia."
+
+#: public/app/translations/translations.template.html:229
+msgid "You just upgraded your plan, you can't downgrade it just now"
+msgstr "Päivitit juuri maksusuunnitelmasi, et voi alentaa sitä juuri nyt"
+
+#: public/app/translations/translations.template.html:87
+msgid ""
+"Your first step to getting know your customer better is creating a survey.\n"
+"Use the survey creation tool to do it - it takes just seconds!\n"
+"Here you can also find survey setups and language selection.\n"
+"You can use any language you like! After the survey is done,\n"
+"just follow the process and it will guide you through."
+msgstr ""
+"Sinun ensimmäinen askeleesi tuntemaan asiakkaasi paremmin on kyselyn "
+"luominen.\n"
+"Käytä kyselyn luomistyökalua siihen. Se vie vain muutamia sekunteja!\n"
+"Täältä löydät myös kyselykohtaiset asetukset ja kielivalinnan.\n"
+"Voit valita minkä tahansa haluamasi kielen! Kun kysely on valmis,\n"
+"seuraa prosessia alapalkissa ja se ohjaa sinua julkaisua kohti."
+
+#: public/app/components/channel-setup-info/channel-setup-info.template.html:18
+msgid "Your iPad will show this survey automatically once you publish it."
+msgstr "iPadisi näyttää tämän kyselyn automaattisesti kun julkaiset sen."
+
+#: public/app/translations/translations.template.html:145
+msgid "Your image has been uploaded"
+msgstr "Kuvasi on ladattu"
+
+#: public/app/translations/translations.template.html:231
+msgid "Your plan has been updated"
+msgstr "Maksusuunnitelmasi on päivitetty"
+
+#: public/app/components/fbevent-plan-limit-notifier/fbevent-plan-limit-notifier.template.html:2
+msgid "Your selection contains"
+msgstr "Haku sisältää"
+
+#: public/app/routes/surveys/survey-confirmation/survey-confirmation.template.html:19
+msgid "Your survey has"
+msgstr "Sinun kyselyssäsi on"
+
+#: public/app/translations/translations.template.html:221
+msgid "additional feedback sources"
+msgstr "maksullista palautekanavaa"
+
+#: public/app/translations/translations.template.html:233
+msgid "and"
+msgstr "ja"
+
+#: public/app/routes/surveys/surveys-list/surveys-list.template.html:52
+msgid "archived"
+msgstr "arkistoitu"
+
+#: public/app/translations/translations.template.html:38
+msgid "buttons"
+msgstr "hymiötä"
+
+#: public/app/routes/surveys/survey-confirmation/survey-confirmation.template.html:30
+msgid "channels"
+msgstr "kanavat"
+
+#: public/app/routes/surveys/survey-publish-settings/survey-publish-settings.template.html:73
+msgid ""
+"channels were selected. If you haven't configured your channels previously, "
+"you can\n"
+"      get their setup instructions by clicking on them."
+msgstr ""
+"kanavaa on valittuna. Jos et ole asentanut kanavia aiemmin, saat kanavien "
+"asennusohjeet klikkaamalla auki allaolevia laatikoita."
+
+#: public/app/routes/summary/summary.template.html:309
+#: public/app/routes/summary/summary.template.html:310
+#: public/app/routes/summary/summary.template.html:311
+msgid "days"
+msgstr "päivää"
+
+#: public/app/translations/translations.template.html:212
+msgid "e-mail list"
+msgstr "sähköpostilista"
+
+#: public/app/translations/translations.template.html:28
+msgid "emoticons"
+msgstr "hymiötä"
+
+#: public/app/translations/translations.template.html:211
+msgid "feedback kiosk"
+msgstr "palautelaite"
+
+#: public/app/components/fbevent-plan-limit-notifier/fbevent-plan-limit-notifier.template.html:2
+msgid "feedbacks across all surveys"
+msgstr "palautetta kaikissa kyselyissä"
+
+#: public/app/components/plan-selector/plan-selector.template.html:32
+#: public/app/components/plan-selector/plan-selector.template.html:57
+#: public/app/components/plan-selector/plan-selector.template.html:8
+#: public/app/components/plan-selector/plan-selector.template.html:82
+msgid "feedbacks each month"
+msgstr "palautetta kuukaudessa"
+
+#: public/app/components/fbevent-plan-limit-notifier/fbevent-plan-limit-notifier.template.html:2
+msgid "feedbacks that exceed your current subscription's limit of"
+msgstr ""
+"palautetta, jotka ylittävät tämänhetkisen tilauksen palautemäärän, joka on"
+
+#: public/app/components/channel-setup-info/channel-setup-info.template.html:66
+#: public/app/components/channel-setup-info/channel-setup-info.template.html:73
+#: public/app/routes/surveys/survey-confirmation/survey-confirmation.template.html:66
+msgid "from the channel management"
+msgstr "kanavahallinnasta"
+
+#: public/app/components/plugin-setup/plugin-setup.template.html:194
+#: public/app/components/plugin-setup/plugin-setup.template.html:215
+msgid "hours"
+msgstr "tuntia"
+
+#: public/app/components/device-info/device-info.template.html:66
+msgid "iPad authorization code"
+msgstr "iPadin valtuutuskoodi"
+
+#: public/app/components/channel-setup-info/channel-setup-info.template.html:10
+msgid ""
+"in the text field. Don't worry if the upcoming survey is an old one - you "
+"will activate the new survey next."
+msgstr ""
+". Älä huoli, jos avautuva kysely on vanha - tulet aktivoimaan uuden kyselyn "
+"palautelaitteelle seuraavaksi."
+
+#: public/app/routes/surveys/survey-confirmation/survey-confirmation.template.html:47
+#: public/app/routes/surveys/survey-sms-settings/survey-sms-settings.template.html:47
+msgid "messages in total"
+msgstr "viestiä yhteensä"
+
+#: public/app/routes/notifications/notifications.template.html:74
+msgid "minute"
+msgstr "minuutti"
+
+#: public/app/routes/notifications/notifications.template.html:75
+#: public/app/routes/notifications/notifications.template.html:76
+msgid "minutes"
+msgstr "minuuttia"
+
+#: public/app/routes/feedbacks/feedbacks.template.html:24
+msgid "not shown"
+msgstr "ei näytetä"
+
+#: public/app/routes/surveys/survey-confirmation/survey-confirmation.template.html:47
+msgid "numbers"
+msgstr "numeroa"
+
+#: public/app/translations/translations.template.html:234
+msgid "other contacs"
+msgstr "muut kontaktit"
+
+#: public/app/components/plugin-setup/plugin-setup.template.html:151
+msgid "pages"
+msgstr "sivua"
+
+#: public/app/routes/surveys/survey-confirmation/survey-confirmation.template.html:19
+msgid "questions"
+msgstr "kysymystä"
+
+#: public/app/routes/feedbacks/feedbacks.template.html:22
+msgid "responses"
+msgstr "vastausta"
+
+#: public/app/components/plugin-setup/plugin-setup.template.html:161
+#: public/app/components/plugin-setup/plugin-setup.template.html:166
+#: public/app/routes/notifications/notifications.template.html:73
+msgid "seconds"
+msgstr "sekuntia"
+
+#: public/app/routes/surveys/survey-sms-settings/survey-sms-settings.template.html:26
+msgid "to your message body to set the place for the link."
+msgstr "viestin tekstiin asettaaksesi linkille paikan."
+
+#: public/app/routes/upsells/upsell-list/upsell-list.template.html:41
+msgid "upsell"
+msgstr "lisämyynti"
+
+#: public/app/translations/translations.template.html:215
+msgid "web form"
+msgstr "web-lomake"
+
+#: public/app/translations/translations.template.html:213
+msgid "website survey"
+msgstr "nettisivukysely"
+
+#~ msgid "API ACCESS"
+#~ msgstr "API-pääsy"
+
+#~ msgid "API KEYS"
+#~ msgstr "API-avaimet"
+
+#~ msgid ""
+#~ "API keys are granted on a per-user basis. The resources the key can "
+#~ "access are equivalent to user rights."
+#~ msgstr ""
+#~ "API-avaimet myönnetään käyttäjäkohtaisesti. Avaimen käytössä olevat "
+#~ "resurssit ovat yhdenmukaisia käyttäjän oikeuksien kanssa."
+
+#~ msgid "Add a user"
+#~ msgstr "Lisää käyttäjä"
+
+#~ msgid "Amount"
+#~ msgstr "Määrä"
+
+#~ msgid ""
+#~ "Api keys are tied to organization users and their rights to access "
+#~ "different resources.\n"
+#~ "        To retrieve API keys, navigate to the Users-tab."
+#~ msgstr ""
+#~ "API-avaimet ovat liitoksissa organisaatioiden käyttäjiin ja käyttäjien "
+#~ "oikeuksiin nähdä eri resursseja. Mene Käyttäjät-välilehdelle hankkiaksesi "
+#~ "käyttäjäkohtaisia API-avaimia."
+
+#~ msgid "Background color"
+#~ msgstr "Taustan väri"
+
+#~ msgid "Billing information"
+#~ msgstr "Maksutiedot"
+
+#~ msgid "Button Color"
+#~ msgstr "Painikkeen väri"
+
+#~ msgid "Button Text Color"
+#~ msgstr "Painikkeen tekstin väri"
+
+#~ msgid "Buttons, Word choices, etc"
+#~ msgstr "Painikkeet, sanavalinnat, jne"
+
+#~ msgid "Charges"
+#~ msgstr "Veloitukset"
+
+#~ msgid "Color Theme"
+#~ msgstr "Väriteema"
+
+#~ msgid "Contact us"
+#~ msgstr "Ota meihin yhteyttä"
+
+#~ msgid "Create surveys"
+#~ msgstr "Luo kyselyitä"
+
+#~ msgid "Credit card owner"
+#~ msgstr "Luottokortinhaltija"
+
+#~ msgid "Dashboard"
+#~ msgstr "Yhteenveto"
+
+#~ msgid "Deactivate organization"
+#~ msgstr "Poista organisaatio käytöstä"
+
+#~ msgid "Display name"
+#~ msgstr "Nimi\t"
+
+#~ msgid "Each line in the CSV file should be of format email,display name"
+#~ msgstr ""
+#~ "CSV-tiedoston jokaisen rivin tulee olla muotoa sähköpostiosoite,nimi"
+
+#~ msgid "Enable Customization"
+#~ msgstr "Aktivoi ulkonäön mukautus"
+
+#~ msgid "Fill in your billing information below before upgrading your plan"
+#~ msgstr "Täytä maksutietosi ennen kuin päivität maksusuunnitelmasi"
+
+#~ msgid "Generate engagepoints"
+#~ msgstr "Generoi kosketuspisteitä"
+
+#~ msgid "Give admin rights"
+#~ msgstr "Anna ylläpitäjän oikeudet"
+
+#~ msgid ""
+#~ "Here you can customize the visual appearance of the survey to better suit "
+#~ "the style of your organization."
+#~ msgstr ""
+#~ "Täällä voit mukauttaa kyselyn ulkonäköä, jotta se istuisi paremmin "
+#~ "organisaatiosi tyyliin."
+
+#~ msgid "Last notification sent"
+#~ msgstr "Viimeisin lähetetty ilmoitus"
+
+#~ msgid "Need more?"
+#~ msgstr "Tarvitsetko lisää?"
+
+#~ msgid "Number of engage points to generate"
+#~ msgstr "Kosketuspisteiden lukumäärä"
+
+#~ msgid ""
+#~ "Pressing this button will cancel your organization's subscription and "
+#~ "your organization's users won't be able to login to their dashboard. When "
+#~ "you want continue your subscription, just login and fill in your billing "
+#~ "information."
+#~ msgstr ""
+#~ "Tämän painikkeen painaminen peruu organisaatiosi jäsenyyden, eivätkä "
+#~ "organisaatiosi käyttäjät pysty kirjautumaan työpöydälleen. Kun haluat "
+#~ "jatkaa jäsenyyttäsi, kirjaudu vain sisään ja täytä maksutietosi."
+
+#~ msgid "Question Title"
+#~ msgstr "Kysymyksen otsikko"
+
+#~ msgid "Receipt"
+#~ msgstr "Kuitti"
+
+#~ msgid "Remove admin rights"
+#~ msgstr "Poista ylläpitäjän oikeudet"
+
+#~ msgid "Restore defaults"
+#~ msgstr "Palauta oletukset"
+
+#~ msgid "Revoke"
+#~ msgstr "Estä"
+
+#~ msgid "Revoked"
+#~ msgstr "Estetty"
+
+#~ msgid "Rights"
+#~ msgstr "Oikeudet"
+
+#~ msgid "SMS credits in total"
+#~ msgstr "SMS-krediittejä yhteensä"
+
+#~ msgid "SMS credits per recipient."
+#~ msgstr "SMS-krediittiä per vastaanottaja."
+
+#~ msgid "Send user a password reset link in an email message"
+#~ msgstr "Lähetä käyttäjälle salasanan resetointilinkki sähköpostilla"
+
+#~ msgid "Survey Visual Appearance"
+#~ msgstr "Kyselyn ulkonäkö"
+
+#~ msgid "TEXT ELEMENTS, subtitles, etc"
+#~ msgstr "Tekstielementit, alaotsikot, jne"
+
+#~ msgid "Text Color"
+#~ msgstr "Tekstin väri"
+
+#~ msgid "Title Font"
+#~ msgstr "Otsikon fontto"
+
+#~ msgid "Title color"
+#~ msgstr "Otsikon väri"
+
+#~ msgid "User has no valid API keys."
+#~ msgstr "Käyttäjällä ei ole voimassaolvia API-avaimia."
+
+#~ msgid "Users"
+#~ msgstr "Käyttäjät"
+
+#~ msgid ""
+#~ "Your organization already has billing information but feel free to update "
+#~ "it"
+#~ msgstr "Organisaatiollasi on jo maksutiedot, mutta voit päivittää ne"
+
+#~ msgid "feedbacks"
+#~ msgstr "palautetta"
+
+#~ msgid "Compare date ranges"
+#~ msgstr "Vertaile aikajaksoja"
+
+#~ msgid "End date"
+#~ msgstr "Päättymispäivä"
+
+#~ msgid "Feedback filters"
+#~ msgstr "Palautesuodattimet"
+
+#~ msgid "Search"
+#~ msgstr "Hae"
+
+#~ msgid "Search terms"
+#~ msgstr "Hakuehdot"
+
+#~ msgid "Start date"
+#~ msgstr "Aloituspäivä"
+
+#~ msgid ""
+#~ "With this ranking table you can compare the performance of different "
+#~ "feedback sources on an organizational level. This is where store managers "
+#~ "are competing for glory!"
+#~ msgstr ""
+#~ "Tällä ranking-listalla voit vertailla eri palautekanavien suoritumista "
+#~ "organisaatiotasolla. Täällä kauppiaat kisaavat kunniasta!"
+
+#~ msgid ""
+#~ "Choose the questions to include data in the notification message from"
+#~ msgstr "Valitse kysymykset, jotka sisällytetään ilmoitusviestiin."
+
+#~ msgid "Content"
+#~ msgstr "Sisältö"
+
+#~ msgid ""
+#~ "Each line in the CSV file should be of format first name,last name,email"
+#~ msgstr ""
+#~ "CSV-tiedoston jokaisen rivin tulee olla muotoa etunimi,sukunimi,"
+#~ "sähköpostiosoite"
+
+#~ msgid ""
+#~ "Each line in the CSV file should be of format first name,last name,phone "
+#~ "number"
+#~ msgstr ""
+#~ "CSV-tiedoston jokaisen rivin tulee olla muotoa etunimi,sukunimi,"
+#~ "puhelinnumero"
+
+#~ msgid ""
+#~ "Add this line of code to the end your web page's body tag to initialize "
+#~ "the plugin"
+#~ msgstr ""
+#~ "Lisää tämä rivi koodia verkkosivusi body-tagin loppuun näyttääksesi "
+#~ "liitännäisen sivuilla."
+
+#~ msgid ""
+#~ "An URL or a partial URL. If it matches with the current page, the plugin "
+#~ "will show up and the survey will start."
+#~ msgstr ""
+#~ "URL -osoite tai osittainen URL-osoite. Jos se täsmää nykyisen sivun "
+#~ "kanssa, liitännäinen tulee näkyviin ja kysely alkaa."
+
+#~ msgid "New URL pattern"
+#~ msgstr "Uusi URL-malli"
+
+#~ msgid "Place freely by adding this line of code"
+#~ msgstr "Sijoita vapaasti lisäämällä tämä rivi koodia"
+
+#~ msgid "Plugin preview is available on the top right corner of the screen"
+#~ msgstr "Liitännäisen esikatselu löytyy näyttösi oikeasta yläkulmasta"
+
+#~ msgid "Redisplay rules"
+#~ msgstr "Uudelleennäyttösäännöt"
+
+#~ msgid "URL pattern rules"
+#~ msgstr "URL-mallisäännöt"
+
+#~ msgid "Visiting time rules"
+#~ msgstr "Vierailusäännöt"
+
+#~ msgid "Weekday"
+#~ msgstr "Viikonpäivä"
+
+#~ msgid "Daily"
+#~ msgstr "Päivittäin"
+
+#~ msgid "Hourly"
+#~ msgstr "Tunneittain"
+
+#~ msgid "Feedback channel management"
+#~ msgstr "Palautekanavien hallinta"
+
+#~ msgid "Amount of responses to this question in the whole organization"
+#~ msgstr "Vastausten lukumäärä tähän kysymykseen koko organisaatiossa"
+
+#~ msgid ""
+#~ "Average of responses to this question in all the feedback channels in the "
+#~ "organization"
+#~ msgstr ""
+#~ "Vastausten keskiarvo tähän kysymykseen organisaation kaikissa "
+#~ "palautekanavissa"
+
+#~ msgid ""
+#~ "Average of responses to this question in the selected feedback channels"
+#~ msgstr "Vastausten keskiarvo tähän kysymykseen valituissa palautekanavissa"
+
+#~ msgid ""
+#~ "NPS of this question in all the feedback channels in the organization"
+#~ msgstr ""
+#~ "NPS tässä kysymyksessä organisaation kaikissa palautekanavissa valitulla "
+#~ "aikavälillä"
+
+#~ msgid "NPS of this question in feedback channels with the selected filters"
+#~ msgstr ""
+#~ "Hakuehtoihin valittujen palautekanavien NPS-luku valitulla aikavälillä"
+
+#~ msgid ""
+#~ "With this ranking table you can compare the performance of different "
+#~ "feedback sources on an organizational level. This is where store managers "
+#~ "are competig for glory!"
+#~ msgstr ""
+#~ "Sijoitusten avulla voit vertailla yksittäisten palautelähteiden "
+#~ "onnistumista suhteessa toisiinsa. Erinomainen tapa vertailla "
+#~ "toimipisteiden keskinäistä paremmuutta!"
+
+#~ msgid "Average"
+#~ msgstr "Keskiarvo"
+
+#~ msgid "Average of all the feedback channels in your organization"
+#~ msgstr "Keskiarvo kaikista organisaatiosi palautekanavista"
+
+#~ msgid "Average of the feedback channels chosen in the search terms"
+#~ msgstr "Keskiarvo hakuehdoissa valituista palautekanavista"
+
+#~ msgid "Feedback amount of all the feedback channels in your organization"
+#~ msgstr "Palautemäärä kaikissa organisaatiosi palautekanavissa"
+
+#~ msgid "Feedback amount of the feedback channels chosen in the search terms"
+#~ msgstr "Palautemäärä hakuehdoissa valituissa palautekanavissa"
+
+#~ msgid "Feedbacks in period"
+#~ msgstr "Palautteita aikajaksolla"
+
+#~ msgid "Individual answers"
+#~ msgstr "Yksittäisiä vastauksia"
+
+#~ msgid "Organization's average"
+#~ msgstr "Organisaation keskiarvo"
+
+#~ msgid "Overall NPS®"
+#~ msgstr "Yhteenlaskettu NPS® "
+
+#~ msgid "Single answers"
+#~ msgstr "Yksittäistä vastausta"
+
+#~ msgid ""
+#~ "The average of all the feedback channels in your organization in the "
+#~ "chosen timespan"
+#~ msgstr ""
+#~ "Keskiarvo kaikista organisaatiosi palautekanavista valitulla aikavälillä"
+
+#~ msgid ""
+#~ "The average of the feedback channels you have rights to in the chosen "
+#~ "timespan"
+#~ msgstr ""
+#~ "Keskiarvo palautekanavista, joihin sinulla on oikeudet, valitulla "
+#~ "aikavälillä"
+
+#~ msgid ""
+#~ "The number feedback givers in the feedback channels you have rights to in "
+#~ "the chosen timespan"
+#~ msgstr ""
+#~ "Palautteenantajien lukumäärä palautekanavissa, joihin sinulla on "
+#~ "oikeudet, valitulla aikavälillä"
+
+#~ msgid ""
+#~ "This is the average level of satisfaction calculated from all "
+#~ "quantifiable feedback you have collected in the selected time frame."
+#~ msgstr ""
+#~ "Tämä on kaikkien palautteiden keskiarvo, joka lasketaan kaikkien "
+#~ "mittayksiköllisten palautteiden pohjalta valittuna ajanjaksona."
+
+#~ msgid ""
+#~ "This is the overall number of feedbacks you have collected with all your "
+#~ "channels in the selected time frame."
+#~ msgstr ""
+#~ "Tästä näet kokonaispalautemääräsi kaikista palautekanavistasi valitulla "
+#~ "ajanjaksolla."
+
+#~ msgid ""
+#~ "A QR -code channel can be used e.g. restaurants or high volume service "
+#~ "locations. Read a QR-code and give feedback with any mobile device. To "
+#~ "get your QR -codes, click to open a specific QR -code channel and "
+#~ "download the QR that you can then attach to your own materials."
+#~ msgstr ""
+#~ "QR-koodi palautekanavaa soveltuu hyvin esim. ravintoloihin, "
+#~ "kulkuvälineisiin tai muuhun palveluympäristöön palautteenkeräämistä "
+#~ "varten. Asiakkaat lukevat QR-koodin ja antavat palautetta suoraan omalla "
+#~ "puhelimellaan. Voit ladata QR-koodin painamalla QR-koodin kanavan nimen "
+#~ "päältä; tämän jälkeen voit lisätä QR-koodin omiin materiaaleihin esim. "
+#~ "pöytäständeihin tai kuittiin, jotta asiakkaat pääsevät antamaan "
+#~ "palautetta sen kautta."
+
+#~ msgid ""
+#~ "A web form channel is the traditional web survey form reinvented! To find "
+#~ "your link to the web form, choose the channel from the list below. After "
+#~ "this you can activate a survey behind this link from the surveys section."
+#~ msgstr ""
+#~ "Web-kysely on perinteisten web-kyselyjen pohjalta suunniteltu uudistettu "
+#~ "tapa kerätä palautetta! Voit jakaa kyselyysi suoran nettilinkin, jonka "
+#~ "kautta ihmiset pääsevät vastaamaan mistä tahansa nettiselaimen kautta. "
+#~ "Alta löydät suoran linkin, josta pääsee vastaamaan kyselyysi. (Muista "
+#~ "tehdä kysely valmiiksi ja aktivoida se Web-kysely kanavaan vasemman "
+#~ "laidan Kyselyt-osiosta.)"
+
+#~ msgid "All"
+#~ msgstr "Kaikki"
+
+#~ msgid ""
+#~ "Channel groups are feedback sources of the same type organized into "
+#~ "groups.\n"
+#~ "Users in your organization can be granted access to these subsets of "
+#~ "feedback sources according\n"
+#~ "to what they are entitled to see. Additionally, feedback groups can be "
+#~ "used as shortcuts to select a group of specific feedback sources\n"
+#~ "when distributing surveys and analyzing results. By default, all feedback "
+#~ "sources are part of the root group containing all feedback sources\n"
+#~ "of that channel type. Channel groups can contain feedback sources that "
+#~ "are contained in other groups as well as other channel groups."
+#~ msgstr ""
+#~ "Kanavaryhmät ovat samaa tyyppiä olevia palautelähteitä (esim. QR-koodeja) "
+#~ "ryhmiteltyinä.\n"
+#~ "Organisaatiosi käyttäjille voidaan antaa pääsy näihin palautelähteiden "
+#~ "ryhmiin sen mukaan mitä heidän halutaan pystyvän näkevän. Lisäksi "
+#~ "palauteryhmiä voidaan käyttää pikavalintana, kun halutaan valita useita "
+#~ "palautelähteitä yhdellä painalluksella\n"
+#~ "tarkasteltaessa tuloksia ja hallittaessa kyselyjä. Oletuksena kaikki "
+#~ "palautelähteet kuuluvut juuriryhmään, joka sisältää kaikki palautelähteet."
+
+#~ msgid "Create a new channel group"
+#~ msgstr "Luo uusi kanavaryhmä"
+
+#~ msgid "Display to every n:th visitor"
+#~ msgstr "Näytä joka n:nnelle vieraalle"
+
+#~ msgid "Email lists"
+#~ msgstr "Sähköpostilistat"
+
+#~ msgid "Feedback channels of"
+#~ msgstr "Palautekanavat ryhmässä"
+
+#~ msgid "Feedback kiosks"
+#~ msgstr "Palautelaite"
+
+#~ msgid "My"
+#~ msgstr "Minun"
+
+#~ msgid "QR codes"
+#~ msgstr "QR-koodit"
+
+#~ msgid "SMS lists"
+#~ msgstr "Tekstiviestilistat"
+
+#~ msgid ""
+#~ "This is the list of all your email lists that you have associated to your "
+#~ "subscription. To add recipients or manage them, click to open an "
+#~ "individual list. An email list is a segment of specific email contacts "
+#~ "that you want to send your specific surveys to. To create more of these "
+#~ "email lists, just click “add new” and it will be automatically added to "
+#~ "your subscription."
+#~ msgstr ""
+#~ "Täältä löytyy lista kaikista sähköpostilistoista, jotka sinulla on "
+#~ "käytössä. Lisätäksesi ja hallitaksesi vastaanottajia klikkaa "
+#~ "sähköpostilistan nimeä. Jokaiselle sähköpostilistallesi voit lähettää "
+#~ "haluamasilaisia viestejä. Jos tarvitset lisää sähköpostilistoja, paina "
+#~ "”Lisää uusi” niin käyttöösi lisätään uusi sähköpostilista."
+
+#~ msgid ""
+#~ "This is the list of all your embedded web site surveys. A website survey "
+#~ "is a pop up survey that will collect information from your customers on "
+#~ "your website or web application. To launch it, just click open your web "
+#~ "site plugin from the list below and copy the script to your web page’s "
+#~ "head tag. After that the channel is active to use through your surveys!"
+#~ msgstr ""
+#~ "Täältä löydät listan jokaisesta yksilöllisestä koodista, jonka voit "
+#~ "lisätä nettisivuille palautteenkeräämistä varten. Nettisivukysely on pop-"
+#~ "up ikkuna, joka kerää palautetta nettisivuillasi tai appissä. Ottaaksesi "
+#~ "nettisivukyselyn käyttöön paina plug-inin nimen kohdalta ja kopioi "
+#~ "koodinpätkä nettisivuillesi. Tämän jälkeen palautekanava on käyttövalmis "
+#~ "kyselyitäsi varten!"
+
+#~ msgid ""
+#~ "This is the list of all your text message lists that you have associated "
+#~ "to your subscription. To add recipients or manage them, click to open an "
+#~ "individual list. An SMS list is a segment of specific phone number "
+#~ "contacts that you want to send your specific surveys to. To create more "
+#~ "of these lists, just click “add new” and it will be automatically added "
+#~ "to your subscription."
+#~ msgstr ""
+#~ "Täältä löytyy lista kaikista tesktiviestilistoista, jotka sinulla on "
+#~ "käytössä. Lisätäksesi ja hallitaksesi vastaanottajia klikkaa "
+#~ "tekstiviestilistan nimeä. Jokaiselle tekstiviestilistallesi voit lähettää "
+#~ "haluamasilaisia yksilöityjä viestejä. Jos tarvitset lisää "
+#~ "tekstiviestilistoja, paina ”Lisää uusi” niin saat automaattisesti "
+#~ "käyttöösi uuden listan."
+
+#~ msgid ""
+#~ "To use a feedback kiosk or tablet to collect feedback you need to "
+#~ "download the app first from the App Store. If you have already have a "
+#~ "feedback device from us, you can skip this part. After downloading, "
+#~ "return here and select your kiosk source to see the identification code "
+#~ "you need to input in your application."
+#~ msgstr ""
+#~ "Kerätäksesi palautetta tablet-tietokoneella (palautelaite) käy lataamassa "
+#~ "Feedbackly-ohjelma App Storesta. Ladattuasi Feedbackly tablet-"
+#~ "tietokoneellesi syötä ohjelmaan valtuutuskoodi, jonka löydät täältä "
+#~ "painamalla palautelaitteen nimen päältä.\n"
+#~ "\n"
+#~ "(Jos sinulla on jo Feedbacklyn toimittama palautelaite olemassa, niin "
+#~ "ohjelma on valmiiksi asennettuna ja voit jättää tämän kohdan huomioitta.)"
+
+#~ msgid "Used last"
+#~ msgstr "Viimeksi käytetty"
+
+#~ msgid "Web forms"
+#~ msgstr "Web-lomakkeet"
+
+#~ msgid "Website surveys"
+#~ msgstr "Nettisivukyselyt"
+
+#~ msgid "sources"
+#~ msgstr "lähteet"
+
+#~ msgid "to subscription"
+#~ msgstr "tilaukseen"
+
+#~ msgid "4 emoticons"
+#~ msgstr "4 hymiötä"
+
+#~ msgid "5 emoticons"
+#~ msgstr "5 hymiötä"
+
+#~ msgid "Add a translation"
+#~ msgstr "Lisää käännös"
+
+#~ msgid "Add to survey"
+#~ msgstr "Lisää kyselyyn"
+
+#~ msgid ""
+#~ "Amount of time in seconds to show the final screen (\"thank you\") on "
+#~ "kiosks before returning to the beginning"
+#~ msgstr ""
+#~ "Aika sekunneissa, jolloin viimeistä ruutua (\"kiitosruutua\") näytetään "
+#~ "palautelaitteilla ennen kyselyn palaamista alkuun"
+
+#~ msgid ""
+#~ "Amount of time it takes to return to the start of the survey on feedback "
+#~ "kiosks"
+#~ msgstr "Aika sekunneissa, jonka jälkeen palautelaite palaa kyselyn alkuun"
+
+#~ msgid ""
+#~ "Attach smart logic to you questions. If a certain answer is selected, "
+#~ "select to which question it will jump. Next question is always the "
+#~ "default."
+#~ msgstr ""
+#~ "Liitä älykästä logiikkaa kysymykseesi. Jos kysymykseen annetaan tietty "
+#~ "vastaus, voit valita mihin kysymykseen vastauksesta siirrytään. "
+#~ "Oletuksena siirrytään aina seuraavaan kysymykseen"
+
+#~ msgid "Change question type"
+#~ msgstr "Vaihda kysymystyyppiä"
+
+#~ msgid "Choose a flag for the translation"
+#~ msgstr "Valitse käännökselle lippu"
+
+#~ msgid "Choose a previously created question to add"
+#~ msgstr "Valitse aiemmin luotu kysymys lisättäväksi"
+
+#~ msgid "Count of the emoticons"
+#~ msgstr "Hymiöiden lukumäärä"
+
+#~ msgid "End of survey message is blank"
+#~ msgstr "Kyselyn lopputeksti on tyhjä"
+
+#~ msgid "Feedbackly"
+#~ msgstr "Feedbackly"
+
+#~ msgid "Image labels"
+#~ msgstr "Kuvien otsikot"
+
+#~ msgid "Move to question"
+#~ msgstr "Siirry kysymykseen"
+
+#~ msgid "Next question"
+#~ msgstr "Seuraava kysymys"
+
+#~ msgid "Open the survey in your browser"
+#~ msgstr "Avaa kysely selaimessasi"
+
+#~ msgid ""
+#~ "Please provide an optional translation for the following texts (You only "
+#~ "have to do this once).\n"
+#~ "          If the translations are not provided, they are shown in English."
+#~ msgstr ""
+#~ "Anna seuraaville teksteille vapaaehtoinen käännösteksti valitsemallasi "
+#~ "kielellä. (Sinun tarvitsee tehdä tämä vain kerran) \n"
+#~ "Jos käännöksiä ei anneta, ne näytetään englanniksi."
+
+#~ msgid ""
+#~ "Redirect browser to this address after finishing the survey where "
+#~ "applicable"
+#~ msgstr ""
+#~ "Uudelleenohjaa selain tähän osoitteeseen kun kysely on valmis ja "
+#~ "uudelleenohjaus on mahdollinen."
+
+#~ msgid "Remove"
+#~ msgstr "Poista"
+
+#~ msgid "Static"
+#~ msgstr "Staattinen"
+
+#~ msgid "Traditional"
+#~ msgstr "Perinteinen"
+
+#~ msgid "Unsubscribe"
+#~ msgstr "Poistu listalta"
+
+#~ msgid "--Select Barcode Type--"
+#~ msgstr "--Valitse viivakoodin tyyppi--"
+
+#~ msgid "Show code also as text"
+#~ msgstr "Näytä koodi myös tekstinä"
+
+#~ msgid "To unsubscribe click here"
+#~ msgstr "Poistu postituslistalta"
+
+#~ msgid "Animated"
+#~ msgstr "Animoitu"
+
+#~ msgid "Animations"
+#~ msgstr "Animaatiot"
+
+#~ msgid "As a summary at the end of each day"
+#~ msgstr "Yhteenvetona jokaisen päivän päätteeksi"
+
+#~ msgid "As a summary at the end of each week"
+#~ msgstr "Yhteenvetona jokaisen viikon päätteeksi"
+
+#~ msgid "Change your profile picture"
+#~ msgstr "Vaihda profiilikuvaasi"
+
+#~ msgid "Contact form response is received"
+#~ msgstr "Yhteistietolomakkeeseen tulee vastaus"
+
+#~ msgid "I want an e-mail when a new"
+#~ msgstr "Haluan sähköpostin kun "
+
+#~ msgid "NPS value is one of the following"
+#~ msgstr "NPS-arvo on jokin seuraavista"
+
+#~ msgid "Notifications [beta]"
+#~ msgstr "Ilmoitukset [beta]"
+
+#~ msgid "Off"
+#~ msgstr "Pois"
+
+#~ msgid "On"
+#~ msgstr "Päällä"
+
+#~ msgid "Open feedback is received"
+#~ msgstr "Avoimeen palautteeseen tulee vastaus"
+
+#~ msgid "Satisfaction is one of the following"
+#~ msgstr "Tyytyväisyys on jokin seuraavista"
+
+#~ msgid "Send me an email"
+#~ msgstr "Lähetä minulle sähköpostiviesti"
+
+#~ msgid "Show metadata related to feedbacks"
+#~ msgstr "Näytä palautteeseen liittyvä metadata"
+
+#~ msgid "The email will be sent based on these triggers."
+#~ msgstr "Sähköposti lähetetään näiden sääntöjen perusteella"
+
+#~ msgid "Triggers"
+#~ msgstr "Säännöt"
+
+#~ msgid "Use triggers"
+#~ msgstr "Käytä sääntöjä"
+
+#~ msgid ""
+#~ "You can set up e-mail notifications that can be triggered by certain "
+#~ "feedback rules."
+#~ msgstr ""
+#~ "Voit asettaa sähköposti-ilmoituksia, jotka voidaan lähettää tiettyjen "
+#~ "sääntöjen perusteella."
+
+#~ msgid "Feedback amount in period"
+#~ msgstr "Palautemäärä jakson aikana"
+
+#~ msgid ""
+#~ "You can use the \"*\" symbol for arbitary number of any character. For "
+#~ "example \"*/pricing\" and \"*/users/*\""
+#~ msgstr ""
+#~ "Voit käyttää ”*” symbolia ilmaistaksesi mielivaltaisen lukumäärän mitä "
+#~ "tahansa merkkiä. Esimerkiksi ”*/hinnasto” ja ”*/kayttajat/*”"
+
+#~ msgid ""
+#~ "Add this line of code to your web page's head tag to initialize the plugin"
+#~ msgstr ""
+#~ "Lisää tämä rivi koodia verkkosivustosi head-tagiin ottaaksesi "
+#~ "nettisivukyselyn käyttöön"
+
+#~ msgid "Copy to clipboard"
+#~ msgstr "Kopioi leikeipöydälle"
+
+#~ msgid "No activce schedulations for this channel."
+#~ msgstr "Ei voimassa olevia kyselyn ajastuksia tälle kanavalle."
+
+#~ msgid "How to fix this?"
+#~ msgstr "Kuinka korjata tämä?"
+
+#~ msgid "Test mail sent to"
+#~ msgstr "Testisähköposti lähetettiin osoitteeseen"
+
+#~ msgid "Sender e-mail"
+#~ msgstr "Lähettäjän sähköpostiosoite"
+
+#~ msgid "2. Log in with your current credentials for Feedbackly"
+#~ msgstr "2. Kirjaudu sisään nykyisillä Feedbackly-käyttäjätunnuksillasi"
+
+#~ msgid "3. Choose"
+#~ msgstr "3. Valitse"
+
+#~ msgid "from the list to assign your tablet to this channel."
+#~ msgstr "listasta liittääksesi tablettisi tähän kanavaan."
+
+#~ msgid "channel management"
+#~ msgstr "kanavahallinta"
+
+#~ msgid "The schedule can be viewed and edited from the"
+#~ msgstr "Ajastuksen voi nähdä ja sitä voi muokata "
+
+#~ msgid "1. Add contacts to this e-mail channel from the"
+#~ msgstr "1. Lisää osoitteita tähän sähköpostikanavaan"
+
+#~ msgid "1. Add contacts to this SMS channel from the"
+#~ msgstr "1. Lisää kontakteja tähän SMS-kanavaan "
+
+#~ msgid "feedbacks but your current plan has a limit of"
+#~ msgstr "palautetta, mutta nykyisen maksusuunnitelmasi raja on"
+
+#~ msgid "Upgrade your plan to see more feedbacks"
+#~ msgstr "Päivitä maksusuunnitelmasi nähdäksesi enemmän palautetta"
+
+#~ msgid "You have"
+#~ msgstr "Sinulla on"
+
+#~ msgid "2. Test drive and distribute"
+#~ msgstr "2. Koeaja ja julkaise"
+
+#~ msgid "3. Analyze"
+#~ msgstr "3. Analysoi"
+
+#~ msgid "Activate at"
+#~ msgstr "Aktivoi ajanhetkellä"
+
+#~ msgid "Add a translations by clicking the"
+#~ msgstr "Lisää käännös klikkaamalla"
+
+#~ msgid "Add some email addresses"
+#~ msgstr "Lisää sähköpostiosoitteita"
+
+#~ msgid "Additional privacy policy"
+#~ msgstr "Lisärekisteriseloste"
+
+#~ msgid ""
+#~ "After collecting your first feedbacks, an overview will be visible on the "
+#~ "landing page.\n"
+#~ "          For a detailed report head to the Results-section.Feedbacks can "
+#~ "filtered based on channel, survey and even based on the individual "
+#~ "answers given!"
+#~ msgstr ""
+#~ "Kerättyäsi ensimmäiset palautteet näet yhteenvedon niistä "
+#~ "aloitussivulla.\n"
+#~ "Yksityishkotaista tulosten tarkastelua varten siirry Tulokset-"
+#~ "välilehdelle. Palautteita pystyy seulomaan palautekanavien, kyselyjen, "
+#~ "ajanjakson ja jopa annettujen vastausten perusteella!"
+
+#~ msgid "All done here!"
+#~ msgstr "Valmista on!"
+
+#~ msgid "All set!"
+#~ msgstr "Valmista on!"
+
+#~ msgid "Allow unsubscribe"
+#~ msgstr "Salli poistuminen listalta"
+
+#~ msgid "Change language"
+#~ msgstr "Vaihda kieltä"
+
+#~ msgid "Check out your feedback channels"
+#~ msgstr "Tarkastele palautekanaviasi"
+
+#~ msgid "Choose a translation"
+#~ msgstr "Valitse käännös"
+
+#~ msgid "Choose activation plan"
+#~ msgstr "Valitse aktivointi suunnitelma"
+
+#~ msgid "Choose channels"
+#~ msgstr "Valitse kanavat"
+
+#~ msgid "Choose content"
+#~ msgstr "Valitse sisältö"
+
+#~ msgid "Choose mailinglists"
+#~ msgstr "Valitse postituslista"
+
+#~ msgid "Choose SMS channel"
+#~ msgstr "Valitse tekstiviestikanava"
+
+#~ msgid "Choose timeouts"
+#~ msgstr "Valitse uudelleenlatausajat"
+
+#~ msgid "Choose which feedback channel types you'll be using"
+#~ msgstr "Valitse käyttämäsi palautekanavatyypit"
+
+#~ msgid "Choose which language you'll be using"
+#~ msgstr "Valitse käyttämäsi kieli"
+
+#~ msgid "Currently editing translation"
+#~ msgstr "Muokataan käännöstä"
+
+#~ msgid "Footer"
+#~ msgstr "Alatunniste"
+
+#~ msgid "Go!"
+#~ msgstr "Valmis!"
+
+#~ msgid "Header"
+#~ msgstr "Ylätunniste"
+
+#~ msgid "Here is a summary of survey"
+#~ msgstr "Tässä yhteenveto kyselystä"
+
+#~ msgid ""
+#~ "Here you can activate surveys behind links. The actual links can be found "
+#~ "in the feedback channels page"
+#~ msgstr ""
+#~ "Täällä voit aktivoida linkkien takaa löytyviä kyselyitä. Itse linkit "
+#~ "löytyvät palautekanavat-sivulta"
+
+#~ msgid ""
+#~ "Here you can activate surveys behind QR-codes. The actual QR-codes can be "
+#~ "found in the feedback channels page"
+#~ msgstr ""
+#~ "Täällä voit aktivoida QR-koodien takaa löytyviä kyselyitä. Itse QR-koodit "
+#~ "löytyvät palautekanavat-sivulta"
+
+#~ msgid "I don't have a VAT"
+#~ msgstr "Minulla ei ole verotunnusta"
+
+#~ msgid "Link to the survey will be appended to the message"
+#~ msgstr "Linkki kyselyyn lisätään tekstiviestin loppuun"
+
+#~ msgid "Manage mailinglists"
+#~ msgstr "Hallitse postituslistoja"
+
+#~ msgid "Manage SMS channels"
+#~ msgstr "Hallitse tekstiviestikanavia"
+
+#~ msgid "Message"
+#~ msgstr "Viesti"
+
+#~ msgid "Name of the sender"
+#~ msgstr "Lähettäjän nimi"
+
+#~ msgid "Need help? Chat with us or head to the resources-section."
+#~ msgstr ""
+#~ "Kysyttävää? Lähetä meille viesti tai katso lisätietoja Apukeskuksestamme."
+
+#~ msgid "Now go and make your business win!"
+#~ msgstr "Aloita nyt liiketoimintasi parantaminen!"
+
+#~ msgid "Oops.. No feedback to analyze at the moment."
+#~ msgstr "Hupsista… Sinulla ei ole vielä palautteita analysoitavaksi."
+
+#~ msgid "Questions"
+#~ msgstr "Kysymykset"
+
+#~ msgid "Schedulations"
+#~ msgstr "Ajastukset"
+
+#~ msgid "Send"
+#~ msgstr "Lähetä"
+
+#~ msgid "Send at"
+#~ msgstr "Lähetä ajanhetkellä"
+
+#~ msgid "Send now"
+#~ msgstr "Lähetä nyt"
+
+#~ msgid "Send to me as a test"
+#~ msgstr "Lähetä minulle testinä\t"
+
+#~ msgid "Sender's email address"
+#~ msgstr "Lähettäjän sähköpostiosoite"
+
+#~ msgid "Set up my feedback channels now"
+#~ msgstr "Laita palautekanavasi käyttövalmiiksi nyt"
+
+#~ msgid "Subject"
+#~ msgstr "Aihe"
+
+#~ msgid ""
+#~ "Take the first steps in measuring customer experience by creating a "
+#~ "survey.\n"
+#~ "      Just select Surveys from the left-hand menu to start!"
+#~ msgstr ""
+#~ "Aloita palautteenkerääminen luomalla kysely.\n"
+#~ "Valitse Kyselyt-välilehti vasemmasta laidasta päästäksesi alkuun!"
+
+#~ msgid "Taxes without a VAT identification number"
+#~ msgstr "Verot ilman verotunnusta"
+
+#~ msgid ""
+#~ "Test the logic and layout of your survey in each channel using the "
+#~ "preview.\n"
+#~ "        Next, distribute the survey to the desired feedback channels. You "
+#~ "can also schedule surveys."
+#~ msgstr ""
+#~ "Tarkista kyselyidesi ulkoasu ja testaa niihin vastaamista Esikatselu-"
+#~ "vaiheessa.\n"
+#~ "Sen jälkeen valitse palautekanavat, joihin haluat kyselyn aktivoida. Voit "
+#~ "myös ajastaa kyselyn aktivoinnin haluamaasi ajankohtaan."
+
+#~ msgid "Thank you for signing up."
+#~ msgstr "Kiitos rekisteröitymisestäsi."
+
+#~ msgid "This is a hint! It will go away by clicking Got It!"
+#~ msgstr "Tämä on vihje! Saat vihjeen katoamaan painamalla Selvä!"
+
+#~ msgid "This list seems to be empty"
+#~ msgstr "Tämä lista vaikuttaa olevan tyhjä"
+
+#~ msgid ""
+#~ "This privacy policy will be shown before the Feedbackly system general "
+#~ "privacy policy."
+#~ msgstr ""
+#~ "Nämä käyttöehdot näkyvät ennen Feedbackly-järjestelmän yleisiä "
+#~ "käyttöehtoja."
+
+#~ msgid ""
+#~ "To start learning Customer Experience in multichannel <br> click the "
+#~ "arrow on the bottom-right."
+#~ msgstr ""
+#~ "Jos haluat oppia miten kerätä asiakaspalautetta tehokkaasti ja "
+#~ "monikanavaisesti,\n"
+#~ "klikkaa oikeassa alalaidassa olevaa nuolta!"
+
+#~ msgid ""
+#~ "Without VAT identification number each charge will be added the value "
+#~ "added tax (24%)"
+#~ msgstr ""
+#~ "Ilman verotunnusta jokaiseen veloitukseen lisätään arvonlisävero (24%)"
+
+#~ msgid "You can always click me!"
+#~ msgstr "Voit aina klikata minua!"
+
+#~ msgid "You don't have rights to any channel groups"
+#~ msgstr "Sinulla ei ole käyttöoikeuksia mihinkään kanavaryhmään."
+
+#~ msgid "Don't have a tax id?"
+#~ msgstr "Ei verotunnusta?"
+
+#~ msgid "Tax id"
+#~ msgstr "Verotunnus"
+
+#~ msgid "Taxes without tax id"
+#~ msgstr "Verot ilman verotunnusta"
+
+#~ msgid "Without tax id each charge will be added the value added tax (24%)"
+#~ msgstr ""
+#~ "Ilman verotunnusta jokaiseen veloitukseen lisätään arvonlisävero (24%)"
+
+#~ msgid "Without tax id each charge will include value added tax (24%)"
+#~ msgstr "Ilmanen verotunnusta jokainen ve"
+
+#~ msgid "Tax ID"
+#~ msgstr "Verotunnus"
+
+#~ msgid "Are you sure you want to switch your current plan?"
+#~ msgstr "Oletko varma että haluat vaihtaa nykyistä maksusuunnitelmaasi?"
+
+#~ msgid "Billing for company or organization"
+#~ msgstr "Maksutiedot yritykselle tai organisaatiolle"
+
+#~ msgid "Billing for private person"
+#~ msgstr "Maksutiedot yksityishenkilölle"
+
+#~ msgid "State"
+#~ msgstr "Osavaltio"
+
+#~ msgid "Plan & Billing"
+#~ msgstr "Maksutiedot"
+
+#~ msgid "Billing"
+#~ msgstr "Maksutiedot"
+
+#~ msgid "Billing information is required before proceeding."
+#~ msgstr "Maksutiedot tarvitaan ennen kuin voit edetä pidemmälle"
+
+#~ msgid "I agree to"
+#~ msgstr "Hyväksyn"
+
+#~ msgid ""
+#~ "It seems that your organization already has billing information, but feel "
+#~ "free to update it"
+#~ msgstr "Organisaatiollasi on jo maksutiedot, mutta voit päivittää ne"
+
+#~ msgid "Monthly price"
+#~ msgstr "Kuukausittainen hinta"
+
+#~ msgid "Monthly price for feedback channels is"
+#~ msgstr "Palautekanavien kuukausittainen hinta on"
+
+#~ msgid "Number of feedback channels"
+#~ msgstr "Palautekanavien lukumäärä"
+
+#~ msgid "terms"
+#~ msgstr "käyttöehdot"
+
+#~ msgid "Add this line of code to your web page's head tag"
+#~ msgstr "Lisää tämä rivi koodia verkkosivusi head-tagiin"
+
+#~ msgid "Choose plugin placement"
+#~ msgstr "Valitse liitännäisen sijoitus"
+
+#~ msgid "Or place freely by adding this line of code"
+#~ msgstr "Tai sijoita vapaasti lisäämällä tämä rivi koodia"
+
+#~ msgid "And"
+#~ msgstr "Ja"
+
+#~ msgid "Contact form answer"
+#~ msgstr "Yhteystietolomake vastaus"
+
+#~ msgid "Is given"
+#~ msgstr "On annettu"
+
+#~ msgid "NPS value one of"
+#~ msgstr "NPS arvo joukosta"
+
+#~ msgid "Open feedback"
+#~ msgstr "Avoin palaute"
+
+#~ msgid "Or"
+#~ msgstr "Tai"
+
+#~ msgid "Show meta data related to feedbacks"
+#~ msgstr "Näytä palautteisiin liittyvä metatieto"
+
+#~ msgid "When"
+#~ msgstr "Kun"
+
+#~ msgid "Admin"
+#~ msgstr "Admin"
+
+#~ msgid "Languages"
+#~ msgstr "Kielet"
+
+#~ msgid "Sender"
+#~ msgstr "Lähettäjä"
+
+#~ msgid "Create my first survey now"
+#~ msgstr "Luo ensimmäinen kyselyni"
+
+#~ msgid "Decide later"
+#~ msgstr "Päätä myöhemmin"
+
+#~ msgid "Device"
+#~ msgstr "Palautelaite"
+
+#~ msgid "E-mail"
+#~ msgstr "Sähköposti"
+
+#~ msgid "Feedback devices"
+#~ msgstr "Palautelaitteet"
+
+#~ msgid "Links"
+#~ msgstr "Linkit"
+
+#~ msgid "Plugin"
+#~ msgstr "Liitännäinen"
+
+#~ msgid "Plugins"
+#~ msgstr "Liitännäiset"
+
+#~ msgid "QR-code"
+#~ msgstr "QR-koodi"
+
+#~ msgid "SMS"
+#~ msgstr "Tekstiviesti"
+
+#~ msgid "SMS messages"
+#~ msgstr "Tekstiviestit"
+
+#~ msgid ""
+#~ "This privacy policy will be shown in front of the Feedbackly system "
+#~ "general privacy policy."
+#~ msgstr ""
+#~ "Tämä reskisteriseloste näytetään ennen Feedbacklyn yleistä "
+#~ "rekisteriselostetta."
+
+#~ msgid "Web"
+#~ msgstr "Verkkosivu"
+
+#~ msgid "Survey has been published"
+#~ msgstr "Kysely on julkaistu"
+
+#~ msgid "Translations are missing from question"
+#~ msgstr "Käännöksiä puuttuu kysymyksestä"
+
+#~ msgid "Buy a new feedback channel"
+#~ msgstr "Osta uusi palautekanava"
+
+#~ msgid "Done"
+#~ msgstr "Valmis"
+
+#~ msgid "Feedback device"
+#~ msgstr "Palautelaite"
+
+#~ msgid "Mailing lists"
+#~ msgstr "Postituslistat"
+
+#~ msgid "Passcode"
+#~ msgstr "Pääsykoodi"
+
+#~ msgid "organization's settings"
+#~ msgstr "organisaatiosi asetuksissa"
+
+#~ msgid ""
+#~ "We require your organization's billing information before you can add "
+#~ "feedback channels to your organization. You can fill in your billing "
+#~ "information in your"
+#~ msgstr ""
+#~ "Tarvitsemme organisaatiosi maksutiedot ennen kuin voit lisätä "
+#~ "palautekanavia organisaatioosi. Voit täyttää maksutietosi"
+
+#~ msgid ""
+#~ "It seems that your organization already has billing information but feel "
+#~ "free to update it"
+#~ msgstr ""
+#~ "Vaikuttaa siltä, että organisaatiollasi on jo maksutiedot, mutta voit "
+#~ "päivittää ne"
+
+#~ msgid "Add a channel"
+#~ msgstr "Lisää palautekanava"
+
+#~ msgid "Add a channel group"
+#~ msgstr "Lisää palautekanavaryhmä"
+
+#~ msgid "Add an organization"
+#~ msgstr "Lisää organis"
+
+#~ msgid "Average from quantitative feedback"
+#~ msgstr "Keskiarvo numeerisista palautteista"
+
+#~ msgid "Best channels by average"
+#~ msgstr "Parhaat kanavat keskiarvon mukaan"
+
+#~ msgid "Choose devices"
+#~ msgstr "Valitse laitteet"
+
+#~ msgid "Choose plugins"
+#~ msgstr "Valitse liitännäjset"
+
+#~ msgid "Choose QR codes"
+#~ msgstr "Valitse QR-koodit"
+
+#~ msgid "Choose the channel group"
+#~ msgstr "Valitse palautekanavaryhmä"
+
+#~ msgid "Default appearance"
+#~ msgstr "Yleisilme"
+
+#~ msgid "Edit channel groups"
+#~ msgstr "Muokkaa palautekanavaryhmiä"
+
+#~ msgid "Feedback amount in feedback chains"
+#~ msgstr "Palautemäärä palauteketjuissa"
+
+#~ msgid "General info"
+#~ msgstr "Yleistiedot"
+
+#~ msgid "Use default appearance"
+#~ msgstr "Käytä oletusilmettä"
+
+#~ msgid "Choose plugin"
+#~ msgstr "Valitse liitännäinen"
+
+#~ msgid "Add a survey"
+#~ msgstr "Lisää kysely"
+
+#~ msgid "Add a feedback filter for"
+#~ msgstr "Lisää palautesuodatin palautteelle"
+
+#~ msgid "Feeback filters"
+#~ msgstr "Palautesuodattimet"
+
+#~ msgid "Color of the emoticons"
+#~ msgstr "Hymiöiden väri"
+
+#~ msgid "Colored emoticons"
+#~ msgstr "Värilliset hymiöt"
+
+#~ msgid "Choose a question type"
+#~ msgstr "Valitse kysymystyyppi"
+
+#~ msgid "E.g. tap here to write"
+#~ msgstr "Esim. näpäytä kirjottaaksesi"
+
+#~ msgid "Get results"
+#~ msgstr "Hae tulokset"
+
+#~ msgid "End date can't be before start date"
+#~ msgstr "Päättymispäivä ei voi olla ennen aloituspäivää"
+
+#~ msgid "Add a field"
+#~ msgstr "Lisää kenttä"
+
+#~ msgid "Add a slider"
+#~ msgstr "Lisää liukusäädin"
+
+#~ msgid "Emails message has been sent"
+#~ msgstr "Sähköpostiviesti on lähetetty"
+
+#~ msgid ""
+#~ "Logic related to the moved question will change. Do you wan't to proceed?"
+#~ msgstr ""
+#~ "Siirrettyyn kysymykseen liittyävä logiikka muuttuu. Haluatko jatkaa?"
+
+#~ msgid ""
+#~ "(Actual result may vary according to mail app in use and screen width)"
+#~ msgstr ""
+#~ "(Lopputulos saattaa vaihdella sähköpostisovelluksen ja näytön leveyden "
+#~ "perusteella)"
+
+#~ msgid "4 smileys"
+#~ msgstr "4 hymiötä"
+
+#~ msgid "5 smileys"
+#~ msgstr "5 hymiötä"
+
+#~ msgid "Activate survey"
+#~ msgstr "Aktivoi kysely"
+
+#~ msgid "Active"
+#~ msgstr "Aktiivinen"
+
+#~ msgid "Add a new user"
+#~ msgstr "Lisää uusi käyttäjä"
+
+#~ msgid "Add addresses"
+#~ msgstr "Lisää osoite"
+
+#~ msgid "Add addresses manually"
+#~ msgstr "Lisää sähköpostiosotteita käsin"
+
+#~ msgid "Add new organization"
+#~ msgstr "Lisää organisaatio"
+
+#~ msgid "Add users to your organization"
+#~ msgstr "Lisää käyttäjiä organisaatioosi"
+
+#~ msgid "Allow unsubscription"
+#~ msgstr "Salli poistuminen listalta"
+
+#~ msgid "and add to survey"
+#~ msgstr "ja lisää kyselyyn"
+
+#~ msgid "Appearance of surveys"
+#~ msgstr "Kyselyiden ulkonäkö"
+
+#~ msgid "Archive"
+#~ msgstr "Arkistoi"
+
+#~ msgid "Archived questions"
+#~ msgstr "Arkistoidut kysymykset"
+
+#~ msgid "average"
+#~ msgstr "keskiarvo"
+
+#~ msgid "Bar chart"
+#~ msgstr "Pylväsdiagrammi"
+
+#~ msgid "Basic info"
+#~ msgstr "Yleiset"
+
+#~ msgid "Change password"
+#~ msgstr "Vaihda salasanaa"
+
+#~ msgid "Change scale"
+#~ msgstr "Vaihda skaalaa"
+
+#~ msgid "Changes saved."
+#~ msgstr "Muutokset tallennettu."
+
+#~ msgid "Channel information"
+#~ msgstr "Kanavan tiedot"
+
+#~ msgid "Channelgroups"
+#~ msgstr "Kanavaryhmät"
+
+#~ msgid "Check your fields"
+#~ msgstr "Tarkista kenttäsi"
+
+#~ msgid "Colored smileys"
+#~ msgstr "Värilliset hymiöt"
+
+#~ msgid "Confirm password"
+#~ msgstr "Vahvista salasana"
+
+#~ msgid "Contact our customer support"
+#~ msgstr "Ota yhteyttä tuotetukeen"
+
+#~ msgid "Couldn't retrieve question from the server."
+#~ msgstr "Kysymystä ei voitu hakea serveriltä."
+
+#~ msgid "Couldn't save the mailing list"
+#~ msgstr "Postituslistaa ei pystytty tallentamaan"
+
+#~ msgid "Couldn't send the survey"
+#~ msgstr "Kyselyä ei pystytty lähettämään"
+
+#~ msgid "Create a list"
+#~ msgstr "Luo lista"
+
+#~ msgid "Create a new survey"
+#~ msgstr "Luo uusi kysely"
+
+#~ msgid "Create new from copy"
+#~ msgstr "Luo uusi kopiosta"
+
+#~ msgid "Customership state"
+#~ msgstr "Asiakkuuden tila"
+
+#~ msgid "Dataset is not ready"
+#~ msgstr "Data ei ole valmis"
+
+#~ msgid "Dataset is not ready or no devicegroups have been made"
+#~ msgstr "Data ei ole valmis"
+
+#~ msgid "Default logo"
+#~ msgstr "Oletuslogo"
+
+#~ msgid "Delete"
+#~ msgstr "Poista"
+
+#~ msgid "Delete list"
+#~ msgstr "Poista lista"
+
+#~ msgid "Details"
+#~ msgstr "Lisätiedot"
+
+#~ msgid "Device pings"
+#~ msgstr "Laitteen pingit"
+
+#~ msgid "Devicegroups"
+#~ msgstr "Laiteryhmät"
+
+#~ msgid "Devices"
+#~ msgstr "Laitteet"
+
+#~ msgid ""
+#~ "Did you encounter problems or do you want to give feedback? Type your "
+#~ "message here and our customer support will process it shortly."
+#~ msgstr ""
+#~ "Tuliko sinulle vastaan ongelmia tai haluatko antaa palautetta? Kirjoita "
+#~ "tähän viestisi ja tuotetukemme käsittelee sen pikaisesti."
+
+#~ msgid "Display skip-button"
+#~ msgstr "Näytä ohita-nappi"
+
+#~ msgid "Download PDF"
+#~ msgstr "Lataa PDF"
+
+#~ msgid "Drag your files here"
+#~ msgstr "Raahaa tiedostosi tähän"
+
+#~ msgid "Edit user"
+#~ msgstr "Muokkaa käyttäjää"
+
+#~ msgid ""
+#~ "Editing is not possible since this question already has feedbacks. You "
+#~ "can still add translations."
+#~ msgstr ""
+#~ "Muokkaus ei ole mahdollista, koska tällä kysymyksellä on jo palautetta. "
+#~ "Voit silti lisätä käännöksiä."
+
+#~ msgid "eg. Tap here to type"
+#~ msgstr "esim. Kosketa tähän kirjoittaaksesi"
+
+#~ msgid "Enter a title for the survey"
+#~ msgstr "Anna kyselylle otsikko"
+
+#~ msgid "entries"
+#~ msgstr "tietuetta"
+
+#~ msgid "Error finding survey."
+#~ msgstr "Virhe kyselyn hakemisessa."
+
+#~ msgid "Error retrieving survey questions."
+#~ msgstr "Virhe kyselyn kysymysten hakemisessa."
+
+#~ msgid "Error saving user."
+#~ msgstr "Virhe käyttäjän tallennuksessa."
+
+#~ msgid "Explanation text"
+#~ msgstr "Selitysteksti"
+
+#~ msgid "Feedback channels and appearance"
+#~ msgstr "Palautekanavat ja ilme"
+
+#~ msgid "Feedback channels:"
+#~ msgstr "Palautekanavat:"
+
+#~ msgid "feedbacks, but your limit only allows showing the first"
+#~ msgstr "palautetta, mutta rajoitteidesi vuoksi näet vain ensimmäiset"
+
+#~ msgid "Field"
+#~ msgstr "Kenttä "
+
+#~ msgid "Final screen text"
+#~ msgstr "Lopetusteksti"
+
+#~ msgid "Footer text"
+#~ msgstr "Alatunnisteen teksti"
+
+#~ msgid "from quantitative feedback"
+#~ msgstr "numeerisesta palautteesta"
+
+#~ msgid "Header text"
+#~ msgstr "Otsikon teksti"
+
+#~ msgid "Hide"
+#~ msgstr "Piilota"
+
+#~ msgid ""
+#~ "How likely is it that you would recommend our company to a friend or "
+#~ "colleague?"
+#~ msgstr ""
+#~ "Kuinka todennäköisesti suosittelisit yritystämme ystävälle tai kollegalle?"
+
+#~ msgid "http://my-page.com"
+#~ msgstr "http://minun-verkkosivustoni.fi"
+
+#~ msgid "hymiötä"
+#~ msgstr "smileys"
+
+#~ msgid ""
+#~ "If the message is not dislayed properly, click to open it in your browser"
+#~ msgstr "Jos viesti ei näy kunnolla, klikkaa avataksesi se selaimessasi"
+
+#~ msgid "in feedback chains"
+#~ msgstr "palauteketjuissa"
+
+#~ msgid "Languages:"
+#~ msgstr "Kielet:"
+
+#~ msgid "Loading..."
+#~ msgstr "Lataa…"
+
+#~ msgid "Locale"
+#~ msgstr "Lokalisaatio"
+
+#~ msgid "Login as this user"
+#~ msgstr "Kirjaudu käyttäjänä"
+
+#~ msgid "Low quartile"
+#~ msgstr "Alakvartiili"
+
+#~ msgid "Mailing list has been saved"
+#~ msgstr "Postituslista on talennettu"
+
+#~ msgid ""
+#~ "Mobile only: An optional web page's address where user will be redirected "
+#~ "to after answering to the survey."
+#~ msgstr ""
+#~ "Vain matkapuhelimelle: vapaavalintainen verkko-osoite, jonne käyttäjä "
+#~ "ohjataan kyselyyn vastaamisen jälkeen."
+
+#~ msgid "Name of channel"
+#~ msgstr "Kanavan nimi"
+
+#~ msgid "New addresses will be appended to the end of the list."
+#~ msgstr "Uudet sähköpostiosoitteet lisätään listan loppuun"
+
+#~ msgid "New password"
+#~ msgstr "Uusi salasana"
+
+#~ msgid "No data in the range"
+#~ msgstr "Ei tuloksia annetuilla hakuehdoilla."
+
+#~ msgid "No data with given terms."
+#~ msgstr "Ei tuloksia annetuilla hakuehdoilla."
+
+#~ msgid "No results with the given terms"
+#~ msgstr "Ei tuloksia annetuilla hakuehdoilla."
+
+#~ msgid "No users yet"
+#~ msgstr "Ei käyttäjiä vielä"
+
+#~ msgid "No. of smileys:"
+#~ msgstr "Hymiöiden lkm:"
+
+#~ msgid "Non-archived questions"
+#~ msgstr "Arkistosta poistetut kysymykset"
+
+#~ msgid "Not authorized to edit the survey. Only preview allowed."
+#~ msgstr "Ei muokkausoikeutta. Vain esikatselu."
+
+#~ msgid "Number of feedbacks: {{table.rows.length-1}}"
+#~ msgstr "Palautemäärä:  {{table.rows.length-1}}"
+
+#~ msgid "Or add addresses manually"
+#~ msgstr "Tai lisää sähköpostiosoitteita käsin"
+
+#~ msgid "Organizations"
+#~ msgstr "Organisaatiot"
+
+#~ msgid "Organizations saved."
+#~ msgstr "Organisaatio tallennettu."
+
+#~ msgid "Other settings"
+#~ msgstr "Muut asetukset"
+
+#~ msgid "overall NPS"
+#~ msgstr "yhteenlaskettu NPS"
+
+#~ msgid "Page"
+#~ msgstr "Sivu"
+
+#~ msgid "PDF is being created..."
+#~ msgstr "PDF:ää luodaan…"
+
+#~ msgid "Please enter a title"
+#~ msgstr "Täytä otsikko."
+
+#~ msgid "Please enter a valid 4-digit number."
+#~ msgstr "Anna validi 4-numeroinen luku."
+
+#~ msgid "Please enter some text."
+#~ msgstr "Täytä kenttään teksti."
+
+#~ msgid "Press enter or return to add a new line"
+#~ msgstr "Paina enter-painiketta lisätäksesi uuden rivin"
+
+#~ msgid "Privacy Policy"
+#~ msgstr "Rekisteriseloste"
+
+#~ msgid "Question"
+#~ msgstr "Kysymys"
+
+#~ msgid "Question basic info"
+#~ msgstr "Kysymyksen perustiedot"
+
+#~ msgid "Recipient list"
+#~ msgstr "Vastaanottajalista"
+
+#~ msgid "Redirect to a web page"
+#~ msgstr "Uudelleenohjaus verkkosivulle"
+
+#~ msgid "Remove logo"
+#~ msgstr "Poista logo"
+
+#~ msgid "reports and statistics"
+#~ msgstr "raportit ja statistiikka"
+
+#~ msgid "Rights to devices"
+#~ msgstr "Oikeudet laitteisiin"
+
+#~ msgid "Saved"
+#~ msgstr "Tallennettu"
+
+#~ msgid "Saving"
+#~ msgstr "Tallentaa"
+
+#~ msgid "Saving failed."
+#~ msgstr "Tallentaminen epäonnistui."
+
+#~ msgid "Saving failed. Check the form."
+#~ msgstr "Tallennus epäonnistui. Tarkista lomake."
+
+#~ msgid "Saving failed. Please check the form."
+#~ msgstr "Tallentaminen epäonnistui. Tarkista lomake."
+
+#~ msgid "Selectable items"
+#~ msgstr "Valittavat tietueet"
+
+#~ msgid "Send all <i class=\"fa fa-send\"></i>"
+#~ msgstr "Lähetä kaikki <i class=\"fa fa-send\"></i>"
+
+#~ msgid "Sender email"
+#~ msgstr "Lähettäjän sähköposti"
+
+#~ msgid "Sending survey"
+#~ msgstr "Lähetetään kyselyä"
+
+#~ msgid "Show devicelogs"
+#~ msgstr "Näytä laitelokit"
+
+#~ msgid "Show image labels to users"
+#~ msgstr "Näytä kuvien otsikot käyttäjille"
+
+#~ msgid "Show skip-button"
+#~ msgstr "Näytä ohita-nappi"
+
+#~ msgid "Something went wrong"
+#~ msgstr "Jotakin meni vikaan."
+
+#~ msgid ""
+#~ "Specify rules to individual selections to move the user forward in the "
+#~ "survey."
+#~ msgstr ""
+#~ "Määritä säännöt yksittäisiin valintoihin siirtääksesi vastaajan eteenpäin "
+#~ "kyselyssä."
+
+#~ msgid "Status"
+#~ msgstr "Status"
+
+#~ msgid "Survey saving failed."
+#~ msgstr "Kyselyn tallentaminen epäonnistui."
+
+#~ msgid "Survey title"
+#~ msgstr "Kyselyn nimi"
+
+#~ msgid "Tapin feedback general privacy policy"
+#~ msgstr "Tapin feedbackin yleinen rekisteriseloste"
+
+#~ msgid "Target"
+#~ msgstr "Kohde"
+
+#~ msgid "Terminated"
+#~ msgstr "Lopetettu"
+
+#~ msgid "Test"
+#~ msgstr "Testissä"
+
+#~ msgid "Test send to me"
+#~ msgstr "Lähetä testinä minulle"
+
+#~ msgid "Textbox placeholder text"
+#~ msgstr "Tekstikentän teksti"
+
+#~ msgid ""
+#~ "Thank you! We are always developing our service based on your feedback."
+#~ msgstr "Kiitos! Kehitämme palveluamme antamasi palautteen perusteella."
+
+#~ msgid "The question is missing a title!"
+#~ msgstr "Kysymykseltä puuttuu otsikko!"
+
+#~ msgid "The survey has been sent"
+#~ msgstr "Kysely on lähetetty"
+
+#~ msgid ""
+#~ "This heading will make it easier for you to examine the results of this "
+#~ "question. You can also show it to users."
+#~ msgstr ""
+#~ "Tämä otsikko helpottaa tuloksiesi tarkkailua. Voit myös halutessasi "
+#~ "näyttää otsikon käyttäjille."
+
+#~ msgid ""
+#~ "This privacy policy will be shown in front of the Tapin feedback system "
+#~ "general privacy policy."
+#~ msgstr ""
+#~ "Tämä reskisteriseloste näytetään ennen Tapin feedbackin yleistä "
+#~ "rekisteriselostetta."
+
+#~ msgid "Time range"
+#~ msgstr "Ajanjakso"
+
+#~ msgid "Timeouts"
+#~ msgstr "Uudelleenlatausajat"
+
+#~ msgid "Title"
+#~ msgstr "Otsikko"
+
+#~ msgid "TOTAL"
+#~ msgstr "YHT"
+
+#~ msgid "TOTAL:"
+#~ msgstr "YHT:"
+
+#~ msgid "Unarchive"
+#~ msgstr "Poista arkistosta"
+
+#~ msgid "Updating failed. Please check the form."
+#~ msgstr "Päivittäminen epäonnistui. Tarkista lomake."
+
+#~ msgid "Updating the survey failed."
+#~ msgstr "Kyselun päivittäminen epäonnistui."
+
+#~ msgid "Use the company default privacy policy instead"
+#~ msgstr "Käytä tämän sijasta organisaation oletusrekisteriselostetta"
+
+#~ msgid "User has been created"
+#~ msgstr "Käyttäjä on luotu"
+
+#~ msgid "User has been deleted"
+#~ msgstr "Käyttäjä on poistettu"
+
+#~ msgid "User has been updated"
+#~ msgstr "Käyttäjä on päivitetty"
+
+#~ msgid "via e-mail"
+#~ msgstr "sähköpostin välityksellä"
+
+#~ msgid "You have unsaved changes. Do you want to exit the page?"
+#~ msgstr "Sinulla on tallentamattomia muutoksia. Haluatko poistua sivulta?"
+
+#~ msgid ""
+#~ "Your contact form has been sent. We will process it shortly. Thank you!"
+#~ msgstr "Yhteydenottosi on lähetetty. Käsittelemme sen tuota pikaa. Kiitos!"
+
+#~ msgid "Average of the channel"
+#~ msgstr "Kanavan keskiarvo"
+
+#~ msgid "Back to login"
+#~ msgstr "Takaisin kirjautumiseen"
+
+#~ msgid "Change your password"
+#~ msgstr "Muuta salasanasi"
+
+#~ msgid "Changing password"
+#~ msgstr "Salasanan muuttaminen"
+
+#~ msgid "Couldn't add the email address to the mailinglist"
+#~ msgstr "Sähköpostiosoitetta ei pystytty lisäämään postituslistalle"
+
+#~ msgid "Default translation"
+#~ msgstr "Oletuskieli"
+
+#~ msgid "Did you forget your password?"
+#~ msgstr "Unohditko salasanasi?"
+
+#~ msgid "Email is required"
+#~ msgstr "Sähköposti vaaditaan"
+
+#~ msgid ""
+#~ "Gives us your email address and we will send you link through which you "
+#~ "can change your password"
+#~ msgstr ""
+#~ "Anna meille sähköpostiosoitteesi ja me lähetämme linkin, jonka kautta voi "
+#~ "muuttaa salasanasi"
+
+#~ msgid "Logging in"
+#~ msgstr "Kirjaudutaan sisään"
+
+#~ msgid "Login"
+#~ msgstr "Sisäänkirjautuminen"
+
+#~ msgid "Mailinglists"
+#~ msgstr "Postituslista"
+
+#~ msgid "Name of the channel"
+#~ msgstr "Kanavan nimi"
+
+#~ msgid "Password confirmation doesn't match the password"
+#~ msgstr "Salasanan vahvistus ei täsmää salasanan kanssa"
+
+#~ msgid "Password confirmation is required"
+#~ msgstr "Salasanan vahvistus vaaditaan"
+
+#~ msgid "Password is required"
+#~ msgstr "Salasana vaaditaan"
+
+#~ msgid "Pings"
+#~ msgstr "Pingit"
+
+#~ msgid "Send me the link"
+#~ msgstr "Lähetä minulle linkki"
+
+#~ msgid "Sending the link"
+#~ msgstr "Linkkiä lähetetään"
+
+#~ msgid "Support"
+#~ msgstr "Tuki"
+
+#~ msgid "Tapin feedback - taustahallinta"
+#~ msgstr "Tapin feedback dashboard"
+
+#~ msgid "The email address has been added to the mailinglist"
+#~ msgstr "Sähköpostiosoite on lisätty postituslistalle"

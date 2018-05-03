@@ -1,0 +1,26 @@
+<table border="0" cellpadding="0" cellspacing="0" align="center" width="100%" role="module" data-type="columns" data-attributes='%7B%22dropped%22%3Atrue%2C%22columns%22%3A2%2C%22padding%22%3A%220%2C0%2C0%2C0%22%2C%22cellpadding%22%3A0%2C%22containerbackground%22%3A%22%22%7D'>
+   <tr>
+      <td style="padding: 0px 0px 0px 0px;" bgcolor="">
+         <table class="columns--container-table" border="0" cellpadding="0" cellspacing="0" align="center" width="100%">
+            <tr role="module-content">
+               <td style="padding: 0px 0px 0px 0px" role="column-0" align="center" valign="top" width="50%" height="100%" class="templateColumnContainer column-drop-area ">
+
+                   <% _.forEach(data, (obj, index) => { %>
+                   <%  if(index % 2 == 0) { %>
+                      <% include slider_and_image_component %>
+                   <% }}) %>
+
+               </td>
+               <td style="padding: 0px 0px 0px 0px" role="column-1" align="center" valign="top" width="50%" height="100%" class="templateColumnContainer column-drop-area ">
+
+                   <% _.forEach(data, (obj, index) => { %>
+                   <%  if(index % 2 == 1) { %>
+                     <% include slider_and_image_component %>
+                   <% }}) %>
+
+               </td>
+            </tr>
+         </table>
+      </td>
+   </tr>
+</table>

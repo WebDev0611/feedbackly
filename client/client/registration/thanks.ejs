@@ -1,0 +1,43 @@
+<% include header %>
+    <div class="tutorial container">
+
+    <div class="placeholder"></div>
+
+    <div class="card">
+      <div class="inner">
+          <h2>Thank you for registering!</h2>
+          <hr>
+          <p class="upper">
+            Check your e-mail to learn how to analyze the results, change the survey and get notifications of the state of your device.
+          </p>
+
+          <button class="scale-start">OK</button>
+      </div>
+    </div>
+    <div class="card">
+
+      <div class="inner">
+
+        <img src="/dist/images/reconfigure.png" style="max-width: 100%; height: 200px;" />
+
+          <p class="upper">
+            You can reconfigure the app by tapping the upper-left corner 5 times consequtively.
+            Enter the passcode <span id="passcode"><%= passcode %></span>. Write it down!
+          </p>
+
+          <button id="finish" class="scale-start">START COLLECTING FEEDBACK</button>
+      </div>
+
+    </div>
+
+
+      <div class="dots">
+        <div class="dot"></div>
+        <div class="dot"></div>
+      </div>
+
+      </div>
+
+
+
+    <% include footer %>

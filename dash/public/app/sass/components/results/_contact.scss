@@ -1,0 +1,27 @@
+.contact-results, .text-results {
+  overflow-x: scroll;
+
+  table {
+    th.feedback-content, td.feedback-content {
+      min-width: 190px;
+    }
+
+    &.show-hidden {
+      .faded-feedback {
+        display: table-row;
+      }
+    }
+  }
+
+  .faded-feedback {
+    display: none;
+
+    td {
+      opacity: 0.3;
+
+      &:last-child {
+        opacity: 1;
+      }
+    }
+  }
+}

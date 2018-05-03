@@ -1,0 +1,20 @@
+<table>
+  <thead>
+    <tr>
+      <th><%= gt.gettext('Date') %></th>
+      <th><%= gt.gettext('Feedback channel') %></th>
+      <th><%= gt.gettext('Feedback') %></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% questionData.chart.forEach(function(feedback) { %>
+      <% if(feedback.hidden === true) { return } %>
+      <tr>
+        <td><%= feedback.createdAt %></td>
+        <td><%= feedback.channel %></td>
+        <td><%= feedback.text %></td>
+      </tr>
+    <% }) %>
+  </tbody>
+</table>

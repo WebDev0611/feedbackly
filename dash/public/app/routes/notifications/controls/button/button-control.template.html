@@ -1,0 +1,21 @@
+<div class="row text-center" >
+  <h6>{{ buttonControl.question.heading[buttonControl.displayLanguage] }}</h6>
+
+  <div class="button-nps-container inline text-center {{buttonControl.qtype=='NPS' ? 'nps' : ''}}" ng-repeat="val in buttonControl.choices">
+
+    <img ng-if="buttonControl.qtype=='Button'" ng-src="{{buttonControl.Buttons.buttonValueToImage(val)}}" style="max-width: 100%"/>
+    <div ng-if="buttonControl.qtype=='NPS'"><div class="nps-thumb">{{ val * 10 }}</div></div>
+    <div ng-if="buttonControl.qtype=='Word'">{{ buttonControl.getElById(val).text[buttonControl.displayLanguage] }}</div>
+    <div ng-if="buttonControl.qtype=='Image'">
+      <img ng-src="{{buttonControl.getElById(val).url}}" style="max-width: 100%" />
+      {{ buttonControl.getElById(val).text[buttonControl.displayLanguage] }}
+    </div>
+
+    <p>
+      <input type="checkbox" id="{{buttonControl.question._id}}-{{val}}" ng-model="buttonControl.selections[val]" ng-change="buttonControl.onValueChange()"/>
+      <label for="{{buttonControl.question._id}}-{{val}}" style="padding-left: 20px"></label>
+    </p>
+  </div>
+
+
+</div>

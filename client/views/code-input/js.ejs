@@ -1,0 +1,107 @@
+<script>
+
+function validateCode(code){
+  hideErrors();
+  $.post('/code/validate', {code: code})
+  .then(res => {
+    if(res.redirect_url && res.redirect_url.length > 0){
+      window.location.href = res.redirect_url;
+    }
+
+    if(res.setupNeeded){
+      $(".code-input").hide()
+      $(".pin-input").show()
+    }
+
+    if(res.invalidCode){
+      invalidCode()
+    }
+  }, err => {
+    showError(err);
+  })
+}
+
+function validatePin(code, pin){
+  hideErrors();
+  $.post('/pin/validate', {code:code, pin:pin})
+  .then(res => {
+    if(res.validPin && res.surveys && res.upsells){
+      fillSelectWithOpts($(".upsell-select"), res.upsells)
+      fillSelectWithOpts($("#survey"), res.surveys)
+      $(".pin-input").hide()
+      $(".engage-point-setup").show()
+    } else {
+      showError('Pin is not valid or no upsells were found. Make sure you have set up your upsells.')
+    }
+  }, err => {
+    showError(err);
+  })
+}
+
+function fillSelectWithOpts(target, items){
+  var html=""
+  for(i in items){
+    var o = items[i]
+    html+="<option value='"+ o._id +"'>"+o.name+"</option>"
+  }
+  target.html(html)
+}
+
+
+
+function submitSetup(){
+  hideErrors();
+  var body = {
+    name: $("#engage-point").val(),
+    survey_id: $("#survey").val(),
+    code: $("#code").val(),
+    pin: $("#pin").val(),
+    alerts: $("#alert-emails").val().split(","),
+    upsells: {
+      positive: $("#positive-upsell").val(),
+      neutral: $("#neutral-upsell").val(),
+      negative: $("#negative-upsell").val()
+    }
+  }
+
+  $.post('/code/setup', body)
+  .then(
+    res => {
+      if(res.redirect_url && res.redirect_url.length > 0){
+        window.location.href = res.redirect_url;
+      }
+    },
+    err => {
+
+    }
+  )
+
+}
+
+function showError(err){
+  if(err.status === 404) $("#not-found").show()
+  console.log(err)
+}
+
+function hideErrors(){
+  $(".errors span").hide()
+}
+
+$("#submit-code").click(function(){
+  var code = $("#code").val()
+  validateCode(code)
+})
+
+$("#submit-pin").click(function(){
+  var code = $("#code").val()
+  var pin = $("#pin").val()
+
+  validatePin(code, pin)
+})
+
+$("#submit-setup").click(function(){
+  submitSetup()
+})
+
+
+</script>

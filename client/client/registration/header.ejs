@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta id="viewport" name="viewport" content="initial-scale=1.0,user-scalable=0,minimum-scale=1.0,maximum-scale=1.0,width=device-width, user-scalable=no" />
+	<meta name="apple-mobile-web-app-capable" content="yes">
+
+  <!-- build:css -->
+  <link rel="stylesheet" type="text/css" href="/dist/registration.min.css"/>
+  <!-- endbuild -->
+<link href='https://fonts.googleapis.com/css?family=Merriweather:700italic' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+
+</head>
+
+
+<style>
+  .container{
+    height: 100vh;
+    text-align: center;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 85%;
+    margin: 0 auto;
+  }
+
+  h1{
+    margin: 50px auto 0 auto;
+/*    color: white; */
+  }
+
+  .sqr{
+    display: inline-block;
+  }
+
+  .arrow{
+    display: inline-block;
+  /*  color: hsla(0,0%,100%,.8); */
+
+  }
+
+  .subtitle{
+    font-size: 18px;
+  /*  color: hsla(0,0%,100%,.8); */
+    margin-bottom: 0 !important;
+  }
+
+  body.ipad{
+    background-image: url(/dist/images/scale-bg.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-position-x: 109%;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    background-color: white;
+
+  }
+
+
+  .sqr h1{
+    font-size: 30px;
+    margin: 15px 0;
+  }
+
+  .underline{
+    text-decoration: underline;
+  }
+
+  a{
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .ipad input[type=text]{
+    display: inline-block;
+    width: 400px;
+    margin: 0 auto;
+  }
+
+  #error{
+    color: #EF410A;
+  }
+
+  .hide{
+    opacity: 0;
+  }
+  .confirm{
+    display: none;
+    opacity: 0;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.5);
+    text-align: center;
+    transition: opacity 250ms;
+  }
+
+  .confirm .modal-form{
+    background-color: white;
+    width: 50vw;
+    padding: 2rem;
+    margin: 0 auto;
+    transform: translateY(27vw);
+  }
+
+  .confirm.show{
+    opacity: 1;
+  }
+
+</style>
+
+<body id="bod" class="ipad">
+  <div class="header" style="width: 100%">
+      <img class="feedbackly-logo" src="/dist/images/logos/feedbackly-logo-rgb.png" style="width: 225px; margin-left: 10px; "/>
+  </div>

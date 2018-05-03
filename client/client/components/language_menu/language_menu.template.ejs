@@ -1,0 +1,11 @@
+<div class="language-menu">
+  <%
+    var translationToFlag = {
+      'sv': 'se'
+    };
+  %>
+
+  <% _.forEach(question.translations, function(tr){ %>
+    <span class="flag-icon flag-icon-<%= translationToFlag[tr.language] || tr.language %> flag-icon-round scale-in-start" value="<%= tr.language %>"></span>
+  <% }) %>
+</div>

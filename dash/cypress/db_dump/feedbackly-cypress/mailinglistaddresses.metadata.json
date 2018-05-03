@@ -1,0 +1,1 @@
+{"options":{},"indexes":[{"v":2,"key":{"_id":1},"name":"_id_","ns":"feedbackly-cypress.mailinglistaddresses"},{"v":2,"unique":true,"key":{"mailinglist_id":1,"email":1},"name":"mailinglist_id_1_email_1","ns":"feedbackly-cypress.mailinglistaddresses","background":true}]}

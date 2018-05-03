@@ -1,0 +1,280 @@
+html,
+body,
+#root,
+#root > div {
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+
+}
+
+html,body,#root,#root > div, .card{
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 0.7em;
+  max-width: 7px;
+  position: absolute;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: rgba(0,0,0,.3);
+  box-shadow: 0 0 1px rgba(255,255,255,.5);
+}
+
+body{
+  position: relative;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: overlay;
+  background-color: $background-color;
+  @include radial-gradient(circle at 50% 50%, rgba(255,255,255,1), $background-color);
+  width: 100%;
+  height: 100%;//calc(100% + 15px);
+  font-size: 9px;
+  @include breakpointmin($medium){
+    font-size: 12px;
+
+  }
+  @include breakpointmin($tablet-p){
+    font-size: 14px;
+  }
+  @include breakpointmin($tablet-l){
+    font-size: 16px;
+  }
+  @include breakpointmin($desktop){
+    
+  }
+}
+
+body.plugin-view{
+  background-color: white;
+  background-image: none;
+}
+  
+
+#root {
+  opacity: 0;
+  transition: 0.5s;
+  letter-spacing: 0.2em;
+
+  &.ready {
+    opacity: 1;
+    transition: 0.5s;
+  }
+}
+
+@include when-ipad() {
+  overflow: hidden;
+  position: relative;
+}
+
+.colored-view {
+  &.turquoise-view {
+    @include view-background($turquoise-dark);
+  }
+
+  &.green-view {
+    @include view-background($green-dark);
+  }
+
+  &.yellow-view {
+    @include view-background($yellow-dark);
+  }
+
+  &.orange-view {
+    @include view-background($orange-dark);
+  }
+
+  &.red-view {
+    @include view-background($red-dark);
+  }
+}
+
+#image-loader {
+  position: absolute;
+  top: -10px;
+  visibility: hidden;
+
+  img {
+    top: 0px;
+    left: 0px;
+    height: 10px;
+    width: auto;
+    position: absolute;
+  }
+}
+
+#root > div{
+  font-family: $base-font-family;
+  letter-spacing: 0.2em;
+  color: $gray-dark;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.btn-no-style {
+  background-color: transparent;
+  padding: 0px;
+  border: 0px none;
+  font-family: Montserrat;
+}
+
+a.btn-no-style {
+  text-decoration: none;
+  letter-spacing: 0;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+
+h1, h2, h3, h4, h5, h6{
+  font-family: 'Merriweather', serif;
+  font-style: italic;
+  font-weight: 700;
+  color: $turquoise-light;
+  margin: 0px;
+}
+
+h1{
+  font-size: 1.65em;
+}
+
+h3{
+  font-size: 1.09em;
+}
+
+
+.divider {
+  border-bottom: 1px solid $gray-light;
+  width: 100%;
+  height: 1px;
+  margin: 15px 0px;
+}
+
+.text-yellow {
+  color: $yellow-light;
+}
+
+.text-turquoise {
+  color: $turquoise-light;
+}
+
+.text-green {
+  color: $green-light;
+}
+
+.text-orange {
+  color: $orange-light;
+}
+
+.text-red {
+  color: $red-light;
+}
+
+.section {
+  margin-bottom: 15px;
+
+  &:last-child {
+    margin: 0px;
+  }
+}
+
+textarea {
+  width: 100%;
+}
+
+textarea,
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+  font-family: $base-font-family;
+  color: $gray-dark;
+  box-sizing: border-box;
+  background-color: white;
+  border: 1px solid $gray-dark;
+  text-align: center;
+  box-shadow: none;
+  -webkit-appearance: none;
+  border-radius: 0px;
+  resize: none;
+  outline: none;
+  margin: 0 auto;
+
+  padding: 0.9em;
+  font-size: 1.1em;
+
+}
+
+@include when-plugin{
+  textarea, input[type="text"], input[type="email"], input[type="tel"] {
+    padding: 0.9em;
+    max-width: 90%;
+  }
+
+  .form-group{
+    padding-left: 5%;
+  }
+}
+
+button {
+  cursor: pointer;
+  outline: none;
+}
+
+.form-group {
+  text-align: left;
+  margin-bottom: 15px;  
+}
+
+.btn {
+  border: 0px none;
+  font-family: $base-font-family;
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+  box-sizing: border-box;
+  background-color: $turquoise-light;
+
+  font-size: 1.1em;
+  min-width: 13em;
+  padding: 0.8em;
+
+  &:active {
+    background-color: darken($turquoise-light, 10%);
+  }
+}
+
+.fade-enter,
+.fade-leave {
+  transition: 0.5s;
+}
+
+.fade-enter {
+  opacity: 0;
+}
+
+.fade-enter-active {
+  opacity: 1;
+}
+
+.fade-leave {
+  opacity: 1;
+}
+
+.fade-leave-active {
+  opacity: 0;
+}

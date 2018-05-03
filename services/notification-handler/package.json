@@ -1,0 +1,32 @@
+{
+  "name": "notification-handler",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "NODE_ENV=test ./node_modules/.bin/mocha --reporter spec"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@sendgrid/mail": "^6.1.4",
+    "bee-queue": "^1.1.0",
+    "bluebird": "^3.4.6",
+    "body-parser": "^1.18.2",
+    "chai": "^3.5.0",
+    "chai-as-promised": "^6.0.0",
+    "crypto": "0.0.3",
+    "dotenv": "^4.0.0",
+    "express": "^4.16.2",
+    "express-mongo-db": "^2.0.3",
+    "forever": "^0.15.3",
+    "lodash": "^4.17.4",
+    "mocha": "^3.1.2",
+    "moment": "^2.17.1",
+    "mongodb": "^2.2.11",
+    "mongoose": "^4.8.3",
+    "nodemon": "^1.11.0",
+    "redis": "^2.6.3",
+    "sendgrid": "^4.8.2"
+  }
+}

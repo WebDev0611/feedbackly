@@ -1,0 +1,39 @@
+<div class="results-legend">
+
+  <div ng-repeat="value in resultLegend.legend | limitTo: resultLegend.displayLimit track by value.trackId" class="left" ng-if="::(resultLegend.canBeFiltered)">
+    <div ng-style="value.style" class="left result-total chip cursor-pointer" ng-click="resultLegend.toggleFeedbackFilter(value)" data-position="top" data-delay="100" data-tooltip="{{ (value.isFiltered ? 'Remove feedback filter' : 'Add a feedback filter') | translate }}" tooltipped>
+      <div ng-switch on="resultLegend.question.question_type">
+        <div ng-switch-when="Button">
+          <div class="{{::resultLegend.buttonValueToClass(value.id)}}"></div>{{::value.value}}
+        </div>
+
+        <div ng-switch-when="Image">
+          <div class="image-thumb" style="background-image:url({{::resultLegend.getImageUrl(value.id)}})"></div>{{::value.value}}{{::resultLegend.suffix}}
+        </div>
+
+        <div ng-switch-when="Word">
+          <span class="truncate">{{::value.name}}</span> {{::value.value}}
+        </div>
+
+        <div ng-switch-when="NPS">
+          <div class="nps-thumb">{{::(value.name * 10)}}</div>{{::value.value}}
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <button class="btn-floating waves-effect waves-light left" ng-click="resultLegend.showAll()" ng-if="resultLegend.displayLimit < resultLegend.totals.length">
+    <i class="material-icons">add</i>
+  </button>
+
+  <div ng-if="resultLegend.question.question_type === 'Slider'">
+    <div ng-repeat="value in resultLegend.totals | limitTo: resultLegend.displayLimit" style="border-right: 3px solid {{::resultLegend.getColor(value.name)}}" class="left result-total chip" data-position="top" data-delay="100" data-tooltip="{{value.name}}" tooltipped>
+      <span class="truncate">{{::value.name}}</span> {{::value.average}} ({{::value.value}})
+    </div>
+
+    <button class="btn-floating waves-effect waves-light" ng-click="resultLegend.showAll()" ng-if="resultLegend.displayLimit < resultLegend.totals.length">
+      <i class="material-icons">add</i>
+    </button>
+  </div>
+
+</div>

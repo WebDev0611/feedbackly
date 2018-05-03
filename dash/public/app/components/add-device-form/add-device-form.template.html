@@ -1,0 +1,10 @@
+<loader loading="deviceForm.processing"></loader>
+
+<form name="form" ng-submit="deviceForm.save(form.$valid)" ng-if="!deviceForm.processing" novalidate>
+  <div input-field ng-class="{ 'input-field-error': form.name.$invalid && form.name.$dirty }">
+    <input type="text" name="name" ng-model="deviceForm.newDevice.name" required ng-minlength="1">
+    <label translate>Name</label>
+  </div>
+
+  <button class="waves-effect waves-light btn" type="submit" ng-disabled="form.$invalid" translate>Add</button>
+</form>

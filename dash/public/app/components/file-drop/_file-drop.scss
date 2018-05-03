@@ -1,0 +1,27 @@
+.file-drop {
+  color: $grey;
+  padding: 30px;
+  font-size: 1.3em;
+  width: 100%;
+  max-width: 450px;
+  border: 2px dashed lighten($grey, 20%);
+  border-radius: 4px;
+  text-align: center;
+  position: relative;
+
+  a.remove-file {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    display: none;
+  }
+
+  &.file-drop-has-files {
+    border-color: $primary-color;
+    color: $primary-color;
+
+    a.remove-file {
+      display: inline-block;
+    }
+  }
+}

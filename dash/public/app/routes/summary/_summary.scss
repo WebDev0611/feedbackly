@@ -1,0 +1,90 @@
+#summary-header .card{
+  font-size: 12.5px;
+}
+
+#summary-date-selection {
+  @include clearfix;
+
+  select {
+    max-width: 200px;
+  }
+}
+
+.summary-highlight {
+  h5 {
+    font-size: 1.2em;
+  }
+
+  .summary-highlight-value {
+    font-size: 1.9em;
+    margin: 0px !important;
+  }
+}
+
+#summary-header {
+  .card {
+    height: 150px;
+    position: relative;
+
+    small {
+      font-size: 0.7em;
+    }
+
+    .background-icon {
+      position: absolute;
+      font-size: 60px;
+      opacity: 0.1;
+      bottom: 10px;
+      right: 10px;
+      pointer-events: none;
+    }
+
+    &.white-text {
+      .background-icon {
+        opacity: 0.3;
+      }
+    }
+  }
+}
+
+#summary-spotlights, #summary-top-channels {
+  &.height-auto {
+    height: auto !important;
+  }
+
+  height: 510px;
+
+  @media(max-width: 993px) {
+    height: auto;
+  }
+}
+
+
+#no-feedback{
+  width: 97%;
+  padding: 20px;
+   height: 100vh;
+   position: fixed;
+   background: rgba(0,0,0,0.6);
+   z-index: 100;
+   top: 0;
+   @include display(flex);
+   @include justify-content(center);
+   @include flex-direction(column);
+   color: white;
+   text-align: center;
+   margin-left: -15px;
+
+   h2{
+     font-family: 'Merriweather', serif;
+     margin: 0 auto;
+   }
+
+   div{
+     margin-top: 20px;
+   }
+
+   .btn{
+     margin: 10px;
+   }
+}

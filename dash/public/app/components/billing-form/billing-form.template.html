@@ -1,0 +1,52 @@
+<loader loading="billing.processing"></loader>
+
+<div ng-if="!billing.processing">
+  <form ng-submit="billing.save(billingForm.$valid)" name="billingForm" novalidate>
+
+    <div input-field ng-class="{ 'input-field-error': billingForm.fullName.$invalid && billingForm.fullName.$dirty }">
+      <input type="text" ng-model="billing.billingInformation.fullName" name="fullName" ng-minlength="2" required>
+      <label translate>Full name</label>
+    </div>
+
+    <div input-field ng-class="{ 'input-field-error': billingForm.address.$invalid && billingForm.address.$dirty }">
+      <input type="text" ng-model="billing.billingDetails.address_line1" name="address" ng-minlength="2" required>
+      <label translate>Address</label>
+    </div>
+
+    <div input-field ng-class="{ 'input-field-error': billingForm.city.$invalid && billingForm.city.$dirty }">
+      <input type="text" ng-model="billing.billingDetails.address_city" name="city" ng-minlength="2" required>
+      <label translate>City</label>
+    </div>
+
+    <div input-field ng-class="{ 'input-field-error': billingForm.postal.$invalid && billingForm.postal.$dirty }">
+      <input type="text" name="postal" ng-minlength="2" required ng-model="billing.billingDetails.address_zip">
+      <label translate>Postal code</label>
+    </div>
+
+    <country-select on-select-country="billing.onSelectCountry(country)" country="billing.billingDetails.address_country"></country-select>
+
+    <div ng-if="billing.isInEU === true && billing.billingDetails.address_country !== undefined">
+      <div input-field ng-class="{ 'input-field-error': billingForm.taxId.$invalid && billingForm.taxId.$dirty }">
+        <input type="text" name="taxId" ng-model="billing.billingInformation.billing_tax_id" required ng-minlength="2">
+        <label translate>VAT identification number</label>
+      </div>
+    </div>
+
+    <div input-field ng-class="{ 'input-field-error': billingForm.cardNumber.$invalid && billingForm.cardNumber.$dirty }">
+      <input type="text" ng-model="billing.billingInformation.cardNumber" name="cardNumber" length="20" maxlength="20" required>
+      <label translate>Card number</label>
+    </div>
+
+    <div input-field ng-class="{ 'input-field-error': billingForm.cvc.$invalid && billingForm.cvc.$dirty }">
+      <input type="text" ng-model="billing.billingInformation.cvc" name="cvc" length="4" maxlength="4" required ng-minlength="3">
+      <label>CVC</label>
+    </div>
+
+    <div input-field ng-class="{ 'input-field-error': billingForm.expiration.$invalid && billingForm.expiration.$dirty }">
+      <input type="text" ng-model="billing.billingInformation.expiration" name="expiration" length="7" maxlength="7" ng-minlength="4" ng-pattern="billing.expirationRegexp" required>
+      <label translate>Expiration (MM/YYYY)</label>
+    </div>
+
+    <button class="btn waves-effect waves-light" type="submit" ng-disabled="billingForm.$invalid || !billing.billingDetails.address_country" translate>Save</button>
+  </form>
+</div>

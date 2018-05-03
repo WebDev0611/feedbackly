@@ -1,0 +1,135 @@
+
+.ipad.keyboard-open hr{
+  margin-bottom: 20px;
+}
+
+.ipad .input-box{
+  display: block;
+}
+
+.mobile .question-type-contact{
+  .flexbox-container-column{
+      justify-content: center;
+  }
+}
+
+.question-type-contact{
+  text-align: center;
+
+  .input{
+    .input-box{
+      width: 40vw;
+      margin: 4px auto;
+    }
+
+    svg.arrow{
+      width: 45px;
+      display: none;
+    }
+
+    .skip{
+      display: none;
+    }
+
+  }
+
+  .check-group{
+    margin: 0 auto;
+    text-align: left;
+
+    svg.checkbox{
+      background-color: white;
+      width: 50px;
+      margin-left: 1px;
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    .label{
+      display: inline-block;
+      max-width: 70%;
+      vertical-align: middle;
+    }
+  }
+}
+
+.web .checkbox, .mobile .checkbox{
+  width: 30px !important;
+}
+
+.mobile .check-group{
+  width: 90%;
+  max-width: 300px;
+}
+
+.web .check-group{
+  max-width: 330px;
+  font-size: 11px;
+}
+
+.ipad .check-group{
+  width: 45vw;
+}
+
+.web .question-type-contact button{
+  margin-top: 25px;
+}
+
+.keyboard-open{
+  .flexbox-container-column{
+    justify-content: center !important;
+  }
+}
+
+.keyboard-open .question-type-contact{
+  .input-box, .check-group{
+    display: inline-block !important;
+  }
+
+  .input-box{
+    padding-right: 58px;
+  }
+  .input-text{
+    display: inline-block;
+    position: relative;
+    padding-right: 15px;
+  }
+
+  svg.arrow{
+    display: inline-block !important;
+    position: absolute;
+    right: 20px;
+    top: 15px;
+  }
+
+  .arrow.previous{
+    @include transform(rotate(-180deg));
+  }
+
+  .pad{
+    position: absolute;
+    width: 5000px;
+    text-align: left;
+    transform: translateX(280px);
+    @include display(flex);
+  }
+
+  .animate{
+    transition-property: transform;
+    transition-duration: 300ms;
+  }
+
+  .skip{
+    display: inline-block;
+    margin-top: 110px;
+    background-color: inherit;
+  }
+
+  .check-group{
+    position: relative;
+    margin: 0;
+    top: 10px;
+
+  }
+
+}

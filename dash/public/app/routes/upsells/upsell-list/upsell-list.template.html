@@ -1,0 +1,123 @@
+<div class="row body-wrapper">
+	<div class="card" ng-if="upsellList.upsellEnabled()">
+		<div class="card-content">
+			<span class="card-title" translate>Upsell offers</span>
+				<div class="pull-right" style="margin-bottom: 10px">
+					<a class="waves-effect btn" ui-sref="upsells-new">
+						<i class="material-icons left">add</i>
+						<span translate>Create a new upsell offer</span>
+					</a>
+				</div>
+
+	<table class="bordered" id="upsell-table">
+		<tbody>
+			<tr ng-repeat="upsell in upsellList.upsells">
+				<td>{{upsell.name}}</td>
+				<td><a href="#channel-tree" ng-click="upsellList.assignUpsells(upsell._id)" modal  translate>Assign to engage points</a></td>
+				<td><a ui-sref="upsells-edit({id: upsell._id})" href="#" translate>Edit</a></td>
+				<td><a href="#confirm-modal" ng-click="upsellList.deleteUpsellConfirm(upsell._id)" modal class="text-gray-dark">
+					<i class="material-icons">delete</i>
+				</a></td>
+			</tr>
+			<tr ng-if="!upsellList.upsells.length">
+				<td><i translate>No upsell templates added</i></td>
+			</tr>
+		</tbody>
+	</table>
+
+	<div id="channel-tree" class="modal modal-fixed-footer">
+		<div class="modal-content">
+			<div class="text-center">
+				<span translate>Assign as</SPAN>
+
+				 <input ng-change="upsellList.onUpsellSelectionChange()" ng-model="upsellList.channelTreeAssignAs" value="negative" class="with-gap" name="group1" type="radio" id="negative" />
+				 <label for="negative" translate>Negative</label>
+
+				 <input ng-change="upsellList.onUpsellSelectionChange()" ng-model="upsellList.channelTreeAssignAs" value="neutral" class="with-gap" name="group1" type="radio" id="neutral" />
+				 <label for="neutral" translate>Neutral</label>
+
+				 <input ng-change="upsellList.onUpsellSelectionChange()" ng-model="upsellList.channelTreeAssignAs" value="positive" class="with-gap" name="group1" type="radio" id="positive"  />
+				 <label for="positive" translate>Positive</label>
+			 <span translate>upsell</span>
+
+		 </div>
+
+			<channel-tree
+			ng-if="upsellList.activeUpsells[upsellList.channelTreeAssignAs]"
+			channels="upsellList.channelTree"
+			active-channels="upsellList.activeUpsells[upsellList.channelTreeAssignAs]"
+			on-change="upsellList.onChannelsChange(channels)"
+			on-activations-change="upsellList.onActivationsChange(activations)"
+
+			></channel-tree>
+
+		</div>
+		<div class="modal-footer">
+			<div style="float:left;font-size:12px;line-height:50px" translate>Note: De-selecting engage points will remove the upsell offers from them.</div>
+			<button ng-click="upsellList.activateUpsell()" class=" modal-action modal-close btn-flat text-turquoise-dark" translate>Activate</button>
+			<button class=" modal-action modal-close btn-flat" translate>Cancel</button>
+		</div>
+	</div>
+</div>
+
+	<div id="confirm-modal" class="modal">
+    <div class="modal-content">
+      <p translate>Are you sure you want to delete the upsell offer?</p>
+    </div>
+    <div class="modal-footer">
+      <a href="#" class=" modal-action modal-close btn-flat" ng-click="upsellList.deleteUpsell(true, $event)" translate>Yes</a>
+			<a href="#" class=" modal-action modal-close btn-flat" ng-click="upsellList.deleteUpsell(false, $event)" translate>No</a>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+
+<div class="card" ng-if="upsellList.upsellEnabled() === false">
+	<div class="card-content">
+	<div class="card-title" translate>BOOST SALES INSTANTLY WITH FEEDBACK-BASED UPSELL</div>
+
+	<div class="row" style="margin-top: 15px">
+	<div class="col s12">
+		<div class="col m4"><h6 translate>Create Upsell Offers</h6></div>
+		<div class="col m4"><h6 translate>Automate Based on Feedback</h6></div>
+		<div class="col m4"><h6 translate>Instant offers and emails</h6></div>
+	</div>
+	<div class="col s12">
+		<img src="/images/upsell_teaser.png" style="max-width: 100%"/>
+		<p translate>
+			Automate instant upsell offers based on the feedback your customer gives. With Feedbackly-sponsored iPhone competition you can collect emails and use feeling-based instant upsell to grow your sales through feedback.
+			Pricing based on %-commission on additional sales created.
+		</p>
+		<p class="text-center">
+			<h6 translate>GET STARTED</h6>
+			<br>
+
+<div class="row">
+<div class="col s6">
+	<a class="btn" href="https://app.hubspot.com/meetings/joonatan130" target="_blank" translate>
+		Book time with our expert
+	</a>
+</div>
+
+<div class="col s6">
+	<a class="btn-flat text-turquoise-dark"
+	target="_blank" translate
+	href="https://feedbacklyhelp.zendesk.com/hc/en-us/categories/115000215469-Upsell"> Learn more at our Knowledge Base</a>
+</div>
+</div>
+
+
+
+			<h6 translate>Call or e-mail</h6>
+			joonatan@feedbackly.com<br>
+			+358 4074 555 34<br>
+		</p>
+	</div>
+</div>
+</div>
+
+</div>
+
+</div>

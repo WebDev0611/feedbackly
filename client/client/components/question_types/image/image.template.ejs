@@ -1,0 +1,61 @@
+<div class="question-type question-type-image" question-id="<%= question._id %>">
+  <% include ./../../language_menu/language_menu.template.ejs %>
+
+  <div class="question-inner flexbox-container-column">
+
+    <% if(isKiasmaSurvey) { %>
+      <div style="display: none;">
+    <% } %>
+
+    <% _.forEach(question.translations, function(translation){ %>
+      <h1 class="title hide lang lang-<%= translation.language %>">
+          <span>
+             <%= translation.heading %>
+          </span>
+      </h1>
+    <% }) %>
+
+      <hr>
+
+      <div class="subtitle">
+        <% _.forEach(question.translations, function(translation){ %>
+          <span class="hide lang lang-<%= translation.language %>">
+             <%= translation.subtitle %>
+          </span>
+        <% }) %>
+      </div>
+
+    <% if(isKiasmaSurvey) { %>
+      </div>
+    <% } %>
+      <% var data = _.reject(question.translations[0].data, 'hidden'); %>
+      
+      <div class="input <%= data.length > 8 ? 'multi-row' : 'single-row' %> ">
+        <% _.forEach(data, function(image, i){ %>
+
+
+          <div class="image <%= data.length > 8 ? 'multi-row' : 'single-row' %> image-col-<%= data.length %>">
+          <img class="scale-in-start image-container"
+               value="<%= image.id %>"
+               src="<%= image.data.url %>"
+               logic="<%= _.get(survey, 'properties.logic.' + question._id + '.' + image.id) %>"
+          />
+          <% if(_.get(question, 'opts.show_labels') === true) { %>
+            <% _.forEach(question.translations, function(translation){ %>
+              <% var tr = _.find(translation.data, {id: image.id}); %>
+                <div class="image-container-label hide lang lang-<%= translation.language %>">
+                  <span>
+                  <%= tr.data.label %>
+                  </span>
+                </div>
+             <% }) %>
+          <% } %>
+        </div>
+      <% }) %>
+
+    </div>
+    <% include ./../../privacy-policy/open %>
+
+</div>
+
+</div>

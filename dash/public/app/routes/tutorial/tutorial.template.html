@@ -1,0 +1,69 @@
+<div class="tutorial tutorial-full transparent" ng-class="{'opaque': tutorial.phaseNumber > 0}">
+  <div class="row">
+    <div class="title text-turquoise-dark" style="margin-bottom: 10px" ng-switch="tutorial.phaseNumber">
+        <span ng-switch-when="0" translate>Welcome to Feedbackly!</span>
+        <span ng-switch-when="1" translate>1. Create a survey</span>
+        <span ng-switch-when="2" translate>2. Choose how to collect data</span>
+        <span ng-switch-when="3" translate>3. Set up your channels</span>
+        <span ng-switch-when="4" translate>3. Set up your channels</span>
+        <span ng-switch-when="5" translate>4. Time to publish!</span>
+        <span ng-switch-when="6" translate>5. Analyzing results</span>
+        <span ng-switch-when="7" translate>Awesome!</span>
+    </div>
+
+    <div class="row" ng-if="tutorial.phaseNumber < 2">
+      <h6 translate>Get started in just a few easy steps!</h6>
+    </div>
+
+    <div class="row">
+      <div class="col s-hidden m2">&nbsp;</div>
+      <div class="col s12 m8 image-container animate">
+          <img ng-repeat="i in tutorial.imageUrls track by $index"
+          ng-show="tutorial.phaseNumber === $index" ng-src="{{i}}"/>
+      </div>
+      <div class="col s1-hidden m2">&nbsp;</div>
+
+
+    </div>
+
+    <div class="row">
+      <div class="col s-hidden m2">
+        &nbsp;
+          <a href class="btn-large btn-floating waves-effect waves-light" ng-click="tutorial.backward()"
+          ng-show="tutorial.phaseNumber > 1">
+            <i class="material-icons">arrow_back</i>
+          </a>
+      </div>
+
+      <div class="col s12 m8 text-container animate">
+          <div class="phase-text" ng-show="tutorial.phaseNumber === 1 || tutorial.phaseNumber === 0"><ng-include src="'/app/routes/tutorial/phases/phase1.html'" /></div>
+          <div class="phase-text" ng-show="tutorial.phaseNumber === 2 || tutorial.phaseNumber === 0"><ng-include src="'/app/routes/tutorial/phases/phase2.html'" /></div>
+          <div class="phase-text" ng-show="tutorial.phaseNumber === 3 || tutorial.phaseNumber === 0"><ng-include src="'/app/routes/tutorial/phases/phase3.html'" /></div>
+          <div class="phase-text" ng-show="tutorial.phaseNumber === 4 || tutorial.phaseNumber === 0"><ng-include src="'/app/routes/tutorial/phases/phase4.html'" /></div>
+          <div class="phase-text" ng-show="tutorial.phaseNumber === 5 || tutorial.phaseNumber === 0"><ng-include src="'/app/routes/tutorial/phases/phase5.html'" /></div>
+          <div class="phase-text" ng-show="tutorial.phaseNumber === 6 || tutorial.phaseNumber === 0"><ng-include src="'/app/routes/tutorial/phases/phase6.html'" /></div>
+          <div class="phase-text" ng-show="tutorial.phaseNumber === 7 || tutorial.phaseNumber === 0"><ng-include src="'/app/routes/tutorial/phases/phase7.html'" /></div>
+
+&nbsp;
+      </div>
+      <div class="col s-hidden s2">&nbsp;
+        <a href class="btn-large btn-floating waves-effect waves-light" ng-click="tutorial.forward()"
+        ng-show="tutorial.phaseNumber < tutorial.imageUrls.length-1">
+
+          <i class="material-icons">arrow_forward</i>
+        </a>
+      </div>
+    </div>
+    <div class="row col s12 m-hidden l-hidden">
+      <a href class="btn-large btn-floating waves-effect waves-light pull-left" ng-click="tutorial.backward()"
+              ng-show="tutorial.phaseNumber > 1">
+        <i class="material-icons">arrow_back</i>
+      </a>
+
+      <a href class="btn-large btn-floating waves-effect waves-light pull-right" ng-click="tutorial.forward()"
+         ng-show="tutorial.phaseNumber < tutorial.imageUrls.length-1">
+        <i class="material-icons">arrow_forward</i>
+      </a>
+    </div>
+  </div>
+</div>

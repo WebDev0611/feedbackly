@@ -1,0 +1,170 @@
+worker_processes 1;
+
+events { worker_connections 1024; }
+
+http {
+
+    sendfile on;
+    client_max_body_size 10M;
+
+    gzip              on;
+    gzip_http_version 1.0;
+    gzip_proxied      any;
+    gzip_min_length   500;
+    gzip_disable      "MSIE [1-6]\.";
+    gzip_types        text/plain text/xml text/css
+                      text/comma-separated-values
+                      text/javascript
+                      application/x-javascript
+                      application/atom+xml;
+
+
+   ssl_certificate /etc/ssl/feedbackly.com.NEW.crt;
+   ssl_certificate_key /etc/ssl/feedbackly.com.NEW.key;
+   ssl_protocols       TLSv1 TLSv1.1 TLSv1.2;
+   ssl_ciphers         HIGH:!aNULL:!MD5;
+   ssl_session_cache   shared:SSL:10m;
+   ssl_session_timeout 10m;
+
+
+
+    # Default server
+    server {
+      listen 80;
+      server_name dash.feedbackly.com dash-test853.feedbackly.com client.feedbackly.com survey.feedbackly.com survey-test853.feedbackly.com test853.fbly.io api.feedbackly.com api-test853.feedbackly.com barcode.feedbackly.com barcode-test853.feedbackly.com status.feedbackly.com status-test853.feedbackly.com mx.feedbackly.com fi.feedbackly.com dk.feedbackly.com se.feedbackly.com www.feedbackly.com;
+    	return 301 https://$host$request_uri;
+    }
+
+    server{
+      listen 80;
+      server_name www.tapin.fi tapin.fi;
+      return 301 https://www.feedbackly.com$request_uri;
+    }
+
+    server {
+      listen 80;
+      server_name fbly.io test.fbly.io ipad.tapin.fi;
+      return 301 https://survey.feedbackly.com$request_uri;
+    }
+
+    server {
+      listen 80;
+      server_name fby.io;
+      location / {
+        proxy_pass                          http://tinylinkproxy;
+        proxy_set_header  Host              $http_host;   # required for docker client's sake
+        proxy_set_header  X-Real-IP         $remote_addr; # pass on real client's IP
+        proxy_set_header  X-Forwarded-For   $proxy_add_x_forwarded_for;
+        proxy_set_header  X-Forwarded-Proto $scheme;
+        proxy_read_timeout                  900;
+        proxy_redirect     off;
+      }
+    }
+
+
+    # DASH
+
+    server {
+      listen 443 ssl;
+      server_name dash.feedbackly.com kube-prod-dash.feedbackly.com;
+      location / {
+        proxy_pass                          http://dash;
+        proxy_set_header  Host              $http_host;   # required for docker client's sake
+        proxy_set_header  X-Real-IP         $remote_addr; # pass on real client's IP
+        proxy_set_header  X-Forwarded-For   $proxy_add_x_forwarded_for;
+        proxy_set_header  X-Forwarded-Proto $scheme;
+        proxy_read_timeout                  900;
+        proxy_redirect     off;
+      }
+    }
+
+    server {
+      listen 443 ssl;
+      server_name client.feedbackly.com survey.feedbackly.com kube-prod-survey.feedbackly.com;
+
+      location / {
+        proxy_pass                          http://client;
+        proxy_set_header  Host              $http_host;   # required for docker client's sake
+        proxy_set_header  X-Real-IP         $remote_addr; # pass on real client's IP
+        proxy_set_header  X-Forwarded-For   $proxy_add_x_forwarded_for;
+        proxy_set_header  X-Forwarded-Proto $scheme;
+        proxy_read_timeout                  900;
+        proxy_redirect     off;
+      }
+    }
+
+    server {
+      listen 443 ssl;
+      server_name api.feedbackly.com kube-prod-api.feedbackly.com;
+
+      location / {
+        proxy_pass                          http://api;
+        proxy_set_header  Host              $http_host;   # required for docker client's sake
+        proxy_set_header  X-Real-IP         $remote_addr; # pass on real client's IP
+        proxy_set_header  X-Forwarded-For   $proxy_add_x_forwarded_for;
+        proxy_set_header  X-Forwarded-Proto $scheme;
+        proxy_read_timeout                  900;
+        proxy_redirect     off;
+      }
+    }
+
+    server {
+      listen 443 ssl;
+      server_name barcode.feedbackly.com kube-prod-barcode.feedbackly.com;
+
+      location / {
+        proxy_pass                          http://barcode;
+        proxy_set_header  Host              $http_host;   # required for docker client's sake
+        proxy_set_header  X-Real-IP         $remote_addr; # pass on real client's IP
+        proxy_set_header  X-Forwarded-For   $proxy_add_x_forwarded_for;
+        proxy_set_header  X-Forwarded-Proto $scheme;
+        proxy_read_timeout                  900;
+        proxy_redirect     off;
+      }
+    }
+
+
+    server {
+      listen 443 ssl;
+      server_name status.feedbackly.com kube-prod-status.feedbackly.com;
+
+      location / {
+        proxy_pass                          http://healthchecks;
+        proxy_set_header  Host              $http_host;   # required for docker client's sake
+        proxy_set_header  X-Real-IP         $remote_addr; # pass on real client's IP
+        proxy_set_header  X-Forwarded-For   $proxy_add_x_forwarded_for;
+        proxy_set_header  X-Forwarded-Proto $scheme;
+        proxy_read_timeout                  900;
+        proxy_redirect     off;
+      }
+    }
+
+    server {
+      listen 443 ssl;
+      server_name mx.feedbackly.com fi.feedbackly.com dk.feedbackly.com se.feedbackly.com www.feedbackly.com;
+
+      location / {
+        proxy_pass                          http://site;
+        proxy_set_header  Host              $http_host;   # required for docker client's sake
+        proxy_set_header  X-Real-IP         $remote_addr; # pass on real client's IP
+        proxy_set_header  X-Forwarded-For   $proxy_add_x_forwarded_for;
+        proxy_set_header  X-Forwarded-Proto $scheme;
+        proxy_read_timeout                  900;
+        proxy_redirect     off;
+      }
+    }
+
+    server {
+      listen 9090;
+      location / {
+        proxy_pass                          http://healthchecks/all;
+        proxy_set_header  Host              $http_host;   # required for docker client's sake
+        proxy_set_header  X-Real-IP         $remote_addr; # pass on real client's IP
+        proxy_set_header  X-Forwarded-For   $proxy_add_x_forwarded_for;
+        proxy_set_header  X-Forwarded-Proto $scheme;
+        proxy_read_timeout                  900;
+        proxy_redirect     off;
+      }
+    }
+
+}

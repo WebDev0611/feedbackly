@@ -1,0 +1,27 @@
+<div class="row">
+  <div class="col s12 m12 l12">
+    <search-compact-header filters="results.filters" feedback-filters="results.feedbackFilters" on-validate="results.onValidateTerms(validation)"
+      on-change="results.onFiltersChange(filters)" has-refresh="true" on-submit="results.search()" allow-date-compare="false" show-limit-feedback="results.showLimitFeedback">
+    </search-compact-header>
+    <fbevent-plan-limit-notifier show="results.showPlanFbeventLimit" count="results.fbeventLimit.count" plan-limit="results.fbeventLimit.planLimit"
+      show-upgrade-link="results.currentUser.isOrganizationAdmin">
+    </fbevent-plan-limit-notifier>
+
+    <div class="card" ng-if="results.questions.length === 0">
+      <div class="card-content center-align grey-text no-result">
+        {{ 'No results found' | translate }}.
+      </div>
+    </div>
+
+    <div ng-if="results.questions.length > 0" class="results-main">
+      <div ng-repeat="question in results.questions" class="result-card" ng-if="question.question_type !== 'Upsell'">
+        <base-results question="question" show-all="results.showAll"></base-results>
+      </div>
+    </div>
+  </div>
+</div>
+
+<button class="btn-floating btn-large waves-effect waves-light btn-fixed-bottom-right" ng-class="{ 'disabled': results.printing || results.questions.length === 0 }"
+  ng-click="results.printResults()">
+  <i class="material-icons">print</i>
+</button>

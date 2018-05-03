@@ -1,0 +1,168 @@
+@include keyframes(tapAnimation) {
+  0% {
+    @include transform(scale(1));
+  }
+
+  50% {
+    @include transform(scale(0.6));
+  }
+
+  100% {
+    @include transform(scale(1));
+  }
+}
+
+
+.horizontal-form-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  height: 150px;
+  top: -30px;
+
+  .horizontal-form-container-fade {
+    position: absolute;
+    width: 100px;
+    height: 100%;
+    top: 0px;
+    z-index: 4;
+  }
+
+  .horizontal-form-container-fade-left {
+    left: 0px;
+  //  @include linear-gradient($background-color, fade-out($background-color, 1));
+  }
+
+  .horizontal-form-container-fade-right {
+    right: 0px;
+  //  @include linear-gradient(fade-out($background-color, 1), $background-color);
+  }
+}
+
+.horizontal-form-progress {
+  color: $gray-light;
+  margin-bottom: 15px;
+}
+
+.horizontal-form-wrapper {
+  @include clearfix;
+  position: absolute;
+  transition: 0.25s;
+  margin-bottom: 25px;
+  top: 40px;
+
+  .horizontal-form-item {
+    float: left;
+    box-sizing: border-box;
+    padding: 0px 50px;
+    min-height: 40px;
+    opacity: 0.4;
+    position: relative;
+    top: 0px;
+    left: 0px;
+
+    &:last-child {
+      padding-right: 45px;
+    }
+
+    .horizontal-form-item-layer {
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      position: absolute;
+      z-index: 3;
+    }
+
+    .form-group {
+      margin: 0px;
+    }
+
+    input {
+      width: 100%;
+      text-align: center;
+    }
+
+    .horizontal-form-item-placeholder {
+      color: white;
+      background-color: rgba(0,0,0,.6);
+      position: absolute;
+      left: 50%;
+      top: -35px;
+      @include transform(translateX(-50%));
+      padding: 6px 14px;
+      z-index: 2;
+      text-transform: uppercase;
+      white-space: nowrap;
+      border-radius: 3px;
+
+      &:after {
+        width: 0;
+        height: 0;
+        content: "";
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-top: 10px solid rgba(0,0,0,.6);
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        @include transform(translateX(-50%));
+      }
+    }
+
+    .horizontal-form-item-tutorial {
+      position: absolute;
+      right: 60px;
+      top: 10px;
+      background-color: rgba(0,0,0,.6);
+      border-radius: 50%;
+      color: white;
+      width: 50px;
+      text-align: center;
+      animation-name: tapAnimation;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+
+      i {
+        line-height: 50px;
+        font-size: 36px;
+      }
+    }
+
+    .horizontal-form-item-direction {
+      background-color: $turquoise-light;
+      color: white;
+      height: 40px;
+      border-radius: 100%;
+      border: 0px none;
+      top: 50%;
+      @include transform(translateY(-50%));
+      z-index: 2;
+      position: absolute;
+      padding: 8px;
+
+      &--disabled {
+        background-color: $gray-light;
+
+        &:active {
+          background-color: $gray-light !important;
+        }
+      }
+
+      &:active {
+        background-color: darken($turquoise-light, 10%);
+      }
+
+      &.horizontal-form-item-direction-next {
+        right: 0px;
+      }
+
+      &.horizontal-form-item-direction-previous {
+        left: 0;
+      }
+    }
+
+    &.active {
+      opacity: 1;
+    }
+  }
+}

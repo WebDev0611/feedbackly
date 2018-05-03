@@ -1,0 +1,40 @@
+.flag-container{
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+
+  &.round{
+    border-radius: 100%;
+  }
+
+  &.small{
+    width: 20px;
+  }
+
+  .spacer{
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .flag{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: none;
+    height: 100%;
+
+    $list: al am arabic bg by cn cz de dk ee es fi fo fr gb gr hr hu id il in ir is it jp ke kr kz lt lv mk mn my nl no pk pl pt ro ru se si sk th tr ua vn za;
+
+    @for $i from 1 through length($list) {
+      $c: nth($list, $i);
+      &.flag-#{$c}{
+        left: (-$i)*100%+100%;
+      }
+    }
+  }
+
+
+
+}

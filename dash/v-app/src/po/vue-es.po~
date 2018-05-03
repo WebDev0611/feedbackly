@@ -1,0 +1,1283 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-01-14 18:41+0200\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.3\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: src/components/ChannelInfo.vue:109
+msgid "(leave empty to generate)"
+msgstr ""
+
+#: src/components/ChannelInfo.vue:106
+msgid "Active survey"
+msgstr "Encuesta activa"
+
+#: src/components/Csv.vue:31
+msgid "Add"
+msgstr "Añadir"
+
+#: src/components/UserEdit/UserEdit.vue:125
+msgid "Add API Key for user"
+msgstr ""
+
+#: src/modules/organization/components/SubscriptionPlan.vue:55
+msgid "Add credit card to change plan"
+msgstr ""
+
+#: src/modules/inbox/components/Reply-message.vue:12
+msgid "Add internal note"
+msgstr ""
+
+#: src/modules/inbox/Inbox-details.vue:42
+msgid "Add Note"
+msgstr ""
+
+#: src/components/PluginSettings.vue:63
+msgid "Add this element to your web page and the survey will be embedded to it."
+msgstr ""
+
+#: src/modules/organization/OrganizationUsers.vue:8
+msgid "Add user"
+msgstr "Añadir un usuario"
+
+#: src/modules/organization/UserGroups.vue:18
+msgid "Add user groups"
+msgstr ""
+
+#: src/modules/organization/OrganizationVisualAppearance.vue:8
+msgid "Add your organization logo that will be visible on the survey"
+msgstr ""
+
+#: src/components/PluginSettings.vue:10
+msgid "After"
+msgstr ""
+
+#: src/components/PluginSettings.vue:202
+msgid "All entered URLs need to be visited before triggering"
+msgstr "Todas las URLs necesitan ser visitadas antes de iniciar."
+
+#: src/components/PluginSettings.vue:203
+msgid "All entered URLs need to be visited in order before triggering"
+msgstr "Todas las URLs necesitan ser visitadas en orden antes de iniciar."
+
+#: src/components/UserEdit/UserEdit.vue:150
+msgid "All feedback"
+msgstr "Todos los feedbacks"
+
+#: src/modules/signup/components/Phase2.vue:11
+msgid "All plans include unlimited distribution channels, all available channel types and unlimited surveys."
+msgstr ""
+
+#: src/components/UserEdit/UserEdit.vue:146 src/modules/admin/Users.vue:121
+msgid "Allow create surveys"
+msgstr "Crear encuestas"
+
+#: src/components/PluginSettings.vue:79
+msgid "An URL or partial URL. If it matches, the survey will trigger once all other conditions are fulfilled. eg. \"/products\", \"/products/shoes\""
+msgstr "Una URL o URL parcial. Si coincide, la encuesta se activará una vez que las otras condiciones sean cumplidas."
+
+#: src/components/PluginSettings.vue:201
+msgid "Any entered URL needs to be visited before triggering"
+msgstr "Una URL necesita ser visitada antes de iniciar."
+
+#. Used in 'See the API documentation for more details'
+#: src/components/UserEdit/UserEdit.vue:111
+msgid "API documentation"
+msgstr ""
+
+#: src/components/UserEdit/UserEdit.vue:110
+msgid "API keys are granted on a per-user basis. The resources the key can access are equivalent to user rights"
+msgstr "Las claves API se conceden por usuario. Los recursos que pueden accesar a la clave son equivalentes a los derechos de usuario."
+
+#: src/components/Csv.vue:5
+msgid "Are you going to use metadata?"
+msgstr ""
+
+#: src/components/ChannelgroupsComponent.vue:77
+msgid "Are you sure?"
+msgstr ""
+
+#: src/modules/inbox/InboxTeaser.vue:16
+msgid "Ask your organization administrator to upgrade the organization's subscription to use this feature."
+msgstr ""
+
+#: src/components/ChannelInfo.vue:99
+msgid "Assigned IP address"
+msgstr ""
+
+#. at a date
+#: src/modules/inbox/components/Message.vue:13
+#: src/modules/inbox/components/Processing.vue:12
+msgid "at"
+msgstr ""
+
+#: src/components/UserEdit/UserEdit.vue:143 src/modules/admin/Users.vue:124
+msgid "At least 8 characters"
+msgstr ""
+
+#: src/components/PluginSettings.vue:147
+msgid "Audience"
+msgstr ""
+
+#: src/components/ChannelInfo.vue:108
+msgid "Authorization code"
+msgstr ""
+
+#: src/components/SurveyVisualAppearance/SurveyVisualAppearance.vue:28
+msgid "Background color"
+msgstr "Color de fondo"
+
+#: src/modules/organization/components/BillingInfo.vue:29
+msgid "Billing address"
+msgstr ""
+
+#: src/modules/organization/OrganizationSettings.vue:43
+msgid "Billing address:"
+msgstr ""
+
+#: src/modules/organization/components/BillingInfo.vue:26
+msgid "Billing email"
+msgstr ""
+
+#: src/components/OrganizationCharges.vue:3
+msgid "Billing history"
+msgstr ""
+
+#: src/components/SurveyVisualAppearance/SurveyVisualAppearance.vue:55
+msgid "button"
+msgstr ""
+
+#: src/components/SurveyVisualAppearance/SurveyVisualAppearance.vue:40
+msgid "Button color"
+msgstr "Color de Botón"
+
+#: src/components/SurveyVisualAppearance/SurveyVisualAppearance.vue:44
+msgid "Button text color"
+msgstr "Color de Texto del Botón"
+
+#. by a person
+#: src/modules/inbox/components/Message.vue:11
+msgid "by"
+msgstr ""
+
+#: src/modules/organization/UserGroups.vue:37
+#: src/modules/organization/components/BillingInfo.vue:20
+#: src/modules/organization/components/CreditCardInfo.vue:25
+msgid "Cancel"
+msgstr "Cancelar"
+
+#: src/modules/organization/components/SubscriptionPlan.vue:45
+msgid "Cancel downgrade"
+msgstr ""
+
+#: src/modules/login-signup/LoginSignupResetPassword.vue:13
+msgid "Change password"
+msgstr ""
+
+#: src/components/ChannelInfo.vue:48
+msgid "Channel details"
+msgstr ""
+
+#: src/components/PluginSettings.vue:18
+msgid "Channel settings"
+msgstr ""
+
+#: src/modules/admin/OrganizationDetails.vue:121
+#, fuzzy
+msgid "Channel Specific"
+msgstr "Tipo de canal"
+
+#: src/components/ChannelInfo.vue:97
+msgid "Channel Type"
+msgstr "Tipo de canal"
+
+#: src/components/ChannelgroupsComponent.vue:17
+#: src/modules/admin/Organization.vue:58
+msgid "Channelgroups"
+msgstr ""
+
+#: src/modules/signup/components/Phase2.vue:8
+msgid "Choose a subscription plan"
+msgstr ""
+
+#: src/components/ChannelInfo.vue:81
+msgid "Clear IP address"
+msgstr ""
+
+#: src/modules/signup/components/Phase3.vue:25
+msgid "Click here to log in to Feedbackly"
+msgstr ""
+
+#: src/components/SurveyVisualAppearance/SurveyVisualAppearance.vue:26
+msgid "Color theme"
+msgstr "Tema de Color"
+
+#: src/modules/organization/components/ChangePlanDialog.vue:27
+msgid "Confirm"
+msgstr "Confirmar"
+
+#: src/modules/signup/components/Phase3.vue:14
+msgid "Confirm account creation"
+msgstr ""
+
+#: src/modules/organization/components/ChangePlanDialog.vue:5
+msgid "Confirm plan downgrade"
+msgstr ""
+
+#: src/modules/organization/components/ChangePlanDialog.vue:6
+msgid "Confirm plan downgrade cancellation"
+msgstr ""
+
+#: src/modules/organization/components/ChangePlanDialog.vue:7
+msgid "Confirm plan upgrade"
+msgstr ""
+
+#: src/modules/organization/UserGroups.vue:32
+msgid "Confirm user group removal"
+msgstr ""
+
+#: src/components/PluginSettings.vue:24
+msgid "Corner window"
+msgstr "Ventana de esquina"
+
+#: src/modules/organization/components/BillingInfo.vue:27
+msgid "Country"
+msgstr "País"
+
+#: src/modules/organization/OrganizationSettings.vue:47
+msgid "Country:"
+msgstr "País:"
+
+#: src/modules/admin/Admin.vue:33
+msgid "Create"
+msgstr "Crear"
+
+#: src/modules/admin/Admin.vue:11
+msgid "Create a new organization"
+msgstr ""
+
+#: src/modules/organization/components/CreditCardInfo.vue:4
+msgid "Credit card"
+msgstr ""
+
+#: src/modules/organization/OrganizationSettings.vue:26
+msgid "Credit card:"
+msgstr ""
+
+#: src/modules/organization/components/SubscriptionPlan.vue:9
+#: src/modules/organization/components/SubscriptionPlan.vue:41
+msgid "Current plan"
+msgstr ""
+
+#: src/modules/sms-top-up/SmsTopUp.vue:8
+msgid "Current SMS balance:"
+msgstr ""
+
+#: src/components/UserEdit/UserEdit.vue:139 src/modules/admin/Users.vue:118
+msgid "Dashboard language"
+msgstr "Lenguaje de Tablero"
+
+#: src/components/ChannelgroupsComponent.vue:74
+msgid "Delete Channgelgroup"
+msgstr ""
+
+#: src/components/PluginSettings.vue:78
+msgid "description"
+msgstr "Descripción"
+
+#: src/components/ChannelInfo.vue:110 src/components/InvoiceModal.vue:66
+msgid "Description"
+msgstr "Descripción"
+
+#: src/components/ChannelgroupsComponent.vue:20
+msgid "Description and explanation..."
+msgstr ""
+
+#: src/modules/admin/OrganizationDetails.vue:123
+msgid "Disabled"
+msgstr ""
+
+#: src/components/InvoiceModal.vue:45 src/components/InvoiceModal.vue:46
+msgid "Discount"
+msgstr ""
+
+#: src/components/PluginSettings.vue:78
+msgid "Display only on certain pages"
+msgstr "Mostrar sólo en ciertas páginas."
+
+#: src/components/PluginSettings.vue:165
+msgid "Display when user tries to exit page"
+msgstr "Cuándo el usuario está saliendo de la página."
+
+#: src/components/PluginSettings.vue:204
+msgid "Do not trigger in the entered URLs"
+msgstr ""
+
+#: src/modules/organization/components/SubscriptionPlan.vue:48
+msgid "Downgrade"
+msgstr ""
+
+#: src/modules/organization/components/SubscriptionPlan.vue:46
+msgid "Downgraded"
+msgstr ""
+
+#: src/modules/inbox/Inbox-details.vue:37
+msgid "E-mail Reply"
+msgstr ""
+
+#: src/modules/organization/OrganizationSettings.vue:52
+msgid "Edit Billing info"
+msgstr ""
+
+#: src/components/UserEdit/UserEdit.vue:141 src/modules/admin/Users.vue:119
+#: src/modules/inbox/components/Message.vue:7
+#: src/modules/signup/components/Phase1.vue:40
+msgid "Email"
+msgstr "Email"
+
+#: src/modules/signup/components/Phase1.vue:12
+msgid "Email confirmed. Continue the signup with entering a password."
+msgstr ""
+
+#: src/components/PluginSettings.vue:40
+msgid "Embedded"
+msgstr ""
+
+#: src/components/PluginSettings.vue:62
+msgid "Embedding element"
+msgstr ""
+
+#: src/components/SurveyVisualAppearance/SurveyVisualAppearance.vue:67
+msgid "Enable custom visual appearance"
+msgstr ""
+
+#: src/components/UserEdit/UserEdit.vue:148
+msgid "Enable feedback inbox for user"
+msgstr ""
+
+#: src/modules/admin/OrganizationDetails.vue:122
+msgid "Enabled"
+msgstr ""
+
+#: src/modules/organization/OrganizationSettings.vue:27
+msgid "Ending with"
+msgstr ""
+
+#: src/modules/organization/components/CreditCardInfo.vue:13
+msgid "Enter a credit card number. Entering a new credit card will replace previous ones on file."
+msgstr ""
+
+#: src/modules/login-signup/LoginSignupResetPassword.vue:8
+msgid "Enter a new password for your account"
+msgstr ""
+
+#: src/components/PluginSettings.vue:200
+msgid "Enter an URL or a partial URL"
+msgstr "Nueva URL o URL parcial"
+
+#: src/components/Csv.vue:50
+msgid "Enter field name"
+msgstr ""
+
+#: src/modules/organization/components/BillingInfo.vue:4
+#, fuzzy
+msgid "Enter your billing info"
+msgstr "Rellene sus datos de facturación"
+
+#: src/modules/organization/components/BillingInfo.vue:8
+#, fuzzy
+msgid "Enter your billing info for invoicing purposes"
+msgstr "Rellene sus datos de facturación"
+
+#: src/modules/login-signup/LoginSignupForgot.vue:9
+msgid "Enter your e-mail address and a password reset link will be e-mailed to you."
+msgstr ""
+
+#: src/components/PluginSettings.vue:162
+msgid "Exit intent"
+msgstr ""
+
+#: src/modules/organization/OrganizationSettings.vue:28
+msgid "expires"
+msgstr ""
+
+#: src/modules/admin/OrganizationDetails.vue:31
+#: src/modules/organization/components/SubscriptionPlan.vue:34
+msgid "Features"
+msgstr ""
+
+#: src/modules/inbox/Inbox-details.vue:7 src/modules/inbox/Inbox.vue:14
+msgid "Feedback"
+msgstr "Feedback"
+
+#: src/components/ChannelInfo.vue:100
+msgid "Feedback count"
+msgstr "Cuenta de Feedback"
+
+#: src/components/UserEdit/UserEdit.vue:81
+msgid "Fill inbox with"
+msgstr ""
+
+#: src/components/SurveyVisualAppearance/SurveyVisualAppearance.vue:20
+msgid "Font"
+msgstr ""
+
+#. Used in 'installing the general source code for Feedbackly widget on your site, add the following unique script code for this channel wherever you want to have the triggering rules evaluated and the survey tied to this particular channel triggered. For several surveys, create more channels and place their unique code on the site aswell.'
+#: src/components/PluginSettings.vue:11
+msgid "for Feedbackly widget on your site, add the following unique script code for this channel wherever you want to have the triggering rules evaluated and the survey tied to this particular channel triggered. For several surveys, create more channels and place their unique code on the site aswell."
+msgstr ""
+
+#. Used in'See our Pricing page for further details'
+#: src/modules/signup/components/Phase2.vue:12
+msgid "for further details"
+msgstr ""
+
+#: src/modules/sms-top-up/SmsTopUp.vue:19
+msgid "For invoicing purposes, solutions customers are asked to contact Feedbackly to top up their account."
+msgstr ""
+
+#. Used in 'See the API documentation for more details'
+#: src/components/UserEdit/UserEdit.vue:111
+msgid "for more details"
+msgstr ""
+
+#: src/modules/login-signup/LoginSignupMain.vue:16
+msgid "Forgot your password?"
+msgstr ""
+
+#: src/modules/admin/OrganizationDetails.vue:78
+msgid "FREE PLAN"
+msgstr ""
+
+#: src/modules/admin/Organizations.vue:32
+msgid "From"
+msgstr ""
+
+#: src/modules/organization/components/SubscriptionPlan.vue:10
+msgid "Future plan"
+msgstr ""
+
+#: src/components/UserEdit/UserEdit.vue:57
+msgid "General Settings"
+msgstr ""
+
+#: src/components/ChannelgroupsComponent.vue:68
+msgid "Group name"
+msgstr ""
+
+#: src/components/SurveyVisualAppearance/SurveyVisualAppearance.vue:5
+msgid "Here you can customize the visual appearance of the survey to better suit the style of your organization."
+msgstr "Aquí puede personalizar el aspecto visual de la encuesta para ajustarse mejor al estilo de su organización."
+
+#: src/modules/inbox/components/Processing.vue:14
+msgid "in user group"
+msgstr ""
+
+#: src/components/UserEdit/UserEdit.vue:78
+msgid "Inbox Settings"
+msgstr ""
+
+#: src/modules/inbox/Inbox.vue:36
+msgid "Include already processed feedback"
+msgstr ""
+
+#: src/components/UserEdit/UserEdit.vue:27 src/modules/admin/Users.vue:50
+msgid "Information"
+msgstr ""
+
+#: src/modules/inbox/components/Message.vue:9
+msgid "Internal note"
+msgstr ""
+
+#: src/components/InvoiceModal.vue:11 src/components/OrganizationCharges.vue:30
+msgid "Invoice"
+msgstr ""
+
+#: src/modules/organization/OrganizationSettings.vue:23
+msgid "Invoicing preferences"
+msgstr ""
+
+#: src/modules/admin/Users.vue:31
+msgid "Joined"
+msgstr ""
+
+#: src/components/UserEdit/UserEdit.vue:11
+msgid "Joined:"
+msgstr ""
+
+#: src/components/ChannelInfo.vue:104
+msgid "Last feedback"
+msgstr ""
+
+#: src/components/ChannelInfo.vue:103
+msgid "Last seen"
+msgstr ""
+
+#: src/components/ChannelInfo.vue:105
+msgid "Last seen battery"
+msgstr ""
+
+#: src/modules/admin/OrganizationDetails.vue:82
+msgid "Latest payment"
+msgstr ""
+
+#: src/components/ChannelInfo.vue:101
+msgid "Link"
+msgstr "Link"
+
+#: src/modules/login-signup/LoginSignupMain.vue:20
+msgid "Log in"
+msgstr ""
+
+#: src/components/ChannelgroupsComponent.vue:52
+msgid "Members"
+msgstr ""
+
+#: src/components/ChannelInfo.vue:98
+msgid "Meraki link"
+msgstr ""
+
+#: src/modules/inbox/components/Metadata.vue:3
+msgid "Metadata"
+msgstr ""
+
+#: src/components/Csv.vue:6
+msgid "Metadata allows to add details such as personalization data to each feedback. It is useful when your data contains identification data such as customer ids etc."
+msgstr ""
+
+#: src/components/Csv.vue:23
+msgid "Metadata field name"
+msgstr ""
+
+#: src/modules/organization/components/SubscriptionPlan.vue:30
+msgid "monthly responses"
+msgstr ""
+
+#: src/components/ChannelInfo.vue:96 src/modules/admin/Organizations.vue:56
+msgid "Name"
+msgstr "Nombre"
+
+#: src/components/ChannelInfo.vue:5
+msgid "New channel"
+msgstr ""
+
+#: src/components/UserEdit/UserEdit.vue:142 src/modules/admin/Users.vue:120
+msgid "New password"
+msgstr ""
+
+#: src/components/UserEdit/UserEdit.vue:138
+msgid "New User"
+msgstr ""
+
+#. No -- ei,nej
+#: src/components/Csv.vue:9
+msgid "No"
+msgstr "No"
+
+#: src/components/ChannelgroupsComponent.vue:61
+msgid "No channelgroup selected"
+msgstr ""
+
+#: src/modules/organization/OrganizationSettings.vue:30
+msgid "No credit card saved. Please add a card."
+msgstr ""
+
+#: src/components/SurveyVisualAppearance/SurveyVisualAppearance.vue:7
+msgid "Note: this feature is not available in your subscription."
+msgstr ""
+
+#: src/components/PluginSettings.vue:101
+msgid "Number of pages visited"
+msgstr "Número de páginas visitadas."
+
+#: src/components/UserEdit/UserEdit.vue:151
+msgid "Only feedback assigned to user group via notifications"
+msgstr ""
+
+#: src/modules/admin/OrganizationDetails.vue:6 src/components/NavBar.vue:88
+msgid "Organization"
+msgstr "Organización"
+
+#: src/components/UserEdit/UserEdit.vue:149 src/modules/admin/Users.vue:123
+msgid "Organization admin"
+msgstr ""
+
+#: src/modules/organization/OrganizationVisualAppearance.vue:7
+msgid "Organization Logo"
+msgstr ""
+
+#: src/modules/admin/Admin.vue:39
+#: src/modules/organization/OrganizationSettings.vue:69
+msgid "Organization name"
+msgstr ""
+
+#: src/modules/admin/Organizations.vue:4 src/modules/admin/Toolbar.vue:7
+msgid "Organizations"
+msgstr ""
+
+#: src/components/ChannelInfo.vue:102
+msgid "Passcode"
+msgstr ""
+
+#: src/components/UserEdit/UserEdit.vue:145
+msgid "password"
+msgstr ""
+
+#: src/modules/signup/components/Phase1.vue:41
+msgid "Password"
+msgstr "Contraseña"
+
+#. Used in 'please upgrade your plan to use this feature'
+#. Used in 'Please upgrade to a higher plan enable this feature'
+#: src/components/SurveyVisualAppearance/SurveyVisualAppearance.vue:8
+#: src/modules/organization/OrganizationVisualAppearance.vue:23
+msgid "Please"
+msgstr ""
+
+#: src/modules/organization/components/ChangePlanDialog.vue:17
+msgid "Please confirm downgrade cancellation. Your previously selected downgrade will be cancelled and you will stay on your currently active plan."
+msgstr ""
+
+#: src/modules/organization/components/ChangePlanDialog.vue:14
+msgid "Please confirm plan downgrade. Your current plan will stay active until the end of your billing cycle and the downgraded plan will be activated afterwards automatically."
+msgstr ""
+
+#: src/modules/organization/components/ChangePlanDialog.vue:11
+msgid "Please confirm plan upgrade."
+msgstr ""
+
+#: src/modules/signup/components/Phase1.vue:32
+msgid "Please fill in the registration form again at"
+msgstr ""
+
+#: src/modules/signup/components/Phase1.vue:30
+msgid "Please keep in mind that the verification link is only valid for a short period of time."
+msgstr ""
+
+#: src/components/Csv.vue:13
+msgid "Please specify all metadata fields your excel/csv-file contains."
+msgstr ""
+
+#: src/components/PluginSettings.vue:32
+msgid "Popup window"
+msgstr "Ventana emergente"
+
+#: src/components/PluginSettings.vue:51
+msgid "Positioning"
+msgstr ""
+
+#: src/components/SurveyVisualAppearance/SurveyVisualAppearance.vue:49
+msgid "Preview"
+msgstr "Vista previa"
+
+#: src/components/InvoiceModal.vue:47
+msgid "Price without tax"
+msgstr ""
+
+#: src/components/OrganizationCharges.vue:10
+msgid "Print"
+msgstr ""
+
+#: src/modules/inbox/Inbox-details.vue:27
+msgid "Process feedback"
+msgstr ""
+
+#: src/modules/inbox/components/Processing.vue:9
+msgid "Processed by"
+msgstr ""
+
+#: src/modules/admin/OrganizationDetails.vue:98
+msgid "Profanity Filter"
+msgstr ""
+
+#: src/components/SurveyVisualAppearance/SurveyVisualAppearance.vue:52
+msgid "Question title"
+msgstr ""
+
+#: src/modules/signup/components/Phase1.vue:42
+msgid "Re-enter password"
+msgstr ""
+
+#: src/components/UserEdit/UserEdit.vue:147 src/modules/admin/Users.vue:122
+msgid "Receive digest"
+msgstr ""
+
+#: src/components/PluginSettings.vue:175
+msgid "Redisplay conditions"
+msgstr "Condiciones de reaparición."
+
+#: src/modules/organization/UserGroups.vue:39
+msgid "Remove"
+msgstr "Eliminar"
+
+#: src/modules/organization/UserGroups.vue:34
+msgid "Removing user group"
+msgstr ""
+
+#: src/modules/admin/Users.vue:71
+msgid "Reset link"
+msgstr ""
+
+#: src/components/UserEdit/UserEdit.vue:108
+msgid "REST API Keys"
+msgstr ""
+
+#: src/components/Csv.vue:44
+msgid "Results:"
+msgstr ""
+
+#: src/components/UserEdit/UserEdit.vue:119
+msgid "Revoke"
+msgstr "Revocar"
+
+#: src/components/UserEdit/UserEdit.vue:100 src/modules/admin/Users.vue:101
+msgid "Rights to groups"
+msgstr ""
+
+#: src/modules/organization/components/BillingInfo.vue:21
+msgid "Save"
+msgstr "Guardar"
+
+#: src/components/PluginSettings.vue:133
+msgid "Scrolling"
+msgstr "Desplazamiento."
+
+#. Used in'See our Pricing page for further details'
+#: src/modules/signup/components/Phase2.vue:12
+msgid "See our Pricing page"
+msgstr ""
+
+#: src/modules/inbox/InboxTeaser.vue:10
+msgid "See pricing"
+msgstr "Ver el precio"
+
+#. Used in 'See the API documentation for more details'
+#: src/components/UserEdit/UserEdit.vue:110
+msgid "See the"
+msgstr ""
+
+#: src/modules/admin/Admin.vue:41 src/modules/admin/OrganizationDetails.vue:21
+#: src/modules/admin/Organizations.vue:60
+msgid "Segment"
+msgstr ""
+
+#: src/modules/admin/Admin.vue:40
+#: src/modules/organization/components/SubscriptionPlan.vue:60
+msgid "Select"
+msgstr ""
+
+#: src/components/SurveyVisualAppearance/SurveyVisualAppearance.vue:69
+msgid "Select a font for Question titles"
+msgstr ""
+
+#: src/components/UserEdit/UserEdit.vue:133 src/modules/admin/Users.vue:111
+msgid "Select a user or add a new one."
+msgstr ""
+
+#: src/modules/sms-top-up/SmsTopUp.vue:40
+msgid "Select amount"
+msgstr ""
+
+#: src/components/UserEdit/UserEdit.vue:88
+msgid "Select groups this user belongs to"
+msgstr ""
+
+#: src/modules/organization/components/BillingInfo.vue:25
+msgid "Select organization size"
+msgstr ""
+
+#: src/modules/login-signup/LoginSignupForgot.vue:18
+msgid "Send a reset link"
+msgstr ""
+
+#: src/modules/inbox/components/Reply-message.vue:14
+msgid "Send E-mail reply"
+msgstr ""
+
+#: src/modules/inbox/components/Reply-message.vue:13
+msgid "Send SMS reply"
+msgstr ""
+
+#: src/modules/admin/Users.vue:80 src/components/NavBar.vue:99
+#: src/modules/organization/Organization.vue:54
+msgid "Settings"
+msgstr "Ajustes"
+
+#: src/components/UserEdit/UserEdit.vue:152
+msgid "Show the full feedback history of a contact"
+msgstr "No mostrar la historia completa de Feedback a un contacto"
+
+#: src/modules/login-signup/LoginSignupForgot.vue:23
+#: src/modules/login-signup/LoginSignupMain.vue:8
+msgid "Sign in"
+msgstr ""
+
+#: src/components/UserEdit/UserEdit.vue:16 src/modules/admin/Users.vue:35
+msgid "Sign in as user"
+msgstr ""
+
+#: src/modules/login-signup/LoginSignupMain.vue:10
+msgid "Sign-in failed. Check your e-mail and password."
+msgstr ""
+
+#: src/components/UserEdit/UserEdit.vue:11 src/modules/admin/Users.vue:31
+msgid "Signed in"
+msgstr ""
+
+#: src/modules/signup/components/Phase3.vue:23
+msgid "Signup completed successfully"
+msgstr ""
+
+#: src/modules/inbox/components/Message.vue:8
+msgid "SMS"
+msgstr ""
+
+#: src/modules/admin/OrganizationDetails.vue:50
+msgid "SMS Balance"
+msgstr ""
+
+#: src/modules/inbox/Inbox-details.vue:33
+msgid "SMS Reply"
+msgstr ""
+
+#: src/modules/signup/components/Phase1.vue:29
+msgid "Something went wrong with the sign up."
+msgstr ""
+
+#. Used in 'To edit plan details, go to Stripe. They will update here then'
+#: src/modules/admin/OrganizationDetails.vue:87
+msgid "Stripe."
+msgstr ""
+
+#: src/components/SurveyVisualAppearance/SurveyVisualAppearance.vue:53
+msgid "subitles and text"
+msgstr ""
+
+#: src/modules/organization/components/CreditCardInfo.vue:24
+msgid "Submit card details"
+msgstr ""
+
+#: src/modules/admin/OrganizationDetails.vue:72
+msgid "Subscription"
+msgstr ""
+
+#: src/modules/organization/components/SubscriptionPlan.vue:14
+msgid "Subscription ends at"
+msgstr ""
+
+#: src/modules/organization/components/SubscriptionPlan.vue:16
+msgid "Subscription starts at"
+msgstr ""
+
+#: src/modules/organization/OrganizationVisualAppearance.vue:29
+msgid "Survey Visual Appearance"
+msgstr "Aspecto Visual de la Encuesta"
+
+#: src/components/InvoiceModal.vue:48 src/components/InvoiceModal.vue:70
+msgid "Tax"
+msgstr ""
+
+#: src/components/UserEdit/UserEdit.vue:144
+msgid "text"
+msgstr ""
+
+#: src/components/SurveyVisualAppearance/SurveyVisualAppearance.vue:36
+msgid "Text color"
+msgstr "Color del Texto"
+
+#: src/modules/inbox/InboxTeaser.vue:4
+msgid "The Feedback Inbox"
+msgstr "Feedback inbox"
+
+#: src/modules/inbox/InboxTeaser.vue:5
+msgid "The most intuitive way to handle feedback and respond directly to customers"
+msgstr ""
+
+#: src/modules/login-signup/LoginSignupForgot.vue:11
+msgid "The provided e-mail address could not be found from the database. Check your input and try again."
+msgstr ""
+
+#: src/modules/sms-top-up/SmsTopUp.vue:15
+msgid "There's no balance on your account."
+msgstr ""
+
+#. Used in 'To edit plan details, go to Stripe. They will update here then'
+#: src/modules/admin/OrganizationDetails.vue:87
+msgid "They will update here then"
+msgstr ""
+
+#: src/modules/organization/UserGroups.vue:35
+msgid "This function cannot be undone."
+msgstr ""
+
+#. Used in 'signed in x times'
+#: src/components/UserEdit/UserEdit.vue:12
+msgid "times"
+msgstr ""
+
+#: src/components/SurveyVisualAppearance/SurveyVisualAppearance.vue:32
+msgid "Title color"
+msgstr "Color de título"
+
+#: src/components/SurveyVisualAppearance/SurveyVisualAppearance.vue:68
+msgid "Title font"
+msgstr "Fuente del Título"
+
+#: src/modules/admin/Organizations.vue:32
+msgid "to"
+msgstr ""
+
+#. Used in 'To edit plan details, go to Stripe. They will update here then'
+#: src/modules/admin/OrganizationDetails.vue:86
+msgid "To edit plan details, go to Stripe. They will update here then"
+msgstr ""
+
+#. Used in 'Please upgrade to a higher plan to enable this feature'
+#: src/modules/organization/OrganizationVisualAppearance.vue:24
+msgid "to enable this feature"
+msgstr ""
+
+#. Used in 'please upgrade your plan to use this feature'
+#: src/components/SurveyVisualAppearance/SurveyVisualAppearance.vue:12
+msgid "to use this feature."
+msgstr ""
+
+#: src/modules/admin/OrganizationDetails.vue:63
+#: src/modules/sms-top-up/SmsTopUp.vue:34
+msgid "Top up"
+msgstr ""
+
+#: src/modules/sms-top-up/SmsTopUp.vue:6
+msgid "Top up SMS account"
+msgstr ""
+
+#: src/components/InvoiceModal.vue:50
+msgid "TOTAL PAID"
+msgstr ""
+
+#: src/components/PluginSettings.vue:73
+msgid "Triggering conditions"
+msgstr "Condiciones de activación"
+
+#: src/components/PluginSettings.vue:198
+msgid "Unique widget code"
+msgstr ""
+
+#: src/modules/inbox/Inbox-details.vue:28
+msgid "Unprocess feedback"
+msgstr ""
+
+#: src/modules/inbox/components/Processing.vue:8
+msgid "Unprocessed by"
+msgstr ""
+
+#: src/components/UserEdit/UserEdit.vue:118
+msgid "Unrevoke"
+msgstr ""
+
+#: src/modules/organization/OrganizationSettings.vue:9
+msgid "Update"
+msgstr ""
+
+#: src/modules/organization/OrganizationSettings.vue:36
+msgid "Update Credit card"
+msgstr ""
+
+#: src/modules/organization/components/SubscriptionPlan.vue:51
+msgid "Upgrade"
+msgstr ""
+
+#: src/modules/inbox/InboxTeaser.vue:13
+msgid "Upgrade now"
+msgstr ""
+
+#. Used in 'Please upgrade to a higher plan enable this feature'
+#: src/modules/organization/OrganizationVisualAppearance.vue:24
+msgid "upgrade to a higher plan"
+msgstr ""
+
+#. Used in 'please upgrade your plan to use this feature'
+#: src/components/SurveyVisualAppearance/SurveyVisualAppearance.vue:10
+msgid "upgrade your plan"
+msgstr ""
+
+#: src/components/UserEdit/UserEdit.vue:126
+msgid "Upgrade your plan to use the API"
+msgstr ""
+
+#: src/modules/organization/UserGroups.vue:4
+#: src/modules/organization/UserGroups.vue:7
+#: src/modules/organization/Organization.vue:57
+msgid "User groups"
+msgstr "Usuario de grupos"
+
+#: src/modules/organization/UserGroups.vue:5
+msgid "User groups are used to assign feedback to different users for processing. Use this in conjunction with notifications and feedback inbox."
+msgstr ""
+
+#: src/components/UserEdit/UserEdit.vue:140 src/modules/admin/Users.vue:117
+msgid "User name"
+msgstr ""
+
+#: src/components/ChannelInfo.vue:107
+#: src/components/ChannelgroupsComponent.vue:67
+msgid "Users with access"
+msgstr ""
+
+#: src/modules/organization/components/BillingInfo.vue:28
+msgid "VAT- or Business ID"
+msgstr ""
+
+#: src/modules/organization/OrganizationSettings.vue:45
+msgid "VAT-ID:"
+msgstr ""
+
+#: src/components/PluginSettings.vue:111
+msgid "Visiting time"
+msgstr "Tiempo de visita"
+
+#: src/modules/login-signup/LoginSignupForgot.vue:22
+msgid "We have sent a password reset link to"
+msgstr ""
+
+#: src/components/PluginSettings.vue:6
+msgid "Widget installation"
+msgstr ""
+
+#: src/components/PluginSettings.vue:199
+msgid "Widget mount code"
+msgstr ""
+
+#: src/components/Csv.vue:8
+msgid "Yes"
+msgstr "Sí"
+
+#: src/modules/sms-top-up/SmsTopUp.vue:20
+msgid "You can do it via the chat or by sending email to"
+msgstr ""
+
+#: src/modules/signup/components/Phase3.vue:10
+msgid "You have selected the"
+msgstr ""
+
+#: src/components/InvoiceModal.vue:67
+msgid "Quantity"
+msgstr ""
+
+#: src/components/InvoiceModal.vue:68
+msgid "Amount"
+msgstr "Cantidad"
+
+#: src/components/InvoiceModal.vue:69
+msgid "Tax percent"
+msgstr ""
+
+#: src/components/InvoiceModal.vue:71 src/components/OrganizationCharges.vue:29
+msgid "Total"
+msgstr "Total"
+
+#: src/components/NavBar.vue:45
+msgid "Summary"
+msgstr "Resumen"
+
+#: src/components/NavBar.vue:46
+msgid "Results"
+msgstr "Resultados"
+
+#: src/components/NavBar.vue:49
+msgid "Feedback list"
+msgstr "Lista de Feedback"
+
+#: src/components/NavBar.vue:55 src/modules/admin/OrganizationDetails.vue:145
+msgid "Feedback inbox"
+msgstr "Feedback inbox"
+
+#: src/components/NavBar.vue:64
+msgid "Surveys"
+msgstr "Encuestas"
+
+#: src/components/NavBar.vue:70
+msgid "Channel management"
+msgstr "Gestión de canales"
+
+#: src/components/NavBar.vue:76
+msgid "Notifications"
+msgstr "Notificaciones"
+
+#: src/components/NavBar.vue:82
+msgid "Upsales"
+msgstr ""
+
+#: src/components/NavBar.vue:92
+msgid "Switch organization"
+msgstr "Cambiar organización"
+
+#: src/components/NavBar.vue:95
+msgid "Help center"
+msgstr "Centro de Ayuda"
+
+#: src/components/OrganizationCharges.vue:28
+msgid "Date"
+msgstr "Fecha"
+
+#: src/components/PluginSettings.vue:220
+msgid "Bottom right"
+msgstr ""
+
+#: src/components/PluginSettings.vue:221
+msgid "Bottom left"
+msgstr ""
+
+#: src/components/PluginSettings.vue:222
+msgid "Top right"
+msgstr ""
+
+#: src/components/PluginSettings.vue:223
+msgid "Top left"
+msgstr ""
+
+#: src/modules/admin/Admin.vue:90
+msgid "Name is required"
+msgstr ""
+
+#: src/modules/admin/Organization.vue:55
+msgid "Details"
+msgstr ""
+
+#: src/modules/admin/Organization.vue:56
+#: src/modules/organization/Organization.vue:56
+msgid "Users"
+msgstr "Usuarios"
+
+#: src/modules/admin/Organization.vue:57
+msgid "Channels"
+msgstr "Canales"
+
+#: src/modules/admin/OrganizationDetails.vue:143
+msgid "Survey logic"
+msgstr ""
+
+#: src/modules/admin/OrganizationDetails.vue:144
+msgid "Creating channels"
+msgstr ""
+
+#: src/modules/admin/OrganizationDetails.vue:146
+msgid "File exports"
+msgstr ""
+
+#: src/modules/admin/OrganizationDetails.vue:147
+msgid "Notifications to organization users"
+msgstr ""
+
+#: src/modules/admin/OrganizationDetails.vue:148
+msgid "Notifications to organization all emails"
+msgstr ""
+
+#: src/modules/admin/OrganizationDetails.vue:149
+msgid "Survey appearance customization"
+msgstr ""
+
+#: src/modules/admin/OrganizationDetails.vue:150
+msgid "Organization logo"
+msgstr ""
+
+#: src/modules/admin/OrganizationDetails.vue:151
+msgid "Sending SMS messages"
+msgstr ""
+
+#: src/modules/admin/OrganizationDetails.vue:152
+msgid "Can use upsell functionality"
+msgstr ""
+
+#: src/modules/admin/OrganizationDetails.vue:153
+msgid "REST API"
+msgstr ""
+
+#: src/modules/admin/OrganizationDetails.vue:281
+msgid "Solution sales"
+msgstr ""
+
+#: src/modules/admin/OrganizationDetails.vue:282
+msgid "Self-sign up"
+msgstr ""
+
+#: src/modules/admin/OrganizationDetails.vue:283
+msgid "Test"
+msgstr ""
+
+#: src/modules/admin/Organizations.vue:52
+msgid "All"
+msgstr "Todo"
+
+#: src/modules/admin/Organizations.vue:61
+msgid "Plan"
+msgstr ""
+
+#: src/modules/admin/Organizations.vue:62
+msgid "Created at"
+msgstr ""
+
+#: src/modules/admin/Users.vue:193
+msgid "Finnish"
+msgstr ""
+
+#: src/modules/admin/Users.vue:194
+msgid "English"
+msgstr ""
+
+#: src/modules/admin/Users.vue:195
+msgid "Swedish"
+msgstr ""
+
+#: src/modules/admin/Users.vue:196
+msgid "Spanish"
+msgstr ""
+
+#: src/modules/organization/components/BillingInfo.vue:53
+msgid "I am a private person"
+msgstr ""
+
+#: src/modules/organization/components/BillingInfo.vue:54
+msgid "0-10 employees"
+msgstr ""
+
+#: src/modules/organization/components/BillingInfo.vue:55
+msgid "10-100 employees"
+msgstr ""
+
+#: src/modules/organization/components/BillingInfo.vue:56
+msgid "100-1000 employees"
+msgstr ""
+
+#: src/modules/organization/components/BillingInfo.vue:57
+msgid "1000+ employees"
+msgstr ""
+
+#: src/modules/organization/Organization.vue:62
+msgid "Logo & Visuals"
+msgstr ""
+
+#: src/modules/signup/components/Phase1.vue:74
+msgid "must be over 6 characters"
+msgstr ""
+
+#: src/modules/signup/components/Phase1.vue:76
+msgid "must contain both upper-and lowercase characters"
+msgstr ""
+
+#: src/modules/signup/components/Phase1.vue:77
+msgid "must contain at least 1 number"
+msgstr ""
+
+#: src/modules/signup/components/Phase1.vue:78
+msgid "must match confirmation field"
+msgstr ""

@@ -1,0 +1,36 @@
+
+
+<html>
+<head>
+<style>
+  .gray{
+    color: #cccccc;
+  }
+</style>
+</head>
+<body>
+  <table>
+    <thead>
+      <th>Organization</th>
+      <th>Device</th>
+      <th>udid</th>
+      <th>last seen</th>
+      <th>last seen battery</th>
+      <th>version</th>
+    </thead>
+    <tbody>
+      <% _.forEach(table, row => { %>
+        <tr class="<%= moment.utc(row.last_seen).add(1, 'hours').unix() < moment.utc().unix() && row.last_seen_battery && parseInt(row.last_seen_battery) < 6 ? 'gray' : '' %>">
+          <td><%= row.organization %></td>
+          <td><%= row.name %></td>
+          <td><%= row.udid %></td>
+          <td><%= row.last_seen ? moment.utc(row.last_seen).utcOffset(120).format('DD.MM.YYYY HH:mm') : '-' %></td>
+          <td><%= row.last_seen_battery %></td>
+          <td><%= row.version || "V3" %></td>
+        </tr>
+
+      <% }) %>
+  </tbody>
+  </table>
+</body>
+</html>

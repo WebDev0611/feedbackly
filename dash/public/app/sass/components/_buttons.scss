@@ -1,0 +1,95 @@
+.btn-fixed-bottom-right, .btn-fixed-bottom-left, .btn-fixed-top-right {
+  position: fixed;
+}
+
+.btn-absolute-bottom {
+  position: absolute;
+  right: 20px;
+}
+
+.btn-fixed-bottom-right, .btn-fixed-bottom-left, .btn-absolute-bottom{
+  bottom: 20px;
+  transition: 0.5s;
+  z-index: 100;
+}
+
+.btn-fixed-bottom-right {
+  right: 20px;
+}
+
+.btn-hollow{
+  color: $turquoise-dark;
+  background-color: transparent;
+  border: 1px solid #2fbca4;
+  box-shadow: none;
+
+  &:hover{
+    background-color: transparent;
+  }
+
+  &:disabled{
+    background-color: transparent !important;
+    color: $gray-dark !important;
+    border: 1px solid $gray-dark !important;
+
+  }
+}
+
+.btn-fixed-bottom-left {
+  left: $navbar-width + 20px;
+
+  @media(max-width: $navbar-break-point) {
+    left: 20px;
+  }
+}
+
+.face-thumb, .image-thumb {
+  background-size: cover;
+  background-position: middle middle;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.face0 {
+  background-image: url('/images/faces-svg/face000.svg');
+}
+
+.face25, .face33 {
+  background-image: url('/images/faces-svg/face025.svg');
+}
+
+.face50 {
+  background-image: url('/images/faces-svg/face050.svg');
+}
+
+.face66, .face75 {
+  background-image: url('/images/faces-svg/face075.svg');
+}
+
+.face100 {
+  background-image: url('/images/faces-svg/face100.svg');
+}
+
+
+@for $i from 1 through 5{
+  .face-#{$i}{
+    background-image: url('/images/faces/#{$i}a.png');
+
+    &.animated{
+      background-image: url('/images/faces/#{$i}a.gif');
+    }
+
+    &.plain{
+      background-image: url('/images/faces/#{$i}b.png');
+
+      &.animated{
+        background-image: url('/images/faces/#{$i}b.gif');
+
+      }
+
+    }
+
+
+
+  }
+}

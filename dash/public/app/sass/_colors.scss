@@ -1,0 +1,49 @@
+$turquoise-light: #2FBCA4;
+$turquoise-dark: #2FA5A4;
+$green-light: #97D149;
+$green-dark: #80C350;
+$yellow-light: #FFDA6C;
+$yellow-dark: #FFC850;
+$orange-light: #FFA363;
+$orange-dark: #FF8F48;
+$red-light: #FE767C;
+$red-dark: #EE5D6E;
+$gray-light: #C1C2CD;
+$gray-dark: #83859B;
+$background-color: #edecf1;
+$yellow: #ffc107;
+
+.text{
+  &-turquoise-light{
+    color: $turquoise-light !important;
+  }
+  &-turquoise-dark{
+    color: $turquoise-dark !important;
+  }
+  &-gray-dark{
+    color: $gray-dark !important;
+  }
+  &-gray-light{
+    color: $gray-light !important;
+  }
+  &-green{
+    &-light{
+      color: $green-light !important;
+    }
+    &-dark{
+      color: $green-dark !important;
+    }
+  }
+  &-yellow{
+    color: $yellow !important;
+  }
+
+  &-red{
+    &-light{
+      color: $red-light !important;
+    }
+    &-dark{
+      color: $red-dark !important;
+    }
+  }
+}

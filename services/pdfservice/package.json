@@ -1,0 +1,23 @@
+{
+  "name": "fbly-phantom-app",
+  "version": "0.0.1",
+  "author": "JHamunen",
+  "description": "Simple Phantom-PDF generator",
+  "license": "MIT",
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "scripts": {
+    "start": "node_modules/.bin/forever server.js"
+  },
+  "dependencies": {
+    "bluebird": "^3.5.0",
+    "dotenv": "^4.0.0",
+    "express": "^4.14.0",
+    "forever": "^0.15.3",
+    "phantom": "^4.0.0",
+    "phantomjs-prebuilt": "^2.1.12",
+    "phridge": "^2.0.0",
+    "s3": "^4.4.0"
+  }
+}

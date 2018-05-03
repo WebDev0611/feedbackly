@@ -1,0 +1,85 @@
+<div class="row">
+  <div class="col s12 m12 l12">
+    <search-compact-header
+    date-from="feedbacks.searchFilter.from"
+    date-to="feedbacks.searchFilter.to"
+    filters="feedbacks.filters"
+
+    on-validate="feedbacks.onValidateTerms(validation)" on-change="feedbacks.onFiltersChange(filters)"
+    has-refresh="true"
+    on-submit="feedbacks.search()"
+    >
+  </search-compact-header>
+
+    <fbevent-plan-limit-notifier show="feedbacks.showPlanFbeventLimit" count="feedbacks.fbeventLimit.count" plan-limit="feedbacks.fbeventLimit.planLimit" show-upgrade-link="feedbacks.currentUser.isOrganizationAdmin">
+    </fbevent-plan-limit-notifier>
+
+    <div class="card" style="margin-top: 3rem">
+      <div class="card-content">
+        <loader loading="feedbacks.loading"></loader>
+
+        <div ng-if="!feedbacks.loading && feedbacks.feedbackCount > 0" id="feedback-list-table">
+          <div class="card-title">{{feedbacks.feedbackCount}} {{ 'responses' | translate }}
+              <span ng-if="feedbacks.list.feedbackCount > feedbacks.list.feedbackCountInPlan">
+                ( {{ feedbacks.feedbackCount - feedbacks.list.feedbackCountInPlan }} {{ 'not shown' | translate}} )
+              </span>
+          </div>
+
+          <div class="section">
+            <pagination
+              page="feedbacks.page"
+              page-size="feedbacks.pageSize"
+              total="feedbacks.feedbackCount"
+              show-prev-next="true"
+              dots="...."
+              hide-if-empty="false"
+              adjacent="2"
+              scroll-top="true"
+              pagination-action="feedbacks.onPageChange(page)" />
+          </div>
+
+          <feedback-table admin="feedbacks.isOrganizationAdmin" feedbacks="feedbacks.list"></feedback-table>
+
+          <div class="section">
+            <pagination
+              page="feedbacks.page"
+              page-size="feedbacks.pageSize"
+              total="feedbacks.feedbackCount"
+              show-prev-next="true"
+              dots="...."
+              hide-if-empty="false"
+              adjacent="2"
+              scroll-top="true"
+              pagination-action="feedbacks.onPageChange(page)" />
+          </div>
+        </div>
+
+        <div ng-if="feedbacks.feedbackCount === 0" class="center-align grey-text">
+          {{ 'No results found' | translate }}. <a href="#search-filters-modal" modal translate> Change search terms</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="btn-fixed-bottom-right">
+  <ul id="print-format-dropdown" class="dropdown-content">
+    <li style="display:none"><a ng-click="feedbacks.printFeedbacks('pdf')">PDF</a></li>
+    <li ng-if="feedbacks.enableFileExport">
+      <a ng-click="feedbacks.printFeedbacks('csv')">CSV</a>
+    </li>
+    <li ng-if="!feedbacks.enableFileExport" data-delay="10" tooltipped data-position="left" data-tooltip="{{feedbacks.fileExportTeaser}}">
+      <span style="cursor:default; color: #bfbfbf">CSV</span>
+    </li>
+    <li ng-if="feedbacks.enableFileExport">
+      <a ng-click="feedbacks.printFeedbacks('xlsx')">XLSX</a>
+    </li>
+    <li ng-if="!feedbacks.enableFileExport" data-delay="10" tooltipped data-position="left" data-tooltip="{{feedbacks.fileExportTeaser}}">
+        <span style="cursor:default; color: #bfbfbf">CSV</span>
+    </li>
+  </ul>
+
+  <button class="btn-floating btn-large waves-effect waves-light" dropdown data-activates="print-format-dropdown" ng-click="feedbacks.printResults()" ng-class="{ 'disabled': feedbacks.printing || feedbacks.feedbackCount === 0 }">
+    <i class="material-icons">file_download</i>
+  </button>
+</div>

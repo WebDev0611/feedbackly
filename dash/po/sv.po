@@ -1,0 +1,3476 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: sv\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.3\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: public/app/components/plugin-setup/plugin-setup.template.html:175
+msgid "% of the page"
+msgstr "% av sidan"
+
+#: public/app/routes/summary/summary.template.html:158
+msgid "(qty)"
+msgstr "(st.)"
+
+#: public/app/routes/surveys/survey-email-settings/survey-email-settings.template.html:58
+msgid ""
+"* Mails that use domains protected by SPF (Sender Policy Framework) may not "
+"be delivered."
+msgstr ""
+"* E-post som använder domain skyddade med SPF (Sender Policy Framework) kan "
+"ej skickas."
+
+#: public/app/routes/surveys/survey-routes-selection/survey-routes-selection.template.html:30
+msgid "...or Create new Channels"
+msgstr "..eller skapa nya kanaler"
+
+#: public/app/components/plan-selector/plan-selector.template.html:40
+#: public/app/components/plan-selector/plan-selector.template.html:65
+#: public/app/components/plan-selector/plan-selector.template.html:90
+msgid "/month"
+msgstr "/månad"
+
+#: public/app/translations/translations.template.html:166
+msgid "0=Not likely at all 10=Extremely likely"
+msgstr "0=Väldigt osannolikt 10=Väldigt sannolikt"
+
+#: public/app/components/channel-setup-info/channel-setup-info.template.html:73
+msgid "1. Add contacts to this SMS channel"
+msgstr "1. Tillägg kontaktuppgifter till den här SMS kanalen\t"
+
+#: public/app/components/channel-setup-info/channel-setup-info.template.html:66
+msgid "1. Add contacts to this e-mail channel"
+msgstr "1. Tillägg kontaktuppgifter till den här e-post kanalen"
+
+#: public/app/components/channel-setup-info/channel-setup-info.template.html:41
+msgid ""
+"1. Add the following code to the end of the &lt;body&gt; tag of your "
+"website / eCommerce-platform."
+msgstr ""
+"1. Tillägg följande kod till din &lt;body&gt; tag på hemsidan / eCom "
+"plattform"
+
+#: public/app/components/channel-setup-info/channel-setup-info.template.html:56
+msgid "1. Copy the following link and distribute it freely"
+msgstr "1. Kopiera följande länk och distribuera fritt"
+
+#: public/app/routes/tutorial/tutorial.template.html:5
+msgid "1. Create a survey"
+msgstr "1. Skapa en frågeserie"
+
+#: public/app/components/channel-setup-info/channel-setup-info.template.html:25
+msgid "1. Download the QR-code below and add it to your materials."
+msgstr "1. Ladda ned QR-koden nedan och lägg med i dina materialer"
+
+#: public/app/components/channel-setup-info/channel-setup-info.template.html:8
+msgid "1. Get the Feedbackly App for your tablet from the"
+msgstr "1. Ladda ned Feedbackly appen från"
+
+#: public/app/routes/tutorial/tutorial.template.html:6
+msgid "2. Choose how to collect data"
+msgstr "2. Välj hur du samlar data"
+
+#: public/app/components/channel-setup-info/channel-setup-info.template.html:60
+#: public/app/components/channel-setup-info/channel-setup-info.template.html:67
+#: public/app/components/channel-setup-info/channel-setup-info.template.html:74
+msgid "2. Continue publishing the survey in this screen."
+msgstr "2. Fortsätt att publicera frågeserien i den här skärmen."
+
+#: public/app/components/channel-setup-info/channel-setup-info.template.html:26
+msgid ""
+"2. Guide your customers to answer the survey by informative text. (See "
+"example)"
+msgstr ""
+"2. Vägled dina kunder att svara med hjälp av informativa texter. (Se exempel)"
+
+#: public/app/components/channel-setup-info/channel-setup-info.template.html:9
+msgid ""
+"2. Open the app and click on the \"I already have an authorization code\" "
+"link in the bottom of the screen."
+msgstr ""
+"2. Öppna applikationen och klicka på \"I already have an authorization code"
+"\" länken nere på sidan."
+
+#: public/app/components/channel-setup-info/channel-setup-info.template.html:10
+msgid "3. Enter this authorization code:"
+msgstr "3. Knäpp in den här koden:"
+
+#: public/app/routes/tutorial/tutorial.template.html:7
+#: public/app/routes/tutorial/tutorial.template.html:8
+msgid "3. Set up your channels"
+msgstr "3. Skapa dina kanaler"
+
+#: public/app/components/channel-setup-info/channel-setup-info.template.html:27
+msgid ""
+"3. The QR code can be read by using a QR code reader app (keyword: 'qr code "
+"reader' in app stores)"
+msgstr ""
+"3. QR-koden kan läsas m.h.a. en QR app (nyckelord; qr code reader i app "
+"store)"
+
+#: public/app/components/channel-setup-info/channel-setup-info.template.html:11
+#: public/app/components/channel-setup-info/channel-setup-info.template.html:28
+msgid "4. Continue publishing your survey in this screen."
+msgstr "4. Fortsätt att publicera frågeserien i den här skärmen."
+
+#: public/app/routes/tutorial/tutorial.template.html:9
+msgid "4. Time to publish!"
+msgstr "4. Dags att publicera!"
+
+#: public/app/routes/tutorial/tutorial.template.html:10
+msgid "5. Analyzing results"
+msgstr "5. Analysering av resultaten"
+
+#: public/app/components/channel-setup-info/channel-setup-info.template.html:12
+msgid ""
+"5. If you haven't already, open up the Feedbackly app. The kiosk will "
+"automatically switch to this survey after 1-5 minutes from publishing or "
+"scheduling it."
+msgstr ""
+"5. Om du inte redan har, öppna nu upp Feedbackly appen. Terminalen byter "
+"till den här frågeserien automatisk inom 1-5 minuter från publiceringen. "
+
+#: public/app/routes/surveys/survey-editor/react-survey-editor.template.html:5
+msgid "A new survey editor!"
+msgstr "En ny undersökning editor!"
+
+#: public/app/routes/notifications/notifications.template.html:68
+msgid "AND"
+msgstr "OCH"
+
+#: public/app/routes/organization/organization-settings/organization-settings.template.html:19
+msgid "API ACCESS"
+msgstr "API TILLGÅNG"
+
+#: public/app/routes/organization/organization-users/show-organization-user/show-organization-user.template.html:4
+msgid "API KEYS"
+msgstr "API NYCKLAR"
+
+#: public/app/routes/organization/organization-users/show-organization-user/show-organization-user.template.html:5
+msgid ""
+"API keys are granted on a per-user basis. The resources the key can access "
+"are equivalent to user rights."
+msgstr ""
+"API nycklar är beviljade på bas av användaren. Resurserna nycklarna kan "
+"tillträda motsvarar användarens rättigheter. "
+
+#: public/app/routes/results/chart-controls/chart-controls.template.html:6
+msgid "Absolute (units)"
+msgstr "Absolut (enheter)"
+
+#: public/app/routes/upsells/upsell-list/upsell-list.template.html:57
+msgid "Activate"
+msgstr "Aktivera"
+
+#: public/app/routes/surveys/survey-publish-settings/survey-publish-settings.template.html:8
+msgid "Activate now"
+msgstr "Aktivera nu"
+
+#: public/app/routes/surveys/surveys-list/surveys-list.template.html:41
+msgid "Active channels"
+msgstr "Aktiva kanaler"
+
+#: public/app/components/device-info/device-info.template.html:32
+#: public/app/routes/channel-management/channel-management.template.html:29
+msgid "Active survey"
+msgstr "Aktiv undersökning"
+
+#: public/app/components/add-device-form/add-device-form.template.html:9
+#: public/app/components/plugin-setup/plugin-setup.template.html:114
+#: public/app/components/plugin-setup/plugin-setup.template.html:140
+#: public/app/routes/admin/edit-organization/organization-channels/organization-channels.template.html:29
+#: public/app/routes/channel-management/channel-edit/mailing-list-channels/show-mailing-list-channel/add-mailing-list-addresses/add-mailing-list-addresses.template.html:31
+#: public/app/routes/channel-management/channel-edit/sms-channels/show-sms-channel/add-sms-contacts/add-sms-contacts.template.html:28
+#: public/app/routes/surveys/survey-sms-settings/survey-sms-settings.template.html:26
+#: public/app/routes/surveys/surveys-list/surveys-list.template.html:17
+msgid "Add"
+msgstr "Tillägg"
+
+#: public/app/routes/notifications/controls/contact/contact-control.template.html:48
+#: public/app/routes/notifications/notifications.template.html:116
+msgid "Add a condition"
+msgstr "Lägg ett villkor"
+
+#: public/app/components/edit-device-form/edit-device-form.template.html:101
+msgid "Add a custom logo"
+msgstr "Tillägg din egen logo"
+
+#: public/app/translations/translations.template.html:154
+msgid "Add a feedback filter"
+msgstr "Tillägg en feedback filter"
+
+#: public/app/translations/translations.template.html:60
+msgid "Add a language"
+msgstr "Tillägg ett språk"
+
+#: public/app/translations/translations.template.html:246
+msgid "Add a link"
+msgstr "Tillägg en länk"
+
+#: public/app/translations/translations.template.html:61
+msgid "Add a question"
+msgstr "Tillägg en fråga"
+
+#: public/app/routes/organization/organization-users/add-organization-user/add-organization-user.template.html:1
+msgid "Add a user"
+msgstr "Tillägg en användare"
+
+#: public/app/routes/notifications/controls/contact/contact-control.template.html:38
+msgid "Add a word"
+msgstr "Lägg till ett ord"
+
+#: public/app/routes/notifications/notifications.template.html:95
+msgid "Add an \"OR\" condition inside this block"
+msgstr "Tillägg en “eller” regel i detta block"
+
+#: public/app/translations/translations.template.html:203
+msgid "Add an image"
+msgstr "Tillägg en bild"
+
+#: public/app/components/add-channel/add-channel.template.html:3
+msgid "Add channel"
+msgstr "Tillägg en kanal"
+
+#: public/app/components/add-channel-to-group/add-channel-to-group.template.html:3
+msgid "Add channels to channel group"
+msgstr "Tillägg kanaler till kanalgrupper"
+
+#: public/app/routes/channel-management/channel-management.template.html:47
+msgid "Add channels to group"
+msgstr "Tillägg kanaler till gruppen"
+
+#: public/app/translations/translations.template.html:37
+msgid "Add choice"
+msgstr "Lägg till val"
+
+#: public/app/routes/channel-management/channel-edit/mailing-list-channels/show-mailing-list-channel/add-mailing-list-addresses/add-mailing-list-addresses.template.html:5
+msgid "Add email address manually"
+msgstr "Tillägg e-post adresser manuelt"
+
+#: public/app/routes/channel-management/channel-edit/mailing-list-channels/show-mailing-list-channel/add-mailing-list-addresses/add-mailing-list-addresses.template.html:2
+#: public/app/routes/channel-management/channel-edit/mailing-list-channels/show-mailing-list-channel/show-mailing-list-channel.template.html:60
+msgid "Add email addresses"
+msgstr "Tillägg e-post adresser"
+
+#: public/app/routes/notifications/notifications.template.html:17
+msgid "Add email-addresses"
+msgstr "Lägg till e-postadresser"
+
+#: public/app/translations/translations.template.html:48
+msgid "Add image"
+msgstr "Lägg till bild"
+
+#: public/app/routes/channel-management/channel-edit/sms-channels/show-sms-channel/add-sms-contacts/add-sms-contacts.template.html:2
+#: public/app/routes/channel-management/channel-edit/sms-channels/show-sms-channel/show-sms-channel.template.html:57
+msgid "Add phone numbers"
+msgstr "Tillägg telefonnummer"
+
+#: public/app/routes/channel-management/channel-edit/sms-channels/show-sms-channel/add-sms-contacts/add-sms-contacts.template.html:5
+msgid "Add phone numbers manually"
+msgstr "Tillägg telefonnummer manuelt"
+
+#: public/app/translations/translations.template.html:49
+msgid "Add slider"
+msgstr "Lägg till nytt bildspel"
+
+#: public/app/components/plugin-setup/plugin-setup.template.html:252
+msgid ""
+"Add the following script to the scripts-section of your site (typically at "
+"the end of the body tag or in the footer). This code is shared across all "
+"your website plugin channels, so you only need to require it once per page / "
+"page reload."
+msgstr ""
+"Lägg till följande script i script-delen av din hemsida (vanligtvis i slutet "
+"av body tagen eller i footern). Denna kod är gemensam för alla plugin "
+"kanaler för din hemsida, så du behöver endast tillägga den en gång per "
+"sida / omladdning av sida. "
+
+#: public/app/components/plugin-setup/plugin-setup.template.html:261
+msgid ""
+"Add this line of code to enable this plugin channel on a page. Repeat this "
+"for all unique plugin channels you have."
+msgstr ""
+"Tillägg denna kod för att aktivera en plugin kanal på en sida. Repetera "
+"detta för all plugin kanaler du har, "
+
+#: public/app/translations/translations.template.html:57
+msgid "Additional text to provide with the standard privacy policy."
+msgstr ""
+"Annan text som du vill skriva förutom standardiserade privacy policy texten"
+
+#: public/app/components/billing-form/billing-form.template.html:13
+msgid "Address"
+msgstr "Address"
+
+#: public/app/translations/translations.template.html:247
+msgid "Advanced settings"
+msgstr "Avancerade inställningar"
+
+#: public/app/translations/translations.template.html:241
+msgid ""
+"After all the channels you want to use are set up, navigate to Surveys to "
+"create your first survey."
+msgstr ""
+"Efter att alla kanaler som du önskar använda är redo är det dags att "
+"navigera till Undersökningar och skapa din första frågeserie"
+
+#: public/app/translations/translations.template.html:104
+msgid ""
+"After collecting your first feedbacks, an overview will be visible on the "
+"landing page.\n"
+"For a detailed report head to the Results-section.\n"
+"Feedbacks can filtered based on channel, survey and even based on the "
+"individual answers given!"
+msgstr ""
+"Efter att ha samlat in första feedbacken ser du en sammanfattning på "
+"startsidan. För att se en mera detaljerad rapport, gå till fliken Resultat. "
+"Där kan du filtrera resultatetn på basen av kanal, undersökning samt "
+"individuella svarsalternativen."
+
+#: public/app/translations/translations.template.html:240
+msgid "After setup, create a survey"
+msgstr "Efter att allt är i ordning kan du skapa en frågeserie"
+
+#: public/app/translations/translations.template.html:99
+msgid ""
+"After the setup it is time to publish your surveys in the channels you "
+"like!\n"
+"The last page tells you what you have planned to do so you can make your "
+"last review.\n"
+"If everything is set, just hit “Publish” and wait for the data to come in.\n"
+"If there is something you would like to change, just click on that part of "
+"the process bar and edit.\n"
+"At this point you should already have completed setting up your channels."
+msgstr ""
+"Till nästa är det dags att publicera en undersökning i de kanaler du väljer. "
+"Sista sidan ger dig en överblick av allt som du planerat göra så du lätt kan "
+"ännu kontrollera allt. När allt är i ordning trycker du bara på \"Publicera"
+"\" och låter feedbacken flöda in. Ifall du vill ändra något hoppar du bara "
+"tillbaka till det steget i processen och editerar. I det här skedet skall du "
+"redan ha lagat i ordning dina feedback kanaler."
+
+#: public/app/components/plugin-setup/plugin-setup.template.html:107
+msgid "All URLs need to be visited before triggering"
+msgstr "Alla URLs måste vara besökta innan triggning"
+
+#: public/app/components/plugin-setup/plugin-setup.template.html:110
+msgid "All URLs need to be visited in order before triggering"
+msgstr "Alla URLs måste vara besökta i ordning innan triggning"
+
+#: public/app/components/add-channel/add-channel.template.html:29
+#: public/app/components/channel-group-list/channel-group-list.template.html:6
+msgid "All channels"
+msgstr "Alla kanaler"
+
+#: public/app/routes/channel-management/channel-management.template.html:22
+msgid "All feedback channels"
+msgstr "Alla feedback kanaler"
+
+#: public/app/routes/summary/summary.template.html:141
+msgid "All respondents in the organization to date"
+msgstr "Alla svaranden i hela organisationen till detta datum"
+
+#: public/app/translations/translations.template.html:244
+msgid "Allow multiple choices"
+msgstr "Tillåt flera svar"
+
+#: public/app/routes/surveys/survey-confirmation/survey-confirmation.template.html:81
+msgid ""
+"Almost done! Verify that these settings are correct and the survey will "
+"automatically appear on your iPad when you click &quot;Publish Now&quot;"
+msgstr ""
+"Nästan klar! Försäkra att alla inställningar är rätt och frågesamlingen "
+"kommer automatiskt att synas på din iPad när du klickat &quot;Publish "
+"Now&quot;"
+
+#: public/app/translations/translations.template.html:172
+msgid "Amazing."
+msgstr "Super."
+
+#: public/app/routes/organization/organization-billing/organization-billing.template.html:25
+msgid "Amount"
+msgstr "Antal"
+
+#: public/app/routes/results/result-stats/result-stats.template.html:45
+msgid "Amount of responses in the selected feedback channels"
+msgstr "Mängd av feedback i dom valda kanalerna"
+
+#: public/app/routes/results/result-stats/result-stats.template.html:96
+msgid "Amount of responses in the whole organization"
+msgstr "Mängd av feedback i hela organisationen"
+
+#: public/app/routes/results/result-stats/result-stats.template.html:98
+msgid ""
+"Amount of responses to this question in the whole organization in the "
+"selected timespan"
+msgstr ""
+"Hela organisationens mängd av svar till denna fråga inom vald tidsperiod"
+
+#: public/app/routes/results/result-stats/result-stats.template.html:47
+msgid "Amount of responses to this question with the selected filters"
+msgstr "Mängd av svar till denna fråga med de valda filtren "
+
+#: public/app/components/plugin-setup/plugin-setup.template.html:125
+msgid ""
+"An URL or a partial URL. If any of these match, the survey will not trigger "
+"on the page."
+msgstr ""
+"En URL eller en partiell URL. Om någon av dessa matchar utlöses "
+"undersökningen inte på sidan."
+
+#: public/app/components/plugin-setup/plugin-setup.template.html:87
+msgid ""
+"An URL or a partial URL. If it matches, the survey will trigger once all "
+"other conditions are fulfilled."
+msgstr ""
+"En URL eller en partiell URL. Om det matchar undersökningen kommer den att "
+"triggas då alla andra villkor är uppfyllda."
+
+#: public/app/translations/translations.template.html:150
+msgid "An error occured"
+msgstr "Ett fel uppstod"
+
+#: public/app/translations/translations.template.html:40
+msgid "Animated emoticons"
+msgstr "animerade uttryckssymboler"
+
+#: public/app/routes/summary/summary.template.html:255
+msgid "Answers to individual questions"
+msgstr "Svar till individuella frågor"
+
+#: public/app/routes/organization/organization-settings/organization-settings.template.html:20
+msgid ""
+"Api keys are tied to organization users and their rights to access different "
+"resources.\n"
+"        To retrieve API keys, navigate to the Users-tab."
+msgstr ""
+"Api nycklarna är kopplade till organisationens användare och deras "
+"rättigheter till olika tillgångar.\n"
+"        Navigera till Användare för att återfå Api nycklarna. "
+
+#: public/app/components/channel-setup-info/channel-setup-info.template.html:8
+msgid "App Store"
+msgstr "App Store"
+
+#: public/app/components/device-info/device-info.template.html:51
+msgid "App passcode"
+msgstr "Lösenordet till appen"
+
+#: public/app/translations/translations.template.html:9
+msgid "Apply"
+msgstr "Tillämpa"
+
+#: public/app/routes/surveys/surveys-list/surveys-list.template.html:103
+msgid "Archived"
+msgstr "Arkiverad"
+
+#: public/app/translations/translations.template.html:127
+msgid "Are you sure you want to delete the translation?"
+msgstr "Är du säker att du vill radera den här översättnignen?"
+
+#: public/app/routes/upsells/upsell-list/upsell-list.template.html:65
+msgid "Are you sure you want to delete the upsell offer?"
+msgstr "Är du säker att du vill radera merförsäljnings erbjudandet?"
+
+#: public/app/translations/translations.template.html:45
+msgid ""
+"Are you sure you want to delete this question? The question has received "
+"responses that you won't be able to see anymore if you delete it."
+msgstr ""
+"Är du säker att du vill radera denna fråga? Frågan har mottagit svar som du "
+"inte kommer att se efter att du raderat frågan. "
+
+#: public/app/translations/translations.template.html:125
+msgid ""
+"Are you sure you want to remove channel from the channel group? All users "
+"who have rights to this group will no longer see the channel and its results."
+msgstr ""
+"Är du säker du vill radera kanalen från kanalgruppen? Alla användare som har "
+"rätten till den här kanalen kan inte längre se kanalen eller resultaten från "
+"den."
+
+#: public/app/translations/translations.template.html:123
+msgid "Are you sure you want to remove this channel group?"
+msgstr "Är du säker att du vill ta bort denna kanal-grupp?"
+
+#: public/app/translations/translations.template.html:245
+msgid "Are you sure you want to restore the default settings?"
+msgstr "Är du säker att du vill återställa inställningarna?"
+
+#: public/app/components/plan-selector/plan-selection-confirm/plan-selection-confirm.template.html:3
+msgid ""
+"Are you sure you want to switch your current plan? You can't downgrade your "
+"plan for a month after upgrading"
+msgstr ""
+"Är du säker du vill uppdatera din nuvarande plan? Du kan inte minska på "
+"paketet på 30 dagar efter uppgradering."
+
+#: public/app/translations/translations.template.html:182
+msgid "Are you sure?"
+msgstr "Är du säker?"
+
+#: public/app/translations/translations.template.html:110
+msgid ""
+"Are you sure? NOTE: Deleting the feedback currently does not affect the "
+"feedback amount and averages shown in the summary section."
+msgstr ""
+"Är du säker? NOTERA: Att radera feedback påverkar inte feedback antalet och "
+"medeltalen som visas i sammanfattningen."
+
+#: public/app/routes/upsells/upsell-list/upsell-list.template.html:31
+msgid "Assign as"
+msgstr "Delegera som"
+
+#: public/app/routes/upsells/upsell-list/upsell-list.template.html:16
+msgid "Assign to engage points"
+msgstr "Delegera till interaktionspunkter"
+
+#: public/app/routes/upsells/upsell-list/upsell-list.template.html:84
+msgid "Automate Based on Feedback"
+msgstr "Automatisera på bas av Facebook"
+
+#: public/app/routes/upsells/upsell-list/upsell-list.template.html:89
+msgid ""
+"Automate instant upsell offers based on the feedback your customer gives. "
+"With Feedbackly-sponsored iPhone competition you can collect emails and use "
+"feeling-based instant upsell to grow your sales through feedback.\n"
+"\t\t\tPricing based on %-commission on additional sales created."
+msgstr ""
+"Automatisera direkta merförsäljnings-erbjudanden på bas av kundernas "
+"feedback. Med iPhone tävlingen sponsorerad av Feedbackly ,kan du samla e- "
+"post och använda känslobaserad direkt merförsäljning för att förstora din "
+"försäljning via feedback. \n"
+"\t\t\tPrissättning baserad på %-provision på försäljningen vi genererat "
+
+#: public/app/routes/results/result-stats/result-stats.template.html:14
+msgid "Average of responses in the selected feedback channels"
+msgstr "Medeltal av svar i valda feedback kanaler"
+
+#: public/app/routes/results/result-stats/result-stats.template.html:65
+#: public/app/routes/summary/summary.template.html:46
+msgid "Average of responses in the whole organization"
+msgstr "Medeltal av feedback i hela organisationen"
+
+#: public/app/routes/results/result-stats/result-stats.template.html:67
+msgid ""
+"Average of responses to this question in all the feedback channels in the "
+"organization in the selected timespan"
+msgstr ""
+"Medeltal av svar till denna fråga i alla feedback kanaler i hela "
+"organisationen inom vald tidsperiod"
+
+#: public/app/routes/results/result-stats/result-stats.template.html:16
+msgid "Average of responses to this question with the selected filters"
+msgstr "Medeltal av svar till denna fråga inom vald tidsperiod"
+
+#: public/app/routes/summary/summary.template.html:22
+msgid "Average of your responses"
+msgstr "Medeltal av dina feedbacks"
+
+#: public/app/routes/tutorial/tutorial.template.html:11
+msgid "Awesome!"
+msgstr "Härligt!"
+
+#: public/app/routes/upsells/upsell-list/upsell-list.template.html:79
+msgid "BOOST SALES INSTANTLY WITH FEEDBACK-BASED UPSELL"
+msgstr "BOOSTA DIN FÖRSÄLJNING OMEDELBART MED FEEDBACK BASERAD MERFÖRSÄLJNING"
+
+#: public/app/routes/organization/organization-survey-visualization/organization-survey-visualization.template.html:34
+msgid "Background color"
+msgstr "Bakrundsfärg"
+
+#: public/app/translations/translations.template.html:173
+msgid "Bad."
+msgstr "Dåligt."
+
+#: public/app/routes/results/chart-controls/chart-controls.template.html:24
+msgid "Bar"
+msgstr "Bar"
+
+#: public/app/routes/summary/summary.template.html:192
+msgid "Best day"
+msgstr "Bästa dagen"
+
+#: public/app/routes/summary/summary.template.html:204
+msgid "Best hour"
+msgstr "Bästa timmen"
+
+#: public/app/routes/organization/organization-billing/organization-billing.template.html:49
+#: public/app/routes/organization/organization.template.html:12
+msgid "Billing information"
+msgstr "Faktureringsuppgifter"
+
+#: public/app/components/no-payment-source-error/no-payment-source-error.template.html:3
+msgid "Billing information is required before proceeding"
+msgstr "Faktureringsuppgifter krävs innan vi kan fortsätta"
+
+#: public/app/routes/upsells/upsell-list/upsell-list.template.html:99
+msgid "Book time with our expert"
+msgstr "Boka en tid mer vår expert"
+
+#: public/app/components/plugin-setup/plugin-setup.template.html:45
+msgid "Bottom left corner"
+msgstr "Nedre vänstra hörnet"
+
+#: public/app/routes/summary/summary.template.html:286
+msgid "Bottom quartile limit"
+msgstr "Nedre kvartalens gräns"
+
+#: public/app/components/plugin-setup/plugin-setup.template.html:38
+msgid "Bottom right corner"
+msgstr "Nedre högra hörnet"
+
+#: public/app/translations/translations.template.html:19
+#: public/app/translations/translations.template.html:27
+msgid "Browser"
+msgstr "Webbläsare"
+
+#: public/app/routes/summary/summary.template.html:198
+msgid "Busiest day"
+msgstr "Livligaste dagen"
+
+#: public/app/routes/organization/organization-survey-visualization/organization-survey-visualization.template.html:43
+msgid "Button Color"
+msgstr "Knappfärg"
+
+#: public/app/routes/organization/organization-survey-visualization/organization-survey-visualization.template.html:48
+msgid "Button Text Color"
+msgstr "Textfärg på knapp"
+
+#: public/app/routes/organization/organization-survey-visualization/organization-survey-visualization.template.html:71
+msgid "Buttons, Word choices, etc"
+msgstr "Knappar, ordval, m.m."
+
+#: public/app/translations/translations.template.html:219
+msgid ""
+"By clicking \"confirm\", your trial will end and your subscription will be "
+"upgraded to"
+msgstr ""
+"Genom att klicka \"godkänn\" avslutas prövotiden och du uppgraderas till"
+
+#: public/app/routes/upsells/upsell-list/upsell-list.template.html:113
+msgid "Call or e-mail"
+msgstr "Ring eller skicka e-post"
+
+#: public/app/components/plan-selector/plan-selection-confirm/plan-selection-confirm.template.html:8
+#: public/app/routes/channel-management/channel-edit/mailing-list-channels/show-mailing-list-channel/show-mailing-list-channel.template.html:85
+#: public/app/routes/channel-management/channel-edit/sms-channels/show-sms-channel/show-sms-channel.template.html:83
+#: public/app/routes/channel-management/channel-management.template.html:66
+#: public/app/routes/upsells/upsell-list/upsell-list.template.html:58
+msgid "Cancel"
+msgstr "Avbryt"
+
+#: public/app/components/billing-form/billing-form.template.html:37
+msgid "Card number"
+msgstr "Kortnummer"
+
+#: public/app/routes/summary/summary.template.html:111
+#: public/app/routes/summary/summary.template.html:12
+#: public/app/routes/summary/summary.template.html:37
+#: public/app/routes/summary/summary.template.html:61
+#: public/app/routes/summary/summary.template.html:86
+msgid "Change from previous corresponding timespan"
+msgstr "Ändring från föregående motsvarande tidsperiod"
+
+#: public/app/routes/feedbacks/feedbacks.template.html:54
+msgid "Change search terms"
+msgstr "Byt sökkriterier"
+
+#: public/app/routes/results/chart-controls/chart-controls.template.html:17
+#: public/app/translations/translations.template.html:187
+msgid "Channel"
+msgstr "Kanal"
+
+#: public/app/translations/translations.template.html:132
+msgid "Channel Selection"
+msgstr "Val av kanal"
+
+#: public/app/translations/translations.template.html:139
+msgid "Channel created successfully."
+msgstr "Skapandet av kanal lyckades. "
+
+#: public/app/routes/channel-management/channel-management.template.html:15
+msgid "Channel group"
+msgstr "Kanalgrupp"
+
+#: public/app/routes/channel-management/channel-management.template.html:61
+msgid "Channel group name"
+msgstr "Kanalgruppens namn"
+
+#: public/app/components/channel-group-list/channel-group-list.template.html:2
+#: public/app/components/edit-user-form/edit-user-form.template.html:34
+msgid "Channel groups"
+msgstr "Kanalgrupper"
+
+#: public/app/routes/channel-management/new-channel-group/new-channel-group.template.html:16
+msgid ""
+"Channel groups are exactly what they sound like -- a group containing "
+"different channels. Feedbackly's user and rights management builds around "
+"channel groups. After adding channels to a group, you can assign users with "
+"rights to different groups depending on what they need to see.\n"
+"          Users who have rights to a channel group can publish surveys and "
+"see the results of those channels that are included in the group."
+msgstr ""
+"Kanalgrupper är precis vad det låter som -- en grupp som innehåler flera "
+"kanaler. Användarrättigheter bygger kring kanalgrupper. Efter att du tillagt "
+"kanaler till en grupp kan du dela rättigheter till användare att se olika "
+"grupper.\n"
+"\tAnvändare som har rättigheter till en kanalgrupp kan publicera "
+"undersökningar i den kanalen samt se resultaten från den gruppen."
+
+#: public/app/components/navbar/navbar.template.html:49
+#: public/app/routes/channel-management/channel-edit/channel-edit.template.html:5
+#: public/app/routes/channel-management/channel-management.template.html:5
+#: public/app/routes/channel-management/new-channel-group/new-channel-group.template.html:4
+msgid "Channel management"
+msgstr "Kanaler"
+
+#: public/app/components/add-channel/add-channel.template.html:7
+#: public/app/routes/surveys/survey-routes-selection/survey-routes-selection.template.html:35
+msgid "Channel name"
+msgstr "Namn på kanalen"
+
+#: public/app/translations/translations.template.html:121
+msgid "Channel removed from group."
+msgstr "Kanal raderad från gruppen."
+
+#: public/app/components/add-channel/add-channel.template.html:10
+msgid "Channel type"
+msgstr "Kanalens typ"
+
+#: public/app/routes/summary/summary.template.html:253
+msgid "Channel's average"
+msgstr "Kanalens medeltal"
+
+#: public/app/routes/summary/summary.template.html:252
+msgid "Channel's name"
+msgstr "Namn på kanalen"
+
+#: public/app/routes/notifications/notifications-list.template.html:15
+#: public/app/translations/translations.template.html:185
+msgid "Channels"
+msgstr "Kanaler"
+
+#: public/app/translations/translations.template.html:126
+msgid "Channels added to group successfully."
+msgstr "Kanaler tillagda till gruppen"
+
+#: public/app/components/add-channel-to-group/add-channel-to-group.template.html:4
+msgid "Channels selected"
+msgstr "Kanaler valda"
+
+#: public/app/routes/summary/summary.template.html:292
+msgid "Channels with no feedback are omitted from the ranking."
+msgstr "Kanaler utan feedback är uteslutna från rankingen."
+
+#: public/app/routes/organization/organization-billing/organization-billing.template.html:17
+msgid "Charges"
+msgstr "Faktureringar"
+
+#: public/app/routes/results/chart-controls/chart-controls.template.html:21
+msgid "Chart type"
+msgstr "Diagrams typ"
+
+#: public/app/translations/translations.template.html:65
+msgid "Check box"
+msgstr "Valruta"
+
+#: public/app/routes/channel-management/channel-edit/mailing-list-channels/show-mailing-list-channel/add-mailing-list-addresses/add-mailing-list-addresses.template.html:45
+msgid "Check input on row"
+msgstr "Granska radens värde"
+
+#: public/app/routes/notifications/controls/contact/contact-control.template.html:56
+msgid "Checked"
+msgstr "Vald"
+
+#: public/app/routes/notifications/notifications.template.html:32
+msgid "Choose a survey"
+msgstr "Välj enkät "
+
+#: public/app/translations/translations.template.html:178
+msgid "Choose at least one feedback channel"
+msgstr "Välj åtminstone en feedback kanal"
+
+#: public/app/translations/translations.template.html:179
+msgid "Choose at least one survey"
+msgstr "Välj åtminstone en undersökning"
+
+#: public/app/routes/surveys/survey-routes-selection/survey-routes-selection.template.html:39
+msgid "Choose channel type"
+msgstr "Välj typ på kanalen"
+
+#: public/app/components/plugin-setup/plugin-setup.template.html:34
+msgid "Choose corner window placement"
+msgstr "Välj placering för hörnrutan"
+
+#: public/app/translations/translations.template.html:66
+msgid "Choose file"
+msgstr "Välj fil"
+
+#: public/app/routes/surveys/survey-routes-selection/survey-routes-selection.template.html:19
+msgid "Choose from existing Feedback Channels"
+msgstr "Välj från existerande feedback kanaler"
+
+#: public/app/translations/translations.template.html:186
+msgid "Choose links"
+msgstr "Välj länkarna"
+
+#: public/app/translations/translations.template.html:67
+msgid "Choose new file"
+msgstr "Välj ny fil"
+
+#: public/app/components/plugin-setup/plugin-setup.template.html:8
+msgid "Choose plugin display"
+msgstr "Välj plugin display"
+
+#: public/app/components/billing-form/billing-form.template.html:18
+msgid "City"
+msgstr "Stad"
+
+#: public/app/routes/surveys/surveys-list/surveys-list.template.html:121
+msgid "Click New Survey to create a survey."
+msgstr "Klicka Ny frågeserie för att göra en ny frågeserie"
+
+#: public/app/components/channel-setup-info/channel-setup-info.template.html:36
+msgid ""
+"Click here for more tips and guides on using a QR-code to collect feedback!"
+msgstr ""
+"Klicka här för flera tips på hur du använder QR koder för att samla feedback!"
+
+#: public/app/components/channel-setup-info/channel-setup-info.template.html:14
+msgid ""
+"Click here for more tips and guides on using a feedback kiosk to collect "
+"feedback!"
+msgstr ""
+"Klicka här för flera tips på hur du använder Feedback terminaler för att "
+"samla feedback!"
+
+#: public/app/routes/channel-management/channel-edit/mailing-list-channels/show-mailing-list-channel/add-mailing-list-addresses/add-mailing-list-addresses.template.html:68
+#: public/app/routes/channel-management/channel-edit/sms-channels/show-sms-channel/add-sms-contacts/add-sms-contacts.template.html:56
+#: public/app/routes/surveys/survey-editor/react-survey-editor.template.html:15
+#: public/app/routes/surveys/surveys-list/surveys-list.template.html:117
+msgid "Close"
+msgstr "Stäng"
+
+#: public/app/components/device-info/device-info.template.html:94
+msgid "Code"
+msgstr "Kod"
+
+#: public/app/routes/organization/organization-survey-visualization/organization-survey-visualization.template.html:31
+msgid "Color Theme"
+msgstr "Färgschema"
+
+#: public/app/routes/notifications/controls/slider/slider-control.template.html:9
+msgid "Condition"
+msgstr "Villkor"
+
+#: public/app/components/plan-selector/plan-selection-confirm/plan-selection-confirm.template.html:7
+msgid "Confirm"
+msgstr "Bekräfta"
+
+#: public/app/components/plan-selector/plan-selection-confirm/plan-selection-confirm.template.html:2
+msgid "Confirm plan switch"
+msgstr "Bekräfta byte av plan"
+
+#: public/app/translations/translations.template.html:222
+msgid "Confirm your purchase"
+msgstr "Bekräfta köpet"
+
+#: public/app/routes/organization/organization-billing/organization-billing.template.html:10
+msgid "Contact us"
+msgstr "Ta kontakt med oss"
+
+#: public/app/routes/notifications/controls/contact/contact-control.template.html:19
+msgid "Contains 1 or more words"
+msgstr "Innehåller 1 eller flera ord"
+
+#: public/app/routes/notifications/controls/contact/contact-control.template.html:20
+msgid "Contains all words"
+msgstr "Innehåller alla ord"
+
+#: public/app/components/channel-setup-info/channel-setup-info.template.html:51
+msgid "Continue publishing the survey in this screen."
+msgstr "Fortsätt att publicera frågeserien i den här skärmen."
+
+#: public/app/components/plugin-setup/plugin-setup.template.html:12
+msgid "Corner window"
+msgstr "Hörnruta"
+
+#: public/app/translations/translations.template.html:231
+msgid "Couldn't send SMS message to"
+msgstr "Kunde ej skicka SMS till"
+
+#: public/app/translations/translations.template.html:143
+msgid "Couldn't upload your image"
+msgstr "Bilden kunde inte laddas upp"
+
+#: public/app/translations/translations.template.html:229
+msgid "Country"
+msgstr "Land"
+
+#: public/app/routes/surveys/survey-routes-selection/survey-routes-selection.template.html:47
+msgid "Create"
+msgstr "Skapa"
+
+#: public/app/routes/upsells/upsell-list/upsell-list.template.html:83
+msgid "Create Upsell Offers"
+msgstr "Skapa merförsäljningserbjudande"
+
+#: public/app/routes/surveys/surveys-list/surveys-list.template.html:111
+msgid "Create a copy"
+msgstr "Skapa en kopia"
+
+#: public/app/routes/upsells/upsell-list/upsell-list.template.html:8
+msgid "Create a new upsell offer"
+msgstr "Skapa nytt merförsäljningserbjudande"
+
+#: public/app/routes/summary/summary.template.html:327
+msgid "Create a survey"
+msgstr "Skapa en undersökning"
+
+#: public/app/routes/channel-management/new-channel-group/new-channel-group.template.html:27
+msgid "Create channel group"
+msgstr "Skapa en kanalgrupp"
+
+#: public/app/translations/translations.template.html:91
+msgid ""
+"Create new feedback channels and choose the methods to collect your feedback "
+"data with the survey you just created.\n"
+"There is a variety of options from tablet kiosk to email and websites."
+msgstr ""
+"Skapa nya feedback kanaler och välj metoden du använder för att samla in "
+"feedback till undersökningen du just skapat."
+
+#: public/app/components/edit-user-form/edit-user-form.template.html:53
+msgid "Create surveys"
+msgstr "Skapa undersökningar"
+
+#: public/app/translations/translations.template.html:155
+msgid "Creating a file..."
+msgstr "Skapar filen..."
+
+#: public/app/routes/organization/organization-billing/organization-billing.template.html:27
+msgid "Credit card owner"
+msgstr "Ägaren av kreditkortet"
+
+#: public/app/translations/translations.template.html:22
+msgid "Custom range"
+msgstr "Anpassad tidsperiod"
+
+#: public/app/components/navbar/navbar.template.html:25
+msgid "Dashboard"
+msgstr "Dashboard"
+
+#: public/app/components/edit-user-form/edit-user-form.template.html:21
+#: public/app/routes/user/user-settings/user-settings.template.html:11
+msgid "Dashboard language"
+msgstr "Språket på din dashboard"
+
+#: public/app/routes/organization/organization-billing/organization-billing.template.html:24
+#: public/app/routes/results/chart-controls/chart-controls.template.html:14
+#: public/app/routes/results/contact-results/contact-results.template.html:10
+#: public/app/routes/results/text-results/text-results.template.html:15
+msgid "Date"
+msgstr "Datum"
+
+#: public/app/routes/results/chart-controls/chart-controls.template.html:15
+msgid "Day of the week"
+msgstr "Veckodag"
+
+#: public/app/routes/organization/organization-settings/organization-settings.template.html:35
+msgid "Deactivate organization"
+msgstr "Inaktivera organisation"
+
+#: public/app/translations/translations.template.html:223
+msgid "Decline"
+msgstr "Neka"
+
+#: public/app/translations/translations.template.html:43
+msgid "Default"
+msgstr "Standard"
+
+#: public/app/routes/channel-management/channel-management.template.html:67
+msgid "Delete Group"
+msgstr "Ta bort grupp"
+
+#: public/app/routes/notifications/notifications.template.html:16
+msgid "Deliver notifications to"
+msgstr "Skicka avisering till"
+
+#: public/app/components/device-info/device-info.template.html:8
+#: public/app/components/edit-device-form/edit-device-form.template.html:33
+#: public/app/routes/organization/organization-billing/organization-billing.template.html:26
+msgid "Description"
+msgstr "Beskrivning"
+
+#: public/app/translations/translations.template.html:177
+msgid "Detractors"
+msgstr "Förtalare"
+
+#: public/app/translations/translations.template.html:243
+msgid "Display Probability"
+msgstr "Visnings sannolikhet"
+
+#: public/app/components/plugin-setup/plugin-setup.template.html:151
+msgid "Display after visiting"
+msgstr "Visa efter besök"
+
+#: public/app/components/plugin-setup/plugin-setup.template.html:166
+msgid "Display after visiting the page for"
+msgstr "Visa efter att besökaren har stannat"
+
+#: public/app/components/plugin-setup/plugin-setup.template.html:161
+msgid "Display after visiting the site for"
+msgstr "Visa efter att besökaren har stannat"
+
+#: public/app/components/add-user-form/add-user-form.template.html:10
+#: public/app/components/edit-user-form/edit-user-form.template.html:17
+msgid "Display name"
+msgstr "Display namn"
+
+#: public/app/components/plugin-setup/plugin-setup.template.html:84
+msgid "Display only on certain pages"
+msgstr "Visa endast på vissa sidor"
+
+#: public/app/components/plugin-setup/plugin-setup.template.html:4
+msgid "Display settings"
+msgstr "Display inställningar"
+
+#: public/app/routes/user/user-settings/user-settings.template.html:8
+msgid "Displayname"
+msgstr "Displaynamn"
+
+#: public/app/routes/surveys/survey-confirmation/survey-confirmation.template.html:25
+msgid "Distribution"
+msgstr "Distribuering"
+
+#: public/app/translations/translations.template.html:10
+msgid "Do you want to remove this rule set?"
+msgstr "Vill du radera denna regel-grupp?"
+
+#: public/app/translations/translations.template.html:158
+msgid "Download"
+msgstr "Ladda ned"
+
+#: public/app/components/channel-setup-info/channel-setup-info.template.html:33
+msgid "Download QR"
+msgstr "Ladda ned QR koden"
+
+#: public/app/components/file-drop/file-drop.template.html:6
+msgid "Drag your file here"
+msgstr "Dra din fil hit"
+
+#: public/app/translations/translations.template.html:204
+msgid "Drag your image here"
+msgstr "Dra din bild hit"
+
+#: public/app/translations/translations.template.html:128
+#: public/app/translations/translations.template.html:134
+msgid "E-mail Settings"
+msgstr "E-post inställningar"
+
+#: public/app/translations/translations.template.html:75
+msgid "E-mail address"
+msgstr "E-post adress"
+
+#: public/app/translations/translations.template.html:113
+msgid "E-mail list"
+msgstr "E-post lista"
+
+#: public/app/translations/translations.template.html:209
+msgid "E-mail lists"
+msgstr "E-post listor"
+
+#: public/app/routes/surveys/survey-email-settings/survey-email-settings.template.html:25
+msgid "E-mail subject"
+msgstr "E-post rubrik"
+
+#: public/app/routes/channel-management/channel-edit/mailing-list-channels/show-mailing-list-channel/add-mailing-list-addresses/add-mailing-list-addresses.template.html:52
+#: public/app/routes/channel-management/channel-edit/sms-channels/show-sms-channel/add-sms-contacts/add-sms-contacts.template.html:40
+msgid "Each line in the CSV file should be of format"
+msgstr "Varje rad i CSV filen skall vara i formen"
+
+#: public/app/components/add-user-form/add-user-form.template.html:29
+msgid "Each line in the CSV file should be of format email,display name"
+msgstr "Varje rad i CSV filen skall vara i formen e-post,namn"
+
+#: public/app/components/edit-channel-group-form/edit-channel-group-form.template.html:4
+#: public/app/routes/surveys/surveys-list/surveys-list.template.html:42
+#: public/app/routes/upsells/upsell-list/upsell-list.template.html:17
+msgid "Edit"
+msgstr "Editera"
+
+#: public/app/routes/channel-management/channel-edit/channel-edit.template.html:15
+msgid "Edit channel"
+msgstr "Editera kanalen"
+
+#: public/app/routes/surveys/surveys-list/surveys-list.template.html:24
+msgid "Edit existing surveys"
+msgstr "Editera existerande undersökning"
+
+#: public/app/components/add-user-form/add-user-form.template.html:5
+#: public/app/components/edit-user-form/edit-user-form.template.html:12
+#: public/app/routes/channel-management/channel-edit/mailing-list-channels/show-mailing-list-channel/add-mailing-list-addresses/add-mailing-list-addresses.template.html:26
+#: public/app/routes/channel-management/channel-edit/mailing-list-channels/show-mailing-list-channel/show-mailing-list-channel.template.html:78
+#: public/app/routes/channel-management/channel-edit/mailing-list-channels/show-mailing-list-channel/show-mailing-list-channel.template.html:9
+msgid "Email"
+msgstr "Epost"
+
+#: public/app/routes/surveys/survey-email-settings/survey-email-settings.template.html:5
+msgid "Email Settings"
+msgstr "E-post inställningar"
+
+#: public/app/translations/translations.template.html:29
+msgid "Emoticon style"
+msgstr "Emoji stil\t"
+
+#: public/app/routes/organization/organization-survey-visualization/organization-survey-visualization.template.html:9
+msgid "Enable Customization"
+msgstr "Aktivera anpassning"
+
+#: public/app/routes/channel-management/channel-edit/mailing-list-channels/show-mailing-list-channel/add-mailing-list-addresses/add-mailing-list-addresses.template.html:43
+msgid "Encountered some errors:"
+msgstr "Några fel uppstod:"
+
+#: public/app/translations/translations.template.html:50
+msgid "End of survey"
+msgstr "Slutet på frågeserien"
+
+#: public/app/routes/channel-management/new-channel-group/new-channel-group.template.html:24
+msgid "Enter a name for the new channel group"
+msgstr "Skriv in ett namn för den nya kanalgruppen"
+
+#: public/app/translations/translations.template.html:74
+msgid "Enter your e-mail address for a chance to win the newest iPhone!"
+msgstr ""
+"Fyll i din e-post adress för en chans att vinna den nyaste iPhone telefonen"
+
+#: public/app/components/add-channel/add-channel.template.html:6
+#: public/app/routes/surveys/survey-routes-selection/survey-routes-selection.template.html:34
+msgid "Ex. Kiosk 4 - Helsinki Central"
+msgstr "T.ex. Kiosk 4 - Helsingfors Centrum"
+
+#: public/app/components/plugin-setup/plugin-setup.template.html:182
+msgid "Exiting the page"
+msgstr "När användaren lämnar sidan"
+
+#: public/app/components/billing-form/billing-form.template.html:47
+msgid "Expiration (MM/YYYY)"
+msgstr "Expirerar( MM/YYYY)"
+
+#: public/app/routes/results/text-results/text-results.template.html:17
+msgid "Feedback"
+msgstr "Feedback"
+
+#: public/app/routes/surveys/survey-routes-selection/survey-routes-selection.template.html:3
+msgid "Feedback Channel Selection"
+msgstr "Val av feedback kanal"
+
+#: public/app/routes/summary/summary.template.html:158
+#: public/app/routes/surveys/surveys-list/surveys-list.template.html:40
+#: public/app/translations/translations.template.html:167
+msgid "Feedback amount"
+msgstr "Antalet feedback"
+
+#: public/app/routes/results/contact-results/contact-results.template.html:11
+#: public/app/routes/results/text-results/text-results.template.html:16
+msgid "Feedback channel"
+msgstr "Feedback kanal"
+
+#: public/app/components/edit-channel-group-form/edit-channel-group-form.template.html:30
+msgid "Feedback channels"
+msgstr "Feedback kanaler"
+
+#: public/app/routes/notifications/notifications.template.html:38
+msgid "Feedback channels to deliver notifications from"
+msgstr "Feedback kanaler att skicka aviseringar ifrån"
+
+#: public/app/translations/translations.template.html:152
+msgid "Feedback channels' average"
+msgstr "Medeltalet för feedback kanalen"
+
+#: public/app/translations/translations.template.html:151
+msgid "Feedback channels' feedback amount"
+msgstr "Antalet feedback från feedback kanalen"
+
+#: public/app/components/device-info/device-info.template.html:18
+#: public/app/routes/channel-management/channel-management.template.html:28
+msgid "Feedback count"
+msgstr "Antal feedback"
+
+#: public/app/translations/translations.template.html:111
+msgid "Feedback deleted."
+msgstr "Feedback raderad."
+
+#: public/app/translations/translations.template.html:115
+#: public/app/translations/translations.template.html:215
+msgid "Feedback kiosk"
+msgstr "Feedback terminal"
+
+#: public/app/components/navbar/navbar.template.html:37
+msgid "Feedback list"
+msgstr "Feedback lista"
+
+#: public/app/translations/translations.template.html:238
+msgid "Feedback source details"
+msgstr "Information om feedback källan"
+
+#: public/app/translations/translations.template.html:39
+msgid "Feedbackly style emoticons"
+msgstr "Feedbackly uttryckssymboler"
+
+#: public/app/components/fbevent-plan-limit-notifier/fbevent-plan-limit-notifier.template.html:2
+msgid "Feedbacks over the limit are omitted from the results."
+msgstr "Svaren som överskrider gränsen har uteslutits från resultaten"
+
+#: public/app/components/no-payment-source-error/no-payment-source-error.template.html:3
+msgid "Fill in your billing information"
+msgstr "Fyll i dina fakturerinsuppgifter"
+
+#: public/app/routes/organization/organization-billing/organization-billing.template.html:6
+msgid "Fill in your billing information below before upgrading your plan"
+msgstr "Fyll i dina faktureringsuppgifter före du uppgraderar din plan"
+
+#: public/app/translations/translations.template.html:194
+msgid "Fill in your billing information first"
+msgstr "Fyll i dina fakturerinsuppgifter först"
+
+#: public/app/translations/translations.template.html:20
+msgid "Filter"
+msgstr "Filter"
+
+#: public/app/translations/translations.template.html:54
+msgid "Final screen timeout"
+msgstr "Tiden som slutskärmen visas"
+
+#: public/app/routes/channel-management/channel-edit/mailing-list-channels/show-mailing-list-channel/show-mailing-list-channel.template.html:70
+#: public/app/routes/channel-management/channel-edit/sms-channels/show-sms-channel/show-sms-channel.template.html:68
+msgid "First Name"
+msgstr "Förnamn"
+
+#: public/app/routes/channel-management/channel-edit/mailing-list-channels/show-mailing-list-channel/add-mailing-list-addresses/add-mailing-list-addresses.template.html:12
+#: public/app/routes/channel-management/channel-edit/mailing-list-channels/show-mailing-list-channel/show-mailing-list-channel.template.html:7
+#: public/app/routes/channel-management/channel-edit/sms-channels/show-sms-channel/add-sms-contacts/add-sms-contacts.template.html:12
+#: public/app/routes/channel-management/channel-edit/sms-channels/show-sms-channel/show-sms-channel.template.html:7
+msgid "First name"
+msgstr "Förnamn"
+
+#: public/app/translations/translations.template.html:236
+msgid ""
+"First we need to get your feedback channels up and running. Choose "
+"individual channel from the top menu and go with the flow."
+msgstr ""
+"Först skall vi laga i ordning dina feedback kanaler. Välj en kanal från "
+"menyn ovan och kör vidare."
+
+#: public/app/translations/translations.template.html:237
+msgid ""
+"For example if you want to use your tablet to collect feedback, go to "
+"“feedback kiosks” and download the app to your tablet."
+msgstr ""
+"Om du t.ex. vill använda din iPad eller annan tablettdator för att samla "
+"feedback, gå till \"Feedback terminal\" och ladda ned appen till din tablet."
+
+#: public/app/components/edit-device-form/edit-device-form.template.html:47
+msgid "Force default language (if available in survey)"
+msgstr "Tvinga standard språk (om tillgänglig i frågeserien)"
+
+#: public/app/translations/translations.template.html:164
+msgid "Form"
+msgstr "Blankett"
+
+#: public/app/components/plan-selector/plan-selector.template.html:15
+msgid "Free"
+msgstr "Gratis"
+
+#: public/app/components/plugin-setup/plugin-setup.template.html:27
+msgid "Freely placed"
+msgstr "Placera fritt"
+
+#: public/app/translations/translations.template.html:15
+msgid "Friday"
+msgstr "fredag"
+
+#: public/app/routes/surveys/survey-email-settings/survey-email-settings.template.html:70
+msgid "From:"
+msgstr "Från:"
+
+#: public/app/components/billing-form/billing-form.template.html:8
+msgid "Full name"
+msgstr "Hela namnet"
+
+#: public/app/routes/upsells/upsell-list/upsell-list.template.html:94
+msgid "GET STARTED"
+msgstr "KOM IGÅNG"
+
+#: public/app/routes/upsells/upsell-editor/upsell-editor.template.html:89
+msgid "Generate barcode"
+msgstr "Generera streckod"
+
+#: public/app/routes/admin/edit-organization/organization-channels/organization-channels.template.html:21
+msgid "Generate engagepoints"
+msgstr "Generera interaktionspunkter"
+
+#: public/app/routes/tutorial/tutorial.template.html:15
+msgid "Get started in just a few easy steps!"
+msgstr "Få allt i gång med bara några enkla steg!"
+
+#: public/app/translations/translations.template.html:181
+msgid "Getting the results..."
+msgstr "Hämtar informationen.."
+
+#: public/app/components/edit-user-form/edit-user-form.template.html:70
+msgid "Give admin rights"
+msgstr "Ge admin rättigheter"
+
+#: public/app/translations/translations.template.html:170
+msgid "Good."
+msgstr "Bra."
+
+#: public/app/translations/translations.template.html:195
+msgid "Got it!"
+msgstr "Ok!"
+
+#: public/app/routes/results/chart-controls/chart-controls.template.html:12
+msgid "Grouping"
+msgstr "Gruppering"
+
+#: public/app/translations/translations.template.html:149
+msgid "Heading"
+msgstr "Rubrik"
+
+#: public/app/translations/translations.template.html:208
+msgid "Heading is missing from question number"
+msgstr "Rubrik saknas från fråga nummer "
+
+#: public/app/components/navbar/navbar.template.html:88
+msgid "Help center"
+msgstr "Hjälpcenter"
+
+#: public/app/routes/organization/organization-survey-visualization/organization-survey-visualization.template.html:3
+msgid ""
+"Here you can customize the visual appearance of the survey to better suit "
+"the style of your organization."
+msgstr ""
+"Här kan du ändra visuella utseendet av din enkät för att bättre passa din "
+"organisations stil "
+
+#: public/app/routes/summary/summary.template.html:186
+msgid "Here you can find your best performances as well as the worst ones."
+msgstr "Här hittar du både bästa och sämsta prestationerna."
+
+#: public/app/routes/surveys/survey-preview/survey-preview.template.html:16
+msgid ""
+"Here's what your survey will look depending on which channels you want to "
+"publish to."
+msgstr ""
+"Så här kommer din frågeserie att se ut beroende på vilka kanaler du vill "
+"publicera den i. "
+
+#: public/app/translations/translations.template.html:148
+msgid "Hide archived"
+msgstr "Dölj arkiverade"
+
+#: public/app/components/plugin-setup/plugin-setup.template.html:122
+msgid "Hide on certain pages"
+msgstr "Göm på vissa sidor"
+
+#: public/app/routes/summary/summary.template.html:188
+msgid "Highs and lows"
+msgstr "Topp och botten"
+
+#: public/app/routes/results/chart-controls/chart-controls.template.html:16
+#: public/app/routes/surveys/survey-publish-settings/survey-publish-settings.template.html:41
+msgid "Hour"
+msgstr "TImme"
+
+#: public/app/translations/translations.template.html:200
+msgid "Hours"
+msgstr "Timmar"
+
+#: public/app/translations/translations.template.html:76
+msgid "I agree to terms and conditions"
+msgstr "Jag har läst och godkänt villkoren "
+
+#: public/app/translations/translations.template.html:163
+msgid "Image"
+msgstr "Bild"
+
+#: public/app/translations/translations.template.html:95
+msgid ""
+"In the publishing settings go through the parts to get detailed instruction "
+"on the setup.\n"
+"For example, you may download the app to your tablet from here.\n"
+"Here you can also choose whether to publish the survey now or\n"
+"schedule it to be automatically published later."
+msgstr ""
+"I inställningarna för publicering gå igenom delstegen för noggrannare "
+"instruktioner. T.ex. kan du ladda ned appen till din iPad härifrån. Härifrån "
+"styr du också ifall du vill publicera undersökningen direkt eller ställa in "
+"en tid då den publiceras."
+
+#: public/app/translations/translations.template.html:239
+msgid ""
+"In this section you will also find everything you need to set up your "
+"feedback channels e.g. find your printable QR ­codes and the embed codes for "
+"your website survey."
+msgstr ""
+"I den här sektionen hittar du allt du behöver för att lägga i gång dina "
+"feedback kanaler, t.ex. hittar du QR-koderna och koderna för dina "
+"nätundersökningar."
+
+#: public/app/routes/channel-management/channel-edit/mailing-list-channels/show-mailing-list-channel/add-mailing-list-addresses/add-mailing-list-addresses.template.html:54
+#: public/app/routes/channel-management/channel-edit/sms-channels/show-sms-channel/add-sms-contacts/add-sms-contacts.template.html:42
+msgid "Include this as a first line in your csv."
+msgstr "Inkludera detta som första raden i din CSV. "
+
+#: public/app/components/plugin-setup/plugin-setup.template.html:250
+msgid "Installation"
+msgstr "Installering"
+
+#: public/app/routes/upsells/upsell-list/upsell-list.template.html:85
+msgid "Instant offers and emails"
+msgstr "Direkta erbjudanden och e-post"
+
+#: public/app/translations/translations.template.html:6
+msgid "Last 30 Days"
+msgstr "Senaste 30 dagar"
+
+#: public/app/translations/translations.template.html:5
+msgid "Last 7 Days"
+msgstr "Senaste 7 dagar"
+
+#: public/app/translations/translations.template.html:8
+msgid "Last Month"
+msgstr "Senaste månaden"
+
+#: public/app/routes/channel-management/channel-edit/mailing-list-channels/show-mailing-list-channel/show-mailing-list-channel.template.html:74
+#: public/app/routes/channel-management/channel-edit/sms-channels/show-sms-channel/show-sms-channel.template.html:72
+msgid "Last Name"
+msgstr "Efternamn"
+
+#: public/app/routes/summary/summary.template.html:312
+msgid "Last month"
+msgstr "Förra månaden"
+
+#: public/app/routes/channel-management/channel-edit/mailing-list-channels/show-mailing-list-channel/add-mailing-list-addresses/add-mailing-list-addresses.template.html:19
+#: public/app/routes/channel-management/channel-edit/mailing-list-channels/show-mailing-list-channel/show-mailing-list-channel.template.html:8
+#: public/app/routes/channel-management/channel-edit/sms-channels/show-sms-channel/add-sms-contacts/add-sms-contacts.template.html:18
+#: public/app/routes/channel-management/channel-edit/sms-channels/show-sms-channel/show-sms-channel.template.html:8
+msgid "Last name"
+msgstr "Efternamn"
+
+#: public/app/routes/notifications/notifications-list.template.html:16
+msgid "Last notification sent"
+msgstr "Senaste skickade avisering"
+
+#: public/app/translations/translations.template.html:4
+msgid "Last week"
+msgstr "Förra veckan"
+
+#: public/app/routes/upsells/upsell-list/upsell-list.template.html:105
+msgid "Learn more at our Knowledge Base"
+msgstr "Lär dig mera i vår Knowledge Base"
+
+#: public/app/components/device-info/device-info.template.html:60
+#: public/app/components/device-info/device-info.template.html:74
+msgid "Learn more at our Knowledge base"
+msgstr "Lär dig mera från vårt hjälpcenter"
+
+#: public/app/routes/notifications/controls/contact/contact-control.template.html:18
+msgid "Length"
+msgstr "Längd"
+
+#: public/app/components/device-info/device-info.template.html:83
+#: public/app/components/device-info/device-info.template.html:99
+msgid "Link"
+msgstr "Länk"
+
+#: public/app/translations/translations.template.html:146
+msgid ""
+"Logic related to the moved question will change. Do you want to proceed?"
+msgstr ""
+"Logiken bunden till den flyttade frågan kommer att ändra. Vill du fortsätta?"
+
+#: public/app/components/edit-device-form/edit-device-form.template.html:37
+msgid "Logo"
+msgstr "Logo"
+
+#: public/app/translations/translations.template.html:156
+msgid "Message has been sent"
+msgstr "Meddelandet har skickats"
+
+#: public/app/routes/surveys/survey-publish-settings/survey-publish-settings.template.html:50
+msgid "Minute"
+msgstr "Minut"
+
+#: public/app/translations/translations.template.html:201
+msgid "Minutes"
+msgstr "Minuter"
+
+#: public/app/translations/translations.template.html:216
+msgid "Mobile"
+msgstr "Mobil"
+
+#: public/app/translations/translations.template.html:11
+msgid "Monday"
+msgstr "måndag"
+
+#: public/app/translations/translations.template.html:30
+msgid "Multiple Choice"
+msgstr "Flerval"
+
+#: public/app/routes/results/result-stats/result-stats.template.html:29
+msgid "NPS in the selected feedback channels"
+msgstr "NPS i valda feedback kanaler"
+
+#: public/app/routes/results/result-stats/result-stats.template.html:80
+msgid "NPS in the whole organization"
+msgstr "NPS i hela organisationen"
+
+#: public/app/routes/results/result-stats/result-stats.template.html:82
+msgid ""
+"NPS of this question in all the feedback channels in the organization in the "
+"selected timespan"
+msgstr ""
+"NPS i denna fråga i alla organisationens feedback kanaler inom vald "
+"tidsperiod"
+
+#: public/app/routes/results/result-stats/result-stats.template.html:31
+msgid "NPS of this question with the selected filters"
+msgstr "NPS i denna fråga med valda filter"
+
+#: public/app/routes/summary/summary.template.html:120
+msgid "NPS® in the selected timespan"
+msgstr "NPS® inom vald tidsperiod"
+
+#: public/app/components/add-device-form/add-device-form.template.html:6
+#: public/app/components/device-info/device-info.template.html:3
+#: public/app/components/edit-channel-group-form/edit-channel-group-form.template.html:11
+#: public/app/components/edit-device-form/edit-device-form.template.html:14
+#: public/app/routes/channel-management/channel-management.template.html:27
+#: public/app/routes/organization/organization-settings/organization-settings.template.html:8
+#: public/app/routes/surveys/surveys-list/surveys-list.template.html:14
+#: public/app/routes/surveys/surveys-list/surveys-list.template.html:38
+#: public/app/routes/surveys/surveys-list/surveys-list.template.html:98
+msgid "Name"
+msgstr "Namn"
+
+#: public/app/routes/organization/organization-billing/organization-billing.template.html:10
+msgid "Need more?"
+msgstr "Behöver du mera?"
+
+#: public/app/routes/upsells/upsell-list/upsell-list.template.html:34
+msgid "Negative"
+msgstr "Negativ"
+
+#: public/app/components/edit-device-form/edit-device-form.template.html:81
+msgid "Negative upsell"
+msgstr "Negativ merförsäljning"
+
+#: public/app/routes/summary/summary.template.html:122
+msgid ""
+"Net Promoter Score (NPS®) in the selected timespan in the feedback channels "
+"you have rights to."
+msgstr ""
+"Net Promoter Score (NPS®) inom vald tidsperiod i feedback kanaler du har "
+"rätt till"
+
+#: public/app/routes/upsells/upsell-list/upsell-list.template.html:37
+msgid "Neutral"
+msgstr "Neutral"
+
+#: public/app/components/edit-device-form/edit-device-form.template.html:52
+msgid "Neutral upsell"
+msgstr "Neutral merförsäljning"
+
+#: public/app/routes/channel-management/channel-edit/channel-edit.template.html:4
+#: public/app/routes/channel-management/channel-management.template.html:4
+msgid "New Feedback Channel"
+msgstr "Skapa en ny feedback kanal"
+
+#: public/app/components/plugin-setup/plugin-setup.template.html:136
+#: public/app/components/plugin-setup/plugin-setup.template.html:98
+msgid "New URL or partial URL"
+msgstr "Ny URL eller partiell URL"
+
+#: public/app/routes/upsells/upsell-editor/upsell-editor.template.html:6
+msgid "New Upsell"
+msgstr "Ny merförsäljning"
+
+#: public/app/routes/channel-management/new-channel-group/new-channel-group.template.html:14
+msgid "New channel group"
+msgstr "Skapa en ny kanalgrupp"
+
+#: public/app/routes/notifications/notifications-list.template.html:7
+msgid "New notification rule"
+msgstr "Ny aviseringsregel"
+
+#: public/app/routes/surveys/surveys-list/surveys-list.template.html:9
+msgid "New survey"
+msgstr "Ny undersökning"
+
+#: public/app/translations/translations.template.html:44
+msgid "Next"
+msgstr "Nästa"
+
+#: public/app/translations/translations.template.html:59
+msgid "Next (button text)"
+msgstr "Nästa (texten på knappen)"
+
+#: public/app/translations/translations.template.html:93
+msgid ""
+"Next you need to setup your channels to collect the data.\n"
+"Depending on what type of channels you chose to use, the software will ask "
+"you to do the setup."
+msgstr ""
+"Till näst skall du lägga i ordning dina kanaler för feedback insamling. "
+"Beroende på vilken typ av kanal du använder får du instruktionerna för att "
+"komma i gång."
+
+#: public/app/routes/upsells/upsell-list/upsell-list.template.html:69
+#: public/app/translations/translations.template.html:199
+msgid "No"
+msgstr "Nej"
+
+#: public/app/translations/translations.template.html:189
+msgid "No SMS channel was chosen"
+msgstr "Ingen SMS kanal har valts"
+
+#: public/app/components/device-info/device-info.template.html:41
+msgid "No active schedulations for this channel."
+msgstr "Inget aktivt schema för den här kanalen"
+
+#: public/app/routes/summary/summary.template.html:324
+msgid "No feedback to analyze at the moment."
+msgstr "Ingen feedback att analysera ännu."
+
+#: public/app/translations/translations.template.html:191
+msgid "No mailing list was chosen"
+msgstr "Ingen e-post lista har valts"
+
+#: public/app/translations/translations.template.html:190
+msgid "No message provided"
+msgstr "Meddelande saknas"
+
+#: public/app/routes/feedbacks/feedbacks.template.html:54
+#: public/app/routes/results/results.template.html:12
+msgid "No results found"
+msgstr "Inge resultat hittade"
+
+#: public/app/translations/translations.template.html:193
+msgid "No sender provided"
+msgstr "Sändare saknas"
+
+#: public/app/translations/translations.template.html:192
+msgid "No subject provided"
+msgstr "Rubrik saknas"
+
+#: public/app/routes/upsells/upsell-list/upsell-list.template.html:23
+msgid "No upsell templates added"
+msgstr "Ingen merförsäljnings-mall tillagd"
+
+#: public/app/components/device-info/device-info.template.html:28
+msgid "No user has right to the channel"
+msgstr "Ingen användare har rättigheter till kanalen"
+
+#: public/app/translations/translations.template.html:130
+#: public/app/translations/translations.template.html:136
+msgid "Not ready to publish just yet. Check the settings."
+msgstr "Inte riktigt klart ännu. Kolla inställningarna."
+
+#: public/app/routes/upsells/upsell-list/upsell-list.template.html:56
+msgid ""
+"Note: De-selecting engage points will remove the upsell offers from them."
+msgstr ""
+"Meddelande: Genom att välja bort interaktionspunkter, kommer att "
+"merförsäljningerbjudanden att raderas."
+
+#: public/app/components/edit-channel-group-form/edit-channel-group-form.template.html:34
+#: public/app/components/edit-channel-group-form/edit-channel-group-form.template.html:55
+#: public/app/routes/results/feedback-filters-list/feedback-filters-list.template.html:2
+#: public/app/routes/surveys/surveys-list/surveys-list.template.html:31
+msgid "Nothing here yet"
+msgstr "Inget här ännu"
+
+#: public/app/routes/notifications/notifications-list.template.html:14
+msgid "Notification recipients"
+msgstr "Mottagare av aviseringar"
+
+#: public/app/translations/translations.template.html:79
+msgid "Notification rule saved successfully."
+msgstr "Aviseringsregel sparad"
+
+#: public/app/components/navbar/navbar.template.html:55
+#: public/app/routes/notifications/notifications-list.template.html:3
+#: public/app/routes/notifications/notifications.template.html:5
+msgid "Notifications"
+msgstr "Aviseringar"
+
+#: public/app/translations/translations.template.html:108
+msgid ""
+"Now you have the basic knowledge to start learning about your customers. "
+"Just click below to start turning your happy customers into more business "
+"and better sales."
+msgstr ""
+"Nu har du en bas för att börja lära dig om dina kunder. Klicka nedan och "
+"börja förändra dina nöjda kunder till mera försäljning."
+
+#: public/app/routes/admin/edit-organization/organization-channels/organization-channels.template.html:24
+msgid "Number of engage points to generate"
+msgstr "Antal interaktionspunkter att generera"
+
+#: public/app/components/device-info/device-info.template.html:46
+msgid "Number of members"
+msgstr "Antal medlemmar"
+
+#: public/app/components/plugin-setup/plugin-setup.template.html:148
+msgid "Number of pages visited"
+msgstr "Antal besökta sidor"
+
+#: public/app/routes/surveys/surveys-list/surveys-list.template.html:39
+msgid "Number of questions"
+msgstr "Antal frågor"
+
+#: public/app/routes/summary/summary.template.html:70
+msgid "Number of respondents in the selected timespan"
+msgstr "Mängd av svarande inom vald tidsperiod"
+
+#: public/app/translations/translations.template.html:47
+msgid "OK"
+msgstr "OK"
+
+#: public/app/routes/notifications/notifications.template.html:81
+msgid "OR"
+msgstr "ELLER"
+
+#: public/app/routes/upsells/upsell-editor/upsell-editor.template.html:44
+msgid "Offer image"
+msgstr "Bild av erbjudande"
+
+#: public/app/translations/translations.template.html:171
+msgid "Ok."
+msgstr "Ok."
+
+#: public/app/components/plugin-setup/plugin-setup.template.html:104
+msgid "One URL needs to be visited before triggering"
+msgstr "Alla URL skall vara besökta innan triggning"
+
+#: public/app/translations/translations.template.html:161
+msgid "Open question"
+msgstr "Öppen fråga"
+
+#: public/app/components/navbar/navbar.template.html:69
+msgid "Organization"
+msgstr "Organisation"
+
+#: public/app/translations/translations.template.html:153
+msgid "Organization's feedback amount"
+msgstr "Antal feedback från din organisation"
+
+#: public/app/translations/translations.template.html:176
+msgid "Passives"
+msgstr "Passiva"
+
+#: public/app/routes/user/user-settings/user-settings.template.html:35
+msgid "Password"
+msgstr "Lösenord"
+
+#: public/app/routes/user/user-settings/user-settings.template.html:40
+msgid "Password confirmation"
+msgstr "Bekräfta lösenord"
+
+#: public/app/routes/summary/summary.template.html:170
+msgid "Performance meter"
+msgstr "Prestanda"
+
+#: public/app/routes/channel-management/channel-edit/sms-channels/show-sms-channel/show-sms-channel.template.html:76
+msgid "Phone Number"
+msgstr "Telefonnummer"
+
+#: public/app/routes/channel-management/channel-edit/sms-channels/show-sms-channel/add-sms-contacts/add-sms-contacts.template.html:24
+#: public/app/routes/channel-management/channel-edit/sms-channels/show-sms-channel/show-sms-channel.template.html:9
+msgid "Phone number"
+msgstr "Telefonnummer"
+
+#: public/app/translations/translations.template.html:18
+msgid "Pick a date range"
+msgstr "Välj en tidsperiod"
+
+#: public/app/components/plugin-setup/plugin-setup.template.html:66
+msgid ""
+"Place freely by adding this line of code anywhere on the site (in addition "
+"to the setup code below)"
+msgstr ""
+"Placera fritt genom att tillägga denna kod vart som helst på sidan (utöver "
+"installations koden ner till)"
+
+#: public/app/translations/translations.template.html:83
+msgid "Please make at least 1 notification rule."
+msgstr "Var god och gör minst en aviseringsregel"
+
+#: public/app/translations/translations.template.html:82
+msgid "Please select at least 1 channel."
+msgstr "Var god och välj minst en kanal"
+
+#: public/app/translations/translations.template.html:84
+msgid "Please type at least 1 e-mail recipient."
+msgstr "Var god och välj minst 1 e-post mottagare"
+
+#: public/app/translations/translations.template.html:225
+msgid "Plugin code has been copied to clipboard"
+msgstr "Plugin koden har kopierats"
+
+#: public/app/translations/translations.template.html:140
+msgid "Plugin settings have been saved."
+msgstr "Inställningar för din plugin har sparats."
+
+#: public/app/components/plugin-setup/plugin-setup.template.html:19
+msgid "Popup window"
+msgstr "Popup ruta"
+
+#: public/app/routes/upsells/upsell-list/upsell-list.template.html:40
+msgid "Positive"
+msgstr "Positiv"
+
+#: public/app/components/edit-device-form/edit-device-form.template.html:66
+msgid "Positive upsell"
+msgstr "Positiv merförsäljning"
+
+#: public/app/components/billing-form/billing-form.template.html:23
+msgid "Postal code"
+msgstr "Postkod"
+
+#: public/app/routes/organization/organization-settings/organization-settings.template.html:31
+msgid ""
+"Pressing this button will cancel your organization's subscription and your "
+"organization's users won't be able to login to their dashboard. When you "
+"want continue your subscription, just login and fill in your billing "
+"information."
+msgstr ""
+"Genom att trycka på den här knappen avbryter du din beställning och "
+"användare i din organisation kan inte logga in mera. När du vill fortsätta "
+"din beställning, logga in och fyll i dina faktureringsuppgifter."
+
+#: public/app/routes/organization/organization-survey-visualization/organization-survey-visualization.template.html:56
+#: public/app/translations/translations.template.html:131
+msgid "Preview"
+msgstr "Förhandsgranskning"
+
+#: public/app/translations/translations.template.html:165
+msgid "Previously created question"
+msgstr "Tidigare skapad fråga"
+
+#: public/app/translations/translations.template.html:56
+msgid "Privacy policy"
+msgstr "Privacy policy"
+
+#: public/app/translations/translations.template.html:175
+msgid "Promoters"
+msgstr "Förespråkare"
+
+#: public/app/translations/translations.template.html:42
+msgid "Provide general translations for the survey."
+msgstr "Förse allmän översättning för enkäten"
+
+#: public/app/translations/translations.template.html:133
+msgid "Publish Settings"
+msgstr "Inställningar för publicering"
+
+#: public/app/routes/surveys/survey-confirmation/survey-confirmation.template.html:67
+msgid "Publish now"
+msgstr "Publicera nu"
+
+#: public/app/routes/surveys/survey-publish-settings/survey-publish-settings.template.html:3
+msgid "Publish settings"
+msgstr "Publicera inställnignar"
+
+#: public/app/routes/surveys/survey-confirmation/survey-confirmation.template.html:52
+msgid "Publish time"
+msgstr "Tid för publicering"
+
+#: public/app/components/add-channel/add-channel.template.html:22
+msgid "Put in channel group(s)"
+msgstr "Lägg till kanalgrupp(er)"
+
+#: public/app/components/device-info/device-info.template.html:88
+#: public/app/translations/translations.template.html:118
+msgid "QR code"
+msgstr "QR kod"
+
+#: public/app/routes/organization/organization-survey-visualization/organization-survey-visualization.template.html:14
+#: public/app/routes/organization/organization-survey-visualization/organization-survey-visualization.template.html:60
+msgid "Question Title"
+msgstr "Frågans rubrik"
+
+#: public/app/translations/translations.template.html:53
+msgid "Question timeout"
+msgstr "Återladdningstid för frågan"
+
+#: public/app/translations/translations.template.html:52
+msgid "Question title is blank"
+msgstr "Rubrik saknas för frågan"
+
+#: public/app/routes/summary/summary.template.html:220
+msgid "Quietest day"
+msgstr "Lugnaste dagen"
+
+#: public/app/routes/summary/summary.template.html:243
+msgid "Ranking"
+msgstr "Ranking"
+
+#: public/app/translations/translations.template.html:221
+msgid "Read more about pricing in our help center"
+msgstr "Läs mera om prisera i vårt hjälpcenter"
+
+#: public/app/routes/organization/organization-billing/organization-billing.template.html:28
+msgid "Receipt"
+msgstr "Kvitto"
+
+#: public/app/translations/translations.template.html:227
+msgid "Receipt has been sent to your email address"
+msgstr "Kvittot har skickats till din e-post"
+
+#: public/app/translations/translations.template.html:55
+msgid "Redirect"
+msgstr "Omdirigera"
+
+#: public/app/translations/translations.template.html:62
+msgid "Redirect address"
+msgstr "Adress för omdirigering"
+
+#: public/app/components/plugin-setup/plugin-setup.template.html:194
+msgid "Redisplay after being closed after"
+msgstr "Visa åter efter att ha stängts "
+
+#: public/app/components/plugin-setup/plugin-setup.template.html:215
+msgid "Redisplay after survey has been finished after"
+msgstr "Visa åter efter att frågeserien har svarats "
+
+#: public/app/components/plugin-setup/plugin-setup.template.html:190
+msgid "Redisplay conditions"
+msgstr "Villkor för igenvisning"
+
+#: public/app/routes/results/chart-controls/chart-controls.template.html:7
+msgid "Relative (%)"
+msgstr "Relativ (%)"
+
+#: public/app/components/edit-user-form/edit-user-form.template.html:69
+msgid "Remove admin rights"
+msgstr "Ta bort adminrättigheter"
+
+#: public/app/translations/translations.template.html:183
+msgid "Remove feedback filter"
+msgstr "Ta bort feedback filter"
+
+#: public/app/routes/summary/summary.template.html:254
+msgid "Respondents"
+msgstr "Svarande"
+
+#: public/app/routes/summary/summary.template.html:95
+msgid "Responses to individual questions"
+msgstr "Svar till individuella frågor"
+
+#: public/app/routes/summary/summary.template.html:97
+msgid ""
+"Responses to individual questions in the selected timespan in the feedback "
+"channels you have rights to."
+msgstr ""
+"Svar till enskilda frågor inom vald tidsperiod i feedback kanaler du har "
+"rätt till. "
+
+#: public/app/routes/organization/organization-survey-visualization/organization-survey-visualization.template.html:89
+msgid "Restore defaults"
+msgstr "Återställ standard"
+
+#: public/app/components/navbar/navbar.template.html:31
+msgid "Results"
+msgstr "Resultat"
+
+#: public/app/translations/translations.template.html:58
+msgid "Returning to beginning in 10 seconds."
+msgstr "Återgår till början om 10 sekunder"
+
+#: public/app/translations/translations.template.html:109
+msgid "Review & Confirmation"
+msgstr "Granskning & godkännande"
+
+#: public/app/routes/surveys/survey-confirmation/survey-confirmation.template.html:3
+msgid "Review and Confirmation"
+msgstr "Godkännande"
+
+#: public/app/routes/organization/organization-users/show-organization-user/show-organization-user.template.html:22
+msgid "Revoke"
+msgstr "Upphäv"
+
+#: public/app/routes/organization/organization-users/show-organization-user/show-organization-user.template.html:21
+msgid "Revoked"
+msgstr "Upphävd"
+
+#: public/app/components/edit-user-form/edit-user-form.template.html:47
+msgid "Rights"
+msgstr "Rättigheter"
+
+#: public/app/routes/surveys/survey-sms-settings/survey-sms-settings.template.html:3
+msgid "SMS Settings"
+msgstr "SMS inställningar"
+
+#: public/app/routes/surveys/survey-confirmation/survey-confirmation.template.html:47
+msgid "SMS credits in total"
+msgstr "SMS kredit totalt"
+
+#: public/app/routes/surveys/survey-sms-settings/survey-sms-settings.template.html:47
+msgid "SMS credits per recipient."
+msgstr "SMS kredit per mottagare."
+
+#: public/app/routes/surveys/survey-sms-settings/survey-sms-settings.template.html:49
+msgid "SMS limitations"
+msgstr "Begränsningar för SMS"
+
+#: public/app/translations/translations.template.html:114
+#: public/app/translations/translations.template.html:213
+msgid "SMS list"
+msgstr "SMS lista"
+
+#: public/app/routes/surveys/survey-confirmation/survey-confirmation.template.html:47
+msgid "SMS messages will be sent"
+msgstr "SMS meddelande skickas "
+
+#: public/app/components/plugin-setup/plugin-setup.template.html:236
+msgid "Sampling"
+msgstr "Provtagning"
+
+#: public/app/translations/translations.template.html:16
+msgid "Saturday"
+msgstr "lördag"
+
+#: public/app/components/add-channel-to-group/add-channel-to-group.template.html:18
+#: public/app/components/add-channel/add-channel.template.html:41
+#: public/app/components/add-user-form/add-user-form.template.html:18
+#: public/app/components/billing-form/billing-form.template.html:50
+#: public/app/components/edit-channel-group-form/edit-channel-group-form.template.html:23
+#: public/app/components/edit-channel-group-form/edit-channel-group-form.template.html:44
+#: public/app/components/edit-channel-group-form/edit-channel-group-form.template.html:65
+#: public/app/components/edit-device-form/edit-device-form.template.html:100
+#: public/app/components/edit-user-form/edit-user-form.template.html:60
+#: public/app/routes/channel-management/channel-edit/mailing-list-channels/show-mailing-list-channel/show-mailing-list-channel.template.html:84
+#: public/app/routes/channel-management/channel-edit/sms-channels/show-sms-channel/show-sms-channel.template.html:82
+#: public/app/routes/channel-management/channel-management.template.html:65
+#: public/app/routes/notifications/notifications.template.html:134
+#: public/app/routes/organization/organization-settings/organization-settings.template.html:15
+#: public/app/routes/organization/organization-survey-visualization/organization-survey-visualization.template.html:84
+#: public/app/routes/surveys/surveys-list/surveys-list.template.html:116
+#: public/app/routes/user/user-settings/user-settings.template.html:27
+#: public/app/routes/user/user-settings/user-settings.template.html:43
+msgid "Save"
+msgstr "Spara"
+
+#: public/app/routes/upsells/upsell-editor/upsell-editor.template.html:138
+msgid "Save Upsell"
+msgstr "Spara merförsäljning"
+
+#: public/app/translations/translations.template.html:234
+msgid "Save settings"
+msgstr "Spara inställningar"
+
+#: public/app/translations/translations.template.html:157
+msgid "Saving succeeded"
+msgstr "Sparat"
+
+#: public/app/translations/translations.template.html:145
+#: public/app/translations/translations.template.html:70
+msgid "Saving the survey..."
+msgstr "Sparar undersökningen..."
+
+#: public/app/translations/translations.template.html:188
+msgid "Schedulation date is invalid"
+msgstr "Datumet du valt är ogiltigt"
+
+#: public/app/routes/surveys/survey-publish-settings/survey-publish-settings.template.html:19
+msgid "Schedule date"
+msgstr "Datum dör schemat"
+
+#: public/app/routes/surveys/survey-confirmation/survey-confirmation.template.html:68
+msgid "Schedule now"
+msgstr "Lägg till ett schema"
+
+#: public/app/routes/surveys/survey-publish-settings/survey-publish-settings.template.html:9
+msgid "Schedule publishing"
+msgstr "Schema för publicering"
+
+#: public/app/components/device-info/device-info.template.html:35
+msgid "Scheduled surveys"
+msgstr "Schemalagda undersökningar"
+
+#: public/app/components/plugin-setup/plugin-setup.template.html:172
+msgid "Scrolling"
+msgstr "Scrolling"
+
+#: public/app/routes/surveys/survey-sms-settings/survey-sms-settings.template.html:49
+msgid "See pricing"
+msgstr "Se priserna"
+
+#: public/app/routes/notifications/notifications.template.html:63
+msgid ""
+"Select conditions that need to apply for the notification to be sent. NOTE: "
+"All conditions must apply before any notifications are sent."
+msgstr ""
+"Välj villkor som måste uppfyllas för avisering. Obs: Alla villkor måste "
+"uppfyllas före en avisering skickas. "
+
+#: public/app/routes/notifications/controls/contact/contact-control.template.html:17
+msgid "Select function"
+msgstr "Väj funktion"
+
+#: public/app/routes/surveys/survey-routes-selection/survey-routes-selection.template.html:6
+msgid ""
+"Select the channels to distribute your survey in. If you have sufficient "
+"rights, you can also create new channels here."
+msgstr ""
+"Välj kanalen där du publicerar undersöknigen. Har du tillräckligt med "
+"rättigheter kan du även skapa nya kanaler."
+
+#: public/app/routes/surveys/survey-email-settings/survey-email-settings.template.html:34
+msgid "Select translation"
+msgstr "Välj översättning"
+
+#: public/app/routes/notifications/notifications.template.html:52
+msgid "Send immediately"
+msgstr "Skicka omedelbart"
+
+#: public/app/routes/user/user-settings/user-settings.template.html:19
+msgid "Send me notifications about the state of my devices"
+msgstr "Skicka notiser gällande statusen på mina terminaler"
+
+#: public/app/routes/user/user-settings/user-settings.template.html:24
+msgid "Send me weekly report"
+msgstr "Skicka mig veckoraporten"
+
+#: public/app/routes/surveys/survey-email-settings/survey-email-settings.template.html:53
+msgid "Send test"
+msgstr "Skicka test"
+
+#: public/app/routes/surveys/survey-sms-settings/survey-sms-settings.template.html:42
+msgid "Send test SMS"
+msgstr "Skicka test SMS"
+
+#: public/app/components/add-user-form/add-user-form.template.html:15
+msgid "Send user a password reset link in an email message"
+msgstr "Skicka användaren en länk för att byta lösenordet"
+
+#: public/app/routes/surveys/survey-email-settings/survey-email-settings.template.html:20
+msgid "Sender e-mail*"
+msgstr "Skickande e-post adress*"
+
+#: public/app/routes/surveys/survey-email-settings/survey-email-settings.template.html:15
+msgid "Sender name"
+msgstr "Namn på sändaren"
+
+#: public/app/routes/surveys/survey-sms-settings/survey-sms-settings.template.html:17
+msgid "Sender name (if supported))"
+msgstr "Skicka namn (om understött))"
+
+#: public/app/components/plugin-setup/plugin-setup.template.html:81
+msgid ""
+"Set the conditions to display the plugin. Once all conditions are fulfilled, "
+"the survey will be displayed."
+msgstr ""
+"Välj villkoren för visning av pluginen. När alla villkor har förfyllts "
+"kommer frågeserien att visa. "
+
+#: public/app/translations/translations.template.html:242
+msgid "Set up my channels now"
+msgstr "Skapa dina kanaler"
+
+#: public/app/components/navbar/navbar.template.html:102
+#: public/app/components/navbar/navbar.template.html:96
+#: public/app/routes/organization/organization-settings/organization-settings.template.html:3
+#: public/app/routes/organization/organization.template.html:6
+#: public/app/routes/user/user-settings/user-settings.template.html:1
+msgid "Settings"
+msgstr "Inställningar"
+
+#: public/app/translations/translations.template.html:235
+msgid "Settings have been saved"
+msgstr "Inställningarna har psarats"
+
+#: public/app/components/channel-setup-info/channel-setup-info.template.html:2
+msgid "Setup instructions for"
+msgstr "Inställningsanvisningar för"
+
+#: public/app/translations/translations.template.html:168
+msgid "Show all"
+msgstr "Visa allt"
+
+#: public/app/routes/surveys/surveys-list/surveys-list.template.html:28
+#: public/app/translations/translations.template.html:147
+msgid "Show archived"
+msgstr "Visa arkiverade"
+
+#: public/app/routes/results/text-results/text-results.template.html:9
+msgid "Show hidden feedbacks"
+msgstr "Visa dolda feedbacks"
+
+#: public/app/translations/translations.template.html:63
+msgid "Show image labels"
+msgstr "Visa rubrikerna för bilderna"
+
+#: public/app/routes/results/contact-results/contact-results.template.html:36
+#: public/app/routes/results/text-results/text-results.template.html:36
+msgid "Show more"
+msgstr "Visa mera"
+
+#: public/app/components/plugin-setup/plugin-setup.template.html:239
+msgid "Show the survey to only x% of the visitors"
+msgstr "Visa undersökningen endast för x% av besökarna"
+
+#: public/app/translations/translations.template.html:169
+msgid "Show top 5"
+msgstr "Visa top 5"
+
+#: public/app/components/navbar/navbar.template.html:108
+msgid "Sign out"
+msgstr "Logga ut"
+
+#: public/app/translations/translations.template.html:31
+msgid "Single Choice"
+msgstr "Enkelsvar"
+
+#: public/app/translations/translations.template.html:36
+msgid "Skip to question:"
+msgstr "Hoppa till fråga:"
+
+#: public/app/translations/translations.template.html:162
+msgid "Slider"
+msgstr "Slider"
+
+#: public/app/translations/translations.template.html:159
+msgid "Smileys"
+msgstr "Smileys"
+
+#: public/app/translations/translations.template.html:32
+msgid "Some texts are missing"
+msgstr "Vissa texter saknas"
+
+#: public/app/translations/translations.template.html:33
+msgid "Some translations are missing"
+msgstr "Vissa översättningar saknas"
+
+#: public/app/routes/notifications/controls/contact/contact-control.template.html:34
+msgid "Specify length in characters"
+msgstr "Specifiera längd i tecken"
+
+#: public/app/components/plugin-setup/plugin-setup.template.html:251
+msgid "Step 1 - Shared general source"
+msgstr "Steg 1 - Delad allmän källa"
+
+#: public/app/components/plugin-setup/plugin-setup.template.html:260
+msgid "Step 2: Unique plugin code"
+msgstr "Steg 2 - Unik plugin-kod"
+
+#: public/app/components/edit-channel-group-form/edit-channel-group-form.template.html:51
+msgid "Sub channel groups"
+msgstr "Undergrupper för kanaler"
+
+#: public/app/routes/surveys/survey-email-settings/survey-email-settings.template.html:72
+msgid "Subject:"
+msgstr "Innehåll"
+
+#: public/app/components/previews/contact-preview/contact-preview.template.html:9
+#: public/app/components/previews/slider-preview/slider-preview.template.html:14
+#: public/app/components/previews/text-preview/text-preview.template.html:7
+msgid "Submit"
+msgstr "Skicka"
+
+#: public/app/translations/translations.template.html:226
+msgid "Subscribe"
+msgstr "Prenumerera"
+
+#: public/app/routes/channel-management/channel-edit/mailing-list-channels/show-mailing-list-channel/show-mailing-list-channel.template.html:13
+msgid "Subscribed"
+msgstr "Prenumererat"
+
+#: public/app/routes/upsells/upsell-editor/upsell-editor.template.html:31
+msgid "Subtitle"
+msgstr "Rubrik"
+
+#: public/app/translations/translations.template.html:120
+msgid "Successfully created a channel."
+msgstr "Kanal skapad"
+
+#: public/app/translations/translations.template.html:119
+msgid "Successfully created the channel group."
+msgstr "Kanalgrupp skapad"
+
+#: public/app/translations/translations.template.html:17
+msgid "Sunday"
+msgstr "söndag"
+
+#: public/app/routes/notifications/notifications-list.template.html:13
+#: public/app/routes/surveys/survey-confirmation/survey-confirmation.template.html:14
+#: public/app/routes/surveys/surveys-list/surveys-list.template.html:5
+msgid "Survey"
+msgstr "Undersökning"
+
+#: public/app/routes/organization/organization.template.html:15
+msgid "Survey Visual Appearance"
+msgstr "Undersöknings utseende"
+
+#: public/app/components/device-schedulation-list/device-schedulation-list.template.html:2
+msgid "Survey already has the following schedulations"
+msgstr "Undersökningen är redan schemalagd"
+
+#: public/app/routes/surveys/surveys-list/surveys-list.template.html:106
+msgid "Survey can't be archived while it's active"
+msgstr "Undersökningen kan inte arkiveras då den är aktiv"
+
+#: public/app/translations/translations.template.html:224
+msgid "Survey has been copied"
+msgstr "Undersöknigen har kopierats"
+
+#: public/app/translations/translations.template.html:117
+msgid "Survey link"
+msgstr "Länk för undersökningen"
+
+#: public/app/translations/translations.template.html:129
+#: public/app/translations/translations.template.html:135
+msgid "Survey published successfully!"
+msgstr "Undersökningen publicerad!"
+
+#: public/app/translations/translations.template.html:71
+msgid "Survey saved"
+msgstr "Enkät sparad"
+
+#: public/app/translations/translations.template.html:69
+msgid "Survey saving failed"
+msgstr "Sparandet av enkäten misslyckades"
+
+#: public/app/routes/notifications/notifications.template.html:30
+msgid "Survey to watch feedbacks from"
+msgstr "Enkät att följa med feedback från"
+
+#: public/app/components/navbar/navbar.template.html:43
+msgid "Surveys"
+msgstr "Undersökningar"
+
+#: public/app/components/navbar/navbar.template.html:75
+msgid "Switch organization"
+msgstr "Byt organisation"
+
+#: public/app/translations/translations.template.html:78
+msgid "Switching organization..."
+msgstr "Byter organisation..."
+
+#: public/app/routes/organization/organization-survey-visualization/organization-survey-visualization.template.html:64
+msgid "TEXT ELEMENTS, subtitles, etc"
+msgstr "TEXTELEMENT, undertexter, etc"
+
+#: public/app/translations/translations.template.html:174
+msgid "Terrible."
+msgstr "Horribelt."
+
+#: public/app/translations/translations.template.html:141
+msgid "Test SMS sent to"
+msgstr "Test SMS skickad till"
+
+#: public/app/routes/surveys/survey-email-settings/survey-email-settings.template.html:49
+msgid "Test address"
+msgstr "Test address"
+
+#: public/app/translations/translations.template.html:137
+msgid "Test mail sent."
+msgstr "Test e-post skickat."
+
+#: public/app/routes/surveys/survey-sms-settings/survey-sms-settings.template.html:39
+msgid "Test number"
+msgstr "Test nummer"
+
+#: public/app/routes/upsells/upsell-editor/upsell-editor.template.html:38
+msgid "Text Body"
+msgstr "Brödtext"
+
+#: public/app/routes/organization/organization-survey-visualization/organization-survey-visualization.template.html:38
+msgid "Text Color"
+msgstr "Textfärg"
+
+#: public/app/routes/surveys/survey-email-settings/survey-email-settings.template.html:30
+#: public/app/routes/surveys/survey-sms-settings/survey-sms-settings.template.html:22
+msgid "Text body"
+msgstr "Text"
+
+#: public/app/translations/translations.template.html:64
+msgid "Text field"
+msgstr "Textruta"
+
+#: public/app/routes/upsells/upsell-editor/upsell-editor.template.html:101
+msgid "Thank you for your feedback and taking part in our prize draw!"
+msgstr "Tack för din feedback och för deltagandet i vår pristävling!"
+
+#: public/app/components/device-info/device-info.template.html:58
+msgid ""
+"The app passcode is the code that is used to access the iPad settings after "
+"it is first configured. The feedback device can then be reconfigured with a "
+"different passcode."
+msgstr ""
+"App lösenordet används för att komma åt iPadens intställningar efter att den "
+"konfigurerats. Terminalen kan sedan konfigureras åter ed ett nytt lösenord."
+
+#: public/app/routes/summary/summary.template.html:47
+msgid "The average of all responses in the organization in the chosen timespan"
+msgstr "Medeltal av alla svar i hela organisationen inom vald tidsperiod"
+
+#: public/app/routes/summary/summary.template.html:170
+msgid ""
+"The average of quantitative responses in the selected timespan in feedback "
+"channels you have rights to"
+msgstr ""
+"Medeltal av kvantitativa svar inom vald tidsperiod i feedback kanaler du har "
+"rätt till "
+
+#: public/app/routes/summary/summary.template.html:23
+msgid ""
+"The calculated average of quantitative feedback that has been collected in "
+"the chosen timespan in the feedback channels you have rights to."
+msgstr ""
+"Beräknat medeltal av kvantitativa svar som har samlats inom vald tidsperiod "
+"i feedback kanaler som du har rätt till. "
+
+#: public/app/translations/translations.template.html:180
+msgid "The date range is invalid"
+msgstr "Tidsintervallen är inte giltig"
+
+#: public/app/routes/surveys/survey-publish-settings/survey-publish-settings.template.html:73
+msgid "The following"
+msgstr "Följande"
+
+#: public/app/routes/surveys/survey-sms-settings/survey-sms-settings.template.html:27
+msgid "The link takes up max 21 characters."
+msgstr "Länken kan innehålla upp till 21 tecken. "
+
+#: public/app/routes/surveys/survey-sms-settings/survey-sms-settings.template.html:47
+msgid "The message takes up"
+msgstr "Meddelandet tar upp"
+
+#: public/app/routes/summary/summary.template.html:143
+msgid ""
+"The number of respondents in all feedback channels of the organization since "
+"the beginning of use"
+msgstr ""
+"Antal av svarande i organisationens alla feedback kanaler ända sen "
+"användningen påbörjats "
+
+#: public/app/routes/summary/summary.template.html:158
+msgid "The number of respondents in feedback channels you have rights to"
+msgstr "Antal av svarande i feedback kanaler du har rätt till"
+
+#: public/app/routes/summary/summary.template.html:72
+msgid ""
+"The number of respondents in the selected timespan in the feedback channels "
+"you have rights to."
+msgstr ""
+"Antal av svaranden inom vald tidsperiod i feedback kanaler du har rätt till"
+
+#: public/app/components/channel-setup-info/channel-setup-info.template.html:46
+msgid ""
+"The plugin has configured to be embedded in an element on your site. Add "
+"this element on your page where you want to survey to appear"
+msgstr ""
+"Pluginen är konfigurerad så att den är innesluten i ett element på din sida. "
+"Tillägg det här elementet på din sida där du önskar att undersökningen skall "
+"bli synlig."
+
+#: public/app/routes/surveys/survey-confirmation/survey-confirmation.template.html:61
+msgid "The schedule can be viewed and edited"
+msgstr "Du kan inställa schemat"
+
+#: public/app/translations/translations.template.html:207
+msgid "The survey has been published"
+msgstr "Undersökningen har publicerats"
+
+#: public/app/routes/surveys/survey-confirmation/survey-confirmation.template.html:60
+msgid "The survey is scheduled to be published on"
+msgstr "Undersökningen är schemalagd för att publiceras på"
+
+#: public/app/routes/surveys/survey-confirmation/survey-confirmation.template.html:30
+msgid "The survey will be distributed in"
+msgstr "Undersökningen distribueras i"
+
+#: public/app/routes/surveys/survey-confirmation/survey-confirmation.template.html:58
+msgid "The survey will be published immediately."
+msgstr "Undersökningen publiceras direkt."
+
+#: public/app/components/plugin-setup/plugin-setup.template.html:196
+msgid "The widget is not shown again once it's closed."
+msgstr "Widgeten visas inte igen efter att den stängts"
+
+#: public/app/components/plugin-setup/plugin-setup.template.html:216
+msgid "The widget is not shown again once the survey is completed."
+msgstr "Widgeten visas inte igen efter enkäten har slutförts"
+
+#: public/app/components/channel-setup-info/channel-setup-info.template.html:69
+#: public/app/components/channel-setup-info/channel-setup-info.template.html:76
+msgid ""
+"There are currently no contacts in this channel. Follow step 1 and add some."
+msgstr ""
+"Det finns för stunden inga kontaktuppgifter i den här kanalen. Följ steg ett "
+"och lägg till några."
+
+#: public/app/translations/translations.template.html:46
+msgid ""
+"There are feedbacks for this choice. Deleting this choice will also delete "
+"the associated feedbacks."
+msgstr ""
+"Det finns feedback för detta val. Genom att radera valet kommer även "
+"associerad feedback att raderas."
+
+#: public/app/routes/surveys/survey-confirmation/survey-confirmation.template.html:31
+msgid "There are no channels selected for distribution."
+msgstr "Inga kanaler har valts"
+
+#: public/app/translations/translations.template.html:7
+msgid "This Month"
+msgstr "Denna månad"
+
+#: public/app/components/device-info/device-info.template.html:72
+msgid ""
+"This authorization code is used for setting up an iPad as a feedback channel."
+msgstr ""
+"Den här koden används för att konfigurera en iPad till en feedback terminal."
+
+#: public/app/routes/upsells/upsell-editor/upsell-editor.template.html:18
+#: public/app/routes/upsells/upsell-editor/upsell-editor.template.html:26
+#: public/app/routes/upsells/upsell-editor/upsell-editor.template.html:33
+#: public/app/routes/upsells/upsell-editor/upsell-editor.template.html:40
+#: public/app/routes/upsells/upsell-editor/upsell-editor.template.html:70
+msgid "This field is required"
+msgstr "Detta fält är obligatoriskt"
+
+#: public/app/routes/notifications/notifications.template.html:9
+msgid ""
+"This tab lets you specify notifications based on the feedback you're given.\n"
+"          Each condition added will increase the specificity of the "
+"notification.\n"
+"          There can be more than one notification per survey."
+msgstr ""
+"Denna flik låter dig specificera avisering på bas av given feedback.\n"
+"Varje tillagt villkor kommer att öka noggrannheten av aviseringen.\n"
+"Man kan tillägga mera än en avisering per enkät. "
+
+#: public/app/routes/summary/summary.template.html:6
+msgid ""
+"This top row displays the key figures of the feedback channels you have "
+"rights to."
+msgstr "Toppraden visar nyckeltalen för de kanaler du har rättigheter till."
+
+#: public/app/translations/translations.template.html:3
+msgid "This week"
+msgstr "Denna vecka"
+
+#: public/app/translations/translations.template.html:14
+msgid "Thursday"
+msgstr "torsdag"
+
+#: public/app/translations/translations.template.html:184
+msgid "Time"
+msgstr "Tid"
+
+#: public/app/routes/surveys/survey-publish-settings/survey-publish-settings.template.html:60
+#: public/app/translations/translations.template.html:202
+msgid "Timezone"
+msgstr "Tidszon"
+
+#: public/app/routes/organization/organization-survey-visualization/organization-survey-visualization.template.html:17
+msgid "Title Font"
+msgstr "Rubrikens typsnitt"
+
+#: public/app/routes/organization/organization-survey-visualization/organization-survey-visualization.template.html:25
+msgid "Title color"
+msgstr "Rubrikens färg"
+
+#: public/app/routes/surveys/survey-email-settings/survey-email-settings.template.html:71
+msgid "To:"
+msgstr "Till:"
+
+#: public/app/translations/translations.template.html:2
+msgid "Today"
+msgstr "Idag"
+
+#: public/app/translations/translations.template.html:21
+msgid "Toggle comparison of two date ranges"
+msgstr "Omkoppla jämföring av 2 tidsperioder"
+
+#: public/app/components/plugin-setup/plugin-setup.template.html:208
+msgid "Toggle redisplaying time after closing."
+msgstr "Omkoppla egenvisning efter stängning "
+
+#: public/app/components/plugin-setup/plugin-setup.template.html:228
+msgid "Toggle redisplaying time after completing survey."
+msgstr "Omkoppla egenvisning efter slutförandet av enkäten"
+
+#: public/app/components/plugin-setup/plugin-setup.template.html:59
+msgid "Top left corner"
+msgstr "Övre vänstra härnet"
+
+#: public/app/routes/summary/summary.template.html:282
+msgid "Top quartile limit"
+msgstr "Gränsen för bästa kvartalen"
+
+#: public/app/components/plugin-setup/plugin-setup.template.html:52
+msgid "Top right corner"
+msgstr "Övre högra hörnet"
+
+#: public/app/routes/results/nps-results/nps-results.template.html:28
+msgid "Total"
+msgstr "Totalt"
+
+#: public/app/translations/translations.template.html:41
+msgid "Translations"
+msgstr "Översättningar"
+
+#: public/app/translations/translations.template.html:197
+msgid "Translations are missing from question number"
+msgstr "Översättning saknas från fråga nummer"
+
+#: public/app/components/plugin-setup/plugin-setup.template.html:78
+msgid "Triggering conditions"
+msgstr "Villkor för triggning"
+
+#: public/app/translations/translations.template.html:12
+msgid "Tuesday"
+msgstr "tisdag"
+
+#: public/app/routes/channel-management/channel-management.template.html:26
+msgid "Type"
+msgstr "Typ"
+
+#: public/app/routes/notifications/controls/contact/contact-control.template.html:57
+msgid "Unchecked"
+msgstr "Ej vald"
+
+#: public/app/routes/results/chart-controls/chart-controls.template.html:4
+msgid "Unit"
+msgstr "Måttenhet"
+
+#: public/app/translations/translations.template.html:34
+msgid "Unknown error"
+msgstr "Okänt fel"
+
+#: public/app/routes/upsells/upsell-editor/upsell-editor.template.html:5
+msgid "Update Upsell"
+msgstr "Uppdatera merförsäljning"
+
+#: public/app/components/fbevent-plan-limit-notifier/fbevent-plan-limit-notifier.template.html:3
+msgid "Upgrade your plan to see all your feedbacks"
+msgstr "Uppgradera din plan för att se alla feedbacks"
+
+#: public/app/components/add-user-form/add-user-form.template.html:36
+#: public/app/routes/channel-management/channel-edit/mailing-list-channels/show-mailing-list-channel/add-mailing-list-addresses/add-mailing-list-addresses.template.html:62
+#: public/app/routes/channel-management/channel-edit/sms-channels/show-sms-channel/add-sms-contacts/add-sms-contacts.template.html:50
+msgid "Upload"
+msgstr "Ladda upp"
+
+#: public/app/components/add-user-form/add-user-form.template.html:25
+#: public/app/routes/channel-management/channel-edit/mailing-list-channels/show-mailing-list-channel/add-mailing-list-addresses/add-mailing-list-addresses.template.html:40
+#: public/app/routes/channel-management/channel-edit/sms-channels/show-sms-channel/add-sms-contacts/add-sms-contacts.template.html:35
+msgid "Upload a CSV file"
+msgstr "Ladda upp en CSV fil"
+
+#: public/app/translations/translations.template.html:142
+msgid "Uploading your image..."
+msgstr "Laddar upp din bild..."
+
+#: public/app/translations/translations.template.html:77
+msgid "Upsell"
+msgstr "Merförsäljning"
+
+#: public/app/routes/upsells/upsell-editor/upsell-editor.template.html:59
+msgid "Upsell Code"
+msgstr "Merförsäljningskod"
+
+#: public/app/routes/upsells/upsell-editor/upsell-editor.template.html:16
+msgid "Upsell Name"
+msgstr "Namn på merförsäljning"
+
+#: public/app/routes/upsells/upsell-editor/upsell-editor.template.html:24
+msgid "Upsell Title"
+msgstr "Tittel på merförsäljning"
+
+#: public/app/routes/upsells/upsell-list/upsell-list.template.html:4
+msgid "Upsell offers"
+msgstr "Merförsäljningserbjudande"
+
+#: public/app/components/navbar/navbar.template.html:62
+msgid "Upselling"
+msgstr "Merförsäljning"
+
+#: public/app/routes/upsells/upsell-editor/upsell-editor.template.html:54
+msgid "Use Barcode / QR code"
+msgstr "Använd streckkod / QR kod"
+
+#: public/app/routes/organization/organization-users/show-organization-user/show-organization-user.template.html:8
+msgid "User has no valid API keys."
+msgstr "Användaren har inga giltiga API nycklar"
+
+#: public/app/routes/organization/organization.template.html:9
+msgid "Users"
+msgstr "Användare"
+
+#: public/app/components/device-info/device-info.template.html:23
+msgid "Users with right to the channel"
+msgstr "Användare som har rättigheter till kanlen"
+
+#: public/app/components/billing-form/billing-form.template.html:31
+msgid "VAT identification number"
+msgstr "VAT-nummer"
+
+#: public/app/components/plugin-setup/plugin-setup.template.html:158
+msgid "Visiting time"
+msgstr "Visiteringstid"
+
+#: public/app/routes/notifications/notifications.template.html:48
+msgid "Wait for responses to remaining questions once conditions are fulfilled"
+msgstr "Vänta på svar till kvarvarande frågor efter alla villkor uppfyllts"
+
+#: public/app/translations/translations.template.html:217
+msgid "Web form"
+msgstr "Web form"
+
+#: public/app/translations/translations.template.html:116
+msgid "Website plugin"
+msgstr "Plugin på nätsidan"
+
+#: public/app/translations/translations.template.html:218
+msgid "Website survey"
+msgstr "undersökning på nätsidan"
+
+#: public/app/translations/translations.template.html:13
+msgid "Wednesday"
+msgstr "onsdag"
+
+#: public/app/routes/tutorial/tutorial.template.html:4
+msgid "Welcome to Feedbackly!"
+msgstr "Välkommen till Feedbackly!"
+
+#: public/app/components/plugin-setup/plugin-setup.template.html:175
+msgid "When user has scrolled down"
+msgstr "När användaren har skrollat ner"
+
+#: public/app/components/plugin-setup/plugin-setup.template.html:185
+msgid "When user is exiting page"
+msgstr "När användaren lämnar sidan"
+
+#: public/app/translations/translations.template.html:160
+msgid "Word choices"
+msgstr "Ordval"
+
+#: public/app/routes/summary/summary.template.html:214
+msgid "Worst day"
+msgstr "Sämsta dagen"
+
+#: public/app/routes/summary/summary.template.html:226
+msgid "Worst hour"
+msgstr "Sämsta timmen"
+
+#: public/app/routes/upsells/upsell-list/upsell-list.template.html:68
+#: public/app/translations/translations.template.html:198
+msgid "Yes"
+msgstr "Ja"
+
+#: public/app/routes/channel-management/channel-edit/mailing-list-channels/show-mailing-list-channel/add-mailing-list-addresses/add-mailing-list-addresses.template.html:55
+#: public/app/routes/channel-management/channel-edit/sms-channels/show-sms-channel/add-sms-contacts/add-sms-contacts.template.html:43
+msgid ""
+"You can also add metadata to include in feedback by adding "
+"\"meta_FIELDNAMEHERE\" into your csv-file. ie. meta_customer-id."
+msgstr ""
+"Du kan även tillföra metadata i dina feedback genom att tillägga "
+"”meta_FIELDNAMEHERE” i din csv-fil. T.ex. meta_customer-id."
+
+#: public/app/translations/translations.template.html:138
+msgid ""
+"You have no rights to create SMS channels. Enter your credit card "
+"information in your organization details or request access from "
+"support@feedbackly.com"
+msgstr ""
+"Du har inte rättigheter att skapa en SMS lista. Lägg till dit kreditkort "
+"till organisationen eller be om rättigheter från support@feedbackly.com"
+
+#: public/app/routes/surveys/survey-sms-settings/survey-sms-settings.template.html:30
+msgid ""
+"You have no rights to send SMS messages. Enter your credit card information "
+"in your organization details or request access from support@feedbackly.com"
+msgstr ""
+"Du har inte rättigheter att skicka SMS meddelanden. Lägg till dit kreditkort "
+"till organisationen eller be om rättigheter från support@feedbackly.com"
+
+#: public/app/translations/translations.template.html:112
+msgid "You have to be an organization admin to create channel groups."
+msgstr ""
+"Du måste vara admin för din organisation för att kunna skapa kanalgrupper"
+
+#: public/app/translations/translations.template.html:196
+msgid "You haven't added any questions"
+msgstr "Du har inte tillagt frågor"
+
+#: public/app/translations/translations.template.html:206
+msgid "You haven't chosen a language"
+msgstr "Du har inte valt ett språk"
+
+#: public/app/translations/translations.template.html:205
+msgid "You haven't chosen any feedback channel types"
+msgstr "Du har inte valt någon feedback kanal"
+
+#: public/app/routes/surveys/survey-confirmation/survey-confirmation.template.html:43
+msgid "You haven't configured any e-mail settings."
+msgstr "Du har inte justerat dina e-post inställningar."
+
+#: public/app/routes/surveys/survey-confirmation/survey-confirmation.template.html:48
+msgid "You haven't configured any sms settings."
+msgstr "Du har inte justerat dina SMS .inställningar"
+
+#: public/app/translations/translations.template.html:228
+msgid "You just upgraded your plan, you can't downgrade it just now"
+msgstr "Du har nyligen uppgraderat din plan, du kan inte nedgradera just nu."
+
+#: public/app/translations/translations.template.html:86
+msgid ""
+"Your first step to getting know your customer better is creating a survey.\n"
+"Use the survey creation tool to do it - it takes just seconds!\n"
+"Here you can also find survey setups and language selection.\n"
+"You can use any language you like! After the survey is done,\n"
+"just follow the process and it will guide you through."
+msgstr ""
+"Första steget i att lära dig känna dina kunder tar du genom att skapa en "
+"undersökning. Det gör du lätt i vår undersöknings generator - och det tar "
+"ändast några sekunder! Här hittar du också inställningarna och "
+"språkalternativen för din undersökning. Du kan fritt använda precis vilket "
+"språk som helst. Efter att du är färdig med undersökningen följer du bara "
+"stegvis igenom processen och den handleder dig fram."
+
+#: public/app/components/channel-setup-info/channel-setup-info.template.html:18
+msgid "Your iPad will show this survey automatically once you publish it."
+msgstr ""
+"Din iPad kommer att visa frågeserien automatiskt när du publicerat den. "
+
+#: public/app/translations/translations.template.html:144
+msgid "Your image has been uploaded"
+msgstr "Din bild har laddats"
+
+#: public/app/routes/organization/organization-billing/organization-billing.template.html:51
+msgid ""
+"Your organization already has billing information but feel free to update it"
+msgstr ""
+"Din organisation har redan faktureringsuppgifter, men du kan alltid "
+"uppdatera dem"
+
+#: public/app/translations/translations.template.html:230
+msgid "Your plan has been updated"
+msgstr "Din plan har uppdaterats"
+
+#: public/app/components/fbevent-plan-limit-notifier/fbevent-plan-limit-notifier.template.html:2
+msgid "Your selection contains"
+msgstr "Ditt val innehåller"
+
+#: public/app/routes/surveys/survey-confirmation/survey-confirmation.template.html:19
+msgid "Your survey has"
+msgstr "Din undersökning har"
+
+#: public/app/translations/translations.template.html:220
+msgid "additional feedback sources"
+msgstr "extra feedback källor"
+
+#: public/app/translations/translations.template.html:232
+msgid "and"
+msgstr "och"
+
+#: public/app/routes/surveys/surveys-list/surveys-list.template.html:52
+msgid "archived"
+msgstr "arkiverad"
+
+#: public/app/translations/translations.template.html:38
+msgid "buttons"
+msgstr "Knappar"
+
+#: public/app/routes/surveys/survey-confirmation/survey-confirmation.template.html:30
+msgid "channels"
+msgstr "Kanaler"
+
+#: public/app/routes/surveys/survey-publish-settings/survey-publish-settings.template.html:73
+msgid ""
+"channels were selected. If you haven't configured your channels previously, "
+"you can\n"
+"      get their setup instructions by clicking on them."
+msgstr ""
+"kanalerna är valda. Om du inte har inställt dem tidigare, kan du får "
+"instruktionerna\n"
+"\tgenom att klicka på dem."
+
+#: public/app/routes/summary/summary.template.html:309
+#: public/app/routes/summary/summary.template.html:310
+#: public/app/routes/summary/summary.template.html:311
+msgid "days"
+msgstr "dagar"
+
+#: public/app/translations/translations.template.html:211
+msgid "e-mail list"
+msgstr "E-post lista"
+
+#: public/app/translations/translations.template.html:28
+msgid "emoticons"
+msgstr "uttryckssymboler"
+
+#: public/app/translations/translations.template.html:210
+msgid "feedback kiosk"
+msgstr "feedback terminal"
+
+#: public/app/routes/feedbacks/feedbacks.template.html:22
+msgid "feedbacks"
+msgstr "feedbacks"
+
+#: public/app/components/fbevent-plan-limit-notifier/fbevent-plan-limit-notifier.template.html:2
+msgid "feedbacks across all surveys"
+msgstr "feedbacks från alla undersökningar"
+
+#: public/app/components/plan-selector/plan-selector.template.html:32
+#: public/app/components/plan-selector/plan-selector.template.html:57
+#: public/app/components/plan-selector/plan-selector.template.html:8
+#: public/app/components/plan-selector/plan-selector.template.html:82
+msgid "feedbacks each month"
+msgstr "feedback per månad"
+
+#: public/app/components/fbevent-plan-limit-notifier/fbevent-plan-limit-notifier.template.html:2
+msgid "feedbacks that exceed your current subscription's limit of"
+msgstr "Feedback som överskrider din nuvarande beställnings gräns"
+
+#: public/app/components/channel-setup-info/channel-setup-info.template.html:66
+#: public/app/components/channel-setup-info/channel-setup-info.template.html:73
+#: public/app/routes/surveys/survey-confirmation/survey-confirmation.template.html:61
+msgid "from the channel management"
+msgstr "från kanal hantering"
+
+#: public/app/components/plugin-setup/plugin-setup.template.html:194
+#: public/app/components/plugin-setup/plugin-setup.template.html:215
+msgid "hours"
+msgstr "timmar"
+
+#: public/app/components/device-info/device-info.template.html:66
+msgid "iPad authorization code"
+msgstr "Auktoriserings kod för din iPad "
+
+#: public/app/components/channel-setup-info/channel-setup-info.template.html:10
+msgid ""
+"in the text field. Don't worry if the upcoming survey is an old one - you "
+"will activate the new survey next."
+msgstr ""
+"i textfeltet. Oroa dig inte ifall undersökningen du ser är gammal - du "
+"kommer till näst att aktivera en ny undersökning."
+
+#: public/app/routes/notifications/notifications.template.html:54
+msgid "minute"
+msgstr "minut"
+
+#: public/app/routes/notifications/notifications.template.html:55
+#: public/app/routes/notifications/notifications.template.html:56
+msgid "minutes"
+msgstr "minuter"
+
+#: public/app/translations/translations.template.html:233
+msgid "other contacs"
+msgstr "andra kontakter"
+
+#: public/app/components/plugin-setup/plugin-setup.template.html:151
+msgid "pages"
+msgstr "sidor"
+
+#: public/app/routes/surveys/survey-confirmation/survey-confirmation.template.html:19
+msgid "questions"
+msgstr "frågor"
+
+#: public/app/components/plugin-setup/plugin-setup.template.html:161
+#: public/app/components/plugin-setup/plugin-setup.template.html:166
+#: public/app/routes/notifications/notifications.template.html:53
+msgid "seconds"
+msgstr "sekunder"
+
+#: public/app/routes/surveys/survey-sms-settings/survey-sms-settings.template.html:26
+msgid "to your message body to set the place for the link."
+msgstr "till ditt meddelande för att placera länken."
+
+#: public/app/routes/upsells/upsell-list/upsell-list.template.html:41
+msgid "upsell"
+msgstr "merförsäljning"
+
+#: public/app/translations/translations.template.html:214
+msgid "web form"
+msgstr "web form"
+
+#: public/app/translations/translations.template.html:212
+msgid "website survey"
+msgstr "undersökning på nätsidan"
+
+#~ msgid ""
+#~ "Choose the questions to include data in the notification message from"
+#~ msgstr "Väj frågor som inkluderar data i aviseringsmeddelandet från "
+
+#~ msgid "Content"
+#~ msgstr "Innehåll"
+
+#~ msgid "End date"
+#~ msgstr "Slutdatum"
+
+#~ msgid "Feedback filters"
+#~ msgstr "Feedback filter"
+
+#~ msgid "Search"
+#~ msgstr "Sök"
+
+#~ msgid "Search terms"
+#~ msgstr "Sökkriterier"
+
+#~ msgid "Start date"
+#~ msgstr "Startdatum"
+
+#~ msgid ""
+#~ "With this ranking table you can compare the performance of different "
+#~ "feedback sources on an organizational level. This is where store managers "
+#~ "are competing for glory!"
+#~ msgstr ""
+#~ "Genom dessa placeringar kan du följa hur organisationens olika feedback-"
+#~ "källor presterar i jämförelse med varandra. Ett utmärkt ställe för t.ex. "
+#~ "butikscheferna att tävla med varandra!"
+
+#~ msgid ""
+#~ "Each line in the CSV file should be of format first name,last name,email"
+#~ msgstr "Varje rad i CSV filen skall vara i formen namn,efternamn,e-post"
+
+#~ msgid ""
+#~ "Each line in the CSV file should be of format first name,last name,phone "
+#~ "number"
+#~ msgstr ""
+#~ "Varje rad i CSV filen skall vara i formen namn,efternamn,telefonnummer"
+
+#~ msgid ""
+#~ "Add this line of code to the end your web page's body tag to initialize "
+#~ "the plugin"
+#~ msgstr ""
+#~ "Tillägg den här koden på ändan av din nätsidas body-tag för att "
+#~ "installera webpluggen"
+
+#~ msgid ""
+#~ "An URL or a partial URL. If it matches with the current page, the plugin "
+#~ "will show up and the survey will start."
+#~ msgstr ""
+#~ "En URL eller en partiell URL. Om det matchar med den aktuella sidan, "
+#~ "plugin kommer att dyka upp och undersökningen börjar."
+
+#~ msgid "New URL pattern"
+#~ msgstr "Ny URL pttern"
+
+#~ msgid "Place freely by adding this line of code"
+#~ msgstr "Placera fritt genom att tillägga den här koden"
+
+#~ msgid "Plugin preview is available on the top right corner of the screen"
+#~ msgstr ""
+#~ "Du kan förhandsgranska din plugin från övre högra hörnet på din skärm"
+
+#~ msgid "Redisplay rules"
+#~ msgstr "Återvisningsregler"
+
+#~ msgid "URL pattern rules"
+#~ msgstr "URL regler"
+
+#~ msgid "Visiting time rules"
+#~ msgstr "Regler för besökstiden"
+
+#~ msgid "Daily"
+#~ msgstr "Dagligen"
+
+#~ msgid "Hourly"
+#~ msgstr "Timvis"
+
+#~ msgid "Feedback channel management"
+#~ msgstr "Kanal management"
+
+#~ msgid ""
+#~ "A QR -code channel can be used e.g. restaurants or high volume service "
+#~ "locations. Read a QR-code and give feedback with any mobile device. To "
+#~ "get your QR -codes, click to open a specific QR -code channel and "
+#~ "download the QR that you can then attach to your own materials."
+#~ msgstr ""
+#~ "En QR-kod kan användas t.ex. i restauranger eller servicepunkter med högt "
+#~ "besökarantal. Läs QR-koden och ge feedback med vilken mobilapparat som "
+#~ "helst. För att komma åt dina QR-koder, öppna den specifika QR-kod kanalen "
+#~ "och ladda ner QR-koden som du sedan kan lägga med i dina materialet."
+
+#~ msgid ""
+#~ "A web form channel is the traditional web survey form reinvented! To find "
+#~ "your link to the web form, choose the channel from the list below. After "
+#~ "this you can activate a survey behind this link from the surveys section."
+#~ msgstr ""
+#~ "En webbenkät är en förbättrad version av den traditionella "
+#~ "nätundersökningsenkäten. För att komma åt länken till din webbenkät "
+#~ "väljer du rätta kanalen nedan. Efter det här kan du aktivera en "
+#~ "frågeserie till den här länken från Undersökningar fliken."
+
+#~ msgid "All"
+#~ msgstr "Alla"
+
+#~ msgid "All feedbacks"
+#~ msgstr "Feedback totalt"
+
+#~ msgid "Average"
+#~ msgstr "Medeltal"
+
+#~ msgid "Average of all the feedback channels in your organization"
+#~ msgstr "Medeltalet från alla feedback kanaler i din organisation"
+
+#~ msgid "Average of the feedback channels chosen in the search terms"
+#~ msgstr "Medeltalet från de feedback kanaler valda i sökkriterierna"
+
+#~ msgid ""
+#~ "Channel groups are feedback sources of the same type organized into "
+#~ "groups.\n"
+#~ "Users in your organization can be granted access to these subsets of "
+#~ "feedback sources according\n"
+#~ "to what they are entitled to see. Additionally, feedback groups can be "
+#~ "used as shortcuts to select a group of specific feedback sources\n"
+#~ "when distributing surveys and analyzing results. By default, all feedback "
+#~ "sources are part of the root group containing all feedback sources\n"
+#~ "of that channel type. Channel groups can contain feedback sources that "
+#~ "are contained in other groups as well as other channel groups."
+#~ msgstr ""
+#~ "Kanalgrupper är feedback källor av samma typ organiserade i grupper.\n"
+#~ "Användare i din organisation kan beviljas rättigheter till dessa grupper "
+#~ "på basen vad de får ta del av.\n"
+#~ "Dessutom kan du använda kanalgrupper som en genväg att välja vissa "
+#~ "feedback kanaler\n"
+#~ "då du publicerar undersökningar eller analyserar resultaten. Alla "
+#~ "feedback kanaler är del av en basgrupp som innehåller alla kanaler."
+
+#~ msgid "Create a new channel group"
+#~ msgstr "Skapa en ny kanalgrupp"
+
+#~ msgid "Email lists"
+#~ msgstr "E-post listor"
+
+#~ msgid "Feedback amount of all the feedback channels in your organization"
+#~ msgstr "Antalet feedback från alla kanaler i din organisation"
+
+#~ msgid "Feedback amount of the feedback channels chosen in the search terms"
+#~ msgstr "Antalet feedback ur de valda feedback kanalerna"
+
+#~ msgid "Feedback channels of"
+#~ msgstr "Feedback kanaler av"
+
+#~ msgid "Feedback kiosks"
+#~ msgstr "Feedback terminaler"
+
+#~ msgid "Feedbacks in period"
+#~ msgstr "Antalet feedback under perioden"
+
+#~ msgid "Individual answers"
+#~ msgstr "Enskilda svar"
+
+#~ msgid "My"
+#~ msgstr "Min"
+
+#~ msgid "Organization's average"
+#~ msgstr "Medeltalet för organisationen"
+
+#~ msgid "Overall NPS®"
+#~ msgstr "NPS"
+
+#~ msgid "QR codes"
+#~ msgstr "QR koder"
+
+#~ msgid "SMS lists"
+#~ msgstr "SMS listor"
+
+#~ msgid "Single answers"
+#~ msgstr "Enstaka svar"
+
+#~ msgid ""
+#~ "The average of all the feedback channels in your organization in the "
+#~ "chosen timespan"
+#~ msgstr ""
+#~ "Medeltalet från alla feedback kanaler i din organisation under den valda "
+#~ "tidsintervallen"
+
+#~ msgid ""
+#~ "The average of the feedback channels you have rights to in the chosen "
+#~ "timespan"
+#~ msgstr ""
+#~ "Medeltalet för de feedback kanaler du har rättigheter till under den "
+#~ "valda tindsintervallen"
+
+#~ msgid ""
+#~ "The number feedback givers in the feedback channels you have rights to in "
+#~ "the chosen timespan"
+#~ msgstr ""
+#~ "Antalet respondenter i de feedback kanaler du har rättigheter till under "
+#~ "den valda tindsintervallen "
+
+#~ msgid ""
+#~ "This is the average level of satisfaction calculated from all "
+#~ "quantifiable feedback you have collected in the selected time frame."
+#~ msgstr ""
+#~ "Det här är medeltalet av all den kvantitativa feedbacken du har fått "
+#~ "under den valda tidsintervallen."
+
+#~ msgid ""
+#~ "This is the list of all your email lists that you have associated to your "
+#~ "subscription. To add recipients or manage them, click to open an "
+#~ "individual list. An email list is a segment of specific email contacts "
+#~ "that you want to send your specific surveys to. To create more of these "
+#~ "email lists, just click “add new” and it will be automatically added to "
+#~ "your subscription."
+#~ msgstr ""
+#~ "Det här är en lista över alla e-post listor som är länkade till din "
+#~ "beställning. För att tillägga mottagare eller uppdatera dem, klicka upp "
+#~ "en specifik lista. En e-post lista är ett segment med specifika e-post "
+#~ "som du vill skicka en specifik undersökning till. För att skapa flera "
+#~ "listor klickar du bara \"lägg till ny\" och den läggs automatiskt till "
+#~ "din beställning. "
+
+#~ msgid ""
+#~ "This is the list of all your embedded web site surveys. A website survey "
+#~ "is a pop up survey that will collect information from your customers on "
+#~ "your website or web application. To launch it, just click open your web "
+#~ "site plugin from the list below and copy the script to your web page’s "
+#~ "head tag. After that the channel is active to use through your surveys!"
+#~ msgstr ""
+#~ "Det här är en lista över alla dina inneslutna nätundersökningar. En "
+#~ "nätundersökning är en pop up undersökning som samlar feedback från din "
+#~ "nätsida. För att ta den i bruk välj kanalen här nere och kopiera skripten "
+#~ "till din hemsidas head tag. Efter det är du redo att använda kanalen i "
+#~ "dina undersökningar."
+
+#~ msgid ""
+#~ "This is the list of all your text message lists that you have associated "
+#~ "to your subscription. To add recipients or manage them, click to open an "
+#~ "individual list. An SMS list is a segment of specific phone number "
+#~ "contacts that you want to send your specific surveys to. To create more "
+#~ "of these lists, just click “add new” and it will be automatically added "
+#~ "to your subscription."
+#~ msgstr ""
+#~ "Det här är en lista över alla SMS listor som är länkade till din "
+#~ "beställning. För att tillägga mottagare eller uppdatera dem, klicka upp "
+#~ "en specifik lista. En SMS lista är ett segment med specifika nummer som "
+#~ "du vill skicka en specifik undersökning till. För att skapa flera listor "
+#~ "klickar du bara \"lägg till ny\" och den läggs automatiskt till din "
+#~ "beställning. "
+
+#~ msgid ""
+#~ "This is the overall number of feedbacks you have collected with all your "
+#~ "channels in the selected time frame."
+#~ msgstr ""
+#~ "Det här är antalet feedback som du samlat från alla dina kanaler under "
+#~ "den valda tidsintervallen."
+
+#~ msgid ""
+#~ "To use a feedback kiosk or tablet to collect feedback you need to "
+#~ "download the app first from the App Store. If you have already have a "
+#~ "feedback device from us, you can skip this part. After downloading, "
+#~ "return here and select your kiosk source to see the identification code "
+#~ "you need to input in your application."
+#~ msgstr ""
+#~ "För att använda en feedback terminal eller tablet för att samla feedback "
+#~ "behöver du först ladda ned appen från App Store. Har du beställt en "
+#~ "feedback terminal från oss kan du gå över det här steget. Efter att ha "
+#~ "laddat ned appen behöver du ta fram identifikationskoden som din app "
+#~ "frågar efter. Den hittar du bland dina feedback kanaler."
+
+#~ msgid "Used last"
+#~ msgstr "Senast använd"
+
+#~ msgid "Web forms"
+#~ msgstr "Web former"
+
+#~ msgid "Website surveys"
+#~ msgstr "Undersökningar på nätsidan"
+
+#~ msgid ""
+#~ "With this ranking table you can compare the performance of different "
+#~ "feedback sources on an organizational level. This is where store managers "
+#~ "are competig for glory!"
+#~ msgstr ""
+#~ "Med hjälp av den här rankingen kan du jämföra prestationerna mellan de "
+#~ "olika feedback källorna på organisationsnivå. Det är här dina "
+#~ "butikschefer tävlar om ära och berömmelse!"
+
+#~ msgid "sources"
+#~ msgstr "källor"
+
+#~ msgid "to subscription"
+#~ msgstr "till beställningen"
+
+#~ msgid "Display to every n:th visitor"
+#~ msgstr "Visa till varje :nde besökare"
+
+#~ msgid "4 emoticons"
+#~ msgstr "4 smileys"
+
+#~ msgid "5 emoticons"
+#~ msgstr "5 smileys"
+
+#~ msgid "Add a translation"
+#~ msgstr "Tillägg en översättning"
+
+#~ msgid "Add to survey"
+#~ msgstr "Tillägg till undersökningen"
+
+#~ msgid ""
+#~ "Amount of time in seconds to show the final screen (\"thank you\") on "
+#~ "kiosks before returning to the beginning"
+#~ msgstr ""
+#~ "Antal sekunder som slutskärmen visas innan frågeserien återgår till "
+#~ "början."
+
+#~ msgid ""
+#~ "Amount of time it takes to return to the start of the survey on feedback "
+#~ "kiosks"
+#~ msgstr ""
+#~ "Tiden det tar att returnera till frågeseriens början på terminalerna"
+
+#~ msgid "Animated"
+#~ msgstr "Animerade"
+
+#~ msgid "Animations"
+#~ msgstr "Animationer"
+
+#~ msgid "As a summary at the end of each day"
+#~ msgstr "Som en sammanställning i slutet av varje dag"
+
+#~ msgid "As a summary at the end of each week"
+#~ msgstr "Som en sammanställning i slutet av varje vecka"
+
+#~ msgid ""
+#~ "Attach smart logic to you questions. If a certain answer is selected, "
+#~ "select to which question it will jump. Next question is always the "
+#~ "default."
+#~ msgstr ""
+#~ "Tillägg logik till dina frågor. Baserat på vad kunden svarar, kan du "
+#~ "bestämma vilken följdfråga som ställs. Nästa fråga kommer automatiskt om "
+#~ "ej annat väljs."
+
+#~ msgid "Change question type"
+#~ msgstr "Byt frågetyp"
+
+#~ msgid "Change your profile picture"
+#~ msgstr "Byt din profilbild"
+
+#~ msgid "Choose a flag for the translation"
+#~ msgstr "Välj en flagga för din översättning"
+
+#~ msgid "Choose a previously created question to add"
+#~ msgstr "Välj en tidigare skapad fråga att tillägga till frågeserien"
+
+#~ msgid "Contact form response is received"
+#~ msgstr "Du har fått ett svar till din kontakenkät"
+
+#~ msgid "Count of the emoticons"
+#~ msgstr "Antalet emoticons"
+
+#~ msgid "End of survey message is blank"
+#~ msgstr "Ingen text i undersökningens slutskärm"
+
+#~ msgid "Feedbackly"
+#~ msgstr "Feedbackly"
+
+#~ msgid "I want an e-mail when a new"
+#~ msgstr "Jag vill ha en e-post när"
+
+#~ msgid "Image labels"
+#~ msgstr "Bildtext"
+
+#~ msgid "Move to question"
+#~ msgstr "Flytta till fråga"
+
+#~ msgid "NPS value is one of the following"
+#~ msgstr "NPS värdet är ett av följande"
+
+#~ msgid "Next question"
+#~ msgstr "Nästa fråga"
+
+#~ msgid "Notifications [beta]"
+#~ msgstr "Notifikationer (beta)"
+
+#~ msgid "Off"
+#~ msgstr "Av"
+
+#~ msgid "On"
+#~ msgstr "På"
+
+#~ msgid "Open feedback is received"
+#~ msgstr "Öppne feedback har mottagits"
+
+#~ msgid "Open the survey in your browser"
+#~ msgstr "Öppna undersökningen i din webbläsare"
+
+#~ msgid ""
+#~ "Please provide an optional translation for the following texts (You only "
+#~ "have to do this once).\n"
+#~ "          If the translations are not provided, they are shown in English."
+#~ msgstr ""
+#~ "Vänligen tillägg en översättning för följande texter (du behöver göra det "
+#~ "här bara en gång).\n"
+#~ "\tOm inga översättningar tilläggs, visas texterna på engelska."
+
+#~ msgid ""
+#~ "Redirect browser to this address after finishing the survey where "
+#~ "applicable"
+#~ msgstr ""
+#~ "Omdirigera webbläsaren till den här adressen efter att undersökningen har "
+#~ "besvarats"
+
+#~ msgid "Remove"
+#~ msgstr "Radera"
+
+#~ msgid "Satisfaction is one of the following"
+#~ msgstr "Nöjdhet är en av följande"
+
+#~ msgid "Send me an email"
+#~ msgstr "Skicka mig ett e-post"
+
+#~ msgid "Show metadata related to feedbacks"
+#~ msgstr "Visa metadata relaterade till feedbacken"
+
+#~ msgid "Static"
+#~ msgstr "Statisk"
+
+#~ msgid "The email will be sent based on these triggers."
+#~ msgstr "E-posten skickas på basen av följande kriterier"
+
+#~ msgid "Traditional"
+#~ msgstr "Traditionell"
+
+#~ msgid "Triggers"
+#~ msgstr "Regler"
+
+#~ msgid "Unsubscribe"
+#~ msgstr "Avprenumerera"
+
+#~ msgid "Use triggers"
+#~ msgstr "Använd regler"
+
+#~ msgid ""
+#~ "You can set up e-mail notifications that can be triggered by certain "
+#~ "feedback rules."
+#~ msgstr "Du kan använda dig av e-post notiser för specifika feedback."
+
+#~ msgid "Feedback amount in period"
+#~ msgstr "Antalet feedback under perioden"
+
+#~ msgid ""
+#~ "You can use the \"*\" symbol for arbitary number of any character. For "
+#~ "example \"*/pricing\" and \"*/users/*\""
+#~ msgstr ""
+#~ "Du kan använda ”*” symbolen för vilket antal tecken som helst. T.ex. \"*/"
+#~ "pricing\" and \"*/users/*\""

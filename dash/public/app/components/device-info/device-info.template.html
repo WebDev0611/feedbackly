@@ -1,0 +1,106 @@
+<div class="section">
+  <dl class="dl-horizontal section">
+    <dt translate>Name</dt>
+    <dd>
+      {{deviceInfo.device.name}}
+    </dd>
+
+    <dt translate>Description</dt>
+    <dd>
+      <span ng-if="deviceInfo.device.description">
+        {{deviceInfo.device.description}}
+      </span>
+
+      <span class="grey-text" ng-if="!deviceInfo.device.description">
+      </span>
+    </dd>
+
+    <dt translate>Feedback count</dt>
+    <dd>
+      {{::deviceInfo.device.feedback_count}}
+    </dd>
+
+    <dt translate>Users with right to the channel</dt>
+    <dd ng-if="::(deviceInfo.usersWithRightToDevice)">
+      {{::deviceInfo.usersWithRightToDevice}}
+    </dd>
+
+    <dd ng-if="::(!deviceInfo.usersWithRightToDevice)" class="grey-text" translate>
+      No user has right to the channel
+    </dd>
+
+    <dt translate ng-if="::(deviceInfo.device.active_survey !== undefined)">Active survey</dt>
+    <dd ng-if="::(deviceInfo.device.active_survey !== undefined)">{{::deviceInfo.device.active_survey.name}}</dd>
+
+    <dt translate ng-if="::(deviceInfo.isSchedulateable)">Scheduled surveys</dt>
+    <dd ng-if="::(deviceInfo.isSchedulateable)">
+      <span ng-if="deviceInfo.schedulations !== undefined">
+        {{::deviceInfo.schedulations}}
+      </span>
+
+      <span class="grey-text" ng-if="deviceInfo.schedulations === undefined" translate>
+        No active schedulations for this channel.
+      </span>
+    </dd>
+
+    <dt translate ng-if="deviceInfo.numberOfMembers !== undefined">Number of members</dt>
+    <dd ng-if="deviceInfo.numberOfMembers !== undefined">
+      {{deviceInfo.numberOfMembers}}
+    </dd>
+
+    <dt translate ng-if="::(deviceInfo.hasPasscode)" translate>App passcode</dt>
+    <dd ng-if="::(deviceInfo.hasPasscode)">
+      <div style="max-width: 250px">
+
+      {{deviceInfo.device.passcode}}
+
+        <hint hint-id="ipad-passcode" align-horizontal="right" class="no-margins small">
+          {{ 'The app passcode is the code that is used to access the iPad settings after it is first configured. The feedback device can then be reconfigured with a different passcode. ' | translate }}
+          <br>
+            <a href="https://feedbacklyhelp.zendesk.com" target="_blank">{{ 'Learn more at our Knowledge base' | translate }} </a>
+          <br>
+        </hint>
+      </div>
+    </dd>
+
+    <dt translate ng-if="::(deviceInfo.hasAuthCode)" translate>iPad authorization code</dt>
+    <dd ng-if="::(deviceInfo.hasAuthCode)">
+      <div style="max-width: 250px">
+        {{deviceInfo.device.udid}}
+
+        <hint hint-id="ipad-auth-code" align-horizontal="right" class="no-margins small">
+          {{ 'This authorization code is used for setting up an iPad as a feedback channel.' | translate }}
+          <br>
+            <a href="#">{{ 'Learn more at our Knowledge base' | translate }} </a>
+          <br>
+        </hint>
+
+      </div>
+    </dd>
+
+    <!-- TODO : Duplicate - remove! ~msorja7/2017 -->
+
+    <dt translate ng-if="::(deviceInfo.hasQr)">Link</dt>
+    <dd ng-if="::(deviceInfo.hasQr)">
+      <a ng-href="{{::deviceInfo.device.link}}" target="_blank">{{::deviceInfo.device.link}}</a>
+    </dd>
+
+    <dt translate ng-if="::(deviceInfo.hasQr)">QR code</dt>
+    <dd ng-if="::(deviceInfo.hasQr)">
+      <div style="display:inline-block;"><qr-code text="deviceInfo.device.link" download-link="true" width="100" height="100" download-file-name="{{deviceInfo.qrFileName}}-qr-code"></qr-code></div>
+      <a class="btn-floating" style="margin-top: -30px" ng-click="deviceInfo.downloadQr(deviceInfo.device.link)"><i class="material-icons">file_download</i></a>
+    </dd>
+
+    <dt translate ng-if="::(deviceInfo.device.type==='LINK' && deviceInfo.device.hashids_seed_number)">Code</dt>
+    <dd ng-if="::(deviceInfo.device.type==='LINK') && deviceInfo.device.hashids_seed_number">
+      {{::deviceInfo.device.udid}}
+    </dd>
+
+    <dt translate ng-if="::(deviceInfo.hasLink)">Link</dt>
+    <dd ng-if="::(deviceInfo.hasLink)">
+      <a ng-href="{{::deviceInfo.device.link}}" target="_blank">{{::deviceInfo.device.link}}</a>
+    </dd>
+
+
+  </dl>
+</div>

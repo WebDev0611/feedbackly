@@ -1,0 +1,42 @@
+<div class="results-legend">
+  <% questionData.totals.forEach(function(total) { %>
+    <div class="chip result-total">
+      <div class="nps-thumb"><%= parseFloat(total.id) * 10 %></div><%= total.value %><%= questionData.totalUnitSuffix %>
+    </div>
+  <% }); %>
+</div>
+
+<div class="row">
+  <div id="question-<%= questionData.question._id %>-primary-chart-<%= isCompare ? 'compare' : 'default' %>" class="col l9">
+  </div>
+
+  <div class="col l3">
+    <ul class="no-style">
+      <%
+        var npsValueToClass = function(value) {
+          switch(value) {
+            case 'Promoters':
+              return 'green-text';
+              break;
+            case 'Passives':
+              return 'yellow-text';
+              break;
+            case 'Detractors':
+              return 'red-text';
+              break;
+          }
+        }
+      %>
+
+      <% (questionData.groupedTotals || []).forEach(function(total) { %>
+        <li class="<%= npsValueToClass(total.id) %>">
+          <%= gt.gettext(total.name) %>: <%= total.value %>
+        </li>
+      <% }); %>
+
+      <li>
+        <%= gt.gettext('Total') %>: <%= questionData.question.totals.total %>
+      </li>
+    </ul>
+  </div>
+</div>

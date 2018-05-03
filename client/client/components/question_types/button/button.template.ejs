@@ -1,0 +1,76 @@
+<% var buttonId = buttonId === undefined ? 0 : buttonId + 1; %>
+
+<div class="question-type question-type-button" question-id="<%= question._id %>" type="Button">
+  <% include ./../../language_menu/language_menu.template.ejs %>
+
+  <div class="question-inner flexbox-container-column">
+    <% _.forEach(question.translations, function(translation){ %>
+      <h1 class="title hide lang lang-<%= translation.language %>">
+          <span>
+             <%= translation.heading %>
+          </span>
+      </h1>
+    <% }) %>
+
+      <hr>
+
+      <% _.forEach(question.translations, function(translation){
+          if(translation.subtitle) { %>
+        <div class="subtitle hide lang lang-<%= translation.language %>">
+           <%= translation.subtitle %>
+        </div>
+      <% } }) %>
+
+      <div class="input faces">
+        <% var num = question.opts.buttonCount %>
+
+        <div class="cont scale-in-start turquoise-light" feedback-value="1.00" logic="<%= _.get(survey, 'properties.logic.' + question._id + '.100') %>">
+          <% include svg/100 %>
+          <span class="text">
+            <% _.forEach(UITranslations.buttons.amazing, (tr, lang) => { %>
+              <span class="lang lang-<%= lang %> hide"> <%= getButtonTranslation(question.translations, lang, '100') %> </span>
+            <% }) %>
+          </span>
+        </div>
+        <% var val = num == 5 ? '0.75' : '0.66' %>
+        <div class="cont scale-in-start green-light" feedback-value="<%= val %>" logic="<%= _.get(survey, 'properties.logic.' + question._id + '.' + val.replace('.', '')) %>">
+        <% include svg/075 %>
+        <span class="text">
+          <% _.forEach(UITranslations.buttons.good, (tr, lang) => { %>
+            <span class="lang lang-<%= lang %> hide"> <%= getButtonTranslation(question.translations, lang, val) %> </span>
+          <% }) %>
+        </span>
+      </div>
+      <% if (num == 5){ %>
+        <div class="cont scale-in-start yellow-light" feedback-value="0.50" logic="<%= _.get(survey, 'properties.logic.' + question._id + '.050') %>">
+          <% include svg/050 %>
+          <span class="text">
+            <% _.forEach(UITranslations.buttons.ok, (tr, lang) => { %>
+              <span class="lang lang-<%= lang %> hide"> <%= getButtonTranslation(question.translations, lang, '050') %> </span>
+            <% }) %>
+          </span>
+        </div>
+      <% } %>
+
+      <% var val = num == 5 ? '0.25' : '0.33' %>
+      <div class="cont scale-in-start orange-light" feedback-value="<%= val %>" logic="<%= _.get(survey, 'properties.logic.' + question._id + '.' + val.replace('.', '')) %>">
+        <% include svg/025 %>
+        <span class="text">
+          <% _.forEach(UITranslations.buttons.bad, (tr, lang) => { %>
+            <span class="lang lang-<%= lang %> hide"> <%= getButtonTranslation(question.translations, lang, val) %> </span>
+          <% }) %>
+        </span>
+      </div>
+      <div class="cont scale-in-start red-light" feedback-value="0.00" logic="<%= _.get(survey, 'properties.logic.' + question._id + '.000') %>">
+        <% include svg/000 %>
+        <span class="text">
+          <% _.forEach(UITranslations.buttons.terrible, (tr, lang) => { %>
+            <span class="lang lang-<%= lang %> hide"> <%= getButtonTranslation(question.translations, lang, '000') %> </span>
+          <% }) %>
+        </span>
+      </div>
+
+      </div>
+      <% include ./../../privacy-policy/open %>
+    </div>
+</div>

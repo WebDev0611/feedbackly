@@ -1,0 +1,14 @@
+#!/bin/bash
+NAME=${PWD##*/}
+BUILD_ENV=prod
+if [ "$1" == "test" ]; then
+	BUILD_ENV=test
+fi
+FILE="${BUILD_ENV}_version"
+VERSION="$(($(cat ${FILE})+1))"
+TAG="${BUILD_ENV}_v${VERSION}"
+
+docker build -t ${NAME} .
+docker tag ${NAME} fblyr-on.azurecr.io/fblyr/${NAME}:${TAG}
+docker push fblyr-on.azurecr.io/fblyr/${NAME}:${TAG}
+echo $VERSION > "$FILE"

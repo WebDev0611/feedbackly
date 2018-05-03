@@ -1,0 +1,57 @@
+<div class="modal-content add-image-modal">
+  <h4 translate>Add phone numbers</h4>
+
+  <div class="section">
+    <h6 translate>Add phone numbers manually</h6>
+
+    <form ng-submit="addContacts.addContact(form.$valid)" name="form" novalidate>
+    <div class="row">
+      <div class="col s12 m3">
+        <div input-field>
+          <input type="text" ng-model="addContacts.newContact.fname">
+          <label translate>First name</label>
+        </div>
+      </div>
+      <div class="col s12 m3">
+        <div input-field>
+          <input type="text" ng-model="addContacts.newContact.lname">
+          <label translate>Last name</label>
+        </div>
+      </div>
+    <div class="col s12 m3">
+      <div input-field ng-class="{ 'input-field-error': form.phone.$invalid && form.phone.$dirty }">
+        <input type="text" ng-model="addContacts.newContact.phone_number" name="phone" required ng-minlength="5">
+        <label translate>Phone number</label>
+      </div>
+    </div>
+    <div class="col s12 m3" style="padding-top:25px">
+      <button type="submit" class="waves-effect waves-light btn" ng-disabled="form.$invalid" translate>Add</button>
+    </div>
+    </div>
+
+    </form>
+  </div>
+  <div class="section">
+    <h6 translate>Upload a CSV file</h6>
+
+    <file-drop uploader="addContacts.uploader"></file-drop>
+
+    <div class="section grey-text" style="font-size: 10.5px">
+      {{ 'Each line in the CSV file should be of format' | translate }}
+      fname,lname,phone_number .
+      {{'Include this as a first line in your csv.' | translate}}
+      <p translate>
+        You can also add metadata to include in feedback by adding "meta_FIELDNAMEHERE" into your csv-file. ie. meta_customer-id.
+      </p>
+    </div>
+
+    <button class="waves-effect waves-light btn" ng-click="addContacts.upload()" ng-disabled="addContacts.uploader.queue.length === 0">
+      <i class="material-icons left">file_upload</i>
+      {{ 'Upload' | translate }}
+    </button>
+  </div>
+</div>
+
+<div class="modal-footer">
+  <button class="waves-effect btn-flat" ng-click="addContacts.close()" translate>Close</button>
+</div>

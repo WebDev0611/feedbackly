@@ -1,0 +1,21 @@
+<div class="question-preview-wrapper" ng-class="{ 'no-background': basePreview.noBackground === 'true' }">
+  <div class="question-preview-heading">
+    {{basePreview.translation.heading}}
+  </div>
+
+  <div class="question-subtitle-divider"></div>
+
+  <div class="question-subtitle">{{basePreview.translation.subtitle}}</div>
+
+  <div class="question-preview-content" ng-switch on="basePreview.question.question_type">
+    <button-preview translation="basePreview.translation" question="basePreview.question" ng-switch-when="Button"></button-preview>
+    <contact-preview translation="basePreview.translation" question="basePreview.question" ng-switch-when="Contact"></contact-preview>
+    <image-preview translation="basePreview.translation" question="basePreview.question" ng-switch-when="Image"></image-preview>
+    <nps-preview translation="basePreview.translation" question="basePreview.question" ng-switch-when="NPS"></nps-preview>
+    <slider-preview translation="basePreview.translation" question="basePreview.question" ng-switch-when="Slider"></slider-preview>
+    <text-preview translation="basePreview.translation" question="basePreview.question" ng-switch-when="Text"></text-preview>
+    <word-preview translation="basePreview.translation" question="basePreview.question" ng-switch-when="Word"></word-preview>
+
+    <div ng-switch-default>No preview available</div>
+  </div>
+</div>

@@ -1,0 +1,110 @@
+$mobile-size: 100px;
+$ipad-size: 148px;
+$web-size: 148px;
+
+.question-type-image{
+  text-align: center;
+
+  .input{
+    .image{
+      padding: 0 5px;
+    }
+
+    .image-container-label{
+      width: 100%;
+      height: 50px;
+    }
+
+    .image-container{
+      width: 100%;
+      border-radius: 5px;
+    }
+  }
+
+  @media(max-width: 800px) {
+  }
+
+  .input {
+    &.single-row {
+      @media(min-width: 600px) {
+        @include clearfix;
+        @include display(flex);
+        @include justify-content(center);
+        @include flex-wrap(wrap);
+
+        .image {
+          @include flex(1);
+        }
+      }
+
+      @media(max-width: 600px) {
+        padding: 10px;
+
+        .image {
+          float: left;
+          width: 50%;
+        }
+      }
+    }
+
+    &.multi-row {
+      .image {
+        float: left;
+        width: 12.5%;
+      }
+    }
+
+    .image{
+      box-sizing: border-box;
+    }
+  }
+
+
+  .image{
+    min-height: 100px;
+    min-width: 80px;
+    max-width: 300px;
+    max-height: 300px;
+    cursor: pointer;
+  }
+
+}
+
+.mobile .question-type-image{
+  .flexbox-container-column{
+    justify-content: center;
+  }
+    h1{
+      margin: $title-minimum-margins;
+    }
+    hr, .subtitle{
+    margin: $minimum-margins;
+  }
+}
+
+.mobile.landscape .question-type-image{
+
+  .flexbox-container-column{
+    justify-content: center;
+  }
+
+  h1{
+    margin: $title-minimum-margins-landscape;
+  }
+
+  hr, .subtitle{
+    margin: $minimum-margins-landscape;
+  }
+}
+
+.ipad {
+  .image-container-label{
+    font-size: 17px;
+  }
+}
+
+.mobile {
+  .image-container-label{
+    font-size: 13px;
+  }
+}

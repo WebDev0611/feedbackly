@@ -1,0 +1,43 @@
+<div id="add-channel" class="modal">
+    <div class="modal-content">
+        <h5>{{ 'Add channel' | translate }}</h5>
+      <div class="row">
+          <div input-field class="col m6 s12">
+              <input type="text" ng-model="addChannel.channel.name" length="150" placeholder="{{'Ex. Kiosk 4 - Helsinki Central' | translate}}">
+              <label translate>Channel name</label>
+          </div>
+          <div class="col m6 s12">
+          <label translate>Channel type</label>
+              <select ng-model="addChannel.channel.type" material-select watch class="browser-default">
+                  <option ng-repeat="type in addChannel.deviceTypes" value="{{type}}">{{::addChannel.channelName(type)}}</option>
+              </select>
+          </div>
+          <div input-field class="col s12" ng-if="1==2">
+              <input type="text" ng-model="addChannel.channel.udid" length="150">
+              <label>UDID</label>
+          </div>
+
+
+      </div>
+      <p translate>
+        Put in channel group(s)
+      </p>
+      <div class="checkboxes-scroll" style="max-height: 150px">
+        <div class="list">
+          <p>
+            <input type="checkbox" checked="checked" disabled="true" />
+            <label translate>All channels</label>
+          </p>
+          <p ng-repeat="group in addChannel.channelGroups">
+            <span ng-if="!group.is_all_channels_group">
+            <input type="checkbox" id="dg-{{group._id}}" ng-model="addChannel.putInDevicegroups[group._id]" />
+            <label for="dg-{{group._id}}">{{group.name}}</label>
+            </span>
+          </p>
+        </div>
+      </div>
+  </div>
+    <div class="modal-footer">
+        <a href class="modal-action modal-close waves-effect waves-green btn-flat" ng-click="addChannel.save()" translate>Save</a>
+    </div>
+</div>

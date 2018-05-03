@@ -1,0 +1,12 @@
+.hidethumb > .thumb {
+  display: none !important;
+}
+
+.redisplay-condition{ 
+  .input-range {
+    display: flex;
+    :nth-child(2) {
+      flex-grow: 4;
+    }
+  }
+}

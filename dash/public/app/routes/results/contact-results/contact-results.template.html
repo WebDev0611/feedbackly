@@ -1,0 +1,38 @@
+<loader loading="contactResults.question.charts === undefined"></loader>
+
+<div ng-if="contactResults.question.charts !== undefined" class="contact-results">
+  <result-stats organization="contactResults.question.totals.organization" channels="contactResults.question.totals.channels">
+  </result-stats>
+
+  <table class="striped responsive-table results-table">
+    <thead>
+      <tr>
+        <th translate>Date</th>
+        <th translate>Feedback channel</th>
+        <th ng-repeat="heading in ::contactResults.activeChart.tableHeadings track by $index" class="feedback-content">
+          {{::heading}}
+        </th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr ng-repeat="feedback in contactResults.activeChart.table | limitTo: contactResults.contactsLimit">
+        <td>{{::feedback.createdAt}}</td>
+        <td>{{::feedback.channel}}</td>
+        <td ng-repeat="value in ::feedback.values track by $index" class="feedback-content">
+          <span ng-if="::(value.toString() !== 'true')">
+            {{::value}}
+          </span>
+
+          <i class="material-icons green-text" ng-if="::(value.toString() === 'true')">
+            done
+          </i>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p>
+    <button class="waves-effect btn-flat btn-full" ng-click="contactResults.showMore()" ng-if="contactResults.question.charts.table.length > contactResults.contactsLimit">{{ 'Show more' | translate }}</button>
+  </p>
+</div>

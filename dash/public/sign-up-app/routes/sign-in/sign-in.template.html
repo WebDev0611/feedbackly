@@ -1,0 +1,67 @@
+<div class="small-wrapper">
+  <div id="header-logo">
+    <img src="/images/logos/feedbackly-logo-rgb.png">
+  </div>
+
+  <div class="card">
+    <div class="card-content">
+      <div class="card-title center-align">Login</div>
+
+      <div class="section" ng-if="signIn.errorReason !== undefined && signIn.isAdmin">
+        <div class="card white-text red">
+          <div class="card-content">
+            <p>
+              {{signIn.errorReason}}
+            </p>
+
+            <p>
+              You can update your billing information <a class="white-text underline cursor-pointer" ng-click="signIn.goToBilling()">here</a>.
+            </p>
+
+            <p>
+              If you have any questions, pleace contact our friendly support: <a href="mailto:support.tapin.fi" class="white-text underline">support@tapin.fi</a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <loader loading="signIn.processing"></loader>
+
+      <form name="signInForm" ng-submit="signIn.submit(signInForm.$valid)" ng-if="!signIn.processing" novalidate>
+        <div input-field ng-class="{ 'input-field-error': signInForm.email.$invalid && signInForm.email.$dirty }">
+          <input type="text" ng-model="signIn.credentials.email" name="email" required input-autofocus>
+          <label>Email</label>
+        </div>
+
+        <div input-field ng-class="{ 'input-field-error': signInForm.password.$invalid && signInForm.password.$dirty }">
+          <input type="password" ng-model="signIn.credentials.password" name="password" required>
+          <label>Password</label>
+        </div>
+
+        <div class="section">
+          <input type="checkbox" id="remember-me" ng-model="signIn.storage.rememberMe"/>
+          <label for="remember-me">Remember me</label>
+        </div>
+
+        <a ui-sref="resetPassword.email" class="grey-text">Forgot password?</a>
+
+        <div class="section" ng-if="signIn.organizations.length > 0">
+          <select ng-model="signIn.chosenOrganization" material-select>
+            <option value="" disabled selected>Choose different organization</option>
+            <option value="{{::organization._id}}" ng-repeat="organization in signIn.organizations">{{::organization.name}}</option>
+          </select>
+        </div>
+
+        <div class="center-align">
+          <button class="btn btn-large waves-effect waves-light" type="submit" ng-class="{ 'disabled': signInForm.$invalid }">Log in</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div class="center-align">
+    <div class="card-panel teal white-text">
+      Not a member yet? <a class="underline white-text" href="https://www.feedbackly.com/sign-up">Create an account</a>.
+    </div>
+  </div>
+</div>

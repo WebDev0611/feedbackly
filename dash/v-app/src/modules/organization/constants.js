@@ -1,0 +1,27 @@
+// mutations
+export const SET_ORGANIZATION_PROP = "SET_ORGANIZATION_PROP";
+export const SET_USER_PROP = "SET_USER_PROP";
+export const SET_ORGANIZATION = "SET_ORGANIZATION";
+export const SET_USERS = "SET_USERS";
+export const SET_USER = "SET_USER";
+export const SET_USER_CHANNELTREE = "SET_USER_CHANNELTREE";
+export const SET_VISUAL_APPEARANCE = "SET_VISUAL_APPEARANCE";
+export const SET_BILLING_DETAILS = "SET_BILLING_DETAILS";
+export const SET_LOADING_STATE = "SET_LOADING_STATE";
+export const SET_API_KEYS = "SET_API_KEYS";
+export const SET_NEW_USER = "SET_NEW_USER";
+
+// actions
+export const GET_ORGANIZATION = "GET_ORGANIZATION";
+export const PUT_ORGANIZATION = "PUT_ORGANIZATION";
+export const GET_USERS = "GET_USERS";
+export const GET_USER = "GET_USER";
+export const SAVE_USER = "SAVE_USER";
+export const PUT_USER = "PUT_USER";
+export const GET_USER_CHANNELTREE = "GET_USER_CHANNELTREE";
+export const SAVE_CREDIT_CARD_TOKEN = "SAVE_CREDIT_CARD_TOKEN";
+export const CHANGE_PLAN = "CHANGE_PLAN";
+export const GET_API_KEYS = "GET_API_KEYS";
+export const REVOKE_API_KEY = "REVOKE_API_KEY";
+export const GENERATE_API_KEY = "GENERATE_API_KEY";
+export const DELETE_USER = "DELETE_USER";

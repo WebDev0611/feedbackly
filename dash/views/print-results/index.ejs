@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="/dist/print-results.min.css">
+
+    <script src="/lib/jquery/dist/jquery.min.js"></script>
+    <script src="/lib/highcharts/highcharts.js"></script>
+  </head>
+
+  <body>
+    <div id="main-wrapper">
+      <h1>
+        <%= _.map(payload.filter.surveys, survey => survey.name).join(', '); %>
+      </h1>
+
+      <p class="grey-text">
+        <%= _.map(payload.filter.devices, device => device.name).join(', '); %>
+      </p>
+
+      <div class="divider"></div>
+
+      <% payload.questions.forEach(function(data, index) { %>
+        <div>
+          <h2><%= (data.question.heading[language] || data.question.heading['en']
+                  || data.question.heading[_.keys(data.question.heading)[0]]) %></h2>
+
+          <%
+            var isCompare;
+            var questionData = data;
+          %>
+
+          <% if(questionData.compare !== undefined) { %>
+            <%
+              isCompare = true;
+              questionData = data.compare;
+            %>
+
+            <% include question %>
+          <% } %>
+
+          <%
+            isCompare = false;
+            questionData = data;
+          %>
+
+          <% include question %>
+        </div>
+
+        <% if(index < payload.questions.length - 1) { %>
+          <div class="divider"></div>
+        <% } %>
+      <% }) %>
+    </div>
+
+    <script>
+      var PAYLOAD = <%- JSON.stringify(payload) %>
+
+      function stripChart(chartData) {
+        delete chartData.chart.renderTo;
+
+        chartData.plotOptions = chartData.plotOptions || {};
+        chartData.plotOptions.series = chartData.plotOptions.series || {};
+        chartData.plotOptions.series.animation = false;
+        chartData.tooltip = chartData.tooltip || {};
+        chartData.tooltip.enabled = false;
+      }
+
+      function renderChart(options) {
+        stripChart(options.chartData);
+
+        var suffix = options.isPrimary
+          ? 'primary-chart'
+          : 'secondary-chart';
+
+        var type = options.isCompare
+          ? 'compare'
+          : 'default';
+
+        $('#question-' + options.question._id + '-' + suffix + '-' + type).highcharts(options.chartData);
+      }
+
+      function createQuestionCharts(data, options) {
+        var primaryChartData = (data.chart || {});
+
+        if(primaryChartData.chart !== undefined) {
+          renderChart({
+            question: data.question,
+            chartData: primaryChartData,
+            isPrimary: true,
+            isCompare: options.isCompare
+          });
+        }
+
+        var secondaryChartData = (data.secondaryChart || {});
+
+        if(secondaryChartData.chart !== undefined) {
+          renderChart({
+            question: data.question,
+            chartData: secondaryChartData,
+            isPrimary: false,
+            isCompare: options.isCompare
+          });
+        }
+      }
+
+      (PAYLOAD.questions || []).forEach(function(data) {
+        createQuestionCharts(data, { isCompare: false });
+
+        if(data.compare !== undefined) {
+          createQuestionCharts(data.compare, { isCompare: true });
+        }
+      });
+    </script>
+  </body>
+</html>

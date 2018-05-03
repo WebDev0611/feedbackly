@@ -1,0 +1,10 @@
+.button-question-wrapper {
+  max-width: 1000px;
+  margin: 0px auto;
+}
+
+@include breakpoint($mobile-breakpoint) {
+  .button-question-wrapper {
+    display: block !important;
+  }
+}

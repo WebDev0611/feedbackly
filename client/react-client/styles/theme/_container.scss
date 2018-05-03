@@ -1,0 +1,46 @@
+#survey {
+  min-height: 100%;
+  @include display(flex);
+  @include flex-direction(column);
+
+  #survey-active-card {
+    @include flex(1);
+    @include display(flex);
+    position: relative;
+    min-height: 100%;
+
+    > div {
+      @include flex(1);
+    }
+  }
+
+  #survey-header {
+    @include flex(0);
+  }
+
+  #survey-progress {
+    @include flex(0);
+  }
+
+  .container {
+    max-width: $max-content-width;
+    margin: 0px auto;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0px 20px;
+  }
+}
+
+#survey.no-flex {
+  display: block;
+  .container {
+    margin: 0;
+  }
+  #survey-header .container {
+    margin: auto;
+    #survey-header-organization-logo {
+      width: inherit;
+      height: inherit
+    }
+  }
+}

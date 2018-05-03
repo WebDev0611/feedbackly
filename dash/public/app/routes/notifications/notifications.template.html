@@ -1,0 +1,174 @@
+<div class="row" id="notifications-page">
+  <div class="col s12" ng-if="notifications.notificationsEnabled">
+    <div class="card">
+      <div class="card-content" style="padding-bottom: 6em;">
+        <div class="card-title" translate>
+          Notifications
+        </div>
+
+        <p translate>
+          This tab lets you specify notifications based on the feedback you're given.
+          Each condition added will increase the specificity of the notification.
+          There can be more than one notification per survey.
+        </p>
+
+        <div class="row col l7">
+            <label translate>Survey to watch feedback from</label>
+            <select class="browser-default" ng-model="notifications.selectedSurveyIndex" ng-change="notifications.selectedSurveyChange()">
+              <option value="" disabled translate>Choose a survey</option>
+              <option ng-repeat="survey in notifications.surveys track by $index" value="{{$index}}">{{survey.name}}</option>
+            </select>
+          </div>
+
+      <div ng-if="notifications.selectedSurvey">
+        <div class="row col l7">
+          <label translate>Deliver notifications to</label>
+          <tags-input placeholder="{{'Add email-addresses' | translate }}" ng-model="notifications.notification.receivers" min-length="6" allowed-tags-pattern=".+@.+\..+"></tags-input>
+        </div>
+
+
+        <div class="row col l7" ng-if="notifications.notification.survey_id">
+          <label translate>Feedback channels to deliver notifications from </label>
+          <channel-tree 
+            channels="notifications.tree" 
+            active-channels="notifications.activeChannels" 
+            on-change="notifications.onTreeChange(channels)"
+            highlighted-channels=""
+            ></channel-tree>
+        </div>
+
+        <div class="row col s12" ng-if="notifications.userGroups">
+          <label>{{'Assign feedback to a user group in Feedback Inbox' | translate}}</label>
+          <br>
+          <div input-field style="display: inline-block; min-width: 200px;">
+              <select class="" ng-model="notifications.notification.assignToGroup" material-select watch>
+                  <option value="" selected>{{'Do not assign to a group' | translate }}</option>
+                  <option ng-repeat="group in notifications.userGroups" value="{{group._id}}">{{group.name}}</option>
+              </select>
+          </div>
+        </div>
+
+        <div class="row col s12">
+            <p>
+              <input type="checkbox" id="include-all-questions" ng-model="notifications.includeAllQuestionsInMessage" ng-change="notifications.includeAllQuestionsChange()"/>
+              <label for="include-all-questions" translate>Include all available questions in notification message</label>
+            </p>
+
+            <div ng-if="!notifications.includeAllQuestionsInMessage">
+              <label>{{'Include email content only from questions (if available)' | translate}}</label>
+              <br>
+              <p ng-repeat="question in notifications.selectedSurvey.questions" style="padding-left: 1em">
+                  <input type="checkbox" id="{{question._id}}" ng-model="notifications.selectedContent[question._id]"/>
+                  <label for="{{question._id}}">{{question.heading[notifications.displayLanguage]}}</label>
+              </p>
+            </div>
+          </div>
+
+        <div class="row col s12">
+          <label>{{'Wait for responses to remaining questions once conditions are fulfilled' | translate}}</label>
+          <br>
+          <div input-field style="display: inline-block;">
+              <select class="" ng-model="notifications.notification.delay" material-select watch>
+                  <option value="0" selected>{{ 'Send immediately' | translate }}</option>
+                  <option value="30000">30 {{'seconds' | translate}}</option>
+                  <option value="60000">1 {{'minute' | translate}}</option>
+                  <option value="120000">2 {{'minutes' | translate}}</option>
+                  <option value="180000">3 {{'minutes' | translate}}</option>
+              </select>
+          </div>
+        </div>
+
+       
+
+        <div class="row">
+          <div class="col s12 text-center">
+          <p translate>Select conditions that need to apply for the notification to be sent. NOTE: All conditions must apply before any notifications are sent.</p>
+
+            <div ng-repeat="orGroup in notifications.orGroups track by $index">
+                <div class="or-separator-container more-margin" ng-if="$index > 0"> 
+                    <div class="dotted-line">&nbsp;</div>
+                      <div class="text">{{ 'AND' | translate }}</div>
+                    <div class="dotted-line">&nbsp;</div>
+                  </div>
+
+              <div class="or-group">
+
+              <a class="remove-or-group text-red-dark">
+                  <i class="material-icons" href ng-click="notifications.removeOrGroup(orGroup.id)">remove_circle</i>
+              </a>
+
+              <div ng-repeat="question in orGroup.questions track by $index" class="question-container">
+                <div class="or-separator-container" ng-if="$index > 0"> 
+                  <div class="dotted-line">&nbsp;</div>
+                    <div class="text">{{ 'OR' | translate }}</div>
+                  <div class="dotted-line">&nbsp;</div>
+                </div>
+                <button-control ng-if="['Button', 'NPS', 'Word', 'Image'].indexOf(question.question_type) > -1" display-language="notifications.displayLanguage" question="question" condition-sets="notifications.notification.conditionSet" or-group-id="{{orGroup.id}}"></button-control>
+                <contact-control ng-if="['Contact', 'Text', 'Upsell'].indexOf(question.question_type) > -1" display-language="notifications.displayLanguage" question="question" condition-sets="notifications.notification.conditionSet" or-group-id="{{orGroup.id}}"></contact-control>
+                <slider-control ng-if="['Slider'].indexOf(question.question_type) > -1" display-language="notifications.displayLanguage" question="question" condition-sets="notifications.notification.conditionSet" or-group-id="{{orGroup.id}}"></slider-control>
+              </div>
+
+              <div class="text-center">
+                <button class='dropdown-button btn-flat text-gray-dark'
+                data-activates='addQuestionToOrGroup{{$index}}' dropdown data-hover="false"
+                style="font-size: 12px;" ng-if="notifications.selectedSurvey"
+                ng-disabled="notifications.availableQuestionsForOrGroup(orGroup).length == 0"
+                >
+                    <i class="material-icons left">add</i> {{'Add an "OR" condition inside this block' | translate }}
+                </button>
+    
+                <!-- Dropdown Structure -->
+                <ul id='addQuestionToOrGroup{{$index}}' class='dropdown-content'>
+                    <li ng-repeat="question in notifications.availableQuestionsForOrGroup(orGroup) track by $index">
+                      <a href="javascript:void(0);" 
+                        ng-click="notifications.addQuestionToOrGroup(question, orGroup.id)">
+                        {{question.heading[notifications.displayLanguage]}}
+                      </a>
+                    </li>
+                </ul>
+            </div>
+          </div>
+          </div>
+
+      <div class="row" style="margin: 20px 0;">
+            <!-- Dropdown Trigger -->
+            <button class='dropdown-button btn btn-hollow' href='javascript:void(0);' 
+            data-activates='addQuestionList' dropdown data-hover="false"
+             style="min-width: 300px" ng-if="notifications.selectedSurvey">
+                <i class="material-icons left">add</i> {{'Add a condition' | translate }}
+            </button>
+
+            <!-- Dropdown Structure -->
+            <ul id='addQuestionList' class='dropdown-content'>
+                <li ng-repeat="question in notifications.selectedSurvey.questions">
+                  <a href="javascript:void(0);" data-ng-click="notifications.addQuestion(question)">
+                    {{question.heading[notifications.displayLanguage]}}
+                  </a>
+                </li>
+            </ul>
+
+          </div>
+        </div>
+      </div>
+
+<hr>
+
+      <button class="btn waves-effect" ng-click="notifications.save()" translate>Save</button>
+
+    </div>
+  </div>
+  </div>
+</div>
+
+<div ng-if="notifications.notificationsEnabled == false">
+
+<style></style>
+
+<h3>Real-time notifications</h3>
+<p>Create automatic email notifications in response to pretermined AND / OR parameters</p>
+
+<img scr="/public/images/notifications-teaser.png" />
+
+
+</div>
+</div>

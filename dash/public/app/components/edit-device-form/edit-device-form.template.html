@@ -1,0 +1,104 @@
+<loader loading="deviceForm.removing === true"></loader>
+
+<div ng-if="deviceForm.removing !== true">
+
+  <button class="btn-floating waves-light waves-effect red right" ng-click="deviceForm.remove()" ng-if="::(deviceForm.isRemoveable)">
+    <i class="material-icons">delete</i>
+  </button>
+
+
+  <form name="form" ng-submit="deviceForm.save(form.$valid)" novalidate>
+
+    <div input-field ng-class="{ 'input-field-error': form.name.$invalid && form.name.$dirty }">
+      <input type="text" name="name" ng-model="deviceForm.device.name" required ng-minlength="1">
+      <label translate>Name</label>
+    </div>
+
+    <div class="section input-field" ng-if="deviceForm.adminMode === 'true'">
+      <select ng-model="deviceForm.device.type" material-select>
+        <option value="" disabled selected>Choose a type</option>
+        <option ng-repeat="type in ::deviceForm.channelTypes" value="{{::type}}">{{::type}}</option>
+      </select>
+
+      <label>Type</label>
+    </div>
+
+    <div input-field ng-class="{ 'input-field-error': form.udid.$invalid && form.udid.$dirty }" ng-if="deviceForm.adminMode === 'true' && deviceForm.type === 'DEVICE'">
+      <input type="text" name="name" ng-model="deviceForm.device.udid" required ng-minlength="1">
+      <label>UDID</label>
+    </div>
+
+    <div input-field>
+      <input type="text" ng-model="deviceForm.device.description" />
+      <label translate>Description</label>
+    </div>
+
+    <div ng-if="deviceForm.showLogo">
+      <h6 translate>Logo</h6>
+
+      <image-uploader image="deviceForm.device.logo" on-image="deviceForm.onLogo(uploader)" on-remove-image="deviceForm.onRemoveLogo()" image-type="logo"></image-uploader>
+    </div>
+    <div class="section input-field">
+      <select ng-model="deviceForm.device.force_default_language" material-select>
+        <option value="" disabled selected>{{ 'Choose a language' || translate}}</option>
+        <option ng-repeat="lang in ::deviceForm.Languages.getLanguages()" value="{{::lang.code}}">{{::lang.languageName}}</option>
+      </select>
+
+      <label translate>Force default language (if available in survey)</label>
+    </div>
+
+<div ng-if="deviceForm.upsells">
+    <div>
+      {{ 'Neutral upsell' | translate }}:
+      <ui-select ng-model="deviceForm.device.upsells.neutral" theme="select2" title="Testing this" append-to-body="true" on-select="" style="min-width: 150px">
+        <ui-select-match placeholder="Select or search a upsell in the list...">
+          {{$select.selected.name}}</ui-select-match>
+          <ui-select-choices repeat="upsell._id as upsell in deviceForm.upsells | filter: $select.search">
+            <span ng-bind-html="upsell.name | highlight: $select.search"></span>
+            <br><small>
+                {{upsell.code}}
+            </small>
+          </ui-select-choices>
+      </ui-select>
+      <i class="material-icons xs">visibility</i>
+    </div>
+    <div>
+      {{ 'Positive upsell' | translate }}:
+    <ui-select ng-model="deviceForm.device.upsells.positive" theme="select2" title="Testing this" append-to-body="true" on-select="" style="min-width: 150px">
+      <ui-select-match placeholder="Select or search a upsell in the list...">
+        {{$select.selected.name}}</ui-select-match>
+        <ui-select-choices repeat="upsell._id as upsell in deviceForm.upsells | filter: $select.search">
+          <span ng-bind-html="upsell.name | highlight: $select.search"></span>
+          <br><small>
+              {{upsell.code}}
+          </small>
+        </ui-select-choices>
+    </ui-select>
+    <i class="material-icons xs">visibility</i>
+
+  </div>
+  <div style="margin-bottom: 20px">
+    {{ 'Negative upsell' | translate }}:
+    <ui-select ng-model="deviceForm.device.upsells.negative" theme="select2" title="Testing this" append-to-body="true" on-select="" style="min-width: 150px">
+      <ui-select-match placeholder="Select or search a upsell in the list...">
+        {{$select.selected.name}}</ui-select-match>
+      <ui-select-choices repeat="upsell._id as upsell in deviceForm.upsells | filter: $select.search">
+        <span ng-bind-html="upsell.name | highlight: $select.search"></span>
+        <br><small>
+            {{upsell.code}}
+        </small>
+      </ui-select-choices>
+    </ui-select>
+    <i class="material-icons xs">visibility</i>
+
+  </div>
+</div>
+    <p ng-if="deviceForm.organizationProfanityFilter ==='device-specific'">
+      <input type="checkbox" id="deviceSpecific" ng-model="deviceForm.device.profanityFilter">
+      <label for="deviceSpecific">Enable profanity filter</label>
+    </p>
+    <button class="waves-effect waves-light btn btn-s" type="submit" ng-class="{ 'disabled': form.$invalid }" translate>Save</button> &nbsp;
+    <a href class="waves-effect waves-light btn btn-s" translate ng-click="deviceForm.showLogo = !deviceForm.showLogo">Add a custom logo</a> &nbsp;
+  </form>
+
+</div>

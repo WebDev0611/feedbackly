@@ -1,0 +1,67 @@
+<html>
+<body>
+
+  <h1>Vastaajien määrä</h1>
+<table>
+  <thead>
+    <th>Kuukausi</th>
+    <% _.forEach(rows.orgs, o => { %>
+      <th><%= o.name %></th>
+    <% }) %>
+  </thead>
+  <tbody>
+    <% _.forEach(rows.rows, row => { %>
+      <tr>
+        <td><%= row.month %></td>
+        <% _.forEach(row.stats, stat => { %>
+          <td><%= stat.feedbacks %></td>
+        <% }) %>
+      </tr>
+    <% }) %>
+  </tbody>
+</table>
+
+  <h1>Vastausten määrä</h1>
+
+<table>
+  <thead>
+    <th>Kuukausi</th>
+    <% _.forEach(rows.orgs, o => { %>
+      <th><%= o.name %></th>
+    <% }) %>
+  </thead>
+  <tbody>
+    <% _.forEach(rows.rows, row => { %>
+      <tr>
+        <td><%= row.month %></td>
+        <% _.forEach(row.stats, stat => { %>
+          <td><%= stat.fbevents %></td>
+        <% }) %>
+      </tr>
+    <% }) %>
+  </tbody>
+</table>
+
+<h1>Avointen palautteiden määrä</h1>
+
+<table>
+<thead>
+  <th>Kuukausi</th>
+  <% _.forEach(rows.orgs, o => { %>
+    <th><%= o.name %></th>
+  <% }) %>
+</thead>
+<tbody>
+  <% _.forEach(rows.rows, row => { %>
+    <tr>
+      <td><%= row.month %></td>
+      <% _.forEach(row.stats, stat => { %>
+        <td><%= stat.textFbevents %></td>
+      <% }) %>
+    </tr>
+  <% }) %>
+</tbody>
+</table>
+
+</body>
+</html>

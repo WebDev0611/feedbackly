@@ -1,0 +1,26 @@
+<loader loading="imageResults.question.charts === undefined"></loader>
+
+<div ng-if="imageResults.question.charts !== undefined">
+  <result-stats organization="imageResults.question.totals.organization" channels="imageResults.question.totals.channels">
+  </result-stats>
+
+  <div class="flex flex-center">
+    <div class="result-chart-totals clearfix flex-1">
+      <result-legend unit="imageResults.unit" color-mapper="imageResults.colorMap" question="imageResults.question" totals="imageResults.totals"></result-legend>
+    </div>
+
+    <div>
+      <chart-controls unit="imageResults.unit" accuracy="imageResults.accuracy" on-unit-change="imageResults.onUnitChange(unit)" on-accuracy-change="imageResults.onAccuracyChange(accuracy)">
+      </chart-controls>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col s12 m12 l9">
+      <highcharts-chart highlighted-days="['Sunday']" data="imageResults.activeChart"></highcharts-chart>
+    </div>
+    <div class="col s12 m12 l3">
+      <highcharts-chart data="imageResults.question.charts.pie"></highcharts-chart>
+    </div>
+  </div>
+</div>

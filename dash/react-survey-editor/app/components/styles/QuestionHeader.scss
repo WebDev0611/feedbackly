@@ -1,0 +1,45 @@
+@import "colors.scss";
+@import 'Mixins.scss';
+
+.main{
+  padding: 1em 0;
+}
+
+.heading_edit {
+    font-size: 2em !important; // to override materialize-min.css
+    text-align: center;
+    color: $turquoise-light;
+    composes: merriweather from './fonts/fonts.scss';
+
+    @include mobile {
+      font-size: 1.5em !important;
+    }
+}
+
+.heading_view {
+    composes: heading_edit;
+}
+
+.subtitle_edit {
+    font-size: 1.2em !important; // to override materialize-min.css
+    text-align: center;
+    color: $gray-dark;
+    composes: montserrat from './fonts/fonts.scss';
+    text-transform: uppercase;
+    font-weight: bold;
+
+    @include mobile {
+      font-size: 1em !important;
+    }
+}
+
+.subtitle_view {
+  composes: subtitle_edit;
+  margin: 0;
+
+}
+
+.hr{
+  border: 1.5px solid $gray-dark;
+  width: 70px;
+}

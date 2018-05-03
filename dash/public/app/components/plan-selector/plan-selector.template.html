@@ -1,0 +1,100 @@
+<div class="plan-selector section">
+  <div class="plan" ng-class="{ 'plan-active': planSelector.activePlan === 'FREE_PLAN' }">
+    <div class="plan-content">
+      <div class="plan-description">
+        <h4>Free plan</h4>
+
+        <ul>
+          <li>50 {{ 'feedbacks each month' | translate }}</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="plan-price">
+      <div class="plan-price-content">
+        <span class="plan-price-amount" translate>Free</span>
+      </div>
+    </div>
+
+    <div class="plan-footer">
+      <a class="plan-subscribe waves-effect waves-light" ng-click="planSelector.choosePlan('FREE_PLAN', false)">
+        {{ planSelector.activePlan === 'FREE_PLAN' ? 'Subscribed' : 'Subscribe' | translate }}
+      </a>
+    </div>
+  </div>
+
+  <div class="plan" ng-class="{ 'plan-disabled': planSelector.paidPlansDisabled, 'plan-active': planSelector.activePlan === 'SMALL_PLAN' }">
+    <div class="plan-content">
+      <div class="plan-description">
+        <h4>Small plan</h4>
+
+        <ul>
+          <li>500 {{ 'feedbacks each month' | translate }}</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="plan-price">
+      <div class="plan-price-content">
+        <span class="plan-price-amount">39€</span>
+        <span class="grey-text" translate>/month</span>
+      </div>
+    </div>
+
+    <div class="plan-footer">
+      <a class="plan-subscribe waves-effect waves-light" ng-click="planSelector.choosePlan('SMALL_PLAN', planSelector.paidPlansDisabled)">
+        {{ planSelector.activePlan === 'SMALL_PLAN' ? 'Subscribed' : 'Subscribe' | translate }}
+      </a>
+    </div>
+  </div>
+
+  <div class="plan" ng-class="{ 'plan-disabled': planSelector.paidPlansDisabled, 'plan-active': planSelector.activePlan === 'GROWTH_PLAN' }">
+    <div class="plan-content">
+      <div class="plan-description">
+        <h4>Growth plan</h4>
+
+        <ul>
+          <li>5 000 {{ 'feedbacks each month' | translate }}</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="plan-price">
+      <div class="plan-price-content">
+        <span class="plan-price-amount">99€</span>
+        <span class="grey-text" translate>/month</span>
+      </div>
+    </div>
+
+    <div class="plan-footer">
+      <a class="plan-subscribe waves-effect waves-light" ng-click="planSelector.choosePlan('GROWTH_PLAN', planSelector.paidPlansDisabled)">
+        {{ planSelector.activePlan === 'GROWTH_PLAN' ? 'Subscribed' : 'Subscribe' | translate }}
+      </a>
+    </div>
+  </div>
+
+  <div class="plan" ng-class="{ 'plan-disabled': planSelector.paidPlansDisabled, 'plan-active': planSelector.activePlan === 'ENTERPRISE_PLAN' }">
+    <div class="plan-content">
+      <div class="plan-description">
+        <h4>Enterprise plan</h4>
+
+        <ul>
+          <li>150 000 {{ 'feedbacks each month' | translate }}</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="plan-price">
+      <div class="plan-price-content">
+        <span class="plan-price-amount">249€</span>
+        <span class="grey-text" translate>/month</span>
+      </div>
+    </div>
+
+    <div class="plan-footer">
+      <a class="plan-subscribe waves-effect waves-light" ng-click="planSelector.choosePlan('ENTERPRISE_PLAN', planSelector.paidPlansDisabled)">
+        {{ planSelector.activePlan === 'ENTERPRISE_PLAN' ? 'Subscribed' : 'Subscribe' | translate }}
+      </a>
+    </div>
+  </div>
+</div>

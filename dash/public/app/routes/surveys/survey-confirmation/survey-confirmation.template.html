@@ -1,0 +1,88 @@
+<div class="card">
+  <div class="card-content">
+     <div class="card-title" translate>Review and Confirmation</div>
+
+     <div class="section">
+
+     </div>
+
+     <div class="divider"></div>
+
+     <div class="section survey-confirmation">
+       <div class="row">
+         <div class="col m12">
+           <div class="confirmation-heading"><h5 translate>Survey</h5>
+             <i class="material-icons text-green-dark hide" ng-class="{ 'show' : surveyConfirmation.settingsOk.survey }">check</i>
+             <i class="material-icons text-yellow hide" ng-class="{'show' : !surveyConfirmation.settingsOk.survey }">warning</i>
+           </div>
+
+           <p ng-class="{'text-red-dark': surveyConfirmation.survey.question_ids.length === 0 }">{{ "Your survey has" | translate }} {{:: surveyConfirmation.survey.question_ids.length }} {{ "questions" | translate}}.</p>
+           <p><i class="d material-icons">question_answer</i> :
+             <span ng-repeat="q in surveyConfirmation.survey.question_ids"><span ng-if="$index != 0">,</span> {{:: q.heading[surveyConfirmation.survey.languages[0]] }}<span>
+           <p>
+
+           <div class="confirmation-heading">
+             <h5 translate>Distribution</h5>
+             <i class="material-icons text-green-dark hide" ng-class="{ 'show' : surveyConfirmation.settingsOk.distribution }">check</i>
+             <i class="material-icons text-yellow hide" ng-class="{ 'show' : !surveyConfirmation.settingsOk.distribution }">warning</i>
+           </div>
+
+           <p ng-if="surveyConfirmation.activeChannels.length > 0"> {{"The survey will be distributed in" | translate}} {{:: surveyConfirmation.activeChannels.length}} {{ "channels" | translate}}</p>
+           <p ng-if="!surveyConfirmation.activeChannels || surveyConfirmation.activeChannels.length === 0" ng-class="{'text-red-dark': surveyConfirmation.activeChannels.length === 0 }" translate>
+             There are no channels selected for distribution.
+           </p>
+
+             <p><i class="d material-icons">record_voice_over</i> :
+               <span ng-repeat="channel in surveyConfirmation.activeChannels">
+                 <span ng-if="$index != 0">,</span> {{ channel.name }}
+               <span>
+
+             </p>
+             <div ng-if="surveyConfirmation.emailChannels.length > 0" ng-class="{'text-red-dark': surveyConfirmation.emailCount() === 0 }">
+               <i class="d material-icons">email</i> : {{surveyConfirmation.emailCount()}} e-mails will be sent
+               <div class="text-red-dark" ng-if="!surveyConfirmation.surveySettings.emailSettings" translate>You haven't configured any e-mail settings.</div>
+           </div>
+
+           <div ng-if="surveyConfirmation.smsChannels.length > 0" ng-class="{'text-red-dark': surveyConfirmation.smsCount() === 0 }">
+            <i class="d material-icons">message</i> : {{ "Survey will be sent to" | translate }} {{surveyConfirmation.smsCount()}} {{ "numbers" | translate }} ({{surveyConfirmation.smsCreditCount()}} {{"messages in total" | translate}} )
+            <div class="text-red-dark" ng-if="!surveyConfirmation.surveySettings.smsSettings" translate>You haven't configured any sms settings.</div>
+            <div class="text-red-dark" ng-if="!surveyConfirmation.surveySettings.balance">
+               {{'You don't have sufficient SMS balance.' | translate}}
+              <a ng-if="surveyConfirmation.isOrganizationAdmin" style="margin-left: 3em;" href="/v-app/#/sms-top-up" target="_blank" class="btn btn-hollow">Top up</a>
+              <a ng-if="!surveyConfirmation.isOrganizationAdmin" tooltipped data-tooltip="{{'Please ask your organization admin to top up the SMS Balance' | translate }}" data-position="top" style="margin-left: 3em;" class="btn-disabled">Top up</a>
+            </div>            
+          </div>
+
+           <div class="confirmation-heading">
+             <h5 translate>Publish time</h5>
+             <i class="material-icons text-green-dark hide" ng-class="{ 'show' : surveyConfirmation.settingsOk.publishTime }">check</i>
+             <i class="material-icons text-yellow hide" ng-class="{ 'show' : !surveyConfirmation.settingsOk.publishTime }">warning</i>
+           </div>
+           <p>
+             <i class="d material-icons">alarm</i> :
+                <span ng-if="surveyConfirmation.surveySettings.schedule.plan == 'now'" translate>The survey will be published immediately.</span>
+                <span ng-if="surveyConfirmation.surveySettings.schedule.plan == 'schedule'">
+                  {{ "The survey is scheduled to be published on" | translate }} {{ ::surveyConfirmation.getScheduleString() }} <br>
+                  <span translate>The schedule can be viewed and edited</span> <a href="/app/#/channels/feedback-devices/all-channels" target="_blank" translate>from the channel management</a>
+                </span>
+
+           </p>
+           <a href ng-click="surveyConfirmation.publish()" class="waves-effect waves-light btn-large blue"><i class="material-icons right">send</i>
+             <span ng-switch="surveyConfirmation.surveySettings.schedule.plan">
+               <span ng-switch-when="now" translate>Publish now</span>
+               <span ng-switch-when="schedule" translate>Schedule now</span>
+             </span>
+           </a>
+
+         </div>
+        </div>
+     </div>
+  </div>
+</div>
+
+
+
+<survey-progress-bar go-to-state="surveyConfirmation.goToState(state)" active-channels="surveyConfirmation.activeChannels"></survey-progress-bar>
+<tutorial-bubble ipad="true"  item="'ipad-signup-survey-confirm'" offset="75"
+  text="'Almost done! Verify that these settings are correct and the survey will automatically appear on your iPad when you click &quot;Publish Now&quot;' | translate"
+  />

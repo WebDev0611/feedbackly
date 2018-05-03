@@ -1,0 +1,9 @@
+<div class="card-panel blue white-text" ng-if="schedulationList.schedulations.length > 0">
+  <h6>{{ 'Survey already has the following schedulations' | translate}}:</h6>
+
+  <ul>
+    <li ng-repeat="scheduling in ::schedulationList.schedulations">
+      {{::scheduling.channelNames}}: {{::scheduling.date}}, UTC {{::scheduling.utc_offset}}
+    </li>
+  </ul>
+</div>

@@ -1,0 +1,31 @@
+.icon-label-container{
+  text-align: center;
+  display: inline-block;
+  padding: 0 10px;
+
+  i{
+    display: block;
+    font-size: 30px;
+  }
+
+  &.small {
+    i{
+      font-size: 25px;
+    }
+
+    .label{
+      font-size: 12px;
+    }
+  }
+}
+
+
+
+label.with-icon{
+  line-height: 30px !important;
+  padding-left: 30px !important;
+  i{
+    font-size: 17px;
+    margin-right: 5px;
+  }
+}

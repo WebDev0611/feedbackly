@@ -1,0 +1,20 @@
+<div id="add-channel-to-group" class="modal">
+    <div class="modal-content">
+        <h5 translate>Add channels to channel group</h5>
+        <p>{{'Channels selected' | translate}}: {{ addChannelToGroup.selectedLength() }}</p>
+
+      <div class="row">
+        <div class="checkboxes-scroll">
+          <div class="list">
+            <p ng-repeat="channel in addChannelToGroup.channels">
+              <input type="checkbox" id="channel-{{channel._id}}" ng-model="addChannelToGroup.addChannelToGroups[channel._id]" />
+              <label for="channel-{{channel._id}}">{{channel.name}}</label>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal-footer">
+        <a href ng-click="addChannelToGroup.save()" class="modal-action modal-close waves-effect waves-green btn-flat" translate>Save</a>
+    </div>
+</div>

@@ -1,0 +1,16 @@
+#!/bin/bash
+NAME=${PWD##*/}
+BUILD_ENV=prod
+BUILD_ARG=production
+if [ "$1" == "test" ]; then
+	BUILD_ENV=test
+	BUILD_ARG=test
+fi
+FILE="${BUILD_ENV}_version"
+VERSION="$(($(cat ${FILE})+1))"
+TAG="${BUILD_ENV}_v${VERSION}"
+
+docker build --build-arg configfile=${BUILD_ARG} -t ${NAME} .
+docker tag ${NAME} fblyr-on.azurecr.io/fblyr/${NAME}:${TAG}
+docker push fblyr-on.azurecr.io/fblyr/${NAME}:${TAG}
+echo $VERSION > "$FILE"

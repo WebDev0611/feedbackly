@@ -1,0 +1,28 @@
+<table role="module" data-type="image" border="0" align="center" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed;" class="wrapper" data-attributes='%7B%22child%22%3Afalse%2C%22link%22%3A<%= encodeURIComponent(`"${obj.link}"`) %>%2C%22width%22%3A170%2C%22height%22%3A170%2C%22imagebackground%22%3A%22%23FFFFFF%22%2C%22url%22%3A<%= encodeURIComponent(`"${obj.image_url}"`) %>%2C%22alt_text%22%3A<%= encodeURIComponent(`"${obj.label}"`) %>%2C%22dropped%22%3Atrue%2C%22imagemargin%22%3A%220%2C0%2C0%2C0%22%2C%22alignment%22%3A%22center%22%2C%22responsive%22%3Atrue%7D'>
+   <tr>
+      <td style="font-size:6px;line-height:10px;background-color:#FFFFFF;padding: 0px 0px 0px 0px;" valign="top" align="center" role="module-content">
+         <!--[if mso]>
+         <center>
+            <table width="170" border="0" cellpadding="0" cellspacing="0" style="table-layout: fixed;">
+               <tr>
+                  <td width="170" valign="top">
+                     <![endif]-->
+                     <a href="{{link_<%= index %>}}" target="_blank">
+                       <img class="max-width"  width="170" height=""  src="<%= obj.image_url %>" alt="image label alt" border="0" style="display: block; color: #000; text-decoration: none; font-family: Helvetica, arial, sans-serif; font-size: 16px;  max-width: 170px !important; width: 100% !important; height: auto !important; " />
+                     </a>
+                     <!--[if mso]>
+                  </td>
+               </tr>
+            </table>
+         </center>
+         <![endif]-->
+      </td>
+   </tr>
+</table>
+<table class="module" role="module" data-type="text" border="0" cellpadding="0" cellspacing="0"  width="100%" style="table-layout: fixed;" data-attributes='%7B%22dropped%22%3Atrue%2C%22child%22%3Afalse%2C%22padding%22%3A%2210%2C0%2C10%2C0%22%2C%22containerbackground%22%3A%22%23ffffff%22%7D'>
+   <tr>
+      <td role="module-content"  valign="top" height="100%" style="padding: 10px 0px 10px 0px;" bgcolor="#ffffff">
+         <div style="text-align: center;"><a href="{{link_<%= index %>}}"><span style="color:#696969;"><strong><%= (obj.label || '').toUpperCase() %></strong></span></a></div>
+      </td>
+   </tr>
+</table>

@@ -1,0 +1,85 @@
+$checkbox-size-mobile: 27px;
+
+.checkbox-container {
+  position: relative;
+  vertical-align: middle;
+  display: inline-block;
+  // height: $checkbox-size;
+  cursor: pointer;
+
+  td.checkbox-td{
+    padding: 0em 1em 0em 0px;    
+    
+    @include breakpointmin($tablet-p){
+      padding: 1em 1em 1em 0px;      
+    }
+  }
+
+  .parent{
+    position: relative;
+    width: $checkbox-size;
+    height: $checkbox-size;
+  }
+
+  .checkbox-label {
+    vertical-align: middle;
+    text-transform: uppercase;
+    width: 100%;
+    font-size: 12px;
+  //  height: $checkbox-size;
+  }
+
+  .checkbox-wrapper {
+    width: $checkbox-size;
+    height: $checkbox-size;
+    background-color: white;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    color: white;
+    border: 1px solid $gray-light;
+
+    .checkbox-indicator {
+      width: 100%;
+      height: 100%;
+      top: 50%;
+      left: 50%;
+      position: absolute;
+      @include transform(translateX(-50%) translateY(-50%) scale(0) rotate(60deg));
+      background-color: $turquoise-light;
+      border-radius: 100%;
+      overflow: hidden;
+      transition: 0.25s;
+      text-align: center;
+
+      i {
+        position: relative;
+        top: 4px;
+      }
+    }
+  }
+
+  &.checkbox-checked {
+    .checkbox-indicator {
+      border-radius: 0px;
+      @include transform(translateX(-50%) translateY(-50%) scale(1) rotate(0deg));
+      transition: 0.25s;
+    }
+  }
+}
+
+.mobile-decorator{
+  .checkbox-label{
+    font-size: 9px;
+  }
+
+  .parent{
+    width: $checkbox-size-mobile;
+    height: $checkbox-size-mobile;
+  }
+
+  .checkbox-wrapper {
+    width: $checkbox-size-mobile+1;
+    height: $checkbox-size-mobile+1;
+  }
+}

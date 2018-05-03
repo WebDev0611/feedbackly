@@ -1,0 +1,145 @@
+@import "../variables";
+
+.channel-tree {
+  overflow-x: auto;
+
+  &.selection-disabled {
+    .devicegroup {
+      > ul {
+        border-left: 1px dashed lighten($grey, 10%);
+      }
+
+      > .channel-label {
+        font-weight: bold;
+      }
+    }
+
+    .device {
+      position: relative;
+
+      &:before {
+        content: "";
+        position: absolute;
+        width: 10px;
+        border-top: 1px dashed lighten($grey, 10%);
+        top: 1em;
+        left: -1em;
+      }
+    }
+
+    .channel-label {
+      display: block;
+      padding: 5px 0px;
+    }
+  }
+
+  .devicegroup {
+    padding-left: 35px;
+    position: relative;
+  }
+
+  .device-type {
+    color: #009688;
+    font-size: 15px;
+  }
+
+  ul {
+    padding-left: 1em;
+
+    li {
+      &.chosen, &.has-chosen-children {
+        > .checkable {
+          .checkable-checkbox {
+            border-color: $primary-color;
+            background-color: $primary-color;
+            transition: 0.2s;
+          }
+        }
+      }
+
+      &.has-chosen-children {
+        > .checkable .checkable-checkbox .remove {
+          display: inline-block;
+        }
+
+        > .checkable .checkable-checkbox .done {
+          display: none;
+        }
+      }
+
+      &.chosen {
+        > .checkable .checkable-checkbox .done {
+          display: inline-block;
+        }
+
+        > .checkable .checkable-checkbox .remove {
+          display: none;
+        }
+      }
+
+      .toggle-group {
+        display: inline-block;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+
+        i {
+          vertical-align: middle;
+        }
+
+        .visibility {
+          display: inline-block;
+        }
+
+        .visibility_off {
+          display: none;
+        }
+
+        &.group-visible {
+          .visibility_off {
+            display: inline-block;
+          }
+
+          .visibility {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+
+  > ul {
+    padding-left: 0px;
+  }
+
+  .checkable {
+    position: relative;
+    line-height: 15px;
+    display: inline-block;
+    padding-left: 30px;
+    margin-bottom: 5px;
+
+    .checkable-checkbox {
+      i {
+        font-size: 10px;
+      }
+
+      text-align: center;
+      color: white;
+      border: 2px solid darken($grey, 30%);
+      border-radius: 2px;
+      width: 15px;
+      height: 15px;
+      line-height: 12px;
+      display: inline-block;
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      transition: 0.2s;
+
+      span {
+        display: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,2592 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Project-Id-Version: \n"
+
+#: public/app/components/plugin-setup/plugin-setup.template.html:175
+msgid "% of the page"
+msgstr ""
+
+#: public/app/routes/summary/summary.template.html:158
+msgid "(qty)"
+msgstr ""
+
+#: public/app/routes/surveys/survey-email-settings/survey-email-settings.template.html:58
+msgid "* Mails that use domains protected by SPF (Sender Policy Framework) may not be delivered."
+msgstr ""
+
+#: public/app/routes/surveys/survey-routes-selection/survey-routes-selection.template.html:30
+msgid "...or Create new Channels"
+msgstr ""
+
+#: public/app/components/plan-selector/plan-selector.template.html:40
+#: public/app/components/plan-selector/plan-selector.template.html:65
+#: public/app/components/plan-selector/plan-selector.template.html:90
+msgid "/month"
+msgstr ""
+
+#: public/app/translations/translations.template.html:167
+msgid "0=Not likely at all 10=Extremely likely"
+msgstr ""
+
+#: public/app/components/channel-setup-info/channel-setup-info.template.html:73
+msgid "1. Add contacts to this SMS channel"
+msgstr ""
+
+#: public/app/components/channel-setup-info/channel-setup-info.template.html:66
+msgid "1. Add contacts to this e-mail channel"
+msgstr ""
+
+#: public/app/components/channel-setup-info/channel-setup-info.template.html:41
+msgid "1. Add the following code to the end of the &lt;body&gt; tag of your website / eCommerce-platform."
+msgstr ""
+
+#: public/app/components/channel-setup-info/channel-setup-info.template.html:56
+msgid "1. Copy the following link and distribute it freely"
+msgstr ""
+
+#: public/app/routes/tutorial/tutorial.template.html:5
+msgid "1. Create a survey"
+msgstr ""
+
+#: public/app/components/channel-setup-info/channel-setup-info.template.html:25
+msgid "1. Download the QR-code below and add it to your materials."
+msgstr ""
+
+#: public/app/components/channel-setup-info/channel-setup-info.template.html:8
+msgid "1. Get the Feedbackly App for your tablet from the"
+msgstr ""
+
+#: public/app/routes/tutorial/tutorial.template.html:6
+msgid "2. Choose how to collect data"
+msgstr ""
+
+#: public/app/components/channel-setup-info/channel-setup-info.template.html:60
+#: public/app/components/channel-setup-info/channel-setup-info.template.html:67
+#: public/app/components/channel-setup-info/channel-setup-info.template.html:74
+msgid "2. Continue publishing the survey in this screen."
+msgstr ""
+
+#: public/app/components/channel-setup-info/channel-setup-info.template.html:26
+msgid "2. Guide your customers to answer the survey by informative text. (See example)"
+msgstr ""
+
+#: public/app/components/channel-setup-info/channel-setup-info.template.html:9
+msgid "2. Open the app and click on the \"I already have an authorization code\" link in the bottom of the screen."
+msgstr ""
+
+#: public/app/components/channel-setup-info/channel-setup-info.template.html:10
+msgid "3. Enter this authorization code:"
+msgstr ""
+
+#: public/app/routes/tutorial/tutorial.template.html:7
+#: public/app/routes/tutorial/tutorial.template.html:8
+msgid "3. Set up your channels"
+msgstr ""
+
+#: public/app/components/channel-setup-info/channel-setup-info.template.html:27
+msgid "3. The QR code can be read by using a QR code reader app (keyword: 'qr code reader' in app stores)"
+msgstr ""
+
+#: public/app/components/channel-setup-info/channel-setup-info.template.html:11
+#: public/app/components/channel-setup-info/channel-setup-info.template.html:28
+msgid "4. Continue publishing your survey in this screen."
+msgstr ""
+
+#: public/app/routes/tutorial/tutorial.template.html:9
+msgid "4. Time to publish!"
+msgstr ""
+
+#: public/app/routes/tutorial/tutorial.template.html:10
+msgid "5. Analyzing results"
+msgstr ""
+
+#: public/app/components/channel-setup-info/channel-setup-info.template.html:12
+msgid "5. If you haven't already, open up the Feedbackly app. The kiosk will automatically switch to this survey after 1-5 minutes from publishing or scheduling it."
+msgstr ""
+
+#: public/app/routes/surveys/survey-editor/react-survey-editor.template.html:5
+msgid "A new survey editor!"
+msgstr ""
+
+#: public/app/routes/notifications/notifications.template.html:90
+msgid "AND"
+msgstr ""
+
+#: public/app/routes/results/chart-controls/chart-controls.template.html:6
+msgid "Absolute (units)"
+msgstr ""
+
+#: public/app/routes/upsells/upsell-list/upsell-list.template.html:57
+msgid "Activate"
+msgstr ""
+
+#: public/app/routes/surveys/survey-publish-settings/survey-publish-settings.template.html:8
+msgid "Activate now"
+msgstr ""
+
+#: public/app/routes/surveys/surveys-list/surveys-list.template.html:41
+msgid "Active channels"
+msgstr ""
+
+#: public/app/components/device-info/device-info.template.html:32
+#: public/app/routes/channel-management/channel-management.template.html:29
+msgid "Active survey"
+msgstr ""
+
+#: public/app/components/add-device-form/add-device-form.template.html:9
+#: public/app/components/plugin-setup/plugin-setup.template.html:114
+#: public/app/components/plugin-setup/plugin-setup.template.html:140
+#: public/app/routes/channel-management/channel-edit/mailing-list-channels/show-mailing-list-channel/add-mailing-list-addresses/add-mailing-list-addresses.template.html:31
+#: public/app/routes/channel-management/channel-edit/sms-channels/show-sms-channel/add-sms-contacts/add-sms-contacts.template.html:28
+#: public/app/routes/surveys/survey-sms-settings/survey-sms-settings.template.html:26
+#: public/app/routes/surveys/surveys-list/surveys-list.template.html:17
+msgid "Add"
+msgstr ""
+
+#: public/app/routes/notifications/controls/contact/contact-control.template.html:48
+#: public/app/routes/notifications/notifications.template.html:138
+msgid "Add a condition"
+msgstr ""
+
+#: public/app/components/edit-device-form/edit-device-form.template.html:101
+msgid "Add a custom logo"
+msgstr ""
+
+#: public/app/translations/translations.template.html:155
+msgid "Add a feedback filter"
+msgstr ""
+
+#: public/app/translations/translations.template.html:60
+msgid "Add a language"
+msgstr ""
+
+#: public/app/translations/translations.template.html:247
+msgid "Add a link"
+msgstr ""
+
+#: public/app/translations/translations.template.html:61
+msgid "Add a question"
+msgstr ""
+
+#: public/app/routes/notifications/controls/contact/contact-control.template.html:38
+msgid "Add a word"
+msgstr ""
+
+#: public/app/routes/notifications/notifications.template.html:117
+msgid "Add an \"OR\" condition inside this block"
+msgstr ""
+
+#: public/app/translations/translations.template.html:204
+msgid "Add an image"
+msgstr ""
+
+#: public/app/components/add-channel/add-channel.template.html:3
+msgid "Add channel"
+msgstr ""
+
+#: public/app/components/add-channel-to-group/add-channel-to-group.template.html:3
+msgid "Add channels to channel group"
+msgstr ""
+
+#: public/app/routes/channel-management/channel-management.template.html:47
+msgid "Add channels to group"
+msgstr ""
+
+#: public/app/translations/translations.template.html:37
+msgid "Add choice"
+msgstr ""
+
+#: public/app/routes/channel-management/channel-edit/mailing-list-channels/show-mailing-list-channel/add-mailing-list-addresses/add-mailing-list-addresses.template.html:5
+msgid "Add email address manually"
+msgstr ""
+
+#: public/app/routes/channel-management/channel-edit/mailing-list-channels/show-mailing-list-channel/add-mailing-list-addresses/add-mailing-list-addresses.template.html:2
+#: public/app/routes/channel-management/channel-edit/mailing-list-channels/show-mailing-list-channel/show-mailing-list-channel.template.html:60
+msgid "Add email addresses"
+msgstr ""
+
+#: public/app/routes/notifications/notifications.template.html:26
+msgid "Add email-addresses"
+msgstr ""
+
+#: public/app/translations/translations.template.html:48
+msgid "Add image"
+msgstr ""
+
+#: public/app/routes/channel-management/channel-edit/sms-channels/show-sms-channel/add-sms-contacts/add-sms-contacts.template.html:2
+#: public/app/routes/channel-management/channel-edit/sms-channels/show-sms-channel/show-sms-channel.template.html:57
+msgid "Add phone numbers"
+msgstr ""
+
+#: public/app/routes/channel-management/channel-edit/sms-channels/show-sms-channel/add-sms-contacts/add-sms-contacts.template.html:5
+msgid "Add phone numbers manually"
+msgstr ""
+
+#: public/app/translations/translations.template.html:49
+msgid "Add slider"
+msgstr ""
+
+#: public/app/components/plugin-setup/plugin-setup.template.html:252
+msgid "Add the following script to the scripts-section of your site (typically at the end of the body tag or in the footer). This code is shared across all your website plugin channels, so you only need to require it once per page / page reload."
+msgstr ""
+
+#: public/app/components/plugin-setup/plugin-setup.template.html:261
+msgid "Add this line of code to enable this plugin channel on a page. Repeat this for all unique plugin channels you have."
+msgstr ""
+
+#: public/app/translations/translations.template.html:57
+msgid "Additional text to provide with the standard privacy policy."
+msgstr ""
+
+#: public/app/components/billing-form/billing-form.template.html:13
+msgid "Address"
+msgstr ""
+
+#: public/app/translations/translations.template.html:248
+msgid "Advanced settings"
+msgstr ""
+
+#: public/app/translations/translations.template.html:242
+msgid "After all the channels you want to use are set up, navigate to Surveys to create your first survey."
+msgstr ""
+
+#: public/app/translations/translations.template.html:105
+msgid ""
+"After collecting your first feedbacks, an overview will be visible on the landing page.\n"
+"For a detailed report head to the Results-section.\n"
+"Feedbacks can filtered based on channel, survey and even based on the individual answers given!"
+msgstr ""
+
+#: public/app/translations/translations.template.html:241
+msgid "After setup, create a survey"
+msgstr ""
+
+#: public/app/translations/translations.template.html:100
+msgid ""
+"After the setup it is time to publish your surveys in the channels you like!\n"
+"The last page tells you what you have planned to do so you can make your last review.\n"
+"If everything is set, just hit “Publish” and wait for the data to come in.\n"
+"If there is something you would like to change, just click on that part of the process bar and edit.\n"
+"At this point you should already have completed setting up your channels."
+msgstr ""
+
+#: public/app/components/plugin-setup/plugin-setup.template.html:107
+msgid "All URLs need to be visited before triggering"
+msgstr ""
+
+#: public/app/components/plugin-setup/plugin-setup.template.html:110
+msgid "All URLs need to be visited in order before triggering"
+msgstr ""
+
+#: public/app/components/add-channel/add-channel.template.html:29
+#: public/app/components/channel-group-list/channel-group-list.template.html:6
+msgid "All channels"
+msgstr ""
+
+#: public/app/translations/translations.template.html:249
+msgid "All feedback"
+msgstr ""
+
+#: public/app/routes/channel-management/channel-management.template.html:22
+msgid "All feedback channels"
+msgstr ""
+
+#: public/app/routes/summary/summary.template.html:141
+msgid "All respondents in the organization to date"
+msgstr ""
+
+#: public/app/translations/translations.template.html:245
+msgid "Allow multiple choices"
+msgstr ""
+
+#: public/app/routes/surveys/survey-confirmation/survey-confirmation.template.html:86
+msgid "Almost done! Verify that these settings are correct and the survey will automatically appear on your iPad when you click &quot;Publish Now&quot;"
+msgstr ""
+
+#: public/app/translations/translations.template.html:173
+msgid "Amazing."
+msgstr ""
+
+#: public/app/routes/results/result-stats/result-stats.template.html:45
+msgid "Amount of responses in the selected feedback channels"
+msgstr ""
+
+#: public/app/routes/results/result-stats/result-stats.template.html:96
+msgid "Amount of responses in the whole organization"
+msgstr ""
+
+#: public/app/routes/results/result-stats/result-stats.template.html:98
+msgid "Amount of responses to this question in the whole organization in the selected timespan"
+msgstr ""
+
+#: public/app/routes/results/result-stats/result-stats.template.html:47
+msgid "Amount of responses to this question with the selected filters"
+msgstr ""
+
+#: public/app/components/plugin-setup/plugin-setup.template.html:125
+msgid "An URL or a partial URL. If any of these match, the survey will not trigger on the page."
+msgstr ""
+
+#: public/app/components/plugin-setup/plugin-setup.template.html:87
+msgid "An URL or a partial URL. If it matches, the survey will trigger once all other conditions are fulfilled."
+msgstr ""
+
+#: public/app/translations/translations.template.html:151
+msgid "An error occured"
+msgstr ""
+
+#: public/app/translations/translations.template.html:40
+msgid "Animated emoticons"
+msgstr ""
+
+#: public/app/routes/summary/summary.template.html:255
+msgid "Answers to individual questions"
+msgstr ""
+
+#: public/app/components/channel-setup-info/channel-setup-info.template.html:8
+msgid "App Store"
+msgstr ""
+
+#: public/app/components/device-info/device-info.template.html:51
+msgid "App passcode"
+msgstr ""
+
+#: public/app/translations/translations.template.html:9
+msgid "Apply"
+msgstr ""
+
+#: public/app/routes/surveys/surveys-list/surveys-list.template.html:103
+msgid "Archived"
+msgstr ""
+
+#: public/app/translations/translations.template.html:128
+msgid "Are you sure you want to delete the translation?"
+msgstr ""
+
+#: public/app/routes/upsells/upsell-list/upsell-list.template.html:65
+msgid "Are you sure you want to delete the upsell offer?"
+msgstr ""
+
+#: public/app/translations/translations.template.html:45
+msgid "Are you sure you want to delete this question? The question has received responses that you won't be able to see anymore if you delete it."
+msgstr ""
+
+#: public/app/translations/translations.template.html:126
+msgid "Are you sure you want to remove channel from the channel group? All users who have rights to this group will no longer see the channel and its results."
+msgstr ""
+
+#: public/app/translations/translations.template.html:124
+msgid "Are you sure you want to remove this channel group?"
+msgstr ""
+
+#: public/app/translations/translations.template.html:246
+msgid "Are you sure you want to restore the default settings?"
+msgstr ""
+
+#: public/app/components/plan-selector/plan-selection-confirm/plan-selection-confirm.template.html:3
+msgid "Are you sure you want to switch your current plan? You can't downgrade your plan for a month after upgrading"
+msgstr ""
+
+#: public/app/translations/translations.template.html:183
+msgid "Are you sure?"
+msgstr ""
+
+#: public/app/translations/translations.template.html:111
+msgid "Are you sure? NOTE: Deleting the feedback currently does not affect the feedback amount and averages shown in the summary section."
+msgstr ""
+
+#: public/app/routes/upsells/upsell-list/upsell-list.template.html:31
+msgid "Assign as"
+msgstr ""
+
+#: public/app/routes/notifications/notifications.template.html:41
+msgid "Assign feedback to a user group in Feedback Inbox"
+msgstr ""
+
+#: public/app/routes/upsells/upsell-list/upsell-list.template.html:16
+msgid "Assign to engage points"
+msgstr ""
+
+#: public/app/routes/upsells/upsell-list/upsell-list.template.html:84
+msgid "Automate Based on Feedback"
+msgstr ""
+
+#: public/app/routes/upsells/upsell-list/upsell-list.template.html:89
+msgid ""
+"Automate instant upsell offers based on the feedback your customer gives. With Feedbackly-sponsored iPhone competition you can collect emails and use feeling-based instant upsell to grow your sales through feedback.\n"
+"\t\t\tPricing based on %-commission on additional sales created."
+msgstr ""
+
+#: public/app/routes/results/result-stats/result-stats.template.html:14
+msgid "Average of responses in the selected feedback channels"
+msgstr ""
+
+#: public/app/routes/results/result-stats/result-stats.template.html:65
+#: public/app/routes/summary/summary.template.html:46
+msgid "Average of responses in the whole organization"
+msgstr ""
+
+#: public/app/routes/results/result-stats/result-stats.template.html:67
+msgid "Average of responses to this question in all the feedback channels in the organization in the selected timespan"
+msgstr ""
+
+#: public/app/routes/results/result-stats/result-stats.template.html:16
+msgid "Average of responses to this question with the selected filters"
+msgstr ""
+
+#: public/app/routes/summary/summary.template.html:22
+msgid "Average of your responses"
+msgstr ""
+
+#: public/app/routes/tutorial/tutorial.template.html:11
+msgid "Awesome!"
+msgstr ""
+
+#: public/app/routes/upsells/upsell-list/upsell-list.template.html:79
+msgid "BOOST SALES INSTANTLY WITH FEEDBACK-BASED UPSELL"
+msgstr ""
+
+#: public/app/translations/translations.template.html:174
+msgid "Bad."
+msgstr ""
+
+#: public/app/routes/results/chart-controls/chart-controls.template.html:24
+msgid "Bar"
+msgstr ""
+
+#: public/app/routes/summary/summary.template.html:192
+msgid "Best day"
+msgstr ""
+
+#: public/app/routes/summary/summary.template.html:204
+msgid "Best hour"
+msgstr ""
+
+#: public/app/components/no-payment-source-error/no-payment-source-error.template.html:3
+msgid "Billing information is required before proceeding"
+msgstr ""
+
+#: public/app/routes/upsells/upsell-list/upsell-list.template.html:99
+msgid "Book time with our expert"
+msgstr ""
+
+#: public/app/components/plugin-setup/plugin-setup.template.html:45
+msgid "Bottom left corner"
+msgstr ""
+
+#: public/app/routes/summary/summary.template.html:286
+msgid "Bottom quartile limit"
+msgstr ""
+
+#: public/app/components/plugin-setup/plugin-setup.template.html:38
+msgid "Bottom right corner"
+msgstr ""
+
+#: public/app/translations/translations.template.html:19
+#: public/app/translations/translations.template.html:27
+msgid "Browser"
+msgstr ""
+
+#: public/app/routes/summary/summary.template.html:198
+msgid "Busiest day"
+msgstr ""
+
+#: public/app/translations/translations.template.html:220
+msgid "By clicking \"confirm\", your trial will end and your subscription will be upgraded to"
+msgstr ""
+
+#: public/app/routes/upsells/upsell-list/upsell-list.template.html:113
+msgid "Call or e-mail"
+msgstr ""
+
+#: public/app/components/plan-selector/plan-selection-confirm/plan-selection-confirm.template.html:8
+#: public/app/routes/channel-management/channel-edit/mailing-list-channels/show-mailing-list-channel/show-mailing-list-channel.template.html:85
+#: public/app/routes/channel-management/channel-edit/sms-channels/show-sms-channel/show-sms-channel.template.html:83
+#: public/app/routes/channel-management/channel-management.template.html:66
+#: public/app/routes/upsells/upsell-list/upsell-list.template.html:58
+msgid "Cancel"
+msgstr ""
+
+#: public/app/components/billing-form/billing-form.template.html:37
+msgid "Card number"
+msgstr ""
+
+#: public/app/routes/summary/summary.template.html:111
+#: public/app/routes/summary/summary.template.html:12
+#: public/app/routes/summary/summary.template.html:37
+#: public/app/routes/summary/summary.template.html:61
+#: public/app/routes/summary/summary.template.html:86
+msgid "Change from previous corresponding timespan"
+msgstr ""
+
+#: public/app/routes/feedbacks/feedbacks.template.html:58
+msgid "Change search terms"
+msgstr ""
+
+#: public/app/routes/results/chart-controls/chart-controls.template.html:17
+#: public/app/translations/translations.template.html:188
+msgid "Channel"
+msgstr ""
+
+#: public/app/translations/translations.template.html:133
+msgid "Channel Selection"
+msgstr ""
+
+#: public/app/translations/translations.template.html:140
+msgid "Channel created successfully."
+msgstr ""
+
+#: public/app/routes/channel-management/channel-management.template.html:15
+msgid "Channel group"
+msgstr ""
+
+#: public/app/routes/channel-management/channel-management.template.html:61
+msgid "Channel group name"
+msgstr ""
+
+#: public/app/components/channel-group-list/channel-group-list.template.html:2
+msgid "Channel groups"
+msgstr ""
+
+#: public/app/routes/channel-management/new-channel-group/new-channel-group.template.html:16
+msgid ""
+"Channel groups are exactly what they sound like -- a group containing different channels. Feedbackly's user and rights management builds around channel groups. After adding channels to a group, you can assign users with rights to different groups depending on what they need to see.\n"
+"          Users who have rights to a channel group can publish surveys and see the results of those channels that are included in the group."
+msgstr ""
+
+#: public/app/components/navbar/navbar.template.html:55
+#: public/app/routes/channel-management/channel-edit/channel-edit.template.html:5
+#: public/app/routes/channel-management/channel-management.template.html:5
+#: public/app/routes/channel-management/new-channel-group/new-channel-group.template.html:4
+msgid "Channel management"
+msgstr ""
+
+#: public/app/components/add-channel/add-channel.template.html:7
+#: public/app/routes/surveys/survey-routes-selection/survey-routes-selection.template.html:35
+msgid "Channel name"
+msgstr ""
+
+#: public/app/translations/translations.template.html:122
+msgid "Channel removed from group."
+msgstr ""
+
+#: public/app/components/add-channel/add-channel.template.html:10
+msgid "Channel type"
+msgstr ""
+
+#: public/app/routes/summary/summary.template.html:253
+msgid "Channel's average"
+msgstr ""
+
+#: public/app/routes/summary/summary.template.html:252
+msgid "Channel's name"
+msgstr ""
+
+#: public/app/routes/notifications/notifications-list.template.html:15
+#: public/app/translations/translations.template.html:186
+msgid "Channels"
+msgstr ""
+
+#: public/app/translations/translations.template.html:127
+msgid "Channels added to group successfully."
+msgstr ""
+
+#: public/app/components/add-channel-to-group/add-channel-to-group.template.html:4
+msgid "Channels selected"
+msgstr ""
+
+#: public/app/routes/summary/summary.template.html:292
+msgid "Channels with no feedback are omitted from the ranking."
+msgstr ""
+
+#: public/app/routes/results/chart-controls/chart-controls.template.html:21
+msgid "Chart type"
+msgstr ""
+
+#: public/app/translations/translations.template.html:66
+msgid "Check box"
+msgstr ""
+
+#: public/app/routes/channel-management/channel-edit/mailing-list-channels/show-mailing-list-channel/add-mailing-list-addresses/add-mailing-list-addresses.template.html:45
+msgid "Check input on row"
+msgstr ""
+
+#: public/app/routes/notifications/controls/contact/contact-control.template.html:56
+msgid "Checked"
+msgstr ""
+
+#: public/app/routes/notifications/notifications.template.html:18
+msgid "Choose a survey"
+msgstr ""
+
+#: public/app/translations/translations.template.html:179
+msgid "Choose at least one feedback channel"
+msgstr ""
+
+#: public/app/translations/translations.template.html:180
+msgid "Choose at least one survey"
+msgstr ""
+
+#: public/app/routes/surveys/survey-routes-selection/survey-routes-selection.template.html:39
+msgid "Choose channel type"
+msgstr ""
+
+#: public/app/components/plugin-setup/plugin-setup.template.html:34
+msgid "Choose corner window placement"
+msgstr ""
+
+#: public/app/translations/translations.template.html:67
+msgid "Choose file"
+msgstr ""
+
+#: public/app/routes/surveys/survey-routes-selection/survey-routes-selection.template.html:19
+msgid "Choose from existing Feedback Channels"
+msgstr ""
+
+#: public/app/translations/translations.template.html:187
+msgid "Choose links"
+msgstr ""
+
+#: public/app/translations/translations.template.html:68
+msgid "Choose new file"
+msgstr ""
+
+#: public/app/components/plugin-setup/plugin-setup.template.html:8
+msgid "Choose plugin display"
+msgstr ""
+
+#: public/app/components/billing-form/billing-form.template.html:18
+msgid "City"
+msgstr ""
+
+#: public/app/routes/surveys/surveys-list/surveys-list.template.html:121
+msgid "Click New Survey to create a survey."
+msgstr ""
+
+#: public/app/components/channel-setup-info/channel-setup-info.template.html:36
+msgid "Click here for more tips and guides on using a QR-code to collect feedback!"
+msgstr ""
+
+#: public/app/components/channel-setup-info/channel-setup-info.template.html:14
+msgid "Click here for more tips and guides on using a feedback kiosk to collect feedback!"
+msgstr ""
+
+#: public/app/routes/channel-management/channel-edit/mailing-list-channels/show-mailing-list-channel/add-mailing-list-addresses/add-mailing-list-addresses.template.html:68
+#: public/app/routes/channel-management/channel-edit/sms-channels/show-sms-channel/add-sms-contacts/add-sms-contacts.template.html:56
+#: public/app/routes/surveys/survey-editor/react-survey-editor.template.html:15
+#: public/app/routes/surveys/surveys-list/surveys-list.template.html:117
+msgid "Close"
+msgstr ""
+
+#: public/app/components/device-info/device-info.template.html:94
+msgid "Code"
+msgstr ""
+
+#: public/app/routes/notifications/controls/slider/slider-control.template.html:9
+msgid "Condition"
+msgstr ""
+
+#: public/app/components/plan-selector/plan-selection-confirm/plan-selection-confirm.template.html:7
+msgid "Confirm"
+msgstr ""
+
+#: public/app/components/plan-selector/plan-selection-confirm/plan-selection-confirm.template.html:2
+msgid "Confirm plan switch"
+msgstr ""
+
+#: public/app/translations/translations.template.html:223
+msgid "Confirm your purchase"
+msgstr ""
+
+#: public/app/routes/notifications/controls/contact/contact-control.template.html:19
+msgid "Contains 1 or more words"
+msgstr ""
+
+#: public/app/routes/notifications/controls/contact/contact-control.template.html:20
+msgid "Contains all words"
+msgstr ""
+
+#: public/app/components/channel-setup-info/channel-setup-info.template.html:51
+msgid "Continue publishing the survey in this screen."
+msgstr ""
+
+#: public/app/components/plugin-setup/plugin-setup.template.html:12
+msgid "Corner window"
+msgstr ""
+
+#: public/app/translations/translations.template.html:232
+msgid "Couldn't send SMS message to"
+msgstr ""
+
+#: public/app/translations/translations.template.html:144
+msgid "Couldn't upload your image"
+msgstr ""
+
+#: public/app/translations/translations.template.html:230
+msgid "Country"
+msgstr ""
+
+#: public/app/routes/surveys/survey-routes-selection/survey-routes-selection.template.html:47
+msgid "Create"
+msgstr ""
+
+#: public/app/routes/upsells/upsell-list/upsell-list.template.html:83
+msgid "Create Upsell Offers"
+msgstr ""
+
+#: public/app/routes/surveys/surveys-list/surveys-list.template.html:111
+msgid "Create a copy"
+msgstr ""
+
+#: public/app/routes/upsells/upsell-list/upsell-list.template.html:8
+msgid "Create a new upsell offer"
+msgstr ""
+
+#: public/app/routes/summary/summary.template.html:327
+msgid "Create a survey"
+msgstr ""
+
+#: public/app/routes/channel-management/new-channel-group/new-channel-group.template.html:27
+msgid "Create channel group"
+msgstr ""
+
+#: public/app/translations/translations.template.html:92
+msgid ""
+"Create new feedback channels and choose the methods to collect your feedback data with the survey you just created.\n"
+"There is a variety of options from tablet kiosk to email and websites."
+msgstr ""
+
+#: public/app/translations/translations.template.html:156
+msgid "Creating a file..."
+msgstr ""
+
+#: public/app/translations/translations.template.html:22
+msgid "Custom range"
+msgstr ""
+
+#: public/app/routes/user/user-settings/user-settings.template.html:11
+msgid "Dashboard language"
+msgstr ""
+
+#: public/app/routes/results/chart-controls/chart-controls.template.html:14
+#: public/app/routes/results/contact-results/contact-results.template.html:10
+#: public/app/routes/results/text-results/text-results.template.html:15
+msgid "Date"
+msgstr ""
+
+#: public/app/routes/results/chart-controls/chart-controls.template.html:15
+msgid "Day of the week"
+msgstr ""
+
+#: public/app/translations/translations.template.html:224
+msgid "Decline"
+msgstr ""
+
+#: public/app/translations/translations.template.html:43
+msgid "Default"
+msgstr ""
+
+#: public/app/routes/channel-management/channel-management.template.html:67
+msgid "Delete Group"
+msgstr ""
+
+#: public/app/routes/notifications/notifications.template.html:25
+msgid "Deliver notifications to"
+msgstr ""
+
+#: public/app/components/device-info/device-info.template.html:8
+#: public/app/components/edit-device-form/edit-device-form.template.html:33
+msgid "Description"
+msgstr ""
+
+#: public/app/translations/translations.template.html:178
+msgid "Detractors"
+msgstr ""
+
+#: public/app/translations/translations.template.html:244
+msgid "Display Probability"
+msgstr ""
+
+#: public/app/components/plugin-setup/plugin-setup.template.html:151
+msgid "Display after visiting"
+msgstr ""
+
+#: public/app/components/plugin-setup/plugin-setup.template.html:166
+msgid "Display after visiting the page for"
+msgstr ""
+
+#: public/app/components/plugin-setup/plugin-setup.template.html:161
+msgid "Display after visiting the site for"
+msgstr ""
+
+#: public/app/components/plugin-setup/plugin-setup.template.html:84
+msgid "Display only on certain pages"
+msgstr ""
+
+#: public/app/components/plugin-setup/plugin-setup.template.html:4
+msgid "Display settings"
+msgstr ""
+
+#: public/app/routes/user/user-settings/user-settings.template.html:8
+msgid "Displayname"
+msgstr ""
+
+#: public/app/routes/surveys/survey-confirmation/survey-confirmation.template.html:25
+msgid "Distribution"
+msgstr ""
+
+#: public/app/routes/notifications/notifications.template.html:45
+msgid "Do not assign to a group"
+msgstr ""
+
+#: public/app/translations/translations.template.html:10
+msgid "Do you want to remove this rule set?"
+msgstr ""
+
+#: public/app/translations/translations.template.html:159
+msgid "Download"
+msgstr ""
+
+#: public/app/components/channel-setup-info/channel-setup-info.template.html:33
+msgid "Download QR"
+msgstr ""
+
+#: public/app/components/file-drop/file-drop.template.html:6
+msgid "Drag your file here"
+msgstr ""
+
+#: public/app/translations/translations.template.html:205
+msgid "Drag your image here"
+msgstr ""
+
+#: public/app/translations/translations.template.html:129
+#: public/app/translations/translations.template.html:135
+msgid "E-mail Settings"
+msgstr ""
+
+#: public/app/translations/translations.template.html:76
+msgid "E-mail address"
+msgstr ""
+
+#: public/app/translations/translations.template.html:114
+msgid "E-mail list"
+msgstr ""
+
+#: public/app/translations/translations.template.html:210
+msgid "E-mail lists"
+msgstr ""
+
+#: public/app/routes/surveys/survey-email-settings/survey-email-settings.template.html:25
+msgid "E-mail subject"
+msgstr ""
+
+#: public/app/routes/channel-management/channel-edit/mailing-list-channels/show-mailing-list-channel/add-mailing-list-addresses/add-mailing-list-addresses.template.html:52
+#: public/app/routes/channel-management/channel-edit/sms-channels/show-sms-channel/add-sms-contacts/add-sms-contacts.template.html:40
+msgid "Each line in the CSV file should be of format"
+msgstr ""
+
+#: public/app/components/edit-channel-group-form/edit-channel-group-form.template.html:4
+#: public/app/routes/surveys/surveys-list/surveys-list.template.html:42
+#: public/app/routes/upsells/upsell-list/upsell-list.template.html:17
+msgid "Edit"
+msgstr ""
+
+#: public/app/routes/channel-management/channel-edit/channel-edit.template.html:15
+msgid "Edit channel"
+msgstr ""
+
+#: public/app/routes/surveys/surveys-list/surveys-list.template.html:24
+msgid "Edit existing surveys"
+msgstr ""
+
+#: public/app/routes/channel-management/channel-edit/mailing-list-channels/show-mailing-list-channel/add-mailing-list-addresses/add-mailing-list-addresses.template.html:26
+#: public/app/routes/channel-management/channel-edit/mailing-list-channels/show-mailing-list-channel/show-mailing-list-channel.template.html:78
+#: public/app/routes/channel-management/channel-edit/mailing-list-channels/show-mailing-list-channel/show-mailing-list-channel.template.html:9
+msgid "Email"
+msgstr ""
+
+#: public/app/routes/surveys/survey-email-settings/survey-email-settings.template.html:5
+msgid "Email Settings"
+msgstr ""
+
+#: public/app/translations/translations.template.html:29
+msgid "Emoticon style"
+msgstr ""
+
+#: public/app/routes/channel-management/channel-edit/mailing-list-channels/show-mailing-list-channel/add-mailing-list-addresses/add-mailing-list-addresses.template.html:43
+msgid "Encountered some errors:"
+msgstr ""
+
+#: public/app/translations/translations.template.html:50
+msgid "End of survey"
+msgstr ""
+
+#: public/app/routes/channel-management/new-channel-group/new-channel-group.template.html:24
+msgid "Enter a name for the new channel group"
+msgstr ""
+
+#: public/app/translations/translations.template.html:75
+msgid "Enter your e-mail address for a chance to win the newest iPhone!"
+msgstr ""
+
+#: public/app/components/add-channel/add-channel.template.html:6
+#: public/app/routes/surveys/survey-routes-selection/survey-routes-selection.template.html:34
+msgid "Ex. Kiosk 4 - Helsinki Central"
+msgstr ""
+
+#: public/app/components/plugin-setup/plugin-setup.template.html:182
+msgid "Exiting the page"
+msgstr ""
+
+#: public/app/components/billing-form/billing-form.template.html:47
+msgid "Expiration (MM/YYYY)"
+msgstr ""
+
+#: public/app/routes/results/text-results/text-results.template.html:17
+msgid "Feedback"
+msgstr ""
+
+#: public/app/routes/surveys/survey-routes-selection/survey-routes-selection.template.html:3
+msgid "Feedback Channel Selection"
+msgstr ""
+
+#: public/app/routes/summary/summary.template.html:158
+#: public/app/routes/surveys/surveys-list/surveys-list.template.html:40
+#: public/app/translations/translations.template.html:168
+msgid "Feedback amount"
+msgstr ""
+
+#: public/app/routes/results/contact-results/contact-results.template.html:11
+#: public/app/routes/results/text-results/text-results.template.html:16
+msgid "Feedback channel"
+msgstr ""
+
+#: public/app/components/edit-channel-group-form/edit-channel-group-form.template.html:30
+msgid "Feedback channels"
+msgstr ""
+
+#: public/app/routes/notifications/notifications.template.html:31
+msgid "Feedback channels to deliver notifications from"
+msgstr ""
+
+#: public/app/translations/translations.template.html:153
+msgid "Feedback channels' average"
+msgstr ""
+
+#: public/app/translations/translations.template.html:152
+msgid "Feedback channels' feedback amount"
+msgstr ""
+
+#: public/app/components/device-info/device-info.template.html:18
+#: public/app/routes/channel-management/channel-management.template.html:28
+msgid "Feedback count"
+msgstr ""
+
+#: public/app/translations/translations.template.html:112
+msgid "Feedback deleted."
+msgstr ""
+
+#: public/app/components/navbar/navbar.template.html:43
+msgid "Feedback inbox"
+msgstr ""
+
+#: public/app/translations/translations.template.html:116
+#: public/app/translations/translations.template.html:216
+msgid "Feedback kiosk"
+msgstr ""
+
+#: public/app/components/navbar/navbar.template.html:37
+msgid "Feedback list"
+msgstr ""
+
+#: public/app/routes/notifications/notifications-list.template.html:3
+msgid "Feedback notifications"
+msgstr ""
+
+#: public/app/translations/translations.template.html:239
+msgid "Feedback source details"
+msgstr ""
+
+#: public/app/translations/translations.template.html:39
+msgid "Feedbackly style emoticons"
+msgstr ""
+
+#: public/app/components/fbevent-plan-limit-notifier/fbevent-plan-limit-notifier.template.html:2
+msgid "Feedbacks over the limit are omitted from the results."
+msgstr ""
+
+#: public/app/components/no-payment-source-error/no-payment-source-error.template.html:3
+msgid "Fill in your billing information"
+msgstr ""
+
+#: public/app/translations/translations.template.html:195
+msgid "Fill in your billing information first"
+msgstr ""
+
+#: public/app/translations/translations.template.html:20
+msgid "Filter"
+msgstr ""
+
+#: public/app/translations/translations.template.html:54
+msgid "Final screen timeout"
+msgstr ""
+
+#: public/app/routes/channel-management/channel-edit/mailing-list-channels/show-mailing-list-channel/show-mailing-list-channel.template.html:70
+#: public/app/routes/channel-management/channel-edit/sms-channels/show-sms-channel/show-sms-channel.template.html:68
+msgid "First Name"
+msgstr ""
+
+#: public/app/routes/channel-management/channel-edit/mailing-list-channels/show-mailing-list-channel/add-mailing-list-addresses/add-mailing-list-addresses.template.html:12
+#: public/app/routes/channel-management/channel-edit/mailing-list-channels/show-mailing-list-channel/show-mailing-list-channel.template.html:7
+#: public/app/routes/channel-management/channel-edit/sms-channels/show-sms-channel/add-sms-contacts/add-sms-contacts.template.html:12
+#: public/app/routes/channel-management/channel-edit/sms-channels/show-sms-channel/show-sms-channel.template.html:7
+msgid "First name"
+msgstr ""
+
+#: public/app/translations/translations.template.html:237
+msgid "First we need to get your feedback channels up and running. Choose individual channel from the top menu and go with the flow."
+msgstr ""
+
+#: public/app/translations/translations.template.html:238
+msgid "For example if you want to use your tablet to collect feedback, go to “feedback kiosks” and download the app to your tablet."
+msgstr ""
+
+#: public/app/components/edit-device-form/edit-device-form.template.html:47
+msgid "Force default language (if available in survey)"
+msgstr ""
+
+#: public/app/translations/translations.template.html:165
+msgid "Form"
+msgstr ""
+
+#: public/app/components/plan-selector/plan-selector.template.html:15
+msgid "Free"
+msgstr ""
+
+#: public/app/components/plugin-setup/plugin-setup.template.html:27
+msgid "Freely placed"
+msgstr ""
+
+#: public/app/translations/translations.template.html:15
+msgid "Friday"
+msgstr ""
+
+#: public/app/routes/surveys/survey-email-settings/survey-email-settings.template.html:70
+msgid "From:"
+msgstr ""
+
+#: public/app/components/billing-form/billing-form.template.html:8
+msgid "Full name"
+msgstr ""
+
+#: public/app/routes/upsells/upsell-list/upsell-list.template.html:94
+msgid "GET STARTED"
+msgstr ""
+
+#: public/app/routes/upsells/upsell-editor/upsell-editor.template.html:89
+msgid "Generate barcode"
+msgstr ""
+
+#: public/app/routes/tutorial/tutorial.template.html:15
+msgid "Get started in just a few easy steps!"
+msgstr ""
+
+#: public/app/translations/translations.template.html:182
+msgid "Getting the results..."
+msgstr ""
+
+#: public/app/translations/translations.template.html:171
+msgid "Good."
+msgstr ""
+
+#: public/app/translations/translations.template.html:196
+msgid "Got it!"
+msgstr ""
+
+#: public/app/routes/results/chart-controls/chart-controls.template.html:12
+msgid "Grouping"
+msgstr ""
+
+#: public/app/translations/translations.template.html:150
+msgid "Heading"
+msgstr ""
+
+#: public/app/translations/translations.template.html:209
+msgid "Heading is missing from question number"
+msgstr ""
+
+#: public/app/components/navbar/navbar.template.html:94
+msgid "Help center"
+msgstr ""
+
+#: public/app/routes/summary/summary.template.html:186
+msgid "Here you can find your best performances as well as the worst ones."
+msgstr ""
+
+#: public/app/routes/surveys/survey-preview/survey-preview.template.html:16
+msgid "Here's what your survey will look depending on which channels you want to publish to."
+msgstr ""
+
+#: public/app/translations/translations.template.html:149
+msgid "Hide archived"
+msgstr ""
+
+#: public/app/translations/translations.template.html:64
+msgid "Hide image labels"
+msgstr ""
+
+#: public/app/components/plugin-setup/plugin-setup.template.html:122
+msgid "Hide on certain pages"
+msgstr ""
+
+#: public/app/routes/summary/summary.template.html:188
+msgid "Highs and lows"
+msgstr ""
+
+#: public/app/routes/results/chart-controls/chart-controls.template.html:16
+#: public/app/routes/surveys/survey-publish-settings/survey-publish-settings.template.html:41
+msgid "Hour"
+msgstr ""
+
+#: public/app/translations/translations.template.html:201
+msgid "Hours"
+msgstr ""
+
+#: public/app/translations/translations.template.html:77
+msgid "I agree to terms and conditions"
+msgstr ""
+
+#: public/app/translations/translations.template.html:164
+msgid "Image"
+msgstr ""
+
+#: public/app/translations/translations.template.html:96
+msgid ""
+"In the publishing settings go through the parts to get detailed instruction on the setup.\n"
+"For example, you may download the app to your tablet from here.\n"
+"Here you can also choose whether to publish the survey now or\n"
+"schedule it to be automatically published later."
+msgstr ""
+
+#: public/app/translations/translations.template.html:240
+msgid "In this section you will also find everything you need to set up your feedback channels e.g. find your printable QR ­codes and the embed codes for your website survey."
+msgstr ""
+
+#: public/app/routes/notifications/notifications.template.html:54
+msgid "Include all available questions in notification message"
+msgstr ""
+
+#: public/app/routes/notifications/notifications.template.html:58
+msgid "Include email content only from questions (if available)"
+msgstr ""
+
+#: public/app/routes/channel-management/channel-edit/mailing-list-channels/show-mailing-list-channel/add-mailing-list-addresses/add-mailing-list-addresses.template.html:54
+#: public/app/routes/channel-management/channel-edit/sms-channels/show-sms-channel/add-sms-contacts/add-sms-contacts.template.html:42
+msgid "Include this as a first line in your csv."
+msgstr ""
+
+#: public/app/components/plugin-setup/plugin-setup.template.html:250
+msgid "Installation"
+msgstr ""
+
+#: public/app/routes/upsells/upsell-list/upsell-list.template.html:85
+msgid "Instant offers and emails"
+msgstr ""
+
+#: public/app/translations/translations.template.html:6
+msgid "Last 30 Days"
+msgstr ""
+
+#: public/app/translations/translations.template.html:5
+msgid "Last 7 Days"
+msgstr ""
+
+#: public/app/translations/translations.template.html:8
+msgid "Last Month"
+msgstr ""
+
+#: public/app/routes/channel-management/channel-edit/mailing-list-channels/show-mailing-list-channel/show-mailing-list-channel.template.html:74
+#: public/app/routes/channel-management/channel-edit/sms-channels/show-sms-channel/show-sms-channel.template.html:72
+msgid "Last Name"
+msgstr ""
+
+#: public/app/routes/summary/summary.template.html:312
+msgid "Last month"
+msgstr ""
+
+#: public/app/routes/channel-management/channel-edit/mailing-list-channels/show-mailing-list-channel/add-mailing-list-addresses/add-mailing-list-addresses.template.html:19
+#: public/app/routes/channel-management/channel-edit/mailing-list-channels/show-mailing-list-channel/show-mailing-list-channel.template.html:8
+#: public/app/routes/channel-management/channel-edit/sms-channels/show-sms-channel/add-sms-contacts/add-sms-contacts.template.html:18
+#: public/app/routes/channel-management/channel-edit/sms-channels/show-sms-channel/show-sms-channel.template.html:8
+msgid "Last name"
+msgstr ""
+
+#: public/app/translations/translations.template.html:4
+msgid "Last week"
+msgstr ""
+
+#: public/app/routes/upsells/upsell-list/upsell-list.template.html:105
+msgid "Learn more at our Knowledge Base"
+msgstr ""
+
+#: public/app/components/device-info/device-info.template.html:60
+#: public/app/components/device-info/device-info.template.html:74
+msgid "Learn more at our Knowledge base"
+msgstr ""
+
+#: public/app/routes/notifications/controls/contact/contact-control.template.html:18
+msgid "Length"
+msgstr ""
+
+#: public/app/components/device-info/device-info.template.html:83
+#: public/app/components/device-info/device-info.template.html:99
+msgid "Link"
+msgstr ""
+
+#: public/app/translations/translations.template.html:147
+msgid "Logic related to the moved question will change. Do you want to proceed?"
+msgstr ""
+
+#: public/app/components/edit-device-form/edit-device-form.template.html:37
+msgid "Logo"
+msgstr ""
+
+#: public/app/translations/translations.template.html:157
+msgid "Message has been sent"
+msgstr ""
+
+#: public/app/routes/surveys/survey-publish-settings/survey-publish-settings.template.html:50
+msgid "Minute"
+msgstr ""
+
+#: public/app/translations/translations.template.html:202
+msgid "Minutes"
+msgstr ""
+
+#: public/app/translations/translations.template.html:217
+msgid "Mobile"
+msgstr ""
+
+#: public/app/translations/translations.template.html:11
+msgid "Monday"
+msgstr ""
+
+#: public/app/translations/translations.template.html:30
+msgid "Multiple Choice"
+msgstr ""
+
+#: public/app/routes/results/result-stats/result-stats.template.html:29
+msgid "NPS in the selected feedback channels"
+msgstr ""
+
+#: public/app/routes/results/result-stats/result-stats.template.html:80
+msgid "NPS in the whole organization"
+msgstr ""
+
+#: public/app/routes/results/result-stats/result-stats.template.html:82
+msgid "NPS of this question in all the feedback channels in the organization in the selected timespan"
+msgstr ""
+
+#: public/app/routes/results/result-stats/result-stats.template.html:31
+msgid "NPS of this question with the selected filters"
+msgstr ""
+
+#: public/app/routes/summary/summary.template.html:120
+msgid "NPS® in the selected timespan"
+msgstr ""
+
+#: public/app/components/add-device-form/add-device-form.template.html:6
+#: public/app/components/device-info/device-info.template.html:3
+#: public/app/components/edit-channel-group-form/edit-channel-group-form.template.html:11
+#: public/app/components/edit-device-form/edit-device-form.template.html:14
+#: public/app/routes/channel-management/channel-management.template.html:27
+#: public/app/routes/surveys/surveys-list/surveys-list.template.html:14
+#: public/app/routes/surveys/surveys-list/surveys-list.template.html:38
+#: public/app/routes/surveys/surveys-list/surveys-list.template.html:98
+msgid "Name"
+msgstr ""
+
+#: public/app/routes/upsells/upsell-list/upsell-list.template.html:34
+msgid "Negative"
+msgstr ""
+
+#: public/app/components/edit-device-form/edit-device-form.template.html:81
+msgid "Negative upsell"
+msgstr ""
+
+#: public/app/routes/summary/summary.template.html:122
+msgid "Net Promoter Score (NPS®) in the selected timespan in the feedback channels you have rights to."
+msgstr ""
+
+#: public/app/routes/upsells/upsell-list/upsell-list.template.html:37
+msgid "Neutral"
+msgstr ""
+
+#: public/app/components/edit-device-form/edit-device-form.template.html:52
+msgid "Neutral upsell"
+msgstr ""
+
+#: public/app/routes/channel-management/channel-edit/channel-edit.template.html:4
+#: public/app/routes/channel-management/channel-management.template.html:4
+msgid "New Feedback Channel"
+msgstr ""
+
+#: public/app/components/plugin-setup/plugin-setup.template.html:136
+#: public/app/components/plugin-setup/plugin-setup.template.html:98
+msgid "New URL or partial URL"
+msgstr ""
+
+#: public/app/routes/upsells/upsell-editor/upsell-editor.template.html:6
+msgid "New Upsell"
+msgstr ""
+
+#: public/app/routes/channel-management/new-channel-group/new-channel-group.template.html:14
+msgid "New channel group"
+msgstr ""
+
+#: public/app/routes/notifications/notifications-list.template.html:7
+msgid "New notification rule"
+msgstr ""
+
+#: public/app/routes/surveys/surveys-list/surveys-list.template.html:9
+msgid "New survey"
+msgstr ""
+
+#: public/app/translations/translations.template.html:44
+msgid "Next"
+msgstr ""
+
+#: public/app/translations/translations.template.html:59
+msgid "Next (button text)"
+msgstr ""
+
+#: public/app/translations/translations.template.html:94
+msgid ""
+"Next you need to setup your channels to collect the data.\n"
+"Depending on what type of channels you chose to use, the software will ask you to do the setup."
+msgstr ""
+
+#: public/app/routes/upsells/upsell-list/upsell-list.template.html:69
+#: public/app/translations/translations.template.html:200
+msgid "No"
+msgstr ""
+
+#: public/app/translations/translations.template.html:190
+msgid "No SMS channel was chosen"
+msgstr ""
+
+#: public/app/components/device-info/device-info.template.html:41
+msgid "No active schedulations for this channel."
+msgstr ""
+
+#: public/app/routes/summary/summary.template.html:324
+msgid "No feedback to analyze at the moment."
+msgstr ""
+
+#: public/app/translations/translations.template.html:192
+msgid "No mailing list was chosen"
+msgstr ""
+
+#: public/app/translations/translations.template.html:191
+msgid "No message provided"
+msgstr ""
+
+#: public/app/routes/feedbacks/feedbacks.template.html:58
+#: public/app/routes/results/results.template.html:12
+msgid "No results found"
+msgstr ""
+
+#: public/app/translations/translations.template.html:194
+msgid "No sender provided"
+msgstr ""
+
+#: public/app/translations/translations.template.html:193
+msgid "No subject provided"
+msgstr ""
+
+#: public/app/routes/upsells/upsell-list/upsell-list.template.html:23
+msgid "No upsell templates added"
+msgstr ""
+
+#: public/app/components/device-info/device-info.template.html:28
+msgid "No user has right to the channel"
+msgstr ""
+
+#: public/app/translations/translations.template.html:131
+#: public/app/translations/translations.template.html:137
+msgid "Not ready to publish just yet. Check the settings."
+msgstr ""
+
+#: public/app/routes/upsells/upsell-list/upsell-list.template.html:56
+msgid "Note: De-selecting engage points will remove the upsell offers from them."
+msgstr ""
+
+#: public/app/components/edit-channel-group-form/edit-channel-group-form.template.html:34
+#: public/app/components/edit-channel-group-form/edit-channel-group-form.template.html:55
+#: public/app/routes/results/feedback-filters-list/feedback-filters-list.template.html:2
+#: public/app/routes/surveys/surveys-list/surveys-list.template.html:31
+msgid "Nothing here yet"
+msgstr ""
+
+#: public/app/routes/notifications/notifications-list.template.html:14
+msgid "Notification recipients"
+msgstr ""
+
+#: public/app/translations/translations.template.html:80
+msgid "Notification rule saved successfully."
+msgstr ""
+
+#: public/app/components/navbar/navbar.template.html:61
+#: public/app/routes/notifications/notifications.template.html:5
+msgid "Notifications"
+msgstr ""
+
+#: public/app/translations/translations.template.html:109
+msgid "Now you have the basic knowledge to start learning about your customers. Just click below to start turning your happy customers into more business and better sales."
+msgstr ""
+
+#: public/app/components/device-info/device-info.template.html:46
+msgid "Number of members"
+msgstr ""
+
+#: public/app/components/plugin-setup/plugin-setup.template.html:148
+msgid "Number of pages visited"
+msgstr ""
+
+#: public/app/routes/surveys/surveys-list/surveys-list.template.html:39
+msgid "Number of questions"
+msgstr ""
+
+#: public/app/routes/summary/summary.template.html:70
+msgid "Number of respondents in the selected timespan"
+msgstr ""
+
+#: public/app/translations/translations.template.html:47
+msgid "OK"
+msgstr ""
+
+#: public/app/routes/notifications/notifications.template.html:103
+msgid "OR"
+msgstr ""
+
+#: public/app/routes/upsells/upsell-editor/upsell-editor.template.html:44
+msgid "Offer image"
+msgstr ""
+
+#: public/app/translations/translations.template.html:172
+msgid "Ok."
+msgstr ""
+
+#: public/app/components/plugin-setup/plugin-setup.template.html:104
+msgid "One URL needs to be visited before triggering"
+msgstr ""
+
+#: public/app/translations/translations.template.html:250
+msgid "Only feedback assigned to group"
+msgstr ""
+
+#: public/app/translations/translations.template.html:162
+msgid "Open question"
+msgstr ""
+
+#: public/app/components/navbar/navbar.template.html:75
+msgid "Organization"
+msgstr ""
+
+#: public/app/translations/translations.template.html:154
+msgid "Organization's feedback amount"
+msgstr ""
+
+#: public/app/translations/translations.template.html:177
+msgid "Passives"
+msgstr ""
+
+#: public/app/routes/user/user-settings/user-settings.template.html:35
+msgid "Password"
+msgstr ""
+
+#: public/app/routes/user/user-settings/user-settings.template.html:40
+msgid "Password confirmation"
+msgstr ""
+
+#: public/app/routes/summary/summary.template.html:170
+msgid "Performance meter"
+msgstr ""
+
+#: public/app/routes/channel-management/channel-edit/sms-channels/show-sms-channel/show-sms-channel.template.html:76
+msgid "Phone Number"
+msgstr ""
+
+#: public/app/routes/channel-management/channel-edit/sms-channels/show-sms-channel/add-sms-contacts/add-sms-contacts.template.html:24
+#: public/app/routes/channel-management/channel-edit/sms-channels/show-sms-channel/show-sms-channel.template.html:9
+msgid "Phone number"
+msgstr ""
+
+#: public/app/translations/translations.template.html:18
+msgid "Pick a date range"
+msgstr ""
+
+#: public/app/components/plugin-setup/plugin-setup.template.html:66
+msgid "Place freely by adding this line of code anywhere on the site (in addition to the setup code below)"
+msgstr ""
+
+#: public/app/routes/surveys/survey-confirmation/survey-confirmation.template.html:52
+#: public/app/routes/surveys/survey-sms-settings/survey-sms-settings.template.html:59
+msgid "Please ask your organization admin to top up the SMS Balance"
+msgstr ""
+
+#: public/app/translations/translations.template.html:84
+msgid "Please make at least 1 notification rule."
+msgstr ""
+
+#: public/app/translations/translations.template.html:83
+msgid "Please select at least 1 channel."
+msgstr ""
+
+#: public/app/translations/translations.template.html:85
+msgid "Please type at least 1 e-mail recipient."
+msgstr ""
+
+#: public/app/translations/translations.template.html:226
+msgid "Plugin code has been copied to clipboard"
+msgstr ""
+
+#: public/app/translations/translations.template.html:141
+msgid "Plugin settings have been saved."
+msgstr ""
+
+#: public/app/components/plugin-setup/plugin-setup.template.html:19
+msgid "Popup window"
+msgstr ""
+
+#: public/app/routes/upsells/upsell-list/upsell-list.template.html:40
+msgid "Positive"
+msgstr ""
+
+#: public/app/components/edit-device-form/edit-device-form.template.html:66
+msgid "Positive upsell"
+msgstr ""
+
+#: public/app/components/billing-form/billing-form.template.html:23
+msgid "Postal code"
+msgstr ""
+
+#: public/app/translations/translations.template.html:132
+msgid "Preview"
+msgstr ""
+
+#: public/app/translations/translations.template.html:166
+msgid "Previously created question"
+msgstr ""
+
+#: public/app/translations/translations.template.html:56
+msgid "Privacy policy"
+msgstr ""
+
+#: public/app/translations/translations.template.html:176
+msgid "Promoters"
+msgstr ""
+
+#: public/app/translations/translations.template.html:42
+msgid "Provide general translations for the survey."
+msgstr ""
+
+#: public/app/translations/translations.template.html:134
+msgid "Publish Settings"
+msgstr ""
+
+#: public/app/routes/surveys/survey-confirmation/survey-confirmation.template.html:72
+msgid "Publish now"
+msgstr ""
+
+#: public/app/routes/surveys/survey-publish-settings/survey-publish-settings.template.html:3
+msgid "Publish settings"
+msgstr ""
+
+#: public/app/routes/surveys/survey-confirmation/survey-confirmation.template.html:57
+msgid "Publish time"
+msgstr ""
+
+#: public/app/components/add-channel/add-channel.template.html:22
+msgid "Put in channel group(s)"
+msgstr ""
+
+#: public/app/components/device-info/device-info.template.html:88
+#: public/app/translations/translations.template.html:119
+msgid "QR code"
+msgstr ""
+
+#: public/app/translations/translations.template.html:53
+msgid "Question timeout"
+msgstr ""
+
+#: public/app/translations/translations.template.html:52
+msgid "Question title is blank"
+msgstr ""
+
+#: public/app/routes/summary/summary.template.html:220
+msgid "Quietest day"
+msgstr ""
+
+#: public/app/routes/summary/summary.template.html:243
+msgid "Ranking"
+msgstr ""
+
+#: public/app/translations/translations.template.html:222
+msgid "Read more about pricing in our help center"
+msgstr ""
+
+#: public/app/translations/translations.template.html:228
+msgid "Receipt has been sent to your email address"
+msgstr ""
+
+#: public/app/translations/translations.template.html:55
+msgid "Redirect"
+msgstr ""
+
+#: public/app/translations/translations.template.html:62
+msgid "Redirect address"
+msgstr ""
+
+#: public/app/components/plugin-setup/plugin-setup.template.html:194
+msgid "Redisplay after being closed after"
+msgstr ""
+
+#: public/app/components/plugin-setup/plugin-setup.template.html:215
+msgid "Redisplay after survey has been finished after"
+msgstr ""
+
+#: public/app/components/plugin-setup/plugin-setup.template.html:190
+msgid "Redisplay conditions"
+msgstr ""
+
+#: public/app/routes/surveys/survey-sms-settings/survey-sms-settings.template.html:52
+msgid "Refreshing..."
+msgstr ""
+
+#: public/app/routes/results/chart-controls/chart-controls.template.html:7
+msgid "Relative (%)"
+msgstr ""
+
+#: public/app/translations/translations.template.html:184
+msgid "Remove feedback filter"
+msgstr ""
+
+#: public/app/routes/summary/summary.template.html:254
+msgid "Respondents"
+msgstr ""
+
+#: public/app/routes/summary/summary.template.html:95
+msgid "Responses to individual questions"
+msgstr ""
+
+#: public/app/routes/summary/summary.template.html:97
+msgid "Responses to individual questions in the selected timespan in the feedback channels you have rights to."
+msgstr ""
+
+#: public/app/components/navbar/navbar.template.html:31
+msgid "Results"
+msgstr ""
+
+#: public/app/translations/translations.template.html:58
+msgid "Returning to beginning in 10 seconds."
+msgstr ""
+
+#: public/app/translations/translations.template.html:110
+msgid "Review & Confirmation"
+msgstr ""
+
+#: public/app/routes/surveys/survey-confirmation/survey-confirmation.template.html:3
+msgid "Review and Confirmation"
+msgstr ""
+
+#: public/app/routes/surveys/survey-sms-settings/survey-sms-settings.template.html:3
+msgid "SMS Settings"
+msgstr ""
+
+#: public/app/routes/surveys/survey-sms-settings/survey-sms-settings.template.html:61
+msgid "SMS limitations"
+msgstr ""
+
+#: public/app/translations/translations.template.html:115
+#: public/app/translations/translations.template.html:214
+msgid "SMS list"
+msgstr ""
+
+#: public/app/components/plugin-setup/plugin-setup.template.html:236
+msgid "Sampling"
+msgstr ""
+
+#: public/app/translations/translations.template.html:16
+msgid "Saturday"
+msgstr ""
+
+#: public/app/components/add-channel-to-group/add-channel-to-group.template.html:18
+#: public/app/components/add-channel/add-channel.template.html:41
+#: public/app/components/billing-form/billing-form.template.html:50
+#: public/app/components/edit-channel-group-form/edit-channel-group-form.template.html:23
+#: public/app/components/edit-channel-group-form/edit-channel-group-form.template.html:44
+#: public/app/components/edit-channel-group-form/edit-channel-group-form.template.html:65
+#: public/app/components/edit-device-form/edit-device-form.template.html:100
+#: public/app/routes/channel-management/channel-edit/mailing-list-channels/show-mailing-list-channel/show-mailing-list-channel.template.html:84
+#: public/app/routes/channel-management/channel-edit/sms-channels/show-sms-channel/show-sms-channel.template.html:82
+#: public/app/routes/channel-management/channel-management.template.html:65
+#: public/app/routes/notifications/notifications.template.html:156
+#: public/app/routes/surveys/surveys-list/surveys-list.template.html:116
+#: public/app/routes/user/user-settings/user-settings.template.html:27
+#: public/app/routes/user/user-settings/user-settings.template.html:43
+msgid "Save"
+msgstr ""
+
+#: public/app/routes/upsells/upsell-editor/upsell-editor.template.html:138
+msgid "Save Upsell"
+msgstr ""
+
+#: public/app/translations/translations.template.html:235
+msgid "Save settings"
+msgstr ""
+
+#: public/app/translations/translations.template.html:158
+msgid "Saving succeeded"
+msgstr ""
+
+#: public/app/translations/translations.template.html:146
+#: public/app/translations/translations.template.html:71
+msgid "Saving the survey..."
+msgstr ""
+
+#: public/app/translations/translations.template.html:189
+msgid "Schedulation date is invalid"
+msgstr ""
+
+#: public/app/routes/surveys/survey-publish-settings/survey-publish-settings.template.html:19
+msgid "Schedule date"
+msgstr ""
+
+#: public/app/routes/surveys/survey-confirmation/survey-confirmation.template.html:73
+msgid "Schedule now"
+msgstr ""
+
+#: public/app/routes/surveys/survey-publish-settings/survey-publish-settings.template.html:9
+msgid "Schedule publishing"
+msgstr ""
+
+#: public/app/components/device-info/device-info.template.html:35
+msgid "Scheduled surveys"
+msgstr ""
+
+#: public/app/components/plugin-setup/plugin-setup.template.html:172
+msgid "Scrolling"
+msgstr ""
+
+#: public/app/routes/surveys/survey-sms-settings/survey-sms-settings.template.html:61
+msgid "See pricing"
+msgstr ""
+
+#: public/app/routes/notifications/notifications.template.html:85
+msgid "Select conditions that need to apply for the notification to be sent. NOTE: All conditions must apply before any notifications are sent."
+msgstr ""
+
+#: public/app/routes/notifications/controls/contact/contact-control.template.html:17
+msgid "Select function"
+msgstr ""
+
+#: public/app/routes/surveys/survey-routes-selection/survey-routes-selection.template.html:6
+msgid "Select the channels to distribute your survey in. If you have sufficient rights, you can also create new channels here."
+msgstr ""
+
+#: public/app/routes/surveys/survey-email-settings/survey-email-settings.template.html:34
+msgid "Select translation"
+msgstr ""
+
+#: public/app/routes/notifications/notifications.template.html:72
+msgid "Send immediately"
+msgstr ""
+
+#: public/app/routes/user/user-settings/user-settings.template.html:19
+msgid "Send me notifications about the state of my devices"
+msgstr ""
+
+#: public/app/routes/user/user-settings/user-settings.template.html:24
+msgid "Send me weekly report"
+msgstr ""
+
+#: public/app/routes/surveys/survey-email-settings/survey-email-settings.template.html:53
+msgid "Send test"
+msgstr ""
+
+#: public/app/routes/surveys/survey-sms-settings/survey-sms-settings.template.html:42
+msgid "Send test SMS"
+msgstr ""
+
+#: public/app/routes/surveys/survey-email-settings/survey-email-settings.template.html:20
+msgid "Sender e-mail*"
+msgstr ""
+
+#: public/app/routes/surveys/survey-email-settings/survey-email-settings.template.html:15
+msgid "Sender name"
+msgstr ""
+
+#: public/app/routes/surveys/survey-sms-settings/survey-sms-settings.template.html:17
+msgid "Sender name (if supported))"
+msgstr ""
+
+#: public/app/components/plugin-setup/plugin-setup.template.html:81
+msgid "Set the conditions to display the plugin. Once all conditions are fulfilled, the survey will be displayed."
+msgstr ""
+
+#: public/app/translations/translations.template.html:243
+msgid "Set up my channels now"
+msgstr ""
+
+#: public/app/components/navbar/navbar.template.html:102
+#: public/app/components/navbar/navbar.template.html:108
+#: public/app/routes/user/user-settings/user-settings.template.html:1
+msgid "Settings"
+msgstr ""
+
+#: public/app/translations/translations.template.html:236
+msgid "Settings have been saved"
+msgstr ""
+
+#: public/app/components/channel-setup-info/channel-setup-info.template.html:2
+msgid "Setup instructions for"
+msgstr ""
+
+#: public/app/translations/translations.template.html:169
+msgid "Show all"
+msgstr ""
+
+#: public/app/routes/surveys/surveys-list/surveys-list.template.html:28
+#: public/app/translations/translations.template.html:148
+msgid "Show archived"
+msgstr ""
+
+#: public/app/routes/results/text-results/text-results.template.html:9
+msgid "Show hidden feedbacks"
+msgstr ""
+
+#: public/app/translations/translations.template.html:63
+msgid "Show image labels"
+msgstr ""
+
+#: public/app/routes/results/contact-results/contact-results.template.html:36
+#: public/app/routes/results/text-results/text-results.template.html:36
+msgid "Show more"
+msgstr ""
+
+#: public/app/components/plugin-setup/plugin-setup.template.html:239
+msgid "Show the survey to only x% of the visitors"
+msgstr ""
+
+#: public/app/translations/translations.template.html:170
+msgid "Show top 5"
+msgstr ""
+
+#: public/app/components/navbar/navbar.template.html:114
+msgid "Sign out"
+msgstr ""
+
+#: public/app/translations/translations.template.html:31
+msgid "Single Choice"
+msgstr ""
+
+#: public/app/translations/translations.template.html:36
+msgid "Skip to question:"
+msgstr ""
+
+#: public/app/translations/translations.template.html:163
+msgid "Slider"
+msgstr ""
+
+#: public/app/translations/translations.template.html:160
+msgid "Smileys"
+msgstr ""
+
+#: public/app/translations/translations.template.html:32
+msgid "Some texts are missing"
+msgstr ""
+
+#: public/app/translations/translations.template.html:33
+msgid "Some translations are missing"
+msgstr ""
+
+#: public/app/translations/translations.template.html:251
+msgid "Specify at least one user group for inbox settings."
+msgstr ""
+
+#: public/app/routes/notifications/controls/contact/contact-control.template.html:34
+msgid "Specify length in characters"
+msgstr ""
+
+#: public/app/components/plugin-setup/plugin-setup.template.html:251
+msgid "Step 1 - Shared general source"
+msgstr ""
+
+#: public/app/components/plugin-setup/plugin-setup.template.html:260
+msgid "Step 2: Unique plugin code"
+msgstr ""
+
+#: public/app/components/edit-channel-group-form/edit-channel-group-form.template.html:51
+msgid "Sub channel groups"
+msgstr ""
+
+#: public/app/routes/surveys/survey-email-settings/survey-email-settings.template.html:72
+msgid "Subject:"
+msgstr ""
+
+#: public/app/components/previews/contact-preview/contact-preview.template.html:9
+#: public/app/components/previews/slider-preview/slider-preview.template.html:14
+#: public/app/components/previews/text-preview/text-preview.template.html:7
+msgid "Submit"
+msgstr ""
+
+#: public/app/translations/translations.template.html:227
+msgid "Subscribe"
+msgstr ""
+
+#: public/app/routes/channel-management/channel-edit/mailing-list-channels/show-mailing-list-channel/show-mailing-list-channel.template.html:13
+msgid "Subscribed"
+msgstr ""
+
+#: public/app/routes/upsells/upsell-editor/upsell-editor.template.html:31
+msgid "Subtitle"
+msgstr ""
+
+#: public/app/translations/translations.template.html:121
+msgid "Successfully created a channel."
+msgstr ""
+
+#: public/app/translations/translations.template.html:120
+msgid "Successfully created the channel group."
+msgstr ""
+
+#: public/app/components/navbar/navbar.template.html:25
+msgid "Summary"
+msgstr ""
+
+#: public/app/translations/translations.template.html:17
+msgid "Sunday"
+msgstr ""
+
+#: public/app/routes/notifications/notifications-list.template.html:13
+#: public/app/routes/surveys/survey-confirmation/survey-confirmation.template.html:14
+#: public/app/routes/surveys/surveys-list/surveys-list.template.html:5
+msgid "Survey"
+msgstr ""
+
+#: public/app/components/device-schedulation-list/device-schedulation-list.template.html:2
+msgid "Survey already has the following schedulations"
+msgstr ""
+
+#: public/app/routes/surveys/surveys-list/surveys-list.template.html:106
+msgid "Survey can't be archived while it's active"
+msgstr ""
+
+#: public/app/translations/translations.template.html:225
+msgid "Survey has been copied"
+msgstr ""
+
+#: public/app/translations/translations.template.html:118
+msgid "Survey link"
+msgstr ""
+
+#: public/app/translations/translations.template.html:130
+#: public/app/translations/translations.template.html:136
+msgid "Survey published successfully!"
+msgstr ""
+
+#: public/app/translations/translations.template.html:72
+msgid "Survey saved"
+msgstr ""
+
+#: public/app/translations/translations.template.html:70
+msgid "Survey saving failed"
+msgstr ""
+
+#: public/app/routes/notifications/notifications.template.html:16
+msgid "Survey to watch feedback from"
+msgstr ""
+
+#: public/app/routes/surveys/survey-confirmation/survey-confirmation.template.html:47
+msgid "Survey will be sent to"
+msgstr ""
+
+#: public/app/components/navbar/navbar.template.html:49
+msgid "Surveys"
+msgstr ""
+
+#: public/app/components/navbar/navbar.template.html:81
+msgid "Switch organization"
+msgstr ""
+
+#: public/app/translations/translations.template.html:79
+msgid "Switching organization..."
+msgstr ""
+
+#: public/app/translations/translations.template.html:175
+msgid "Terrible."
+msgstr ""
+
+#: public/app/translations/translations.template.html:142
+msgid "Test SMS sent to"
+msgstr ""
+
+#: public/app/routes/surveys/survey-email-settings/survey-email-settings.template.html:49
+msgid "Test address"
+msgstr ""
+
+#: public/app/translations/translations.template.html:138
+msgid "Test mail sent."
+msgstr ""
+
+#: public/app/routes/surveys/survey-sms-settings/survey-sms-settings.template.html:39
+msgid "Test number"
+msgstr ""
+
+#: public/app/routes/upsells/upsell-editor/upsell-editor.template.html:38
+msgid "Text Body"
+msgstr ""
+
+#: public/app/routes/surveys/survey-email-settings/survey-email-settings.template.html:30
+#: public/app/routes/surveys/survey-sms-settings/survey-sms-settings.template.html:22
+msgid "Text body"
+msgstr ""
+
+#: public/app/translations/translations.template.html:65
+msgid "Text field"
+msgstr ""
+
+#: public/app/routes/upsells/upsell-editor/upsell-editor.template.html:101
+msgid "Thank you for your feedback and taking part in our prize draw!"
+msgstr ""
+
+#: public/app/components/device-info/device-info.template.html:58
+msgid "The app passcode is the code that is used to access the iPad settings after it is first configured. The feedback device can then be reconfigured with a different passcode."
+msgstr ""
+
+#: public/app/routes/summary/summary.template.html:47
+msgid "The average of all responses in the organization in the chosen timespan"
+msgstr ""
+
+#: public/app/routes/summary/summary.template.html:170
+msgid "The average of quantitative responses in the selected timespan in feedback channels you have rights to"
+msgstr ""
+
+#: public/app/routes/summary/summary.template.html:23
+msgid "The calculated average of quantitative feedback that has been collected in the chosen timespan in the feedback channels you have rights to."
+msgstr ""
+
+#: public/app/translations/translations.template.html:181
+msgid "The date range is invalid"
+msgstr ""
+
+#: public/app/routes/surveys/survey-publish-settings/survey-publish-settings.template.html:73
+msgid "The following"
+msgstr ""
+
+#: public/app/routes/notifications/controls/contact/contact-control.template.html:25
+msgid "The length of the text in the field must be:"
+msgstr ""
+
+#: public/app/routes/surveys/survey-sms-settings/survey-sms-settings.template.html:27
+msgid "The link takes up max 21 characters."
+msgstr ""
+
+#: public/app/routes/surveys/survey-sms-settings/survey-sms-settings.template.html:47
+msgid "The message takes up"
+msgstr ""
+
+#: public/app/routes/summary/summary.template.html:143
+msgid "The number of respondents in all feedback channels of the organization since the beginning of use"
+msgstr ""
+
+#: public/app/routes/summary/summary.template.html:158
+msgid "The number of respondents in feedback channels you have rights to"
+msgstr ""
+
+#: public/app/routes/summary/summary.template.html:72
+msgid "The number of respondents in the selected timespan in the feedback channels you have rights to."
+msgstr ""
+
+#: public/app/components/channel-setup-info/channel-setup-info.template.html:46
+msgid "The plugin has configured to be embedded in an element on your site. Add this element on your page where you want to survey to appear"
+msgstr ""
+
+#: public/app/routes/surveys/survey-confirmation/survey-confirmation.template.html:66
+msgid "The schedule can be viewed and edited"
+msgstr ""
+
+#: public/app/translations/translations.template.html:208
+msgid "The survey has been published"
+msgstr ""
+
+#: public/app/routes/surveys/survey-confirmation/survey-confirmation.template.html:65
+msgid "The survey is scheduled to be published on"
+msgstr ""
+
+#: public/app/routes/surveys/survey-confirmation/survey-confirmation.template.html:30
+msgid "The survey will be distributed in"
+msgstr ""
+
+#: public/app/routes/surveys/survey-confirmation/survey-confirmation.template.html:63
+msgid "The survey will be published immediately."
+msgstr ""
+
+#: public/app/components/plugin-setup/plugin-setup.template.html:196
+msgid "The widget is not shown again once it's closed."
+msgstr ""
+
+#: public/app/components/plugin-setup/plugin-setup.template.html:216
+msgid "The widget is not shown again once the survey is completed."
+msgstr ""
+
+#: public/app/components/channel-setup-info/channel-setup-info.template.html:69
+#: public/app/components/channel-setup-info/channel-setup-info.template.html:76
+msgid "There are currently no contacts in this channel. Follow step 1 and add some."
+msgstr ""
+
+#: public/app/translations/translations.template.html:46
+msgid "There are feedbacks for this choice. Deleting this choice will also delete the associated feedbacks."
+msgstr ""
+
+#: public/app/routes/surveys/survey-confirmation/survey-confirmation.template.html:31
+msgid "There are no channels selected for distribution."
+msgstr ""
+
+#: public/app/translations/translations.template.html:7
+msgid "This Month"
+msgstr ""
+
+#: public/app/components/device-info/device-info.template.html:72
+msgid "This authorization code is used for setting up an iPad as a feedback channel."
+msgstr ""
+
+#: public/app/routes/upsells/upsell-editor/upsell-editor.template.html:18
+#: public/app/routes/upsells/upsell-editor/upsell-editor.template.html:26
+#: public/app/routes/upsells/upsell-editor/upsell-editor.template.html:33
+#: public/app/routes/upsells/upsell-editor/upsell-editor.template.html:40
+#: public/app/routes/upsells/upsell-editor/upsell-editor.template.html:70
+msgid "This field is required"
+msgstr ""
+
+#: public/app/routes/notifications/notifications.template.html:9
+msgid ""
+"This tab lets you specify notifications based on the feedback you're given.\n"
+"          Each condition added will increase the specificity of the notification.\n"
+"          There can be more than one notification per survey."
+msgstr ""
+
+#: public/app/routes/summary/summary.template.html:6
+msgid "This top row displays the key figures of the feedback channels you have rights to."
+msgstr ""
+
+#: public/app/translations/translations.template.html:3
+msgid "This week"
+msgstr ""
+
+#: public/app/translations/translations.template.html:14
+msgid "Thursday"
+msgstr ""
+
+#: public/app/translations/translations.template.html:185
+msgid "Time"
+msgstr ""
+
+#: public/app/routes/surveys/survey-publish-settings/survey-publish-settings.template.html:60
+#: public/app/translations/translations.template.html:203
+msgid "Timezone"
+msgstr ""
+
+#: public/app/routes/surveys/survey-email-settings/survey-email-settings.template.html:71
+msgid "To:"
+msgstr ""
+
+#: public/app/translations/translations.template.html:2
+msgid "Today"
+msgstr ""
+
+#: public/app/translations/translations.template.html:21
+msgid "Toggle comparison of two date ranges"
+msgstr ""
+
+#: public/app/components/plugin-setup/plugin-setup.template.html:208
+msgid "Toggle redisplaying time after closing."
+msgstr ""
+
+#: public/app/components/plugin-setup/plugin-setup.template.html:228
+msgid "Toggle redisplaying time after completing survey."
+msgstr ""
+
+#: public/app/components/plugin-setup/plugin-setup.template.html:59
+msgid "Top left corner"
+msgstr ""
+
+#: public/app/routes/summary/summary.template.html:282
+msgid "Top quartile limit"
+msgstr ""
+
+#: public/app/components/plugin-setup/plugin-setup.template.html:52
+msgid "Top right corner"
+msgstr ""
+
+#: public/app/routes/results/nps-results/nps-results.template.html:28
+msgid "Total"
+msgstr ""
+
+#: public/app/translations/translations.template.html:41
+msgid "Translations"
+msgstr ""
+
+#: public/app/translations/translations.template.html:198
+msgid "Translations are missing from question number"
+msgstr ""
+
+#: public/app/components/plugin-setup/plugin-setup.template.html:78
+msgid "Triggering conditions"
+msgstr ""
+
+#: public/app/translations/translations.template.html:12
+msgid "Tuesday"
+msgstr ""
+
+#: public/app/routes/channel-management/channel-management.template.html:26
+msgid "Type"
+msgstr ""
+
+#: public/app/routes/notifications/controls/contact/contact-control.template.html:57
+msgid "Unchecked"
+msgstr ""
+
+#: public/app/routes/results/chart-controls/chart-controls.template.html:4
+msgid "Unit"
+msgstr ""
+
+#: public/app/translations/translations.template.html:34
+msgid "Unknown error"
+msgstr ""
+
+#: public/app/routes/upsells/upsell-editor/upsell-editor.template.html:5
+msgid "Update Upsell"
+msgstr ""
+
+#: public/app/components/fbevent-plan-limit-notifier/fbevent-plan-limit-notifier.template.html:3
+msgid "Upgrade your plan to see all your feedbacks"
+msgstr ""
+
+#: public/app/routes/channel-management/channel-edit/mailing-list-channels/show-mailing-list-channel/add-mailing-list-addresses/add-mailing-list-addresses.template.html:62
+#: public/app/routes/channel-management/channel-edit/sms-channels/show-sms-channel/add-sms-contacts/add-sms-contacts.template.html:50
+msgid "Upload"
+msgstr ""
+
+#: public/app/routes/channel-management/channel-edit/mailing-list-channels/show-mailing-list-channel/add-mailing-list-addresses/add-mailing-list-addresses.template.html:40
+#: public/app/routes/channel-management/channel-edit/sms-channels/show-sms-channel/add-sms-contacts/add-sms-contacts.template.html:35
+msgid "Upload a CSV file"
+msgstr ""
+
+#: public/app/translations/translations.template.html:143
+msgid "Uploading your image..."
+msgstr ""
+
+#: public/app/translations/translations.template.html:78
+msgid "Upsell"
+msgstr ""
+
+#: public/app/routes/upsells/upsell-editor/upsell-editor.template.html:59
+msgid "Upsell Code"
+msgstr ""
+
+#: public/app/routes/upsells/upsell-editor/upsell-editor.template.html:16
+msgid "Upsell Name"
+msgstr ""
+
+#: public/app/routes/upsells/upsell-editor/upsell-editor.template.html:24
+msgid "Upsell Title"
+msgstr ""
+
+#: public/app/routes/upsells/upsell-list/upsell-list.template.html:4
+msgid "Upsell offers"
+msgstr ""
+
+#: public/app/components/navbar/navbar.template.html:68
+msgid "Upselling"
+msgstr ""
+
+#: public/app/routes/upsells/upsell-editor/upsell-editor.template.html:54
+msgid "Use Barcode / QR code"
+msgstr ""
+
+#: public/app/components/device-info/device-info.template.html:23
+msgid "Users with right to the channel"
+msgstr ""
+
+#: public/app/components/billing-form/billing-form.template.html:31
+msgid "VAT identification number"
+msgstr ""
+
+#: public/app/components/plugin-setup/plugin-setup.template.html:158
+msgid "Visiting time"
+msgstr ""
+
+#: public/app/routes/notifications/notifications.template.html:68
+msgid "Wait for responses to remaining questions once conditions are fulfilled"
+msgstr ""
+
+#: public/app/translations/translations.template.html:218
+msgid "Web form"
+msgstr ""
+
+#: public/app/translations/translations.template.html:117
+msgid "Website plugin"
+msgstr ""
+
+#: public/app/translations/translations.template.html:219
+msgid "Website survey"
+msgstr ""
+
+#: public/app/translations/translations.template.html:13
+msgid "Wednesday"
+msgstr ""
+
+#: public/app/routes/tutorial/tutorial.template.html:4
+msgid "Welcome to Feedbackly!"
+msgstr ""
+
+#: public/app/components/plugin-setup/plugin-setup.template.html:175
+msgid "When user has scrolled down"
+msgstr ""
+
+#: public/app/components/plugin-setup/plugin-setup.template.html:185
+msgid "When user is exiting page"
+msgstr ""
+
+#: public/app/translations/translations.template.html:161
+msgid "Word choices"
+msgstr ""
+
+#: public/app/routes/summary/summary.template.html:214
+msgid "Worst day"
+msgstr ""
+
+#: public/app/routes/summary/summary.template.html:226
+msgid "Worst hour"
+msgstr ""
+
+#: public/app/routes/upsells/upsell-list/upsell-list.template.html:68
+#: public/app/translations/translations.template.html:199
+msgid "Yes"
+msgstr ""
+
+#: public/app/routes/channel-management/channel-edit/mailing-list-channels/show-mailing-list-channel/add-mailing-list-addresses/add-mailing-list-addresses.template.html:55
+#: public/app/routes/channel-management/channel-edit/sms-channels/show-sms-channel/add-sms-contacts/add-sms-contacts.template.html:43
+msgid "You can also add metadata to include in feedback by adding \"meta_FIELDNAMEHERE\" into your csv-file. ie. meta_customer-id."
+msgstr ""
+
+#: public/app/routes/surveys/survey-confirmation/survey-confirmation.template.html:50
+msgid "You don't have sufficient SMS balance."
+msgstr ""
+
+#: public/app/translations/translations.template.html:139
+msgid "You have no rights to create SMS channels. Enter your credit card information in your organization details or request access from support@feedbackly.com"
+msgstr ""
+
+#: public/app/routes/surveys/survey-sms-settings/survey-sms-settings.template.html:30
+msgid "You have no rights to send SMS messages. Enter your credit card information in your organization details or request access from support@feedbackly.com"
+msgstr ""
+
+#: public/app/translations/translations.template.html:113
+msgid "You have to be an organization admin to create channel groups."
+msgstr ""
+
+#: public/app/translations/translations.template.html:197
+msgid "You haven't added any questions"
+msgstr ""
+
+#: public/app/translations/translations.template.html:207
+msgid "You haven't chosen a language"
+msgstr ""
+
+#: public/app/translations/translations.template.html:206
+msgid "You haven't chosen any feedback channel types"
+msgstr ""
+
+#: public/app/routes/surveys/survey-confirmation/survey-confirmation.template.html:43
+msgid "You haven't configured any e-mail settings."
+msgstr ""
+
+#: public/app/routes/surveys/survey-confirmation/survey-confirmation.template.html:48
+msgid "You haven't configured any sms settings."
+msgstr ""
+
+#: public/app/translations/translations.template.html:229
+msgid "You just upgraded your plan, you can't downgrade it just now"
+msgstr ""
+
+#: public/app/translations/translations.template.html:87
+msgid ""
+"Your first step to getting know your customer better is creating a survey.\n"
+"Use the survey creation tool to do it - it takes just seconds!\n"
+"Here you can also find survey setups and language selection.\n"
+"You can use any language you like! After the survey is done,\n"
+"just follow the process and it will guide you through."
+msgstr ""
+
+#: public/app/components/channel-setup-info/channel-setup-info.template.html:18
+msgid "Your iPad will show this survey automatically once you publish it."
+msgstr ""
+
+#: public/app/translations/translations.template.html:145
+msgid "Your image has been uploaded"
+msgstr ""
+
+#: public/app/translations/translations.template.html:231
+msgid "Your plan has been updated"
+msgstr ""
+
+#: public/app/components/fbevent-plan-limit-notifier/fbevent-plan-limit-notifier.template.html:2
+msgid "Your selection contains"
+msgstr ""
+
+#: public/app/routes/surveys/survey-confirmation/survey-confirmation.template.html:19
+msgid "Your survey has"
+msgstr ""
+
+#: public/app/translations/translations.template.html:221
+msgid "additional feedback sources"
+msgstr ""
+
+#: public/app/translations/translations.template.html:233
+msgid "and"
+msgstr ""
+
+#: public/app/routes/surveys/surveys-list/surveys-list.template.html:52
+msgid "archived"
+msgstr ""
+
+#: public/app/translations/translations.template.html:38
+msgid "buttons"
+msgstr ""
+
+#: public/app/routes/surveys/survey-confirmation/survey-confirmation.template.html:30
+msgid "channels"
+msgstr ""
+
+#: public/app/routes/surveys/survey-publish-settings/survey-publish-settings.template.html:73
+msgid ""
+"channels were selected. If you haven't configured your channels previously, you can\n"
+"      get their setup instructions by clicking on them."
+msgstr ""
+
+#: public/app/routes/summary/summary.template.html:309
+#: public/app/routes/summary/summary.template.html:310
+#: public/app/routes/summary/summary.template.html:311
+msgid "days"
+msgstr ""
+
+#: public/app/translations/translations.template.html:212
+msgid "e-mail list"
+msgstr ""
+
+#: public/app/translations/translations.template.html:28
+msgid "emoticons"
+msgstr ""
+
+#: public/app/translations/translations.template.html:211
+msgid "feedback kiosk"
+msgstr ""
+
+#: public/app/components/fbevent-plan-limit-notifier/fbevent-plan-limit-notifier.template.html:2
+msgid "feedbacks across all surveys"
+msgstr ""
+
+#: public/app/components/plan-selector/plan-selector.template.html:32
+#: public/app/components/plan-selector/plan-selector.template.html:57
+#: public/app/components/plan-selector/plan-selector.template.html:8
+#: public/app/components/plan-selector/plan-selector.template.html:82
+msgid "feedbacks each month"
+msgstr ""
+
+#: public/app/components/fbevent-plan-limit-notifier/fbevent-plan-limit-notifier.template.html:2
+msgid "feedbacks that exceed your current subscription's limit of"
+msgstr ""
+
+#: public/app/components/channel-setup-info/channel-setup-info.template.html:66
+#: public/app/components/channel-setup-info/channel-setup-info.template.html:73
+#: public/app/routes/surveys/survey-confirmation/survey-confirmation.template.html:66
+msgid "from the channel management"
+msgstr ""
+
+#: public/app/components/plugin-setup/plugin-setup.template.html:194
+#: public/app/components/plugin-setup/plugin-setup.template.html:215
+msgid "hours"
+msgstr ""
+
+#: public/app/components/device-info/device-info.template.html:66
+msgid "iPad authorization code"
+msgstr ""
+
+#: public/app/components/channel-setup-info/channel-setup-info.template.html:10
+msgid "in the text field. Don't worry if the upcoming survey is an old one - you will activate the new survey next."
+msgstr ""
+
+#: public/app/routes/surveys/survey-confirmation/survey-confirmation.template.html:47
+#: public/app/routes/surveys/survey-sms-settings/survey-sms-settings.template.html:47
+msgid "messages in total"
+msgstr ""
+
+#: public/app/routes/notifications/notifications.template.html:74
+msgid "minute"
+msgstr ""
+
+#: public/app/routes/notifications/notifications.template.html:75
+#: public/app/routes/notifications/notifications.template.html:76
+msgid "minutes"
+msgstr ""
+
+#: public/app/routes/feedbacks/feedbacks.template.html:24
+msgid "not shown"
+msgstr ""
+
+#: public/app/routes/surveys/survey-confirmation/survey-confirmation.template.html:47
+msgid "numbers"
+msgstr ""
+
+#: public/app/translations/translations.template.html:234
+msgid "other contacs"
+msgstr ""
+
+#: public/app/components/plugin-setup/plugin-setup.template.html:151
+msgid "pages"
+msgstr ""
+
+#: public/app/routes/surveys/survey-confirmation/survey-confirmation.template.html:19
+msgid "questions"
+msgstr ""
+
+#: public/app/routes/feedbacks/feedbacks.template.html:22
+msgid "responses"
+msgstr ""
+
+#: public/app/components/plugin-setup/plugin-setup.template.html:161
+#: public/app/components/plugin-setup/plugin-setup.template.html:166
+#: public/app/routes/notifications/notifications.template.html:73
+msgid "seconds"
+msgstr ""
+
+#: public/app/routes/surveys/survey-sms-settings/survey-sms-settings.template.html:26
+msgid "to your message body to set the place for the link."
+msgstr ""
+
+#: public/app/routes/upsells/upsell-list/upsell-list.template.html:41
+msgid "upsell"
+msgstr ""
+
+#: public/app/translations/translations.template.html:215
+msgid "web form"
+msgstr ""
+
+#: public/app/translations/translations.template.html:213
+msgid "website survey"
+msgstr ""

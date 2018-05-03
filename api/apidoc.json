@@ -1,0 +1,11 @@
+{
+  "name": "Feedbackly REST API",
+  "version": "1.0.0",
+  "description": "Feedbackly RESTful API for exporting raw feedback data from Feedbackly.",
+  "title": "Feedbackly REST API documentation",
+  "url" : "https://api.feedbackly.com/v1",
+  "header": {
+    "title": "Authentication",
+    "filename": "./header.md"
+  }
+}

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head></head>
+
+  <body>
+    <% data.rows.forEach(row => { %>
+
+      <div class="feedback-item">
+        <%= translate('Date') %>: <%= row.Date %> <%= row.Time %> <br>
+        <%= translate('Channel') %>: <%= row.Channel %> <br>
+        <br>
+
+        <%- getFeedbackData(row, data.headers) %>
+
+      </div>
+
+    <% }) %>
+
+  </body>
+</html>

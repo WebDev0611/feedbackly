@@ -1,0 +1,33 @@
+<div class="feedback-filters-list">
+  <div ng-if="feedbackFiltersList.filters.length === 0 || feedbackFiltersList.filters === undefined" class="grey-text" translate>
+    Nothing here yet
+  </div>
+
+  <dl class="dl-horizontal" ng-if="feedbackFiltersList.filters.length > 0">
+    <div ng-repeat="filter in feedbackFiltersList.filters track by filter.questionId">
+      <dt>{{::filter.title}}</dt>
+      <dd ng-switch on="filter.questionType">
+        <div ng-switch-when="Button">
+          <div ng-repeat="value in filter.filters track by value.value" ng-class="::(feedbackFiltersList.buttonValueToClass(value.label))">
+          </div>
+        </div>
+
+        <div ng-switch-when="NPS">
+          <div ng-repeat="value in filter.filters track by value.value" class="nps-thumb">
+            {{::value.label}}
+          </div>
+        </div>
+
+        <div ng-switch-when="Word">
+          <span ng-repeat="value in filter.filters track by value.value" class="chip vertical-align-middle">
+            {{::value.label}}
+          </span>
+        </div>
+
+        <div ng-switch-when="Image">
+          <div ng-repeat="value in filter.filters track by value.value" class="image-thumb" ng-style="{ 'background-image': 'url({{::value.label}})' }"></div>
+        </div>
+      </dd>
+    </div>
+  </dl>
+</div>

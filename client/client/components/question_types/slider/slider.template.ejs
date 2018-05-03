@@ -1,0 +1,51 @@
+<div class="question-type question-type-slider" question-id="<%= question._id %>">
+  <% include ./../../language_menu/language_menu.template.ejs %>
+
+  <div class="question-inner flexbox-container-column">
+    <% _.forEach(question.translations, function(translation){ %>
+      <h1 class="title hide lang lang-<%= translation.language %>">
+          <span>
+             <%= translation.heading %>
+          </span>
+      </h1>
+    <% }) %>
+
+      <hr>
+
+      <div class="subtitle">
+        <% _.forEach(question.translations, function(translation){ %>
+          <span class="hide lang lang-<%= translation.language %>">
+             <%= translation.subtitle %>
+          </span>
+        <% }) %>
+      </div>
+
+      <div class="input">
+        <div>
+          <% var data = _.reject(question.translations[0].data, 'hidden'); %>
+          <% _.forEach(data, function(slider){ %>
+            <div slider-id="<%= slider.id %>" class="slider <%= data.length >= 4 ? 'four' : 'three' %>">
+              <div class="center-content">
+                <div class="number">0</div>
+                <% _.forEach(question.translations, function(translation){ %>
+                  <% var tr = _.find(translation.data, {id: slider.id}); %>
+                  <div class="slider-title hide lang lang-<%= translation.language %>">
+                    <span><%= tr.data %></span>
+                  </div>
+                <% }) %>
+              </div>
+            </div>
+          <% }) %>
+
+        </div>
+          <button class="scale-in-start" logic="<%= _.get(survey, 'properties.logic.' + question._id + '.submit') %>" >
+            <% _.forEach(UITranslations.next, (tr, lang) => { %>
+              <span class="lang lang-<%= lang %> hide"> <%= tr %> </span>
+            <% }) %>
+          </button>
+      </div>
+      <% include ./../../privacy-policy/open %>
+
+    </div>
+
+</div>

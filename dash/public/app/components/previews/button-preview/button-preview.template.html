@@ -1,0 +1,6 @@
+<div class="button-content clearfix">
+  <div class="button-container" ng-class="{ 'four-buttons': buttonPreview.question.opts.buttonCount == 4, 'five-buttons': buttonPreview.question.opts.buttonCount == 5 }" ng-repeat="buttonValue in buttonPreview.buttonValues">
+    <img ng-src="{{::buttonValue.image}}">
+    <h3 class="{{::buttonValue.title.class}}">{{::buttonValue.title.title}}</h3>
+  </div>
+</div>

@@ -1,0 +1,166 @@
+$speed: 12s;
+$button-min-width: 150px;
+
+@include keyframes(rotation) {
+  0% {
+    @include transform(rotate(0deg));
+  }
+
+  100%{
+    @include transform(rotate(360deg));
+  }
+};
+
+@mixin faces($host) {
+  @for $i from 1 through 5{
+    .b#{$i}{
+      .face-image-wrapper div{
+        background-image: url('#{$host}/images/faces/default/#{$i}a.png')
+      }
+
+      &.animated .face-image-wrapper div{
+        background-image: url('#{$host}/images/faces/default/#{$i}a.gif')
+      }
+
+      &.plain .face-image-wrapper div{
+        background-image: url('#{$host}/images/faces/plain/#{$i}b.png')
+      }
+
+      &.plain.animated .face-image-wrapper div{
+        background-image: url('#{$host}/images/faces/plain/#{$i}b.gif')
+      }
+
+    }
+  }
+}
+
+@include when-plugin(){
+  .button-question-wrapper.five-buttons .face-container {
+    width: 20%;
+
+    .face-label{
+      letter-spacing: 0px;
+      font-size: 1em;
+    }
+  }
+  .button-question-wrapper.four-buttons .face-container {
+    width: 25%;
+
+    .face-label{
+      letter-spacing: 0px;
+      font-size: 1em;
+    }
+  }
+  .button-question-wrapper .face-container .face-image-wrapper {
+    padding: 1% !important;
+  }
+
+  
+}
+
+.button-question-wrapper {
+  &.five-buttons {
+    .face-container {
+      width: 20%;
+
+      
+
+     @include breakpoint($button-min-width * 5) {
+       width: 33.33%;
+     }
+
+      
+    }
+  }
+
+  &.four-buttons {
+    .face-container {
+      width: 25%;
+
+      @include breakpoint($button-min-width * 4) {
+        width: 50%;
+      }
+    }
+  }
+
+  @include faces("/dist");
+
+
+  .face-container {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    padding: 5px;
+    box-sizing: border-box;
+
+    .circle{
+      position: absolute;
+    }
+
+    .face-visual {
+      opacity: 0;
+    }
+
+    .animation-base {
+      @include animation(rotation linear $speed);
+      @include animation-iteration-count(infinite);
+    }
+
+    svg{
+      width: 100%;
+    }
+
+    .face-image-wrapper {
+      padding: 10%;
+
+      div{
+        position: relative;
+        z-index: 10;
+        width: 100%;
+        height: auto;
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+
+
+    }
+
+
+      img {
+        position: relative;
+        z-index: 9;
+        width: 100%;
+        height: auto;
+        margin-top: -4px;
+      }
+    }
+
+    .face-label {
+      text-align: center;
+      margin-top: 5px;
+      width: 100%;
+      text-transform: uppercase;
+      display: flex;
+      align-items: center;
+      letter-spacing: 2px;
+
+      
+      @include breakpointmin($medium){
+        margin: 1.5em auto;
+      }
+      
+
+      & > div{
+        width: 100%;
+      }
+
+      &:empty {
+        display: none;
+      }
+
+      @include when-ipad(){
+        height: 80px;        
+      }
+    }
+
+  }

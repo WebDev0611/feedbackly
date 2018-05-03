@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta id="viewport" name="viewport" content="initial-scale=1.0,user-scalable=0,minimum-scale=1.0,maximum-scale=1.0,width=device-width, user-scalable=no" />
+  	<meta name="apple-mobile-web-app-capable" content="yes">
+
+    <% include partials/spinner-styles %>
+
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="/dist/react-client.min.css?v=<%= cacheKey %>" rel="stylesheet" type="text/css"/>
+    <link href="/public/flag-icon.min.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" href="/public/ico/favicon.png" type="image/x-icon" />
+  </head>
+
+  <body>
+    <div id="spinner-loader">
+      <div class="spinner">
+        <div class="bounce1"></div>
+        <div class="bounce2"></div>
+        <div class="bounce3"></div>
+      </div>
+    </div>
+
+    <div id="circle-animation-width">
+    </div>
+
+    <div id="root"></div>
+
+    <script>
+      window._IMAGE_SOURCES = <%- JSON.stringify(images) %>;
+      window._CACHE_KEY = <%= cacheKey %>;
+      window._STATE_FROM_SERVER = <%- JSON.stringify(initialState) %>;
+      window.parentHeight = '<%= parentHeight %>';
+      window.parentWidth = '<%= parentWidth %>';
+      window.IS_FROM_SERVER = true;
+      window._IMAGES_BASE64 = <%- JSON.stringify(imageCache) %>;
+
+    </script>
+
+    <script src="/dist/react-client.min.js?v=<%= cacheKey %>"></script>
+  </body>
+</html>

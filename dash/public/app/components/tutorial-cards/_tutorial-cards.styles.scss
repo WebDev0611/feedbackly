@@ -1,0 +1,135 @@
+@mixin translate-card($order){
+  @include transform(translateX($order* 5px) translateY($order * 5px));
+  z-index: 2000 - $order;
+}
+
+.tutorial-container{
+
+  .bold{
+    font-weight: bold;
+  }
+
+  min-height: 90vh;
+  @include display(flex);
+  @include flex-direction(column);
+  @include justify-content(center);
+
+  .cards{
+    position: relative;
+    min-height: 500px;
+  }
+
+  .card-outer{
+    position: absolute;
+    width: 100%;
+    opacity: 1;
+    z-index: 2000;
+    @include transition(all 250ms ease-in)
+
+      &.back0{
+
+      }
+      &.back1{
+        @include translate-card(1);
+      }
+
+      &.back2{
+        @include translate-card(2);
+      }
+
+      &.back3{
+        @include translate-card(3);
+      }
+
+      &.back4{
+        @include translate-card(4);
+      }
+
+      &.back5{
+        @include translate-card(5);
+      }
+      &.back6{
+        @include translate-card(6);
+      }
+      &.back7{
+        @include translate-card(7);
+      }
+  }
+
+  i.x{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+  }
+
+  .card{
+    width: 100%;
+    max-width: 520px;
+    min-height: 520px;
+    margin: 0 auto;
+    position: relative;
+    @include display(flex)
+    @include flex-direction(column);
+    @include justify-content(center);
+
+
+    p{
+      font-size: 15.5px;
+      margin: 20px 0;
+    }
+
+    .card-title{
+      margin-bottom: 15px;
+    }
+
+    .btn-floating{
+      position: absolute;
+
+      &.next{
+        bottom: 10px;
+        right: 10px;
+      }
+
+      &.previous{
+        bottom: 10px;
+        left: 10px;
+      }
+    }
+
+    img{
+      width: 100%;
+    }
+
+    .border{
+      border: 1px solid #D4D4D4;
+      border-radius: 2px;
+    }
+
+
+    .third{
+      width: 30%;
+      display: inline-block;
+      padding: 10px;
+    }
+  }
+
+  .turquoise{
+    color: $turquoise;
+  }
+
+  .fly-out{
+    @include transform(translateX(-50%) rotate(-30deg));
+    opacity: 0;
+  }
+}
+
+.tutorial-container.overlay{
+  position: absolute;
+  top: -25px;
+  left: -15px;
+  width: 105%;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.7);
+  z-index: 900;
+}

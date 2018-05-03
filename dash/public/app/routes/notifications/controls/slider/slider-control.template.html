@@ -1,0 +1,27 @@
+<div class="row">
+  <h6>{{ sliderControl.question.heading[sliderControl.displayLanguage] }}</h6>
+
+  <div class="col s12">
+
+    <div class="col s12" ng-repeat="slider in sliderControl.choices">
+      <div class="col m2" style="line-height:60px">{{slider.text[sliderControl.displayLanguage]}}</div>
+      <div class="col m1">
+        <label translate>Condition</label>
+         <select class="browser-default" style="min-width: 40px;" ng-model="sliderControl.operators[slider.id]" ng-change="sliderControl.onChange()">
+           <option selected></option>
+           <option value=">">&gt;</option>
+           <option value="<">&lt;</option>
+         </select>
+      </div>
+      <div class="col m4">
+        <p class="range-field" style="margin-top:25px">
+          <input type="range" ng-disabled="!sliderControl.operators[slider.id]" ng-change="sliderControl.onChange()" ng-model="sliderControl.values[slider.id]" min="0" max="10" />
+        </p>
+      </div>
+      <div class="col m5">
+        <p style="margin-top: 25px">&nbsp; {{sliderControl.values[slider.id]}}</p>
+      </div>
+    </div>
+  </div>
+
+</div>

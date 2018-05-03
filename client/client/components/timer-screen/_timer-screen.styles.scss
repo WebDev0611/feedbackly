@@ -1,0 +1,51 @@
+.timer-screen {
+  position: fixed;
+  z-index: 10000;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  font-size: 25px;
+  background-color: rgba(0,0,0,0.4);
+  top: 0px;
+  left: 0px;
+  opacity: 0;
+  transition: 0.5s;
+  width: 0px;
+  height: 0px;
+  overflow: hidden;
+  @include transition(opacity 0.5s);
+  text-transform: uppercase;
+
+  &.show {
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+    transition: opacity 0.5s;
+
+    .timer-screen-title {
+      @include transform(scale(1));
+      transition: 0.5s;
+    }
+  }
+
+  .timer-screen-title {
+    @include transform(scale(0));
+    width: 100%;
+    color:white;
+    transition: 0.5s;
+  }
+
+  .timer-screen-counter-value{
+    color: $red-dark;
+  }
+
+  .hand-icon{
+    max-width: 300px;
+    max-height: 400px;
+    margin: 0 auto;
+    svg{
+      width: 100%;
+    }
+  }
+}

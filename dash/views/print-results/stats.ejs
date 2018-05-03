@@ -1,0 +1,73 @@
+<%
+  var stats = questionData.question.totals;
+  var hasAverage = _.get(stats, 'channels.now.average') !== undefined || _.get(stats, 'channels.now.nps') !== undefined;
+  var statsCols = hasAverage
+    ? 3
+    : 6;
+
+  var trend = function(a, b) {
+    var difference = a - b;
+
+    if(a >= b) {
+      return '<span class="green-text">&#9650; ' + difference + '</span>';
+    } else {
+      return '<span class="red-text">&#9660; ' + difference + '</span>';
+    }
+  }
+%>
+
+<div class="row">
+
+    <% if(hasAverage) { %>
+      <div class="col l<%= statsCols %>">
+        <h3>
+          <%= _.get(stats, 'channels.now.average') !== undefined ? _.get(stats, 'channels.now.average') + "%" : _.get(stats, 'channels.now.nps') %>
+          <small><%- trend(stats.channels.now.average !== undefined ? stats.channels.now.average : stats.channels.now.nps, stats.channels.before.average !== undefined ? stats.channels.before.average : stats.channels.before.nps) %></small>
+        </h3>
+  
+        <p class="grey-text">
+          <%= _.get(stats, 'channels.now.average') !== undefined ? gt.gettext('Average of responses in the selected feedback channels') : ''%>
+          <%= _.get(stats, 'channels.now.nps') !== undefined ? gt.gettext('NPS in the selected feedback channels') : ''%>
+        </p>
+      </div>
+    <% } %>
+  
+    <div class="col l<%= statsCols %>">
+      <h3>
+        <%= _.get(stats, 'channels.now.count') %>
+        <small><%- trend(stats.channels.now.count, stats.organization.before.count) %></small>
+      </h3>
+  
+      <p class="grey-text">
+        <%= gt.gettext('Feedback channels\' feedback amount') %>
+      </p>
+    </div>
+
+
+  <% if(hasAverage) { %>
+    <div class="col l<%= statsCols %>">
+      <h3>
+        <%= _.get(stats, 'organization.now.average') !== undefined ? _.get(stats, 'organization.now.average') + "%" : _.get(stats, 'organization.now.nps') %>
+        <small><%- trend(stats.organization.now.average !== undefined ? stats.organization.now.average : stats.organization.now.nps, stats.organization.before.average !== undefined ? stats.organization.before.average : stats.organization.before.nps) %></small>
+      </h3>
+
+      <p class="grey-text">
+          <%= _.get(stats, 'organization.now.average') !== undefined ? gt.gettext('Average of responses in the whole organization') : ''%>
+          <%= _.get(stats, 'organization.now.nps') !== undefined ? gt.gettext('NPS in the whole organization') : ''%>
+      </p>
+    </div>
+  <% } %>
+
+  <div class="col l<%= statsCols %>">
+    <h3>
+      <%= _.get(stats, 'organization.now.count') %>
+      <small><%- trend(stats.organization.now.count, stats.organization.before.count) %></small>
+    </h3>
+
+    <p class="grey-text">
+      <%= gt.gettext('Organization\'s feedback amount') %>
+    </p>
+  </div>
+
+  
+</div>
